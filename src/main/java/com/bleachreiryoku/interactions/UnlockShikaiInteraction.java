@@ -1,5 +1,6 @@
 package com.bleachreiryoku.interactions;
 
+import com.hypixel.hytale.codec.builder.BuilderCodec;
 import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.protocol.InteractionType;
@@ -19,6 +20,10 @@ import com.bleachreiryoku.playerData.playerStats;
 import java.awt.*;
 
 public class UnlockShikaiInteraction extends SimpleInteraction {
+
+    public static final BuilderCodec<UnlockShikaiInteraction> CODEC =
+            BuilderCodec.builder(UnlockShikaiInteraction.class, UnlockShikaiInteraction::new,
+                    SimpleInteraction.CODEC).build();
 
     @Override
     protected void tick0(boolean firstRun, float time, @NonNullDecl InteractionType type, @NonNullDecl InteractionContext context,
@@ -43,11 +48,12 @@ public class UnlockShikaiInteraction extends SimpleInteraction {
 
 
         var brType = playerStats.getComponentType();
+        if (brType == null) return;
         playerStats stats = store.getComponent(owningEntity, brType);
         if(stats==null) return;
 
         stats.setActiveShikai();
-        player.sendMessage(Message.raw("You have feel a sudden surge of purge within you. From within your soul you hear the name of your zanpakuto resonate with you."));
+        player.sendMessage(Message.raw("You have feel a sudden surge of power within you. From within your soul you hear the name of your zanpakuto resonate with you."));
         player.sendMessage(Message.raw("Trying pressing R while holding your Zanpakuto to utilize Shikai.").bold(true).color(Color.WHITE));
 
 

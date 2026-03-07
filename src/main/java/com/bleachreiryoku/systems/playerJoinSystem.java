@@ -18,11 +18,12 @@ public class playerJoinSystem extends RefSystem<EntityStore>{
                               @NonNullDecl AddReason addReason,
                               @NonNullDecl Store<EntityStore> store,
                               @NonNullDecl CommandBuffer<EntityStore> commandBuffer) {
-        if (addReason != AddReason.LOAD) return;
+        if (addReason != AddReason.LOAD && addReason != AddReason.SPAWN) return;
         var playerRef = store.getComponent(ref, PlayerRef.getComponentType());
         if (playerRef == null) return;
 
         var brType = playerStats.getComponentType();
+        if (brType==null) return;
         var br = store.getComponent(ref, brType);
 
         if (br != null){

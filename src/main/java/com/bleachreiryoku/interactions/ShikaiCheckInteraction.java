@@ -1,6 +1,7 @@
 package com.bleachreiryoku.interactions;
 
 import com.bleachreiryoku.playerData.playerStats;
+import com.hypixel.hytale.codec.builder.BuilderCodec;
 import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.protocol.InteractionType;
@@ -14,6 +15,11 @@ import com.hypixel.hytale.server.core.entity.InteractionContext;
 import com.hypixel.hytale.server.core.entity.entities.Player;
 
 public class ShikaiCheckInteraction extends SimpleInteraction{
+
+    public static final BuilderCodec<ShikaiCheckInteraction> CODEC =
+            BuilderCodec.builder(ShikaiCheckInteraction.class, ShikaiCheckInteraction::new,
+                    SimpleInteraction.CODEC).build();
+
     @Override
     protected void tick0(boolean firstRun, float time, @NonNullDecl InteractionType type, @NonNullDecl InteractionContext context, @NonNullDecl CooldownHandler cooldownHandler) {
         Ref<EntityStore> owningEntity = context.getOwningEntity();
@@ -27,6 +33,7 @@ public class ShikaiCheckInteraction extends SimpleInteraction{
 
         var brType = playerStats.getComponentType();
         playerStats stats = store.getComponent(owningEntity, brType);
+        if(stats == null) return;
 
         if(stats.getShikaiState() == 0){
             player.sendMessage(Message.raw("You are unable to transform into Shikai yet."));

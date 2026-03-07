@@ -26,33 +26,33 @@ public class playerStats implements Component<EntityStore> {
     public static final BuilderCodec<playerStats> CODEC = BuilderCodec
             .builder(playerStats.class, playerStats::new)
             .append(
-                    new KeyedCodec<>("activeShikai", Codec.INTEGER),
-                    (component, value) -> component.activeShikai = value,
-                    component -> component.activeShikai
+                    new KeyedCodec<>("ActiveShikai", Codec.INTEGER),
+                    (component, value) -> component.ActiveShikai = value,
+                    component -> component.ActiveShikai
             ).add()
             .build();
 
 
 
     // checks if player has shikai capability. 0 off, 1 on.
-    public int activeShikai = 0;
+    public int ActiveShikai = 0;
 
     public playerStats(){}
 
     public playerStats(int activeShikai){
-        this.activeShikai = Math.max(0, activeShikai);
+        this.ActiveShikai = Math.max(0, activeShikai);
     }
 
     public void setActiveShikai(){
-        this.activeShikai = 1;
+        this.ActiveShikai = 1;
     }
 
     public void setNotActiveShikai(){
-        this.activeShikai = 0;
+        this.ActiveShikai = 0;
     }
 
     public int getShikaiState(){
-        return activeShikai;
+        return ActiveShikai;
     }
 
     public static final long[] REIRYOKU_THRESHOLDS = {
@@ -71,7 +71,7 @@ public class playerStats implements Component<EntityStore> {
     @NullableDecl
     @Override
     public playerStats clone() {
-        return new playerStats((this.activeShikai));
+        return new playerStats((this.ActiveShikai));
     }
 
 

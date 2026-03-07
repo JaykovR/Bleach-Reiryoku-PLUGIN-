@@ -1,6 +1,9 @@
 package com.bleachreiryoku;
 
+import com.bleachreiryoku.interactions.ShikaiCheckInteraction;
+import com.bleachreiryoku.interactions.UnlockShikaiInteraction;
 import com.bleachreiryoku.systems.playerJoinSystem;
+import com.hypixel.hytale.server.core.modules.interaction.interaction.config.Interaction;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
 import com.hypixel.hytale.logger.HytaleLogger;
@@ -42,6 +45,13 @@ public class BleachReiryokuPlugin extends JavaPlugin {
         playerStats.setComponentType(reiryokuType);
 
         registry.registerSystem(new playerJoinSystem());
+
+        this.getCodecRegistry(Interaction.CODEC)
+                .register("UnlockShikai", UnlockShikaiInteraction.class, UnlockShikaiInteraction.CODEC);
+
+        this.getCodecRegistry(Interaction.CODEC)
+                .register("ShikaiCheck", ShikaiCheckInteraction.class, ShikaiCheckInteraction.CODEC);
+
 
         // TODO: Register commands and listeners here
 
