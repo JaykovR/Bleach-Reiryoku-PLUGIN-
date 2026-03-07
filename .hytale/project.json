@@ -1,0 +1,10 @@
+{
+  "groupId": "com.example",
+  "artifactId": "bleach-reiryoku",
+  "modName": "BleachReiryoku",
+  "version": "1.0.0",
+  "buildSystem": "Gradle",
+  "language": "Java",
+  "jarPath": "build/libs/bleach-reiryoku-1.0.0.jar",
+  "buildTask": "shadowJar"
+}

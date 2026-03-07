@@ -1,0 +1,9 @@
+{
+  "Group": "com.bleachreiryoku",
+  "Name": "BleachReiryoku",
+  "Version": "1.0.0",
+  "Description": "A Hytale server mod",
+  "Authors": [{"Name": "jaykov"}],
+  "Main": "com.bleachreiryoku.BleachReiryokuPlugin",
+  "LoadOrder": "POSTWORLD"
+}
