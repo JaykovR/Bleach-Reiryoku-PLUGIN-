@@ -1,9 +1,15 @@
 {
-  "Group": "com.bleachreiryoku",
-  "Name": "BleachReiryoku",
-  "Version": "1.0.0",
-  "Description": "A Hytale server mod",
-  "Authors": [{"Name": "jaykov"}],
-  "Main": "com.bleachreiryoku.BleachReiryokuPlugin",
-  "LoadOrder": "POSTWORLD"
+    "Group": "Reiryoku Team",
+    "Name": "BleachReiryoku",
+    "Version": "1.0.0",
+    "Description": "A Hytale server mod",
+    "Authors": [
+        {
+            "Name": "jaykov"
+        }
+    ],
+    "DisabledByDefault": false,
+    "IncludesAssetPack": true,
+    "ServerVersion": "2026.02.19-1a311a592",
+    "Main": "com.bleachreiryoku.BleachReiryokuPlugin"
 }

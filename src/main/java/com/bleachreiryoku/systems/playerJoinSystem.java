@@ -48,6 +48,8 @@ public class playerJoinSystem extends RefSystem<EntityStore>{
     @NullableDecl
     @Override
     public Query<EntityStore> getQuery() {
+        var playerRefType = PlayerRef.getComponentType();
+        if (playerRefType == null) return null;
         return Archetype.of(PlayerRef.getComponentType());
     }
 }

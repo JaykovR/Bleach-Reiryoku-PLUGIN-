@@ -44,7 +44,6 @@ public class BleachReiryokuPlugin extends JavaPlugin {
         );
         playerStats.setComponentType(reiryokuType);
 
-        registry.registerSystem(new playerJoinSystem());
 
         this.getCodecRegistry(Interaction.CODEC)
                 .register("UnlockShikai", UnlockShikaiInteraction.class, UnlockShikaiInteraction.CODEC);
@@ -61,6 +60,8 @@ public class BleachReiryokuPlugin extends JavaPlugin {
     @Override
     protected void start() {
         LOGGER.at(Level.INFO).log("[Bleach Reiryoku] Started!");
+        var registry = getEntityStoreRegistry();
+        registry.registerSystem(new playerJoinSystem());
     }
 
     @Override
