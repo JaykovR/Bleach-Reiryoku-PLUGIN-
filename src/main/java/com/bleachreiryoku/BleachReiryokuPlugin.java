@@ -1,8 +1,11 @@
 package com.bleachreiryoku;
 
+import com.bleachreiryoku.commands.ReiryokuCommands;
 import com.bleachreiryoku.interactions.ShikaiCheckInteraction;
 import com.bleachreiryoku.interactions.UnlockShikaiInteraction;
 import com.bleachreiryoku.systems.playerJoinSystem;
+import com.hypixel.hytale.server.core.command.system.CommandRegistration;
+import com.hypixel.hytale.server.core.command.system.CommandRegistry;
 import com.hypixel.hytale.server.core.modules.interaction.interaction.config.Interaction;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
@@ -36,6 +39,9 @@ public class BleachReiryokuPlugin extends JavaPlugin {
     protected void setup() {
         LOGGER.at(Level.INFO).log("[Bleach Reiryoku] Setting up...");
 
+        CommandRegistry commandRegistry = this.getCommandRegistry();
+        CommandRegistration commandRegistration = commandRegistry.registerCommand(new ReiryokuCommands());
+
         var registry = getEntityStoreRegistry();
         var reiryokuType = registry.registerComponent(
                 playerStats.class,
@@ -43,7 +49,6 @@ public class BleachReiryokuPlugin extends JavaPlugin {
                 playerStats.CODEC
         );
         playerStats.setComponentType(reiryokuType);
-
 
         this.getCodecRegistry(Interaction.CODEC)
                 .register("UnlockShikai", UnlockShikaiInteraction.class, UnlockShikaiInteraction.CODEC);
