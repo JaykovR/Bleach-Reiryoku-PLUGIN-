@@ -37,6 +37,14 @@ public class playerStats implements Component<EntityStore> {
     // checks if player has shikai capability. 0 off, 1 on.
     public int ActiveShikai = 0;
 
+    //Replaced later on.
+    public boolean shikaiHozukimaru = false;
+    public boolean shikaiWabisuke = false;
+    public boolean shikaiSodeNoShirayuki = false;
+    public boolean shikaiBenihime = false;
+
+
+
     public playerStats(){}
 
     public playerStats(int activeShikai){

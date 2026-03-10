@@ -2,5 +2,5 @@
   "Interactions": [
     "ShikaiCheck"
   ],
-  "RequireNewClick": true
+  "RequireNewClick": false
 }

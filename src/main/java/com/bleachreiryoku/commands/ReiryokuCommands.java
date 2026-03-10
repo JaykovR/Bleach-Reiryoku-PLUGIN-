@@ -8,6 +8,7 @@ import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.server.core.command.system.basecommands.AbstractCommandCollection;
 import com.hypixel.hytale.server.core.command.system.basecommands.CommandBase;
 import com.hypixel.hytale.server.core.Message;
+import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 
 import com.bleachreiryoku.playerData.playerStats;
@@ -74,15 +75,19 @@ public class ReiryokuCommands extends AbstractCommandCollection {
         }
 
         protected void executeSync(@Nonnull CommandContext context) {
-            CommandSender sender = context.sender();
-            Ref<EntityStore> owningEntity = (Ref<EntityStore>) context.sender();
+            Ref<EntityStore> owningEntity = context.senderAsPlayerRef();
             Store<EntityStore> store = owningEntity.getStore();
-            var brType = playerStats.getComponentType();
-            playerStats stats = store.getComponent(owningEntity, brType);
-            if(stats.getShikaiState() == 0) {
-                context.sendMessage(Message.raw("You are not able to transform to shikai."));
-            }
-            else{context.sendMessage(Message.raw("You can transform to shikai"));}
+            World world = store.getExternalData().getWorld();
+            world.execute(() -> {
+                var brType = playerStats.getComponentType();
+                playerStats stats = store.getComponent(owningEntity, brType);
+                if(stats.getShikaiState() == 0) {
+                    context.sendMessage(Message.raw("You are not able to transform to shikai."));
+                }
+                else{context.sendMessage(Message.raw("You can transform to shikai"));}
+            });
+
+
         }
 
     }
@@ -101,18 +106,22 @@ public class ReiryokuCommands extends AbstractCommandCollection {
         protected void executeSync(@Nonnull CommandContext context) {
             //aaaa
 
-            CommandSender sender = context.sender();
-            Ref<EntityStore> owningEntity = (Ref<EntityStore>) context.sender();
+            Ref<EntityStore> owningEntity = context.senderAsPlayerRef();
             Store<EntityStore> store = owningEntity.getStore();
-            var brType = playerStats.getComponentType();
-            playerStats stats = store.getComponent(owningEntity, brType);
-            if (stats != null && stats.getShikaiState() == 0) {
-                context.sendMessage(Message.raw("You were already unable to transform into Shikai."));
-                return;
-            }
+            World world = store.getExternalData().getWorld();
 
-            stats.setNotActiveShikai();
-            context.sendMessage(Message.raw("Shikai access disabled."));
+            world.execute(() -> {
+                var brType = playerStats.getComponentType();
+                playerStats stats = store.getComponent(owningEntity, brType);
+                if (stats != null && stats.getShikaiState() == 0) {
+                    context.sendMessage(Message.raw("You were already unable to transform into Shikai."));
+                    return;
+                }
+                stats.setNotActiveShikai();
+                context.sendMessage(Message.raw("Shikai access disabled."));
+            });
+
+
         }
 
     }
