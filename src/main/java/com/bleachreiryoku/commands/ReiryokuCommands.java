@@ -81,10 +81,28 @@ public class ReiryokuCommands extends AbstractCommandCollection {
             world.execute(() -> {
                 var brType = playerStats.getComponentType();
                 playerStats stats = store.getComponent(owningEntity, brType);
-                if(stats.getShikaiState() == 0) {
-                    context.sendMessage(Message.raw("You are not able to transform to shikai."));
+                context.sendMessage(Message.raw("You have: "));
+
+                if (stats != null && stats.getShikaiWabisukeState()) {
+                    context.sendMessage(Message.raw("Wabisuke Shikai"));
                 }
-                else{context.sendMessage(Message.raw("You can transform to shikai"));}
+                if (stats != null && stats.getShikaiSodeNoShirayukiState()) {
+                    context.sendMessage(Message.raw("Sode no Shirayuki Shikai"));
+                }
+                if (stats != null && stats.getShikaiHozukimaruState()) {
+                    context.sendMessage(Message.raw("Hozukimaru Shikai"));
+                }
+                if (stats != null && stats.getShikaiBenihimeState()) {
+                    context.sendMessage(Message.raw("Benihime Shikai"));
+                }
+
+                if (((stats != null) && !stats.getShikaiHozukimaruState()) && !stats.getShikaiSodeNoShirayukiState()
+                        && !stats.getShikaiBenihimeState() && !stats.getShikaiWabisukeState())
+                {
+                    context.sendMessage(Message.raw("You have no Shikai Available.."));
+                    return;
+                }
+
             });
 
 
@@ -113,11 +131,14 @@ public class ReiryokuCommands extends AbstractCommandCollection {
             world.execute(() -> {
                 var brType = playerStats.getComponentType();
                 playerStats stats = store.getComponent(owningEntity, brType);
-                if (stats != null && stats.getShikaiState() == 0) {
+
+                if (((stats != null) && !stats.getShikaiHozukimaruState()) || !stats.getShikaiSodeNoShirayukiState()
+                        || !stats.getShikaiBenihimeState() || !stats.getShikaiWabisukeState())
+                {
                     context.sendMessage(Message.raw("You were already unable to transform into Shikai."));
                     return;
                 }
-                stats.setNotActiveShikai();
+                stats.deactivateShikai();
                 context.sendMessage(Message.raw("Shikai access disabled."));
             });
 

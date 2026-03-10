@@ -8,6 +8,7 @@ import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.protocol.InteractionState;
 import com.hypixel.hytale.protocol.InteractionType;
 import com.hypixel.hytale.server.core.Message;
+import com.hypixel.hytale.server.core.inventory.ItemStack;
 import com.hypixel.hytale.server.core.modules.interaction.interaction.CooldownHandler;
 import com.hypixel.hytale.server.core.modules.interaction.interaction.config.SimpleInstantInteraction;
 import com.hypixel.hytale.server.core.modules.interaction.interaction.config.SimpleInteraction;
@@ -16,9 +17,12 @@ import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import org.checkerframework.checker.nullness.compatqual.NonNullDecl;
 import com.hypixel.hytale.server.core.entity.InteractionContext;
 import com.hypixel.hytale.server.core.entity.entities.Player;
+
+import java.awt.*;
+
 import static com.hypixel.hytale.protocol.InteractionState.*;
 
-public class ShikaiCheckInteraction extends SimpleInstantInteraction{
+public class    ShikaiCheckInteraction extends SimpleInstantInteraction{
 
     public static final BuilderCodec<ShikaiCheckInteraction> CODEC =
             BuilderCodec.builder(ShikaiCheckInteraction.class, ShikaiCheckInteraction::new,
@@ -30,9 +34,13 @@ public class ShikaiCheckInteraction extends SimpleInstantInteraction{
         Ref<EntityStore> owningEntity = context.getOwningEntity();
         Store<EntityStore> store = owningEntity.getStore();
         CommandBuffer<EntityStore> commandBuffer = context.getCommandBuffer();
+        String heldItem = context.getHeldItem().getItemId();
+        int requiredAmount = 1;
+
 
         Player player = store.getComponent(owningEntity, Player.getComponentType());
         if (player == null) return;
+
 
         World world = player.getWorld();
         if (world == null) return;
@@ -40,12 +48,58 @@ public class ShikaiCheckInteraction extends SimpleInstantInteraction{
         var brType = playerStats.getComponentType();
         playerStats stats = store.getComponent(owningEntity, brType);
 
-        if(stats == null || stats.getShikaiState() == 0){
-            player.sendMessage(Message.raw("You are unable to transform into Shikai yet."));
-            context.getState().state = InteractionState.Failed;
+        if(stats == null){
+            player.sendMessage(Message.raw("ERROR PLAYER STATS NULL"));
             return;
         }
 
+        if(heldItem.equals("Sealed_Benihime")){
+            if (!stats.getShikaiBenihimeState()) {
+                player.sendMessage(Message.raw("You are unable to transform into Shikai yet."));
+                context.getState().state = InteractionState.Failed;
+                return;
+            } else {
+                player.sendMessage(Message.raw("Awake, Benihime").bold(true).color(Color.RED).italic(true));
+                context.getState().state = Finished;
+                return;
+            }
+        }
+
+        if(heldItem.equals("Sealed_Wabisuke")){
+            if (!stats.getShikaiWabisukeState()) {
+                player.sendMessage(Message.raw("You are unable to transform into Shikai yet."));
+                context.getState().state = InteractionState.Failed;
+                return;
+            } else {
+                player.sendMessage(Message.raw("Raise Your Hear, Wabisuke!").bold(true).color(Color.MAGENTA));
+                context.getState().state = Finished;
+                return;
+            }
+        }
+
+        if(heldItem.equals("Sealed_Hozukimaru")){
+            if (!stats.getShikaiHozukimaruState()) {
+                player.sendMessage(Message.raw("You are unable to transform into Shikai yet."));
+                context.getState().state = InteractionState.Failed;
+                return;
+            } else {
+                player.sendMessage(Message.raw("GROW, HOZUKIMARU!!").bold(true).color(Color.RED));
+                context.getState().state = Finished;
+                return;
+            }
+        }
+
+        if(heldItem.equals("Sealed_Sode_No_Shirayuki")){
+            if (!stats.getShikaiSodeNoShirayukiState()) {
+                player.sendMessage(Message.raw("You are unable to transform into Shikai yet."));
+                context.getState().state = InteractionState.Failed;
+                return;
+            } else {
+                player.sendMessage(Message.raw("Dance, Sode no Shirayuki").bold(true).color(Color.WHITE).italic(true));
+                context.getState().state = Finished;
+                return;
+            }
+        }
         context.getState().state = Finished;
     }
 }

@@ -34,27 +34,69 @@ public class UnlockShikaiInteraction extends SimpleInteraction {
         Player player = store.getComponent(owningEntity, Player.getComponentType());
         if (player == null) return;
 
+
         World world = player.getWorld();
         if (world == null) return;
 
-        ItemStack heldItem = context.getHeldItem();
-        if (heldItem == null) return;
-        if (!heldItem.getItem().getId().equalsIgnoreCase("Resonating_Reishi_Core")) return;
+        String heldItem = context.getHeldItem().getItemId();
         int requiredAmount = 1;
 
-        ItemStackSlotTransaction itemStackSlotTransaction = player.getInventory().getHotbar().removeItemStackFromSlot(context.getHeldItemSlot(),
-                requiredAmount, true, false);
-        if(!itemStackSlotTransaction.succeeded()) return;
-
+        if (heldItem == null) return;
 
         var brType = playerStats.getComponentType();
-        if (brType == null) return;
+        if (brType == null) {
+            player.sendMessage(Message.raw("ERROR PLAYER STATS NULL"));
+            return;}
         playerStats stats = store.getComponent(owningEntity, brType);
-        if(stats==null) return;
 
-        stats.setActiveShikai();
-        player.sendMessage(Message.raw("You have feel a sudden surge of power within you. From within your soul you hear the name of your zanpakuto resonate with you."));
-        player.sendMessage(Message.raw("Trying pressing R while holding your Zanpakuto to utilize Shikai.").bold(true).color(Color.WHITE));
+        if(heldItem.equals("Benihime_Spirit_Fragment")){
+            player.sendMessage(Message.raw("You feel a sudden surge of power within you. From deep within your soul, a sharp and elegant voice echoes…"));
+            player.sendMessage(Message.raw("Benihime").bold(true).color(Color.RED).italic(true));
+            player.sendMessage(Message.raw("Trying pressing R while holding your Zanpakuto to utilize Shikai.").bold(true).color(Color.WHITE));
+            ItemStackSlotTransaction itemStackSlotTransaction = player.getInventory().getHotbar().removeItemStackFromSlot(context.getHeldItemSlot(),
+                    requiredAmount, true, false);
+            if(!itemStackSlotTransaction.succeeded()) return;
+            if (stats != null) {
+                stats.setActiveShikaiBenihime();
+            }
+        }
+
+        if(heldItem.equals("Wabisuke_Spirit_Fragment")){
+            player.sendMessage(Message.raw("A heavy presence settles within your soul. A quiet, solemn voice reveals its name…"));
+            player.sendMessage(Message.raw("Wabisuke").bold(true).color(Color.MAGENTA).italic(true));
+            player.sendMessage(Message.raw("Trying pressing R while holding your Zanpakuto to utilize Shikai.").bold(true).color(Color.WHITE));
+            ItemStackSlotTransaction itemStackSlotTransaction = player.getInventory().getHotbar().removeItemStackFromSlot(context.getHeldItemSlot(),
+                    requiredAmount, true, false);
+            if(!itemStackSlotTransaction.succeeded()) return;
+            stats.setActiveShikaiWabisuke();
+        }
+
+        if(heldItem.equals("SodeNoShirayuki_Spirit_Fragment")){
+            player.sendMessage(Message.raw("A chilling yet graceful energy flows through your soul. A calm voice whispers its name…"));
+            player.sendMessage(Message.raw("Sode no Shirayuki").bold(true).color(Color.WHITE).italic(true));
+            player.sendMessage(Message.raw("Trying pressing R while holding your Zanpakuto to utilize Shikai.").bold(true).color(Color.WHITE));
+            ItemStackSlotTransaction itemStackSlotTransaction = player.getInventory().getHotbar().removeItemStackFromSlot(context.getHeldItemSlot(),
+                    requiredAmount, true, false);
+            if(!itemStackSlotTransaction.succeeded()) return;
+            if (stats != null) {
+                stats.setActiveShikaiSodeNoShirayuki();
+            }
+        }
+
+        if(heldItem.equals("Hozukimaru_Spirit_Fragment")){
+            player.sendMessage(Message.raw("A fierce fighting spirit surges through your soul. A bold voice calls out its name…"));
+            player.sendMessage(Message.raw("Hozukimaru!!!").bold(true).color(Color.RED).italic(true));
+            player.sendMessage(Message.raw("Trying pressing R while holding your Zanpakuto to utilize Shikai.").bold(true).color(Color.WHITE));
+            ItemStackSlotTransaction itemStackSlotTransaction = player.getInventory().getHotbar().removeItemStackFromSlot(context.getHeldItemSlot(),
+                    requiredAmount, true, false);
+            if(!itemStackSlotTransaction.succeeded()) return;
+            if (stats != null) {
+                stats.setActiveShikaiHozukimaru();
+            }
+        }
+
+
+        if(stats==null) return;
 
 
     }

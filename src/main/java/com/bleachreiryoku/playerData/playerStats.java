@@ -26,42 +26,98 @@ public class playerStats implements Component<EntityStore> {
     public static final BuilderCodec<playerStats> CODEC = BuilderCodec
             .builder(playerStats.class, playerStats::new)
             .append(
-                    new KeyedCodec<>("ActiveShikai", Codec.INTEGER),
-                    (component, value) -> component.ActiveShikai = value,
-                    component -> component.ActiveShikai
+                    new KeyedCodec<>("ShikaiHozukimaru", Codec.BOOLEAN),
+                    (component, value) -> component.ShikaiHozukimaru = value,
+                    component -> component.ShikaiHozukimaru
+            ).add()
+            .append(
+                    new KeyedCodec<>("ShikaiWabisuke", Codec.BOOLEAN),
+                    (component, value) -> component.ShikaiWabisuke = value,
+                    component -> component.ShikaiWabisuke
+            ).add()
+            .append(
+                    new KeyedCodec<>("ShikaiSodeNoShirayuki", Codec.BOOLEAN),
+                    (component, value) -> component.ShikaiSodeNoShirayuki = value,
+                    component -> component.ShikaiSodeNoShirayuki
+            ).add()
+            .append(
+                    new KeyedCodec<>("ShikaiBenihime", Codec.BOOLEAN),
+                    (component, value) -> component.ShikaiBenihime = value,
+                    component -> component.ShikaiBenihime
             ).add()
             .build();
 
 
-
-    // checks if player has shikai capability. 0 off, 1 on.
+    // REDUNDANT FOR NOW checks if player has shikai capability. 0 off, 1 on.
     public int ActiveShikai = 0;
 
     //Replaced later on.
-    public boolean shikaiHozukimaru = false;
-    public boolean shikaiWabisuke = false;
-    public boolean shikaiSodeNoShirayuki = false;
-    public boolean shikaiBenihime = false;
+    public boolean ShikaiHozukimaru = false;
+    public boolean ShikaiWabisuke = false;
+    public boolean ShikaiSodeNoShirayuki = false;
+    public boolean ShikaiBenihime = false;
 
 
 
     public playerStats(){}
 
-    public playerStats(int activeShikai){
-        this.ActiveShikai = Math.max(0, activeShikai);
+    public playerStats(boolean shikaiHozukimaru, boolean shikaiWabisuke,
+                       boolean shikaiSodeNoShirayuki, boolean shikaiBenihime)
+    {
+        this.ShikaiHozukimaru = shikaiHozukimaru;
+        this.ShikaiWabisuke = shikaiWabisuke;
+        this.ShikaiSodeNoShirayuki = shikaiSodeNoShirayuki;
+        this.ShikaiBenihime = shikaiBenihime;
     }
 
-    public void setActiveShikai(){
-        this.ActiveShikai = 1;
+    public void setActiveShikaiHozukimaru(){
+        this.ShikaiHozukimaru = true;
     }
 
-    public void setNotActiveShikai(){
-        this.ActiveShikai = 0;
+    public void setActiveShikaiWabisuke(){
+        this.ShikaiWabisuke = true;
     }
 
-    public int getShikaiState(){
-        return ActiveShikai;
+    public void setActiveShikaiSodeNoShirayuki(){
+        this.ShikaiSodeNoShirayuki = true;
     }
+
+    public void setActiveShikaiBenihime(){
+        this.ShikaiBenihime = true;
+    }
+
+    // sets all false at once.
+    public void deactivateShikai(){
+        this.ShikaiHozukimaru = false;
+        this.ShikaiWabisuke = false;
+        this.ShikaiSodeNoShirayuki = false;
+        this.ShikaiBenihime = false;
+    }
+
+    public boolean getShikaiBenihimeState(){
+        return ShikaiBenihime;
+    }
+
+    public boolean getShikaiWabisukeState(){
+        return ShikaiWabisuke;
+    }
+    public boolean getShikaiSodeNoShirayukiState(){
+        return ShikaiSodeNoShirayuki;
+    }
+    public boolean getShikaiHozukimaruState(){
+        return ShikaiHozukimaru;
+    }
+
+//    public void setActiveShikai(){
+//        this.ActiveShikai = 1;
+//    }
+//    public void setNotActiveShikai(){
+//        this.ActiveShikai = 0;
+//    }
+//
+//    public int getShikaiState(){
+//        return ActiveShikai;
+//    }
 
     public static final long[] REIRYOKU_THRESHOLDS = {
             0,      // new player
@@ -79,7 +135,7 @@ public class playerStats implements Component<EntityStore> {
     @NullableDecl
     @Override
     public playerStats clone() {
-        return new playerStats((this.ActiveShikai));
+        return new playerStats(this.ShikaiHozukimaru, this.ShikaiWabisuke, this.ShikaiSodeNoShirayuki, this.ShikaiBenihime);
     }
 
 
