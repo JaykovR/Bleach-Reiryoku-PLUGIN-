@@ -1,0 +1,197 @@
+{
+  "Parent": "Sode_No_Shirayuki_Type",
+  "TranslationProperties": {
+    "Name": "items.Sode_No_Shirayuki.name",
+    "Description": "items.Sode_No_Shirayuki.description"
+  },
+  "Model": "Items/Weapons/Sode_No_Shirayuki/Sode_No_Shirayuki.blockymodel",
+  "Texture": "Items/Weapons/Sode_No_Shirayuki/Sode_No_Shirayuki_Texture.png",
+  "Icon": "Icons/ItemsGenerated/Sode_No_Shirayuki.png",
+  "Quality": "Shikai",
+  "ItemLevel": 40,
+  "Recipe": {
+    "TimeSeconds": 4.5,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Ice_Essence",
+        "Quantity": 15
+      },
+      {
+        "ItemId": "Resonating_Reishi_Core",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Bar_Silver",
+        "Quantity": 9
+      },
+      {
+        "ItemId": "Asauchi"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Soul_Shikai"
+        ],
+        "Id": "Soul_Imprinting_Altar"
+      }
+    ]
+  },
+  "InteractionVars": {
+    "Swing_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Sode_No_Shirayuki_Primary_Swing_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 14
+            }
+          },
+          "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "Sode_No_Shirayuki_Slash"
+              }
+            ],
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Right_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Sode_No_Shirayuki_Primary_Swing_Right_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 16
+            }
+          },
+          "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "Sode_No_Shirayuki_Slash"
+              }
+            ],
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Down_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Sode_No_Shirayuki_Primary_Swing_Down_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 28
+            }
+          },
+          "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "Sode_No_Shirayuki_Slash"
+              }
+            ],
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Thrust_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Thrust_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 41
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 3
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Vortexstrike_Spin_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Signature_Vortexstrike_Spin_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 29
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Vortexstrike_Stab_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Signature_Vortexstrike_Stab_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 87
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Guard_Wield": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Secondary_Guard_Wield",
+          "StaminaCost": {
+            "Value": 15.56,
+            "CostType": "Damage"
+          }
+        }
+      ]
+    }
+  },
+  "Scale": 1,
+  "IconProperties": {
+    "Scale": 0.4,
+    "Rotation": [
+      43,
+      101,
+      22.5
+    ],
+    "Translation": [
+      -43,
+      -42
+    ]
+  },
+  "Weapon": {
+    "RenderDualWielded": false,
+    "StatModifiers": {
+      "SignatureEnergy": [
+        {
+          "CalculationType": "Additive",
+          "Amount": 20
+        }
+      ]
+    }
+  }
+}

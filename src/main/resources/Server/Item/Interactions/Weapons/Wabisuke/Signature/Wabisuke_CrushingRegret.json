@@ -1,0 +1,42 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "SignatureEnergy": 100
+  },
+  "ValueType": "Percent",
+  "Next": {
+    "Type": "Serial",
+    "Interactions": [
+      {
+        "Type": "ApplyEffect",
+        "Entity": "Target",
+        "EffectId": "Wabisuke_Paralyze"
+      },
+      {
+        "Type": "Replace",
+        "Var": "CrushingRegret_Selector",
+        "DefaultOk": true,
+        "DefaultValue": {
+          "Interactions": [
+            "Wabisuke_CrushingRegret_Pose"
+          ]
+        }
+      },
+      "Wabisuke_CrushingRegret_Selector",
+      {
+        "Type": "Simple",
+        "RunTime": 0.15
+      },
+      {
+        "Type": "ChangeStat",
+        "StatModifiers": {
+          "SignatureEnergy": -100
+        },
+        "ValueType": "Percent"
+      }
+    ]
+  },
+  "Effects": {
+    "WorldSoundEventId": "SFX_CrushingRegret"
+  }
+}

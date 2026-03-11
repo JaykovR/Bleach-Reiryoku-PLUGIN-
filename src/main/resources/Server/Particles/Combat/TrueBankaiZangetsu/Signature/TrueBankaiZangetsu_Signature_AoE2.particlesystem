@@ -1,0 +1,11 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "TrueBankaiZangetsu_Signature_AoE_Bright"
+    },
+    {
+      "SpawnerId": "TrueBankaiZangetsu_Signature_AoE_Alpha"
+    }
+  ],
+  "BoundingRadius": 10
+}

@@ -1,0 +1,147 @@
+{
+  "TranslationProperties": {
+    "Name": "plushe.Plush_Ichigo.name",
+    "Description": "plushe.Plush_Ichigo.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Bleach_Plushie_Ichigo.png",
+  "Categories": [
+    "BleachCategory.Deco"
+  ],
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bolt_Wool",
+        "Quantity": 2
+      },
+      {
+        "ItemId": "Cloth_Block_Wool_Orange",
+        "Quantity": 2
+      },
+      {
+        "ItemId": "Reiryoku_Crystal",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Fibre",
+        "Quantity": 4
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Soul_Imprinting_Altar",
+        "Categories": [
+          "Soul_Deco"
+        ]
+      }
+    ]
+  },
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Furniture/Plush/Plush_Ichigo.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Furniture/Plush/Plush_Ichigo.png",
+        "Weight": 1
+      }
+    ],
+    "Group": "Wood",
+    "HitboxType": "Potion",
+    "VariantRotation": "NESW",
+    "Flags": {},
+    "Gathering": {
+      "Soft": {}
+    },
+    "BlockParticleSetId": "Dust",
+    "BlockSoundSetId": "Plushie",
+    "InteractionSoundEventId": "SFX_Plushie_Build",
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ],
+      "Up": [
+        {
+          "FaceType": "Full"
+        }
+      ],
+      "East": [
+        {
+          "FaceType": "Full"
+        }
+      ],
+      "West": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "State": {
+      "Definitions": {
+        "Squeeze": {
+          "CustomModelAnimation": "Blocks/Furniture/Plush/Plush_Squeeze.blockyanim",
+          "InteractionSoundEventId": "SFX_Plushie_Squeeze_Ichigo",
+          "InteractionHint": "interactionHints.plushie_squeeze"
+        },
+        "SqueezeAlt": {
+          "CustomModelAnimation": "Blocks/Furniture/Plush/Plush_Squeeze_Alt.blockyanim",
+          "InteractionSoundEventId": "SFX_Plushie_Squeeze_Ichigo",
+          "InteractionHint": "interactionHints.plushie_squeeze"
+        }
+      }
+    },
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "ChangeState",
+            "Changes": {
+              "default": "Squeeze",
+              "Squeeze": "SqueezeAlt",
+              "SqueezeAlt": "Squeeze"
+            }
+          }
+        ]
+      }
+    },
+    "InteractionHint": "interactionHints.plushie_squeeze",
+    "RandomRotation": "None",
+    "FlipType": "Symmetric",
+    "PlacementSettings": {
+      "RotationMode": "FacingPlayer",
+      "AllowRotationKey": true
+    }
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {
+    "Scale": 0.7,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      1,
+      -12
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Deco"
+    ],
+    "Family": [
+      "Plush",
+      "Bleach"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Items_Cloth",
+  "Scale": 1.3,
+  "Quality": "PlushieShinigami"
+}

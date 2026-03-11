@@ -1,0 +1,182 @@
+{
+  "Parent": "ZangetsuShikai_Type",
+  "TranslationProperties": {
+    "Name": "items.Shikai_Tensa_Zangetsu.name",
+    "Description": "items.Shikai_Tensa_Zangetsu.description"
+  },
+  "Model": "Items/Weapons/Shikai_Zangetsu/Shikai_Zan.blockymodel",
+  "Texture": "Items/Weapons/Shikai_Zangetsu/Shikai_Zan.png",
+  "Icon": "Icons/ItemsGenerated/Shikai_Zangetsu.png",
+  "Quality": "Shikai",
+  "ItemLevel": 40,
+  "Recipe": {
+    "TimeSeconds": 4.5,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Cobalt",
+        "Quantity": 12
+      },
+      {
+        "ItemId": "Ingredient_Fabric_Scrap_Linen",
+        "Quantity": 6
+      },
+      {
+        "ItemId": "Ingredient_Void_Essence",
+        "Quantity": 9
+      },
+      {
+        "ItemId": "Resonating_Reishi_Core"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Soul_Shikai"
+        ],
+        "Id": "Soul_Imprinting_Altar"
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "ZangetsuShikai"
+      }
+    ],
+    "KnowledgeRequired": false
+  },
+  "InteractionVars": {
+    "Swing_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 28
+            }
+          },
+          "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "ZangetsuShikai_Slash"
+              }
+            ],
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Right_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Right_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 29
+            }
+          },
+          "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "ZangetsuShikai_Slash"
+              }
+            ],
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Down_Damage": {
+      "Interactions": [
+        {
+          "WorldParticles": [
+            {
+              "SystemId": "ZangetsuShikai_Slash"
+            }
+          ],
+          "Parent": "Weapon_Sword_Primary_Swing_Down_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 30
+            }
+          },
+          "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "ZangetsuShikai_Slash"
+              }
+            ],
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Downstrike_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Downstrike_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 55
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 3
+            }
+          ],
+          "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "ZangetsuShikai_Slash"
+              }
+            ],
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Guard_Wield": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Secondary_Guard_Wield",
+          "StaminaCost": {
+            "Value": 15.56,
+            "CostType": "Damage"
+          }
+        }
+      ]
+    }
+  },
+  "MaxDurability": 300,
+  "DurabilityLossOnHit": 0.21,
+  "Scale": 1,
+  "IconProperties": {
+    "Scale": 0.27,
+    "Rotation": [
+      42,
+      111,
+      22.5
+    ],
+    "Translation": [
+      -54,
+      -56
+    ]
+  },
+  "PlayerAnimationsId": "ZangetsuShikai_Animations",
+  "MaxStack": 1,
+  "Weapon": {
+    "StatModifiers": {
+      "SignatureEnergy": [
+        {
+          "CalculationType": "Additive",
+          "Amount": 20
+        }
+      ]
+    }
+  }
+}

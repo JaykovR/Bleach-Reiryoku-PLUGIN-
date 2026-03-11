@@ -1,0 +1,15 @@
+memories.categories.Hollow.title = Пустые
+
+npcRoles.Scarak_Defender_Hollow.name = Scarak Defender Hollow
+npcRoles.Scarak_Fighter_Hollow.name = Scarak Fighter Hollow
+npcRoles.Scarak_Louse_Hollow.name = Scarak Louse Hollow
+npcRoles.Scorpion_Hollow.name = Scorpion Hollow
+npcRoles.Ghoul_Hollow.name = Ghoul Hollow
+npcRoles.Crawler_Hollow_Void.name = Void Crawler Hollow
+
+memories.Hollow.Scarak_Defender_Hollow.description = A Hollow born from a Scarak Defender. Its mask and hardened carapace make it a stubborn frontline fighter in the ranks of the corrupted.
+memories.Hollow.Scarak_Fighter_Hollow.description = A Hollow born from a Scarak Fighter. It retains the aggressive tactics of its former self, now twisted by the hunger of a Hollow.
+memories.Hollow.Scarak_Louse_Hollow.description = A Hollow born from a Scarak Louse. Small but numerous, these Hollows swarm their prey and strip it to the bone.
+memories.Hollow.Scorpion_Hollow.description = A Hollow born from a Scorpion. Its sting and claws are now vessels of corruption, striking with the chill of the void.
+memories.Hollow.Ghoul_Hollow.description = A Hollow born from a Ghoul. The restless dead, twisted further into a Hollow—a creature that feeds on the essence of the living.
+memories.Hollow.Crawler_Hollow_Void.description = A Hollow born from a Void Crawler. Already touched by the void, it has fallen fully into Hollow nature and prowls the darkness.

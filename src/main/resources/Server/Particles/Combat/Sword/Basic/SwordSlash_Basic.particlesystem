@@ -1,0 +1,14 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "SwordSlash_Impact_Cut_Template",
+      "PositionOffset": {
+        "Z": 0.1
+      }
+    },
+    {
+      "SpawnerId": "SwordSlash_Impact_Basic_Sparks"
+    }
+  ],
+  "IsImportant": false
+}

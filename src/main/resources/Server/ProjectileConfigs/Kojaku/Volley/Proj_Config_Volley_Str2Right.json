@@ -1,0 +1,13 @@
+{
+  "Parent": "Projectile_Config_Volley",
+  "LaunchForce": 90,
+  "Physics": {
+    "Gravity": 30
+  },
+  "SpawnRotationOffset": {
+    "Yaw": 1
+  },
+  "SpawnOffset": {
+    "X": 0
+  }
+}

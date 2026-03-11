@@ -1,0 +1,10 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemAnimationId": "BenihimeBeamLaunch",
+    "CameraEffect": "Sword_Swing_Vertical",
+    "ClearAnimationOnFinish": false,
+    "WaitForAnimationToFinish": true
+  },
+  "Next": "Shikai_Benihime_Primary_BenihimeBeam_Launch"
+}

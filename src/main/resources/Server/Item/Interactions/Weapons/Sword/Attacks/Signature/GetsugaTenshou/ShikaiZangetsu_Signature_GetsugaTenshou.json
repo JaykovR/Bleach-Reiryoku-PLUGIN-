@@ -1,0 +1,29 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "SignatureEnergy": 100
+  },
+  "ValueType": "Percent",
+  "Next": {
+    "Type": "Serial",
+    "Interactions": [
+      {
+        "Type": "Replace",
+        "Var": "ShikaiGetsugaTenshou_Selector",
+        "DefaultOk": true,
+        "DefaultValue": {
+          "Interactions": [
+            "ShikaiGetsugaTenshou_Selector"
+          ]
+        }
+      },
+      {
+        "Type": "ChangeStat",
+        "StatModifiers": {
+          "SignatureEnergy": -100
+        },
+        "ValueType": "Percent"
+      }
+    ]
+  }
+}

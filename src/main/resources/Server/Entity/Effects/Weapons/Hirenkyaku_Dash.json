@@ -1,0 +1,18 @@
+{
+  "Duration": 0.25,
+  "ApplicationEffects": {
+    "ModelVFXId": "Hirenkyaku_Dash",
+    "Particles": [
+      {
+        "SystemId": "Shunpo_Dash_Straight"
+      },
+      {
+        "SystemId": "Shunpo_Dash_Straight",
+        "TargetNodeName": "Hips"
+      }
+    ]
+  },
+  "OverlapBehavior": "Extend",
+  "Invulnerable": false,
+  "RemovalBehavior": "Complete"
+}

@@ -1,0 +1,14 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Sode_No_Shirayuki_Slash_Cut",
+      "PositionOffset": {
+        "Z": 0.1
+      }
+    },
+    {
+      "SpawnerId": "Sode_No_Shirayuki_Slash_Sparks"
+    }
+  ],
+  "IsImportant": false
+}

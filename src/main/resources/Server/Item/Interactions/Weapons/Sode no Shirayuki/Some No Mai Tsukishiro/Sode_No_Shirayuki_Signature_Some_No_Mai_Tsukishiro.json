@@ -1,0 +1,29 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "SignatureEnergy": 100
+  },
+  "ValueType": "Percent",
+  "Next": {
+    "Type": "Serial",
+    "Interactions": [
+      {
+        "Type": "Replace",
+        "Var": "Tsukishiro_Selector",
+        "DefaultOk": true,
+        "DefaultValue": {
+          "Interactions": [
+            "Sode_No_Shirayuki_Signature_Some_No_Mai_Tsukishiro_Movement"
+          ]
+        }
+      },
+      {
+        "Type": "ChangeStat",
+        "StatModifiers": {
+          "SignatureEnergy": -100
+        },
+        "ValueType": "Percent"
+      }
+    ]
+  }
+}

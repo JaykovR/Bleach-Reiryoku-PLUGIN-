@@ -1,0 +1,250 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "Particles": [
+      {
+        "SystemId": "Sode_No_Shirayuki_Hakuren_Charging",
+        "TargetEntityPart": "Entity",
+        "PositionOffset": {
+          "X": -0.3,
+          "Y": 0,
+          "Z": 0.5
+        },
+        "RotationOffset": {
+          "Roll": -90
+        }
+      },
+      {
+        "SystemId": "Sode_No_Shirayuki_Hakuren_Charging_Sparkles",
+        "TargetEntityPart": "Entity",
+        "PositionOffset": {
+          "Y": 1,
+          "Z": 0.5,
+          "X": -0.3
+        },
+        "RotationOffset": {
+          "Roll": -90
+        }
+      },
+      {
+        "SystemId": "Sode_No_Shirayuki_Hakuren_Charging_Sparkles",
+        "TargetEntityPart": "Entity",
+        "PositionOffset": {
+          "X": -0.3,
+          "Y": 1.5,
+          "Z": 0.5
+        },
+        "RotationOffset": {
+          "Roll": -90
+        }
+      }
+    ],
+    "ItemAnimationId": "StabDashCharging",
+    "WaitForAnimationToFinish": true,
+    "WorldSoundEventId": "SFX_Hakuren_Charge",
+    "LocalSoundEventId": "SFX_Hakuren_Charge"
+  },
+  "Next": {
+    "Type": "Simple",
+    "Effects": {
+      "Particles": [
+        {
+          "SystemId": "Sode_No_Shirayuki_Hakuren_Charging",
+          "TargetEntityPart": "Entity",
+          "PositionOffset": {
+            "X": -0.3,
+            "Y": 0,
+            "Z": 0.5
+          },
+          "RotationOffset": {
+            "Roll": -90
+          }
+        },
+        {
+          "SystemId": "Sode_No_Shirayuki_Hakuren_Charging_Sparkles",
+          "TargetEntityPart": "Entity",
+          "PositionOffset": {
+            "Y": 1,
+            "Z": 0.5,
+            "X": -0.3
+          },
+          "RotationOffset": {
+            "Roll": -90
+          }
+        },
+        {
+          "SystemId": "Sode_No_Shirayuki_Hakuren_Charging_Sparkles",
+          "TargetEntityPart": "Entity",
+          "PositionOffset": {
+            "X": -0.3,
+            "Y": 1.5,
+            "Z": 0.5
+          },
+          "RotationOffset": {
+            "Roll": -90
+          }
+        },
+        {
+          "SystemId": "Sode_No_Shirayuki_Hakuren_Charging",
+          "TargetEntityPart": "Entity",
+          "PositionOffset": {
+            "X": 0.2,
+            "Y": 0,
+            "Z": 0.5
+          },
+          "RotationOffset": {
+            "Roll": -90
+          }
+        },
+        {
+          "SystemId": "Sode_No_Shirayuki_Hakuren_Charging_Sparkles",
+          "TargetEntityPart": "Entity",
+          "PositionOffset": {
+            "Y": 1,
+            "Z": 0.5,
+            "X": 0.2
+          },
+          "RotationOffset": {
+            "Roll": -90
+          }
+        },
+        {
+          "SystemId": "Sode_No_Shirayuki_Hakuren_Charging_Sparkles",
+          "TargetEntityPart": "Entity",
+          "PositionOffset": {
+            "X": 0.2,
+            "Y": 1.5,
+            "Z": 0.5
+          },
+          "RotationOffset": {
+            "Roll": -90
+          }
+        }
+      ],
+      "ItemAnimationId": "HakurenSignaturePlace2",
+      "WaitForAnimationToFinish": true,
+      "WorldSoundEventId": "SFX_Hakuren_Charge",
+      "LocalSoundEventId": "SFX_Hakuren_Charge"
+    },
+    "Next": {
+      "Type": "Simple",
+      "Effects": {
+        "Particles": [
+          {
+            "SystemId": "Sode_No_Shirayuki_Hakuren_Charging",
+            "TargetEntityPart": "Entity",
+            "PositionOffset": {
+              "X": -0.3,
+              "Y": 0,
+              "Z": 0.5
+            },
+            "RotationOffset": {
+              "Roll": -90
+            }
+          },
+          {
+            "SystemId": "Sode_No_Shirayuki_Hakuren_Charging_Sparkles",
+            "TargetEntityPart": "Entity",
+            "PositionOffset": {
+              "Y": 1,
+              "Z": 0.5,
+              "X": -0.3
+            },
+            "RotationOffset": {
+              "Roll": -90
+            }
+          },
+          {
+            "SystemId": "Sode_No_Shirayuki_Hakuren_Charging_Sparkles",
+            "TargetEntityPart": "Entity",
+            "PositionOffset": {
+              "X": -0.3,
+              "Y": 1.5,
+              "Z": 0.5
+            },
+            "RotationOffset": {
+              "Roll": -90
+            }
+          },
+          {
+            "SystemId": "Sode_No_Shirayuki_Hakuren_Charging",
+            "TargetEntityPart": "Entity",
+            "PositionOffset": {
+              "X": 0.2,
+              "Y": 0,
+              "Z": 0.5
+            },
+            "RotationOffset": {
+              "Roll": -90
+            }
+          },
+          {
+            "SystemId": "Sode_No_Shirayuki_Hakuren_Charging_Sparkles",
+            "TargetEntityPart": "Entity",
+            "PositionOffset": {
+              "Y": 1,
+              "Z": 0.5,
+              "X": 0.2
+            },
+            "RotationOffset": {
+              "Roll": -90
+            }
+          },
+          {
+            "SystemId": "Sode_No_Shirayuki_Hakuren_Charging_Sparkles",
+            "TargetEntityPart": "Entity",
+            "PositionOffset": {
+              "X": 0.2,
+              "Y": 1.5,
+              "Z": 0.5
+            },
+            "RotationOffset": {
+              "Roll": -90
+            }
+          },
+          {
+            "SystemId": "Sode_No_Shirayuki_Hakuren_Charging",
+            "TargetEntityPart": "Entity",
+            "PositionOffset": {
+              "X": 0.5,
+              "Y": 0,
+              "Z": 0.5
+            },
+            "RotationOffset": {
+              "Roll": -90
+            }
+          },
+          {
+            "SystemId": "Sode_No_Shirayuki_Hakuren_Charging_Sparkles",
+            "TargetEntityPart": "Entity",
+            "PositionOffset": {
+              "Y": 1,
+              "Z": 0.5,
+              "X": 0.5
+            },
+            "RotationOffset": {
+              "Roll": -90
+            }
+          },
+          {
+            "SystemId": "Sode_No_Shirayuki_Hakuren_Charging_Sparkles",
+            "TargetEntityPart": "Entity",
+            "PositionOffset": {
+              "Y": 1,
+              "Z": 0.5,
+              "X": 0.5
+            },
+            "RotationOffset": {
+              "Roll": -90
+            }
+          }
+        ],
+        "ItemAnimationId": "HakurenSignaturePlace2",
+        "WaitForAnimationToFinish": true,
+        "WorldSoundEventId": "SFX_Hakuren_Charge",
+        "LocalSoundEventId": "SFX_Hakuren_Charge"
+      },
+      "Next": "Hakuren_Signature_Swing"
+    }
+  }
+}

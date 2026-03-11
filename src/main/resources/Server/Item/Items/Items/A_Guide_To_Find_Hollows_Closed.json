@@ -1,0 +1,48 @@
+{
+  "TranslationProperties": {
+    "Name": "items.items.A_Guide_To_Find_Hollows_Closed.name",
+    "Description": "items.items.A_Guide_To_Find_Hollows_Closed.description"
+  },
+  "Icon": "Icons/ItemsGenerated/A_Guide_To_Find_Hollows_Closed.png",
+  "Categories": [
+    "BleachCategory.Blocks"
+  ],
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": {
+      "Interactions": [
+        {
+          "Type": "ModifyInventory",
+          "ItemToRemove": {
+            "Id": "A_Guide_To_Find_Hollows_Closed"
+          },
+          "ItemToAdd": {
+            "Id": "A_Guide_To_Find_Hollows"
+          }
+        }
+      ]
+    }
+  },
+  "PlayerAnimationsId": "Item",
+  "IconProperties": {
+    "Scale": 0.9,
+    "Rotation": [
+      38,
+      114,
+      22.5
+    ],
+    "Translation": [
+      1,
+      -2
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Deco"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Wood",
+  "ItemLevel": 1,
+  "Model": "Items/Items/Scroll_Closed.blockymodel",
+  "Texture": "Items/Items/Scroll_Closed_Texture.png"
+}

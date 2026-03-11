@@ -1,0 +1,15 @@
+{
+  "TexturePath": "Trails/Charged_Blue.png",
+  "LifeSpan": 20,
+  "Roll": 90,
+  "Start": {
+    "Color": "#00ffe940",
+    "Width": 0.2
+  },
+  "End": {
+    "Color": "#59e9dc40",
+    "Width": 0.1
+  },
+  "RenderMode": "BlendAdd",
+  "Smooth": true
+}

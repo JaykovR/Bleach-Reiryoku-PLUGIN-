@@ -1,0 +1,20 @@
+{
+  "Type": "Simple",
+  "RunTime": 0.433,
+  "Effects": {
+    "ItemAnimationId": "SwingDownStrong",
+    "WorldSoundEventId": "SFX_Light_Melee_T2_Swing",
+    "LocalSoundEventId": "SFX_Sword_T2_Swing_Down_Local",
+    "ItemPlayerAnimationsId": "Kenpachi_Zanpakuto_BattleTranceAnimations"
+  },
+  "Next": {
+    "Type": "Replace",
+    "Var": "Swing_Down_Selector_BattleTrance",
+    "DefaultOk": true,
+    "DefaultValue": {
+      "Interactions": [
+        "Weapon_Sword_Primary_Swing_Down_Selector"
+      ]
+    }
+  }
+}

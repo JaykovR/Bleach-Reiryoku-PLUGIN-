@@ -1,0 +1,10 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Hollow_Essence_Core"
+    }
+  ],
+  "BoundingRadius": 2,
+  "CullDistance": 20,
+  "IsImportant": false
+}

@@ -1,0 +1,54 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "SignatureCharges": 1
+  },
+  "Next": {
+    "Type": "ChangeStat",
+    "Behaviour": "Set",
+    "StatModifiers": {
+      "StaminaRegenDelay": -10
+    },
+    "Next": {
+      "Type": "Replace",
+      "Var": "Kojaku_Volley_Charge",
+      "DefaultValue": {
+        "Interactions": [
+          "Kojaku_Volley_Charge"
+        ]
+      }
+    }
+  },
+  "Failed": {
+    "Type": "StatsCondition",
+    "Costs": {
+      "OkamiYa_State": 100
+    },
+    "Failed": {
+      "Type": "ChangeStat",
+      "Behaviour": "Set",
+      "StatModifiers": {
+        "StaminaRegenDelay": -10
+      },
+      "Next": {
+        "Type": "Replace",
+        "Var": "Kojaku_Primary_Shoot_Charge",
+        "DefaultValue": {
+          "Interactions": [
+            "Kojaku_Primary_Shoot_Charge"
+          ]
+        }
+      }
+    },
+    "Next": {
+      "Type": "Replace",
+      "Var": "Kojaku_OkamiYa_Charge",
+      "DefaultValue": {
+        "Interactions": [
+          "Kojaku_OkamiYa_Charge"
+        ]
+      },
+      "DefaultOk": true
+    }
+  }
+}

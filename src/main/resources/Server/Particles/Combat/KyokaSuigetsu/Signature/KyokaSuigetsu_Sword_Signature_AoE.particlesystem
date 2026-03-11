@@ -1,0 +1,19 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "KyokaSuigetsu_Sword_Signature_AoE_Bright"
+    },
+    {
+      "SpawnerId": "KyokaSuigetsu_Sword_Signature_AoE_Alpha"
+    },
+    {
+      "SpawnerId": "KyokaSuigetsu_Sword_Signature_AoE_Sparks",
+      "FixedRotation": false
+    },
+    {
+      "SpawnerId": "KyokaSuigetsu_Sword_Signature_AoE_Bright2"
+    }
+  ],
+  "BoundingRadius": 10,
+  "IsImportant": false
+}

@@ -1,0 +1,17 @@
+{
+  "Properties": {
+    "Translation": {
+      "Name": "Bleach - Face 5"
+    },
+        "Icon": "Icons/Wardrobe/Cosmetics/Faces/BL_Face5_icon.png"
+  },
+  "CosmeticSlot": "Face",
+  "Appearance": {
+    "Model": "Characters/Body_Attachments/Faces/Player_Face_Detached.blockymodel",
+    "TextureConfig": {
+      "Type": "Gradient",
+      "GrayscaleTexture": "Characters/Wardrobe/Cosmetics/Faces/Bleach_Face5.png",
+      "GradientSet": "Skin"
+    }
+  }
+}

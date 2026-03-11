@@ -1,0 +1,53 @@
+{
+  "Type": "Parallel",
+  "Interactions": [
+    {
+      "Interactions": [
+        {
+          "Type": "Replace",
+          "Var": "Signature_Volley_Effects",
+          "DefaultValue": {
+            "Interactions": [
+              "Weapon_Shortbow_Signature_Volley_Effects"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Interactions": [
+        {
+          "Parent": "Kojaku_Volley_Projectile",
+          "Config": "Proj_Config_Volley_Str1Left"
+        }
+      ]
+    },
+    {
+      "Interactions": [
+        {
+          "Parent": "Kojaku_Volley_Projectile",
+          "Config": "Proj_Config_Volley_Str1Center"
+        }
+      ]
+    },
+    {
+      "Interactions": [
+        {
+          "Parent": "Kojaku_Volley_Projectile",
+          "Config": "Proj_Config_Volley_Str1Right"
+        }
+      ]
+    },
+    {
+      "Interactions": [
+        {
+          "Type": "ChangeStat",
+          "StatModifiers": {
+            "SignatureCharges": -100
+          },
+          "ValueType": "Percent"
+        }
+      ]
+    }
+  ]
+}

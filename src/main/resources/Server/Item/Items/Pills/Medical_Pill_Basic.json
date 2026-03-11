@@ -1,0 +1,113 @@
+{
+  "TranslationProperties": {
+    "Name": "items.items.Medical_Pill_Basic.name",
+    "Description": "items.items.Medical_Pill_Basic.description"
+  },
+  "Quality": "Common",
+  "Categories": [
+    "BleachCategory.Foods"
+  ],
+  "Icon": "Icons/ItemsGenerated/Medical_Pill.png",
+  "Model": "Items/Pills/Medical_Pill.blockymodel",
+  "Texture": "Items/Pills/Medical_Pill_Texture.png",
+  "PlayerAnimationsId": {
+    "Parent": "Item",
+    "Animations": {
+      "Consume": {
+        "FirstPerson": "Characters/Animations/Items/Main_Handed/Item/Attacks/Eat/Eat_FPS.blockyanim",
+        "ThirdPerson": "Characters/Animations/Items/Main_Handed/Item/Attacks/Eat/Eat.blockyanim",
+        "Speed": 1,
+        "Looping": true
+      }
+    }
+  },
+  "IconProperties": {
+    "Scale": 2.2,
+    "Rotation": [22.5, 45, 22.5],
+    "Translation": [0, -7]
+  },
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Potion"
+  },
+  "InteractionVars": {
+    "RemoveEffect": {
+      "Interactions": [{ "Type": "Simple" }]
+    },
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": {
+            "StatModifiers": { "Health": 30 },
+            "ValueType": "Percent",
+            "OverlapBehavior": "Overwrite",
+            "Duration": 0.1,
+            "DamageCalculatorCooldown": 0
+          }
+        }
+      ]
+    },
+    "Stat_Check": {
+      "Interactions": [
+        {
+          "Parent": "Stat_Check",
+          "Costs": { "Health": 100 },
+          "ValueType": "Percent",
+          "LessThan": true
+        }
+      ]
+    },
+    "ConsumeSFX": {
+      "Interactions": [
+        {
+          "Parent": "Consume_SFX",
+          "Effects": { "LocalSoundEventId": "SFX_Consume_Pills" }
+        }
+      ]
+    },
+    "ConsumedSFX": {
+      "Interactions": [
+        {
+          "Parent": "Consumed_SFX",
+          "Effects": { "LocalSoundEventId": "SFX_Potion_Drink_Success" }
+        }
+      ]
+    }
+  },
+  "Utility": { "Compatible": false },
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Items/Pills/Medical_Pill.blockymodel",
+    "CustomModelTexture": [{ "Texture": "Items/Pills/Medical_Pill_Texture.png", "Weight": 1 }],
+    "CustomModelScale": 0.5,
+    "HitboxType": "Food_Medium",
+    "Flags": { "IsUsable": true },
+    "Gathering": { "Harvest": {}, "Soft": {} },
+    "RandomRotation": "YawStep1"
+  },
+  "Recipe": {
+    "Input": [
+      { "ItemId": "Ingredient_Life_Essence", "Quantity": 2 },
+      { "ItemId": "Plant_Flower_Tall_Purple", "Quantity": 3 },
+      { "ItemId": "Plant_Crop_Mushroom_Cap_Red", "Quantity": 4 }
+    ],
+    "TimeSeconds": 1,
+    "Output": [
+      { "ItemId": "Medical_Pill_Basic", "Quantity": 4 }
+    ],
+    "OutputQuantity": 4,
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Soul_Imprinting_Altar",
+        "Categories": ["Soul_Misc"]
+      }
+    ]
+  },
+  "Consumable": true,
+  "Tags": { "Type": ["Consumable", "Medical"] },
+  "Scale": 0.6,
+  "MaxStack": 25,
+  "DropOnDeath": true
+}

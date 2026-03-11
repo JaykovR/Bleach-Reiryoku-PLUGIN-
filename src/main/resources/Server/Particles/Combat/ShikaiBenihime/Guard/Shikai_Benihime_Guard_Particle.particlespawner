@@ -1,0 +1,45 @@
+{
+  "Particle": {
+    "Texture": "Particles/Benihime_Shield.png",
+    "Animation": {
+      "0": {
+        "Color": "#811010",
+        "Opacity": 0.304,
+        "Scale": {
+          "X": {
+            "Min": 0.7,
+            "Max": 0.7
+          },
+          "Y": {
+            "Min": 0.7,
+            "Max": 0.7
+          }
+        }
+      }
+    },
+    "InitialAnimationFrame": {
+      "Color": "#c50000",
+      "Opacity": 0.58
+    }
+  },
+  "MaxConcurrentParticles": 4,
+  "ParticleLifeSpan": {
+    "Min": 1,
+    "Max": 1
+  },
+  "SpawnRate": {
+    "Min": 4,
+    "Max": 4
+  },
+  "ParticleRotationInfluence": "Billboard",
+  "Attractors": [
+    {
+      "Position": {
+        "X": 1
+      },
+      "Radius": 1,
+      "RadialAcceleration": 3
+    }
+  ],
+  "RenderMode": "BlendLinear"
+}

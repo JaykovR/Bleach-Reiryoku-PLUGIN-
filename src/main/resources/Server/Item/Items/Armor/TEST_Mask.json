@@ -1,0 +1,63 @@
+{
+  "TranslationProperties": {
+    "Name": "Hollow Mask (Test)"
+  },
+  "Parent": "Armor_Iron_Head",
+  "ItemLevel": 10,
+  "Icon": "Icons/ItemsGenerated/TEST_Mask.png",
+  "Model": "Items/Armors/Mask/Mask_Template - Copy.blockymodel",
+  "Armor": {
+    "ArmorSlot": "Head",
+    "BaseDamageResistance": 0,
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.036,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.036,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 5,
+          "CalculationType": "Additive"
+        }
+      ]
+    },
+    "CosmeticsToHide": [
+      "HeadAccessory"
+    ]
+  },
+  "MaxDurability": 80,
+  "Tags": {
+    "Type": [
+      "Armor"
+    ],
+    "Family": [
+      "Copper"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Armor_Heavy",
+  "DurabilityLossOnHit": 0.5,
+  "Quality": "Template",
+  "Texture": "Items/Armors/Mask/texture - Copy.png",
+  "IconProperties": {
+    "Scale": 0.7,
+    "Rotation": [
+      0,
+      0,
+      0
+    ],
+    "Translation": [
+      0,
+      10
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "QualityValue": 4,
+  "ItemTooltipTexture": "UI/ItemQualities/Tooltips/ItemTooltipBankai.png",
+  "ItemTooltipArrowTexture": "UI/ItemQualities/Tooltips/ItemTooltipBankaiArrow.png",
+  "SlotTexture": "UI/ItemQualities/Slots/SlotBankai.png",
+  "BlockSlotTexture": "UI/ItemQualities/Slots/SlotBankai.png",
+  "SpecialSlotTexture": "UI/ItemQualities/Slots/SlotBankai.png",
+  "TextColor": "#B3375E",
+  "VisibleQualityLabel": true,
+  "RenderSpecialSlot": true,
+  "ItemEntityConfig": {
+    "ParticleSystemId": "Drop_Bankai"
+  },
+  "LocalizationKey": "qualities.qualities.Bankai"
+}

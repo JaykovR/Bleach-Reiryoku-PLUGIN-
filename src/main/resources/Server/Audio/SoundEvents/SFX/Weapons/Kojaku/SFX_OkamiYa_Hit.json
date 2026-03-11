@@ -1,0 +1,17 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Weapons/Bow/quincy_bow_arrow_hit_Strong.ogg",
+        "Sounds/Weapons/Bow/quincy_bow_arrow_hit.ogg"
+      ],
+      "RandomSettings": {
+        "MinPitch": -1.8240371213405997,
+        "MaxPitch": 1.6500422849992202
+      }
+    }
+  ],
+  "Volume": -8.92,
+  "PreventSoundInterruption": true,
+  "Parent": "SFX_Attn_Loud"
+}

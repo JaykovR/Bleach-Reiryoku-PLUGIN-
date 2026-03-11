@@ -1,0 +1,8 @@
+{
+  "Type": "LaunchProjectile",
+  "RunTime": 0.5,
+  "ProjectileId": "Shikai_Benihime_BenihimeBeamProj",
+  "Effects": {
+    "LocalSoundEventId": "SFX_Benihime_Beam_Launch"
+  }
+}

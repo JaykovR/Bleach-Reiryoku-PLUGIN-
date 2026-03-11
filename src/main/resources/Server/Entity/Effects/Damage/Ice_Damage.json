@@ -1,0 +1,42 @@
+{
+  "ApplicationEffects": {
+    "EntityBottomTint": "#ececec",
+    "EntityTopTint": "#80ecff",
+    "Particles": [
+      {
+        "SystemId": "Block_Hit_Ice",
+        "PositionOffset": {
+          "Y": 1
+        }
+      },
+      {
+        "SystemId": "Effect_Snow",
+        "PositionOffset": {
+          "Y": 0
+        }
+      }
+    ]
+  },
+  "Duration": 1,
+  "OverlapBehavior": "Overwrite",
+  "Debuff": false,
+  "DamageResistance": {
+    "Ice": [
+      {
+        "Amount": -3,
+        "CalculationType": "Additive"
+      }
+    ]
+  },
+  "DamageCalculator": {
+    "BaseDamage": {
+      "Ice_Damage": 10
+    },
+    "SequentialModifierStep": 3,
+    "SequentialModifierMinimum": 1
+  },
+  "DamageCalculatorCooldown": 2,
+  "DamageEffects": {
+    "StaminaDrainMultiplier": 2
+  }
+}

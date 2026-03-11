@@ -1,0 +1,17 @@
+{
+  "Properties": {
+    "Translation": {
+      "Name": "Bleach - Face 6"
+    },
+        "Icon": "Icons/Wardrobe/Cosmetics/Faces/BL_Face6_icon.png"
+  },
+  "CosmeticSlot": "Face",
+  "Appearance": {
+    "Model": "Characters/Body_Attachments/Faces/Player_Face_Detached.blockymodel",
+    "TextureConfig": {
+      "Type": "Gradient",
+      "GrayscaleTexture": "Characters/Wardrobe/Cosmetics/Faces/Bleach_Face6.png",
+      "GradientSet": "Skin"
+    }
+  }
+}

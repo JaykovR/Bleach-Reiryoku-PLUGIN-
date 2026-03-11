@@ -1,0 +1,37 @@
+{
+  "Type": "Chaining",
+  "ChainingAllowance": 2,
+  "ChainId": "Sword_Swings",
+  "Next": [
+    {
+      "Type": "Replace",
+      "DefaultOk": true,
+      "Var": "Swing_Left_BattleTrance",
+      "DefaultValue": {
+        "Interactions": [
+          "KenpachiZanpakuto_Primary_Swing_Left_BattleTrance"
+        ]
+      }
+    },
+    {
+      "Type": "Replace",
+      "DefaultOk": true,
+      "Var": "Swing_Right_BattleTrance",
+      "DefaultValue": {
+        "Interactions": [
+          "KenpachiZanpakuto_PrimaryBattleTrance_Swing_Right"
+        ]
+      }
+    },
+    {
+      "Type": "Replace",
+      "DefaultOk": true,
+      "Var": "Swing_Down_BattleTrance",
+      "DefaultValue": {
+        "Interactions": [
+          "KenpachiZanpakuto_Primary_BattleTrance_Swing_Down"
+        ]
+      }
+    }
+  ]
+}

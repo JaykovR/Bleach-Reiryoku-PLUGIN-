@@ -1,0 +1,23 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Kenpachi_Battle_Trance_Sparkles",
+      "PositionOffset": {
+        "X": -0.2,
+        "Z": 0
+      },
+      "FixedRotation": false,
+      "RotationOffset": {
+        "Roll": 90
+      }
+    },
+    {
+      "SpawnerId": "Kenpachi_War_Incarnate_Aura_Spawner",
+      "RotationOffset": {
+        "Roll": 90
+      }
+    }
+  ],
+  "LifeSpan": 15,
+  "IsImportant": true
+}

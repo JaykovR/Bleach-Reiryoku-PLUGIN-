@@ -1,0 +1,19 @@
+{
+  "Type": "Simple",
+  "RunTime": 0.117,
+  "Effects": {
+    "ItemAnimationId": "SwingDownExt",
+    "WorldSoundEventId": "SFX_Sword_T2_Swing_Down",
+    "LocalSoundEventId": "SFX_Sword_T2_Swing_Down_Local"
+  },
+  "Next": {
+    "Type": "Replace",
+    "Var": "Swing_Ext_Down_Selector",
+    "DefaultOk": true,
+    "DefaultValue": {
+      "Interactions": [
+        "Hozukimaru_Primary_Ext_Swing_Down_Selector"
+      ]
+    }
+  }
+}

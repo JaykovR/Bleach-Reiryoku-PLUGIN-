@@ -1,0 +1,114 @@
+{
+  "Type": "Charging",
+  "DisplayProgress": false,
+  "HorizontalSpeedMultiplier": 0.8,
+  "Effects": {
+    "ItemAnimationId": "StabDashCharging",
+    "Particles": [
+      {
+        "RotationOffset": {
+          "Pitch": 0,
+          "Roll": -90,
+          "Yaw": 0
+        },
+        "SystemId": "Sode_No_Shirayuki_Hakuren_Charging",
+        "TargetEntityPart": "Entity",
+        "PositionOffset": {
+          "X": -0.2,
+          "Y": 0,
+          "Z": 0.5
+        }
+      },
+      {
+        "SystemId": "Sode_No_Shirayuki_Hakuren_Charging_Sparkles",
+        "TargetEntityPart": "Entity",
+        "PositionOffset": {
+          "Y": 1,
+          "Z": 0.5,
+          "X": -0.2
+        },
+        "RotationOffset": {
+          "Roll": -90
+        }
+      },
+      {
+        "SystemId": "Sode_No_Shirayuki_Hakuren_Charging_Sparkles",
+        "TargetEntityPart": "Entity",
+        "PositionOffset": {
+          "X": -0.2,
+          "Y": 1.5,
+          "Z": 0.5
+        },
+        "RotationOffset": {
+          "Roll": -90
+        }
+      }
+    ],
+    "ClearAnimationOnFinish": false,
+    "WaitForAnimationToFinish": true,
+    "LocalSoundEventId": "SFX_Hakuren_Charge",
+    "ClearSoundEventOnFinish": false
+  },
+  "Next": {
+    "0": "Weapon_Sword_Primary_Chain",
+    "0.65": {
+      "Type": "Serial",
+      "Interactions": [
+        {
+          "Type": "Replace",
+          "Var": "Thrust_StaminaCost",
+          "DefaultOk": true,
+          "DefaultValue": {
+            "Interactions": [
+              {
+                "Type": "ApplyEffect",
+                "EffectId": "Stamina_Broken_Immune"
+              },
+              {
+                "Type": "ChangeStat",
+                "StatModifiers": {
+                  "Stamina": -4
+                }
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Replace",
+          "Var": "Thrust_StaminaRegenDelay",
+          "DefaultOk": true,
+          "DefaultValue": {
+            "Interactions": [
+              {
+                "Type": "ChangeStat",
+                "Behaviour": "Set",
+                "StatModifiers": {
+                  "StaminaRegenDelay": -2
+                }
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Simple",
+          "RunTime": 0.05,
+          "Next": {
+            "Type": "Serial",
+            "Interactions": [
+              {
+                "Type": "Replace",
+                "Var": "Thrust_Selector",
+                "DefaultOk": true,
+                "DefaultValue": {
+                  "Interactions": [
+                    "Sode_No_Shirayuki_Primary_Hakuren_Selector"
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

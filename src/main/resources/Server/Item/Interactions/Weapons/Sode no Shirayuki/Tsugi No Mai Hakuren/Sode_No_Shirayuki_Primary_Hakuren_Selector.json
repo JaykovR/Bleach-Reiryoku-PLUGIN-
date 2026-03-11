@@ -1,0 +1,12 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Sode_No_Shirayuki_Animations",
+    "ItemAnimationId": "StabDashCharged",
+    "CameraEffect": "Sword_Swing_Vertical",
+    "ClearAnimationOnFinish": false,
+    "WaitForAnimationToFinish": true,
+    "LocalSoundEventId": "SFX_Hakuren_Launch"
+  },
+  "Next": "Sode_No_Shirayuki_Primary_Hakuren_Launch"
+}

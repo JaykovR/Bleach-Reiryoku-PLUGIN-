@@ -1,0 +1,19 @@
+{
+	"Spawners": [
+		{
+			"SpawnerId": "Kenpachi_Zanpakuto_Sword_Signature_AoE_Bright"
+		},
+		{
+			"SpawnerId": "Kenpachi_Zanpakuto_Sword_Signature_AoE_Alpha"
+		},
+		{
+			"SpawnerId": "Kenpachi_Zanpakuto_Sword_Signature_AoE_Sparks",
+			"FixedRotation": false
+		},
+		{
+			"SpawnerId": "Kenpachi_Zanpakuto_Sword_Signature_AoE_Bright2"
+		}
+	],
+	"BoundingRadius": 10,
+	"IsImportant": false
+}

@@ -1,0 +1,54 @@
+{
+  "$Comment": "The base wrapper for the dagger secondary",
+  "Type": "StatsCondition",
+  "Costs": {
+    "Stamina": 1.51
+  },
+  "Next": {
+    "Type": "Serial",
+    "$Comment": "Effects and VFX/SFX would be applied here in the Serial interaction chain",
+    "Interactions": [
+      {
+        "Type": "ApplyEffect",
+        "EffectId": "Shunpo_Dash"
+      },
+      {
+        "Type": "Simple",
+        "RunTime": 0,
+        "Effects": {}
+      },
+      {
+        "Type": "ChangeStat",
+        "StatModifiers": {
+          "Stamina": -1.5
+        },
+        "ValueType": "Absolute"
+      },
+      {
+        "Type": "ChangeStat",
+        "StatModifiers": {
+          "StaminaRegenDelay": -0.7
+        },
+        "Behaviour": "Set",
+        "ValueType": "Absolute"
+      },
+      {
+        "$Comment": "Each of these dashes is a Serial interaction with ApplyForce and Daggers_Dash_Effect",
+        "Type": "MovementCondition",
+        "Failed": "Shunpo_Forward",
+        "Forward": "Shunpo_Forward",
+        "Back": "Shunpo_Backward",
+        "Left": "Shunpo_Left",
+        "Right": "Shunpo_Right",
+        "ForwardLeft": "Shunpo_Forward_Left",
+        "ForwardRight": "Shunpo_Forward_Right",
+        "BackLeft": "Shunpo_Backward_Left",
+        "BackRight": "Shunpo_Backward_Right"
+      }
+    ]
+  },
+  "Failed": "Stamina_Bar_Flash",
+  "Effects": {
+    "LocalSoundEventId": "SFX_Shunpo"
+  }
+}

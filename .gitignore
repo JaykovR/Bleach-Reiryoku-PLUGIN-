@@ -16,4 +16,3 @@ pom.xml.versionsBackup
 # Hytale
 server/*
 devserver/
-src/main/resources

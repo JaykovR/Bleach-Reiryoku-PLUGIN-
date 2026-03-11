@@ -1,0 +1,23 @@
+{
+  "Type": "Variant",
+  "Reference": "Template_Scarak_Defender_Hollow",
+  "Modify": {
+    "Appearance": "Scarak_Defender_Hollow",
+    "Attack": "Scarak_Defender_Bite",
+    "DropList": "Drop_Defender_Hollow",
+    "FollowPath": false,
+    "MaxHealth": 300,
+    "IsMemory": true,
+    "MemoriesCategory": "Hollow",
+    "MemoriesNameOverride": "Scarak_Defender_Hollow",
+    "NameTranslationKey": {
+      "Compute": "NameTranslationKey"
+    }
+  },
+  "Parameters": {
+    "NameTranslationKey": {
+      "Value": "mobs.Scarak_Defender_Hollow.name",
+      "Description": "Translation key for NPC name display"
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "Type": "Selector",
+  "RunTime": 0.1,
+  "Effects": {
+    "Trails": [
+      {
+        "PositionOffset": {
+          "X": 1.3,
+          "Y": 0,
+          "Z": 0
+        },
+        "TargetNodeName": "Handle",
+        "TrailId": "Medium_Sword_Strong",
+        "RotationOffset": {
+          "Roll": 90.0
+        }
+      },
+      {
+        "PositionOffset": {
+          "X": 1.7,
+          "Y": 0,
+          "Z": 0
+        },
+        "TargetNodeName": "Handle",
+        "TrailId": "Sword_Distortion",
+        "RotationOffset": {
+          "Roll": 90.0
+        }
+      }
+    ],
+    "CameraEffect": "Sword_Swing_Vertical",
+    "ItemAnimationId": "SkullCrusherSwing",
+    "WorldSoundEventId": "SFX_CrushingRegret_Swing",
+    "LocalSoundEventId": "SFX_CrushingRegret_Swing",
+    "ItemPlayerAnimationsId": "Kenpachi_Zanpakuto_Animations",
+    "Particles": [
+      {
+        "SystemId": "Kenpachi_Battle_Trance_Aura",
+        "TargetEntityPart": "Entity",
+        "Scale": 3
+      },
+      {
+        "SystemId": "SkullCrusher_Slash",
+        "TargetEntityPart": "Entity",
+        "TargetNodeName": "Hip",
+        "PositionOffset": {
+          "Y": 1.5,
+          "Z": 0.5
+        },
+        "RotationOffset": {
+          "Pitch": 0
+        },
+        "Scale": 1
+      }
+    ]
+  },
+  "Selector": {
+    "Id": "Stab",
+    "StartDistance": 0,
+    "EndDistance": 6,
+    "TestLineOfSight": true
+  },
+  "HitBlock": {
+    "Interactions": [
+      {
+        "Type": "Replace",
+        "Var": "Skull_Crusher_HitBlock",
+        "DefaultOk": true,
+        "DefaultValue": {
+          "Interactions": [
+            "Block_Break_Adventure"
+          ]
+        }
+      }
+    ]
+  },
+  "Next": {
+    "Type": "Simple",
+    "$Comment": "Pad the interaction length",
+    "RunTime": 0.25
+  },
+  "HitEntity": {
+    "Interactions": [
+      {
+        "Type": "Explode",
+        "Config": {
+          "DamageBlocks": true,
+          "BlockDamageRadius": 4
+        }
+      },
+      {
+        "Type": "Replace",
+        "DefaultValue": "Root_KenpachiZanpakuto_Signature_Skuill_Crusher_Damage",
+        "Var": "SkullCrusher_Damage",
+        "DefaultOk": true
+      }
+    ]
+  },
+  "HorizontalSpeedMultiplier": 0
+}

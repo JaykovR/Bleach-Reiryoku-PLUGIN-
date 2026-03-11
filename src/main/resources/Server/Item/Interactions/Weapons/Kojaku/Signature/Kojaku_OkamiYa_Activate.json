@@ -1,0 +1,20 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "SignatureEnergy": 100
+  },
+  "ValueType": "Percent",
+  "Next": {
+    "Type": "ChangeStat",
+    "StatModifiers": {
+      "SignatureEnergy": -100,
+      "OkamiYa_State": 100
+    },
+    "ValueType": "Percent",
+    "Next": {
+      "Type": "Replace",
+      "DefaultOk": true,
+      "Var": "a"
+    }
+  }
+}

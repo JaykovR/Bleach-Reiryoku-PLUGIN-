@@ -1,0 +1,19 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "TrueBankaiZangetsu_Signature_Whirlwind_Spin"
+    },
+    {
+      "SpawnerId": "TrueBankaiZangetsu_Signature_Whirlwind_Spin"
+    },
+    {
+      "SpawnerId": "TrueBankaiZangetsu_Signature_Whirlwind_Spin_Soft"
+    },
+    {
+      "SpawnerId": "TrueBankaiZangetsu_Signature_Whirlwind_Sparks",
+      "FixedRotation": false
+    }
+  ],
+  "BoundingRadius": 10,
+  "IsImportant": false
+}

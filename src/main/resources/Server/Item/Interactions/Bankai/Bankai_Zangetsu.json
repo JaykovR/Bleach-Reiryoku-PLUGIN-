@@ -1,0 +1,6 @@
+{
+  "Type": "ModifyInventory",
+  "ItemToRemove": {
+    "Id": "ZangetsuShikai"
+  }
+}

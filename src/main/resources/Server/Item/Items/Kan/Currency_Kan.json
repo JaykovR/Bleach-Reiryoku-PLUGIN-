@@ -1,0 +1,56 @@
+{
+  "TranslationProperties": {
+    "Name": "items.items.Currency_Kan.name",
+    "Description": "items.items.Currency_Kan.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Currency_Kan.png",
+  "Quality": "Common",
+  "Categories": [
+    "BleachCategory.Deco"
+  ],
+  "Model": "Items/Kan/Coin.blockymodel",
+  "Texture": "Items/Kan/Currency_Kan.png",
+  "PlayerAnimationsId": "Item",
+  "IconProperties": {
+    "Scale": 1.5,
+    "Rotation": [0, 30, 0],
+    "Translation": [0, -7]
+  },
+  "Tags": {
+    "Type": ["Ingredient", "Currency"]
+  },
+  "ItemEntity": {
+    "ParticleSystemId": null
+  },
+  "Scale": 0.6,
+  "ItemSoundSetId": "ISS_Items_Gems",
+  "MaxStack": 100,
+  "DropOnDeath": true,
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Reiryoku_Crystal",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Bar_Silver",
+        "Quantity": 1
+      }
+    ],
+    "TimeSeconds": 1,
+    "Output": [
+      {
+        "ItemId": "Currency_Kan",
+        "Quantity": 10
+      }
+    ],
+    "OutputQuantity": 10,
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Soul_Imprinting_Altar",
+        "Categories": ["Soul_Misc"]
+      }
+    ]
+  }
+}

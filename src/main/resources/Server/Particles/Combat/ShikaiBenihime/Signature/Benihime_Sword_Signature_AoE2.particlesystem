@@ -1,0 +1,11 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Benihime_Sword_Signature_AoE_Bright"
+    },
+    {
+      "SpawnerId": "Benihime_Sword_Signature_AoE_Alpha"
+    }
+  ],
+  "BoundingRadius": 10
+}

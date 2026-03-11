@@ -1,0 +1,17 @@
+{
+  "Type": "Charging",
+  "DisplayProgress": false,
+  "Next": {
+    "0": "TensaZangetsu_Primary_Chain",
+    "0.2": {
+      "Type": "Replace",
+      "Var": "Thrust_Stamina",
+      "DefaultOk": true,
+      "DefaultValue": {
+        "Interactions": [
+          "TensaZangetsu_Primary_Thrust_StaminaCondition"
+        ]
+      }
+    }
+  }
+}

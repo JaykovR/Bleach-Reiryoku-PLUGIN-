@@ -1,0 +1,24 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "Stamina": 0.1
+  },
+  "Failed": "Shikai_Primary_Chain",
+  "Next": {
+    "Type": "ChangeStat",
+    "Behaviour": "Set",
+    "StatModifiers": {
+      "StaminaRegenDelay": -3
+    },
+    "Next": {
+      "Type": "Replace",
+      "Var": "Downstrike",
+      "DefaultOk": true,
+      "DefaultValue": {
+        "Interactions": [
+          "Shikai_Primary_Downstrike"
+        ]
+      }
+    }
+  }
+}

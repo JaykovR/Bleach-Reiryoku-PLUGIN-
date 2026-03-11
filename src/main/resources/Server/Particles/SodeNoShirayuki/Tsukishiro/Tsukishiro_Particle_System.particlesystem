@@ -1,0 +1,13 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Tsukishiro_Particle",
+      "RotationOffset": {
+        "Roll": 90
+      },
+      "PositionOffset": {
+        "Y": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "ApplicationEffects": {
+    "Particles": [
+      {
+        "SystemId": "Kenpachi_Battle_Trance_Aura"
+      }
+    ],
+    "HorizontalSpeedMultiplier": 1.3,
+    "EntityBottomTint": "#dbc71b",
+    "EntityTopTint": "#f0da86",
+    "ScreenEffect": "ScreenEffects/Kenpachi_BattleTrance.png",
+    "WorldSoundEventId": "SFX_Reiatsu"
+  },
+  "Duration": 15,
+  "Name": "Battle Trance",
+  "StatusEffectIcon": "UI/StatusEffects/Battle_Trance.png",
+  "DamageResistance": {
+    "Bludgeoning": [
+      {
+        "CalculationType": "Multiplicative",
+        "Amount": 0.3
+      }
+    ],
+    "Slashing": [
+      {
+        "CalculationType": "Multiplicative",
+        "Amount": 0.5
+      }
+    ],
+    "Physical": [
+      {
+        "CalculationType": "Multiplicative",
+        "Amount": 0.4
+      }
+    ]
+  },
+  "RemovalBehavior": "Complete",
+  "ValueType": "Absolute",
+  "OverlapBehavior": "Ignore"
+}

@@ -1,0 +1,65 @@
+Bankai_Tensa_Zangetsu.name = Bankai - Tensa Zangetsu
+Bankai_Tensa_Zangetsu.description = Bankai – Tensa Zangetsu es una espada espiritual legendaria. Su filo negro con cadena concentra la energía del portador y libera la devastadora ola <i><b>Getsuga Tensho — «Colmillo lunar que atraviesa los cielos»</b></i>.
+Shikai_Tensa_Zangetsu.name = Shikai - Zangetsu
+Shikai_Tensa_Zangetsu.description = Zangetsu es una enorme espada espiritual, permanentemente en estado liberado. La hoja negra envuelta en tela viviente potencia a su portador, desatando oleadas de <i><b>Getsuga Tensho</b></i> y sirviendo de escudo ante ataques físicos y energéticos.
+ReiryokuCrystal.name = Reiryoku Crystal
+ReiryokuCrystal.description = Cristal de energía espiritual pura, concentración de numerosas almas. Despierta y hace evolucionar un Zanpakuto.
+Sealed_Zangetsu.name = Sealed - Zangetsu
+Sealed_Zangetsu.description = La espada sellada antes del despertar. Guarda un potencial infinito, aunque dormido.
+Asauchi.name = Asauchi
+Asauchi.description = Una plantilla espiritual en blanco. La base para una futura Zanpakuto, en espera del sello de su dueño.
+Sode_No_Shirayuki.name = Shikai – Sode no Shirayuki
+Sode_No_Shirayuki.description = Una elegante katana de hielo. Su comando de liberación, \n<i><b>«Baila, Sode no Shirayuki»</b></i>, ordena el frío y la belleza.
+Shikai_Wabisuke.name = Shikai – Wabisuke
+Shikai_Wabisuke.description = Una espada elegantemente curvada cuya naturaleza traicionera contrasta con su refinamiento externo. Su golpe impone una maldición de peso sobre el objetivo. Con cada parada o bloqueo, la carga de la víctima se duplica sin piedad, hasta que el oponente queda quebrado y clavado al suelo por su propia carga insoportable. Comando de liberación: <i><b>«Doblegate, Wabisuke»</b></i>.
+Shikai_Hozukimaru.name = Shikai – Hozukimaru
+Shikai_Hozukimaru.description = Una tosca y directa lanza de guerra. Su forma simple y sin adornos oculta un feroz poder destructivo y una durabilidad inquebrantable. En su interior late un potencial dormido de transformación, capaz de desbloquear su forma verdadera, aún más formidable.
+Shikai_Kyoka_Suigetsu.name = Shikai – Kyoka Suigetsu
+Shikai_Kyoka_Suigetsu.description = Una katana discreta, eternamente en estado liberado. Su verdadero poder no es el acero, sino el dominio sensorial absoluto. Quienes presencian su ritual de liberación quedan atrapados para siempre en su hipnosis perfecta, viendo un mundo moldeado por la voluntad del portador. Un arma que conquista la realidad mediante la percepción.
+Sealed_Kenpachi_Zanpakuto.name = Sellado – Zanpakuto de Kenpachi
+Sealed_Kenpachi_Zanpakuto.description = Una enorme y tosca cuchilla oxidada. Es el estado sellado de un Zanpakuto perteneciente a un guerrero de presión espiritual monstruosa. Su forma irregular y sin refinar, y sus vendas harapientas son limitaciones autoimpuestas que permiten al portador saborear más tiempo la emoción de la batalla. El verdadero poder en su interior aguarda dormido, a la espera de ser reconocido.
+Shikai_Benihime.name = Shikai – Benihime
+Shikai_Benihime.description = Un sable elegante y ligeramente curvado con motivos carmesí. Con la orden <i><b>«Despierta, Benihime»</b></i> obtiene el poder de lanzar precisos <i>Disparos Carmesí</i>, erigir escudos hexagonales casi impenetrables y tejer redes afiladas de energía espiritual. Una hoja versátil perfecta tanto para el ataque calculado como para la defensa absoluta.
+True_Shikai_Zangetsu.name = Verdadero Shikai – Zangetsu
+True_Shikai_Zangetsu.description = El verdadero Shikai de Ichigo, manifestado como dos hojas negras distintas. El enorme cuchillón encarna sus poderes fusionados de Shinigami y Hollow, mientras que el cuchillo más pequeño representa su herencia Quincy. Comando de liberación: <i><b>«Uníos y proteged, Zangetsu»</b></i>. Las hojas pueden disparar <i>Getsuga Tensho</i> por separado o combinarlas en una devastadora onda en forma de cruz, <i><b>Getsuga Jujisho</b></i>.
+
+Kojaku_Bow.name = Arco Quincy - Kojaku
+Kojaku_Bow.description = El arco básico utilizable por todos los Quincy. Se forma reuniendo Reishi en la <i>Cruz Quincy</i> de la mano derecha. Las flechas que lanza también están hechas de Reishi. Permite destruir Hollows con ataques a distancia. Un arma inicial perfecta para un Quincy novato.
+
+Four_Point_Quincy_Cross.name = Cruz Quincy de 4 puntas
+Four_Point_Quincy_Cross.description = Una cruz de cuatro puntas la cual ayuda a los Quincy a manifestar sus habilidades otorgandoles MP mientras esta equipada en su mano secundaria. Esencial para mantener tu poder espiritual.
+
+Soul_Imprinting_Altar.name = Altar de Impresión de Almas
+Soul_Imprinting_Altar.description = Una sagrada estación de trabajo donde el alma del portador se fusiona con la Asauchi. Mediante meditación profunda y concentración de energía espiritual (Reiryoku), se sientan las bases de la futura Zanpakuto. Este altar se utiliza no solo para el despertar inicial, sino también para las etapas posteriores de evolución de la espada — desde Shikai hasta la revelación definitiva, Bankai.
+
+Shinigami_Robes.name = Túnica de Shinigami - Shihakusho
+Shinigami_Robes.description = El uniforme estándar de Shinigami vestido por todos los miembros del Gotei 13.
+Shinigami_Robes_Sleeveless.name = Tunica de Shinigami - Sin mangas
+Shinigami_Robes_Sleeveless.description = Un <i>Shihakusho</i> modificado para quienes desean más libertad de movimiento. Se considera más bien una modificación cosmética del uniforme estándar.
+Shinigami_Robes_Captain.name = Túnica de Shinigami - Capitán
+Shinigami_Robes_Captain.description = El abrigo blanco que llevan los Capitanes sobre su uniforme estándar. Proporciona una protección espiritual superior y denota el rango más alto en el Gotei 13.
+Shinigami_Robes_OpenShoulder.name = Túnica de Shinigami - Hombro Descubierto
+Shinigami_Robes_OpenShoulder.description = Un <i>Shihakusho</i> modificado que sirve el mismo proposito que el sin mangas mientras que mantiene una apariencia mas elegante y ceremonial.
+
+Resonating_Reishi_Core.name = Núcleo resonante de Reishi
+Resonating_Reishi_Core.description = Este núcleo vibra a una frecuencia que imita la tuya. Es una extensión de tu alma. Listo para asignarse a una espada y despertarla.
+Transcendent_Essence.name = Esencia Trascendental
+Transcendent_Essence.description = Un paradójico remolino de poder absoluto. Los límites entre tu espíritu y el mundo físico se han disuelto en este único punto pulsante. En su resplandor yace la verdadera forma de tu alma, clamando por ser liberada.
+Hollow_Essence.name = Esencia de Hollow
+Hollow_Essence.description = Un remanente cristalizado del alma distorsionada de un Hollow derrotado. Late con un reiryoku inestable.
+
+
+items.Currency_Kan.name = Kan
+items.Currency_Kan.description = La moneda estándar de la Sociedad de Almas. Un Kan representa el valor de un fardo de arroz en el mundo de los vivos. Su peso y sonido están sintonizados con la frecuencia del reishi, lo que hace imposible falsificarlo. Para un comerciante del Rukongai, esta moneda es una fortuna; para un capitán, simple calderilla.
+
+items.Medical_Pill_Basic.name = Píldora médica básica
+items.Medical_Pill_Basic.description = Píldora estándar del cuerpo médico de la 4.ª División. Hecha de hierbas medicinales concentradas y un rastro de energía curativa kaido.\n\nRestaura <color is="#ffffff">30%</color> de salud al instante.
+
+items.Kaido_Infused_Pill.name = Píldora de restauración con Kaido
+items.Kaido_Infused_Pill.description = Obra maestra de la investigación médica de la 4.ª División. No es una simple píldora, sino una cápsula sólida de hechizos curativos kaido en suspensión.\n\nRestaura <color is="#ffffff">100%</color> de salud al instante y otorga:\n\n• <color is="#ffffff">Regeneración de salud II</color>\n\nDuración: <color is="#ffffff">0:30</color>
+
+items.A_Guide_To_Find_Hollows_Closed.name = Guía para encontrar Hollows - Cerrada
+items.A_Guide_To_Find_Hollows_Closed.description = <color is="#ffffff"><b>Clic derecho</b></color> mientras sostienes este pergamino para abrirlo. Compilado por el Instituto de Investigación y Desarrollo de la 12ª División.
+
+items.A_Guide_To_Find_Hollows.name = Guía para encontrar Hollows
+items.A_Guide_To_Find_Hollows.description = <i>Compilado por el Instituto de Investigación y Desarrollo de la 12ª División</i>. La actividad Hollow no ocurre durante las horas de luz. Las manifestaciones solo se han registrado después del anochecer, cuando la presión espiritual se vuelve inestable. Además, no se han detectado firmas Hollow dentro de la Zona 1. Los operativos que busquen Hollows deben abandonar la Zona 1 y realizar sus patrullas durante la noche.

@@ -1,0 +1,29 @@
+{
+    "Type": "Simple",
+    "RunTime": 0.25,
+    "Effects" :{
+         "Particles": [
+      {
+        "SystemId": "Shikai_GetsugaTenshou_Slash",
+        "TargetEntityPart": "Entity",
+        "TargetNodeName": "Hip",
+        "PositionOffset": {
+          "Y": 1.5,
+          "Z": 0.5
+        },
+        "RotationOffset": {
+          "Pitch": 0
+        }
+      }
+    ]
+    },
+    "Next": {
+    "Type": "Replace",
+    "DefaultValue": {
+      "Interactions": [
+        "ShikaiGetsugaTenshou_Launch"
+      ]
+    },
+    "Var": "ShikaiGetsugaTenshou_Summon_Launch"
+  }
+}

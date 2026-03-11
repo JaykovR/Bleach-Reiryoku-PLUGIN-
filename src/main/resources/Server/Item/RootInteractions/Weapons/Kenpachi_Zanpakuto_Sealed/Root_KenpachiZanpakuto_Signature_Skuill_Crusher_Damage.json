@@ -1,0 +1,10 @@
+{
+  "RequireNewClick": true,
+  "ClickQueuingTimeout": 0.2,
+  "Interactions": [
+    "KenpachiZanpakuto_Signature_Skull_Crusher_Damage"
+  ],
+  "Cooldown": {
+    "Cooldown": 0.25
+  }
+}

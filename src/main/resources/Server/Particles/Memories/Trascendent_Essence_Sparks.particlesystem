@@ -1,0 +1,13 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Trascendent_Essence_Core"
+    },
+    {
+      "SpawnerId": "Memory_Catch_FlashSpark"
+    }
+  ],
+  "BoundingRadius": 2,
+  "CullDistance": 20,
+  "IsImportant": false
+}

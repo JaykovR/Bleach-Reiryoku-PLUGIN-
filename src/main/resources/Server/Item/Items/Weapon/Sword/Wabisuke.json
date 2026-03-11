@@ -1,0 +1,182 @@
+{
+  "Parent": "Wabisuke_Weapon_Type",
+  "TranslationProperties": {
+    "Name": "items.Shikai_Wabisuke.name",
+    "Description": "items.Shikai_Wabisuke.description"
+  },
+  "Model": "Items/Weapons/Wabisuke/Wabisuke.blockymodel",
+  "Texture": "Items/Weapons/Wabisuke/Wabisuke_Texture.png",
+  "Icon": "Icons/ItemsGenerated/Wabisuke.png",
+  "Quality": "Shikai",
+  "ItemLevel": 35,
+  "MaxDurability": 300,
+  "InteractionVars": {
+    "Swing_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 17
+            }
+          },
+          "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "SwordSlash_Basic"
+              }
+            ],
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Right_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Right_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 16
+            }
+          },
+          "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "SwordSlash_Basic"
+              }
+            ],
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Down_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Wabisuke_Primary_Swing_Down_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 30
+            }
+          },
+          "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "Wabisuke_Slash"
+              }
+            ],
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Thrust_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Thrust_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 32
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 3
+            }
+          ],
+          "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "SwordSlash_Basic"
+              }
+            ],
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "CrushingRegret_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Wabisuke_CrushingRegret_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 100
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "Wabisuke_Slash"
+              }
+            ],
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    }
+  },
+  "IconProperties": {
+    "Scale": 0.35,
+    "Rotation": [
+      34,
+      114,
+      22.5
+    ],
+    "Translation": [
+      -44,
+      -45
+    ]
+  },
+  "Recipe": {
+    "TimeSeconds": 4.5,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Cobalt",
+        "Quantity": 4
+      },
+      {
+        "ItemId": "Ingredient_Bar_Thorium",
+        "Quantity": 4
+      },
+      {
+        "ItemId": "Ingredient_Void_Essence",
+        "Quantity": 4
+      },
+      {
+        "ItemId": "Resonating_Reishi_Core"
+      },
+      {
+        "ItemId": "Asauchi"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Soul_Shikai"
+        ],
+        "Id": "Soul_Imprinting_Altar"
+      }
+    ],
+    "KnowledgeRequired": false
+  },
+  "Weapon": {
+    "StatModifiers": {
+      "SignatureEnergy": [
+        {
+          "CalculationType": "Additive",
+          "Amount": 20
+        }
+      ]
+    }
+  }
+}

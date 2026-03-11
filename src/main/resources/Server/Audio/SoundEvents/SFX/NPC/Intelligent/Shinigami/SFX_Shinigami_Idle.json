@@ -1,0 +1,29 @@
+{
+  "Layers": [
+    {
+      "RandomSettings": {
+        "MinVolume": -2.0,
+        "MinPitch": -2.0,
+        "MaxPitch": 0.0
+      },
+      "Files": [
+        "Sounds/NPC/Intelligent/Shinigami/Merchant/Shinigami_Idle_01.ogg",
+        "Sounds/NPC/Intelligent/Shinigami/Merchant/Shinigami_Idle_02.ogg",
+        "Sounds/NPC/Intelligent/Shinigami/Merchant/Shinigami_Idle_03.ogg",
+        "Sounds/NPC/Intelligent/Shinigami/Merchant/Shinigami_Idle_04.ogg",
+        "Sounds/NPC/Intelligent/Shinigami/Merchant/Shinigami_Idle_05.ogg",
+        "Sounds/NPC/Intelligent/Shinigami/Merchant/Shinigami_Idle_06.ogg",
+        "Sounds/NPC/Intelligent/Shinigami/Merchant/Shinigami_Idle_07.ogg",
+        "Sounds/NPC/Intelligent/Shinigami/Merchant/Shinigami_Idle_08.ogg",
+        "Sounds/NPC/Intelligent/Shinigami/Merchant/Shinigami_Idle_09.ogg"
+      ],
+      "Probability": 15,
+      "ProbabilityRerollDelay": 2
+    }
+  ],
+  "MaxInstance": 3,
+  "PreventSoundInterruption": true,
+  "Volume": -4.0,
+  "AudioCategory": "AudioCat_NPC_Shinigami",
+  "Parent": "SFX_Attn_Quiet"
+}

@@ -1,0 +1,31 @@
+{
+  "Model": "NPC/Original_Hollow/Prangus.blockymodel",
+  "Texture": "NPC/Original_Hollow/Prangus_Texture.png",
+  "EyeHeight": 1.2,
+  "CrouchOffset": -0.55,
+  "HitBox": {
+    "Max": {
+      "X": 0.55,
+      "Y": 1.8,
+      "Z": 0.55
+    },
+    "Min": {
+      "X": -0.55,
+      "Y": 0,
+      "Z": -0.55
+    }
+  },
+  "MinScale": 1,
+  "MaxScale": 1.5,
+  "AnimationSets": {
+    "Idle": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/NPC/Idle_Prangus.blockyanim",
+          "Speed": 0.9,
+          "SoundEventId": "SFX_Hollow_Idle_Breath"
+        }
+      ]
+    }
+  }
+}

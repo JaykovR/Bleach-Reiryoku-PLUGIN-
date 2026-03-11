@@ -1,0 +1,14 @@
+{
+  "TexturePath": "Trails/GetsugaTenshouShikaiTrail.png",
+  "LifeSpan": 15,
+  "Start": {
+    "Width": 1,
+    "Color": "#ffffff8f"
+  },
+  "Roll": 0,
+  "End": {
+    "Color": "#ff000000"
+  },
+  "LightInfluence": 0,
+  "RenderMode": "BlendLinear"
+}

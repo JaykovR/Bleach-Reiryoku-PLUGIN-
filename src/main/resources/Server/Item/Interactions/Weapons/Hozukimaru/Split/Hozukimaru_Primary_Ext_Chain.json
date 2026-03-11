@@ -1,0 +1,37 @@
+{
+  "Type": "Chaining",
+  "ChainingAllowance": 2,
+  "ChainId": "Hozukimaru_Swings",
+  "Next": [
+    {
+      "Type": "Replace",
+      "DefaultOk": true,
+      "Var": "Swing_Left_Ext",
+      "DefaultValue": {
+        "Interactions": [
+          "Hozukimaru_Primary_Ext_Swing_Left"
+        ]
+      }
+    },
+    {
+      "Type": "Replace",
+      "DefaultOk": true,
+      "Var": "Swing_Right_Ext",
+      "DefaultValue": {
+        "Interactions": [
+          "Hozukimaru_Primary_Ext_Swing_Right"
+        ]
+      }
+    },
+    {
+      "Type": "Replace",
+      "DefaultOk": true,
+      "Var": "Swing_Down_Ext",
+      "DefaultValue": {
+        "Interactions": [
+          "Hozukimaru_Primary_Ext_Swing_Down"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "KyokaSuigetsu_Slash_Cut",
+      "PositionOffset": {
+        "Z": 0.1
+      }
+    },
+    {
+      "SpawnerId": "KyokaSuigetsu_Slash_Sparks"
+    }
+  ],
+  "IsImportant": false
+}

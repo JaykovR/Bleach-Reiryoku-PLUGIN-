@@ -1,0 +1,97 @@
+{
+  "TranslationProperties": {
+    "Name": "bleachBanners.items.Bleach_Squad10_Banner.name",
+    "Description": "bleachBanners.items.Bleach_Squad10_Banner.description"
+  },
+  "PlayerAnimationsId": "Block",
+  "Categories": [
+    "Furniture.Signs",
+    "BleachCategory.Deco"
+  ],
+  "Recipe": {
+    "Input": [
+      { "ItemId": "Ingredient_Stick", "Quantity": 1 },
+      { "ItemId": "Ingredient_Fabric_Scrap_Linen", "Quantity": 4 },
+      { "ItemId": "Ingredient_Stud_Iron", "Quantity": 2 }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Soul_Imprinting_Altar",
+        "Categories": ["Soul_Deco"]
+      }
+    ]
+  },
+  "Set": "Bleach_Squads",
+  "Icon": "Icons/ItemsGenerated/Bleach_Squad10_Banner.png",
+  "IconProperties": {
+    "Rotation": [0, 0, 0],
+    "Scale": 0.26,
+    "Translation": [0, 16.9]
+  },
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "BlockType": {
+    "BlockParticleSetId": "Wood",
+    "CustomModel": "Blocks/Decorative_Sets/Human_Ruins/Banner.blockymodel",
+    "CustomModelAnimation": "Blocks/Decorative_Sets/Human_Ruins/Banner_Swing.blockyanim",
+    "CustomModelTexture": [
+      { "Texture": "Blocks/Furniture/Squad_Banners/Squad10_Narcissus_Default.png", "Weight": 1 }
+    ],
+    "DrawType": "Model",
+    "Flags": { "IsUsable": true },
+    "InteractionHint": "bleachBanners.items.Bleach_Squad10_Banner_Default.name",
+    "Gathering": { "Soft": { "IsWeaponBreakable": false } },
+    "Material": "Solid",
+    "Opacity": "Transparent",
+    "ParticleColor": "#4c4a31",
+    "Support": {
+      "West": [{ "AllowSupportPropagation": false, "FaceType": "Full", "Rotate": true }],
+      "East": [{ "FaceType": "Full", "AllowSupportPropagation": false, "Rotate": true }],
+      "Down": [{ "FaceType": "Full" }]
+    },
+    "PlacementSettings": {
+      "FloorPlacementOverrideBlockId": "Bleach_Squad10_Banner_Standing",
+      "PlaceInEmptyBlocks": true
+    },
+    "VariantRotation": "NESW",
+    "BlockSoundSetId": "Cloth",
+    "AmbientSoundEventId": "SFX_Banner_Cloth_Sway_Loop",
+    "Looping": true,
+    "HitboxType": "Banner",
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "ChangeState",
+            "Changes": {
+              "default": "2",
+              "1": "2",
+              "2": "3",
+              "3": "4",
+              "4": "5",
+              "5": "1"
+            }
+          }
+        ]
+      }
+    },
+    "State": {
+      "Definitions": {
+        "1": { "InteractionHint": "bleachBanners.items.Bleach_Squad10_Banner_Default.name", "InteractionSoundEventId": "SFX_Banner_Cloth_Hit", "CustomModelTexture": [{ "Texture": "Blocks/Furniture/Squad_Banners/Squad10_Narcissus_Default.png" }] },
+        "2": { "InteractionHint": "bleachBanners.items.Bleach_Squad10_Banner_Purple.name", "InteractionSoundEventId": "SFX_Banner_Cloth_Hit", "CustomModelTexture": [{ "Texture": "Blocks/Furniture/Squad_Banners/PurpleBanner/Squad10_Narcissus_Default.png" }] },
+        "3": { "InteractionHint": "bleachBanners.items.Bleach_Squad10_Banner_Blue.name", "InteractionSoundEventId": "SFX_Banner_Cloth_Hit", "CustomModelTexture": [{ "Texture": "Blocks/Furniture/Squad_Banners/BlueBanner/Squad10_Narcissus_Default.png" }] },
+        "4": { "InteractionHint": "bleachBanners.items.Bleach_Squad10_Banner_Black.name", "InteractionSoundEventId": "SFX_Banner_Cloth_Hit", "CustomModelTexture": [{ "Texture": "Blocks/Furniture/Squad_Banners/BlackBanner/Squad10_Narcissus_Default.png" }] },
+        "5": { "InteractionHint": "bleachBanners.items.Bleach_Squad10_Banner_Red.name", "InteractionSoundEventId": "SFX_Banner_Cloth_Hit", "CustomModelTexture": [{ "Texture": "Blocks/Furniture/Squad_Banners/RedBanner/Squad10_Narcissus_Default.png" }] }
+      }
+    }
+  },
+  "Tags": {
+    "Type": ["Furniture"],
+    "Family": ["Bleach", "Gotei13"],
+    "Squad": ["10"]
+  },
+  "ItemSoundSetId": "ISS_Items_Cloth"
+}

@@ -1,0 +1,21 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Generic/Reiatsu_Long_SFX.ogg"
+      ],
+      "RandomSettings": {
+        "MinVolume": -2,
+        "MinPitch": -2,
+        "MaxPitch": 2
+      },
+      "StartDelay": 0,
+      "Looping": false,
+      "Volume": 6.0
+    }
+  ],
+  "MaxInstance": 5,
+  "Volume": -14.2,
+  "PreventSoundInterruption": true,
+  "Parent": "SFX_Attn_Moderate"
+}

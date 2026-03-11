@@ -1,0 +1,17 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Benihime_Sword_Charged_Trail_Sparks"
+    },
+    {
+      "SpawnerId": "Benihime_Sword_Charged_Trail_Lines_Sparks"
+    },
+    {
+      "SpawnerId": "Benihime_Sword_Charged_Trail_Smoke",
+      "PositionOffset": {
+        "X": -0.2,
+        "Y": 0.5
+      }
+    }
+  ]
+}

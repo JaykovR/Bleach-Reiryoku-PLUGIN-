@@ -1,0 +1,14 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "TrueBankaiZangetsu_Bash_Shockwave"
+    },
+    {
+      "SpawnerId": "TrueBankaiZangetsu_Bash_Sparks"
+    },
+    {
+      "SpawnerId": "TrueBankaiZangetsu_Bash_Dash"
+    }
+  ],
+  "IsImportant": false
+}

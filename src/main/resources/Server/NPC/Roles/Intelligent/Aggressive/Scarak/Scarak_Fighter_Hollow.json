@@ -1,0 +1,49 @@
+{
+  "Type": "Variant",
+  "Reference": "Template_Intelligent",
+  "Parameters": {
+    "FollowPatrolPath": {
+      "Value": false,
+      "Description": "Whether this NPC will follow patrol paths at all."
+    },
+    "Patrol": {
+      "Value": false,
+      "Description": "Whether or not this NPC will patrol during its waking hours, either alone or as part of a group."
+    },
+    "NameTranslationKey": {
+      "Value": "mobs.Scarak_Fighter_Hollow.name",
+      "Description": "Translation key for NPC name display"
+    },
+    "DesiredAttackDistanceRange": {
+      "Value": [
+        3,
+        3
+      ],
+      "Description": "The distance within which the NPC wants to be from its target while attacking. The max value should be lower than AttackDistance."
+    }
+  },
+  "Modify": {
+    "MaxHealth": 255,
+    "Appearance": "Scarak_Fighter_Hollow",
+    "IsMemory": true,
+    "MemoriesCategory": "Hollow",
+    "AttackDistance": 3,
+    "MemoriesNameOverride": "Scarak_Fighter_Hollow",
+    "Weapons": [],
+    "OffHand": [],
+    "MaxSpeed": 12,
+    "DropList": "Drop_Figther_Hollow",
+    "FollowPatrolPath": {
+      "Compute": "FollowPatrolPath"
+    },
+    "Patrol": {
+      "Compute": "Patrol"
+    },
+    "Attack": "Root_NPC_Scarak_Fighter_Attack",
+    "BlockProbability": 0,
+    "AttitudeGroup": "Scarak",
+    "NameTranslationKey": {
+      "Compute": "NameTranslationKey"
+    }
+  }
+}

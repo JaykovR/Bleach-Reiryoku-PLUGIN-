@@ -1,0 +1,55 @@
+{
+  "Parent": "Projectile_Config_Arrow_Base",
+  "Model": "Basic_Quincy_Arrow",
+  "LaunchLocalSoundEventId": "SFX_Kojaku_Shoot_Local",
+  "LaunchWorldSoundEventId": "SFX_Kojaku_Shoot",
+  "Physics": {
+    "Type": "Standard",
+    "Gravity": 30,
+    "TerminalVelocityAir": 50,
+    "TerminalVelocityWater": 15,
+    "RotationMode": "VelocityDamped",
+    "Bounciness": 0.0,
+    "SticksVertically": true
+  },
+  "Interactions": {
+    "ProjectileHit": {
+      "Interactions": [
+        {
+          "Type": "Replace",
+          "Var": "Signature_OkamiYa_Damage",
+          "DefaultValue": {
+            "Interactions": [
+              "Kojaku_OkamiYa_Damage"
+            ]
+          }
+        },
+        {
+          "Type": "Replace",
+          "Var": "Signature_OkamiYa_Impact",
+          "DefaultValue": {
+            "Interactions": [
+              "Kojaku_OkamiYa_Impact_Effects"
+            ]
+          },
+          "DefaultOk": true
+        },
+        "Common_Projectile_Despawn"
+      ]
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        {
+          "Type": "Replace",
+          "Var": "Signature_Volley_Miss",
+          "DefaultValue": {
+            "Interactions": [
+              "Common_Projectile_Miss"
+            ]
+          }
+        },
+        "Common_Projectile_Despawn"
+      ]
+    }
+  }
+}

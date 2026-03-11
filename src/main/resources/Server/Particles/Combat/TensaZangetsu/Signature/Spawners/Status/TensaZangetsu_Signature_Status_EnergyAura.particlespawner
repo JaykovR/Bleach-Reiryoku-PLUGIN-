@@ -1,0 +1,104 @@
+{
+  "RenderMode": "Erosion",
+  "EmitOffset": {
+    "Y": {
+      "Min": 0.1,
+      "Max": 0.1
+    }
+  },
+  "ParticleRotationInfluence": "BillboardVelocity",
+  "LinearFiltering": true,
+  "LightInfluence": 0,
+  "ParticleRotateWithSpawner": true,
+  "MaxConcurrentParticles": 7,
+  "ParticleLifeSpan": {
+    "Min": 0.3,
+    "Max": 0.3
+  },
+  "Particle": {
+    "Texture": "Particles/getsugaCharged2.png",
+    "ScaleRatioConstraint": "None",
+    "UVOption": "None",
+    "Animation": {
+      "0": {
+        "Opacity": 1,
+        "Scale": {
+          "X": {
+            "Min": 0.6,
+            "Max": 0.6
+          },
+          "Y": {
+            "Min": 1.3,
+            "Max": 1.4
+          }
+        },
+        "Color": "#000000"
+      }
+    },
+    "InitialAnimationFrame": {
+      "Opacity": 0.88,
+      "FrameIndex": {
+        "Min": 0,
+        "Max": 0
+      },
+      "Scale": {
+        "X": {
+          "Min": 0.1,
+          "Max": 0.1
+        },
+        "Y": {
+          "Min": 0.15,
+          "Max": 0.5
+        }
+      }
+    },
+    "UseSpriteBlending": false,
+    "SoftParticles": "Enable"
+  },
+  "SpawnBurst": false,
+  "InitialVelocity": {
+    "Yaw": {
+      "Min": -90,
+      "Max": -90
+    },
+    "Speed": {
+      "Min": 1,
+      "Max": 1.3
+    }
+  },
+  "CameraOffset": -0.1,
+  "ParticleCollision": {
+    "Action": "Expire",
+    "BlockType": "None"
+  },
+  "SpawnRate": {
+    "Min": 12,
+    "Max": 12
+  },
+  "Attractors": [
+    {
+      "LinearAcceleration": {
+        "X": 1,
+        "Y": 0,
+        "Z": 0
+      },
+      "Position": {
+        "X": 1,
+        "Y": 0,
+        "Z": 0
+      },
+      "RadialAcceleration": -2,
+      "RadialAxis": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "DampingMultiplier": {
+        "X": 0.8,
+        "Y": 0.8,
+        "Z": 0.8
+      }
+    }
+  ],
+  "UseEmitDirection": false
+}

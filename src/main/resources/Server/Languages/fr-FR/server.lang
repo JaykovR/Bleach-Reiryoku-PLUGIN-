@@ -1,0 +1,15 @@
+memories.categories.Hollow.title = Hollow
+
+npcRoles.Scarak_Defender_Hollow.name = Hollow Défenseur Scarak
+npcRoles.Scarak_Fighter_Hollow.name = Hollow Guerrier Scarak
+npcRoles.Scarak_Louse_Hollow.name = Hollow Puce Scarak
+npcRoles.Scorpion_Hollow.name = Hollow Scorpion
+npcRoles.Ghoul_Hollow.name = Hollow Ghoul
+npcRoles.Crawler_Hollow_Void.name = Hollow Rampant du Vide
+
+memories.Hollow.Scarak_Defender_Hollow.description = Un Hollow né d'un Défenseur Scarak. Son masque et sa carapace endurcie en font un combattant de première ligne tenace parmi les corrompus.
+memories.Hollow.Scarak_Fighter_Hollow.description = Un Hollow né d'un Guerrier Scarak. Il conserve les tactiques agressives de son ancien moi, déformées par la faim d'un Hollow.
+memories.Hollow.Scarak_Louse_Hollow.description = Un Hollow né d'une Puce Scarak. Petits mais nombreux, ces Hollows envahissent leur proie et la réduisent à l'os.
+memories.Hollow.Scorpion_Hollow.description = Un Hollow né d'un Scorpion. Son dard et ses griffes sont désormais des vaisseaux de corruption, frappant avec le froid du vide.
+memories.Hollow.Ghoul_Hollow.description = Un Hollow né d'un Ghoul. Les morts agités, tordus davantage en Hollow — une créature qui se nourrit de l'essence des vivants.
+memories.Hollow.Crawler_Hollow_Void.description = Un Hollow né d'un Rampant du Vide. Déjà touché par le vide, il a sombré dans la nature Hollow et rôde dans les ténèbres.

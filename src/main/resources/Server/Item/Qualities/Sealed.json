@@ -1,0 +1,15 @@
+{
+  "QualityValue": 3,
+  "ItemTooltipTexture": "UI/ItemQualities/Tooltips/ItemTooltipSealed.png",
+  "ItemTooltipArrowTexture": "UI/ItemQualities/Tooltips/ItemTooltipSealedArrow.png",
+  "SlotTexture": "UI/ItemQualities/Slots/SlotSealed.png",
+  "BlockSlotTexture": "UI/ItemQualities/Slots/SlotSealed.png",
+  "SpecialSlotTexture": "UI/ItemQualities/Slots/SlotSealed.png",
+  "TextColor": "#5C7C62",
+  "VisibleQualityLabel": true,
+  "RenderSpecialSlot": true,
+  "ItemEntityConfig": {
+    "ParticleSystemId": "Drop_Uncommon"
+  },
+  "LocalizationKey": "qualities.qualities.Sealed"
+}

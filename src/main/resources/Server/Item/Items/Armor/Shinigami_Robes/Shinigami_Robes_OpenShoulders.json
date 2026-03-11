@@ -1,0 +1,108 @@
+{
+  "TranslationProperties": {
+    "Name": "items.Shinigami_Robes_OpenShoulder.name",
+    "Description": "items.Shinigami_Robes_OpenShoulder.description"
+  },
+  "Parent": "Armor_Bronze_Chest",
+  "Quality": "Rare",
+  "ItemLevel": 15,
+  "IconProperties": {
+    "Scale": 0.3,
+    "Rotation": [
+      23,
+      38,
+      22.5
+    ],
+    "Translation": [
+      3,
+      -48
+    ]
+  },
+  "Model": "Items/Armors/Shinigami_Robes_OpenShoulder/Shinigami_Robes_OpenShoulder.blockymodel",
+  "Texture": "Items/Armors/Shinigami_Robes_OpenShoulder/Shinigami_Robes_OpenShoulder.png",
+  "Recipe": {
+    "TimeSeconds": 2,
+    "Input": [
+      {
+        "Quantity": 2,
+        "ItemId": "Reiryoku_Crystal"
+      },
+      {
+        "ItemId": "Ingredient_Bolt_Wool",
+        "Quantity": 8
+      },
+      {
+        "ItemId": "Ingredient_Fabric_Scrap_Shadoweave",
+        "Quantity": 20
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Armor_Bench",
+        "Type": "Crafting",
+        "Categories": [
+          "Armor_Chest"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ],
+    "KnowledgeRequired": false
+  },
+  "Armor": {
+    "ArmorSlot": "Chest",
+    "CosmeticsToHide": [
+      "Overtop",
+      "Undertop"
+    ],
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 18,
+          "CalculationType": "Additive"
+        }
+      ],
+      "Mana": [
+        {
+          "CalculationType": "Additive",
+          "Amount": 25
+        }
+      ]
+    },
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.12,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.12,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "DamageClassEnhancement": {
+      "Signature": [
+        {
+          "CalculationType": "Multiplicative",
+          "Amount": 0.07
+        }
+      ]
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Armor"
+    ],
+    "Family": [
+      "Cloth_Linen"
+    ]
+  },
+  "MaxDurability": 120,
+  "ItemSoundSetId": "ISS_Armor_Cloth",
+  "Categories": [
+    "BleachCategory.Armors"
+  ],
+  "Icon": "Icons/ItemsGenerated/Shinigami_Robes_OpenShoulders.png"
+}

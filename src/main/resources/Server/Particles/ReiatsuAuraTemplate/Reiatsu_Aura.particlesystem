@@ -1,0 +1,33 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "TensaZangetsu_Signature_Status_Sparkles",
+      "PositionOffset": {
+        "X": -0.2,
+        "Z": 0
+      },
+      "FixedRotation": false,
+      "RotationOffset": {
+        "Roll": 90
+      }
+    },
+    {
+      "SpawnerId": "TensaZangetsu_Signature_Status_Lines",
+      "FixedRotation": false,
+      "PositionOffset": {
+        "X": -0.1,
+        "Y": 0,
+        "Z": 0
+      },
+      "RotationOffset": {
+        "Roll": 90
+      }
+    },
+    {
+      "SpawnerId": "Reiatsu_EnergyAura",
+      "RotationOffset": {
+        "Roll": 90
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "Name": "Crimson Seal",
+  "ApplicationEffects": {
+    "EntityBottomTint": "#b74e4e",
+    "EntityTopTint": "#d30707",
+    "Particles": [
+      {
+        "SystemId": "Crimson_Seal_TopIcon"
+      }
+    ],
+    "LocalSoundEventId": "SFX_Effect_Poison_Local",
+    "WorldSoundEventId": "SFX_Effect_Poison_World",
+    "AbilityEffects": {
+      "Disabled": [
+        "Ability1",
+        "Ability2"
+      ]
+    }
+  },
+  "Duration": 3,
+  "DamageCalculator": {
+    "Type": "Absolute",
+    "BaseDamage": {
+      "Physical": 40
+    },
+    "Class": "Light"
+  },
+  "DamageCalculatorCooldown": 3,
+  "$Comment": "Delayed Damage, disables ults",
+  "WorldRemovalSoundEventId": "SFX_CrimsonSeal_Removal",
+  "LocalRemovalSoundEventId": "SFX_CrimsonSeal_Removal",
+  "OverlapBehavior": "Overwrite",
+  "Debuff": true,
+  "StatusEffectIcon": "UI/StatusEffects/Crimson_Seal.png"
+}

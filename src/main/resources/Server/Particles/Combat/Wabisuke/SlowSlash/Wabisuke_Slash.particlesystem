@@ -1,0 +1,14 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Wabisuke_Slash_Cut",
+      "PositionOffset": {
+        "Z": 0.1
+      }
+    },
+    {
+      "SpawnerId": "Wabisuke_Slash_Sparks"
+    }
+  ],
+  "IsImportant": false
+}

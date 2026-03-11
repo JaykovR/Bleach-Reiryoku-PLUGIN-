@@ -1,0 +1,37 @@
+{
+  "Type": "Parallel",
+  "Interactions": [
+    {
+      "Interactions": [
+        {
+          "Type": "Replace",
+          "Var": "Signature_Volley_Effects",
+          "DefaultValue": {
+            "Interactions": [
+              "Weapon_Shortbow_Signature_Volley_Effects"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Interactions": [
+        {
+          "Parent": "Kojaku_OkamiYa_Projectile",
+          "Config": "Projectile_Config_OkamiYa2"
+        }
+      ]
+    },
+    {
+      "Interactions": [
+        {
+          "Type": "ChangeStat",
+          "StatModifiers": {
+            "OkamiYa_State": -100
+          },
+          "ValueType": "Percent"
+        }
+      ]
+    }
+  ]
+}

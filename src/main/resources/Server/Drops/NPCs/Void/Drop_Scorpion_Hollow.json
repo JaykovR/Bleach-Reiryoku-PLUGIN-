@@ -1,0 +1,44 @@
+{
+  "Container": {
+    "Type": "Multiple",
+    "Containers": [
+      {
+        "Type": "Choice",
+        "Containers": [
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Ingredient_Hollow_Essence",
+              "QuantityMin": 1,
+              "QuantityMax": 1
+            }
+          }
+        ],
+        "Weight": 50
+      },
+      {
+        "Type": "Single",
+        "Weight": 50,
+        "Item": {
+          "ItemId": "Ingredient_Void_Essence",
+          "QuantityMin": 2,
+          "QuantityMax": 4
+        }
+      },
+      {
+        "Type": "Choice",
+        "Weight": 100,
+        "Containers": [
+          {
+            "Type": "Single",
+            "Item": {
+              "ItemId": "Ingredient_Sac_Venom",
+              "QuantityMin": 1,
+              "QuantityMax": 1
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

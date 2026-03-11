@@ -1,0 +1,23 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Weapons/Sealed/SkullCrusher_Activate_01.ogg",
+        "Sounds/Weapons/Sealed/SkullCrusher_Activate_02.ogg",
+        "Sounds/Weapons/Sealed/SkullCrusher_Activate_03.ogg"
+      ],
+      "StartDelay": 0,
+      "Looping": false,
+      "Volume": 6,
+      "RandomSettings": {
+        "MinVolume": -2,
+        "MinPitch": -2,
+        "MaxPitch": 2
+      }
+    }
+  ],
+  "MaxInstance": 5,
+  "Volume": -2.08,
+  "PreventSoundInterruption": true,
+  "Parent": "SFX_Attn_Moderate"
+}

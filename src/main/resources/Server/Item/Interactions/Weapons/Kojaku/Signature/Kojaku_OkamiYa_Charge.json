@@ -1,0 +1,71 @@
+{
+  "Type": "Charging",
+  "AllowIndefiniteHold": true,
+  "DisplayProgress": true,
+  "Effects": {
+    "ItemAnimationId": "ShootCharging",
+    "ClearAnimationOnFinish": true,
+    "ClearSoundEventOnFinish": true,
+    "WorldSoundEventId": "SFX_QuincyBowCharge",
+    "LocalSoundEventId": "SFX_QuincyBowCharge",
+    "Particles": [
+      {
+        "PositionOffset": {
+          "X": -0.125,
+          "Y": -0.4,
+          "Z": 0.075
+        },
+        "RotationOffset": {
+          "Pitch": 15,
+          "Roll": 0,
+          "Yaw": 90
+        },
+        "Scale": 0.5,
+        "TargetNodeName": "Handle",
+        "SystemId": "Kojaku_Charging"
+      },
+      {
+        "PositionOffset": {
+          "X": 0.075,
+          "Y": -0.4,
+          "Z": 0.075
+        },
+        "RotationOffset": {
+          "Pitch": 0,
+          "Roll": 0,
+          "Yaw": 90
+        },
+        "Scale": 0.5,
+        "TargetNodeName": "Handle",
+        "SystemId": "Kojaku_Charging"
+      },
+      {
+        "PositionOffset": {
+          "X": 0.275,
+          "Y": -0.4,
+          "Z": 0.075
+        },
+        "RotationOffset": {
+          "Pitch": -15,
+          "Roll": 0,
+          "Yaw": 90
+        },
+        "Scale": 0.5,
+        "TargetNodeName": "Handle",
+        "SystemId": "Kojaku_Charging"
+      },
+      {
+        "SystemId": "Kojaku_OkamiYa_User",
+        "TargetEntityPart": "Entity"
+      },
+      {
+        "SystemId": "Kojaku_OkamiYa_Bow",
+        "Scale": 1
+      }
+    ]
+  },
+  "HorizontalSpeedMultiplier": 0.667,
+  "Next": {
+    "1.5": "Kojaku_OkamiYa_Launch"
+  }
+}

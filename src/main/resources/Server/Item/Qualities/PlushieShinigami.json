@@ -1,0 +1,12 @@
+{
+  "QualityValue": 3,
+  "ItemTooltipTexture": "UI/ItemQualities/Tooltips/ItemTooltipShinigamiPlush.png",
+  "ItemTooltipArrowTexture": "UI/ItemQualities/Tooltips/ItemTooltipShinigamiPlushArrow.png",
+  "SlotTexture": "UI/ItemQualities/Slots/SlotShinigamiPlush.png",
+  "BlockSlotTexture": "UI/ItemQualities/Slots/SlotShinigamiPlush.png",
+  "SpecialSlotTexture": "UI/ItemQualities/Slots/SlotShinigamiPlush.png",
+  "TextColor": "#3A3A3B",
+  "LocalizationKey": "qualities.qualities.PlushieShinigami",
+  "VisibleQualityLabel": true,
+  "RenderSpecialSlot": true
+}

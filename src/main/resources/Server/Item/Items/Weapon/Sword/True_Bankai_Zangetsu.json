@@ -1,0 +1,286 @@
+{
+  "Parent": "Template_Weapon_Battleaxe",
+  "TranslationProperties": {
+    "Name": "items.True_Bankai_Tensa_Zangetsu.name",
+    "Description": "items.True_Bankai_Tensa_Zangetsu.description"
+  },
+  "Model": "Items/Weapons/True_Bankai_Zangetsu/True_Bankai_Zangetsu.blockymodel",
+  "Texture": "Items/Weapons/True_Bankai_Zangetsu/True_Bankai_Zangetsu.png",
+  "Icon": "Icons/ItemsGenerated/True_Bankai_Zangetsu.png",
+  "Quality": "Bankai",
+  "ItemLevel": 40,
+  "Categories": ["BleachCategory.Weapons", "Items.Weapons"],
+  "IconProperties": {
+    "Scale": 0.3,
+    "Rotation": [45, 90, 0],
+    "Translation": [-19.2, -19.8]
+  },
+  "ItemAppearanceConditions": {
+    "SignatureEnergy": [
+      {
+        "Condition": [100, 100],
+        "ConditionValueType": "Percent",
+        "Particles": [
+          {
+            "SystemId": "TrueBankaiZangetsu_Signature_Ready",
+            "TargetNodeName": "Handle",
+            "PositionOffset": {"X": 0.8},
+            "TargetEntityPart": "PrimaryItem"
+          },
+          {
+            "SystemId": "TrueBankaiZangetsu_Signature_Status_Spawn",
+            "TargetNodeName": "Handle",
+            "PositionOffset": {"X": 0.5},
+            "TargetEntityPart": "PrimaryItem"
+          },
+          {
+            "SystemId": "TrueBankaiZangetsu_Signature_Status",
+            "TargetNodeName": "Handle",
+            "PositionOffset": {"X": 0.5},
+            "TargetEntityPart": "PrimaryItem"
+          }
+        ],
+        "ModelVFXId": "True_Bankai_Zangetsu_Signature_Status"
+      }
+    ]
+  },
+  "Weapon": {
+    "EntityStatsToClear": ["SignatureEnergy"],
+    "StatModifiers": {
+      "SignatureEnergy": [
+        {
+          "Amount": 38,
+          "CalculationType": "Additive"
+        }
+      ]
+    }
+  },
+  "InteractionVars": {
+    "Swing_Down": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down",
+          "RunTime": 0.38
+        }
+      ]
+    },
+    "Swing_Down_Left": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Left",
+          "RunTime": 0.38
+        }
+      ]
+    },
+    "Swing_Down_Right": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Right",
+          "RunTime": 0.38
+        }
+      ]
+    },
+    "Swing_Down_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Damage",
+          "DamageCalculator": {"BaseDamage": {"Physical": 45}},
+          "EntityStatsOnHit": [{"EntityStatId": "SignatureEnergy", "Amount": 3}],
+          "DamageEffects": {
+            "WorldParticles": [{"SystemId": "TrueBankaiZangetsu_Slash"}],
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Down_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Left_Damage",
+          "DamageCalculator": {"BaseDamage": {"Physical": 22}},
+          "EntityStatsOnHit": [{"EntityStatId": "SignatureEnergy", "Amount": 2}],
+          "DamageEffects": {
+            "WorldParticles": [{"SystemId": "TrueBankaiZangetsu_Slash"}],
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Down_Right_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Right_Damage",
+          "DamageCalculator": {"BaseDamage": {"Physical": 28}},
+          "EntityStatsOnHit": [{"EntityStatId": "SignatureEnergy", "Amount": 2}],
+          "DamageEffects": {
+            "WorldParticles": [{"SystemId": "TrueBankaiZangetsu_Slash"}],
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Down_Selector": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Selector",
+          "Effects": {
+            "Trails": [
+              {
+                "PositionOffset": {"X": 0.8, "Y": 0, "Z": 0},
+                "RotationOffset": {"Pitch": 0, "Roll": 90, "Yaw": 0},
+                "TargetNodeName": "Handle",
+                "TrailId": "True_Bankai_Zangetsu_Trail"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "Swing_Down_Left_Selector": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Left_Selector",
+          "Effects": {
+            "Trails": [
+              {
+                "PositionOffset": {"X": 0.8, "Y": 0, "Z": 0},
+                "RotationOffset": {"Pitch": 0, "Roll": 90, "Yaw": 0},
+                "TargetNodeName": "Handle",
+                "TrailId": "True_Bankai_Zangetsu_Trail"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "Swing_Down_Right_Selector": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Right_Selector",
+          "Effects": {
+            "Trails": [
+              {
+                "PositionOffset": {"X": 0.8, "Y": 0, "Z": 0},
+                "RotationOffset": {"Pitch": 0, "Roll": 90, "Yaw": 0},
+                "TargetNodeName": "Handle",
+                "TrailId": "True_Bankai_Zangetsu_Trail"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "Downstrike_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Downstrike_Damage",
+          "DamageCalculator": {"BaseDamage": {"Physical": 38}},
+          "EntityStatsOnHit": [{"EntityStatId": "SignatureEnergy", "Amount": 14}],
+          "DamageEffects": {
+            "WorldParticles": [{"SystemId": "TrueBankaiZangetsu_Slash"}],
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Downstrike_Selector": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Downstrike_Selector",
+          "Effects": {
+            "Trails": [
+              {
+                "PositionOffset": {"X": 0.8, "Y": 0, "Z": 0},
+                "RotationOffset": {"Pitch": 0, "Roll": 90, "Yaw": 0},
+                "TargetNodeName": "Handle",
+                "TrailId": "True_Bankai_Zangetsu_Trail"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "Signature_Whirlwind_Effect": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Signature_Whirlwind_Spin_Effect",
+          "Effects": {
+            "Trails": [
+              {
+                "PositionOffset": {"X": 0.8, "Y": 0, "Z": 0},
+                "RotationOffset": {"Pitch": 0, "Roll": 90, "Yaw": 0},
+                "TargetNodeName": "Handle",
+                "TrailId": "True_Bankai_Zangetsu_Trail"
+              }
+            ],
+            "Particles": [
+              {
+                "SystemId": "TrueBankaiZangetsu_Signature_Whirlwind",
+                "Scale": 1,
+                "TargetNodeName": "Hip",
+                "TargetEntityPart": "Entity",
+                "PositionOffset": {"Y": 1}
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "Signature_Whirlwind_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Signature_Whirlwind_Damage",
+          "DamageCalculator": {"BaseDamage": {"Physical": 42}},
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldParticles": [{"SystemId": "TrueBankaiZangetsu_Slash"}],
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Guard_Wield": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Secondary_Guard_Wield",
+          "StaminaCost": {"Value": 12, "CostType": "Damage"}
+        }
+      ]
+    },
+    "Guard_Bash_Selector": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Secondary_Guard_Bash_Selector",
+          "Effects": {
+            "Particles": [
+              {
+                "SystemId": "TrueBankaiZangetsu_Bash",
+                "TargetEntityPart": "PrimaryItem",
+                "TargetNodeName": "Handle",
+                "PositionOffset": {"X": -0.5, "Y": 0.2, "Z": 0.2},
+                "RotationOffset": {"Pitch": 45, "Roll": -45}
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "Guard_Bash_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Secondary_Guard_Bash_Damage",
+          "DamageEffects": {
+            "WorldParticles": [{"SystemId": "Impact_TrueBankaiZangetsu_Bash"}]
+          }
+        }
+      ]
+    }
+  },
+  "MaxDurability": 250,
+  "DurabilityLossOnHit": 0.45
+}

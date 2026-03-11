@@ -1,0 +1,10 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Kojaku_OkamiYa_Bow_Aura",
+      "RotationOffset": {
+        "Roll": 90
+      }
+    }
+  ]
+}

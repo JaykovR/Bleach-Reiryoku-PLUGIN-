@@ -1,0 +1,56 @@
+Bankai_Tensa_Zangetsu.name = Bankai – Tensa Zangetsu
+Bankai_Tensa_Zangetsu.description = Bankai – Tensa Zangetsu é uma lâmina espiritual lendária. Sua lâmina negra com corrente concentra a energia do portador, liberando a onda devastadora <i><b>Getsuga Tenshō — «Presas da Lua que Perfuram os Céus»</b></i>.
+Shikai_Tensa_Zangetsu.name = Shikai – Zangetsu
+Shikai_Tensa_Zangetsu.description = Zangetsu é um cutelo espiritual massivo, permanentemente em estado liberado. A lâmina negra, envolta em tecido vivo, fortalece seu portador, desencadeando ondas <i><b>Getsuga Tenshō</b></i> e servindo de escudo contra ataques físicos e energéticos.
+ReiryokuCrystal.name = Cristal de Reiryoku
+ReiryokuCrystal.description = Um cristal de energia espiritual pura, concentração de inúmeras almas. Desperta e evolui um Zanpakutō.
+Sealed_Zangetsu.name = Selado – Zangetsu
+Sealed_Zangetsu.description = A lâmina selada antes do despertar. Guarda potencial infinito, porém adormecido.
+Asauchi.name = Asauchi
+Asauchi.description = Um modelo de alma em branco. A base para um futuro Zanpakutō, aguardando a marca de seu dono.
+Sode_No_Shirayuki.name = Shikai – Sode no Shirayuki
+Sode_No_Shirayuki.description = Uma katana de gelo elegante. Seu comando de liberação, \n<i><b>«Dança, Sode no Shirayuki»</b></i>, comanda frio e beleza.
+Shikai_Wabisuke.name = Shikai – Wabisuke
+Shikai_Wabisuke.description = Uma espada elegantemente curvada cuja natureza traiçoeira é o oposto de seu refinamento externo. Seu golpe coloca uma maldição de peso no alvo. A cada bloqueio, o fardo da vítima dobra sem piedade, até o oponente ser quebrado e preso ao chão por sua própria carga insuportável. Comando: <i><b>«Dobra-te, Wabisuke»</b></i>.
+Shikai_Hozukimaru.name = Shikai – Hozukimaru
+Shikai_Hozukimaru.description = Uma lança de guerra crua e direta. Sua forma simples esconde um poder destrutivo feroz e durabilidade inquebrantável. Nesta arma reside um potencial de transformação adormecido.
+
+Kojaku_Bow.name = Arco Quincy - Kojaku
+Kojaku_Bow.description = O arco básico utilizável por todos os Quincy. É formado reunindo Reishi na <i>Cruz Quincy</i> na mão direita. As flechas que lança também são feitas de Reishi. Permite destruir Hollows com ataques à distância. Arma inicial para Quincy iniciantes.
+
+Four_Point_Quincy_Cross.name = Cruz Quincy de 4 pontas
+Four_Point_Quincy_Cross.description = Uma cruz Quincy de quatro pontas que ajuda jogadores Quincy a manifestar suas habilidades ao conceder MP quando equipada na mão secundária. Essencial para sustentar seu poder espiritual.
+
+Soul_Imprinting_Altar.name = Altar de Imprimir Alma
+Soul_Imprinting_Altar.description = Uma estação sagrada onde a alma do portador se funde com o Asauchi. Por meditação profunda e concentração de energia espiritual (Reiryoku), a base do futuro Zanpakutō é lançada. Este altar serve tanto ao despertar inicial quanto às etapas seguintes da evolução da lâmina — do Shikai à revelação final, Bankai.
+
+Shinigami_Robes.name = Robe de Shinigami – Shihakushō
+Shinigami_Robes.description = O uniforme padrão de Shinigami usado por todos os membros da Gotei 13.
+Shinigami_Robes_Sleeveless.name = Robe de Shinigami – Sem Mangas
+Shinigami_Robes_Sleeveless.description = Um <i>Shihakushō</i> modificado para quem deseja mais liberdade de movimento.
+Shinigami_Robes_Captain.name = Robe de Shinigami – Capitão
+Shinigami_Robes_Captain.description = O casaco branco usado pelos Capitães sobre o uniforme padrão. Oferece proteção espiritual superior e denota o mais alto posto na Gotei 13.
+Shinigami_Robes_OpenShoulder.name = Manto Shinigami - Ombro Descubierto
+Shinigami_Robes_OpenShoulder.description = Um <i>Shihakusho</i> modificado que serve ao mesmo propósito da variante sem mangas, mantendo uma aparência mais elegante e cerimonial.
+
+Resonating_Reishi_Core.name = Núcleo de Reishi Ressonante
+Resonating_Reishi_Core.description = Este núcleo vibra numa frequência que imita a sua. É uma extensão da sua alma. Pronto para ser atribuído a uma lâmina para despertá-la.
+Transcendent_Essence.name = Essência Transcendente
+Transcendent_Essence.description = Um paradoxo pulsante de poder absoluto. As fronteiras entre seu espírito e o mundo físico dissolveram-se neste ponto único. Neste brilho está a verdadeira forma da sua alma.
+Hollow_Essence.name = Essência de Hollow
+Hollow_Essence.description = Um remanescente cristalizado da alma distorcida de um Hollow derrotado. Ele pulsa com reiryoku instável.
+
+items.Currency_Kan.name = Kan
+items.Currency_Kan.description = A moeda padrão da Sociedade das Almas. Um Kan representa o valor de um fardo de arroz no mundo dos vivos. Seu peso e som dizem estar sintonizados à frequência do reishi, tornando-o impossível de falsificar.
+
+items.Medical_Pill_Basic.name = Pílula Médica Básica
+items.Medical_Pill_Basic.description = Pílula padrão do corpo médico da Divisão 4. Feita de ervas medicinais concentradas e um traço de energia kaidō curativa.\n\nRestaura <color is="#ffffff">30%</color> da vida instantaneamente.
+
+items.Kaido_Infused_Pill.name = Pílula de Restauração com Kaidō
+items.Kaido_Infused_Pill.description = Obra-prima da pesquisa médica da Divisão 4. Não apenas uma pílula, mas uma cápsula de feitiços de cura em suspensão.\n\nRestaura <color is="#ffffff">100%</color> da vida instantaneamente e concede:\n\n• <color is="#ffffff">Regen de Vida II</color>\n\nDuração: <color is="#ffffff">0:30</color>
+
+items.A_Guide_To_Find_Hollows_Closed.name = Guia para encontrar Hollows - Fechado
+items.A_Guide_To_Find_Hollows_Closed.description = <color is="#ffffff"><b>Clique com o botão direito</b></color> enquanto segura este pergaminho para abri-lo. Compilado pelo Instituto de Pesquisa e Desenvolvimento da 12ª Divisão.
+
+items.A_Guide_To_Find_Hollows.name = Guia para encontrar Hollows
+items.A_Guide_To_Find_Hollows.description = <i>Compilado pelo Instituto de Pesquisa e Desenvolvimento da 12ª Divisão</i>. A atividade dos Hollows não ocorre durante o dia. As manifestações foram registradas apenas após o anoitecer, quando a pressão espiritual se torna instável. Além disso, nenhuma assinatura de Hollow foi detectada dentro da Zona 1. Operativos que buscam Hollows devem sair da Zona 1 e realizar suas patrulhas durante a noite.

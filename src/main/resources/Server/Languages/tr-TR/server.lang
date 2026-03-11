@@ -1,0 +1,15 @@
+memories.categories.Hollow.title = Hollow
+
+npcRoles.Scarak_Defender_Hollow.name = Scarak Savunucu Hollow
+npcRoles.Scarak_Fighter_Hollow.name = Scarak Savaşçı Hollow
+npcRoles.Scarak_Louse_Hollow.name = Scarak Biti Hollow
+npcRoles.Scorpion_Hollow.name = Akrep Hollow
+npcRoles.Ghoul_Hollow.name = Ghoul Hollow
+npcRoles.Crawler_Hollow_Void.name = Boşluk Sürüngen Hollow
+
+memories.Hollow.Scarak_Defender_Hollow.description = Scarak Savunucusundan doğan bir Hollow. Maskesi ve sert kabuğu onu bozulmuşların saflarında inatçı bir ön cephe savaşçısı yapar.
+memories.Hollow.Scarak_Fighter_Hollow.description = Scarak Savaşçısından doğan bir Hollow. Eski benliğinin saldırgan taktiklerini korur, şimdi bir Hollow'un açlığıyla çarpıtılmış.
+memories.Hollow.Scarak_Louse_Hollow.description = Scarak Bitinden doğan bir Hollow. Küçük ama sayıca çok, bu Hollow'lar avlarına üşüşür ve eti kemiğe kadar soyar.
+memories.Hollow.Scorpion_Hollow.description = Akrepten doğan bir Hollow. İğnesi ve pençeleri artık bozulmanın taşıyıcıları, boşluğun soğuğuyla vurur.
+memories.Hollow.Ghoul_Hollow.description = Ghoul'dan doğan bir Hollow. Huzursuz ölü, daha da Hollow'a bükülmüş — yaşayanların özünü yiyen bir yaratık.
+memories.Hollow.Crawler_Hollow_Void.description = Boşluk Sürüngeninden doğan bir Hollow. Zaten boşlukla temas etmiş, tamamen Hollow doğasına düşmüş ve karanlıkta dolaşır.

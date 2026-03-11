@@ -1,0 +1,49 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "TensaZangetsu_Signature_Status_Glow",
+      "PositionOffset": {
+        "X": 0.2,
+        "Z": 0
+      },
+      "FixedRotation": false
+    },
+    {
+      "SpawnerId": "TensaZangetsu_Signature_Status_Sparkles",
+      "PositionOffset": {
+        "X": -0.2,
+        "Z": 0
+      },
+      "FixedRotation": false
+    },
+    {
+      "SpawnerId": "TensaZangetsu_Signature_Status_Lines",
+      "FixedRotation": false,
+      "PositionOffset": {
+        "X": -0.1,
+        "Y": 0,
+        "Z": 0
+      }
+    },
+    {
+      "SpawnerId": "TensaZangetsu_Signature_Status_EnergyAura",
+      "PositionOffset": {
+        "Y": 0,
+        "X": 0.4
+      },
+      "FixedRotation": false
+    },
+    {
+      "SpawnerId": "TensaZangetsu_Signature_Status_EnergyAuraGlow",
+      "PositionOffset": {
+        "X": 0.4
+      }
+    },
+    {
+      "SpawnerId": "TensaZangetsu_Signature_Status_EnergyAura",
+      "PositionOffset": {
+        "X": 0.5
+      }
+    }
+  ]
+}

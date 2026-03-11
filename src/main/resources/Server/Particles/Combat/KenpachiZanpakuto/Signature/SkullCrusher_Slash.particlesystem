@@ -1,0 +1,19 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "SkullCrusher_Slash_Bright",
+      "FixedRotation": false
+    },
+    {
+      "SpawnerId": "SkullCrusher_Slash_Bright2"
+    },
+    {
+      "SpawnerId": "SkullCrusher_Slash_Distortion"
+    },
+    {
+      "SpawnerId": "SkullCrusher_Slash_Alpha"
+    }
+  ],
+  "BoundingRadius": 10,
+  "IsImportant": false
+}

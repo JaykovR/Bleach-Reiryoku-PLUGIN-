@@ -1,0 +1,25 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Crimson_Seal_TopIcon_Glow",
+      "PositionOffset": {
+        "Y": 3.5
+      }
+    },
+    {
+      "SpawnerId": "Crimson_Seal_TopIcon_Arc",
+      "PositionOffset": {
+        "Y": 3.5
+      }
+    },
+    {
+      "SpawnerId": "Crimson_Seal_TopIcon_SealedIcon",
+      "PositionOffset": {
+        "Y": 3.5
+      }
+    }
+  ],
+  "CullDistance": 100,
+  "$Comment": "spawn of the effect",
+  "LifeSpan": 3
+}

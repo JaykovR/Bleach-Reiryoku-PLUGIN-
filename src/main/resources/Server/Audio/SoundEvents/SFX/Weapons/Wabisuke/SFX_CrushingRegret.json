@@ -1,0 +1,16 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Weapons/Shikai/Wabisuke_CrushingRegret_SFX.ogg"
+      ],
+      "StartDelay": 0,
+      "Looping": false,
+      "Volume": 6.0
+    }
+  ],
+  "MaxInstance": 5,
+  "Volume": -4.08,
+  "PreventSoundInterruption": false,
+  "Parent": "SFX_Attn_Moderate"
+}

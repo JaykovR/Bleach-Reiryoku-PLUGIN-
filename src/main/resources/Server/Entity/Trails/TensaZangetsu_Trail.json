@@ -1,0 +1,14 @@
+{
+  "TexturePath": "Trails/TensaZangetsu_Trail2.png",
+  "LifeSpan": 15,
+  "Start": {
+    "Width": 1,
+    "Color": "#0700008f"
+  },
+  "Roll": 0,
+  "End": {
+    "Color": "#ff000000"
+  },
+  "LightInfluence": 0,
+  "RenderMode": "BlendLinear"
+}

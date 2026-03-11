@@ -1,0 +1,7 @@
+{
+  "Parent": "Weapon_Shortbow_Primary_Shoot_Projectile",
+  "Config": "ProjectileConfigArrowKojakuStrenght0",
+  "Effects": {
+    "ItemAnimationId": "ShootCharged"
+  }
+}

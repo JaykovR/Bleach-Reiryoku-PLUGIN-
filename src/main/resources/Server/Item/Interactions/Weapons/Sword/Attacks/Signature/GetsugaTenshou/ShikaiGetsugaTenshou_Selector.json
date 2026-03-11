@@ -1,0 +1,18 @@
+{
+  "Type": "Simple",
+  "RunTime": 0.3,
+  "Effects": {
+    "ItemAnimationId": "GetsugaTenshou_Swing",
+    "WorldSoundEventId": "SFX_Shikai_GetsugaTenshou_Launch",
+    "LocalSoundEventId": "SFX_Shikai_GetsugaTenshou_Launch"
+  },
+  "Next": {
+    "Type": "Replace",
+    "DefaultValue": {
+      "Interactions": [
+        "ShikaiGetsugatenshou_SlashTrail"
+      ]
+    },
+    "Var": "ShikaiGetsugatenshou_SlashTrail"
+  }
+}

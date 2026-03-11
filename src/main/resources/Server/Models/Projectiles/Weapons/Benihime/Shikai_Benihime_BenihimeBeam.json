@@ -1,0 +1,28 @@
+{
+  "HitBox": {
+    "Max": {
+      "X": 0.1,
+      "Y": 0.1,
+      "Z": 0.1
+    },
+    "Min": {
+      "X": -0.1,
+      "Y": -0.1,
+      "Z": -0.1
+    }
+  },
+  "MinScale": 1,
+  "MaxScale": 1,
+  "Trails": [
+    {
+      "TrailId": "Arrow"
+    }
+  ],
+  "Texture": "Items/Projectiles/Benihime_Texture.png",
+  "Model": "Items/Projectiles/Benihime.blockymodel",
+  "Particles": [
+    {
+      "SystemId": "Shikai_Benihime_BenihimeBeamProjParticle"
+    }
+  ]
+}

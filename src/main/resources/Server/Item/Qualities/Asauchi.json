@@ -1,0 +1,15 @@
+{
+  "QualityValue": 1,
+  "ItemTooltipTexture": "UI/ItemQualities/Tooltips/ItemTooltipAsauchi.png",
+  "ItemTooltipArrowTexture": "UI/ItemQualities/Tooltips/ItemTooltipAsauchiArrow.png",
+  "SlotTexture": "UI/ItemQualities/Slots/SlotAsauchi.png",
+  "BlockSlotTexture": "UI/ItemQualities/Slots/SlotAsauchi.png",
+  "SpecialSlotTexture": "UI/ItemQualities/Slots/SlotAsauchi.png",
+  "TextColor": "#c8dbef",
+  "VisibleQualityLabel": true,
+  "RenderSpecialSlot": true,
+  "ItemEntityConfig": {
+    "ParticleSystemId": "Drop_Common"
+  },
+  "LocalizationKey": "qualities.qualities.Asauchi"
+}

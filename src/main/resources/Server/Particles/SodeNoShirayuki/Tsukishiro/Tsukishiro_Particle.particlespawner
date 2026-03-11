@@ -1,0 +1,58 @@
+{
+  "EmitOffset": {
+    "Y": {
+      "Min": 0.1,
+      "Max": 0.1
+    }
+  },
+  "InitialVelocity": {
+    "Yaw": {
+      "Min": 0,
+      "Max": 0
+    },
+    "Speed": {
+      "Min": 0,
+      "Max": 0
+    }
+  },
+  "ParticleRotationInfluence": "BillboardVelocity",
+  "ParticleRotateWithSpawner": true,
+  "RenderMode": "Erosion",
+  "Particle": {
+    "Texture": "Particles/Textures/Basic/Ball.png",
+    "Animation": {
+      "0": {
+        "Opacity": 1
+      }
+    },
+    "ScaleRatioConstraint": "OneToOne",
+    "InitialAnimationFrame": {
+      "FrameIndex": {
+        "Min": 0
+      },
+      "Opacity": 0.424,
+      "Scale": {
+        "X": {
+          "Min": 3,
+          "Max": 3
+        },
+        "Y": {
+          "Min": 3,
+          "Max": 3
+        }
+      },
+      "Color": "#641212",
+      "Rotation": {
+        "Y": {
+          "Min": 180,
+          "Max": 180
+        }
+      }
+    }
+  },
+  "LifeSpan": 5,
+  "TotalParticles": {
+    "Min": 1,
+    "Max": 2
+  }
+}

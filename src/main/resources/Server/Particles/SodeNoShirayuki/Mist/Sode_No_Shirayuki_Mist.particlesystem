@@ -1,0 +1,23 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Sode_No_Shirayuki_Specks",
+      "PositionOffset": {
+        "X": -0.1
+      }
+    },
+    {
+      "SpawnerId": "Sode_No_Shirayuki_Sparks",
+      "PositionOffset": {
+        "X": -0.1
+      },
+      "FixedRotation": false
+    },
+    {
+      "SpawnerId": "Sode_No_Shirayuki_Mist",
+      "PositionOffset": {
+        "X": -0.05
+      }
+    }
+  ]
+}

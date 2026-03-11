@@ -1,0 +1,10 @@
+{
+  "RequireNewClick": true,
+  "ClickQueuingTimeout": 0.2,
+  "Interactions": [
+    "Wabisuke_Primary"
+  ],
+  "Cooldown": {
+    "Cooldown": 0.25
+  }
+}

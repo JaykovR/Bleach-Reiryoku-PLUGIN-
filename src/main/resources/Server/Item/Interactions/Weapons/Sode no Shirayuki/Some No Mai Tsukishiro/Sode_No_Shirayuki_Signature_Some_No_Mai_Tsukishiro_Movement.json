@@ -1,0 +1,6 @@
+{
+  "Type": "MovementCondition",
+  "Back": "Tsukishiro_Swing_Left",
+  "Failed": "Tsukishiro_Swing_Left",
+  "Forward": "Tsukishiro_Forward"
+}

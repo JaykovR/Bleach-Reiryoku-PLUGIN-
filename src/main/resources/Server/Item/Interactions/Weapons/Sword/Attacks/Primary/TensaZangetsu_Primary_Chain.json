@@ -1,0 +1,47 @@
+{
+  "Type": "Chaining",
+  "ChainingAllowance": 2,
+  "ChainId": "Sword_Swings",
+  "Next": [
+    {
+      "Type": "Replace",
+      "DefaultOk": true,
+      "Var": "Swing_Left",
+      "DefaultValue": {
+        "Interactions": [
+          "TensaZangetsu_Primary_Swing_Left"
+        ]
+      }
+    },
+    {
+      "Type": "Replace",
+      "DefaultOk": true,
+      "Var": "Swing_Right",
+      "DefaultValue": {
+        "Interactions": [
+          "TensaZangetsu_Primary_Swing_Right"
+        ]
+      }
+    },
+    {
+      "Type": "Replace",
+      "DefaultOk": true,
+      "Var": "Hit3",
+      "DefaultValue": {
+        "Interactions": [
+          "TensaZangetsu_Primary_Hit3"
+        ]
+      }
+    },
+    {
+      "Type": "Replace",
+      "DefaultOk": true,
+      "Var": "Swing_Down",
+      "DefaultValue": {
+        "Interactions": [
+          "TensaZangetsu_Primary_Swing_Down"
+        ]
+      }
+    }
+  ]
+}

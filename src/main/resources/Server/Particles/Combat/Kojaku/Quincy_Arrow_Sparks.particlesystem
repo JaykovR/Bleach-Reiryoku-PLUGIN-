@@ -1,0 +1,8 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Quincy_Arrow_Sparks_Spawner"
+    }
+  ],
+  "LifeSpan": 10
+}

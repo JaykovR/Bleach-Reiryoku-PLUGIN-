@@ -1,0 +1,7 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "LocalSoundEventId": "SFX_OkamiYa_Hit",
+    "WorldSoundEventId": "SFX_OkamiYa_Hit"
+  }
+}

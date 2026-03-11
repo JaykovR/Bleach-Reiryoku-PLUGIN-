@@ -1,0 +1,19 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "GetsugaTenshou_Signature_Slash_Blight",
+      "FixedRotation": false
+    },
+    {
+      "SpawnerId": "GetsugaTenshou_Signature_Slash_Blight2"
+    },
+    {
+      "SpawnerId": "GetsugaTenshou_Signature_Slash_Distortion"
+    },
+    {
+      "SpawnerId": "GetsugaTenshou_Signature_Slash_Alpha2"
+    }
+  ],
+  "BoundingRadius": 10,
+  "IsImportant": false
+}

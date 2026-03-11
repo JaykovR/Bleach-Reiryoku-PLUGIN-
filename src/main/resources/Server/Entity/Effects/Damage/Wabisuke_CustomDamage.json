@@ -1,0 +1,13 @@
+{
+  "ApplicationEffects": {
+    "EntityBottomTint": "#353535",
+    "EntityTopTint": "#4f00b1",
+    "MovementEffects": {
+      "DisableAll": true
+    }
+  },
+  "Duration": 2,
+  "RemovalBehavior": "Duration",
+  "OverlapBehavior": "Extend",
+  "Debuff": true
+}

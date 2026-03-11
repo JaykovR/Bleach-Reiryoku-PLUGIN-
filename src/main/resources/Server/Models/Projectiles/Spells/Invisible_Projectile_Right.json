@@ -1,0 +1,21 @@
+{
+  "HitBox": {
+    "Max": {
+      "X": 0.1,
+      "Y": 0.1,
+      "Z": 3
+    },
+    "Min": {
+      "X": -0.1,
+      "Y": -0.1,
+      "Z": 2
+    }
+  },
+  "MinScale": 10,
+  "MaxScale": 10,
+  "EyeHeight": 1,
+  "Light": {
+    "Color": "#d91",
+    "Radius": 1
+  }
+}

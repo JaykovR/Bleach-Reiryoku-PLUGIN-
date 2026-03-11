@@ -1,0 +1,19 @@
+{
+  "Type": "Simple",
+  "RunTime": 0.37,
+  "Effects": {
+    "ItemAnimationId": "SwingDownStrong",
+    "WorldSoundEventId": "SFX_ZangetsuShikai_Swing",
+    "LocalSoundEventId": "SFX_ZangetsuShikai_Swing"
+  },
+  "Next": {
+    "Type": "Replace",
+    "Var": "Swing_Down_Selector",
+    "DefaultOk": true,
+    "DefaultValue": {
+      "Interactions": [
+        "Shikai_Primary_Swing_Down_Selector"
+      ]
+    }
+  }
+}

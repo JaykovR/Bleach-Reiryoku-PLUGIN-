@@ -1,0 +1,14 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "TensaZangetsu_Slash_Cut",
+      "PositionOffset": {
+        "Z": 0.1
+      }
+    },
+    {
+      "SpawnerId": "TensaZangetsu_Slash_Sparks"
+    }
+  ],
+  "IsImportant": false
+}

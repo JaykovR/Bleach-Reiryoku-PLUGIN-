@@ -1,0 +1,19 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Weapons/Bow/quincy_bow_arrow_Shoot.ogg"
+      ],
+      "RandomSettings": {
+        "MinPitch": -2,
+        "MaxPitch": 3,
+        "MinVolume": -0.9151498112135024,
+        "MaxVolume": 0.8278537031645015
+      },
+      "Volume": 6.0
+    }
+  ],
+  "Volume": -2,
+  "PreventSoundInterruption": true,
+  "AudioCategory": "AudioCat_Shortbow"
+}

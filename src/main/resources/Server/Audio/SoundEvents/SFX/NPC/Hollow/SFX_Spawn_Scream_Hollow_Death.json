@@ -1,0 +1,23 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/NPC/Hollow/Scream/Hollow_Scream_01.ogg",
+        "Sounds/NPC/Hollow/Scream/Hollow_Scream_02.ogg"
+      ],
+      "RandomSettings": {
+        "MinPitch": -4.0,
+        "MaxPitch": 2.0,
+        "MinVolume": -12.0,
+        "MaxVolume": 0.0
+      },
+      "Volume": 2.0,
+      "Probability": 100,
+      "StartDelay": 0.0
+    }
+  ],
+  "PreventSoundInterruption": true,
+  "MaxInstance": 1,
+  "Volume": 0,
+  "Parent": "SFX_Attn_Loud"
+}

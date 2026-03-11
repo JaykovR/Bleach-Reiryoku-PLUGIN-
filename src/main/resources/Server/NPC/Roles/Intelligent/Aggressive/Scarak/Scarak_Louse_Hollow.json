@@ -1,0 +1,27 @@
+{
+  "Type": "Variant",
+  "Reference": "Template_Scarak_Louse",
+  "Modify": {
+    "Appearance": "Scarak_Louse_Hollow",
+    "DropList": "Drop_Scarak_Louse",
+    "AttackDistance": 1.6,
+    "Attack": "Scarak_Louse_Bite",
+    "AttitudeGroup": "Scarak",
+    "FlockArray": [
+      "Scarak_Louse"
+    ],
+    "MaxHealth": 80,
+    "IsMemory": true,
+    "MemoriesCategory": "Hollow",
+    "MemoriesNameOverride": "Scarak_Louse_Hollow",
+    "NameTranslationKey": {
+      "Compute": "NameTranslationKey"
+    }
+  },
+  "Parameters": {
+    "NameTranslationKey": {
+      "Value": "mobs.Scarak_Louse_Hollow.name",
+      "Description": "Translation key for NPC name display"
+    }
+  }
+}

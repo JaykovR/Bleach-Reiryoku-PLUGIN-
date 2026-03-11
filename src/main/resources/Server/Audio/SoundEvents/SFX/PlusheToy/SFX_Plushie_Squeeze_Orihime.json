@@ -1,0 +1,23 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Items/Plushie/Plushie_Squeeze_Orihime_1.ogg",
+        "Sounds/Items/Plushie/Plushie_Squeeze_Orihime_2.ogg",
+        "Sounds/Items/Plushie/Plushie_Squeeze_Orihime_3.ogg",
+        "Sounds/Items/Plushie/Plushie_Squeeze_Orihime_4.ogg"
+      ],
+      "RandomSettings": {
+        "MinPitch": -1.104,
+        "MaxPitch": 1.008,
+        "MinVolume": 0
+      },
+      "Volume": 0,
+      "Probability": 100,
+      "RoundRobinHistorySize": 6
+    }
+  ],
+  "Volume": -4.0,
+  "MaxDistance": 15,
+  "StartAttenuationDistance": 1
+}

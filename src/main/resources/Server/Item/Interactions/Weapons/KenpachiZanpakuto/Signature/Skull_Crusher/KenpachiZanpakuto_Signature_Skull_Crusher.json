@@ -1,0 +1,41 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "SignatureEnergy": 75
+  },
+  "ValueType": "Percent",
+  "Next": {
+    "Type": "Serial",
+    "Interactions": [
+      {
+        "Type": "Simple",
+        "Effects": {
+          "Particles": [
+            {
+              "SystemId": "Kenpachi_Battle_Trance_Aura",
+              "Scale": 3,
+              "TargetEntityPart": "Entity"
+            }
+          ],
+          "ItemPlayerAnimationsId": "Kenpachi_Zanpakuto_Animations",
+          "ItemAnimationId": "SkullCrusherCharge",
+          "WorldSoundEventId": "SFX_Kenpachi_SkullCrusher_Activate",
+          "LocalSoundEventId": "SFX_Kenpachi_SkullCrusher_Activate"
+        },
+        "RunTime": 1
+      },
+      "KenpachiZanpakuto_Signature_Skull_Crusher_Selector",
+      {
+        "Type": "Simple",
+        "RunTime": 0.15
+      },
+      {
+        "Type": "ChangeStat",
+        "StatModifiers": {
+          "SignatureEnergy": -75
+        },
+        "ValueType": "Percent"
+      }
+    ]
+  }
+}

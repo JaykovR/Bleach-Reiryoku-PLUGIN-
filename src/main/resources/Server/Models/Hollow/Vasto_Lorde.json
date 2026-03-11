@@ -1,0 +1,16 @@
+{
+  "Model": "NPC/Original_Hollow/Vasto Lorde.blockymodel",
+  "Texture": "NPC/Original_Hollow/VastoLorde.png",
+  "HitBox": {
+    "Max": {
+      "X": 1,
+      "Y": 2,
+      "Z": 1
+    },
+    "Min": {
+      "X": -1,
+      "Y": 0,
+      "Z": -1
+    }
+  }
+}

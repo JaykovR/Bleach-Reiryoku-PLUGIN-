@@ -1,0 +1,9 @@
+{
+  "Duration": 0.25,
+  "ApplicationEffects": {
+    "ModelVFXId": "Shunpo_Dash"
+  },
+  "OverlapBehavior": "Extend",
+  "Invulnerable": false,
+  "RemovalBehavior": "Complete"
+}

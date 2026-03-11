@@ -1,0 +1,16 @@
+{
+  "TexturePath": "Trails/Basic.png",
+  "LifeSpan": 7,
+  "Roll": 0,
+  "Start": {
+    "Color": "rgba(#9C27B0, 0.667)",
+    "Width": 0.8
+  },
+  "End": {
+    "Color": "#9C27B008",
+    "Width": 0
+  },
+  "LightInfluence": 0,
+  "Smooth": true,
+  "RenderMode": "BlendLinear"
+}

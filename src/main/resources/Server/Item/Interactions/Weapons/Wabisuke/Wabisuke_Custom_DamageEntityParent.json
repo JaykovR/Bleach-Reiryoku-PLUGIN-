@@ -1,0 +1,28 @@
+{
+  "Type": "DamageEntity",
+  "Next": {
+    "Type": "Serial",
+    "Interactions": [
+      {
+        "Type": "ApplyEffect",
+        "EffectId": "Slow_Wabisuke",
+        "Entity": "Target"
+      },
+      {
+        "Type": "ClearEntityEffect",
+        "Entity": "Target",
+        "EntityEffectId": "Potion_Health_Lesser_Regen"
+      },
+      {
+        "Type": "ClearEntityEffect",
+        "Entity": "Target",
+        "EntityEffectId": "Potion_Health_Greater_Regen"
+      },
+      {
+        "Type": "ClearEntityEffect",
+        "Entity": "Target",
+        "EntityEffectId": "Potion_Stamina_Regen"
+      }
+    ]
+  }
+}

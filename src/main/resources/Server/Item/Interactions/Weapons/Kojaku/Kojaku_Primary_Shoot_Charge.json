@@ -1,0 +1,183 @@
+{
+  "Type": "Charging",
+  "AllowIndefiniteHold": true,
+  "DisplayProgress": false,
+  "Effects": {
+    "ItemAnimationId": "ShootCharging",
+    "ClearAnimationOnFinish": true,
+    "ClearSoundEventOnFinish": true,
+    "WorldSoundEventId": "SFX_QuincyBowCharge",
+    "LocalSoundEventId": "SFX_QuincyBowCharge",
+    "Particles": [
+      {
+        "PositionOffset": {
+          "X": 0.075,
+          "Y": -0.4,
+          "Z": 0.075
+        },
+        "RotationOffset": {
+          "Pitch": 0,
+          "Roll": 0,
+          "Yaw": 90
+        },
+        "Scale": 0.5,
+        "TargetNodeName": "Handle",
+        "SystemId": "Kojaku_Charging",
+        "TargetEntityPart": "Self"
+      }
+    ]
+  },
+  "HorizontalSpeedMultiplier": 0.67,
+  "Next": {
+    "0.1": {
+      "Type": "StatsCondition",
+      "Costs": {
+        "Mana": 4
+      },
+      "Next": {
+        "Type": "ChangeStat",
+        "StatModifiers": {
+          "Mana": -4
+        },
+        "Next": {
+          "Type": "Replace",
+          "Var": "Kojaku_Primary_Shoot_Strength_0",
+          "DefaultValue": {
+            "Interactions": [
+              "KojakuPrimaryShootStrength0"
+            ]
+          }
+        }
+      },
+      "Failed": {
+        "Type": "Replace",
+        "Var": "No_Ammo_Effects",
+        "DefaultValue": {
+          "Interactions": [
+            "Common_Bow_No_Ammo"
+          ]
+        }
+      }
+    },
+    "0.3": {
+      "Type": "StatsCondition",
+      "Costs": {
+        "Mana": 8
+      },
+      "Next": {
+        "Type": "ChangeStat",
+        "StatModifiers": {
+          "Mana": -8
+        },
+        "Next": {
+          "Type": "Replace",
+          "Var": "Kojaku_Primary_Shoot_Strength_1",
+          "DefaultValue": {
+            "Interactions": [
+              "KojakuPrimaryShootStrength1"
+            ]
+          }
+        }
+      },
+      "Failed": {
+        "Type": "Replace",
+        "Var": "No_Ammo_Effects",
+        "DefaultValue": {
+          "Interactions": [
+            "Common_Bow_No_Ammo"
+          ]
+        }
+      }
+    },
+    "0.6": {
+      "Type": "StatsCondition",
+      "Costs": {
+        "Mana": 12
+      },
+      "Next": {
+        "Type": "ChangeStat",
+        "StatModifiers": {
+          "Mana": -12
+        },
+        "Next": {
+          "Type": "Replace",
+          "Var": "Kojaku_Primary_Shoot_Strength_2",
+          "DefaultValue": {
+            "Interactions": [
+              "KojakuPrimaryShootStrength2"
+            ]
+          }
+        }
+      },
+      "Failed": {
+        "Type": "Replace",
+        "Var": "No_Ammo_Effects",
+        "DefaultValue": {
+          "Interactions": [
+            "Common_Bow_No_Ammo"
+          ]
+        }
+      }
+    },
+    "0.9": {
+      "Type": "StatsCondition",
+      "Costs": {
+        "Mana": 16
+      },
+      "Next": {
+        "Type": "ChangeStat",
+        "StatModifiers": {
+          "Mana": -16
+        },
+        "Next": {
+          "Type": "Replace",
+          "Var": "Kojaku_Primary_Shoot_Strength_3",
+          "DefaultValue": {
+            "Interactions": [
+              "KojakuPrimaryShootStrength3"
+            ]
+          }
+        }
+      },
+      "Failed": {
+        "Type": "Replace",
+        "Var": "No_Ammo_Effects",
+        "DefaultValue": {
+          "Interactions": [
+            "Common_Bow_No_Ammo"
+          ]
+        }
+      }
+    },
+    "1.2": {
+      "Type": "StatsCondition",
+      "Costs": {
+        "Mana": 19
+      },
+      "Next": {
+        "Type": "ChangeStat",
+        "StatModifiers": {
+          "Mana": -19
+        },
+        "Next": {
+          "Type": "Replace",
+          "Var": "Kojaku_Primary_Shoot_Strength_4",
+          "DefaultValue": {
+            "Interactions": [
+              "KojakuPrimaryShootStrength4"
+            ]
+          }
+        }
+      },
+      "Failed": {
+        "Type": "Replace",
+        "Var": "No_Ammo_Effects",
+        "DefaultValue": {
+          "Interactions": [
+            "Common_Bow_No_Ammo"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "Type": "ApplyForce",
+  "VerticalClamp": [
+    -85,
+    20
+  ],
+  "WaitForGround": false,
+  "ChangeVelocityType": "Add",
+  "VelocityConfig": {
+    "AirResistance": 0.97,
+    "AirResistanceMax": 0.96,
+    "GroundResistance": 0.94,
+    "GroundResistanceMax": 0.82,
+    "Threshold": 1.0,
+    "Style": "Exp"
+  },
+  "Forces": [
+    {
+      "Direction": {
+        "Z": -1
+      },
+      "Force": 20,
+      "AdjustVertical": true
+    },
+    {
+      "Direction": {
+        "Z": -1
+      },
+      "Force": 7
+    }
+  ],
+  "Effects": {
+    "ItemAnimationId": "TsukishiroDash"
+  },
+  "WaitForCollision": false
+}

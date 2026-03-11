@@ -1,0 +1,32 @@
+{
+  "Type": "Simple",
+  "RunTime": 0.25,
+  "Effects": {
+    "ItemAnimationId": "GetsugaTenshou_Swing",
+    "WorldSoundEventId": "SFX_GetsugaTenshou",
+    "LocalSoundEventId": "SFX_GetsugaTenshou",
+    "Particles": [
+      {
+        "SystemId": "GetsugaTenshou_Signature_Slash",
+        "TargetEntityPart": "Entity",
+        "TargetNodeName": "Hip",
+        "PositionOffset": {
+          "Y": 1.5,
+          "Z": 0.5
+        },
+        "RotationOffset": {
+          "Pitch": 0
+        }
+      }
+    ]
+  },
+  "Next": {
+    "Type": "Replace",
+    "DefaultValue": {
+      "Interactions": [
+        "GetsugaTenshou_Launch"
+      ]
+    },
+    "Var": "GetsugaTenshou_Summon_Launch"
+  }
+}

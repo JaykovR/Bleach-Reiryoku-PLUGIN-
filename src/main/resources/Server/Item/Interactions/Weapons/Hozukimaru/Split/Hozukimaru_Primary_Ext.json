@@ -1,0 +1,17 @@
+{
+  "Type": "Charging",
+  "DisplayProgress": false,
+  "Next": {
+    "0": "Hozukimaru_Primary_Ext_Chain",
+    "0.2": {
+      "Type": "Replace",
+      "Var": "Thrust_Stamina",
+      "DefaultOk": true,
+      "DefaultValue": {
+        "Interactions": [
+          "Hozukimaru_Primary_Thrust_StaminaCondition"
+        ]
+      }
+    }
+  }
+}

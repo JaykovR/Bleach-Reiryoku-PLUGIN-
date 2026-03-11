@@ -1,0 +1,10 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Shikai_Benihime_BenihimeBeamProjParticle_Spawner",
+      "RotationOffset": {
+        "Roll": 180
+      }
+    }
+  ]
+}

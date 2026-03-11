@@ -1,0 +1,15 @@
+{
+  "QualityValue": 3,
+  "ItemTooltipTexture": "UI/ItemQualities/Tooltips/ItemTooltipShikai.png",
+  "ItemTooltipArrowTexture": "UI/ItemQualities/Tooltips/ItemTooltipShikaiArrow.png",
+  "SlotTexture": "UI/ItemQualities/Slots/SlotShikai.png",
+  "BlockSlotTexture": "UI/ItemQualities/Slots/SlotShikai.png",
+  "SpecialSlotTexture": "UI/ItemQualities/Slots/SlotShikai.png",
+  "TextColor": "#4783A8",
+  "VisibleQualityLabel": true,
+  "RenderSpecialSlot": true,
+  "ItemEntityConfig": {
+    "ParticleSystemId": "Drop_Rare"
+  },
+  "LocalizationKey": "qualities.qualities.Shikai"
+}

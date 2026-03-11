@@ -1,0 +1,15 @@
+{
+  "SwitchTo": "PostColor",
+  "EffectDirection": "BottomUp",
+  "AnimationDuration": 0.85,
+  "AnimationRange": {"Y": 0.3},
+  "HighlightColor": "#B22222",
+  "HighlightThickness": 0.5,
+  "UseBloomOnHighlight": true,
+  "NoiseScale": {"X": 2, "Y": 2},
+  "PostColor": "#8B0000",
+  "PostColorOpacity": 0,
+  "UseProgessiveHighlight": true,
+  "LoopOption": "LoopMirror",
+  "CurveType": "Linear"
+}

@@ -1,0 +1,15 @@
+{
+  "QualityValue": 3,
+  "ItemTooltipTexture": "UI/ItemQualities/Tooltips/ItemTooltipSpiritWeapon.png",
+  "ItemTooltipArrowTexture": "UI/ItemQualities/Tooltips/ItemTooltipSpiritWeaponArrow.png",
+  "SlotTexture": "UI/ItemQualities/Slots/SlotSpiritWeapon.png",
+  "BlockSlotTexture": "UI/ItemQualities/Slots/SlotSpiritWeapon.png",
+  "SpecialSlotTexture": "UI/ItemQualities/Slots/SlotSpiritWeapon.png",
+  "TextColor": "#4ACEBA",
+  "VisibleQualityLabel": true,
+  "RenderSpecialSlot": true,
+  "ItemEntityConfig": {
+    "ParticleSystemId": "Drop_Rare"
+  },
+  "LocalizationKey": "qualities.qualities.Asauchi"
+}

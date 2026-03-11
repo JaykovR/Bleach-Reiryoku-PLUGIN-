@@ -1,0 +1,30 @@
+{
+  "Duration": 3,
+  "ApplicationEffects": {
+    "EntityBottomTint": "#6e15a1",
+    "ModelVFXId": "Slow",
+    "EntityTopTint": "#9000c3",
+    "HorizontalSpeedMultiplier": 0.07,
+    "Particles": [
+      {
+        "TargetEntityPart": "Entity",
+        "SystemId": "Slow_Wabisuke"
+      },
+      {
+        "SystemId": "Slowness_Lines",
+        "TargetEntityPart": "Entity",
+        "PositionOffset": {
+          "Y": 1.5
+        }
+      }
+    ],
+    "WorldSoundEventId": "SFX_Wabisuke_Slow"
+  },
+  "OverlapBehavior": "Extend",
+  "ValueType": "Absolute",
+  "Tags": {
+    "Slowed_Wabisuke": [
+      "Slowed_Wabisuke"
+    ]
+  }
+}

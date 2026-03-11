@@ -1,0 +1,198 @@
+{
+  "DisplayNameKey": "mobs.barter.wandering_shinigami.title",
+  "RefreshInterval": {
+    "Days": 1
+  },
+  "RestockHour": 6,
+  "TradeSlots": [
+    {
+      "Type": "Fixed",
+      "Trade": {
+        "Output": {
+          "ItemId": "Medical_Pill_Basic",
+          "Quantity": 10
+        },
+        "Input": [
+          {
+            "ItemId": "Currency_Kan",
+            "Quantity": 5
+          }
+        ],
+        "Stock": 10
+      }
+    },
+    {
+      "Type": "Fixed",
+      "Trade": {
+        "Output": {
+          "ItemId": "Kaido_Infused_Pill",
+          "Quantity": 10
+        },
+        "Input": [
+          {
+            "ItemId": "Currency_Kan",
+            "Quantity": 25
+          }
+        ],
+        "Stock": 3
+      }
+    },
+    {
+      "Type": "Fixed",
+      "Trade": {
+        "Output": {
+          "ItemId": "A_Guide_To_Find_Hollows_Closed"
+        },
+        "Input": [
+          {
+            "ItemId": "Ingredient_Life_Essence",
+            "Quantity": 1
+          }
+        ],
+        "Stock": 1
+      }
+    },
+    {
+      "Type": "Pool",
+      "SlotCount": 4,
+      "Trades": [
+        {
+          "Weight": 10,
+          "Output": {
+            "ItemId": "Asauchi",
+            "Quantity": 1
+          },
+          "Input": [
+            {
+              "ItemId": "Currency_Kan",
+              "Quantity": 30
+            }
+          ],
+          "Stock": [
+            1,
+            2
+          ]
+        },
+        {
+          "Weight": 25,
+          "Output": {
+            "ItemId": "Plant_Seeds_Wheat_Eternal",
+            "Quantity": 5
+          },
+          "Input": [
+            {
+              "ItemId": "Currency_Kan",
+              "Quantity": 4
+            }
+          ],
+          "Stock": [
+            3,
+            6
+          ]
+        },
+        {
+          "Weight": 25,
+          "Output": {
+            "ItemId": "Plant_Seeds_Tomato_Eternal",
+            "Quantity": 5
+          },
+          "Input": [
+            {
+              "ItemId": "Currency_Kan",
+              "Quantity": 4
+            }
+          ],
+          "Stock": [
+            3,
+            6
+          ]
+        },
+        {
+          "Weight": 25,
+          "Output": {
+            "ItemId": "Plant_Seeds_Carrot_Eternal",
+            "Quantity": 5
+          },
+          "Input": [
+            {
+              "ItemId": "Currency_Kan",
+              "Quantity": 4
+            }
+          ],
+          "Stock": [
+            3,
+            6
+          ]
+        },
+        {
+          "Weight": 25,
+          "Output": {
+            "ItemId": "Plant_Seeds_Corn_Eternal",
+            "Quantity": 5
+          },
+          "Input": [
+            {
+              "ItemId": "Currency_Kan",
+              "Quantity": 4
+            }
+          ],
+          "Stock": [
+            3,
+            6
+          ]
+        },
+        {
+          "Weight": 30,
+          "Output": {
+            "ItemId": "Food_Kebab_Fruit",
+            "Quantity": 5
+          },
+          "Input": [
+            {
+              "ItemId": "Currency_Kan",
+              "Quantity": 3
+            }
+          ],
+          "Stock": [
+            4,
+            8
+          ]
+        },
+        {
+          "Weight": 30,
+          "Output": {
+            "ItemId": "Food_Kebab_Meat",
+            "Quantity": 5
+          },
+          "Input": [
+            {
+              "ItemId": "Currency_Kan",
+              "Quantity": 5
+            }
+          ],
+          "Stock": [
+            4,
+            8
+          ]
+        },
+        {
+          "Weight": 35,
+          "Output": {
+            "ItemId": "Food_Vegetable_Cooked",
+            "Quantity": 5
+          },
+          "Input": [
+            {
+              "ItemId": "Currency_Kan",
+              "Quantity": 2
+            }
+          ],
+          "Stock": [
+            5,
+            10
+          ]
+        }
+      ]
+    }
+  ]
+}

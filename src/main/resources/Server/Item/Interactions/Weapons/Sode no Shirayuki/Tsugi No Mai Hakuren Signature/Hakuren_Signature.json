@@ -1,0 +1,29 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "SignatureEnergy": 100
+  },
+  "ValueType": "Percent",
+  "Next": {
+    "Type": "Serial",
+    "Interactions": [
+      {
+        "Type": "Replace",
+        "Var": "Hakuren_Signature",
+        "DefaultOk": true,
+        "DefaultValue": {
+          "Interactions": [
+            "Hakuren_Signature_BeforeAttack"
+          ]
+        }
+      },
+      {
+        "Type": "ChangeStat",
+        "StatModifiers": {
+          "SignatureEnergy": -100
+        },
+        "ValueType": "Percent"
+      }
+    ]
+  }
+}

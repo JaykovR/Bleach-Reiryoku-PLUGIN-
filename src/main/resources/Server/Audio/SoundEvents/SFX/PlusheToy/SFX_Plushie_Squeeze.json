@@ -1,0 +1,18 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Items/Plushie/Plushie_Squeeze.ogg"
+      ],
+      "RandomSettings": {
+        "MinPitch": -1.104,
+        "MaxPitch": 1.008,
+        "MinVolume": 0
+      },
+      "Volume": 0
+    }
+  ],
+  "Volume": -6.28,
+  "MaxDistance": 15,
+  "StartAttenuationDistance": 1
+}

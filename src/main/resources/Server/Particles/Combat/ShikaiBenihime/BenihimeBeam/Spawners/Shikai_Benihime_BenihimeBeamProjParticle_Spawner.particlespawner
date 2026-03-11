@@ -1,0 +1,67 @@
+{
+  "Particle": {
+    "Texture": "Particles/Textures/Basic/Ball3.png",
+    "InitialAnimationFrame": {
+      "Color": "#a30000",
+      "Opacity": 1
+    },
+    "Animation": {
+      "0": {
+        "Color": "#a30000",
+        "Opacity": 1
+      },
+      "50": {
+        "Color": "#550404",
+        "Opacity": 0.464
+      },
+      "100": {
+        "Scale": {
+          "X": {
+            "Min": 0.5,
+            "Max": 0.5
+          },
+          "Y": {
+            "Min": 0.5,
+            "Max": 0.5
+          }
+        }
+      }
+    },
+    "UseSpriteBlending": true
+  },
+  "MaxConcurrentParticles": 150,
+  "ParticleLifeSpan": {
+    "Min": 2,
+    "Max": 3
+  },
+  "SpawnRate": {
+    "Min": 30,
+    "Max": 50
+  },
+  "ParticleRotationInfluence": "BillboardY",
+  "InitialVelocity": {
+    "Speed": {
+      "Min": 3,
+      "Max": 4
+    },
+    "Yaw": {
+      "Min": 1,
+      "Max": 1
+    },
+    "Pitch": {
+      "Min": 0,
+      "Max": 0
+    }
+  },
+  "RenderMode": "BlendLinear",
+  "Attractors": [
+    {
+      "Radius": 1,
+      "RadialAcceleration": 30
+    }
+  ],
+  "ParticleCollision": {
+    "BlockType": "Solid",
+    "Action": "Expire"
+  }
+}

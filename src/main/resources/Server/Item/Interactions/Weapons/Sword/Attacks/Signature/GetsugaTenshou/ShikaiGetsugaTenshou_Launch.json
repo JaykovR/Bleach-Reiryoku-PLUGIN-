@@ -1,0 +1,18 @@
+{
+  "Type": "LaunchProjectile",
+  "RunTime": 0,
+  "ProjectileId": "Shikai_GetsugaTenshouVisual",
+  "HorizontalSpeedMultiplier": 0,
+  "Next": {
+    "Type": "LaunchProjectile",
+    "ProjectileId": "Shikai_GetsugaTenshouInvisible_Center",
+    "Next": {
+      "Type": "LaunchProjectile",
+      "ProjectileId": "Shikai_GetsugaTenshouInvisible_Left",
+      "Next": {
+        "Type": "LaunchProjectile",
+        "ProjectileId": "Shikai_GetsugaTenshouInvisible_Right"
+      }
+    }
+  }
+}

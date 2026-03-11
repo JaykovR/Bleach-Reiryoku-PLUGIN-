@@ -1,0 +1,12 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Sode_No_Shirayuki_Hakuren_Charging_Sparkles",
+      "PositionOffset": {
+        "X": 0,
+        "Z": 0
+      },
+      "FixedRotation": false
+    }
+  ]
+}

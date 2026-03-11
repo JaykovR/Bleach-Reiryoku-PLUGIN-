@@ -1,0 +1,14 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Kenpachi_Zanpakuto_Cut",
+      "PositionOffset": {
+        "Z": 0.1
+      }
+    },
+    {
+      "SpawnerId": "Kenpachi_Zanpakuto_Slash_Sparks"
+    }
+  ],
+  "IsImportant": false
+}

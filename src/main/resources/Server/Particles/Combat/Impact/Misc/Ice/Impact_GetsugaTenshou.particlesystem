@@ -1,0 +1,12 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Explosion_Big_Star",
+      "PositionOffset": {
+        "X": 0,
+        "Y": 0.3,
+        "Z": 0
+      }
+    }
+  ]
+}

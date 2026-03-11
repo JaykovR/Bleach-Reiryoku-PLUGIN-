@@ -1,0 +1,8 @@
+{
+  "CullDistance": 30.0,
+  "Spawners": [
+    {
+      "SpawnerId": "Reiryoku_Crystal_ParticleSpawner"
+    }
+  ]
+}

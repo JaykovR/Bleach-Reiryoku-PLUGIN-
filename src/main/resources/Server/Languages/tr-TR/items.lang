@@ -1,0 +1,56 @@
+Bankai_Tensa_Zangetsu.name = Bankai – Tensa Zangetsu
+Bankai_Tensa_Zangetsu.description = Bankai – Tensa Zangetsu efsanevi bir ruhani kılıçtır. Zincirli siyah ağzı, taşıyıcının enerjisini odaklayarak yıkıcı <i><b>Getsuga Tenshō — «Gökleri Delen Ay Dişi»</b></i> dalgasını serbest bırakır.
+Shikai_Tensa_Zangetsu.name = Shikai – Zangetsu
+Shikai_Tensa_Zangetsu.description = Zangetsu, kalıcı olarak serbest halde devasa bir ruhani bıçaktır. Canlı kumaşa sarılı siyah bıçak, taşıyıcıyı güçlendirir, <i><b>Getsuga Tenshō</b></i> dalgaları salar ve fiziksel ve enerji saldırılarına karşı kalkan görevi görür.
+ReiryokuCrystal.name = Reiryoku Kristali
+ReiryokuCrystal.description = Saf ruhani enerji kristali, sayısız ruhun yoğunlaşması. Bir Zanpakutō'yu uyandırır ve evriltir.
+Sealed_Zangetsu.name = Mühürlü – Zangetsu
+Sealed_Zangetsu.description = Uyanıştan önceki mühürlü bıçak. Sınırsız ama uyuyan potansiyel taşır.
+Asauchi.name = Asauchi
+Asauchi.description = Boş bir ruh şablonu. Sahibinin damgasını bekleyen gelecekteki Zanpakutō'nun temeli.
+Sode_No_Shirayuki.name = Shikai – Sode no Shirayuki
+Sode_No_Shirayuki.description = Zarif bir buz katanası. Serbest bırakma komutu \n<i><b>«Dans et, Sode no Shirayuki»</b></i> soğuk ve güzelliği buyurur.
+Shikai_Wabisuke.name = Shikai – Wabisuke
+Shikai_Wabisuke.description = Dış inceliğinin tersine hain doğası olan zarif kıvrımlı kılıç. Vuruşu hedefe ağırlık laneti bindirir. Her savunma veya blokta kurbanın yükü acımasızca ikiye katlanır. Serbest bırakma: <i><b>«Eğil, Wabisuke»</b></i>.
+Shikai_Hozukimaru.name = Shikai – Hozukimaru
+Shikai_Hozukimaru.description = Sade ve doğrudan bir savaş mızrağı. Basit biçimi şiddetli yıkıcı güç ve dayanıklılık gizler. Bu silahta dönüşümün uyuyan potansiyeli yatar.
+
+Kojaku_Bow.name = Quincy Yayı - Kojaku
+Kojaku_Bow.description = Tüm Quincy tarafından kullanılabilen temel yay. Sağ eldeki <i>Quincy Haçı</i>nda Reishi toplanarak oluşturulur. Saldığı oklar da Reishi'den yapılmıştır. Hollowları uzaktan saldırılarla yok etmeye olanak tanır. Aday Quincy'ler için erken oyun silahı.
+
+Four_Point_Quincy_Cross.name = 4 Uçlu Quincy Haçı
+Four_Point_Quincy_Cross.description = Quincy oyuncularının yeteneklerini ortaya çıkarmasına yardımcı olan, yan elde tutulduğunda MP sağlayan dört uçlu bir Quincy haçı. Ruhsal gücünü sürdürmek için vazgeçilmezdir.
+
+Soul_Imprinting_Altar.name = Ruh Damgalama Sunağı
+Soul_Imprinting_Altar.description = Taşıyıcının ruhunun Asauchi ile birleştiği kutsal çalışma yeri. Derin meditasyon ve ruhani enerji (Reiryoku) yoğunlaştırmasıyla gelecekteki Zanpakutō'nun temeli atılır. Bu sunak hem ilk uyanış hem de Shikai'dan nihai Bankai'ye evrim için kullanılır.
+
+Shinigami_Robes.name = Shinigami Cübbesi – Shihakushō
+Shinigami_Robes.description = Gotei 13'ün tüm üyeleri tarafından giyilen standart Shinigami üniforması.
+Shinigami_Robes_Sleeveless.name = Shinigami Cübbesi – Kolsuz
+Shinigami_Robes_Sleeveless.description = Daha fazla hareket özgürlüğü isteyenler için değiştirilmiş <i>Shihakushō</i>.
+Shinigami_Robes_Captain.name = Shinigami Cübbesi – Kaptan
+Shinigami_Robes_Captain.description = Kaptanların standart üniforma üzerine giydiği beyaz ceket. Üstün ruhani koruma sağlar ve Gotei 13'te en yüksek rütbeyi gösterir.
+Shinigami_Robes_OpenShoulder.name = Shinigami Elbisesi - Çıplak Omuz
+Shinigami_Robes_OpenShoulder.description = Kolsuz modelle aynı amaca hizmet eden, ancak daha zarif ve törensel bir görünüme sahip, değiştirilmiş bir <i>Shihakusho</i>.
+
+Resonating_Reishi_Core.name = Rezonans Eden Reishi Çekirdeği
+Resonating_Reishi_Core.description = Bu çekirdek sizinkini taklit eden bir frekansta titreşir. Ruhunuzun bir uzantısıdır. Onu uyandırmak için bir bıçağa atanmaya hazır.
+Transcendent_Essence.name = Aşkın Öz
+Transcendent_Essence.description = Mutlak gücün girdap halinde bir paradoksu. Ruhunuz ile fiziksel dünya arasındaki sınırlar bu tek nabız noktasında çözülmüştür. Bu parıltıda ruhunuzun gerçek biçimi, serbest bırakılmak için haykırır.
+Hollow_Essence.name = Hollow Özü
+Hollow_Essence.description = Yenilmiş bir Hollow’un çarpıtılmış ruhundan kristalleşmiş bir kalıntı. Dengesiz reiryoku ile titreşir.
+
+items.Currency_Kan.name = Kan
+items.Currency_Kan.description = Ruhlar Topluluğu'nun standart para birimi. Bir Kan, yaşayanlar dünyasında bir çuval pirincin değerini temsil eder. Ağırlığı ve sesi reishi frekansına ayarlı sayılır, sahtesi yapılamaz.
+
+items.Medical_Pill_Basic.name = Temel Tıbbi Hap
+items.Medical_Pill_Basic.description = 4. Birliğin tıbbi biriminden standart hap. Konsantre şifalı otlar ve iyileştirici kaidō enerjisi.\n\n<color is="#ffffff">%30</color> canı anında geri yükler.
+
+items.Kaido_Infused_Pill.name = Kaidō Katkılı İyileşme Hapı
+items.Kaido_Infused_Pill.description = 4. Birliğin tıbbi araştırmasının başyapıtı. Sadece bir hap değil, askıda iyileştirici kaidō büyüleri kapsülü.\n\n<color is="#ffffff">%100</color> canı anında geri yükler ve verir:\n\n• <color is="#ffffff">Can Regen II</color>\n\nSüre: <color is="#ffffff">0:30</color>
+
+items.A_Guide_To_Find_Hollows_Closed.name = Hollow Bulma Rehberi - Kapalı
+items.A_Guide_To_Find_Hollows_Closed.description = <color is="#ffffff"><b>Sağ tıkla</b></color> ve bu parşömeni elinde tutarak aç. 12. Tümen Araştırma ve Geliştirme Enstitüsü tarafından derlenmiştir.
+
+items.A_Guide_To_Find_Hollows.name = Hollow Bulma Rehberi
+items.A_Guide_To_Find_Hollows.description = <i>12. Tümen Araştırma ve Geliştirme Enstitüsü tarafından derlenmiştir</i>. Hollow etkinliği gündüz saatlerinde gerçekleşmez. Görünümler yalnızca geceleri, ruhsal baskı dengesiz hâle geldiğinde kaydedilmiştir. Ayrıca, Bölge 1 içerisinde hiçbir Hollow izi tespit edilmemiştir. Hollow arayan operatifler Bölge 1’den ayrılmalı ve devriyelerini gece gerçekleştirmelidir.

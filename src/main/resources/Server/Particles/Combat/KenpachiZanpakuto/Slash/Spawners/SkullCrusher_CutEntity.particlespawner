@@ -1,0 +1,117 @@
+{
+  "RenderMode": "Erosion",
+  "ParticleRotationInfluence": "None",
+  "LinearFiltering": true,
+  "ParticleRotateWithSpawner": false,
+  "TrailSpawnerPositionMultiplier": 1,
+  "TrailSpawnerRotationMultiplier": 1,
+  "MaxConcurrentParticles": 1,
+  "ParticleLifeSpan": {
+    "Min": 0.8,
+    "Max": 0.8
+  },
+  "TotalParticles": {
+    "Min": 1,
+    "Max": 1
+  },
+  "Particle": {
+    "Texture": "Particles/Shape2Noised.png",
+    "ScaleRatioConstraint": "None",
+    "UVOption": "RandomFlipU",
+    "Animation": {
+      "0": {
+        "FrameIndex": {
+          "Min": 0,
+          "Max": 0
+        },
+        "Scale": {
+          "X": {
+            "Min": 2,
+            "Max": 2
+          },
+          "Y": {
+            "Min": 10,
+            "Max": 10
+          }
+        },
+        "Opacity": 0.928,
+        "Color": "#FFD700"
+      },
+      "20": {
+        "Color": "#FFD700",
+        "Scale": {
+          "X": {
+            "Min": 2,
+            "Max": 2
+          },
+          "Y": {
+            "Min": 10,
+            "Max": 10
+          }
+        }
+      },
+      "50": {
+        "Opacity": 0.6,
+        "Color": "#f4d843",
+        "Scale": {
+          "X": {
+            "Min": 2,
+            "Max": 2
+          },
+          "Y": {
+            "Min": 10,
+            "Max": 10
+          }
+        }
+      },
+      "100": {
+        "Opacity": 0.0,
+        "Scale": {
+          "X": {
+            "Min": 2.0,
+            "Max": 2.0
+          },
+          "Y": {
+            "Min": 2.0,
+            "Max": 2.0
+          }
+        },
+        "Color": "#ffffff"
+      }
+    },
+    "InitialAnimationFrame": {
+      "FrameIndex": {
+        "Min": 0,
+        "Max": 0
+      },
+      "Scale": {
+        "X": {
+          "Min": 0.09,
+          "Max": 0.09
+        },
+        "Y": {
+          "Min": 0.09,
+          "Max": 0.09
+        }
+      },
+      "Rotation": {
+        "Z": {
+          "Min": 360,
+          "Max": 360.0
+        },
+        "Y": {
+          "Min": 90,
+          "Max": 90
+        }
+      },
+      "Color": "#ffffff"
+    },
+    "SoftParticles": "Enable"
+  },
+  "SpawnBurst": true,
+  "SpawnRate": {
+    "Min": 1,
+    "Max": 1
+  },
+  "LightInfluence": 0.4
+}

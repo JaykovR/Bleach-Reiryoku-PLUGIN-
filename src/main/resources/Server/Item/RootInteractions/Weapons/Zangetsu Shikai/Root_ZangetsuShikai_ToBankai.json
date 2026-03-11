@@ -1,0 +1,15 @@
+{
+  "RequireNewClick": false,
+  "Interactions": [
+    {
+      "Type": "Replace",
+      "Var": "Bankai",
+      "DefaultOk": true,
+      "DefaultValue": {
+        "Interactions": [
+          "Bankai_Zangetsu"
+        ]
+      }
+    }
+  ]
+}

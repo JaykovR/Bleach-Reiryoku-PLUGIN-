@@ -1,0 +1,31 @@
+{
+  "Appearance": "Invisible_Projectile_Center",
+  "Radius": 1,
+  "Height": 1,
+  "HorizontalCenterShot": 0.2,
+  "VerticalCenterShot": 0.1,
+  "DepthShot": 1.5,
+  "PitchAdjustShot": true,
+  "SticksVertically": true,
+  "MuzzleVelocity": 15,
+  "TerminalVelocity": 25,
+  "Gravity": 0,
+  "ImpactSlowdown": 0,
+  "TimeToLive": 20,
+  "DeadTimeMiss": 0,
+  "DeathEffectsOnHit": true,
+  "HitParticles": {
+    "SystemId": "Explosion_Small",
+    "Color": "#b61f1f"
+  },
+  "DeathParticles": {
+    "SystemId": "Impact_GetsugaTenshou"
+  },
+  "HitSoundEventId": "SFX_Shikai_GetsugaTenshou_Hit",
+  "DeathSoundEventId": "SFX_Bomb_Fire_Goblin_Death",
+  "ComputeRoll": false,
+  "DeadTime": 0,
+  "ComputeYaw": false,
+  "ComputePitch": false,
+  "Damage": 150
+}

@@ -1,0 +1,113 @@
+{
+  "RenderMode": "Erosion",
+  "ParticleRotationInfluence": "None",
+  "LinearFiltering": true,
+  "ParticleRotateWithSpawner": false,
+  "TrailSpawnerPositionMultiplier": 1,
+  "TrailSpawnerRotationMultiplier": 1,
+  "MaxConcurrentParticles": 1,
+  "ParticleLifeSpan": {
+    "Min": 0.4,
+    "Max": 0.4
+  },
+  "TotalParticles": {
+    "Min": 1,
+    "Max": 1
+  },
+  "Particle": {
+    "Texture": "Particles/Textures/Basic/Shape2.png",
+    "ScaleRatioConstraint": "None",
+    "UVOption": "RandomFlipU",
+    "Animation": {
+      "0": {
+        "FrameIndex": {
+          "Min": 0,
+          "Max": 0
+        },
+        "Scale": {
+          "X": {
+            "Min": 2,
+            "Max": 2
+          },
+          "Y": {
+            "Min": 10,
+            "Max": 10
+          }
+        },
+        "Opacity": 1.0,
+        "Color": "#721f82"
+      },
+      "20": {
+        "Color": "#721f82",
+        "Scale": {
+          "X": {
+            "Min": 2,
+            "Max": 2
+          },
+          "Y": {
+            "Min": 10,
+            "Max": 10
+          }
+        }
+      },
+      "50": {
+        "Opacity": 0.6,
+        "Color": "#510a5f",
+        "Scale": {
+          "X": {
+            "Min": 2,
+            "Max": 2
+          },
+          "Y": {
+            "Min": 10,
+            "Max": 10
+          }
+        }
+      },
+      "100": {
+        "Opacity": 0.0,
+        "Scale": {
+          "X": {
+            "Min": 2.0,
+            "Max": 2.0
+          },
+          "Y": {
+            "Min": 2.0,
+            "Max": 2.0
+          }
+        },
+        "Color": "#000000"
+      }
+    },
+    "InitialAnimationFrame": {
+      "FrameIndex": {
+        "Min": 0,
+        "Max": 0
+      },
+      "Scale": {
+        "X": {
+          "Min": 0.09,
+          "Max": 0.09
+        },
+        "Y": {
+          "Min": 0.09,
+          "Max": 0.09
+        }
+      },
+      "Rotation": {
+        "Z": {
+          "Min": -360.0,
+          "Max": 360.0
+        }
+      },
+      "Color": "#ffffff"
+    },
+    "SoftParticles": "Enable"
+  },
+  "SpawnBurst": true,
+  "SpawnRate": {
+    "Min": 1,
+    "Max": 1
+  },
+  "LightInfluence": 0.4
+}

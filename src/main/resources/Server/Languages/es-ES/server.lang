@@ -1,0 +1,15 @@
+memories.categories.Hollow.title = Hollow
+
+npcRoles.Scarak_Defender_Hollow.name = Hollow Defensor Scarak
+npcRoles.Scarak_Fighter_Hollow.name = Hollow Guerrero Scarak
+npcRoles.Scarak_Louse_Hollow.name = Hollow Piojo Scarak
+npcRoles.Scorpion_Hollow.name = Hollow Escorpión
+npcRoles.Ghoul_Hollow.name = Hollow Ghoul
+npcRoles.Crawler_Hollow_Void.name = Hollow Rastreador del Vacío
+
+memories.Hollow.Scarak_Defender_Hollow.description = Un Hollow nacido de un Defensor Scarak. Su máscara y caparazón endurecido lo convierten en un tenaz luchador de primera línea entre los corrompidos.
+memories.Hollow.Scarak_Fighter_Hollow.description = Un Hollow nacido de un Guerrero Scarak. Conserva las tácticas agresivas de su antiguo yo, ahora deformadas por el hambre de Hollow.
+memories.Hollow.Scarak_Louse_Hollow.description = Un Hollow nacido de un Piojo Scarak. Pequeños pero numerosos, estos Hollows acosan a su presa y la dejan en los huesos.
+memories.Hollow.Scorpion_Hollow.description = Un Hollow nacido de un Escorpión. Su aguijón y garras son ahora vasos de corrupción, golpeando con el frío del vacío.
+memories.Hollow.Ghoul_Hollow.description = Un Hollow nacido de un Ghoul. Los muertos inquietos, retorcidos aún más en Hollow: una criatura que se alimenta de la esencia de los vivos.
+memories.Hollow.Crawler_Hollow_Void.description = Un Hollow nacido de un Rastreador del Vacío. Ya tocado por el vacío, ha caído por completo en la naturaleza Hollow y merodea en la oscuridad.

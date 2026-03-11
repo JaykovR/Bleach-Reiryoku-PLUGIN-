@@ -1,0 +1,7 @@
+{
+  "$Comment": "This damage type exists to facilitate sub types",
+  "DurabilityLoss": false,
+  "DamageTextColor": "Blue",
+  "StaminaLoss": true,
+  "Inherits": "Ice"
+}

@@ -1,0 +1,66 @@
+{
+  "TranslationProperties": {
+    "Name": "items.Four_Point_Quincy_Cross.name",
+    "Description": "items.Four_Point_Quincy_Cross.description"
+  },
+  "Model": "Items/Quincy_Crosses/QuincyCross.blockymodel",
+  "Texture": "Items/Quincy_Crosses/Quincy_Cross_Texture.png",
+  "PlayerAnimationsId": "Item",
+  "Icon": "Icons/ItemsGenerated/Four_Point_Quincy_Cross.png",
+  "IconProperties": {
+    "Scale": 0.9,
+    "Rotation": [
+      340,
+      197,
+      18
+    ],
+    "Translation": [
+      -3,
+      -12
+    ]
+  },
+  "Quality": "Uncommon",
+  "Utility": {
+    "Usable": true,
+    "StatModifiers": {
+      "Mana": [
+        {
+          "CalculationType": "Additive",
+          "Amount": 50
+        }
+      ]
+    },
+    "Compatible": true
+  },
+  "MaxStack": 1,
+  "ItemLevel": 10,
+  "Categories": [
+    "BleachCategory.Ingredients"
+  ],
+  "Recipe": {
+    "TimeSeconds": 3.5,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Iron",
+        "Quantity": 4
+      },
+      {
+        "ItemId": "Ingredient_Bar_Silver",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Life_Essence",
+        "Quantity": 50
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Workbench",
+        "Type": "Crafting",
+        "Categories": [
+          "Workbench_Tools"
+        ]
+      }
+    ]
+  }
+}

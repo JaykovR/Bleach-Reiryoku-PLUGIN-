@@ -1,0 +1,19 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Benihime_Sword_Signature_AoE_Bright"
+    },
+    {
+      "SpawnerId": "Benihime_Sword_Signature_AoE_Alpha"
+    },
+    {
+      "SpawnerId": "Benihime_Sword_Signature_AoE_Sparks",
+      "FixedRotation": false
+    },
+    {
+      "SpawnerId": "Benihime_Sword_Signature_AoE_Bright2"
+    }
+  ],
+  "BoundingRadius": 10,
+  "IsImportant": false
+}

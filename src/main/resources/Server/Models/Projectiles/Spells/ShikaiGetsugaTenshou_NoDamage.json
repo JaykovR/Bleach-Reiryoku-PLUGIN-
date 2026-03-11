@@ -1,0 +1,67 @@
+{
+  "Model": "Items/Projectiles/ShikaiGetsugaTenshou.blockymodel",
+  "Texture": "Items/Projectiles/ShikaiGetsugaTenshou.png",
+  "HitBox": {
+    "Max": {
+      "X": 0.1,
+      "Y": 0.1,
+      "Z": 1
+    },
+    "Min": {
+      "X": -0.1,
+      "Y": -0.1,
+      "Z": -1
+    }
+  },
+  "MinScale": 10,
+  "MaxScale": 10,
+  "Trails": [
+    {
+      "TargetNodeName": "",
+      "TrailId": "Shikai_GetsugaTenshou_Trail",
+      "PositionOffset": {
+        "Y": 3
+      }
+    },
+    {
+      "TrailId": "Shikai_GetsugaTenshou_Trail",
+      "PositionOffset": {
+        "Y": 2
+      }
+    },
+    {
+      "TrailId": "Shikai_GetsugaTenshou_Trail",
+      "PositionOffset": {
+        "Y": 1
+      }
+    },
+    {
+      "TrailId": "Shikai_GetsugaTenshou_Trail",
+      "PositionOffset": {
+        "Y": -1
+      }
+    },
+    {
+      "TrailId": "Shikai_GetsugaTenshou_Trail",
+      "PositionOffset": {
+        "Y": -2
+      }
+    },
+    {
+      "PositionOffset": {
+        "Y": -3
+      },
+      "TrailId": "Shikai_GetsugaTenshou_Trail"
+    }
+  ],
+  "EyeHeight": 1,
+  "Light": {
+    "Color": "#d91",
+    "Radius": 1
+  },
+  "Particles": [
+    {
+      "SystemId": "Shikai_GetsugaTenshou_ParticleTrail"
+    }
+  ]
+}

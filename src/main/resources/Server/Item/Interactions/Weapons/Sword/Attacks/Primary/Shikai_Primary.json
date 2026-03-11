@@ -1,0 +1,17 @@
+{
+  "Type": "Charging",
+  "DisplayProgress": false,
+  "Next": {
+    "0": "Shikai_Primary_Chain",
+    "0.2": {
+      "Type": "Replace",
+      "Var": "Thrust_Stamina",
+      "DefaultOk": true,
+      "DefaultValue": {
+        "Interactions": [
+          "Shikai_Primary_Downstrike_StaminaCondition"
+        ]
+      }
+    }
+  }
+}

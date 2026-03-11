@@ -1,0 +1,20 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/PlayerActions/Cloth_Hit.ogg"
+      ],
+      "Volume": -2,
+      "RandomSettings": {
+        "MinPitch": -1,
+        "MaxPitch": 1,
+        "MinVolume": -2,
+        "MaxVolume": 0
+      },
+      "Looping": false
+    }
+  ],
+  "Volume": 0,
+  "Parent": "SFX_Attn_Quiet",
+  "MaxInstance": 6
+}

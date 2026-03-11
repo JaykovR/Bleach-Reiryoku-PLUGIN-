@@ -1,0 +1,129 @@
+{
+  "TranslationProperties": {
+    "Name": "items.items.Kaido_Infused_Pill.name",
+    "Description": "items.items.Kaido_Infused_Pill.description"
+  },
+  "Quality": "Rare",
+  "Categories": [
+    "BleachCategory.Foods"
+  ],
+  "Icon": "Icons/ItemsGenerated/Medical_Pill.png",
+  "Model": "Items/Pills/Medical_Pill.blockymodel",
+  "Texture": "Items/Pills/Medical_Pill_Texture.png",
+  "PlayerAnimationsId": {
+    "Parent": "Item",
+    "Animations": {
+      "Consume": {
+        "FirstPerson": "Characters/Animations/Items/Main_Handed/Item/Attacks/Eat/Eat_FPS.blockyanim",
+        "ThirdPerson": "Characters/Animations/Items/Main_Handed/Item/Attacks/Eat/Eat.blockyanim",
+        "Speed": 1,
+        "Looping": true
+      }
+    }
+  },
+  "IconProperties": {
+    "Scale": 2.2,
+    "Rotation": [22.5, 45, 22.5],
+    "Translation": [0, -7]
+  },
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Potion"
+  },
+  "InteractionVars": {
+    "RemoveEffect": {
+      "Interactions": [{ "Type": "Simple" }]
+    },
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "Serial",
+          "Interactions": [
+            {
+              "Type": "ApplyEffect",
+              "EffectId": {
+                "StatModifiers": { "Health": 100 },
+                "ValueType": "Percent",
+                "OverlapBehavior": "Overwrite",
+                "Duration": 0.1,
+                "DamageCalculatorCooldown": 0
+              }
+            },
+            {
+              "Type": "ApplyEffect",
+              "EffectId": {
+                "StatModifiers": { "Health": 2 },
+                "ValueType": "Percent",
+                "DamageCalculatorCooldown": 2,
+                "Duration": 30.05,
+                "OverlapBehavior": "Overwrite",
+                "StatusEffectIcon": "UI/StatusEffects/HealthRegen.png"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Stat_Check": {
+      "Interactions": [
+        {
+          "Parent": "Stat_Check",
+          "Costs": { "Health": 100 },
+          "ValueType": "Percent",
+          "LessThan": true
+        }
+      ]
+    },
+    "ConsumeSFX": {
+      "Interactions": [
+        {
+          "Parent": "Consume_SFX",
+          "Effects": { "LocalSoundEventId": "SFX_Consume_Pills" }
+        }
+      ]
+    },
+    "ConsumedSFX": {
+      "Interactions": [
+        {
+          "Parent": "Consumed_SFX",
+          "Effects": { "LocalSoundEventId": "SFX_Potion_Drink_Success" }
+        }
+      ]
+    }
+  },
+  "Utility": { "Compatible": false },
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Items/Pills/Medical_Pill.blockymodel",
+    "CustomModelTexture": [{ "Texture": "Items/Pills/Medical_Pill_Texture.png", "Weight": 1 }],
+    "CustomModelScale": 0.5,
+    "HitboxType": "Food_Medium",
+    "Flags": { "IsUsable": true },
+    "Gathering": { "Harvest": {}, "Soft": {} },
+    "RandomRotation": "YawStep1"
+  },
+  "Recipe": {
+    "Input": [
+      { "ItemId": "Reiryoku_Crystal", "Quantity": 1 },
+      { "ItemId": "Ingredient_Tree_Sap", "Quantity": 4 },
+      { "ItemId": "Medical_Pill_Basic", "Quantity": 2 }
+    ],
+    "TimeSeconds": 2,
+    "Output": [
+      { "ItemId": "Kaido_Infused_Pill", "Quantity": 2 }
+    ],
+    "OutputQuantity": 2,
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Soul_Imprinting_Altar",
+        "Categories": ["Soul_Misc"]
+      }
+    ]
+  },
+  "Consumable": true,
+  "Tags": { "Type": ["Consumable", "Medical"] },
+  "Scale": 0.6,
+  "MaxStack": 25,
+  "DropOnDeath": true
+}

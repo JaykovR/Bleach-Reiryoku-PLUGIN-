@@ -1,0 +1,20 @@
+{
+  "Type": "Simple",
+  "RunTime": 0.117,
+  "Effects": {
+    "ItemAnimationId": "SwingRight",
+    "WorldSoundEventId": "SFX_Light_Melee_T2_Swing",
+    "LocalSoundEventId": "SFX_Sword_T2_Swing_LR_Local",
+    "ItemPlayerAnimationsId": "Kenpachi_Zanpakuto_BattleTranceAnimations"
+  },
+  "Next": {
+    "Type": "Replace",
+    "Var": "Swing_Right_Selector_BattleTrance",
+    "DefaultOk": true,
+    "DefaultValue": {
+      "Interactions": [
+        "KenpachiZanpakuto_PrimaryBattleTrance_Swing_Right_Selector"
+      ]
+    }
+  }
+}

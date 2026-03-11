@@ -1,0 +1,7 @@
+{
+  "Spawners": [
+    {"SpawnerId": "TrueBankaiZangetsu_Slash_Cut", "PositionOffset": {"Z": 0.1}},
+    {"SpawnerId": "TrueBankaiZangetsu_Slash_Sparks"}
+  ],
+  "IsImportant": false
+}

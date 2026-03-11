@@ -1,0 +1,36 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/NPC/Hollow/Breath/Hollow_Breath_01.ogg"
+      ],
+      "RandomSettings": {
+        "MinPitch": -6.0,
+        "MaxPitch": 2.0,
+        "MinVolume": -4.0,
+        "MaxVolume": 1.0
+      },
+      "Volume": -18.0,
+      "Probability": 50,
+      "StartDelay": 0.1
+    },
+    {
+      "Files": [
+        "Sounds/NPC/Hollow/Breath/Hollow_Breath_02.ogg"
+      ],
+      "RandomSettings": {
+        "MinPitch": -2.0,
+        "MaxPitch": 2.0,
+        "MinVolume": -4.0,
+        "MaxVolume": 1.0
+      },
+      "Volume": -12.0,
+      "Probability": 10,
+      "StartDelay": 0.1
+    }    
+  ],
+  "PreventSoundInterruption": true,
+  "MaxInstance": 6,
+  "Volume": 0,
+  "Parent": "SFX_Attn_Loud"
+}

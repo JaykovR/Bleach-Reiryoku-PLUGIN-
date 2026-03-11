@@ -1,0 +1,15 @@
+memories.categories.Hollow.title = Hollow
+
+npcRoles.Scarak_Defender_Hollow.name = Scarak-Verteidiger-Hollow
+npcRoles.Scarak_Fighter_Hollow.name = Scarak-Kämpfer-Hollow
+npcRoles.Scarak_Louse_Hollow.name = Scarak-Laus-Hollow
+npcRoles.Scorpion_Hollow.name = Skorpion-Hollow
+npcRoles.Ghoul_Hollow.name = Ghoul-Hollow
+npcRoles.Crawler_Hollow_Void.name = Leerer-Kriecher-Hollow
+
+memories.Hollow.Scarak_Defender_Hollow.description = Ein Hollow, geboren aus einem Scarak-Verteidiger. Maske und verhärteter Panzer machen ihn zum zähen Frontkämpfer in den Reihen der Verderbten.
+memories.Hollow.Scarak_Fighter_Hollow.description = Ein Hollow, geboren aus einem Scarak-Kämpfer. Er behält die aggressiven Taktiken seines früheren Ichs, nun von Hollow-Hunger verzerrt.
+memories.Hollow.Scarak_Louse_Hollow.description = Ein Hollow, geboren aus einer Scarak-Laus. Klein aber zahlreich, überwältigen diese Hollows ihre Beute und zerfleischen sie bis auf die Knochen.
+memories.Hollow.Scorpion_Hollow.description = Ein Hollow, geboren aus einem Skorpion. Stachel und Klauen sind nun Gefäße der Verderbnis und treffen mit der Kälte der Leere.
+memories.Hollow.Ghoul_Hollow.description = Ein Hollow, geboren aus einem Ghoul. Die ruhelosen Toten, weiter in einen Hollow verdreht – ein Wesen, das sich von der Essenz der Lebenden nährt.
+memories.Hollow.Crawler_Hollow_Void.description = Ein Hollow, geboren aus einem Leeren Kriecher. Bereits von der Leere berührt, ist er vollends in die Hollow-Natur gefallen und streift durch die Dunkelheit.

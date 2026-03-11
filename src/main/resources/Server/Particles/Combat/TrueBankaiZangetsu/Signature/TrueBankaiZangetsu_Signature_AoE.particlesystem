@@ -1,0 +1,19 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "TrueBankaiZangetsu_Signature_AoE_Bright"
+    },
+    {
+      "SpawnerId": "TrueBankaiZangetsu_Signature_AoE_Alpha"
+    },
+    {
+      "SpawnerId": "TrueBankaiZangetsu_Signature_AoE_Sparks",
+      "FixedRotation": false
+    },
+    {
+      "SpawnerId": "TrueBankaiZangetsu_Signature_AoE_Bright2"
+    }
+  ],
+  "BoundingRadius": 10,
+  "IsImportant": false
+}

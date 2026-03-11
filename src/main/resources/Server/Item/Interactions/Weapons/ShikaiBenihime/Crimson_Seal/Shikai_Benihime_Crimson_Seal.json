@@ -1,0 +1,39 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "Mana": 20
+  },
+  "Next": {
+    "Type": "Serial",
+    "Interactions": [
+      {
+        "Type": "ApplyEffect",
+        "EffectId": "Stamina_Broken_Immune"
+      },
+      {
+        "Type": "ChangeStat",
+        "StatModifiers": {
+          "Stamina": -2,
+          "Mana": -20
+        },
+        "Effects": {
+          "ItemAnimationId": "GuardBash",
+          "WorldSoundEventId": "SFX_Light_Melee_T1_Shove",
+          "LocalSoundEventId": "SFX_Sword_T1_Shove_Local"
+        },
+        "RunTime": 0.167
+      },
+      {
+        "Type": "Replace",
+        "Var": "Crimson_Seal_Selector",
+        "DefaultOk": true,
+        "DefaultValue": {
+          "Interactions": [
+            "Shikai_Benihime_Crimson_Seal_Selector"
+          ]
+        }
+      }
+    ]
+  },
+  "Failed": "Spellbook_Cast_Fail"
+}

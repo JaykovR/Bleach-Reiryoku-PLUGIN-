@@ -1,0 +1,23 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "KyokaSuigetsu_Impact_Sword_Bash_Star"
+    },
+    {
+      "SpawnerId": "KyokaSuigetsu_Impact_Sword_Bash_Circle"
+    },
+    {
+      "SpawnerId": "KyokaSuigetsu_Impact_Sword_Bash_Distortion"
+    },
+    {
+      "SpawnerId": "KyokaSuigetsu_Impact_Sword_Bash_Sparks",
+      "RotationOffset": {
+        "Yaw": -90.0
+      }
+    },
+    {
+      "SpawnerId": "KyokaSuigetsu_Impact_Sword_Bash_Sparks2"
+    }
+  ],
+  "IsImportant": false
+}

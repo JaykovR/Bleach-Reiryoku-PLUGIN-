@@ -1,0 +1,467 @@
+{
+  "Parent": "Player",
+  "Model": "Characters/Wandering_Shinigami.blockymodel",
+  "Texture": "Characters/Player_Textures/Player_Greyscale.png",
+  "AnimationSets": {
+    "Idle": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/Default/Idle.blockyanim",
+          "Looping": true,
+          "Speed": 0.5,
+          "SoundEventId": "SFX_Shinigami_Idle"
+        }
+      ]
+    },
+    "Walk": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/Default/Walk.blockyanim",
+          "Speed": 1.0,
+          "FootstepIntervals": [ 25, 75 ],
+          "SoundEventId": "SFX_Shinigami_Idle"
+        }
+      ]
+    },
+    "Run": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/Default/Run.blockyanim",
+          "Speed": 0.9,
+          "FootstepIntervals": [ 25, 75 ],
+          "SoundEventId": "SFX_Shinigami_Idle"
+        }
+      ]
+    },
+    "Alerted": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/Alerted.blockyanim",
+          "Looping": false,
+          "Speed": 1.0,
+          "SoundEventId": "SFX_Shinigami_Alerted"
+        }
+      ]
+    },
+    "Hurt": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/Damage/Default/Hurt.blockyanim",
+          "BlendingDuration": 0.1,
+          "Looping": false,
+          "SoundEventId": "SFX_Shinigami_Hurt"
+        },
+        {
+          "Animation": "Characters/Animations/Damage/Default/Hurt2.blockyanim",
+          "BlendingDuration": 0.1,
+          "Looping": false,
+          "SoundEventId": "SFX_Shinigami_Hurt"
+        },
+        {
+          "Animation": "Characters/Animations/Damage/Default/Hurt3.blockyanim",
+          "BlendingDuration": 0.1,
+          "Looping": false,
+          "SoundEventId": "SFX_Shinigami_Hurt"
+        },
+        {
+          "Animation": "Characters/Animations/Damage/Default/Hurt4.blockyanim",
+          "BlendingDuration": 0.1,
+          "Looping": false,
+          "SoundEventId": "SFX_Shinigami_Hurt"
+        }
+      ]
+    },
+    "Death": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/Damage/Default/Death.blockyanim",
+          "Looping": false,
+          "SoundEventId": "SFX_Shinigami_Death"
+        },
+        {
+          "Animation": "Characters/Animations/Damage/Default/Death2.blockyanim",
+          "Looping": false,
+          "SoundEventId": "SFX_Shinigami_Death"
+        }
+      ]
+    }
+  },
+  "DefaultAttachments": [
+  {
+    "Model": "Characters/Body_Attachments/Ears/Ears1.blockymodel",
+    "Texture": "Characters/Body_Attachments/Ears/Ears.png",
+    "GradientSet": "Skin",
+    "GradientId": "02"
+  },
+  {
+    "Model": "Characters/Body_Attachments/Eyes/Eyes.blockymodel",
+    "Texture": "Characters/Body_Attachments/Eyes/Eyes_Textures/Greyscale.png",
+    "GradientSet": "Eyes_Gradient",
+    "GradientId": "Black"
+  },
+  {
+    "Model": "Cosmetics/Overpants/Dress.blockymodel",
+    "Texture": "Cosmetics/Overpants/Dress_Textures/Dress_Basic_Texture.png",
+    "GradientSet": "Fantasy_Cotton",
+    "GradientId": "Black"
+  },
+  {
+    "Model": "Cosmetics/Overpants/Long_Socks.blockymodel",
+    "Texture": "Cosmetics/Overpants/Long_Socks_Textures/StripedSocks_Greyscale.png",
+    "GradientSet": "Colored_Cotton",
+    "GradientId": "White"
+  },
+  {
+    "Model": "Cosmetics/Head/StrawHat_Shinigami.blockymodel",
+    "Texture": "Cosmetics/Head/StrawHat_Textures/WitchHat_Greyscale_Texture.png",
+    "GradientSet": "Colored_Cotton",
+    "GradientId": "Black"
+  }
+],
+"RandomAttachmentSets": {
+  "Face": {
+    "Neutral": {
+      "Model": "Characters/Body_Attachments/Faces/Player_Face_Detached.blockymodel",
+      "Texture": "Characters/Body_Attachments/Faces/Faces_Detached_Textures/Face.png",
+      "GradientSet": "Skin",
+      "GradientId": "02"
+    },
+    "Neutral_Aged": {
+      "Model": "Characters/Body_Attachments/Faces/Player_Face_Detached.blockymodel",
+      "Texture": "Characters/Body_Attachments/Faces/Faces_Detached_Textures/Older_Face.png",
+      "GradientSet": "Skin",
+      "GradientId": "02"
+    },
+    "Makeup": {
+      "Model": "Characters/Body_Attachments/Faces/Player_Face_Detached.blockymodel",
+      "Texture": "Characters/Body_Attachments/Faces/Faces_Detached_Textures/MakeUp_Face.png",
+      "GradientSet": "Skin",
+      "GradientId": "02"
+    },
+    "Makeup_Aged": {
+      "Model": "Characters/Body_Attachments/Faces/Player_Face_Detached.blockymodel",
+      "Texture": "Characters/Body_Attachments/Faces/Faces_Detached_Textures/MakeUp_Older_Face.png",
+      "GradientSet": "Skin",
+      "GradientId": "02"
+    }
+  },
+  "Mouth": {
+    "Neutral": {
+      "Model": "Characters/Body_Attachments/Mouths/Mouth1.blockymodel",
+      "Texture": "Characters/Body_Attachments/Mouths/Mouth1_Textures/Default_Greyscale.png",
+      "GradientSet": "Skin",
+      "GradientId": "02"
+    },
+    "Thin": {
+      "Model": "Characters/Body_Attachments/Mouths/Mouth1.blockymodel",
+      "Texture": "Characters/Body_Attachments/Mouths/Mouth1_Textures/Thin_Lips.png",
+      "GradientSet": "Skin",
+      "GradientId": "02"
+    },
+    "Tiny": {
+      "Model": "Characters/Body_Attachments/Mouths/Mouth1.blockymodel",
+      "Texture": "Characters/Body_Attachments/Mouths/Mouth1_Textures/Tiny_Lips.png",
+      "GradientSet": "Skin",
+      "GradientId": "02"
+    }
+  },
+  "Eyebrows": {
+    "Medium": {
+      "Model": "Characters/Body_Attachments/Eyebrows/Eyebrows_Medium.blockymodel",
+      "Texture": "Characters/Body_Attachments/Eyebrows/Medium_Greyscale.png",
+      "GradientSet": "Hair",
+      "GradientId": "BrownDark"
+    },
+    "Thin": {
+      "Model": "Characters/Body_Attachments/Eyebrows/Eyebrows_Medium.blockymodel",
+      "Texture": "Characters/Body_Attachments/Eyebrows/Thin_Greyscale.png",
+      "GradientSet": "Hair",
+      "GradientId": "BrownDark"
+    },
+    "Large": {
+      "Model": "Characters/Body_Attachments/Eyebrows/Eyebrows_Medium.blockymodel",
+      "Texture": "Characters/Body_Attachments/Eyebrows/Large_Greyscale.png",
+      "GradientSet": "Hair",
+      "GradientId": "BrownDark"
+    },
+    "ThinRound": {
+      "Model": "Characters/Body_Attachments/Eyebrows/Eyebrows_Medium.blockymodel",
+      "Texture": "Characters/Body_Attachments/Eyebrows/RoundThin_Greyscale.png",
+      "GradientSet": "Hair",
+      "GradientId": "BrownDark"
+    },
+    "ThinBushy": {
+      "Model": "Characters/Body_Attachments/Eyebrows/Eyebrows_Medium.blockymodel",
+      "Texture": "Characters/Body_Attachments/Eyebrows/BushyThin_Greyscale.png",
+      "GradientSet": "Hair",
+      "GradientId": "BrownDark"
+    },
+    "Serious": {
+      "Model": "Characters/Body_Attachments/Eyebrows/Eyebrows_Medium.blockymodel",
+      "Texture": "Characters/Body_Attachments/Eyebrows/Serious_Greyscale.png",
+      "GradientSet": "Hair",
+      "GradientId": "BrownDark"
+    }
+  },
+  "FaceAccessory": {
+    "Blindfold_Black": {
+      "Model": "Cosmetics/Face_Accessories/Blindfold.blockymodel",
+      "Texture": "Cosmetics/Face_Accessories/Blindfold_Textures/Blindfold_Thin.png",
+      "GradientSet": "Colored_Cotton",
+      "GradientId": "Black"
+    },
+    "Blindfold_White": {
+      "Model": "Cosmetics/Face_Accessories/Blindfold.blockymodel",
+      "Texture": "Cosmetics/Face_Accessories/Blindfold_Textures/Blindfold_Thin.png",
+      "GradientSet": "Colored_Cotton",
+      "GradientId": "White"
+    },
+    "Blindfold_Charcoal": {
+      "Model": "Cosmetics/Face_Accessories/Blindfold.blockymodel",
+      "Texture": "Cosmetics/Face_Accessories/Blindfold_Textures/Blindfold_Thin.png",
+      "GradientSet": "Colored_Cotton",
+      "GradientId": "Charcoal"
+    },
+    "Bandage_Black": {
+      "Model": "Cosmetics/Face_Accessories/Blindfold.blockymodel",
+      "Texture": "Cosmetics/Face_Accessories/Blindfold_Textures/Blindfold_Bandage_Thin.png",
+      "GradientSet": "Fantasy_Cotton",
+      "GradientId": "Black"
+    },
+    "Bandage_White": {
+      "Model": "Cosmetics/Face_Accessories/Blindfold.blockymodel",
+      "Texture": "Cosmetics/Face_Accessories/Blindfold_Textures/Blindfold_Bandage_Thin.png",
+      "GradientSet": "Fantasy_Cotton",
+      "GradientId": "White"
+    },
+    "Bandage_Beige": {
+      "Model": "Cosmetics/Face_Accessories/Blindfold.blockymodel",
+      "Texture": "Cosmetics/Face_Accessories/Blindfold_Textures/Blindfold_Bandage_Thin.png",
+      "GradientSet": "Fantasy_Cotton",
+      "GradientId": "Beige"
+    }
+  },
+  "Haircut": {
+    "BowlCut_Black": { "Model": "Characters/Haircuts/BowlCut.blockymodel", "Texture": "Characters/Haircuts/BowlCut_Greyscale.png", "GradientSet": "Hair", "GradientId": "Black" },
+    "BowlCut_PitchBlack": { "Model": "Characters/Haircuts/BowlCut.blockymodel", "Texture": "Characters/Haircuts/BowlCut_Greyscale.png", "GradientSet": "Hair", "GradientId": "PitchBlack" },
+    "BowlCut_BrownDarker": { "Model": "Characters/Haircuts/BowlCut.blockymodel", "Texture": "Characters/Haircuts/BowlCut_Greyscale.png", "GradientSet": "Hair", "GradientId": "BrownDarker" },
+    "BowlCut_BrownDark": { "Model": "Characters/Haircuts/BowlCut.blockymodel", "Texture": "Characters/Haircuts/BowlCut_Greyscale.png", "GradientSet": "Hair", "GradientId": "BrownDark" },
+    "BowlCut_BrownSemiDark": { "Model": "Characters/Haircuts/BowlCut.blockymodel", "Texture": "Characters/Haircuts/BowlCut_Greyscale.png", "GradientSet": "Hair", "GradientId": "BrownSemiDark" },
+    "BowlCut_Brown": { "Model": "Characters/Haircuts/BowlCut.blockymodel", "Texture": "Characters/Haircuts/BowlCut_Greyscale.png", "GradientSet": "Hair", "GradientId": "Brown" },
+    "SmartElven_Black": { "Model": "Characters/Haircuts/MaleElf.blockymodel", "Texture": "Characters/Haircuts/MaleElf_Greyscale.png", "GradientSet": "Hair", "GradientId": "Black" },
+    "SmartElven_PitchBlack": { "Model": "Characters/Haircuts/MaleElf.blockymodel", "Texture": "Characters/Haircuts/MaleElf_Greyscale.png", "GradientSet": "Hair", "GradientId": "PitchBlack" },
+    "SmartElven_BrownDarker": { "Model": "Characters/Haircuts/MaleElf.blockymodel", "Texture": "Characters/Haircuts/MaleElf_Greyscale.png", "GradientSet": "Hair", "GradientId": "BrownDarker" },
+    "SmartElven_BrownDark": { "Model": "Characters/Haircuts/MaleElf.blockymodel", "Texture": "Characters/Haircuts/MaleElf_Greyscale.png", "GradientSet": "Hair", "GradientId": "BrownDark" },
+    "SmartElven_BrownSemiDark": { "Model": "Characters/Haircuts/MaleElf.blockymodel", "Texture": "Characters/Haircuts/MaleElf_Greyscale.png", "GradientSet": "Hair", "GradientId": "BrownSemiDark" },
+    "SmartElven_Brown": { "Model": "Characters/Haircuts/MaleElf.blockymodel", "Texture": "Characters/Haircuts/MaleElf_Greyscale.png", "GradientSet": "Hair", "GradientId": "Brown" },
+    "WidePonytail_Black": { "Model": "Characters/Haircuts/WidePonytail.blockymodel", "Texture": "Characters/Haircuts/WidePonytail_Greyscale.png", "GradientSet": "Hair", "GradientId": "Black" },
+    "WidePonytail_PitchBlack": { "Model": "Characters/Haircuts/WidePonytail.blockymodel", "Texture": "Characters/Haircuts/WidePonytail_Greyscale.png", "GradientSet": "Hair", "GradientId": "PitchBlack" },
+    "WidePonytail_BrownDarker": { "Model": "Characters/Haircuts/WidePonytail.blockymodel", "Texture": "Characters/Haircuts/WidePonytail_Greyscale.png", "GradientSet": "Hair", "GradientId": "BrownDarker" },
+    "WidePonytail_BrownDark": { "Model": "Characters/Haircuts/WidePonytail.blockymodel", "Texture": "Characters/Haircuts/WidePonytail_Greyscale.png", "GradientSet": "Hair", "GradientId": "BrownDark" },
+    "WidePonytail_BrownSemiDark": { "Model": "Characters/Haircuts/WidePonytail.blockymodel", "Texture": "Characters/Haircuts/WidePonytail_Greyscale.png", "GradientSet": "Hair", "GradientId": "BrownSemiDark" },
+    "WidePonytail_Brown": { "Model": "Characters/Haircuts/WidePonytail.blockymodel", "Texture": "Characters/Haircuts/WidePonytail_Greyscale.png", "GradientSet": "Hair", "GradientId": "Brown" },
+    "Wings_Black": { "Model": "Characters/Haircuts/Wings.blockymodel", "Texture": "Characters/Haircuts/Wings_Greyscale.png", "GradientSet": "Hair", "GradientId": "Black" },
+    "Wings_PitchBlack": { "Model": "Characters/Haircuts/Wings.blockymodel", "Texture": "Characters/Haircuts/Wings_Greyscale.png", "GradientSet": "Hair", "GradientId": "PitchBlack" },
+    "Wings_BrownDarker": { "Model": "Characters/Haircuts/Wings.blockymodel", "Texture": "Characters/Haircuts/Wings_Greyscale.png", "GradientSet": "Hair", "GradientId": "BrownDarker" },
+    "Wings_BrownDark": { "Model": "Characters/Haircuts/Wings.blockymodel", "Texture": "Characters/Haircuts/Wings_Greyscale.png", "GradientSet": "Hair", "GradientId": "BrownDark" },
+    "Wings_BrownSemiDark": { "Model": "Characters/Haircuts/Wings.blockymodel", "Texture": "Characters/Haircuts/Wings_Greyscale.png", "GradientSet": "Hair", "GradientId": "BrownSemiDark" },
+    "Wings_Brown": { "Model": "Characters/Haircuts/Wings.blockymodel", "Texture": "Characters/Haircuts/Wings_Greyscale.png", "GradientSet": "Hair", "GradientId": "Brown" },
+    "SlickBack_Black": { "Model": "Characters/Haircuts/Slickback.blockymodel", "Texture": "Characters/Haircuts/Slickback_Textures/Slickback_Greyscale.png", "GradientSet": "Hair", "GradientId": "Black" },
+    "SlickBack_PitchBlack": { "Model": "Characters/Haircuts/Slickback.blockymodel", "Texture": "Characters/Haircuts/Slickback_Textures/Slickback_Greyscale.png", "GradientSet": "Hair", "GradientId": "PitchBlack" },
+    "SlickBack_BrownDarker": { "Model": "Characters/Haircuts/Slickback.blockymodel", "Texture": "Characters/Haircuts/Slickback_Textures/Slickback_Greyscale.png", "GradientSet": "Hair", "GradientId": "BrownDarker" },
+    "SlickBack_BrownDark": { "Model": "Characters/Haircuts/Slickback.blockymodel", "Texture": "Characters/Haircuts/Slickback_Textures/Slickback_Greyscale.png", "GradientSet": "Hair", "GradientId": "BrownDark" },
+    "SlickBack_BrownSemiDark": { "Model": "Characters/Haircuts/Slickback.blockymodel", "Texture": "Characters/Haircuts/Slickback_Textures/Slickback_Greyscale.png", "GradientSet": "Hair", "GradientId": "BrownSemiDark" },
+    "SlickBack_Brown": { "Model": "Characters/Haircuts/Slickback.blockymodel", "Texture": "Characters/Haircuts/Slickback_Textures/Slickback_Greyscale.png", "GradientSet": "Hair", "GradientId": "Brown" },
+    "SideSlick_Black": { "Model": "Characters/Haircuts/Sideslick.blockymodel", "Texture": "Characters/Haircuts/Sideslick_Greyscale.png", "GradientSet": "Hair", "GradientId": "Black" },
+    "SideSlick_PitchBlack": { "Model": "Characters/Haircuts/Sideslick.blockymodel", "Texture": "Characters/Haircuts/Sideslick_Greyscale.png", "GradientSet": "Hair", "GradientId": "PitchBlack" },
+    "SideSlick_BrownDarker": { "Model": "Characters/Haircuts/Sideslick.blockymodel", "Texture": "Characters/Haircuts/Sideslick_Greyscale.png", "GradientSet": "Hair", "GradientId": "BrownDarker" },
+    "SideSlick_BrownDark": { "Model": "Characters/Haircuts/Sideslick.blockymodel", "Texture": "Characters/Haircuts/Sideslick_Greyscale.png", "GradientSet": "Hair", "GradientId": "BrownDark" },
+    "SideSlick_BrownSemiDark": { "Model": "Characters/Haircuts/Sideslick.blockymodel", "Texture": "Characters/Haircuts/Sideslick_Greyscale.png", "GradientSet": "Hair", "GradientId": "BrownSemiDark" },
+    "SideSlick_Brown": { "Model": "Characters/Haircuts/Sideslick.blockymodel", "Texture": "Characters/Haircuts/Sideslick_Greyscale.png", "GradientSet": "Hair", "GradientId": "Brown" },
+    "Emo_Black": { "Model": "Characters/Haircuts/Emo.blockymodel", "Texture": "Characters/Haircuts/Emo_Greyscale.png", "GradientSet": "Hair", "GradientId": "Black" },
+    "Emo_PitchBlack": { "Model": "Characters/Haircuts/Emo.blockymodel", "Texture": "Characters/Haircuts/Emo_Greyscale.png", "GradientSet": "Hair", "GradientId": "PitchBlack" },
+    "Emo_BrownDarker": { "Model": "Characters/Haircuts/Emo.blockymodel", "Texture": "Characters/Haircuts/Emo_Greyscale.png", "GradientSet": "Hair", "GradientId": "BrownDarker" },
+    "Emo_BrownDark": { "Model": "Characters/Haircuts/Emo.blockymodel", "Texture": "Characters/Haircuts/Emo_Greyscale.png", "GradientSet": "Hair", "GradientId": "BrownDark" },
+    "Emo_BrownSemiDark": { "Model": "Characters/Haircuts/Emo.blockymodel", "Texture": "Characters/Haircuts/Emo_Greyscale.png", "GradientSet": "Hair", "GradientId": "BrownSemiDark" },
+    "Emo_Brown": { "Model": "Characters/Haircuts/Emo.blockymodel", "Texture": "Characters/Haircuts/Emo_Greyscale.png", "GradientSet": "Hair", "GradientId": "Brown" },
+    "Dreadlocks_Black": { "Model": "Characters/Haircuts/Dreadlocks.blockymodel", "Texture": "Characters/Haircuts/Dreadlocks_Greyscale.png", "GradientSet": "Hair", "GradientId": "Black" },
+    "Dreadlocks_PitchBlack": { "Model": "Characters/Haircuts/Dreadlocks.blockymodel", "Texture": "Characters/Haircuts/Dreadlocks_Greyscale.png", "GradientSet": "Hair", "GradientId": "PitchBlack" },
+    "Dreadlocks_BrownDarker": { "Model": "Characters/Haircuts/Dreadlocks.blockymodel", "Texture": "Characters/Haircuts/Dreadlocks_Greyscale.png", "GradientSet": "Hair", "GradientId": "BrownDarker" },
+    "Dreadlocks_BrownDark": { "Model": "Characters/Haircuts/Dreadlocks.blockymodel", "Texture": "Characters/Haircuts/Dreadlocks_Greyscale.png", "GradientSet": "Hair", "GradientId": "BrownDark" },
+    "Dreadlocks_BrownSemiDark": { "Model": "Characters/Haircuts/Dreadlocks.blockymodel", "Texture": "Characters/Haircuts/Dreadlocks_Greyscale.png", "GradientSet": "Hair", "GradientId": "BrownSemiDark" },
+    "Dreadlocks_Brown": { "Model": "Characters/Haircuts/Dreadlocks.blockymodel", "Texture": "Characters/Haircuts/Dreadlocks_Greyscale.png", "GradientSet": "Hair", "GradientId": "Brown" }
+  },
+  "Gloves": {
+    "MetalBracelets_Black": {
+      "Model": "Cosmetics/Gloves/GoldenBracelets.blockymodel",
+      "Texture": "Cosmetics/Gloves/GoldenBracelets_Greyscale.png",
+      "GradientSet": "Colored_Cotton",
+      "GradientId": "Black"
+    },
+    "MetalBracelets_DarkBrown": {
+      "Model": "Cosmetics/Gloves/GoldenBracelets.blockymodel",
+      "Texture": "Cosmetics/Gloves/GoldenBracelets_Greyscale.png",
+      "GradientSet": "Colored_Cotton",
+      "GradientId": "Brown"
+    },
+    "MetalBracelets_Grey": {
+      "Model": "Cosmetics/Gloves/GoldenBracelets.blockymodel",
+      "Texture": "Cosmetics/Gloves/GoldenBracelets_Greyscale.png",
+      "GradientSet": "Colored_Cotton",
+      "GradientId": "Grey"
+    },
+    "MetalBracelets_White": {
+      "Model": "Cosmetics/Gloves/GoldenBracelets.blockymodel",
+      "Texture": "Cosmetics/Gloves/GoldenBracelets_Greyscale.png",
+      "GradientSet": "Colored_Cotton",
+      "GradientId": "White"
+    },
+    "RunicShackles_Rusty": {
+      "Model": "Cosmetics/Gloves/Shackles_Feran.blockymodel",
+      "Texture": "Cosmetics/Gloves/Shackles_Feran_Texture.png"
+    },
+    "FlowerBracer_Iron": {
+      "Model": "Cosmetics/Gloves/Bracers.blockymodel",
+      "Texture": "Cosmetics/Gloves/Bracers_Greyscale.png",
+      "GradientSet": "Ornamented_Metal",
+      "GradientId": "Iron_Black"
+    },
+    "FlowerBracer_Copper": {
+      "Model": "Cosmetics/Gloves/Bracers.blockymodel",
+      "Texture": "Cosmetics/Gloves/Bracers_Greyscale.png",
+      "GradientSet": "Ornamented_Metal",
+      "GradientId": "Copper_Green"
+    },
+    "FlowerBracer_Silver": {
+      "Model": "Cosmetics/Gloves/Bracers.blockymodel",
+      "Texture": "Cosmetics/Gloves/Bracers_Greyscale.png",
+      "GradientSet": "Ornamented_Metal",
+      "GradientId": "Silver_Blue"
+    }
+  },
+  "Shoes": {
+    "BasicSandals_Black": {
+      "Model": "Cosmetics/Shoes/Shoes.blockymodel",
+      "Texture": "Cosmetics/Shoes/Shoes_Textures/Shoes_Sandal_Greyscale.png",
+      "GradientSet": "Colored_Cotton",
+      "GradientId": "Black"
+    },
+    "BasicSandals_Charcoal": {
+      "Model": "Cosmetics/Shoes/Shoes.blockymodel",
+      "Texture": "Cosmetics/Shoes/Shoes_Textures/Shoes_Sandal_Greyscale.png",
+      "GradientSet": "Colored_Cotton",
+      "GradientId": "Charcoal"
+    },
+    "BasicSandals_Brown": {
+      "Model": "Cosmetics/Shoes/Sandals.blockymodel",
+      "Texture": "Cosmetics/Shoes/Sandals_basic.png"
+    }
+  },
+  "Undertop": {
+    "ShortSleevedShirt_Black": {
+      "Model": "Cosmetics/Undertops/Tshirt.blockymodel",
+      "Texture": "Cosmetics/Undertops/Tshirt_Textures/ShortSleeves_Greyscale.png",
+      "GradientSet": "Colored_Cotton",
+      "GradientId": "Black"
+    },
+    "LayeredSleeveShirt_Black": {
+      "Model": "Cosmetics/Undertops/Tshirt.blockymodel",
+      "Texture": "Cosmetics/Undertops/Tshirt_Textures/Coloured_Sleeves_Greyscale.png",
+      "GradientSet": "Colored_Cotton",
+      "GradientId": "Black"
+    },
+    "DipCutShirt_Black": {
+      "Model": "Cosmetics/Undertops/Tshirt.blockymodel",
+      "Texture": "Cosmetics/Undertops/Tshirt_Textures/Dipcut_Greyscale.png",
+      "GradientSet": "Colored_Cotton",
+      "GradientId": "Black"
+    },
+    "TatteredShirt_Black": {
+      "Model": "Cosmetics/Undertops/Tshirt.blockymodel",
+      "Texture": "Cosmetics/Undertops/Tshirt_Textures/Crinkled_Greyscale.png",
+      "GradientSet": "Colored_Cotton",
+      "GradientId": "Black"
+    },
+    "VNeckShirt_Black": {
+      "Model": "Cosmetics/Undertops/Tshirt.blockymodel",
+      "Texture": "Cosmetics/Undertops/Tshirt_Textures/VNeck_Greyscale.png",
+      "GradientSet": "Colored_Cotton",
+      "GradientId": "Black"
+    },
+    "WideNeckShirt_Black": {
+      "Model": "Cosmetics/Undertops/Tshirt.blockymodel",
+      "Texture": "Cosmetics/Undertops/Tshirt_Textures/Wideneck_Tshirt_Greyscale.png",
+      "GradientSet": "Colored_Cotton",
+      "GradientId": "Black"
+    }
+  },
+  "Overtop": {
+    "SleevedDress_Black": {
+      "Model": "Cosmetics/Overtops/SleevedDress.blockymodel",
+      "Texture": "Cosmetics/Overtops/SleevedDress_Textures/Sleeved_Dress_Greyscale.png",
+      "GradientSet": "Colored_Cotton",
+      "GradientId": "Black"
+    },
+    "Dress_Black": {
+      "Model": "Cosmetics/Overtops/Dress.blockymodel",
+      "Texture": "Cosmetics/Overtops/Dress_Textures/Ronin_Greyscale.png",
+      "GradientSet": "Colored_Cotton",
+      "GradientId": "Black"
+    },
+    "WeatheredTunic_Black": {
+      "Model": "Cosmetics/Overtops/Tunic.blockymodel",
+      "Texture": "Cosmetics/Overtops/Tunic_Textures/Slave_GS.png",
+      "GradientSet": "Colored_Cotton",
+      "GradientId": "Black"
+    },
+    "RaggedVest_Black": {
+      "Model": "Cosmetics/Overtops/Overtops_Long_Waist_NoSleeve.blockymodel",
+      "Texture": "Cosmetics/Overtops/Overtops_Long_Sleeve_Waist_Sleeve/Raggedy_Vest_Texture.png",
+      "GradientSet": "Colored_Cotton",
+      "GradientId": "Black"
+    },
+    "MessyShirt_Black": {
+      "Model": "Cosmetics/Overtops/Overtops_Rolled_Sleeve.blockymodel",
+      "Texture": "Cosmetics/Overtops/Overtops_Rolled_Sleeves_Textures/Messy_Shirt_Greyscale.png",
+      "GradientSet": "Colored_Cotton",
+      "GradientId": "Black"
+    },
+    "ForestVest_Black": {
+      "Model": "Cosmetics/Overtops/Overtops_Mini_Jacket.blockymodel",
+      "Texture": "Cosmetics/Overtops/Overtops_Short_Sleeve_Textures/Forest_Vest_Greyscale.png",
+      "GradientSet": "Colored_Cotton",
+      "GradientId": "Black"
+    },
+    "LargeScarf_Black": {
+      "Model": "Cosmetics/Face_Accessories/Scarf_Large.blockymodel",
+      "Texture": "Cosmetics/Face_Accessories/Scarf_Large_Textures/Greyscale.png",
+      "GradientSet": "Colored_Cotton",
+      "GradientId": "Black"
+    },
+    "SimpleScarf_Black": {
+      "Model": "Cosmetics/Overtops/Scarf.blockymodel",
+      "Texture": "Cosmetics/Overtops/Scarf_Textures/Greyscale.png",
+      "GradientSet": "Colored_Cotton",
+      "GradientId": "Black"
+    }
+  },
+  "Backpack": {
+    "Backpack_Big": {
+      "Model": "Characters/Body_Attachments/Wandering/Backpack_Big.blockymodel",
+      "Texture": "Characters/Body_Attachments/Wandering/Backpack_Big_Texture.png"
+    },
+    "Backpack_Medium": {
+      "Model": "Characters/Body_Attachments/Wandering/Backpack_Medium.blockymodel",
+      "Texture": "Characters/Body_Attachments/Wandering/Backpack_Medium_Texture.png"
+    },
+    "Backpack_Small": {
+      "Model": "Characters/Body_Attachments/Wandering/Backpack_Small.blockymodel",
+      "Texture": "Characters/Body_Attachments/Wandering/Backpack_Small_Texture.png"
+    },
+    "Backpack_Small_2": {
+      "Model": "Characters/Body_Attachments/Wandering/Backpack_Small_2.blockymodel",
+      "Texture": "Characters/Body_Attachments/Wandering/Backpack_Small_2_Texture.png"
+    }
+  }
+}
+}

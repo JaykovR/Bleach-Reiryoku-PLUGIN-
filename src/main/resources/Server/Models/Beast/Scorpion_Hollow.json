@@ -1,0 +1,277 @@
+{
+  "Model": "NPC/Beast/Scorpion_Hollow/Models/Model.blockymodel",
+  "Texture": "NPC/Beast/Scorpion_Hollow/Models/Texture.png",
+  "EyeHeight": 0.45,
+  "CrouchOffset": -0.15,
+  "HitBox": {
+    "Max": {
+      "X": 0.9,
+      "Y": 1.7,
+      "Z": 0.9
+    },
+    "Min": {
+      "X": -0.9,
+      "Y": 0,
+      "Z": -0.9
+    }
+  },
+  "MinScale": 2.5,
+  "MaxScale": 3.5,   
+  "DefaultAttachments": [],
+  "Camera": {},
+  "AnimationSets": {
+    "Idle": {
+      "Animations": [
+        {
+          "Animation": "NPC/Beast/Scorpion/Animations/Default/Idle.blockyanim",
+          "SoundEventId": "SFX_Hollow_Idle_Breath"
+        }
+      ]
+    },
+    "Walk": {
+      "Animations": [
+        {
+          "Animation": "NPC/Beast/Scorpion/Animations/Default/Walk.blockyanim",
+          "Speed": 1.2,
+          "SoundEventId": "SFX_Hollow_Walk_Step"
+        }
+      ]
+    },
+    "WalkBackward": {
+      "Animations": [
+        {
+          "Animation": "NPC/Beast/Scorpion/Animations/Default/Walk_Backward.blockyanim",
+          "Speed": 1.2,
+          "SoundEventId": "SFX_Hollow_Walk_Step"
+        }
+      ]
+    },
+    "Run": {
+      "Animations": [
+        {
+          "Animation": "NPC/Beast/Scorpion/Animations/Default/Run.blockyanim",
+          "SoundEventId": "SFX_Scorpion_Hollow_Run"
+        }
+      ]
+    },
+    "Crouch": {
+      "Animations": [
+        {
+          "Animation": "NPC/Beast/Scorpion/Animations/Default/Crouch.blockyanim",
+          "BlendingDuration": 0.1
+        }
+      ]
+    },
+    "CrouchWalk": {
+      "Animations": [
+        {
+          "Animation": "NPC/Beast/Scorpion/Animations/Default/Crouch_Walk.blockyanim",
+          "Speed": 1.2,
+          "BlendingDuration": 0.1
+        }
+      ]
+    },
+    "CrouchWalkBackward": {
+      "Animations": [
+        {
+          "Animation": "NPC/Beast/Scorpion/Animations/Default/Crouch_Walk_Backwards.blockyanim",
+          "Speed": 1.2,
+          "BlendingDuration": 0.1
+        }
+      ]
+    },
+    "Jump": {
+      "Animations": [
+        {
+          "Animation": "NPC/Beast/Scorpion/Animations/Default/Jump.blockyanim",
+          "BlendingDuration": 0.1,
+          "Looping": false,
+          "Speed": 0.6
+        }
+      ]
+    },
+    "JumpWalk": {
+      "Animations": [
+        {
+          "Animation": "NPC/Beast/Scorpion/Animations/Default/Jump.blockyanim",
+          "BlendingDuration": 0.1,
+          "Looping": false,
+          "Speed": 0.6
+        }
+      ]
+    },
+    "JumpRun": {
+      "Animations": [
+        {
+          "Animation": "NPC/Beast/Scorpion/Animations/Default/Jump_Far.blockyanim",
+          "BlendingDuration": 0.1,
+          "Looping": false,
+          "Speed": 0.6
+        }
+      ]
+    },
+    "Fall": {
+      "Animations": [
+        {
+          "Animation": "NPC/Beast/Scorpion/Animations/Default/Fall.blockyanim",
+          "BlendingDuration": 0.4
+        }
+      ]
+    },
+    "Alerted": {
+      "Animations": [
+        {
+          "Animation": "NPC/Beast/Scorpion/Animations/Default/Alerted.blockyanim",
+          "Looping": false,
+          "SoundEventId": "SFX_Scorpion_Hollow_Alerted"
+        }
+      ]
+    },
+    "Hurt": {
+      "Animations": [
+        {
+          "Animation": "NPC/Beast/Scorpion/Animations/Damage/Hurt.blockyanim",
+          "BlendingDuration": 0.1,
+          "Looping": false
+        }
+      ]
+    },
+    "Death": {
+      "Animations": [
+        {
+          "Animation": "NPC/Beast/Scorpion/Animations/Damage/Death.blockyanim",
+          "Looping": false,
+          "SoundEventId": "SFX_Spawn_Scream_Hollow_Death"
+        }
+      ]
+    },
+    "Sleep": {
+      "Animations": [
+        {
+          "Animation": "NPC/Beast/Scorpion/Animations/Default/Sleep.blockyanim"
+        }
+      ]
+    },
+    "Spawn": {
+      "Animations": [
+        {
+          "Animation": "NPC/Beast/Scorpion/Animations/Default/Spawn.blockyanim",
+          "BlendingDuration": 0,
+          "Looping": false,
+          "SoundEventId": "SFX_Spawn_Scream_Hollow"
+        }
+      ]
+    },
+    "Despawn": {
+      "Animations": [
+        {
+          "Animation": "NPC/Beast/Scorpion/Animations/Default/Despawn.blockyanim",
+          "Looping": false
+        }
+      ]
+    },
+    "IdlePassive": {
+      "Animations": [
+        {
+          "Animation": "NPC/Beast/Scorpion/Animations/Flavor/Look_Around.blockyanim"
+        }
+      ],
+      "NextAnimationDelay": {
+        "Max": 10,
+        "Min": 2
+      }
+    },
+    "Prey": {
+      "Animations": [
+        {
+          "Animation": "NPC/Beast/Scorpion/Animations/Flavor/Prey.blockyanim"
+        }
+      ]
+    },
+    "PreySpawn": {
+      "Animations": [
+        {
+          "Animation": "NPC/Beast/Scorpion/Animations/Flavor/Prey_Spawn.blockyanim",
+          "Looping": false
+        }
+      ]
+    },
+    "Threaten": {
+      "Animations": [
+        {
+          "Animation": "NPC/Beast/Scorpion/Animations/Flavor/Threaten.blockyanim",
+          "SoundEventId": "SFX_Scorpion_Hollow_Threaten"
+        }
+      ]
+    },
+    "Laydown": {
+      "Animations": [
+        {
+          "Animation": "NPC/Beast/Scorpion/Animations/Default/Crouch.blockyanim",
+          "Looping": false,
+          "Speed": 0.5
+        }
+      ]
+    },
+    "Wake": {
+      "Animations": [
+        {
+          "Animation": "NPC/Beast/Scorpion/Animations/Default/Idle.blockyanim",
+          "Looping": false,
+          "Speed": 1.0
+        }
+      ]
+    }
+  },
+  "RandomAttachmentSets": {
+     "Body": {
+       "Variant1": {
+         "Model": "NPC/Beast/Scorpion_Hollow/Models/Model.blockymodel",
+         "Texture": "NPC/Beast/Scorpion_Hollow/Models/Texture.png",
+         "Weight": 25
+       },
+       "Variant2": {
+         "Model": "NPC/Beast/Scorpion_Hollow/Models/Model.blockymodel",
+         "Texture": "NPC/Beast/Scorpion_Hollow/Models/Texture_01.png",
+         "Weight": 25
+       },
+       "Variant3": {
+         "Model": "NPC/Beast/Scorpion_Hollow/Models/Model.blockymodel",
+         "Texture": "NPC/Beast/Scorpion_Hollow/Models/Texture_02.png",
+         "Weight": 25
+       },
+       "Variant4": {
+         "Model": "NPC/Beast/Scorpion_Hollow/Models/Model.blockymodel",
+         "Texture": "NPC/Beast/Scorpion_Hollow/Models/Texture_03.png",
+         "Weight": 25
+       }
+     },    
+    "Head": {
+      "Skull": {
+        "Model": "NPC/Beast/Scorpion_Hollow/Models/Attachments/Skull_Head.blockymodel",
+        "Texture": "NPC/Beast/Scorpion_Hollow/Models/Attachments/Skull_Head_Texture.png",
+        "Weight": 50
+      },
+      "Sharptooth": {
+        "Model": "NPC/Beast/Scorpion_Hollow/Models/Attachments/Skull_Sharptooth_Head.blockymodel",
+        "Texture": "NPC/Beast/Scorpion_Hollow/Models/Attachments/Skull_Sharptooth_Head_Texture.png",
+        "Weight": 50
+      },
+      "Longtooth": {
+        "Model": "NPC/Beast/Scorpion_Hollow/Models/Attachments/Skull_Longtooth_Head.blockymodel",
+        "Texture": "NPC/Beast/Scorpion_Hollow/Models/Attachments/Skull_Longtooth_Head_Texture.png",
+        "Weight": 50
+      },
+      "Windwalker": {
+        "Model": "NPC/Beast/Scorpion_Hollow/Models/Attachments/Skull_Windwalker_Head.blockymodel",
+        "Texture": "NPC/Beast/Scorpion_Hollow/Models/Attachments/Skull_Windwalker_Head_Texture.png",
+        "Weight": 50
+      },
+      "Skull_Half": {
+        "Model": "NPC/Beast/Scorpion_Hollow/Models/Attachments/Skull_Half_Head.blockymodel",
+        "Texture": "NPC/Beast/Scorpion_Hollow/Models/Attachments/Skull_Half_Head_Texture.png",
+        "Weight": 50
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "Environments": [
+    "Env_Zone3_Tundra",
+    "Env_Zone3_Shores"
+  ],
+  "NPCs": [
+    {
+      "Weight": 0.03,
+      "SpawnBlockSet": "Soil",
+      "Id": "Wandering_Shinigami",
+      "Flock": {
+        "Size": [
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "DayTimeRange": [
+    0,
+    17
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "TranslationProperties": {
+    "Name": "items.Transcendent_Essence.name",
+    "Description": "items.Transcendent_Essence.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Transcendent_Essence.png",
+  "Quality": "SpiritualResource",
+  "PlayerAnimationsId": "Item",
+  "IconProperties": {
+    "Scale": 0.6,
+    "Rotation": [
+      0,
+      0,
+      0
+    ],
+    "Translation": [
+      0,
+      -13
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Ingredient"
+    ]
+  },
+  "ItemEntity": {
+    "ParticleSystemId": null,
+    "ShowItemParticles": true
+  },
+  "Light": {
+    "Color": "#607",
+    "Radius": 1
+  },
+  "ItemSoundSetId": "ISS_Items_Gems",
+  "Trails": [
+    {
+      "TrailId": "Orb_Trail_Green"
+    }
+  ],
+  "Particles": [
+    {
+      "SystemId": "Trascendent_Essence_Sparks"
+    }
+  ],
+  "Texture": "Resources/Ingredients/Essence_Textures/Ice_Essence_Texture.png",
+  "Model": "Resources/Ingredients/Essence.blockymodel",
+  "Scale": 0.01,
+  "Categories": [
+    "BleachCategory.Ingredients"
+  ],
+  "Recipe": {
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Soul_Misc"
+        ],
+        "Id": "Soul_Imprinting_Altar"
+      }
+    ],
+    "Input": [
+      {
+        "ItemId": "Reiryoku_Crystal",
+        "Quantity": 2
+      },
+      {
+        "ItemId": "Resonating_Reishi_Core",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Voidheart",
+        "Quantity": 10
+      }
+    ]
+  }
+}

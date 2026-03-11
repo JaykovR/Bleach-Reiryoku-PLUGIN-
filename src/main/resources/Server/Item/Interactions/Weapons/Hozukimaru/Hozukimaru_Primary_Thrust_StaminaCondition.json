@@ -1,0 +1,37 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "Stamina": 0.1
+  },
+  "Failed": "Hozukimaru_Primary_Chain",
+  "Next": {
+    "Type": "ChangeStat",
+    "Behaviour": "Set",
+    "StatModifiers": {
+      "StaminaRegenDelay": -2
+    },
+    "Next": {
+      "Type": "MovementCondition",
+      "Failed": {
+        "Type": "Replace",
+        "Var": "Thrust",
+        "DefaultOk": true,
+        "DefaultValue": {
+          "Interactions": [
+            "Hozukimaru_Primary_Thrust_Standing"
+          ]
+        }
+      },
+      "Forward": {
+        "Type": "Replace",
+        "Var": "Thrust",
+        "DefaultOk": true,
+        "DefaultValue": {
+          "Interactions": [
+            "Hozukimaru_Forward_Thrust"
+          ]
+        }
+      }
+    }
+  }
+}

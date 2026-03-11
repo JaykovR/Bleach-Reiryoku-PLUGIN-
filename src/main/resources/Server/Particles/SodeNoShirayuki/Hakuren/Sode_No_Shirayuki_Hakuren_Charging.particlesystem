@@ -1,0 +1,33 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Sode_No_Shirayuki_Hakuren_Charging_Sparkles",
+      "PositionOffset": {
+        "X": 0,
+        "Z": 0
+      },
+      "FixedRotation": false
+    },
+    {
+      "SpawnerId": "TensaZangetsu_Signature_Status_Lines",
+      "FixedRotation": false,
+      "PositionOffset": {
+        "X": -0.1,
+        "Z": 0
+      }
+    },
+    {
+      "SpawnerId": "Sode_No_Shirayuki_Hakuren_Charging_BladePart",
+      "PositionOffset": {
+        "X": 0.4
+      },
+      "FixedRotation": false
+    },
+    {
+      "SpawnerId": "Sode_No_Shirayuki_Hakuren_Charging_BladePart",
+      "PositionOffset": {
+        "X": 0.5
+      }
+    }
+  ]
+}
