@@ -35,16 +35,31 @@
     "Ability3": {
       "Interactions": [
         {
-          "Type": "SendMessage",
-          "Message": "Raise your head, Wabisuke!"
-        },
-        {
-          "Type": "ModifyInventory",
-          "ItemToRemove": {
-            "Id": "Sealed_Wabisuke_T"
-          },
-          "ItemToAdd": {
-            "Id": "Wabisuke"
+          "Type": "ShikaiCheck",
+          "Next": {
+            "Type": "Simple",
+            "Effects": {
+              "ItemPlayerAnimationsId": "HozukimaruAnimations",
+              "ItemAnimationId": "ShikaiActivation",
+              "Particles": [
+                {
+                  "SystemId": "Shikai_Activation_Hozukimaru",
+                  "TargetEntityPart": "PrimaryItem",
+                  "Scale": 0.4,
+                  "DetachedFromModel": false
+                }
+              ]
+            },
+            "RunTime": 0.5,
+            "Next": {
+              "Type": "ModifyInventory",
+              "ItemToRemove": {
+                "Id": "Sealed_Hozukimaru"
+              },
+              "ItemToAdd": {
+                "Id": "Hozukimaru"
+              }
+            }
           }
         }
       ]

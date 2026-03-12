@@ -1,7 +1,7 @@
 {
   "Parent": "Sealed_Benihime_Type",
   "TranslationProperties": {
-    "Name": "Sealed - Hozukimaru"
+    "Name": "Sealed - Benihime"
   },
   "Model": "Items/Weapons/Sealed_Benihime/Sealed_Benihime.blockymodel",
   "Texture": "Items/Weapons/Sealed_Benihime/Sealed_Benihime_Texture.png",

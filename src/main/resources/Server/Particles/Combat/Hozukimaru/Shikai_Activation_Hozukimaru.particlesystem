@@ -1,0 +1,10 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Shikai_Activation_Hozukimaru_Tornado"
+    },
+    {
+      "SpawnerId": "Shikai_Activation_Hozukimaru_Tornado2"
+    }
+  ]
+}

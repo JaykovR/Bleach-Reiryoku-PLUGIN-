@@ -1,0 +1,17 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "SNS_Fragment_Sparks",
+      "FixedRotation": true
+    },
+    {
+      "SpawnerId": "Memory_Catch_FlashSpark"
+    },
+    {
+      "SpawnerId": "SNS_Fragment_Core"
+    }
+  ],
+  "BoundingRadius": 2,
+  "CullDistance": 20,
+  "IsImportant": false
+}

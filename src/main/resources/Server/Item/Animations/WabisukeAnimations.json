@@ -436,6 +436,11 @@
       "ThirdPersonFace": "Characters/Animations/Expressions/Frown.blockyanim",
       "Speed": 1,
       "ClipsGeometry": true
+    },
+    "ShikaiActivation": {
+      "ThirdPerson": "Characters/Animations/Items/Wabisuke/Shikai_Wabisuke.blockyanim",
+      "FirstPerson": "Characters/Animations/Items/Wabisuke/Shikai_Wabisuke_FPS.blockyanim",
+      "ClipsGeometry": true
     }
   },
   "Camera": {

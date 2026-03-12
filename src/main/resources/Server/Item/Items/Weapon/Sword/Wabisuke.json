@@ -9,7 +9,6 @@
   "Icon": "Icons/ItemsGenerated/Wabisuke.png",
   "Quality": "Shikai",
   "ItemLevel": 35,
-  "MaxDurability": 300,
   "InteractionVars": {
     "Swing_Left_Damage": {
       "Interactions": [
@@ -135,39 +134,6 @@
       -44,
       -45
     ]
-  },
-  "Recipe": {
-    "TimeSeconds": 4.5,
-    "Input": [
-      {
-        "ItemId": "Ingredient_Bar_Cobalt",
-        "Quantity": 4
-      },
-      {
-        "ItemId": "Ingredient_Bar_Thorium",
-        "Quantity": 4
-      },
-      {
-        "ItemId": "Ingredient_Void_Essence",
-        "Quantity": 4
-      },
-      {
-        "ItemId": "Resonating_Reishi_Core"
-      },
-      {
-        "ItemId": "Asauchi"
-      }
-    ],
-    "BenchRequirement": [
-      {
-        "Type": "Crafting",
-        "Categories": [
-          "Soul_Shikai"
-        ],
-        "Id": "Soul_Imprinting_Altar"
-      }
-    ],
-    "KnowledgeRequired": false
   },
   "Weapon": {
     "StatModifiers": {

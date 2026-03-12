@@ -39,7 +39,20 @@
       ]
     },
     "Secondary": "Root_TensaZangetsu_Secondary_Guard",
-    "Ability1": "Root_Weapon_Battleaxe_Signature_Whirlwind"
+    "Ability1": "Root_Weapon_Battleaxe_Signature_Whirlwind",
+    "Ability3": {
+      "Interactions": [
+        {
+          "Type": "ModifyInventory",
+          "ItemToRemove": {
+            "Id": "Hozukimaru"
+          },
+          "ItemToAdd": {
+            "Id": "Sealed_Hozukimaru"
+          }
+        }
+      ]
+    }
   },
   "InteractionVars": {
     "Spear_Block_Damage": "Spear_Block_Damage",

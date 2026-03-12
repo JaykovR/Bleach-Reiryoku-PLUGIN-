@@ -32,7 +32,20 @@
   "Interactions": {
     "Primary": "Root_Wabisuke_Primary",
     "Secondary": "Root_Wabisuke_Secondary_Guard",
-    "Ability1": "Root_Wabisuke_CrushingRegret"
+    "Ability1": "Root_Wabisuke_CrushingRegret",
+    "Ability3": {
+      "Interactions": [
+        {
+          "Type": "ModifyInventory",
+          "ItemToRemove": {
+            "Id": "Wabisuke"
+          },
+          "ItemToAdd": {
+            "Id": "Sealed_Wabisuke"
+          }
+        }
+      ]
+    }
   },
   "Tags": {
     "Type": [
@@ -120,7 +133,5 @@
       }
     ]
   },
-  "ItemSoundSetId": "ISS_Weapons_Blade_Large",
-  "MaxDurability": 80,
-  "DurabilityLossOnHit": 0.21
+  "ItemSoundSetId": "ISS_Weapons_Blade_Large"
 }

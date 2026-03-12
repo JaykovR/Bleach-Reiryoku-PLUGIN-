@@ -649,39 +649,19 @@
   "Interactions": {
     "Primary": "Root_Shikai_Benihime_Primary",
     "Secondary": "Root_Weapon_Sword_Secondary_Guard",
-    "Ability2": "Root_Weapon_Sword_Signature_Vortexstrike"
-  },
-  "Recipe": {
-    "TimeSeconds": 4.5,
-    "Input": [
-      {
-        "ItemId": "Ingredient_Bar_Cobalt",
-        "Quantity": 4
-      },
-      {
-        "ItemId": "Ingredient_Bar_Silver",
-        "Quantity": 5
-      },
-      {
-        "ItemId": "Rock_Gem_Ruby",
-        "Quantity": 10
-      },
-      {
-        "ItemId": "Resonating_Reishi_Core"
-      },
-      {
-        "ItemId": "Asauchi"
-      }
-    ],
-    "BenchRequirement": [
-      {
-        "Type": "Crafting",
-        "Categories": [
-          "Soul_Shikai"
-        ],
-        "Id": "Soul_Imprinting_Altar"
-      }
-    ],
-    "KnowledgeRequired": false
+    "Ability2": "Root_Weapon_Sword_Signature_Vortexstrike",
+    "Ability3": {
+      "Interactions": [
+        {
+          "Type": "ModifyInventory",
+          "ItemToRemove": {
+            "Id": "Shikai_Benihime"
+          },
+          "ItemToAdd": {
+            "Id": "Sealed_Benihime"
+          }
+        }
+      ]
+    }
   }
 }

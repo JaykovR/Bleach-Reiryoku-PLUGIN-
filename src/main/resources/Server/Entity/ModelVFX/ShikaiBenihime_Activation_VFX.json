@@ -1,0 +1,13 @@
+{
+  "SwitchTo": "Transparency",
+  "EffectDirection": "BottomUp",
+  "AnimationDuration": 5,
+  "HighlightColor": "#ff0000",
+  "HighlightThickness": 1,
+  "LoopOption": "LoopMirror",
+  "UseBloomOnHighlight": true,
+  "CurveType": "Linear",
+  "UseProgessiveHighlight": true,
+  "PostColorOpacity": 1,
+  "PostColor": "#d70c0c"
+}

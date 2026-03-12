@@ -35,16 +35,29 @@
     "Ability3": {
       "Interactions": [
         {
-          "Type": "SendMessage",
-          "Message": "Raise your head, Wabisuke!"
-        },
-        {
-          "Type": "ModifyInventory",
-          "ItemToRemove": {
-            "Id": "Sealed_Wabisuke_T"
-          },
-          "ItemToAdd": {
-            "Id": "Wabisuke"
+          "Type": "ShikaiCheck",
+          "Next": {
+            "Type": "Simple",
+            "Effects": {
+              "ItemPlayerAnimationsId": "WabisukeAnimations",
+              "ItemAnimationId": "ShikaiActivation",
+              "Particles": [
+                {
+                  "SystemId": "Smoke_Black",
+                  "TargetEntityPart": "PrimaryItem"
+                }
+              ]
+            },
+            "RunTime": 0.7,
+            "Next": {
+              "Type": "ModifyInventory",
+              "ItemToRemove": {
+                "Id": "Sealed_Wabisuke"
+              },
+              "ItemToAdd": {
+                "Id": "Wabisuke"
+              }
+            }
           }
         }
       ]

@@ -99,7 +99,7 @@ public class ReiryokuCommands extends AbstractCommandCollection {
                 if (((stats != null) && !stats.getShikaiHozukimaruState()) && !stats.getShikaiSodeNoShirayukiState()
                         && !stats.getShikaiBenihimeState() && !stats.getShikaiWabisukeState())
                 {
-                    context.sendMessage(Message.raw("You have no Shikai Available.."));
+                    context.sendMessage(Message.raw("No Shikai Available.."));
                     return;
                 }
 
@@ -132,14 +132,14 @@ public class ReiryokuCommands extends AbstractCommandCollection {
                 var brType = playerStats.getComponentType();
                 playerStats stats = store.getComponent(owningEntity, brType);
 
-                if (((stats != null) && !stats.getShikaiHozukimaruState()) || !stats.getShikaiSodeNoShirayukiState()
-                        || !stats.getShikaiBenihimeState() || !stats.getShikaiWabisukeState())
+                if (((stats != null) && !stats.getShikaiHozukimaruState()) && !stats.getShikaiSodeNoShirayukiState()
+                        && !stats.getShikaiBenihimeState() && !stats.getShikaiWabisukeState())
                 {
-                    context.sendMessage(Message.raw("You were already unable to transform into Shikai."));
+                    context.sendMessage(Message.raw("You were already unable to transform into any Shikai."));
                     return;
                 }
                 stats.deactivateShikai();
-                context.sendMessage(Message.raw("Shikai access disabled."));
+                context.sendMessage(Message.raw("All Shikai access disabled."));
             });
 
 

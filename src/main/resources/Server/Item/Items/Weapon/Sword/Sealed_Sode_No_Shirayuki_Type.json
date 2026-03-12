@@ -35,7 +35,26 @@
     "Ability3": {
       "Interactions": [
         {
-          "Type": "ShikaiCheck"
+          "Type": "ShikaiCheck",
+          "Next": {
+            "Type": "Simple",
+            "Effects": {
+              "ItemPlayerAnimationsId": "Sode_No_Shirayuki_Animations",
+              "ItemAnimationId": "ShikaiActivation",
+              "WorldSoundEventId": "SFX_Hakuren_Charge",
+              "LocalSoundEventId": "SFX_Hakuren_Charge"
+            },
+            "RunTime": 0,
+            "Next": {
+              "Type": "ModifyInventory",
+              "ItemToRemove": {
+                "Id": "Sealed_Sode_No_Shirayuki"
+              },
+              "ItemToAdd": {
+                "Id": "Sode_No_Shirayuki"
+              }
+            }
+          }
         }
       ]
     }

@@ -1,9 +1,9 @@
 {
   "TranslationProperties": {
-    "Name": "items.Resonating_Reishi_Core.name",
-    "Description": "items.Resonating_Reishi_Core.description"
+    "Name": "Hozukimaru Spirit Fragment",
+    "Description": "A fragment brimming with battle spirit."
   },
-  "Icon": "Icons/ItemsGenerated/Resonating_Reishi_Core.png",
+  "Icon": "Icons/ItemsGenerated/Hozukimaru_Spirit_Fragment.png",
   "Quality": "SpiritualResource",
   "PlayerAnimationsId": "Item",
   "IconProperties": {
@@ -28,27 +28,23 @@
     "ShowItemParticles": true
   },
   "Light": {
-    "Color": "#015",
+    "Color": "#600",
     "Radius": 1
   },
   "ItemSoundSetId": "ISS_Items_Gems",
-  "Trails": [
-    {
-      "TrailId": "Memory_Trail"
-    }
-  ],
   "Particles": [
     {
-      "SystemId": "Memory_Projectile_Sparks"
+      "SystemId": "Hozukimaru_Fragment_Sparks"
     }
   ],
   "Texture": "Resources/Ingredients/Essence_Textures/Ice_Essence_Texture.png",
   "Model": "Resources/Ingredients/Essence.blockymodel",
-  "Scale": 0.01,
+  "Scale": 0.02,
   "Categories": [
     "BleachCategory.Ingredients"
   ],
   "Interactions": {
     "Secondary": "UnlockShikai"
-  }
+  },
+  "MaxStack": 1
 }

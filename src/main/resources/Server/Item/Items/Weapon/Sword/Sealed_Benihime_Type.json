@@ -35,16 +35,27 @@
     "Ability3": {
       "Interactions": [
         {
-          "Type": "SendMessage",
-          "Message": "Raise your head, Wabisuke!"
-        },
-        {
-          "Type": "ModifyInventory",
-          "ItemToRemove": {
-            "Id": "Sealed_Wabisuke_T"
-          },
-          "ItemToAdd": {
-            "Id": "Wabisuke"
+          "Type": "ShikaiCheck",
+          "Next": {
+            "Type": "Simple",
+            "Effects": {
+              "ItemPlayerAnimationsId": "Shikai_Benihime_Animations",
+              "ItemAnimationId": "ShikaiActivation"
+            },
+            "RunTime": 0,
+            "Next": {
+              "Type": "ApplyEffect",
+              "EffectId": "Shikai_Benihime_Activation",
+              "Next": {
+                "Type": "ModifyInventory",
+                "ItemToRemove": {
+                  "Id": "Sealed_Benihime"
+                },
+                "ItemToAdd": {
+                  "Id": "Shikai_Benihime"
+                }
+              }
+            }
           }
         }
       ]

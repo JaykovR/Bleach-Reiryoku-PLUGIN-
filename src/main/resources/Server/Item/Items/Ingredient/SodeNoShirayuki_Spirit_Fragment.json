@@ -1,9 +1,9 @@
 {
   "TranslationProperties": {
-    "Name": "items.Resonating_Reishi_Core.name",
-    "Description": "items.Resonating_Reishi_Core.description"
+    "Name": "Sode No Shirayuki Spirit Fragment",
+    "Description": "A cold fragment of pure spiritual energy."
   },
-  "Icon": "Icons/ItemsGenerated/Resonating_Reishi_Core.png",
+  "Icon": "Icons/ItemsGenerated/Sode_No_Shirayuki_Spirit_Fragment.png",
   "Quality": "SpiritualResource",
   "PlayerAnimationsId": "Item",
   "IconProperties": {
@@ -28,27 +28,52 @@
     "ShowItemParticles": true
   },
   "Light": {
-    "Color": "#015",
+    "Color": "#068",
     "Radius": 1
   },
   "ItemSoundSetId": "ISS_Items_Gems",
-  "Trails": [
-    {
-      "TrailId": "Memory_Trail"
-    }
-  ],
   "Particles": [
     {
-      "SystemId": "Memory_Projectile_Sparks"
+      "SystemId": "SNS_Fragment_Sparks"
     }
   ],
   "Texture": "Resources/Ingredients/Essence_Textures/Ice_Essence_Texture.png",
   "Model": "Resources/Ingredients/Essence.blockymodel",
-  "Scale": 0.01,
+  "Scale": 0.02,
   "Categories": [
     "BleachCategory.Ingredients"
   ],
   "Interactions": {
     "Secondary": "UnlockShikai"
+  },
+  "MaxStack": 1,
+  "Recipe": {
+    "TimeSeconds": 4.5,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Ice_Essence",
+        "Quantity": 15
+      },
+      {
+        "ItemId": "Resonating_Reishi_Core",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Bar_Silver",
+        "Quantity": 9
+      },
+      {
+        "ItemId": "Asauchi"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Soul_Shikai"
+        ],
+        "Id": "Soul_Imprinting_Altar"
+      }
+    ]
   }
 }

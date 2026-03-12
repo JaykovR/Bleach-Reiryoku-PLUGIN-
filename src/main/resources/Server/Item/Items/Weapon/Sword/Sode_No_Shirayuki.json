@@ -9,35 +9,6 @@
   "Icon": "Icons/ItemsGenerated/Sode_No_Shirayuki.png",
   "Quality": "Shikai",
   "ItemLevel": 40,
-  "Recipe": {
-    "TimeSeconds": 4.5,
-    "Input": [
-      {
-        "ItemId": "Ingredient_Ice_Essence",
-        "Quantity": 15
-      },
-      {
-        "ItemId": "Resonating_Reishi_Core",
-        "Quantity": 1
-      },
-      {
-        "ItemId": "Ingredient_Bar_Silver",
-        "Quantity": 9
-      },
-      {
-        "ItemId": "Asauchi"
-      }
-    ],
-    "BenchRequirement": [
-      {
-        "Type": "Crafting",
-        "Categories": [
-          "Soul_Shikai"
-        ],
-        "Id": "Soul_Imprinting_Altar"
-      }
-    ]
-  },
   "InteractionVars": {
     "Swing_Left_Damage": {
       "Interactions": [

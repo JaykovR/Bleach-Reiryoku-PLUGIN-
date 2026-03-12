@@ -438,6 +438,10 @@
       "ThirdPerson": "Characters/Animations/Items/Sode_No_Shirayuki/hakuren_signature_chargning3.blockyanim",
       "ThirdPersonFace": "Characters/Animations/Items/Sode_No_Shirayuki/hakuren_signature_charging_FPS3.blockyanim",
       "ThirdPersonMoving": "Characters/Animations/Items/Sode_No_Shirayuki/hakuren_signature_chargning3_Moving.blockyanim"
+    },
+    "ShikaiActivation": {
+      "ThirdPerson": "Characters/Animations/Items/Sode_No_Shirayuki/Shikai_SodeNoShirayuki.blockyanim",
+      "FirstPerson": "Characters/Animations/Items/Sode_No_Shirayuki/Shikai_SodeNoShirayukiFPS.blockyanim"
     }
   },
   "Camera": {
