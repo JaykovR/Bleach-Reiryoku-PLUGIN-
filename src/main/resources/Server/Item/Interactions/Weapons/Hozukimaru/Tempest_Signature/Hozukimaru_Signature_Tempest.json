@@ -1,0 +1,57 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "SignatureEnergy": 100
+  },
+  "ValueType": "Percent",
+  "Next": {
+    "Type": "Serial",
+    "Interactions": [
+      {
+        "Type": "ApplyEffect",
+        "EffectId": "Battleaxe_Whirlwind"
+      },
+      {
+        "Type": "Replace",
+        "Var": "Signature_Whirlwind_Spin_Repeat",
+        "DefaultOk": true,
+        "DefaultValue": {
+          "Interactions": [
+            "Hozukimaru_Signature_Tempest_Spin"
+          ]
+        }
+      },
+      {
+        "Type": "Replace",
+        "DefaultValue": {
+          "Interactions": [
+            "Hozukimaru_Signature_Tempest_Kick"
+          ]
+        },
+        "DefaultOk": true,
+        "Var": "TempestKick"
+      },
+      {
+        "Type": "Replace",
+        "Var": "Downstrike_Jump",
+        "DefaultOk": true,
+        "DefaultValue": {
+          "Interactions": [
+            "Hozukimaru_Signature_Tempest_Downstrike_Jump"
+          ]
+        }
+      },
+      {
+        "Type": "ClearEntityEffect",
+        "EntityEffectId": "Battleaxe_Whirlwind"
+      },
+      {
+        "Type": "ChangeStat",
+        "StatModifiers": {
+          "SignatureEnergy": -100
+        },
+        "ValueType": "Percent"
+      }
+    ]
+  }
+}

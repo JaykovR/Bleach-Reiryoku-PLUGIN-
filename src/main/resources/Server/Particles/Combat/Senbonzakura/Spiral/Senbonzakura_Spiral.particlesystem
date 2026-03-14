@@ -1,0 +1,10 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Senbonzakura_Spiral_Petals",
+      "FixedRotation": false
+    }
+  ],
+  "BoundingRadius": 10,
+  "IsImportant": false
+}

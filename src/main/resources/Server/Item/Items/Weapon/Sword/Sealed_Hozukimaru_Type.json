@@ -48,7 +48,8 @@
                   "Scale": 0.4,
                   "DetachedFromModel": false
                 }
-              ]
+              ],
+              "LocalSoundEventId": "SFX_Shikai_Hozukimaru"
             },
             "RunTime": 0.5,
             "Next": {
@@ -60,7 +61,8 @@
                 "Id": "Hozukimaru"
               }
             }
-          }
+          },
+          "RunTime": 0.02
         }
       ]
     }

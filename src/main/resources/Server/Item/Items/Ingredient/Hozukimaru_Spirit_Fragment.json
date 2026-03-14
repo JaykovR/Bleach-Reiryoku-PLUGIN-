@@ -1,7 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Hozukimaru Spirit Fragment",
-    "Description": "A fragment brimming with battle spirit."
+    "Name": "items.Hozukimaru_Spirit_Fragment.name",
+    "Description": "items.Hozukimaru_Spirit_Fragment.description"
   },
   "Icon": "Icons/ItemsGenerated/Hozukimaru_Spirit_Fragment.png",
   "Quality": "SpiritualResource",
@@ -46,5 +46,35 @@
   "Interactions": {
     "Secondary": "UnlockShikai"
   },
-  "MaxStack": 1
+  "MaxStack": 1,
+  "Recipe": {
+    "TimeSeconds": 4.5,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Adamantite",
+        "Quantity": 4
+      },
+      {
+        "ItemId": "Ingredient_Bar_Silver",
+        "Quantity": 2
+      },
+      {
+        "ItemId": "Ingredient_Fabric_Scrap_Cindercloth",
+        "Quantity": 7
+      },
+      {
+        "ItemId": "Resonating_Reishi_Core"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Soul_Shikai"
+        ],
+        "Id": "Soul_Imprinting_Altar"
+      }
+    ],
+    "KnowledgeRequired": false
+  }
 }

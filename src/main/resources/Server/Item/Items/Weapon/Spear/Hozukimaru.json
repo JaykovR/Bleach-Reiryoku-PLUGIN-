@@ -39,7 +39,8 @@
       ]
     },
     "Secondary": "Root_TensaZangetsu_Secondary_Guard",
-    "Ability1": "Root_Weapon_Battleaxe_Signature_Whirlwind",
+    "Ability1": "Root_Hozukimaru_Signature_Tempest",
+    "Ability2": "Root_Hozukimaru_Signature_Whirlwind",
     "Ability3": {
       "Interactions": [
         {
@@ -220,7 +221,7 @@
           "DamageEffects": {
             "WorldParticles": [
               {
-                "SystemId": "Wabisuke_Slash"
+                "SystemId": "Benihime_Slash"
               }
             ],
             "WorldSoundEventId": "SFX_Sword_T2_Impact",
@@ -241,7 +242,7 @@
           "DamageEffects": {
             "WorldParticles": [
               {
-                "SystemId": "Wabisuke_Slash"
+                "SystemId": "Benihime_Slash"
               }
             ],
             "WorldSoundEventId": "SFX_Sword_T2_Impact",
@@ -262,7 +263,7 @@
           "DamageEffects": {
             "WorldParticles": [
               {
-                "SystemId": "Wabisuke_Slash"
+                "SystemId": "Benihime_Slash"
               }
             ],
             "WorldSoundEventId": "SFX_Sword_T2_Impact",
@@ -283,11 +284,33 @@
           "DamageEffects": {
             "WorldParticles": [
               {
-                "SystemId": "Wabisuke_Slash"
+                "SystemId": "Benihime_Slash"
               }
             ],
             "WorldSoundEventId": "SFX_Sword_T2_Impact",
             "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+        "Signature_Tempest_Spin_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Signature_Whirlwind_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 10
+            },
+            "Type": "Absolute"
+          },
+          "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "Benihime_Slash"
+              }
+            ],
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
           }
         }
       ]
@@ -303,8 +326,34 @@
             "Type": "Absolute"
           },
           "DamageEffects": {
+              "WorldParticles": [
+              {
+                "SystemId": "Benihime_Slash"
+              }
+            ],
             "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
             "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Downstrike_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Downstrike_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 22
+            }
+          },
+          "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "Benihime_Slash"
+              }
+            ],
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
           }
         }
       ]
@@ -328,28 +377,11 @@
     "StatModifiers": {
       "SignatureEnergy": [
         {
-          "Amount": 9,
+          "Amount": 1,
           "CalculationType": "Additive"
         }
       ]
     }
   },
-  "ItemSoundSetId": "ISS_Weapons_Wood",
-  "Recipe": {
-    "TimeSeconds": 4.5,
-    "Input": [
-      {
-        "ItemId": "Asauchi"
-      }
-    ],
-    "BenchRequirement": [
-      {
-        "Type": "Crafting",
-        "Categories": [
-          "Soul_Shikai"
-        ],
-        "Id": "Soul_Imprinting_Altar"
-      }
-    ]
-  }
+  "ItemSoundSetId": "ISS_Weapons_Wood"
 }

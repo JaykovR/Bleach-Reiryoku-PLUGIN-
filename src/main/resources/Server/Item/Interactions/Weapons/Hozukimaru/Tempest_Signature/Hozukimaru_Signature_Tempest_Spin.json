@@ -1,0 +1,36 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemAnimationId": "ChainTempest"
+  },
+  "Next": {
+    "Type": "Repeat",
+    "Repeat": 5,
+    "ForkInteractions": {
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "Effects": {
+            "Particles": [
+              {
+                "SystemId": "Hozukimaru_Signature_Spin",
+                "Scale": 1,
+                "TargetNodeName": "R_Attachment",
+                "TargetEntityPart": "Entity",
+                "PositionOffset": {
+                  "Y": 1
+                },
+                "RotationOffset": {
+                  "Roll": 80
+                }
+              }
+            ],
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Signature_Swing",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Signature_Swing_Local"
+          }
+        },
+        "Hozukimaru_Signature_Tempest_Spin_Selector"
+      ]
+    }
+  }
+}

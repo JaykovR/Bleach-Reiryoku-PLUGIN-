@@ -30,6 +30,11 @@ public class ReiryokuCommands extends AbstractCommandCollection {
         this.addSubCommand(new HelpSubCommand());
         this.addSubCommand(new CheckShikai());
         this.addSubCommand(new RevertShikai());
+        // Give Shikai Commands
+        this.addSubCommand(new GiveShikaiSodeNoShirayuki());
+        this.addSubCommand(new GiveShikaiWabisuke());
+        this.addSubCommand(new GiveShikaiBenihime());
+        this.addSubCommand(new GiveShikaiHozukimaru());
     }
 
     @Override
@@ -59,6 +64,10 @@ public class ReiryokuCommands extends AbstractCommandCollection {
             context.sendMessage(Message.raw("/ help - Show this help message"));
             context.sendMessage(Message.raw("/ checkShikai - Checks for Shikai"));
             context.sendMessage(Message.raw("/ RevertShikai - Reverts ability to transform to Shikai"));
+            context.sendMessage(Message.raw("/ giveShikaiSodeNoShirayuki - Gives the player Sode No Shirayuki Shikai access"));
+            context.sendMessage(Message.raw("/ giveShikaiWabisuke - Gives the player Wabisuke Shikai access"));
+            context.sendMessage(Message.raw("/ giveShikaiBenihime - Gives the player Benihime Shikai access"));
+            context.sendMessage(Message.raw("/ giveShikaiHozukimaru - Gives the player Hozukimaru Shikai access"));
             context.sendMessage(Message.raw("========================"));
         }
     }
@@ -102,12 +111,8 @@ public class ReiryokuCommands extends AbstractCommandCollection {
                     context.sendMessage(Message.raw("No Shikai Available.."));
                     return;
                 }
-
             });
-
-
         }
-
     }
 
     private static class RevertShikai extends CommandBase{
@@ -122,7 +127,6 @@ public class ReiryokuCommands extends AbstractCommandCollection {
         }
 
         protected void executeSync(@Nonnull CommandContext context) {
-            //aaaa
 
             Ref<EntityStore> owningEntity = context.senderAsPlayerRef();
             Store<EntityStore> store = owningEntity.getStore();
@@ -141,10 +145,133 @@ public class ReiryokuCommands extends AbstractCommandCollection {
                 stats.deactivateShikai();
                 context.sendMessage(Message.raw("All Shikai access disabled."));
             });
+        }
+    }
 
+    // ------------- GIVE SHIKAI COMMANDS -----------------------
 
+    private static class GiveShikaiSodeNoShirayuki extends CommandBase{
+
+        public GiveShikaiSodeNoShirayuki(){
+            super("giveShikaiSodeNoShirayuki", "Gives access to Sode No Shirayuki shikai.");
+            this.setPermissionGroup(null);
+        }
+        @Override
+        protected boolean canGeneratePermission() {
+            return false;
         }
 
+        protected void executeSync(@Nonnull CommandContext context) {
+
+            Ref<EntityStore> owningEntity = context.senderAsPlayerRef();
+            Store<EntityStore> store = owningEntity.getStore();
+            World world = store.getExternalData().getWorld();
+
+            world.execute(() -> {
+                var brType = playerStats.getComponentType();
+                playerStats stats = store.getComponent(owningEntity, brType);
+
+                if (stats != null && !stats.getShikaiSodeNoShirayukiState()) {
+                    stats.setActiveShikaiSodeNoShirayuki();
+                    context.sendMessage(Message.raw("Sode no Shirayuki Shikai has been unlocked."));
+                    return;
+                }
+                context.sendMessage(Message.raw("You already have Sode no Shirayuki Shikai."));
+            });
+        }
+    }
+
+    private static class GiveShikaiWabisuke extends CommandBase{
+
+        public GiveShikaiWabisuke(){
+            super("giveShikaiWabisuke", "Gives access to Wabisuke shikai.");
+            this.setPermissionGroup(null);
+        }
+        @Override
+        protected boolean canGeneratePermission() {
+            return false;
+        }
+
+        protected void executeSync(@Nonnull CommandContext context) {
+
+            Ref<EntityStore> owningEntity = context.senderAsPlayerRef();
+            Store<EntityStore> store = owningEntity.getStore();
+            World world = store.getExternalData().getWorld();
+
+            world.execute(() -> {
+                var brType = playerStats.getComponentType();
+                playerStats stats = store.getComponent(owningEntity, brType);
+
+                if (stats != null && !stats.getShikaiWabisukeState()) {
+                    stats.setActiveShikaiWabisuke();
+                    context.sendMessage(Message.raw("Wabisuke Shikai has been unlocked."));
+                    return;
+                }
+                context.sendMessage(Message.raw("You already have Wabisuke Shikai."));
+            });
+        }
+    }
+
+    private static class GiveShikaiBenihime extends CommandBase{
+
+        public GiveShikaiBenihime(){
+            super("giveShikaiBenihime", "Gives access to Benihime shikai.");
+            this.setPermissionGroup(null);
+        }
+        @Override
+        protected boolean canGeneratePermission() {
+            return false;
+        }
+
+        protected void executeSync(@Nonnull CommandContext context) {
+
+            Ref<EntityStore> owningEntity = context.senderAsPlayerRef();
+            Store<EntityStore> store = owningEntity.getStore();
+            World world = store.getExternalData().getWorld();
+
+            world.execute(() -> {
+                var brType = playerStats.getComponentType();
+                playerStats stats = store.getComponent(owningEntity, brType);
+
+                if (stats != null && !stats.getShikaiBenihimeState()) {
+                    stats.setActiveShikaiBenihime();
+                    context.sendMessage(Message.raw("Benihime Shikai has been unlocked."));
+                    return;
+                }
+                context.sendMessage(Message.raw("You already have Benihime Shikai."));
+            });
+        }
+    }
+
+    private static class GiveShikaiHozukimaru extends CommandBase{
+
+        public GiveShikaiHozukimaru(){
+            super("giveShikaiHozukimaru", "Gives access to Hozukimaru shikai.");
+            this.setPermissionGroup(null);
+        }
+        @Override
+        protected boolean canGeneratePermission() {
+            return false;
+        }
+
+        protected void executeSync(@Nonnull CommandContext context) {
+
+            Ref<EntityStore> owningEntity = context.senderAsPlayerRef();
+            Store<EntityStore> store = owningEntity.getStore();
+            World world = store.getExternalData().getWorld();
+
+            world.execute(() -> {
+                var brType = playerStats.getComponentType();
+                playerStats stats = store.getComponent(owningEntity, brType);
+
+                if (stats != null && !stats.getShikaiHozukimaruState()) {
+                    stats.setActiveShikaiHozukimaru();
+                    context.sendMessage(Message.raw("Hozukimaru Shikai has been unlocked."));
+                    return;
+                }
+                context.sendMessage(Message.raw("You already have Hozukimaru Shikai."));
+            });
+        }
     }
 
     }

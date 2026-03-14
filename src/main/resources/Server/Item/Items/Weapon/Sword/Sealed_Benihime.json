@@ -1,7 +1,8 @@
 {
   "Parent": "Sealed_Benihime_Type",
   "TranslationProperties": {
-    "Name": "Sealed - Benihime"
+    "Name": "items.Sealed_Benihime.name",
+    "Description": "items.Sealed_Benihime.description"
   },
   "Model": "Items/Weapons/Sealed_Benihime/Sealed_Benihime.blockymodel",
   "Texture": "Items/Weapons/Sealed_Benihime/Sealed_Benihime_Texture.png",
@@ -18,6 +19,11 @@
             }
           },
           "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "SwordSlash_Basic"
+              }
+            ],
             "WorldSoundEventId": "SFX_Sword_T2_Impact",
             "LocalSoundEventId": "SFX_Sword_T2_Impact"
           }
@@ -34,6 +40,11 @@
             }
           },
           "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "SwordSlash_Basic"
+              }
+            ],
             "WorldSoundEventId": "SFX_Sword_T2_Impact",
             "LocalSoundEventId": "SFX_Sword_T2_Impact"
           }
@@ -50,6 +61,11 @@
             }
           },
           "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "SwordSlash_Basic"
+              }
+            ],
             "WorldSoundEventId": "SFX_Sword_T2_Impact",
             "LocalSoundEventId": "SFX_Sword_T2_Impact"
           }
@@ -89,6 +105,11 @@
           },
           "EntityStatsOnHit": [],
           "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "SwordSlash_Basic"
+              }
+            ],
             "WorldSoundEventId": "SFX_Sword_T2_Impact",
             "LocalSoundEventId": "SFX_Sword_T2_Impact"
           }
@@ -106,6 +127,11 @@
           },
           "EntityStatsOnHit": [],
           "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "SwordSlash_Basic"
+              }
+            ],
             "WorldSoundEventId": "SFX_Sword_T2_Impact",
             "LocalSoundEventId": "SFX_Sword_T2_Impact"
           }
@@ -125,7 +151,8 @@
     }
   },
   "Categories": [
-    "BleachCategory.Weapons"
+    "BleachCategory.Weapons",
+    "Items.Weapons"
   ],
   "IconProperties": {
     "Scale": 0.3,
@@ -139,5 +166,39 @@
       -41
     ]
   },
-  "Icon": "Icons/ItemsGenerated/Sealed_Benihime.png"
+  "Icon": "Icons/ItemsGenerated/Sealed_Benihime.png",
+  "Recipe": {
+    "TimeSeconds": 3.5,
+    "KnowledgeRequired": false,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Iron",
+        "Quantity": 12
+      },
+      {
+        "ItemId": "Ingredient_Leather_Light",
+        "Quantity": 3
+      },
+      {
+        "ItemId": "Ingredient_Fabric_Scrap_Linen",
+        "Quantity": 3
+      },
+      {
+        "ItemId": "Ingredient_Life_Essence",
+        "Quantity": 13
+      },
+      {
+        "ItemId": "Asauchi"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Weapon_Sword"
+        ],
+        "Id": "Weapon_Bench"
+      }
+    ]
+  }
 }

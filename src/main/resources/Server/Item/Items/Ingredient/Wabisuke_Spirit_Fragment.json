@@ -1,7 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Wabisuke Spirit Fragment",
-    "Description": "A heavy fragment containing the burdened spirit of Wabisuke. Its presence weighs upon the soul."
+    "Name": "items.Wabisuke_Spirit_Fragment.name",
+    "Description": "items.Wabisuke_Spirit_Fragment.description"
   },
   "Icon": "Icons/ItemsGenerated/Wabisuke_Spirit_Fragment.png",
   "Quality": "SpiritualResource",
@@ -64,9 +64,6 @@
       },
       {
         "ItemId": "Resonating_Reishi_Core"
-      },
-      {
-        "ItemId": "Asauchi"
       }
     ],
     "BenchRequirement": [

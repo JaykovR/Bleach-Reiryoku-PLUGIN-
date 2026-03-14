@@ -1,0 +1,22 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Hozukimaru_Charged_Trail_Spear_Glow",
+      "PositionOffset": {
+        "X": -0.3,
+        "Y": 0,
+        "Z": 0
+      },
+      "FixedRotation": false
+    },
+    {
+      "SpawnerId": "Hozukimaru_Charged_Trail_Spear_Lines",
+      "FixedRotation": false,
+      "PositionOffset": {
+        "X": -0.2,
+        "Y": 0,
+        "Z": 0
+      }
+    }
+  ]
+}

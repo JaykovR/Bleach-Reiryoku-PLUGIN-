@@ -1,7 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Sode No Shirayuki Spirit Fragment",
-    "Description": "A cold fragment of pure spiritual energy."
+    "Name": "items.Sode_no_Shirayuki_Spirit_Fragment.name",
+    "Description": "items.Sode_no_Shirayuki_Spirit_Fragment.description"
   },
   "Icon": "Icons/ItemsGenerated/Sode_No_Shirayuki_Spirit_Fragment.png",
   "Quality": "SpiritualResource",
@@ -61,9 +61,6 @@
       {
         "ItemId": "Ingredient_Bar_Silver",
         "Quantity": 9
-      },
-      {
-        "ItemId": "Asauchi"
       }
     ],
     "BenchRequirement": [

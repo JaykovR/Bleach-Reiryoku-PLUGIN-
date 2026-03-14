@@ -441,7 +441,8 @@
     },
     "ShikaiActivation": {
       "ThirdPerson": "Characters/Animations/Items/Sode_No_Shirayuki/Shikai_SodeNoShirayuki.blockyanim",
-      "FirstPerson": "Characters/Animations/Items/Sode_No_Shirayuki/Shikai_SodeNoShirayukiFPS.blockyanim"
+      "FirstPerson": "Characters/Animations/Items/Sode_No_Shirayuki/Shikai_SodeNoShirayukiFPS.blockyanim",
+      "ThirdPersonMoving": "Characters/Animations/Items/Sode_No_Shirayuki/Shikai_SodeNoShirayuki_Moving.blockyanim"
     }
   },
   "Camera": {

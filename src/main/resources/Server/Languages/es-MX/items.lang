@@ -1,10 +1,19 @@
+Sealed_Sode_no_Shirayuki.name = Sellada - Sode no Shirayuki
+Sealed_Sode_no_Shirayuki.description = Una zanpakuto sellada. Su danza aún no ha comenzado.
+Sealed_Wabisuke.name = Sellada - Wabisuke
+Sealed_Wabisuke.description = Una zanpakuto sellada. Cuando la sostienes, algo presiona tu alma.
+Sealed_Benihime.name = Sellada - Benihime
+Sealed_Benihime.description = Una zanpakuto sellada. Esta hoja está esperando tu orden.
+Sealed_Hozukimaru.name = Sellada - Hozukimaru
+Sealed_Hozukimaru.description = Una zanpakuto sellada. Cuando la sostienes en batalla sientes una emoción tremenda.
+
 Bankai_Tensa_Zangetsu.name = Bankai - Tensa Zangetsu
 Bankai_Tensa_Zangetsu.description = Bankai – Tensa Zangetsu es una espada espiritual legendaria. Su filo negro con cadena concentra la energía del portador y libera la devastadora ola <i><b>Getsuga Tensho — «Colmillo lunar que atraviesa los cielos»</b></i>.
 Shikai_Tensa_Zangetsu.name = Shikai - Zangetsu
 Shikai_Tensa_Zangetsu.description = Zangetsu es una enorme espada espiritual, permanentemente en estado liberado. La hoja negra envuelta en tela viviente potencia a su portador, desatando oleadas de <i><b>Getsuga Tensho</b></i> y sirviendo de escudo ante ataques físicos y energéticos.
 ReiryokuCrystal.name = Reiryoku Crystal
 ReiryokuCrystal.description = Cristal de energía espiritual pura, concentración de numerosas almas. Despierta y hace evolucionar un Zanpakuto.
-Sealed_Zangetsu.name = Sealed - Zangetsu
+Sealed_Zangetsu.name = Sellada - Zangetsu
 Sealed_Zangetsu.description = La espada sellada antes del despertar. Guarda un potencial infinito, aunque dormido.
 Asauchi.name = Asauchi
 Asauchi.description = Una plantilla espiritual en blanco. La base para una futura Zanpakuto, en espera del sello de su dueño.
@@ -48,6 +57,14 @@ Transcendent_Essence.description = Un paradójico remolino de poder absoluto. Lo
 Hollow_Essence.name = Esencia de Hollow
 Hollow_Essence.description = Un remanente cristalizado del alma distorsionada de un Hollow derrotado. Late con un reiryoku inestable.
 
+Sode_no_Shirayuki_Spirit_Fragment.name = Fragmento Espiritual - Sode no Shirayuki
+Sode_no_Shirayuki_Spirit_Fragment.description = Un fragmento frío de energía espiritual pura.\n<b>Clic derecho para consumir (desbloquear Shikai)</b>
+Wabisuke_Spirit_Fragment.name = Fragmento Espiritual - Wabisuke
+Wabisuke_Spirit_Fragment.description = Un fragmento pesado que contiene el espíritu cargado de Wabisuke. Su presencia pesa sobre el alma. Its presence weighs upon the soul.\n<b>Clic derecho para consumir (desbloquear Shikai)</b>
+Benihime_Spirit_Fragment.name = Fragmento Espiritual - Benihime
+Benihime_Spirit_Fragment.description = Un fragmento espiritual carmesí que porta una elegancia silenciosa pero mortal.\n<b>Clic derecho para consumir (desbloquear Shikai)</b>
+Hozukimaru_Spirit_Fragment.name = Fragmento Espiritual - Hozukimaru
+Hozukimaru_Spirit_Fragment.description = Un fragmento rebosante de espíritu de batalla.\n<b>Clic derecho para consumir (desbloquear Shikai)</b>
 
 items.Currency_Kan.name = Kan
 items.Currency_Kan.description = La moneda estándar de la Sociedad de Almas. Un Kan representa el valor de un fardo de arroz en el mundo de los vivos. Su peso y sonido están sintonizados con la frecuencia del reishi, lo que hace imposible falsificarlo. Para un comerciante del Rukongai, esta moneda es una fortuna; para un capitán, simple calderilla.

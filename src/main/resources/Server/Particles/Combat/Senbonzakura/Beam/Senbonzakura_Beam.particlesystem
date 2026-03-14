@@ -1,0 +1,10 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Senbonzakura_Beam_Petal",
+      "FixedRotation": false
+    }
+  ],
+  "CullDistance": 30.0,
+  "IsImportant": true
+}

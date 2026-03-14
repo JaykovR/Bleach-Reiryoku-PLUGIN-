@@ -441,7 +441,8 @@
     "ShikaiActivation": {
       "ThirdPerson": "Characters/Animations/Items/Benihime/Shikai_Benihime.blockyanim",
       "FirstPerson": "Characters/Animations/Items/Benihime/Shikai_Benihime_FPS.blockyanim",
-      "ClipsGeometry": true
+      "ClipsGeometry": true,
+      "ThirdPersonMoving": "Characters/Animations/Items/Benihime/Shikai_Benihime_Moving.blockyanim"
     }
   },
   "Camera": {

@@ -1,3 +1,12 @@
+Sealed_Sode_no_Shirayuki.name = Mühürlü - Sode no Shirayuki
+Sealed_Sode_no_Shirayuki.description = Mühürlü bir zanpakuto. Dansı henüz başlamadı.
+Sealed_Wabisuke.name = Mühürlü - Wabisuke
+Sealed_Wabisuke.description = Mühürlü bir zanpakuto. Onu tuttuğunda ruhuna bir ağırlık çöker.
+Sealed_Benihime.name = Mühürlü - Benihime
+Sealed_Benihime.description = Mühürlü bir zanpakuto. Bu kılıç senin emrini bekliyor.
+Sealed_Hozukimaru.name = Mühürlü - Hozukimaru
+Sealed_Hozukimaru.description = Mühürlü bir zanpakuto. Onu savaşta tuttuğunda büyük bir heyecan hissedersin.
+
 Bankai_Tensa_Zangetsu.name = Bankai – Tensa Zangetsu
 Bankai_Tensa_Zangetsu.description = Bankai – Tensa Zangetsu efsanevi bir ruhani kılıçtır. Zincirli siyah ağzı, taşıyıcının enerjisini odaklayarak yıkıcı <i><b>Getsuga Tenshō — «Gökleri Delen Ay Dişi»</b></i> dalgasını serbest bırakır.
 Shikai_Tensa_Zangetsu.name = Shikai – Zangetsu
@@ -39,6 +48,15 @@ Transcendent_Essence.name = Aşkın Öz
 Transcendent_Essence.description = Mutlak gücün girdap halinde bir paradoksu. Ruhunuz ile fiziksel dünya arasındaki sınırlar bu tek nabız noktasında çözülmüştür. Bu parıltıda ruhunuzun gerçek biçimi, serbest bırakılmak için haykırır.
 Hollow_Essence.name = Hollow Özü
 Hollow_Essence.description = Yenilmiş bir Hollow’un çarpıtılmış ruhundan kristalleşmiş bir kalıntı. Dengesiz reiryoku ile titreşir.
+
+Sode_no_Shirayuki_Spirit_Fragment.name = Ruh Parçası - Sode no Shirayuki
+Sode_no_Shirayuki_Spirit_Fragment.description = Saf ruhsal enerjinin soğuk bir parçası.\n<b>Tüketmek için sağ tıkla (Shikai kilidini aç)</b>
+Wabisuke_Spirit_Fragment.name = Ruh Parçası - Wabisuke
+Wabisuke_Spirit_Fragment.description = Wabisuke’nin yük altındaki ruhunu barındıran ağır bir parça. Varlığı ruha ağırlık verir.\n<b>Tüketmek için sağ tıkla (Shikai kilidini aç)</b>
+Benihime_Spirit_Fragment.name = Ruh Parçası - Benihime
+Benihime_Spirit_Fragment.description = Sessiz ama ölümcül bir zarafet taşıyan kızıl bir ruh parçası.\n<b>Tüketmek için sağ tıkla (Shikai kilidini aç)</b>
+Hozukimaru_Spirit_Fragment.name = Ruh Parçası - Hozukimaru
+Hozukimaru_Spirit_Fragment.description = Savaş ruhuyla dolup taşan bir parça.\n<b>Tüketmek için sağ tıkla (Shikai kilidini aç)</b>
 
 items.Currency_Kan.name = Kan
 items.Currency_Kan.description = Ruhlar Topluluğu'nun standart para birimi. Bir Kan, yaşayanlar dünyasında bir çuval pirincin değerini temsil eder. Ağırlığı ve sesi reishi frekansına ayarlı sayılır, sahtesi yapılamaz.

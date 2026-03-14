@@ -17,7 +17,7 @@
           "Yaw": 0
         },
         "TargetNodeName": "SwordTip",
-        "TrailId": "Small_Charged"
+        "TrailId": "Charged_Hozukimaru"
       }
     ],
     "Particles": [
@@ -28,14 +28,14 @@
           "Yaw": 0
         },
         "TargetNodeName": "Handle",
-        "SystemId": "Sword_Charged_Trail_Blade",
+        "SystemId": "Hozukimaru_Charged_Trail_Spear",
         "PositionOffset": {
           "X": 0,
           "Y": 0
         }
       },
       {
-        "SystemId": "Sword_Charged_Trail",
+        "SystemId": "Hozukimaru_Charged_Trail",
         "TargetEntityPart": "Entity",
         "TargetNodeName": "Hip",
         "RotationOffset": {

@@ -197,7 +197,27 @@
       "ThirdPerson": "Characters/Animations/Items/Hozukimaru/Shikai_Hozukimaru.blockyanim",
       "FirstPerson": "Characters/Animations/Items/Hozukimaru/Shikai_Hozukimaru_FPS.blockyanim",
       "ClipsGeometry": true,
-      "Speed": 0.5
+      "Speed": 0.5,
+      "ThirdPersonMoving": "Characters/Animations/Items/Hozukimaru/Shikai_Hozukimaru_Moving.blockyanim"
+    },
+    "ChainTempest": {
+      "ThirdPerson": "Characters/Animations/Items/Hozukimaru/Signature/Spin_Right.blockyanim",
+      "FirstPerson": "Characters/Animations/Items/Hozukimaru/Signature/Spin_Right_FPS.blockyanim",
+      "ClipsGeometry": true
+    },
+    "Kick": {
+      "ThirdPerson": "Characters/Animations/Items/Dual_Handed/Unarmed/Attacks/Kick_Spinning_Right/Kick_Spinning_Right.blockyanim",
+      "FirstPerson": "Characters/Animations/Items/Dual_Handed/Unarmed/Attacks/Kick_Spinning_Right/Kick_Spinning_Right_FPS.blockyanim",
+      "ThirdPersonMoving": "Characters/Animations/Items/Dual_Handed/Unarmed/Attacks/Kick_Spinning_Right/Kick_Spinning_Right_Moving.blockyanim"
+    },
+    "DownstrikeLeap": {
+      "ThirdPerson": "Characters/Animations/Items/Dual_Handed/Battleaxe/Attacks/Downstrike_Charged/Downstrike_Leap.blockyanim",
+      "FirstPerson": "Characters/Animations/Items/Dual_Handed/Battleaxe/Attacks/Downstrike_Charged/Downstrike_Leap_FPS.blockyanim",
+      "Looping": true
+    },
+    "DownstrikeCharged": {
+      "ThirdPerson": "Characters/Animations/Items/Dual_Handed/Battleaxe/Attacks/Downstrike_Charged/Downstrike_Charged.blockyanim",
+      "FirstPerson": "Characters/Animations/Items/Dual_Handed/Battleaxe/Attacks/Downstrike_Charged/Downstrike_Charged_FPS.blockyanim"
     }
   }
 }

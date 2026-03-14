@@ -44,6 +44,24 @@
           }
         }
       ]
+    },
+    "Ability2": {
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "RunTime": 0.1,
+          "Effects": {
+            "Particles": [
+              {
+                "SystemId": "Senbonzakura_Slash_Left",
+                "PositionOffset": {
+                  "X": 1
+                }
+              }
+            ]
+          }
+        }
+      ]
     }
   },
   "Tags": {

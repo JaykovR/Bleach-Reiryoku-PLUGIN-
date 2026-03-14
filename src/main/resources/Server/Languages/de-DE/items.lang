@@ -1,3 +1,12 @@
+Sealed_Sode_no_Shirayuki.name = Versiegelt - Sode no Shirayuki
+Sealed_Sode_no_Shirayuki.description = Ein versiegeltes Zanpakutō. Ihr Tanz hat noch nicht begonnen.
+Sealed_Wabisuke.name = Versiegelt - Wabisuke
+Sealed_Wabisuke.description = Ein versiegeltes Zanpakutō. Wenn du es hältst, drückt etwas auf deine Seele.
+Sealed_Benihime.name = Versiegelt - Benihime
+Sealed_Benihime.description = Ein versiegeltes Zanpakutō. Diese Klinge wartet auf deinen Befehl.
+Sealed_Hozukimaru.name = Versiegelt - Hozukimaru
+Sealed_Hozukimaru.description = Ein versiegeltes Zanpakutō. Wenn du es im Kampf hältst, spürst du enorme Aufregung.
+
 Bankai_Tensa_Zangetsu.name = Bankai - Tensa Zangetsu
 Bankai_Tensa_Zangetsu.description = Bankai – Tensa Zangetsu ist eine legendäre spirituelle Klinge. Die schwarze Schneide mit Kette bündelt die Energie des Trägers und entfesselt die verheerende Welle <i><b>Getsuga Tenshō — «Mondzahn, der den Himmel durchbohrt»</b></i>.
 Shikai_Tensa_Zangetsu.name = Shikai - Zangetsu
@@ -48,6 +57,14 @@ Transcendent_Essence.description = Ein wirbelndes Paradoxon absoluter Macht. Die
 Hollow_Essence.name = Essenz eines Hollows
 Hollow_Essence.description = Ein kristallisierter Überrest der verzerrten Seele eines besiegten Hollows. Sie pulsiert mit instabilem Reiryoku.
 
+Sode_no_Shirayuki_Spirit_Fragment.name = Seelenfragment - Sode no Shirayuki
+Sode_no_Shirayuki_Spirit_Fragment.description = Ein kaltes Fragment reiner spiritueller Energie.\n<b>Rechtsklick zum Verbrauchen (Shikai freischalten)</b>
+Wabisuke_Spirit_Fragment.name = Seelenfragment - Wabisuke
+Wabisuke_Spirit_Fragment.description = Ein schweres Fragment, das den belasteten Geist von Wabisuke enthält. Seine Präsenz lastet auf der Seele.\n<b>Rechtsklick zum Verbrauchen (Shikai freischalten)</b>
+Benihime_Spirit_Fragment.name = Seelenfragment - Benihime
+Benihime_Spirit_Fragment.description = Ein karmesinrotes Seelenfragment mit stiller, aber tödlicher Eleganz.\n<b>Rechtsklick zum Verbrauchen (Shikai freischalten)</b>
+Hozukimaru_Spirit_Fragment.name = Seelenfragment - Hozukimaru
+Hozukimaru_Spirit_Fragment.description = Ein Fragment, das vor Kampfgeist überquillt.\n<b>Rechtsklick zum Verbrauchen (Shikai freischalten)</b>
 
 items.Currency_Kan.name = Kan
 items.Currency_Kan.description = Die Standardwährung der Seelengesellschaft. Ein Kan entspricht dem Wert eines Reissäcks in der Welt der Lebenden. Gewicht und Klang sollen auf die Frequenz des Reishi abgestimmt sein, was Fälschung unmöglich macht. Für einen Händler im Rukongai ist diese Münze ein Vermögen; für einen Kapitän bloß Kleingeld.

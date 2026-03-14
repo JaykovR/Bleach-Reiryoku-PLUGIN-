@@ -1,0 +1,16 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Hozukimaru_Signature_Spin_Spin"
+    },
+    {
+      "SpawnerId": "Hozukimaru_Signature_Spin_Spin"
+    },
+    {
+      "SpawnerId": "Hozukimaru_Signature_Spin_Sparks",
+      "FixedRotation": false
+    }
+  ],
+  "BoundingRadius": 10,
+  "IsImportant": false
+}

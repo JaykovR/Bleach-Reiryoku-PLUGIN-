@@ -1,3 +1,12 @@
+Sealed_Sode_no_Shirayuki.name = Sealed - Sode no Shirayuki
+Sealed_Sode_no_Shirayuki.description = A sealed zanpakuto. Its dance has not yet begun.
+Sealed_Wabisuke.name = Sealed - Wabisuke
+Sealed_Wabisuke.description = A sealed zanpakuto. When you hold into it something presses down your soul.
+Sealed_Benihime.name = Sealed - Benihime
+Sealed_Benihime.description = A sealed zanpakuto. This blade is waiting for your command.
+Sealed_Hozukimaru.name = Sealed - Hozukimaru
+Sealed_Hozukimaru.description = A sealed zanpakuto. When you hold it in battle you feel tremendous excitement.
+
 Bankai_Tensa_Zangetsu.name = Bankai – Tensa Zangetsu
 Bankai_Tensa_Zangetsu.description = Bankai – Tensa Zangetsu is a legendary spiritual blade. Its black edge with a chain focuses the wielder’s energy, releasing the devastating wave <i><b>Getsuga Tensho — «Moon Fang That Pierces the Heavens»</b></i>. 
 Shikai_Tensa_Zangetsu.name = Shikai – Zangetsu
@@ -13,7 +22,7 @@ Sode_No_Shirayuki.description = An elegant ice katana. Its release command, \n<i
 Shikai_Wabisuke.name = Shikai – Wabisuke
 Shikai_Wabisuke.description = An elegantly curved sword whose treacherous nature is the opposite of its external refinement. Its strike places a curse of weight upon the target. With each parry or block, the victim's burden relentlessly doubles, until the opponent is broken and pinned to the ground by their own unbearable load. Release command: <i><b>«Bend, Wabisuke»</b></i>.
 Shikai_Hozukimaru.name = Shikai – Hozukimaru
-Shikai_Hozukimaru.description = A crude and straightforward war spear. Its simple, unadorned form conceals a fierce destructive power and unyielding durability. Within this weapon lies a dormant potential for transformation, capable of unlocking its true, even more formidable form. \n\n<b><color is="#9D3356">Its true power lies dormant, waiting to be unleashed in a future update</color></b>
+Shikai_Hozukimaru.description = A crude and straightforward war spear. Its simple, unadorned form conceals a fierce destructive power and unyielding durability. Within this weapon lies a dormant potential for transformation, capable of unlocking its true, even more formidable form.
 Shikai_Kyoka_Suigetsu.name = Shikai – Kyoka Suigetsu
 Shikai_Kyoka_Suigetsu.description = An unassuming katana, eternally in its released state. Its true power is not steel, but absolute sensory dominion. Those who witness its release ritual become forever trapped in its perfect hypnosis, seeing a world sculpted by the wielder's will. A weapon that conquers reality through perception.\n\n<b><color is="#9D3356">Its true power lies dormant, waiting to be unleashed in a future update</color></b>
 Sealed_Kenpachi_Zanpakuto.name = Sealed – Kenpachi's Zanpakuto
@@ -24,6 +33,7 @@ True_Bankai_Tensa_Zangetsu.name = True Bankai – Tensa Zangetsu
 True_Bankai_Tensa_Zangetsu.description = The ultimate evolution of Ichigo's power. This form consolidates his dual blades into a single, immense black cleaver wrapped in stark white bandages. It represents the full convergence of his spiritual heritage, focusing overwhelming force into a singular, devastating edge.\n\n<b><color is="#9D3356">Its true power lies dormant, waiting to be unleashed in a future update</color></b>
 True_Shikai_Zangetsu.name = True Shikai – Zangetsu
 True_Shikai_Zangetsu.description = Ichigo's true Shikai, manifested as two distinct black blades. The massive cleaver embodies his fused Shinigami and Hollow powers, while the smaller knife represents his Quincy heritage. Release command: <i><b>«Unite and Protect, Zangetsu»</b></i>. The blades can fire\n<i>Getsuga Tensho</i> independently or combine them into a devastating cross-shaped wave, <i><b>Getsuga Jujisho</b></i>.\n\n<b><color is="#9D3356">Its true power lies dormant, waiting to be unleashed in a future update</color></b>
+
 
 Kojaku_Bow.name = Quincy Bow - Kojaku
 Kojaku_Bow.description = The basic bow usable by all Quincy. It is formed by gathering Reishi in the <i>Quincy Cross</i> on the right hand. The arrows it releases are also made of Reishi. It can destroy Hollows with long-range attacks. An early-game weapon for aspiring Quincy.
@@ -49,6 +59,15 @@ Transcendent_Essence.name = Transcendent Essence
 Transcendent_Essence.description = A swirling paradox of absolute power. The boundaries between your spirit and the physical world have dissolved into this singular pulsing point. Within this glow lies the true form of your soul, screaming to be released.
 Hollow_Essence.name = Hollow Essence
 Hollow_Essence.description = A crystallized remnant of a defeated Hollow’s distorted soul. It pulses with unstable reiryoku.
+
+Sode_no_Shirayuki_Spirit_Fragment.name = Spirit Fragment - Sode no Shirayuki
+Sode_no_Shirayuki_Spirit_Fragment.description = A cold fragment of pure spiritual energy.\n<b>Right-Click to consume (unlock Shikai)</b>
+Wabisuke_Spirit_Fragment.name = Spirit Fragment - Wabisuke
+Wabisuke_Spirit_Fragment.description = A heavy fragment containing the burdened spirit of Wabisuke. Its presence weighs upon the soul.\n<b>Right-Click to consume (unlock Shikai)</b>
+Benihime_Spirit_Fragment.name = Spirit Fragment - Benihime
+Benihime_Spirit_Fragment.description = A crimson spirit fragment carrying a quiet but deadly elegance.\n<b>Right-Click to consume (unlock Shikai)</b>
+Hozukimaru_Spirit_Fragment.name = Spirit Fragment - Hozukimaru
+Hozukimaru_Spirit_Fragment.description = A fragment brimming with battle spirit.\n<b>Right-Click to consume (unlock Shikai)</b>
 
 
 items.Currency_Kan.name = Kan

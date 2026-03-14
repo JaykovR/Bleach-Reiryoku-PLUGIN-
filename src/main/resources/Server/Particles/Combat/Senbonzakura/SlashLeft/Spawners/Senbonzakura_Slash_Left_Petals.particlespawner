@@ -1,0 +1,76 @@
+{
+  "Particle": {
+    "Texture": "Particles/Senbonzakura_Petal.png",
+    "Animation": {
+      "0": {},
+      "100": {}
+    },
+    "InitialAnimationFrame": {
+      "Scale": {
+        "X": {
+          "Min": 0.2,
+          "Max": 0.25
+        }
+      },
+      "Rotation": {
+        "Z": {
+          "Min": -360,
+          "Max": 360
+        },
+        "Y": {
+          "Max": 20,
+          "Min": -20
+        },
+        "X": {
+          "Max": 20,
+          "Min": -20
+        }
+      }
+    }
+  },
+  "MaxConcurrentParticles": 500,
+  "ParticleLifeSpan": {
+    "Min": 0.4,
+    "Max": 1
+  },
+  "SpawnRate": {
+    "Min": 100,
+    "Max": 250
+  },
+  "RenderMode": "Erosion",
+  "Attractors": [
+    {
+      "RadialImpulse": 5,
+      "Position": {
+        "X": 5
+      },
+      "LinearImpulse": {
+        "X": -10
+      },
+      "RadialAcceleration": 10,
+      "RadialTangentAcceleration": 15
+    }
+  ],
+  "EmitOffset": {
+    "X": {
+      "Max": 0.4,
+      "Min": 0.4
+    },
+    "Y": {
+      "Min": 0.2,
+      "Max": 0.3
+    },
+    "Z": {
+      "Min": 0.1,
+      "Max": 0.3
+    }
+  },
+  "WaveDelay": {
+    "Min": 0.1,
+    "Max": 0.1
+  },
+  "TotalParticles": {
+    "Min": 400,
+    "Max": 400
+  }
+}

@@ -4,6 +4,15 @@ Shikai_Tensa_Zangetsu.name = Шикай – Зангецу
 Shikai_Tensa_Zangetsu.description = Шикай Зангецу — массивный духовный тесак, постоянно пребывающий в высвобожденной форме. Чёрный клинок с живой тканью усиливает атаки владельца, выпуская волну \n<i><b>Гецуга Теншоу</b></i>, и может служить щитом для отражения физических и энергетических ударов.
 ReiryokuCrystal.name = Кристалл Рэйрёку
 ReiryokuCrystal.description = Кристалл чистой духовной энергии, сгусток множества душ. Пробуждает и эволюционирует дзанпакто.
+Sealed_Sode_no_Shirayuki.name = Запечатанный — Sode no Shirayuki
+Sealed_Sode_no_Shirayuki.description = Запечатанный занпакто. Его танец ещё не начался.
+Sealed_Wabisuke.name = Запечатанный — Wabisuke
+Sealed_Wabisuke.description = Запечатанный занпакто. Когда ты держишь его, что-то давит на твою душу.
+Sealed_Benihime.name = Запечатанный — Benihime
+Sealed_Benihime.description = Запечатанный занпакто. Этот клинок ждёт твоей команды.
+Sealed_Hozukimaru.name = Запечатанный — Hozukimaru
+Sealed_Hozukimaru.description = Запечатанный занпакто. Когда ты держишь его в бою, ты чувствуешь огромный прилив волнения.
+
 Sealed_Zangetsu.name = Запечатанный – Дзангецу
 Sealed_Zangetsu.description = Запечатанный клинок до пробуждения. Хранит безграничный, но спящий потенциал.
 Asauchi.name = Асаучи
@@ -50,6 +59,14 @@ Transcendent_Essence.description = Пульсирующий парадокс а�
 Hollow_Essence.name = Эссенция Пустого
 Hollow_Essence.description = Кристаллизованный остаток искажённой души поверженного Пустого. Пульсирует нестабильной рейрёку.
 
+Sode_no_Shirayuki_Spirit_Fragment.name = Фрагмент духа — Sode no Shirayuki
+Sode_no_Shirayuki_Spirit_Fragment.description = Холодный фрагмент чистой духовной энергии.\n<b>Щёлкните правой кнопкой, чтобы использовать (разблокировать Shikai)</b>
+Wabisuke_Spirit_Fragment.name = Фрагмент духа — Wabisuke
+Wabisuke_Spirit_Fragment.description = Тяжёлый фрагмент, содержащий обременённый дух Wabisuke. Его присутствие давит на душу.\n<b>Щёлкните правой кнопкой, чтобы использовать (разблокировать Shikai)</b>
+Benihime_Spirit_Fragment.name = Фрагмент духа — Benihime
+Benihime_Spirit_Fragment.description = Алый фрагмент духа, несущий тихую, но смертельную элегантность.\n<b>Щёлкните правой кнопкой, чтобы использовать (разблокировать Shikai)</b>
+Hozukimaru_Spirit_Fragment.name = Фрагмент духа — Hozukimaru
+Hozukimaru_Spirit_Fragment.description = Фрагмент, переполненный боевым духом.\n<b>Щёлкните правой кнопкой, чтобы использовать (разблокировать Shikai)</b>
 
 items.Currency_Kan.name = Кан
 items.Currency_Kan.description = Стандартная валюта Общества Душ. Один Кан представляет собой стоимость одного тюка риса в мире живых. Говорят, её вес и звон настроены на саму частоту рейси, что делает подделку невозможной. Для торговца в Руконгай эта монета — целое состояние; для капитана — просто мелочь для размена.

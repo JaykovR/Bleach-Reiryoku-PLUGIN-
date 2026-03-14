@@ -1,3 +1,12 @@
+Sealed_Sode_no_Shirayuki.name = Scellé - Sode no Shirayuki
+Sealed_Sode_no_Shirayuki.description = Un zanpakutō scellé. Sa danse n'a pas encore commencé.
+Sealed_Wabisuke.name = Scellé - Wabisuke
+Sealed_Wabisuke.description = Un zanpakutō scellé. Lorsque vous le tenez, quelque chose pèse sur votre âme.
+Sealed_Benihime.name = Scellé - Benihime
+Sealed_Benihime.description = Un zanpakutō scellé. Cette lame attend votre commandement.
+Sealed_Hozukimaru.name = Scellé - Hozukimaru
+Sealed_Hozukimaru.description = Un zanpakutō scellé. Lorsque vous le tenez au combat, vous ressentez une excitation immense.
+
 Bankai_Tensa_Zangetsu.name = Bankai - Tensa Zangetsu
 Bankai_Tensa_Zangetsu.description = Bankai – Tensa Zangetsu est une lame spirituelle légendaire. Sa lame noire avec une chaîne concentre l’énergie du porteur et libère la vague dévastatrice <i><b>Getsuga Tenshō — «Croc lunaire transperçant les cieux»</b></i>. 
 Shikai_Tensa_Zangetsu.name = Shikai - Zangetsu
@@ -47,6 +56,14 @@ Transcendent_Essence.description = Un paradoxe tourbillonnant de pouvoir absolu.
 Hollow_Essence.name = Essence de Hollow
 Hollow_Essence.description = Un vestige cristallisé de l’âme déformée d’un Hollow vaincu. Elle pulse d’un reiryoku instable.
 
+Sode_no_Shirayuki_Spirit_Fragment.name = Fragment Spirituel - Sode no Shirayuki
+Sode_no_Shirayuki_Spirit_Fragment.description = Un fragment froid d’énergie spirituelle pure.\n<b>Clic droit pour consommer (déverrouiller le Shikai)</b>
+Wabisuke_Spirit_Fragment.name = Fragment Spirituel - Wabisuke
+Wabisuke_Spirit_Fragment.description = Un fragment lourd contenant l’esprit accablé de Wabisuke. Sa présence pèse sur l’âme.\n<b>Clic droit pour consommer (déverrouiller le Shikai)</b>
+Benihime_Spirit_Fragment.name = Fragment Spirituel - Benihime
+Benihime_Spirit_Fragment.description = Un fragment spirituel cramoisi portant une élégance silencieuse mais mortelle.\n<b>Clic droit pour consommer (déverrouiller le Shikai)</b>
+Hozukimaru_Spirit_Fragment.name = Fragment Spirituel - Hozukimaru
+Hozukimaru_Spirit_Fragment.description = Un fragment débordant d’esprit combatif.\n<b>Clic droit pour consommer (déverrouiller le Shikai)</b>
 
 items.Currency_Kan.name = Kan
 items.Currency_Kan.description = La monnaie standard de la Société des Âmes. Un Kan représente la valeur d'une balle de riz dans le monde des vivants. Son poids et son tintement seraient accordés à la fréquence du reishi, rendant la contrefaçon impossible. Pour un marchand du Rukongai, cette pièce est une fortune ; pour un capitaine, de la menue monnaie.

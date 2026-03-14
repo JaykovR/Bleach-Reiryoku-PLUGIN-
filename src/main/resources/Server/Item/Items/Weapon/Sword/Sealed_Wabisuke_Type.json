@@ -46,7 +46,8 @@
                   "SystemId": "Smoke_Black",
                   "TargetEntityPart": "PrimaryItem"
                 }
-              ]
+              ],
+              "LocalSoundEventId": "SFX_Shikai_Activation_Wabisuke"
             },
             "RunTime": 0.7,
             "Next": {
