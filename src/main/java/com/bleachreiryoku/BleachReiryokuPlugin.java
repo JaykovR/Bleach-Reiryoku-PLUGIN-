@@ -38,7 +38,7 @@ public class BleachReiryokuPlugin extends JavaPlugin {
     @Override
     protected void setup() {
         LOGGER.at(Level.INFO).log("[Bleach Reiryoku] Setting up...");
-
+        // TODO: Register commands and listeners here
         CommandRegistry commandRegistry = this.getCommandRegistry();
         CommandRegistration commandRegistration = commandRegistry.registerCommand(new ReiryokuCommands());
 
@@ -57,7 +57,7 @@ public class BleachReiryokuPlugin extends JavaPlugin {
                 .register("ShikaiCheck", ShikaiCheckInteraction.class, ShikaiCheckInteraction.CODEC);
 
 
-        // TODO: Register commands and listeners here
+
 
         LOGGER.at(Level.INFO).log("[Bleach Reiryoku] Setup complete!");
     }

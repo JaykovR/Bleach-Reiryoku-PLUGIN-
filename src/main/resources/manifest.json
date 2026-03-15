@@ -1,13 +1,37 @@
 {
-    "Group": "Reiryoku Team",
-    "Name": "BleachReiryoku",
-    "Version": "1.0.0",
-    "Description": "A Hytale server mod",
+    "Group": "The Reiryoku Team",
+    "Name": "Bleach Reiryoku",
+    "Version": "0.1.8",
+    "Description": "This mods adds various content based on the Bleach Series",
     "Authors": [
         {
-            "Name": "jaykov"
+            "Name": "Jaykov",
+            "Email": "",
+            "Url": ""
+        },
+        {
+            "Name": "Lxrdinsky (Shunsui)",
+            "Email": "",
+            "Url": ""
+        },
+        {
+            "Name": "Punished_Man (gourmet)",
+            "Email": "",
+            "Url": ""
+        },
+        {
+            "Name": "BenSmash",
+            "Email": "",
+            "Url": ""
+        },
+        {
+            "Name": "Alba",
+            "Email": "",
+            "Url": ""
         }
     ],
+    "Website": "https://discord.gg/7My4sVvafk",
+
     "DisabledByDefault": false,
     "IncludesAssetPack": true,
     "ServerVersion": "2026.02.19-1a311a592",
