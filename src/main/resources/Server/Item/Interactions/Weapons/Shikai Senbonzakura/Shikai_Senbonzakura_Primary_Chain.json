@@ -1,0 +1,27 @@
+{
+  "Type": "Chaining",
+  "ChainingAllowance": 2,
+  "ChainId": "Sword_Swings",
+  "Next": [
+    {
+      "Type": "Replace",
+      "DefaultOk": true,
+      "Var": "Swing_Left",
+      "DefaultValue": {
+        "Interactions": [
+          "Shikai_Senbonzakura_Primary_Slash_Left"
+        ]
+      }
+    },
+    {
+      "Type": "Replace",
+      "DefaultOk": true,
+      "Var": "Swing_Right",
+      "DefaultValue": {
+        "Interactions": [
+          "Shikai_Senbonzakura_Primary_Slash_RIght"
+        ]
+      }
+    }
+  ]
+}

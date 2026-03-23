@@ -1,0 +1,8 @@
+{
+  "Duration": 1,
+  "OverlapBehavior": "Overwrite",
+  "ApplicationEffects": {
+    "EntityBottomTint": "#cd0101",
+    "EntityTopTint": "#d814b4"
+  }
+}

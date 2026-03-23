@@ -151,8 +151,8 @@
     }
   },
   "Categories": [
-    "BleachCategory.Weapons",
-    "Items.Weapons"
+    "Items.Weapons",
+    "BleachCategory.Weapons"
   ],
   "IconProperties": {
     "Scale": 0.3,

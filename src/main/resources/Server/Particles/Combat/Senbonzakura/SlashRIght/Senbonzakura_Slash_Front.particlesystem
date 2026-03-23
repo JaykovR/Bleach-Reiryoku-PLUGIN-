@@ -1,0 +1,14 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Senbonzakura_Slash_Front_Petals",
+      "PositionOffset": {
+        "Y": -0.5,
+        "X": -0.5
+      },
+      "RotationOffset": {
+        "Roll": -30
+      }
+    }
+  ]
+}

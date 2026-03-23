@@ -1,0 +1,64 @@
+{
+  "Type": "Serial",
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "Effects": {
+        "Particles": [
+          {
+            "SystemId": "Senbonzakura_Tornado",
+            "RotationOffset": {},
+            "TargetEntityPart": "Entity",
+            "Scale": 1
+          },
+          {
+            "SystemId": "Senbonzakura_Spiral",
+            "PositionOffset": {
+              "Y": 1
+            },
+            "TargetEntityPart": "Entity"
+          }
+        ]
+      }
+    },
+    "Shikai_Senbonzakura_Primary_Tornado_Charged",
+    {
+      "Type": "Selector",
+      "Selector": {
+        "Id": "AOECircle",
+        "Range": 5
+      },
+      "HitEntity": {
+        "Interactions": [
+          {
+            "Type": "Replace",
+            "Var": "Swing_Down_Damage",
+            "DefaultOk": true,
+            "DefaultValue": {
+              "Interactions": [
+                "Weapon_Sword_Primary_Swing_Down_Damage"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Type": "ChangeStat",
+      "StatModifiers": {
+        "Mana": -3
+      }
+    },
+    {
+      "Type": "Simple",
+      "Effects": {
+        "ItemAnimationId": "CrushingRegretPose",
+        "ClearAnimationOnFinish": false,
+        "ClearSoundEventOnFinish": true,
+        "WaitForAnimationToFinish": false,
+        "ItemPlayerAnimationsId": "WabisukeAnimations"
+      },
+      "RunTime": 0.1
+    }
+  ]
+}

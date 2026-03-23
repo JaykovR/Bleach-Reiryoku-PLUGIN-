@@ -37,7 +37,7 @@
         {
           "Type": "ModifyInventory",
           "ItemToRemove": {
-            "Id": "Sealed_Senbonzakura_T"
+            "Id": "Sealed_Senbonzakura"
           },
           "ItemToAdd": {
             "Id": "Shikai_Senbonzakura"

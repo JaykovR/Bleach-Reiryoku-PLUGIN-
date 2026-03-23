@@ -3,12 +3,12 @@
     {
       "SpawnerId": "Senbonzakura_Slash_Left_Petals",
       "PositionOffset": {
-        "Z": -5,
-        "X": 7
+        "Y": 1,
+        "X": -0.7
       },
       "LifeSpan": {
-        "Min": 0.6,
-        "Max": 0.6
+        "Max": 0.5,
+        "Min": 0.5
       }
     }
   ]

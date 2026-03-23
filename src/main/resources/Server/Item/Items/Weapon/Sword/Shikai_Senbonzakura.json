@@ -4,7 +4,7 @@
     "Name": "Shikai - Senbonzakura"
   },
   "Model": "Items/Weapons/Senbonzakura/Senbonsakura_Active.blockymodel",
-  "Texture": "Items/Weapons/Senbonzakura/Senbonzakura_ActiveTexture.png",
+  "Texture": "Items/Weapons/Senbonzakura/Senbonzakura_ScatteredTexture.png",
   "Quality": "Shikai",
   "Icon": "Icons/ItemsGenerated/Shikai_Senbonzakura.png",
   "ItemLevel": 20,
@@ -126,7 +126,8 @@
     }
   },
   "Categories": [
-    "BleachCategory.Weapons"
+    "BleachCategory.Weapons",
+    "Items.Weapons"
   ],
   "IconProperties": {
     "Scale": 0.34,
@@ -139,5 +140,15 @@
       -44,
       -43
     ]
-  }
+  },
+  "Particles": [
+    {
+      "SystemId": "Senbonzakura_Weapon_Aura",
+      "PositionOffset": {
+        "X": 0.75
+      },
+      "TargetNodeName": "Handle",
+      "TargetEntityPart": "PrimaryItem"
+    }
+  ]
 }

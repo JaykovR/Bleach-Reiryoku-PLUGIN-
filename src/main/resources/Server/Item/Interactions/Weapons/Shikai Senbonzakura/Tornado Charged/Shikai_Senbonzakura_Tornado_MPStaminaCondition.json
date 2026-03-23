@@ -1,0 +1,24 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "Mana": 3
+  },
+  "Failed": "Weapon_Sword_Primary_Chain",
+  "Next": {
+    "Type": "ChangeStat",
+    "Behaviour": "Set",
+    "StatModifiers": {
+      "StaminaRegenDelay": -2
+    },
+    "Next": {
+      "Type": "Replace",
+      "Var": "Thrust",
+      "DefaultOk": true,
+      "DefaultValue": {
+        "Interactions": [
+          "Shikai_Senbonzakura_TornadoCond"
+        ]
+      }
+    }
+  }
+}

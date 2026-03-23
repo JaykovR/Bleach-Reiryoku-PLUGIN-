@@ -1,0 +1,37 @@
+{
+  "Type": "Charging",
+  "DisplayProgress": true,
+  "HorizontalSpeedMultiplier": 0.8,
+  "Effects": {
+    "ItemAnimationId": "StabDashCharging",
+    "Particles": [
+      {
+        "PositionOffset": {
+          "X": 0.6,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationOffset": {
+          "Pitch": 0,
+          "Roll": 90,
+          "Yaw": 0
+        },
+        "TargetNodeName": "Handle",
+        "SystemId": "Sword_Charging"
+      }
+    ]
+  },
+  "Next": {
+    "0": "Weapon_Sword_Primary_Chain",
+    "0.65": {
+      "Type": "Serial",
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Shikai_Senbonzakura_Primary_Tornado_Charged"
+        }
+      ]
+    }
+  },
+  "AllowIndefiniteHold": false
+}

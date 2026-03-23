@@ -1,0 +1,16 @@
+{
+  "Max": 5,
+  "Regenerating": [
+    {
+      "Interval": 1,
+      "Amount": -4,
+      "RegenType": "Additive",
+      "ClampAtZero": false,
+      "Conditions": [
+        {
+          "Id": "Alive"
+        }
+      ]
+    }
+  ]
+}

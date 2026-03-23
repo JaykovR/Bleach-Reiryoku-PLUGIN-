@@ -1,0 +1,17 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Senbonzakura_Weapon_Aura_Petals",
+      "PositionOffset": {
+        "X": -0.1
+      }
+    },
+    {
+      "SpawnerId": "Senbonzakura_Weapon_Aura_Petals_Small",
+      "PositionOffset": {
+        "X": -0.1
+      },
+      "FixedRotation": false
+    }
+  ]
+}

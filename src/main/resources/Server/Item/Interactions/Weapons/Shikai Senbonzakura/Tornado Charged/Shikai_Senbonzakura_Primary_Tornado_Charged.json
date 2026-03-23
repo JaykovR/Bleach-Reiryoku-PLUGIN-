@@ -1,0 +1,13 @@
+{
+  "Type": "ApplyEffect",
+  "EffectId": "Shikai_Senbonzakura_Primary_Tornado_Charged",
+  "Next": {
+    "Type": "ChangeStat",
+    "StatModifiers": {
+      "Senbonzakura_Scatter": 5
+    },
+    "Behaviour": "Add",
+    "Entity": "User",
+    "ValueType": "Absolute"
+  }
+}

@@ -29,29 +29,18 @@
     }
   },
   "MaxConcurrentParticles": 700,
-  "ParticleLifeSpan": {
-    "Min": 0.4,
-    "Max": 1
-  },
   "SpawnRate": {
-    "Min": 200,
-    "Max": 500
+    "Min": 700,
+    "Max": 700
   },
   "RenderMode": "Erosion",
   "Attractors": [
-    {
-      "RadialAcceleration": -15,
-      "Position": {
-        "X": 5
-      },
-      "TrailPositionMultiplier": 0.312,
-      "RadialTangentAcceleration": -110
-    }
+    {}
   ],
   "EmitOffset": {
     "X": {
-      "Max": 1,
-      "Min": -2
+      "Max": 0.4,
+      "Min": 0.4
     },
     "Y": {
       "Min": 0.2,
@@ -68,19 +57,23 @@
   },
   "TotalParticles": {
     "Min": 400,
-    "Max": 400
+    "Max": 700
   },
   "InitialVelocity": {
     "Speed": {
-      "Max": -15
+      "Max": -50
     }
   },
   "Shape": "Sphere",
   "ParticleRotationInfluence": "BillboardVelocity",
-  "ParticleRotateWithSpawner": false,
   "TrailSpawnerRotationMultiplier": 0.504,
   "ParticleCollision": {
     "BlockType": "Solid",
     "Action": "Expire"
-  }
+  },
+  "ParticleLifeSpan": {
+    "Min": 0.4,
+    "Max": 1
+  },
+  "ParticleRotateWithSpawner": true
 }

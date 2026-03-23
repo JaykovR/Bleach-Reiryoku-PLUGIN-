@@ -293,7 +293,7 @@
         }
       ]
     },
-        "Signature_Tempest_Spin_Damage": {
+    "Signature_Tempest_Spin_Damage": {
       "Interactions": [
         {
           "Parent": "Weapon_Battleaxe_Signature_Whirlwind_Damage",
@@ -326,7 +326,7 @@
             "Type": "Absolute"
           },
           "DamageEffects": {
-              "WorldParticles": [
+            "WorldParticles": [
               {
                 "SystemId": "Benihime_Slash"
               }
@@ -343,7 +343,7 @@
           "Parent": "Weapon_Battleaxe_Primary_Downstrike_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 22
+              "Physical": 100
             }
           },
           "DamageEffects": {
@@ -377,7 +377,7 @@
     "StatModifiers": {
       "SignatureEnergy": [
         {
-          "Amount": 1,
+          "Amount": 14,
           "CalculationType": "Additive"
         }
       ]

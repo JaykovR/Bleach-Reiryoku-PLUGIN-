@@ -26,13 +26,8 @@ public class playerJoinSystem extends RefSystem<EntityStore>{
         if (brType==null) return;
         var br = store.getComponent(ref, brType);
 
-        if (br != null){
-            playerRef.sendMessage(Message.raw(
-                    "Welcome back to Bleach Reiryoku."
-            ));
-        } else{
+        if (br == null){
             commandBuffer.addComponent(ref, brType, new playerStats());
-            playerRef.sendMessage(Message.raw("Welcome to Bleach Reiryoku!"));
         }
 
     }
