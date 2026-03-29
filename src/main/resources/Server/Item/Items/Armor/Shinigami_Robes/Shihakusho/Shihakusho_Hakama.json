@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Shihakusho - Hakama"
+    "Name": "items.Shihakusho_Hakama.name",
+    "Description": "items.Shihakusho_Hakama.description"
   },
   "Parent": "Armor_Iron_Legs",
   "Quality": "Rare",
@@ -15,7 +16,7 @@
     ],
     "Translation": [
       0,
-      -26
+      -30
     ]
   },
   "Model": "Items/Armors/Hakama/Hakama.blockymodel",

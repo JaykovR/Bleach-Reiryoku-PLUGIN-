@@ -1,13 +1,13 @@
 {
   "TranslationProperties": {
-    "Name": "Shihakusho - Kosode",
-    "Description": "items.Shinigami_Robes.description"
+    "Name": "items.Shihakusho_Kosode.name",
+    "Description": "items.Shihakusho_Kosode.description"
   },
   "Parent": "Armor_Bronze_Chest",
   "Quality": "Rare",
   "ItemLevel": 15,
   "IconProperties": {
-    "Scale": 0.4,
+    "Scale": 0.5,
     "Rotation": [
       23,
       38,

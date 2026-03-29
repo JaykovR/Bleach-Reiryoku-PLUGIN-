@@ -19,8 +19,10 @@ import com.bleachreiryoku.playerData.playerStats;
 
 import java.awt.*;
 
+// This class unlocks x said Shikai to a player depending on which item they use to do so.
 public class UnlockShikaiInteraction extends SimpleInteraction {
 
+    //Builder codec in order for it to be an intereaction available.
     public static final BuilderCodec<UnlockShikaiInteraction> CODEC =
             BuilderCodec.builder(UnlockShikaiInteraction.class, UnlockShikaiInteraction::new,
                     SimpleInteraction.CODEC).build();
@@ -28,6 +30,7 @@ public class UnlockShikaiInteraction extends SimpleInteraction {
     @Override
     protected void tick0(boolean firstRun, float time, @NonNullDecl InteractionType type, @NonNullDecl InteractionContext context,
                          @NonNullDecl CooldownHandler cooldownHandler) {
+        // References player as owning Entity, gets their inventory.
         Ref<EntityStore> owningEntity = context.getOwningEntity();
         Store<EntityStore> store = owningEntity.getStore();
 
@@ -38,6 +41,7 @@ public class UnlockShikaiInteraction extends SimpleInteraction {
         World world = player.getWorld();
         if (world == null) return;
 
+        // Gets their held item ID.
         String heldItem = context.getHeldItem().getItemId();
         int requiredAmount = 1;
 
@@ -45,14 +49,15 @@ public class UnlockShikaiInteraction extends SimpleInteraction {
 
         var brType = playerStats.getComponentType();
         if (brType == null) {
-            player.sendMessage(Message.raw("ERROR PLAYER STATS NULL"));
+            player.sendMessage(Message.raw("ERROR PLAYER STATS NULL")); // Error prevention
             return;}
-        playerStats stats = store.getComponent(owningEntity, brType);
+        playerStats stats = store.getComponent(owningEntity, brType); // Gets player stats
 
+        // IF they have X item then they get the messages for unlock. After that the boolean for the shikai becomes true. Unlocking shikai for the player.
         if(heldItem.equals("Benihime_Spirit_Fragment")){
-            player.sendMessage(Message.raw("You feel a sudden surge of power within you. From deep within your soul, a sharp and elegant voice echoes…"));
-            player.sendMessage(Message.raw("Benihime").bold(true).color(Color.RED).italic(true));
-            player.sendMessage(Message.raw("Trying pressing R while holding your Zanpakuto to utilize Shikai.").bold(true).color(Color.WHITE));
+            player.sendMessage(Message.translation("shikaiUnlockMessages.Benihime.unlock"));
+            player.sendMessage(Message.translation("shikaiUnlockMessages.Benihime2.unlock").bold(true).color(Color.RED).italic(true));
+            player.sendMessage(Message.translation("shikaiUnlockMessages.Usage_cue.unlock").bold(true).color(Color.WHITE));
             ItemStackSlotTransaction itemStackSlotTransaction = player.getInventory().getHotbar().removeItemStackFromSlot(context.getHeldItemSlot(),
                     requiredAmount, true, false);
             if(!itemStackSlotTransaction.succeeded()) return;
@@ -62,9 +67,9 @@ public class UnlockShikaiInteraction extends SimpleInteraction {
         }
 
         if(heldItem.equals("Wabisuke_Spirit_Fragment")){
-            player.sendMessage(Message.raw("A heavy presence settles within your soul. A quiet, solemn voice reveals its name…"));
-            player.sendMessage(Message.raw("Wabisuke").bold(true).color(Color.MAGENTA).italic(true));
-            player.sendMessage(Message.raw("Trying pressing R while holding your Zanpakuto to utilize Shikai.").bold(true).color(Color.WHITE));
+            player.sendMessage(Message.translation("shikaiUnlockMessages.Wabisuke.unlock"));
+            player.sendMessage(Message.translation("shikaiUnlockMessages.Wabisuke2.unlock").bold(true).color(Color.MAGENTA).italic(true));
+            player.sendMessage(Message.translation("shikaiUnlockMessages.Usage_cue.unlock").bold(true).color(Color.WHITE));
             ItemStackSlotTransaction itemStackSlotTransaction = player.getInventory().getHotbar().removeItemStackFromSlot(context.getHeldItemSlot(),
                     requiredAmount, true, false);
             if(!itemStackSlotTransaction.succeeded()) return;
@@ -84,9 +89,9 @@ public class UnlockShikaiInteraction extends SimpleInteraction {
         }
 
         if(heldItem.equals("Hozukimaru_Spirit_Fragment")){
-            player.sendMessage(Message.raw("A fierce fighting spirit surges through your soul. A bold voice calls out its name…"));
-            player.sendMessage(Message.raw("Hozukimaru!!!").bold(true).color(Color.RED).italic(true));
-            player.sendMessage(Message.raw("Trying pressing R while holding your Zanpakuto to utilize Shikai.").bold(true).color(Color.WHITE));
+            player.sendMessage(Message.translation("shikaiUnlockMessages.Hozukimaru.unlock"));
+            player.sendMessage(Message.translation("shikaiUnlockMessages.Hozukimaru2.unlock").bold(true).color(Color.RED).italic(true));
+            player.sendMessage(Message.translation("shikaiUnlockMessages.Usage_cue.unlock").bold(true).color(Color.WHITE));
             ItemStackSlotTransaction itemStackSlotTransaction = player.getInventory().getHotbar().removeItemStackFromSlot(context.getHeldItemSlot(),
                     requiredAmount, true, false);
             if(!itemStackSlotTransaction.succeeded()) return;
@@ -94,11 +99,11 @@ public class UnlockShikaiInteraction extends SimpleInteraction {
                 stats.setActiveShikaiHozukimaru();
             }
         }
-        //EDIT MESSAGE LATER
+
         if(heldItem.equals("Senbonzakura_Spirit_Fragment")){
-            player.sendMessage(Message.raw("BLA BLA BLA…"));
-            player.sendMessage(Message.raw("SENBONZAKURA").bold(true).color(Color.RED).italic(true));
-            player.sendMessage(Message.raw("Trying pressing R while holding your Zanpakuto to utilize Shikai.").bold(true).color(Color.WHITE));
+            player.sendMessage(Message.translation("shikaiUnlockMessages.Senbonzakura.unlock"));
+            player.sendMessage(Message.translation("shikaiUnlockMessages.Senbonzakura2.unlock").bold(true).color(Color.RED).italic(true));
+            player.sendMessage(Message.translation("shikaiUnlockMessages.Usage_cue.unlock").bold(true).color(Color.WHITE));
             ItemStackSlotTransaction itemStackSlotTransaction = player.getInventory().getHotbar().removeItemStackFromSlot(context.getHeldItemSlot(),
                     requiredAmount, true, false);
             if(!itemStackSlotTransaction.succeeded()) return;

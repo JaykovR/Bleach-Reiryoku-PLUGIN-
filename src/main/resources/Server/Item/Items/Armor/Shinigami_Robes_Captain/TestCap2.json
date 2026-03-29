@@ -19,7 +19,7 @@
     ]
   },
   "Model": "Items/Armors/Shinigami_Robes_Captain/CapitanShihakusho.blockymodel",
-  "Texture": "Items/Armors/Shinigami_Robes_Captain/TESTCAPITANTEXTURE.png",
+  "Texture": "Items/Armors/Shinigami_Robes_Captain/CapitanTexture.png",
   "Recipe": {
     "TimeSeconds": 3,
     "Input": [

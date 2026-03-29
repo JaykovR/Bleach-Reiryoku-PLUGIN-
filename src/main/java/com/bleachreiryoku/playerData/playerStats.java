@@ -23,6 +23,8 @@ public class playerStats implements Component<EntityStore> {
         return TYPE;
     }
 
+    // Builder CODEC, apparently you need to build each stat. For now I'm using just booleans since the system
+    // it's still in the early primitive stages.
     public static final BuilderCodec<playerStats> CODEC = BuilderCodec
             .builder(playerStats.class, playerStats::new)
             .append(
@@ -67,6 +69,7 @@ public class playerStats implements Component<EntityStore> {
 
     public playerStats(){}
 
+    // This is where the Player Stats become property of the player, per se.
     public playerStats(boolean shikaiHozukimaru, boolean shikaiWabisuke,
                        boolean shikaiSodeNoShirayuki, boolean shikaiBenihime, boolean shikaiSenbonzakura)
     {
@@ -77,6 +80,7 @@ public class playerStats implements Component<EntityStore> {
         this.ShikaiSenbonzakura = shikaiSenbonzakura;
     }
 
+    // Set Shikai Boolean to True.
     public void setActiveShikaiHozukimaru(){
         this.ShikaiHozukimaru = true;
     }
@@ -93,7 +97,7 @@ public class playerStats implements Component<EntityStore> {
         this.ShikaiSenbonzakura = true;
     }
 
-    // sets all false at once.
+    // Sets all false at once.
     public void deactivateShikai(){
         this.ShikaiHozukimaru = false;
         this.ShikaiWabisuke = false;
@@ -102,10 +106,10 @@ public class playerStats implements Component<EntityStore> {
         this.ShikaiSenbonzakura = false;
     }
 
+    // Get your shikai state if it's true or false.
     public boolean getShikaiBenihimeState(){
         return ShikaiBenihime;
     }
-
     public boolean getShikaiWabisukeState(){
         return ShikaiWabisuke;
     }
@@ -131,6 +135,8 @@ public class playerStats implements Component<EntityStore> {
 //        return ActiveShikai;
 //    }
 
+    // This will be the same as XP, LVL in the future. For now it's not used. Later on it will serve the purpose to scale
+    // damage for Kido, Skills, Etc, as well as brining the player more protection and stuff.
     public static final long[] REIRYOKU_THRESHOLDS = {
             0,      // new player
             100,    // trainee level

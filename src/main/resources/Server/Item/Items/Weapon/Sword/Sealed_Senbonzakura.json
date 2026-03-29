@@ -1,7 +1,8 @@
 {
   "Parent": "Sealed_Senbonzakura_Type",
   "TranslationProperties": {
-    "Name": "Sealed - Senbonzakura"
+    "Name": "items.Sealed_Senbonzakura.name",
+    "Description" : "items.Sealed_Senbonzakura.description"
   },
   "Model": "Items/Weapons/Senbonzakura/Senbonsakura_Normal.blockymodel",
   "Texture": "Items/Weapons/Senbonzakura/Senbonzakura_NormalTexture.png",

@@ -6,6 +6,8 @@ Sealed_Benihime.name = Selada - Benihime
 Sealed_Benihime.description = Uma zanpakutō selada. Esta lâmina está esperando seu comando.
 Sealed_Hozukimaru.name = Selada - Hozukimaru
 Sealed_Hozukimaru.description = Uma zanpakutō selada. Quando você a segura em batalha, sente uma tremenda empolgação.
+Sealed_Senbonzakura.name = Selada - Senbonzakura
+Sealed_Senbonzakura.description = Uma zanpakutō selada. Uma lâmina refinada com uma aura graciosa.
 
 Bankai_Tensa_Zangetsu.name = Bankai – Tensa Zangetsu
 Bankai_Tensa_Zangetsu.description = Bankai – Tensa Zangetsu é uma lâmina espiritual lendária. Sua lâmina negra com corrente concentra a energia do portador, liberando a onda devastadora <i><b>Getsuga Tenshō — «Presas da Lua que Perfuram os Céus»</b></i>.
@@ -23,6 +25,8 @@ Shikai_Wabisuke.name = Shikai – Wabisuke
 Shikai_Wabisuke.description = Uma espada elegantemente curvada cuja natureza traiçoeira é o oposto de seu refinamento externo. Seu golpe coloca uma maldição de peso no alvo. A cada bloqueio, o fardo da vítima dobra sem piedade, até o oponente ser quebrado e preso ao chão por sua própria carga insuportável. Comando: <i><b>«Dobra-te, Wabisuke»</b></i>.
 Shikai_Hozukimaru.name = Shikai – Hozukimaru
 Shikai_Hozukimaru.description = Uma lança de guerra crua e direta. Sua forma simples esconde um poder destrutivo feroz e durabilidade inquebrantável. Nesta arma reside um potencial de transformação adormecido.
+Shikai_Senbonzakura.name = Shikai - Senbonzakura
+Shikai_Senbonzakura.description = Uma Zanpakutō refinada que se dissolve em incontáveis pétalas semelhantes a lâminas ao seu comando. Com o comando <i><b>«Espalhe-se, Senbonzakura»</b></i>, a arma se transforma em uma tempestade de fragmentos cintilantes, cada um tão afiado quanto o aço. Essas pétalas podem ser guiadas à vontade, sobrecarregando os inimigos com ataques precisos e implacáveis e transformando o campo de batalha em um domínio de destruição elegante.
 
 Kojaku_Bow.name = Arco Quincy - Kojaku
 Kojaku_Bow.description = O arco básico utilizável por todos os Quincy. É formado reunindo Reishi na <i>Cruz Quincy</i> na mão direita. As flechas que lança também são feitas de Reishi. Permite destruir Hollows com ataques à distância. Arma inicial para Quincy iniciantes.
@@ -33,14 +37,19 @@ Four_Point_Quincy_Cross.description = Uma cruz Quincy de quatro pontas que ajuda
 Soul_Imprinting_Altar.name = Altar de Imprimir Alma
 Soul_Imprinting_Altar.description = Uma estação sagrada onde a alma do portador se funde com o Asauchi. Por meditação profunda e concentração de energia espiritual (Reiryoku), a base do futuro Zanpakutō é lançada. Este altar serve tanto ao despertar inicial quanto às etapas seguintes da evolução da lâmina — do Shikai à revelação final, Bankai.
 
-Shinigami_Robes.name = Robe de Shinigami – Shihakushō
-Shinigami_Robes.description = O uniforme padrão de Shinigami usado por todos os membros da Gotei 13.
-Shinigami_Robes_Sleeveless.name = Robe de Shinigami – Sem Mangas
-Shinigami_Robes_Sleeveless.description = Um <i>Shihakushō</i> modificado para quem deseja mais liberdade de movimento.
-Shinigami_Robes_Captain.name = Robe de Shinigami – Capitão
-Shinigami_Robes_Captain.description = O casaco branco usado pelos Capitães sobre o uniforme padrão. Oferece proteção espiritual superior e denota o mais alto posto na Gotei 13.
-Shinigami_Robes_OpenShoulder.name = Manto Shinigami - Ombro Descubierto
-Shinigami_Robes_OpenShoulder.description = Um <i>Shihakusho</i> modificado que serve ao mesmo propósito da variante sem mangas, mantendo uma aparência mais elegante e cerimonial.
+Shihakusho_Kosode.name = Shihakusho - Kosode
+Shihakusho_Kosode.description = A parte superior do uniforme padrão dos Shinigami, usado por todos os membros do Gotei 13.
+Shihakusho_Kosode_Lieutenant.name = Shihakusho - Kosode (Tenente)
+Shihakusho_Kosode_Lieutenant.description = A peça superior do <i>Shihakusho</i> padrão com um distintivo de Tenente que representa grande prestígio.
+Shihakusho_Kosode_Sleeveless.name = Shihakusho - Kosode (Sem mangas)
+Shihakusho_Kosode_Sleeveless.description = Um <i>Shihakusho</i> modificado para aqueles que desejam mais liberdade de movimento. É mais considerado uma modificação estética do uniforme padrão.
+Shinigami_Robes_Captain.name = Shihakusho de Capitão
+Shinigami_Robes_Captain.description = O manto branco usado pelos Capitães sobre o uniforme padrão. Fornece proteção espiritual superior e indica o mais alto posto dentro do Gotei 13.
+Shihakusho_Kosode_BareShoulder.name = Shihakusho - Kosode (Ombros expostos)
+Shihakusho_Kosode_BareShoulder.description = Um <i>Shihakusho</i> modificado que cumpre o mesmo propósito da variante sem mangas, mantendo uma aparência mais elegante e cerimonial.
+Shihakusho_Hakama.name = Shihakusho - Hakama
+Shihakusho_Hakama.description = A peça inferior que faz parte do uniforme padrão dos Shinigami, o <i>Shihakusho</i>.
+
 
 Resonating_Reishi_Core.name = Núcleo de Reishi Ressonante
 Resonating_Reishi_Core.description = Este núcleo vibra numa frequência que imita a sua. É uma extensão da sua alma. Pronto para ser atribuído a uma lâmina para despertá-la.
@@ -57,6 +66,8 @@ Benihime_Spirit_Fragment.name = Fragmento Espiritual - Benihime
 Benihime_Spirit_Fragment.description = Um fragmento espiritual carmesim que carrega uma elegância silenciosa, porém mortal.\n<b>Clique com o botão direito para consumir (desbloquear Shikai)</b>
 Hozukimaru_Spirit_Fragment.name = Fragmento Espiritual - Hozukimaru
 Hozukimaru_Spirit_Fragment.description = Um fragmento repleto de espírito de batalha.\n<b>Clique com o botão direito para consumir (desbloquear Shikai)</b>
+Senbonzakura_Spirit_Fragment.name = Fragmento Espiritual - Senbonzakura
+Senbonzakura_Spirit_Fragment.description = Um fragmento leve, mas repleto de energia de uma pétala de sakura. Você pode notar uma aura mortal.\n<b>Clique com o botão direito para consumir (desbloquear Shikai)</b>
 
 items.Currency_Kan.name = Kan
 items.Currency_Kan.description = A moeda padrão da Sociedade das Almas. Um Kan representa o valor de um fardo de arroz no mundo dos vivos. Seu peso e som dizem estar sintonizados à frequência do reishi, tornando-o impossível de falsificar.

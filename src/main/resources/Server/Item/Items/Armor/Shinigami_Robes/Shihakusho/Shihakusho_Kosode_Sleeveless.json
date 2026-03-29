@@ -1,12 +1,11 @@
 {
   "TranslationProperties": {
-    "Name": "items.Shinigami_Robes_Sleeveless.name",
-    "Description": "items.Shinigami_Robes_Sleeveless.description"
+    "Name": "items.Shihakusho_Kosode_Sleeveless.name",
+    "Description": "items.Shihakusho_Kosode_Sleeveless.description"
   },
   "Parent": "Armor_Bronze_Chest",
   "Quality": "Rare",
   "ItemLevel": 15,
-  "Icon": "Icons/ItemsGenerated/Shihakusho_Kosode_Sleeveless.png",
   "IconProperties": {
     "Scale": 0.5,
     "Rotation": [
@@ -15,7 +14,7 @@
       22.5
     ],
     "Translation": [
-      7,
+      6,
       -59
     ]
   },
@@ -105,5 +104,6 @@
   "ItemSoundSetId": "ISS_Armor_Cloth",
   "Categories": [
     "BleachCategory.Armors"
-  ]
+  ],
+  "Icon": "Icons/ItemsGenerated/Shihakusho_Kosode_Sleeveless.png"
 }

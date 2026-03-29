@@ -6,6 +6,8 @@ Sealed_Benihime.name = Mühürlü - Benihime
 Sealed_Benihime.description = Mühürlü bir zanpakuto. Bu kılıç senin emrini bekliyor.
 Sealed_Hozukimaru.name = Mühürlü - Hozukimaru
 Sealed_Hozukimaru.description = Mühürlü bir zanpakuto. Onu savaşta tuttuğunda büyük bir heyecan hissedersin.
+Sealed_Senbonzakura.name = Mühürlü - Senbonzakura
+Sealed_Senbonzakura.description = Mühürlü bir zanpakuto. Zarif bir auraya sahip rafine bir kılıç.
 
 Bankai_Tensa_Zangetsu.name = Bankai – Tensa Zangetsu
 Bankai_Tensa_Zangetsu.description = Bankai – Tensa Zangetsu efsanevi bir ruhani kılıçtır. Zincirli siyah ağzı, taşıyıcının enerjisini odaklayarak yıkıcı <i><b>Getsuga Tenshō — «Gökleri Delen Ay Dişi»</b></i> dalgasını serbest bırakır.
@@ -23,6 +25,8 @@ Shikai_Wabisuke.name = Shikai – Wabisuke
 Shikai_Wabisuke.description = Dış inceliğinin tersine hain doğası olan zarif kıvrımlı kılıç. Vuruşu hedefe ağırlık laneti bindirir. Her savunma veya blokta kurbanın yükü acımasızca ikiye katlanır. Serbest bırakma: <i><b>«Eğil, Wabisuke»</b></i>.
 Shikai_Hozukimaru.name = Shikai – Hozukimaru
 Shikai_Hozukimaru.description = Sade ve doğrudan bir savaş mızrağı. Basit biçimi şiddetli yıkıcı güç ve dayanıklılık gizler. Bu silahta dönüşümün uyuyan potansiyeli yatar.
+Shikai_Senbonzakura.name = Shikai - Senbonzakura
+Shikai_Senbonzakura.description = Komut verildiğinde sayısız bıçak benzeri yaprağa ayrılan rafine bir Zanpakuto. <i><b>«Dağıl, Senbonzakura»</b></i> komutuyla silah, her biri çelik kadar keskin olan parıldayan parçacıklardan oluşan bir fırtınaya dönüşür. Bu yapraklar isteğe göre yönlendirilebilir, düşmanları amansız ve hassas saldırılarla ezer ve savaş alanını zarif bir yıkım diyarına çevirir.
 
 Kojaku_Bow.name = Quincy Yayı - Kojaku
 Kojaku_Bow.description = Tüm Quincy tarafından kullanılabilen temel yay. Sağ eldeki <i>Quincy Haçı</i>nda Reishi toplanarak oluşturulur. Saldığı oklar da Reishi'den yapılmıştır. Hollowları uzaktan saldırılarla yok etmeye olanak tanır. Aday Quincy'ler için erken oyun silahı.
@@ -33,14 +37,19 @@ Four_Point_Quincy_Cross.description = Quincy oyuncularının yeteneklerini ortay
 Soul_Imprinting_Altar.name = Ruh Damgalama Sunağı
 Soul_Imprinting_Altar.description = Taşıyıcının ruhunun Asauchi ile birleştiği kutsal çalışma yeri. Derin meditasyon ve ruhani enerji (Reiryoku) yoğunlaştırmasıyla gelecekteki Zanpakutō'nun temeli atılır. Bu sunak hem ilk uyanış hem de Shikai'dan nihai Bankai'ye evrim için kullanılır.
 
-Shinigami_Robes.name = Shinigami Cübbesi – Shihakushō
-Shinigami_Robes.description = Gotei 13'ün tüm üyeleri tarafından giyilen standart Shinigami üniforması.
-Shinigami_Robes_Sleeveless.name = Shinigami Cübbesi – Kolsuz
-Shinigami_Robes_Sleeveless.description = Daha fazla hareket özgürlüğü isteyenler için değiştirilmiş <i>Shihakushō</i>.
-Shinigami_Robes_Captain.name = Shinigami Cübbesi – Kaptan
-Shinigami_Robes_Captain.description = Kaptanların standart üniforma üzerine giydiği beyaz ceket. Üstün ruhani koruma sağlar ve Gotei 13'te en yüksek rütbeyi gösterir.
-Shinigami_Robes_OpenShoulder.name = Shinigami Elbisesi - Çıplak Omuz
-Shinigami_Robes_OpenShoulder.description = Kolsuz modelle aynı amaca hizmet eden, ancak daha zarif ve törensel bir görünüme sahip, değiştirilmiş bir <i>Shihakusho</i>.
+Shihakusho_Kosode.name = Shihakusho - Kosode
+Shihakusho_Kosode.description = Gotei 13'ün tüm üyeleri tarafından giyilen standart Shinigami üniformasının üst kısmı.
+Shihakusho_Kosode_Lieutenant.name = Shihakusho - Kosode (Teğmen)
+Shihakusho_Kosode_Lieutenant.description = Standart <i>Shihakusho</i>'nun üst parçası olup büyük prestiji temsil eden bir Teğmen rozeti taşır.
+Shihakusho_Kosode_Sleeveless.name = Shihakusho - Kosode (Kolsuz)
+Shihakusho_Kosode_Sleeveless.description = Daha fazla hareket özgürlüğü isteyenler için modifiye edilmiş bir <i>Shihakusho</i>. Daha çok standart üniformanın kozmetik bir değişikliği olarak kabul edilir.
+Shinigami_Robes_Captain.name = Kaptan Shihakusho
+Shinigami_Robes_Captain.description = Kaptanların standart üniformalarının üzerine giydiği beyaz ceket. Üstün ruhsal koruma sağlar ve Gotei 13 içindeki en yüksek rütbeyi simgeler.
+Shihakusho_Kosode_BareShoulder.name = Shihakusho - Kosode (Açık Omuzlu)
+Shihakusho_Kosode_BareShoulder.description = Kolsuz varyantla aynı amaca hizmet eden, ancak daha zarif ve törensel bir görünümü koruyan modifiye edilmiş bir <i>Shihakusho</i>.
+Shihakusho_Hakama.name = Shihakusho - Hakama
+Shihakusho_Hakama.description = Standart Shinigami üniforması olan <i>Shihakusho</i>'nun alt kısmını oluşturan giysi.
+
 
 Resonating_Reishi_Core.name = Rezonans Eden Reishi Çekirdeği
 Resonating_Reishi_Core.description = Bu çekirdek sizinkini taklit eden bir frekansta titreşir. Ruhunuzun bir uzantısıdır. Onu uyandırmak için bir bıçağa atanmaya hazır.
@@ -57,6 +66,8 @@ Benihime_Spirit_Fragment.name = Ruh Parçası - Benihime
 Benihime_Spirit_Fragment.description = Sessiz ama ölümcül bir zarafet taşıyan kızıl bir ruh parçası.\n<b>Tüketmek için sağ tıkla (Shikai kilidini aç)</b>
 Hozukimaru_Spirit_Fragment.name = Ruh Parçası - Hozukimaru
 Hozukimaru_Spirit_Fragment.description = Savaş ruhuyla dolup taşan bir parça.\n<b>Tüketmek için sağ tıkla (Shikai kilidini aç)</b>
+Senbonzakura_Spirit_Fragment.name = Ruh Parçası - Senbonzakura
+Senbonzakura_Spirit_Fragment.description = Hafif ama sakura yaprağından gelen enerjiyle dolu bir parça. Ölümcül bir aura hissedebilirsin.\n<b>Tüketmek için sağ tıkla (Shikai kilidini aç)</b>
 
 items.Currency_Kan.name = Kan
 items.Currency_Kan.description = Ruhlar Topluluğu'nun standart para birimi. Bir Kan, yaşayanlar dünyasında bir çuval pirincin değerini temsil eder. Ağırlığı ve sesi reishi frekansına ayarlı sayılır, sahtesi yapılamaz.

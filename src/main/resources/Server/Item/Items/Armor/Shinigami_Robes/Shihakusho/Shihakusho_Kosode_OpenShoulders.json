@@ -1,7 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Shihakusho - Kosode (Bare Shoulders)",
-    "Description": "items.Shinigami_Robes_OpenShoulder.description"
+    "Name": "items.Shihakusho_Kosode_BareShoulder.name",
+    "Description": "items.Shihakusho_Kosode_BareShoulder.description"
   },
   "Parent": "Armor_Bronze_Chest",
   "Quality": "Rare",

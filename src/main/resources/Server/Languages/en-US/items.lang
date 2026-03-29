@@ -6,6 +6,8 @@ Sealed_Benihime.name = Sealed - Benihime
 Sealed_Benihime.description = A sealed zanpakuto. This blade is waiting for your command.
 Sealed_Hozukimaru.name = Sealed - Hozukimaru
 Sealed_Hozukimaru.description = A sealed zanpakuto. When you hold it in battle you feel tremendous excitement.
+Sealed_Senbonzakura.name = Sealed - Senbonzakura
+Sealed_Senbonzakura.description = A sealed zanpakuto. A refined blade with a graceful aura.
 
 Bankai_Tensa_Zangetsu.name = Bankai – Tensa Zangetsu
 Bankai_Tensa_Zangetsu.description = Bankai – Tensa Zangetsu is a legendary spiritual blade. Its black edge with a chain focuses the wielder’s energy, releasing the devastating wave <i><b>Getsuga Tensho — «Moon Fang That Pierces the Heavens»</b></i>. 
@@ -33,7 +35,8 @@ True_Bankai_Tensa_Zangetsu.name = True Bankai – Tensa Zangetsu
 True_Bankai_Tensa_Zangetsu.description = The ultimate evolution of Ichigo's power. This form consolidates his dual blades into a single, immense black cleaver wrapped in stark white bandages. It represents the full convergence of his spiritual heritage, focusing overwhelming force into a singular, devastating edge.\n\n<b><color is="#9D3356">Its true power lies dormant, waiting to be unleashed in a future update</color></b>
 True_Shikai_Zangetsu.name = True Shikai – Zangetsu
 True_Shikai_Zangetsu.description = Ichigo's true Shikai, manifested as two distinct black blades. The massive cleaver embodies his fused Shinigami and Hollow powers, while the smaller knife represents his Quincy heritage. Release command: <i><b>«Unite and Protect, Zangetsu»</b></i>. The blades can fire\n<i>Getsuga Tensho</i> independently or combine them into a devastating cross-shaped wave, <i><b>Getsuga Jujisho</b></i>.\n\n<b><color is="#9D3356">Its true power lies dormant, waiting to be unleashed in a future update</color></b>
-
+Shikai_Senbonzakura.name = Shikai - Senbonzakura
+Shikai_Senbonzakura.description = A refined Zanpakuto that dissolves into countless blade-like petals upon command. With the command, <i><b>«Scatter, Senbonzakura»</b></i>, the weapon transforms into a storm of shimmering fragments, each one as sharp as steel. These petals can be guided at will, overwhelming enemies through relentless, precise strikes and turning the battlefield into a domain of elegant destruction.
 
 Kojaku_Bow.name = Quincy Bow - Kojaku
 Kojaku_Bow.description = The basic bow usable by all Quincy. It is formed by gathering Reishi in the <i>Quincy Cross</i> on the right hand. The arrows it releases are also made of Reishi. It can destroy Hollows with long-range attacks. An early-game weapon for aspiring Quincy.
@@ -44,14 +47,18 @@ Four_Point_Quincy_Cross.description = A four point quincy cross which helps Quin
 Soul_Imprinting_Altar.name = Soul Imprinting Altar
 Soul_Imprinting_Altar.description = A sacred workstation where the wielder's soul merges with the Asauchi. Through deep meditation and concentration of spiritual energy (Reiryoku), the foundation of the future Zanpakuto is laid. This altar is used not only for the initial awakening but also for the subsequent stages of the blade's evolution — from Shikai to the ultimate revelation, Bankai.
 
-Shinigami_Robes.name = Shinigami Robe – Shihakusho
-Shinigami_Robes.description = The standard Shinigami uniform worn by all members of the Gotei 13.
-Shinigami_Robes_Sleeveless.name = Shinigami Robe – Sleeveless
-Shinigami_Robes_Sleeveless.description = A modified <i>Shihakusho</i> for those who desire more liberty of movement. More considered a cosmetic modification to the standard uniform.
-Shinigami_Robes_Captain.name = Shinigami Robe – Captain
+Shihakusho_Kosode.name = Shihakusho - Kosode
+Shihakusho_Kosode.description = The top of the standard Shinigami uniform worn by all members of the Gotei 13.
+Shihakusho_Kosode_Lieutenant.name = Shihakusho - Kosode (Lieutenant)
+Shihakusho_Kosode_Lieutenant.description = The upper-body garment of the standard <i>Shihakusho</i> with a Lieutenant badge which represents great prestige.
+Shihakusho_Kosode_Sleeveless.name = Shihakusho - Kosode (Sleeveless) 
+Shihakusho_Kosode_Sleeveless.description = A modified <i>Shihakusho</i> for those who desire more liberty of movement. More considered a cosmetic modification to the standard uniform.
+Shinigami_Robes_Captain.name = Captain Shihakusho
 Shinigami_Robes_Captain.description = The white coat worn by Captains over their standard uniform. Provides superior spiritual protection and denotes highest rank in the Gotei 13.
-Shinigami_Robes_OpenShoulder.name = Shinigami Robe - Bare Shoulder
-Shinigami_Robes_OpenShoulder.description = A modified <i>Shihakusho</i> that serves the same purpose as the Sleeveless variant while maintaining a more elegant and ceremonial appearance.
+Shihakusho_Kosode_BareShoulder.name = Shihakusho - Kosode (Bare Shoulders)
+Shihakusho_Kosode_BareShoulder.description = A modified <i>Shihakusho</i> that serves the same purpose as the Sleeveless variant while maintaining a more elegant and ceremonial appearance.
+Shihakusho_Hakama.name = Shihakusho - Hakama
+Shihakusho_Hakama.description = The lower-body garment that is included with the standard Shinigami uniform <i>Shihakusho</i>.
 
 Resonating_Reishi_Core.name = Resonating Reishi Core
 Resonating_Reishi_Core.description = This core hums at a frequency that mimics yours. It's an extension of your soul. Ready to be assigned to a blade to awaken it.
@@ -68,6 +75,8 @@ Benihime_Spirit_Fragment.name = Spirit Fragment - Benihime
 Benihime_Spirit_Fragment.description = A crimson spirit fragment carrying a quiet but deadly elegance.\n<b>Right-Click to consume (unlock Shikai)</b>
 Hozukimaru_Spirit_Fragment.name = Spirit Fragment - Hozukimaru
 Hozukimaru_Spirit_Fragment.description = A fragment brimming with battle spirit.\n<b>Right-Click to consume (unlock Shikai)</b>
+Senbonzakura_Spirit_Fragment.name = Spirit Fragment - Senbonzakura
+Senbonzakura_Spirit_Fragment.description = A light but brimming fragment of a Sakura petal. You can notice a deadly aura.\n<b>Right-Click to consume (unlock Shikai)</b>
 
 
 items.Currency_Kan.name = Kan

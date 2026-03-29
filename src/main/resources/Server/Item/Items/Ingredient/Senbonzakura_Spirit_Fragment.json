@@ -1,7 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Spirit Fragment - Senbonzakura",
-    "Description": "items.Sode_no_Shirayuki_Spirit_Fragment.description"
+    "Name": "items.Senbonzakura_Spirit_Fragment.name",
+    "Description": "items.Senbonzakura_Spirit_Fragment.description"
   },
   "Icon": "Icons/ItemsGenerated/Senbonzakura_Spirit_Fragment.png",
   "Quality": "SpiritualResource",

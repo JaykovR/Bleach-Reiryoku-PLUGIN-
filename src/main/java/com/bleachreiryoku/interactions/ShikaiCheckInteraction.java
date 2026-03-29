@@ -22,6 +22,7 @@ import java.awt.*;
 
 import static com.hypixel.hytale.protocol.InteractionState.*;
 
+// This class checks if the player has X said Shikai.
 public class    ShikaiCheckInteraction extends SimpleInstantInteraction{
 
     public static final BuilderCodec<ShikaiCheckInteraction> CODEC =
@@ -31,6 +32,7 @@ public class    ShikaiCheckInteraction extends SimpleInstantInteraction{
 
     @Override
     protected void firstRun(@NonNullDecl InteractionType interactionType, @NonNullDecl InteractionContext context, @NonNullDecl CooldownHandler cooldownHandler) {
+        // References player, gets item in hand
         Ref<EntityStore> owningEntity = context.getOwningEntity();
         Store<EntityStore> store = owningEntity.getStore();
         CommandBuffer<EntityStore> commandBuffer = context.getCommandBuffer();
@@ -38,6 +40,7 @@ public class    ShikaiCheckInteraction extends SimpleInstantInteraction{
         int requiredAmount = 1;
 
 
+        // Prevention for errors
         Player player = store.getComponent(owningEntity, Player.getComponentType());
         if (player == null) return;
 
@@ -48,11 +51,14 @@ public class    ShikaiCheckInteraction extends SimpleInstantInteraction{
         var brType = playerStats.getComponentType();
         playerStats stats = store.getComponent(owningEntity, brType);
 
+        // We use the stats from the player, in this case if they have the boolean of the respective shikai on or off.
         if(stats == null){
             player.sendMessage(Message.raw("ERROR PLAYER STATS NULL"));
             return;
         }
 
+        // Checks if they have x said item but they dont have the shikai, then they get the Unable to transform message. PENDING TRANSLATION
+        // else (meaning if they have the shikai available) then the interaction succeeds. After that in game the player changes item to the Shikai Weapon
         if(heldItem.equals("Sealed_Benihime")){
             if (!stats.getShikaiBenihimeState()) {
                 player.sendMessage(Message.raw("You are unable to transform into Shikai yet."));

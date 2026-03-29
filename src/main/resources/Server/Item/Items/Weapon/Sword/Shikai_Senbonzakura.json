@@ -1,7 +1,8 @@
 {
   "Parent": "Shikai_Senbonzakura_Type",
   "TranslationProperties": {
-    "Name": "Shikai - Senbonzakura"
+    "Name": "items.Shikai_Senbonzakura.name",
+    "Description" : "items.Shikai_Senbonzakura.description"
   },
   "Model": "Items/Weapons/Senbonzakura/Senbonsakura_Active.blockymodel",
   "Texture": "Items/Weapons/Senbonzakura/Senbonzakura_ScatteredTexture.png",

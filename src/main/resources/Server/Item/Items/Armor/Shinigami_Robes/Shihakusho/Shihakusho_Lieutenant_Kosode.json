@@ -1,7 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Shihakusho - Kosode (Lieutenant)",
-    "Description": "items.Shinigami_Robes.description"
+    "Name": "items.Shihakusho_Kosode_Lieutenant.name",
+    "Description": "items.Shihakusho_Kosode_Lieutenant.description"
   },
   "Parent": "Armor_Bronze_Chest",
   "Quality": "Rare",
@@ -14,7 +14,7 @@
       22.5
     ],
     "Translation": [
-      5,
+      6,
       -59
     ]
   },
