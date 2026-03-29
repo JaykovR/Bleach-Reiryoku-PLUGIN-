@@ -1,0 +1,76 @@
+{
+  "TranslationProperties": {
+    "Name": "Spirit Fragment - Senbonzakura",
+    "Description": "items.Sode_no_Shirayuki_Spirit_Fragment.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Senbonzakura_Spirit_Fragment.png",
+  "Quality": "SpiritualResource",
+  "PlayerAnimationsId": "Item",
+  "IconProperties": {
+    "Scale": 0.6,
+    "Rotation": [
+      0,
+      0,
+      0
+    ],
+    "Translation": [
+      0,
+      -13
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Ingredient"
+    ]
+  },
+  "ItemEntity": {
+    "ParticleSystemId": null,
+    "ShowItemParticles": true
+  },
+  "Light": {
+    "Color": "#714",
+    "Radius": 1
+  },
+  "ItemSoundSetId": "ISS_Items_Gems",
+  "Particles": [
+    {
+      "SystemId": "Senbonzakura_Spirit_Fragment_PartSys"
+    }
+  ],
+  "Texture": "Resources/Ingredients/Essence_Textures/Ice_Essence_Texture.png",
+  "Model": "Resources/Ingredients/Essence.blockymodel",
+  "Scale": 0.02,
+  "Categories": [
+    "BleachCategory.Ingredients"
+  ],
+  "Interactions": {
+    "Secondary": "UnlockShikai"
+  },
+  "MaxStack": 1,
+  "Recipe": {
+    "TimeSeconds": 4.5,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Ice_Essence",
+        "Quantity": 15
+      },
+      {
+        "ItemId": "Resonating_Reishi_Core",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Bar_Silver",
+        "Quantity": 9
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Soul_Shikai"
+        ],
+        "Id": "Soul_Imprinting_Altar"
+      }
+    ]
+  }
+}

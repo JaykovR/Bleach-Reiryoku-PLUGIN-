@@ -1,0 +1,70 @@
+{
+  "Type": "Selector",
+  "Selector": {
+    "Id": "Raycast",
+    "Distance": 20,
+    "Offset": {
+      "Y": 1
+    },
+    "IgnoreEmptyCollisionMaterial": true,
+    "IgnoreFluids": true
+  },
+  "HitEntity": {
+    "Interactions": [
+      {
+        "Type": "ApplyEffect",
+        "Entity": "Target",
+        "EffectId": "Shuen_No_Mai"
+      },
+      {
+        "Type": "Repeat",
+        "ForkInteractions": {
+          "Interactions": [
+            {
+              "Type": "Simple",
+              "RunTime": 0.2
+            },
+            {
+              "Type": "Replace",
+              "DefaultOk": true,
+              "DefaultValue": {
+                "Interactions": [
+                  "Weapon_Sword_Primary_Swing_Down_Damage"
+                ]
+              },
+              "Var": "Swing_Down_Damage"
+            },
+            {
+              "Type": "ChangeStat",
+              "StatModifiers": {
+                "Senbonzakura_Scatter": 100
+              }
+            }
+          ]
+        },
+        "Repeat": 17
+      },
+      {
+        "Type": "Simple",
+        "Effects": {
+          "ClearAnimationOnFinish": true,
+          "ItemAnimationId": "ShuenNoMaiPoint"
+        }
+      }
+    ]
+  },
+  "Effects": {
+    "Particles": [
+      {
+        "SystemId": "Shuen_No_Mai_Select_Petals",
+        "TargetEntityPart": "Entity",
+        "Scale": 1,
+        "PositionOffset": {
+          "Y": 1.5,
+          "X": 0.5
+        }
+      }
+    ],
+    "ItemAnimationId": "ShuenNoMaiPoint"
+  }
+}

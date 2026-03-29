@@ -1,0 +1,75 @@
+{
+  "Type": "Serial",
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "Effects": {
+        "Particles": [
+          {
+            "SystemId": "Senbonzakura_Slash_Front",
+            "TargetEntityPart": "Entity",
+            "Scale": 1,
+            "PositionOffset": {
+              "Y": 1.5,
+              "X": 0.5
+            }
+          }
+        ],
+        "ItemAnimationId": "StabDashCharged"
+      }
+    },
+    {
+      "Type": "Repeat",
+      "Repeat": 3,
+      "ForkInteractions": {
+        "Interactions": [
+          {
+            "Type": "Selector",
+            "Selector": {
+              "Id": "Raycast",
+              "Distance": 20,
+              "Offset": {
+                "Y": 1
+              },
+              "IgnoreEmptyCollisionMaterial": true,
+              "IgnoreFluids": true
+            },
+            "HitEntity": {
+              "Interactions": [
+                {
+                  "Type": "Replace",
+                  "Var": "Thrust_Damage",
+                  "DefaultOk": true,
+                  "DefaultValue": {
+                    "Interactions": [
+                      "Weapon_Sword_Primary_Thrust_Damage"
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "Type": "Simple",
+            "RunTime": 0.05
+          }
+        ]
+      }
+    },
+    {
+      "Type": "ChangeStat",
+      "StatModifiers": {
+        "Mana": -5
+      }
+    },
+    {
+      "Type": "ApplyEffect",
+      "EffectId": "Ichisen_Cooldown"
+    },
+    {
+      "Type": "Simple",
+      "$Comment": "Padding",
+      "RunTime": 0.5
+    }
+  ]
+}

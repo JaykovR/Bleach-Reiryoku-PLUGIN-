@@ -108,6 +108,5 @@
   "SpawnRate": {
     "Min": 1,
     "Max": 1
-  },
-  "LightInfluence": 0.4
+  }
 }

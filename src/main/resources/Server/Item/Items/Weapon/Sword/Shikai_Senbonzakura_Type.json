@@ -6,7 +6,7 @@
   "Model": "Items/Weapons/Sword/Iron.blockymodel",
   "Texture": "Items/Weapons/Sword/Iron_Texture.png",
   "Icon": "Icons/ItemsGenerated/Weapon_Sword_Iron.png",
-  "PlayerAnimationsId": "Sword",
+  "PlayerAnimationsId": "Shikai_Senbonzakura_Animations",
   "Reticle": "DefaultMelee",
   "Quality": "Template",
   "ItemLevel": 15,
@@ -30,26 +30,9 @@
   },
   "Interactions": {
     "Primary": "Root_Shikai_Senbonzakura_Primary",
-    "Secondary": "Root_Weapon_Sword_Secondary_Guard",
-    "Ability1": "Root_Weapon_Sword_Signature_Vortexstrike",
-    "Ability2": {
-      "Interactions": [
-        {
-          "Type": "Simple",
-          "RunTime": 0.1,
-          "Effects": {
-            "Particles": [
-              {
-                "SystemId": "Senbonzakura_Slash_Left",
-                "PositionOffset": {
-                  "X": 1
-                }
-              }
-            ]
-          }
-        }
-      ]
-    },
+    "Secondary": "Root_Shikai_Senbonzakura_Secondary_Guard",
+    "Ability1": "Root_Shikai_Senbonzakura_Ability1",
+    "Ability2": "Root_Shikai_Senbonzakura_Ability2",
     "Ability3": {
       "Interactions": [
         {

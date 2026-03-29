@@ -1,0 +1,19 @@
+{
+  "Type": "Simple",
+  "RunTime": 0.2,
+  "Effects": {
+    "ItemAnimationId": "SpinSwingRight",
+    "WorldSoundEventId": "SFX_Sword_T2_Swing_Down",
+    "LocalSoundEventId": "SFX_Sword_T2_Swing_Down_Local"
+  },
+  "Next": {
+    "Type": "Replace",
+    "Var": "Swing_Down_Selector",
+    "DefaultOk": true,
+    "DefaultValue": {
+      "Interactions": [
+        "Shikai_Senbonzakura_Primary_Spin_Swing_Right_Selector"
+      ]
+    }
+  }
+}

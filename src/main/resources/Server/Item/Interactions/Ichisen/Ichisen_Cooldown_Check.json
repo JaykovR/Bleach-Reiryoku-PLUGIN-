@@ -1,0 +1,11 @@
+{
+  "Type": "EffectCondition",
+  "EntityEffectIds": [
+    "Ichisen_Cooldown"
+  ],
+  "Next": {
+    "Type": "SendMessage",
+    "Message": "This skill is on cooldown."
+  },
+  "Failed": "Shikai_Senbonzakura_Ichisen_Cost"
+}

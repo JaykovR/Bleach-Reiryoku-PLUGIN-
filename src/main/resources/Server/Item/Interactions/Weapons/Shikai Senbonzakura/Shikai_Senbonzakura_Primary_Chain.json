@@ -9,7 +9,7 @@
       "Var": "Swing_Left",
       "DefaultValue": {
         "Interactions": [
-          "Shikai_Senbonzakura_Primary_Slash_Left"
+          "Shikai_Senbonzakura_Primary_Swing_Up_Left"
         ]
       }
     },
@@ -19,7 +19,17 @@
       "Var": "Swing_Right",
       "DefaultValue": {
         "Interactions": [
-          "Shikai_Senbonzakura_Primary_Slash_RIght"
+          "Shikai_Senbonzakura_Primary_Swing_Right"
+        ]
+      }
+    },
+    {
+      "Type": "Replace",
+      "DefaultOk": true,
+      "Var": "Swing_Down",
+      "DefaultValue": {
+        "Interactions": [
+          "Shikai_Senbonzakura_Primary_Spin_Swing_Right"
         ]
       }
     }

@@ -1,0 +1,17 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Shuen_No_Mai_One_Effect",
+      "PositionOffset": {
+        "Y": 1
+      }
+    },
+    {
+      "PositionOffset": {
+        "Y": 1
+      },
+      "SpawnerId": "Shuen_No_Mai_One_Effect2"
+    }
+  ],
+  "IsImportant": false
+}

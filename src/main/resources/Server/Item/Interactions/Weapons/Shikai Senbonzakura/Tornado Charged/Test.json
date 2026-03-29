@@ -46,17 +46,13 @@
     {
       "Type": "ChangeStat",
       "StatModifiers": {
-        "Mana": -3
+        "Mana": -5
       }
     },
     {
       "Type": "Simple",
       "Effects": {
-        "ItemAnimationId": "CrushingRegretPose",
-        "ClearAnimationOnFinish": false,
-        "ClearSoundEventOnFinish": true,
-        "WaitForAnimationToFinish": false,
-        "ItemPlayerAnimationsId": "WabisukeAnimations"
+        "ItemAnimationId": "Tornado"
       },
       "RunTime": 0.1
     }

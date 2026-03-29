@@ -1,0 +1,28 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "Mana": 8
+  },
+  "Next": {
+    "Type": "ChangeStat",
+    "Behaviour": "Set",
+    "StatModifiers": {
+      "StaminaRegenDelay": -2
+    },
+    "Next": {
+      "Type": "Replace",
+      "Var": "Thrust",
+      "DefaultOk": true,
+      "DefaultValue": {
+        "Interactions": [
+          "Shikai_Senbonzakura_Ichisen_ScatterApply"
+        ]
+      }
+    }
+  },
+  "Failed": {
+    "Type": "SendMessage",
+    "Message": "Not enough MP Available."
+  },
+  "LessThan": false
+}

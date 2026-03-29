@@ -12,20 +12,15 @@
       {
         "Quantity": 3,
         "ResourceTypeId": "Rock"
-      },
-      {
-        "ItemId": "Reiryoku_Crystal",
-        "Quantity": 1
       }
     ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
         "Categories": [
-          "Workbench_Crafting"
+          "Tools"
         ],
-        "Id": "Workbench",
-        "RequiredTierLevel": 2
+        "Id": "Fieldcraft"
       }
     ]
   },
@@ -79,8 +74,12 @@
       "BenchUpgradeCompletedSoundEventId": "SFX_Workbench_Upgrade_Complete_Default",
       "Id": "Soul_Imprinting_Altar"
     },
+    "BlockEntity": {
+      "Components": {
+        "BenchBlock": {}
+      }
+    },
     "State": {
-      "Id": "crafting",
       "Definitions": {
         "CraftCompleted": {
           "CustomModelAnimation": "Blocks/Benches/Workbench_Crafting.blockyanim",
@@ -88,42 +87,6 @@
         },
         "CraftCompletedInstant": {
           "CustomModelAnimation": "Blocks/Benches/Workbench_Crafting.blockyanim"
-        },
-        "Tier2": {
-          "CustomModel": "Blocks/Benches/Workbench2.blockymodel",
-          "CustomModelTexture": [
-            {
-              "Texture": "Blocks/Benches/Workbench2_Texture.png",
-              "Weight": 1
-            }
-          ],
-          "HitboxType": "Bench_Workbench2",
-          "State": {
-            "Id": "crafting",
-            "Definitions": {
-              "CraftCompleted": {
-                "CustomModelAnimation": "Blocks/Benches/Workbench2_Crafting.blockyanim"
-              }
-            }
-          }
-        },
-        "Tier3": {
-          "CustomModel": "Blocks/Benches/Workbench3.blockymodel",
-          "CustomModelTexture": [
-            {
-              "Texture": "Blocks/Benches/Workbench3_Texture.png",
-              "Weight": 1
-            }
-          ],
-          "HitboxType": "Bench_Workbench3",
-          "State": {
-            "Id": "crafting",
-            "Definitions": {
-              "CraftCompleted": {
-                "CustomModelAnimation": "Blocks/Benches/Workbench3_Crafting.blockyanim"
-              }
-            }
-          }
         }
       }
     },
@@ -148,12 +111,12 @@
     "Scale": 0.42,
     "Rotation": [
       22.5,
-      45,
+      45.0,
       22.5
     ],
     "Translation": [
-      1,
-      -21
+      12.9,
+      -11.7
     ]
   },
   "Tags": {
@@ -162,5 +125,6 @@
     ]
   },
   "MaxStack": 1,
+  "ItemLevel": 1,
   "ItemSoundSetId": "ISS_Blocks_Wood"
 }

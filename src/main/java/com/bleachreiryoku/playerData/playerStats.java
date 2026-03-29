@@ -45,6 +45,11 @@ public class playerStats implements Component<EntityStore> {
                     (component, value) -> component.ShikaiBenihime = value,
                     component -> component.ShikaiBenihime
             ).add()
+            .append(
+                    new KeyedCodec<>("ShikaiSenbonzakura", Codec.BOOLEAN),
+                    (component, value) -> component.ShikaiSenbonzakura = value,
+                    component -> component.ShikaiSenbonzakura
+            ).add()
             .build();
 
 
@@ -56,34 +61,36 @@ public class playerStats implements Component<EntityStore> {
     public boolean ShikaiWabisuke = false;
     public boolean ShikaiSodeNoShirayuki = false;
     public boolean ShikaiBenihime = false;
+    public boolean ShikaiSenbonzakura = false;
 
 
 
     public playerStats(){}
 
     public playerStats(boolean shikaiHozukimaru, boolean shikaiWabisuke,
-                       boolean shikaiSodeNoShirayuki, boolean shikaiBenihime)
+                       boolean shikaiSodeNoShirayuki, boolean shikaiBenihime, boolean shikaiSenbonzakura)
     {
         this.ShikaiHozukimaru = shikaiHozukimaru;
         this.ShikaiWabisuke = shikaiWabisuke;
         this.ShikaiSodeNoShirayuki = shikaiSodeNoShirayuki;
         this.ShikaiBenihime = shikaiBenihime;
+        this.ShikaiSenbonzakura = shikaiSenbonzakura;
     }
 
     public void setActiveShikaiHozukimaru(){
         this.ShikaiHozukimaru = true;
     }
-
     public void setActiveShikaiWabisuke(){
         this.ShikaiWabisuke = true;
     }
-
     public void setActiveShikaiSodeNoShirayuki(){
         this.ShikaiSodeNoShirayuki = true;
     }
-
     public void setActiveShikaiBenihime(){
         this.ShikaiBenihime = true;
+    }
+    public void setActiveShikaiSenbonzakura() {
+        this.ShikaiSenbonzakura = true;
     }
 
     // sets all false at once.
@@ -92,6 +99,7 @@ public class playerStats implements Component<EntityStore> {
         this.ShikaiWabisuke = false;
         this.ShikaiSodeNoShirayuki = false;
         this.ShikaiBenihime = false;
+        this.ShikaiSenbonzakura = false;
     }
 
     public boolean getShikaiBenihimeState(){
@@ -107,6 +115,10 @@ public class playerStats implements Component<EntityStore> {
     public boolean getShikaiHozukimaruState(){
         return ShikaiHozukimaru;
     }
+    public boolean getShikaiSenbonzakuraState(){
+        return ShikaiSenbonzakura;
+    }
+
 
 //    public void setActiveShikai(){
 //        this.ActiveShikai = 1;
@@ -135,7 +147,7 @@ public class playerStats implements Component<EntityStore> {
     @NullableDecl
     @Override
     public playerStats clone() {
-        return new playerStats(this.ShikaiHozukimaru, this.ShikaiWabisuke, this.ShikaiSodeNoShirayuki, this.ShikaiBenihime);
+        return new playerStats(this.ShikaiHozukimaru, this.ShikaiWabisuke, this.ShikaiSodeNoShirayuki, this.ShikaiBenihime, this.ShikaiSenbonzakura);
     }
 
 

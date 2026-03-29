@@ -2,7 +2,7 @@
   "Duration": 1,
   "OverlapBehavior": "Overwrite",
   "ApplicationEffects": {
-    "EntityBottomTint": "#cd0101",
-    "EntityTopTint": "#d814b4"
-  }
+    "HorizontalSpeedMultiplier": 0.001
+  },
+  "Name": "Senbonzakura_Tornado_EntityEffect"
 }

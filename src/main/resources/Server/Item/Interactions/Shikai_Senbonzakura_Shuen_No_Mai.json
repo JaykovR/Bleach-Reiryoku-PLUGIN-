@@ -1,0 +1,15 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemAnimationId": "ShuenNoMaiBuildUp"
+  },
+  "Next": {
+    "Type": "ChangeStat",
+    "StatModifiers": {
+      "Senbonzakura_Scatter": 100
+    },
+    "ValueType": "Percent",
+    "Next": "Shikai_Senbonzakura_Shuen_No_Mai_Apply"
+  },
+  "RunTime": 1
+}

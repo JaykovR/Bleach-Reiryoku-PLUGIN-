@@ -6,5 +6,6 @@
     }
   ],
   "BoundingRadius": 10,
-  "IsImportant": false
+  "IsImportant": false,
+  "LifeSpan": 0.7
 }

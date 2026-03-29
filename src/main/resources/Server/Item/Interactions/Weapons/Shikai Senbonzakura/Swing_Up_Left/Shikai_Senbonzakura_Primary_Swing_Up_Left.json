@@ -1,0 +1,19 @@
+{
+  "Type": "Simple",
+  "RunTime": 0.117,
+  "Effects": {
+    "ItemAnimationId": "SwingUpLeft",
+    "WorldSoundEventId": "SFX_Sword_T2_Swing",
+    "LocalSoundEventId": "SFX_Sword_T2_Swing_RL_Local"
+  },
+  "Next": {
+    "Type": "Replace",
+    "Var": "Swing_Left_Selector",
+    "DefaultOk": true,
+    "DefaultValue": {
+      "Interactions": [
+        "Shikai_Senbonzakura_Primary_Swing_Up_Left_Selector"
+      ]
+    }
+  }
+}

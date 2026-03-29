@@ -1,0 +1,12 @@
+{
+  "ApplicationEffects": {
+    "EntityBottomTint": "#e6a9d1",
+    "EntityTopTint": "#e8e8e8",
+    "Particles": [
+      {
+        "SystemId": "Shuen_No_Mai_One"
+      }
+    ]
+  },
+  "Duration": 4
+}

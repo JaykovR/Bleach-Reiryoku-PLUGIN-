@@ -1,0 +1,81 @@
+{
+  "Particle": {
+    "Texture": "Particles/Senbonzakura_Petal.png",
+    "Animation": {
+      "0": {},
+      "100": {}
+    },
+    "InitialAnimationFrame": {
+      "Scale": {
+        "X": {
+          "Min": 0.2,
+          "Max": 0.25
+        }
+      },
+      "Rotation": {
+        "Z": {
+          "Min": -360,
+          "Max": 360
+        },
+        "Y": {
+          "Max": 20,
+          "Min": -20
+        },
+        "X": {
+          "Max": 20,
+          "Min": -20
+        }
+      }
+    }
+  },
+  "MaxConcurrentParticles": 700,
+  "SpawnRate": {
+    "Min": 700,
+    "Max": 700
+  },
+  "RenderMode": "Erosion",
+  "Attractors": [
+    {}
+  ],
+  "EmitOffset": {
+    "X": {
+      "Max": 0.4,
+      "Min": 0.4
+    },
+    "Y": {
+      "Min": 0.2,
+      "Max": 1
+    },
+    "Z": {
+      "Min": 0.1,
+      "Max": 0.3
+    }
+  },
+  "WaveDelay": {
+    "Min": 0.1,
+    "Max": 0.1
+  },
+  "TotalParticles": {
+    "Min": 400,
+    "Max": 700
+  },
+  "InitialVelocity": {
+    "Speed": {
+      "Max": -80
+    }
+  },
+  "Shape": "Sphere",
+  "ParticleRotationInfluence": "BillboardVelocity",
+  "TrailSpawnerRotationMultiplier": 0.504,
+  "ParticleCollision": {
+    "BlockType": "Solid",
+    "Action": "Expire"
+  },
+  "ParticleLifeSpan": {
+    "Min": 0.4,
+    "Max": 1
+  },
+  "ParticleRotateWithSpawner": true,
+  "SpawnBurst": true,
+  "LifeSpan": 1
+}

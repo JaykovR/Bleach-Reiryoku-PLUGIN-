@@ -1,0 +1,14 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Shuen_No_Mai_Select_Petals_Particle",
+      "PositionOffset": {
+        "Y": -0.5,
+        "X": -0.5
+      },
+      "RotationOffset": {
+        "Roll": -30
+      }
+    }
+  ]
+}

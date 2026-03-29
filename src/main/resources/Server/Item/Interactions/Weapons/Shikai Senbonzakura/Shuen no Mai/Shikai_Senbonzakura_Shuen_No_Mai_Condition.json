@@ -1,0 +1,29 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "SignatureEnergy": 100
+  },
+  "ValueType": "Percent",
+  "Next": {
+    "Type": "Serial",
+    "Interactions": [
+      {
+        "Type": "Replace",
+        "DefaultOk": true,
+        "DefaultValue": {
+          "Interactions": [
+            "Shikai_Senbonzakura_Shuen_No_Mai"
+          ]
+        },
+        "Var": "ShuenNoMai"
+      },
+      {
+        "Type": "ChangeStat",
+        "StatModifiers": {
+          "SignatureEnergy": -100
+        },
+        "ValueType": "Percent"
+      }
+    ]
+  }
+}

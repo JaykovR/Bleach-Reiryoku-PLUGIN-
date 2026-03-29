@@ -1,0 +1,6 @@
+{
+  "Type": "MovementCondition",
+  "Failed": "Shikai_Senbonzakura_Tornado_MPStaminaCondition",
+  "Forward": "Ichisen_Cooldown_Check",
+  "Back": "Ichisen_Cooldown_Check"
+}

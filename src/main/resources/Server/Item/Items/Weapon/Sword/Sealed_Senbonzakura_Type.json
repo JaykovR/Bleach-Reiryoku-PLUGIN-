@@ -35,12 +35,30 @@
     "Ability3": {
       "Interactions": [
         {
-          "Type": "ModifyInventory",
-          "ItemToRemove": {
-            "Id": "Sealed_Senbonzakura"
-          },
-          "ItemToAdd": {
-            "Id": "Shikai_Senbonzakura"
+          "Type": "ShikaiCheck",
+          "Next": {
+            "Type": "Simple",
+            "Effects": {
+              "ItemPlayerAnimationsId": "WabisukeAnimations",
+              "ItemAnimationId": "ShikaiActivation",
+              "Particles": [
+                {
+                  "SystemId": "Smoke_Black",
+                  "TargetEntityPart": "PrimaryItem"
+                }
+              ],
+              "LocalSoundEventId": "SFX_Shikai_Activation_Wabisuke"
+            },
+            "RunTime": 0.7,
+            "Next": {
+              "Type": "ModifyInventory",
+              "ItemToRemove": {
+                "Id": "Sealed_Senbonzakura"
+              },
+              "ItemToAdd": {
+                "Id": "Shikai_Senbonzakura"
+              }
+            }
           }
         }
       ]

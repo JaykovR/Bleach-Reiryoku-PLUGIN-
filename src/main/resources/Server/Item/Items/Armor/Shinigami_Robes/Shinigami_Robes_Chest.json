@@ -19,7 +19,7 @@
     ]
   },
   "Model": "Items/Armors/Shinigami_Robes/Shinigami_Robes.blockymodel",
-  "Texture": "Items/Armors/Shinigami_Robes/Shinigami_Robes_Ribbon_Texture.png",
+  "Texture": "Items/Armors/Shinigami_Robes/Shinigami_Robes_Texture.png",
   "Recipe": {
     "TimeSeconds": 2,
     "Input": [

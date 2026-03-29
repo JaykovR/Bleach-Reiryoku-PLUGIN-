@@ -72,9 +72,9 @@ public class UnlockShikaiInteraction extends SimpleInteraction {
         }
 
         if(heldItem.equals("SodeNoShirayuki_Spirit_Fragment")){
-            player.sendMessage(Message.raw("A chilling yet graceful energy flows through your soul. A calm voice whispers its name…"));
-            player.sendMessage(Message.raw("Sode no Shirayuki").bold(true).color(Color.WHITE).italic(true));
-            player.sendMessage(Message.raw("Trying pressing R while holding your Zanpakuto to utilize Shikai.").bold(true).color(Color.WHITE));
+           player.sendMessage(Message.translation("shikaiUnlockMessages.Sode_No_Shirayuki.unlock"));
+           player.sendMessage(Message.translation("shikaiUnlockMessages.Sode_No_Shirayuki2.unlock").bold(true).color(Color.WHITE).italic(true));
+           player.sendMessage(Message.translation("shikaiUnlockMessages.Usage_cue.unlock").bold(true).color(Color.WHITE));
             ItemStackSlotTransaction itemStackSlotTransaction = player.getInventory().getHotbar().removeItemStackFromSlot(context.getHeldItemSlot(),
                     requiredAmount, true, false);
             if(!itemStackSlotTransaction.succeeded()) return;
@@ -94,7 +94,18 @@ public class UnlockShikaiInteraction extends SimpleInteraction {
                 stats.setActiveShikaiHozukimaru();
             }
         }
-
+        //EDIT MESSAGE LATER
+        if(heldItem.equals("Senbonzakura_Spirit_Fragment")){
+            player.sendMessage(Message.raw("BLA BLA BLA…"));
+            player.sendMessage(Message.raw("SENBONZAKURA").bold(true).color(Color.RED).italic(true));
+            player.sendMessage(Message.raw("Trying pressing R while holding your Zanpakuto to utilize Shikai.").bold(true).color(Color.WHITE));
+            ItemStackSlotTransaction itemStackSlotTransaction = player.getInventory().getHotbar().removeItemStackFromSlot(context.getHeldItemSlot(),
+                    requiredAmount, true, false);
+            if(!itemStackSlotTransaction.succeeded()) return;
+            if (stats != null) {
+                stats.setActiveShikaiSenbonzakura();
+            }
+        }
 
         if(stats==null) return;
 

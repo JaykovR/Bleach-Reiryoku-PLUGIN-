@@ -1,0 +1,17 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Senbonzakura_Fragment_Petals",
+      "FixedRotation": true
+    },
+    {
+      "SpawnerId": "Memory_Catch_FlashSpark"
+    },
+    {
+      "SpawnerId": "Senbonzakura_Fragment_Core"
+    }
+  ],
+  "BoundingRadius": 2,
+  "CullDistance": 20,
+  "IsImportant": false
+}

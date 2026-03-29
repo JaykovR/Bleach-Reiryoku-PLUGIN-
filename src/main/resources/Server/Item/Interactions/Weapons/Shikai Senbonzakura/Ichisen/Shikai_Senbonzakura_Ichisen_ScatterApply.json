@@ -1,0 +1,7 @@
+{
+  "Type": "ChangeStat",
+  "StatModifiers": {
+    "Senbonzakura_Scatter": 5
+  },
+  "Next": "Shikai_Senbonzakura_Ichisen"
+}

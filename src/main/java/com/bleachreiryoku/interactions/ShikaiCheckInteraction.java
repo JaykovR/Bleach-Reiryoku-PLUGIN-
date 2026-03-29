@@ -100,6 +100,19 @@ public class    ShikaiCheckInteraction extends SimpleInstantInteraction{
                 return;
             }
         }
+
+        // TO DO
+        if(heldItem.equals("Sealed_Senbonzakura")){
+            if (!stats.getShikaiSenbonzakuraState()) {
+                player.sendMessage(Message.raw("You are unable to transform into Shikai yet."));
+                context.getState().state = InteractionState.Failed;
+                return;
+            } else {
+                player.sendMessage(Message.raw("Scatter, Senbonzakura.").bold(true).color(Color.pink).italic(true));
+                context.getState().state = Finished;
+                return;
+            }
+        }
         context.getState().state = Finished;
     }
 }

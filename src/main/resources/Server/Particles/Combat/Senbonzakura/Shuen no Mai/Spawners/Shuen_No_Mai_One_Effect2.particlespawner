@@ -1,0 +1,110 @@
+{
+  "RenderMode": "Erosion",
+  "EmitOffset": {
+    "X": {
+      "Min": 3,
+      "Max": 3
+    },
+    "Y": {
+      "Min": 3,
+      "Max": 3
+    },
+    "Z": {
+      "Min": 3,
+      "Max": 3
+    }
+  },
+  "ParticleRotationInfluence": "Billboard",
+  "LinearFiltering": true,
+  "LightInfluence": 0,
+  "MaxConcurrentParticles": 200,
+  "ParticleLifeSpan": {
+    "Min": 1.0,
+    "Max": 2.0
+  },
+  "ParticleRotateWithSpawner": false,
+  "TrailSpawnerPositionMultiplier": 1,
+  "TrailSpawnerRotationMultiplier": 1,
+  "SpawnRate": {
+    "Min": 200.0,
+    "Max": 300.0
+  },
+  "Attractors": [
+    {
+      "DampingMultiplier": {
+        "X": 0.3,
+        "Y": 0.3,
+        "Z": 0.3
+      }
+    }
+  ],
+  "Particle": {
+    "Texture": "Particles/Senbonzakura_Petal.png",
+    "ScaleRatioConstraint": "OneToOne",
+    "UVOption": "RandomFlipU",
+    "Animation": {
+      "0": {
+        "FrameIndex": {
+          "Min": 0,
+          "Max": 0
+        },
+        "Opacity": 0,
+        "Scale": {
+          "X": {
+            "Min": 1,
+            "Max": 1
+          },
+          "Y": {
+            "Min": 1,
+            "Max": 1
+          }
+        }
+      },
+      "10": {
+        "Opacity": 1
+      },
+      "100": {
+        "Opacity": 0,
+        "Scale": {
+          "X": {
+            "Min": 1,
+            "Max": 3
+          },
+          "Y": {
+            "Min": 1,
+            "Max": 3
+          }
+        }
+      }
+    },
+    "InitialAnimationFrame": {
+      "Scale": {
+        "X": {
+          "Min": 0.1,
+          "Max": 0.15
+        },
+        "Y": {
+          "Min": 0.1,
+          "Max": 0.1
+        }
+      },
+      "Opacity": 1.0,
+      "FrameIndex": {
+        "Min": 0,
+        "Max": 0
+      },
+      "Rotation": {
+        "Z": {
+          "Min": 0.0,
+          "Max": 180.0
+        }
+      }
+    }
+  },
+  "InitialVelocity": {
+    "Speed": {
+      "Min": 1.0,
+      "Max": 2.0
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Shikai_Senbonzakura_Slash_Cut",
+      "PositionOffset": {
+        "Z": 0.1
+      }
+    },
+    {
+      "SpawnerId": "Shikai_Senbonzakura_Slash_Petals"
+    }
+  ],
+  "IsImportant": false
+}

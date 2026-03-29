@@ -171,8 +171,6 @@
       ]
     }
   },
-  "MaxDurability": 570,
-  "DurabilityLossOnHit": 0.21,
   "PlayerAnimationsId": "TensaZangetsuAnimations",
   "UsePlayerAnimations": false,
   "Weapon": {

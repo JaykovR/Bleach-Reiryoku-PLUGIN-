@@ -2,14 +2,14 @@
   "Type": "Charging",
   "DisplayProgress": false,
   "Next": {
-    "0": "Weapon_Sword_Primary_Chain",
+    "0": "Shikai_Senbonzakura_Primary_Chain",
     "0.1": {
       "Type": "Replace",
       "Var": "Thrust_Stamina",
       "DefaultOk": true,
       "DefaultValue": {
         "Interactions": [
-          "Shikai_Senbonzakura_Tornado_MPStaminaCondition"
+          "Shikai_Senbonzakura_Primary_Thrust_StaminaCondition"
         ]
       }
     }
