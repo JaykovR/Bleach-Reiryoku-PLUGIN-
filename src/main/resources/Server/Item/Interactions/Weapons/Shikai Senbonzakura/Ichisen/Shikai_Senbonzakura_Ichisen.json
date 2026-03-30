@@ -38,11 +38,11 @@
               "Interactions": [
                 {
                   "Type": "Replace",
-                  "Var": "Thrust_Damage",
+                  "Var": "Ichisen_Damage",
                   "DefaultOk": true,
                   "DefaultValue": {
                     "Interactions": [
-                      "Weapon_Sword_Primary_Thrust_Damage"
+                      "Shikai_Senbonzakura_Ichisen_Damage"
                     ]
                   }
                 }

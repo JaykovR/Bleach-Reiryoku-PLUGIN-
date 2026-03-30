@@ -29,10 +29,10 @@
               "DefaultOk": true,
               "DefaultValue": {
                 "Interactions": [
-                  "Weapon_Sword_Primary_Swing_Down_Damage"
+                  "Shikai_Senbonzakura_Shuen_No_Mai_Damage"
                 ]
               },
-              "Var": "Swing_Down_Damage"
+              "Var": "Shuen_No_Mai_Damage"
             },
             {
               "Type": "ChangeStat",

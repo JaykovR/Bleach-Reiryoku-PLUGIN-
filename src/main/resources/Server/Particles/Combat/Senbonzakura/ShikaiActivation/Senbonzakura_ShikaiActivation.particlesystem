@@ -1,0 +1,8 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Senbonzakura_ShikaiActivation_Petals"
+    }
+  ],
+  "LifeSpan": 0.7
+}

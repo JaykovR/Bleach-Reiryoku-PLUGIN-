@@ -16,7 +16,7 @@
           "Parent": "Weapon_Sword_Primary_Swing_Left_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 10
+              "Physical": 15
             }
           },
           "DamageEffects": {
@@ -37,7 +37,7 @@
           "Parent": "Weapon_Sword_Primary_Swing_Right_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 10
+              "Physical": 22
             }
           },
           "DamageEffects": {
@@ -58,7 +58,7 @@
           "Parent": "Weapon_Sword_Primary_Swing_Down_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 18
+              "Physical": 29
             }
           },
           "DamageEffects": {
@@ -79,7 +79,7 @@
           "Parent": "Weapon_Sword_Primary_Thrust_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 26
+              "Physical": 34
             }
           },
           "EntityStatsOnHit": [
@@ -88,6 +88,67 @@
               "Amount": 3
             }
           ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Ichisen_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Shikai_Senbonzakura_Ichisen_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 19
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 1
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Tornado_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Shikai_Senbonzakura_Tornado_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 10
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 1
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Shuen_No_Mai_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Shikai_Senbonzakura_Shuen_No_Mai_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 9
+            }
+          },
+          "EntityStatsOnHit": [],
           "DamageEffects": {
             "WorldSoundEventId": "SFX_Sword_T2_Impact",
             "LocalSoundEventId": "SFX_Sword_T2_Impact"

@@ -75,6 +75,12 @@
           "Amount": 19,
           "CalculationType": "Additive"
         }
+      ],
+      "Mana": [
+        {
+          "CalculationType": "Additive",
+          "Amount": 10
+        }
       ]
     },
     "DamageClassEnhancement": {

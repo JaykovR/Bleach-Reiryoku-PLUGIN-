@@ -72,22 +72,22 @@
     "DamageResistance": {
       "Physical": [
         {
-          "Amount": 0.12,
+          "Amount": 0.13,
           "CalculationType": "Multiplicative"
         }
       ],
       "Projectile": [
         {
-          "Amount": 0.12,
+          "Amount": 0.13,
           "CalculationType": "Multiplicative"
         }
       ]
     },
     "DamageClassEnhancement": {
-      "Charged": [
+      "Signature": [
         {
           "CalculationType": "Multiplicative",
-          "Amount": 0.04
+          "Amount": 0.13
         }
       ]
     }

@@ -32,11 +32,11 @@
         "Interactions": [
           {
             "Type": "Replace",
-            "Var": "Swing_Down_Damage",
+            "Var": "Tornado_Damage",
             "DefaultOk": true,
             "DefaultValue": {
               "Interactions": [
-                "Weapon_Sword_Primary_Swing_Down_Damage"
+                "Shikai_Senbonzakura_Tornado_Damage"
               ]
             }
           }

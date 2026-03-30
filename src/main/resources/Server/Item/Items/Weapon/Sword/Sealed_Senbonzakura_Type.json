@@ -39,17 +39,17 @@
           "Next": {
             "Type": "Simple",
             "Effects": {
-              "ItemPlayerAnimationsId": "WabisukeAnimations",
+              "ItemPlayerAnimationsId": "Shikai_Senbonzakura_Animations",
               "ItemAnimationId": "ShikaiActivation",
               "Particles": [
                 {
-                  "SystemId": "Smoke_Black",
-                  "TargetEntityPart": "PrimaryItem"
+                  "SystemId": "Senbonzakura_ShikaiActivation",
+                  "TargetEntityPart": "Self",
+                  "TargetNodeName": "sori"
                 }
-              ],
-              "LocalSoundEventId": "SFX_Shikai_Activation_Wabisuke"
+              ]
             },
-            "RunTime": 0.7,
+            "RunTime": 1.5,
             "Next": {
               "Type": "ModifyInventory",
               "ItemToRemove": {

@@ -17,7 +17,7 @@
           "Yaw": 0
         },
         "TargetNodeName": "Handle",
-        "SystemId": "Sword_Charging"
+        "SystemId": "Shikai_Senbonzakura_Charging"
       }
     ]
   },
@@ -83,7 +83,7 @@
                 "DefaultOk": true,
                 "DefaultValue": {
                   "Interactions": [
-                    "Weapon_Sword_Primary_Thrust_Selector"
+                    "Shikai_Senbonzakura_Primary_Thrust_Selector"
                   ]
                 }
               }
