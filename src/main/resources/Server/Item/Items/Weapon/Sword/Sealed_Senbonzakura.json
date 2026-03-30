@@ -2,7 +2,7 @@
   "Parent": "Sealed_Senbonzakura_Type",
   "TranslationProperties": {
     "Name": "items.Sealed_Senbonzakura.name",
-    "Description" : "items.Sealed_Senbonzakura.description"
+    "Description": "items.Sealed_Senbonzakura.description"
   },
   "Model": "Items/Weapons/Senbonzakura/Senbonsakura_Normal.blockymodel",
   "Texture": "Items/Weapons/Senbonzakura/Senbonzakura_NormalTexture.png",
@@ -140,6 +140,40 @@
     "Translation": [
       -44,
       -43
+    ]
+  },
+  "Recipe": {
+    "TimeSeconds": 3.5,
+    "KnowledgeRequired": false,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Iron",
+        "Quantity": 12
+      },
+      {
+        "ItemId": "Ingredient_Leather_Light",
+        "Quantity": 3
+      },
+      {
+        "ItemId": "Ingredient_Fabric_Scrap_Linen",
+        "Quantity": 3
+      },
+      {
+        "ItemId": "Ingredient_Life_Essence",
+        "Quantity": 13
+      },
+      {
+        "ItemId": "Asauchi"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Weapon_Sword"
+        ],
+        "Id": "Weapon_Bench"
+      }
     ]
   }
 }
