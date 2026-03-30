@@ -20,7 +20,7 @@
     },
     {
       "Type": "Repeat",
-      "Repeat": 3,
+      "Repeat": 5,
       "ForkInteractions": {
         "Interactions": [
           {

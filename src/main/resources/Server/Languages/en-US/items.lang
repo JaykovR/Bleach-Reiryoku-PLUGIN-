@@ -78,6 +78,14 @@ Hozukimaru_Spirit_Fragment.description = A fragment brimming with battle spirit.
 Senbonzakura_Spirit_Fragment.name = Spirit Fragment - Senbonzakura
 Senbonzakura_Spirit_Fragment.description = A light but brimming fragment of a Sakura petal. You can notice a deadly aura.\n<b>Right-Click to consume (unlock Shikai)</b>
 
+Soulweave_Loom.name = Soulweave Loom
+Soulweave_Loom.description = A loom which is used to weave clothes infused with spiritual matter. Variations of it are widely used across the Soul Society and other places.
+Soulweave_Cloth_Bolt.name = Soulweave Cloth Bolt
+Soulweave_Cloth_Bolt.description = A bolt of black cloth infused with reishi which provides extra resistance.
+Purified_Soulweave_Cloth_Bolt.name = Purified Soulweave Cloth Bolt
+Purified_Soulweave_Cloth_Bolt.description = A pure bolt of white cloth infused with high quality reishi.
+
+
 
 items.Currency_Kan.name = Kan
 items.Currency_Kan.description = The standard currency of the Soul Society. A single Kan represents the value of one bale of rice in the world of the living. Its weight and ring are said to be tuned to the very frequency of reishi, making it impossible to counterfeit. To a merchant in the Rukongai, this coin is a fortune; to a captain, mere pocket change.

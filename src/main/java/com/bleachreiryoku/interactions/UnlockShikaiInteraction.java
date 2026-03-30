@@ -102,7 +102,7 @@ public class UnlockShikaiInteraction extends SimpleInteraction {
 
         if(heldItem.equals("Senbonzakura_Spirit_Fragment")){
             player.sendMessage(Message.translation("shikaiUnlockMessages.Senbonzakura.unlock"));
-            player.sendMessage(Message.translation("shikaiUnlockMessages.Senbonzakura2.unlock").bold(true).color(Color.RED).italic(true));
+            player.sendMessage(Message.translation("shikaiUnlockMessages.Senbonzakura2.unlock").bold(true).color(Color.pink).italic(true));
             player.sendMessage(Message.translation("shikaiUnlockMessages.Usage_cue.unlock").bold(true).color(Color.WHITE));
             ItemStackSlotTransaction itemStackSlotTransaction = player.getInventory().getHotbar().removeItemStackFromSlot(context.getHeldItemSlot(),
                     requiredAmount, true, false);

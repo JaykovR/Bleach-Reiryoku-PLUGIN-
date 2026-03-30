@@ -76,6 +76,13 @@ Hozukimaru_Spirit_Fragment.description = Un fragmento rebosante de espíritu de 
 Senbonzakura_Spirit_Fragment.name = Fragmento Espiritual - Senbonzakura
 Senbonzakura_Spirit_Fragment.description = Un fragmento ligero pero rebosante de un pétalo de sakura. Puedes notar un aura mortal.\n<b>Clic derecho para consumir (desbloquear Shikai)</b>
 
+Soulweave_Loom.name = Telar de Soulweave
+Soulweave_Loom.description = Un telar utilizado para tejer prendas infundidas con materia espiritual. Sus variantes se usan ampliamente en la Sociedad de Almas y otros lugares.
+Soulweave_Cloth_Bolt.name = Rollo de Tela Soulweave
+Soulweave_Cloth_Bolt.description = Un rollo de tela negra infundida con reishi que proporciona resistencia adicional.
+Purified_Soulweave_Cloth_Bolt.name = Rollo de Tela Soulweave Purificada
+Purified_Soulweave_Cloth_Bolt.description = Un rollo puro de tela blanca infundida con reishi de alta calidad.
+
 items.Currency_Kan.name = Kan
 items.Currency_Kan.description = La moneda estándar de la Sociedad de Almas. Un Kan representa el valor de un fardo de arroz en el mundo de los vivos. Su peso y sonido están sintonizados con la frecuencia del reishi, lo que hace imposible falsificarlo. Para un comerciante del Rukongai, esta moneda es una fortuna; para un capitán, simple calderilla.
 

@@ -22,32 +22,24 @@
   "Model": "Items/Armors/Hakama/Hakama.blockymodel",
   "Texture": "Items/Armors/Hakama/HakamaTexture.png",
   "Recipe": {
+    "TimeSeconds": 2,
     "Input": [
       {
-        "ItemId": "Ingredient_Bar_Adamantite",
-        "Quantity": 22
-      },
-      {
-        "ItemId": "Ingredient_Leather_Heavy",
-        "Quantity": 7
-      },
-      {
-        "ItemId": "Ingredient_Fabric_Scrap_Cindercloth",
-        "Quantity": 6
+        "Quantity": 3,
+        "ItemId": "Ingredient_Bolt_Soulweave_Cloth"
       }
     ],
     "BenchRequirement": [
       {
-        "Id": "Armor_Bench",
+        "Id": "Soulweave_Loom",
         "Type": "Crafting",
         "Categories": [
-          "Armor_Legs"
+          "Soulweave_Loom_Shihakusho"
         ],
-        "RequiredTierLevel": 3
+        "RequiredTierLevel": 1
       }
     ],
-    "KnowledgeRequired": false,
-    "TimeSeconds": 3
+    "KnowledgeRequired": false
   },
   "Armor": {
     "ArmorSlot": "Legs",
@@ -101,7 +93,7 @@
       "Adamantite"
     ]
   },
-  "ItemSoundSetId": "ISS_Armor_Heavy",
+  "ItemSoundSetId": "ISS_Armor_Cloth",
   "DurabilityLossOnHit": 0.5,
   "Categories": [
     "Items.Armors",

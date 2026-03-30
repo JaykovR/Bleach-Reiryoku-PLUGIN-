@@ -60,7 +60,7 @@
               }
             },
             "unwrapMode": "custom",
-            "visible": true,
+            "visible": false,
             "doubleSided": false,
             "shadingMode": "flat"
           },
@@ -87,7 +87,7 @@
                   }
                 },
                 "unwrapMode": "custom",
-                "visible": true,
+                "visible": false,
                 "doubleSided": true,
                 "shadingMode": "flat"
               },
@@ -115,7 +115,7 @@
                       }
                     },
                     "unwrapMode": "custom",
-                    "visible": true,
+                    "visible": false,
                     "doubleSided": true,
                     "shadingMode": "flat"
                   }
@@ -142,7 +142,7 @@
                       }
                     },
                     "unwrapMode": "custom",
-                    "visible": true,
+                    "visible": false,
                     "doubleSided": true,
                     "shadingMode": "flat"
                   },
@@ -170,7 +170,7 @@
                           }
                         },
                         "unwrapMode": "custom",
-                        "visible": true,
+                        "visible": false,
                         "doubleSided": true,
                         "shadingMode": "flat"
                       }
@@ -197,7 +197,7 @@
                           }
                         },
                         "unwrapMode": "custom",
-                        "visible": true,
+                        "visible": false,
                         "doubleSided": true,
                         "shadingMode": "flat"
                       }
@@ -224,7 +224,7 @@
                           }
                         },
                         "unwrapMode": "custom",
-                        "visible": true,
+                        "visible": false,
                         "doubleSided": true,
                         "shadingMode": "flat"
                       }
@@ -253,7 +253,7 @@
                       }
                     },
                     "unwrapMode": "custom",
-                    "visible": true,
+                    "visible": false,
                     "doubleSided": true,
                     "shadingMode": "flat"
                   }
@@ -280,7 +280,7 @@
                       }
                     },
                     "unwrapMode": "custom",
-                    "visible": true,
+                    "visible": false,
                     "doubleSided": true,
                     "shadingMode": "flat"
                   }
@@ -309,7 +309,7 @@
                   }
                 },
                 "unwrapMode": "custom",
-                "visible": true,
+                "visible": false,
                 "doubleSided": true,
                 "shadingMode": "flat"
               },
@@ -336,7 +336,7 @@
                       }
                     },
                     "unwrapMode": "custom",
-                    "visible": true,
+                    "visible": false,
                     "doubleSided": true,
                     "shadingMode": "flat"
                   }
@@ -364,7 +364,7 @@
                   }
                 },
                 "unwrapMode": "custom",
-                "visible": true,
+                "visible": false,
                 "doubleSided": true,
                 "shadingMode": "flat"
               },
@@ -391,7 +391,7 @@
                       }
                     },
                     "unwrapMode": "custom",
-                    "visible": true,
+                    "visible": false,
                     "doubleSided": true,
                     "shadingMode": "flat"
                   }
@@ -417,7 +417,7 @@
                       }
                     },
                     "unwrapMode": "custom",
-                    "visible": true,
+                    "visible": false,
                     "doubleSided": true,
                     "shadingMode": "flat"
                   },
@@ -444,7 +444,7 @@
                           }
                         },
                         "unwrapMode": "custom",
-                        "visible": true,
+                        "visible": false,
                         "doubleSided": true,
                         "shadingMode": "flat"
                       }
@@ -471,7 +471,7 @@
                           }
                         },
                         "unwrapMode": "custom",
-                        "visible": true,
+                        "visible": false,
                         "doubleSided": true,
                         "shadingMode": "flat"
                       }
@@ -498,7 +498,7 @@
                           }
                         },
                         "unwrapMode": "custom",
-                        "visible": true,
+                        "visible": false,
                         "doubleSided": true,
                         "shadingMode": "flat"
                       },
@@ -526,7 +526,7 @@
                               }
                             },
                             "unwrapMode": "custom",
-                            "visible": true,
+                            "visible": false,
                             "doubleSided": true,
                             "shadingMode": "flat"
                           }
@@ -557,7 +557,7 @@
                       }
                     },
                     "unwrapMode": "custom",
-                    "visible": true,
+                    "visible": false,
                     "doubleSided": true,
                     "shadingMode": "flat"
                   }
@@ -584,7 +584,7 @@
                       }
                     },
                     "unwrapMode": "custom",
-                    "visible": true,
+                    "visible": false,
                     "doubleSided": true,
                     "shadingMode": "flat"
                   },
@@ -612,7 +612,7 @@
                           }
                         },
                         "unwrapMode": "custom",
-                        "visible": true,
+                        "visible": false,
                         "doubleSided": true,
                         "shadingMode": "flat"
                       }
@@ -642,7 +642,7 @@
                   }
                 },
                 "unwrapMode": "custom",
-                "visible": true,
+                "visible": false,
                 "doubleSided": true,
                 "shadingMode": "flat"
               },
@@ -669,7 +669,7 @@
                       }
                     },
                     "unwrapMode": "custom",
-                    "visible": true,
+                    "visible": false,
                     "doubleSided": true,
                     "shadingMode": "flat"
                   }
@@ -695,7 +695,7 @@
                       }
                     },
                     "unwrapMode": "custom",
-                    "visible": true,
+                    "visible": false,
                     "doubleSided": true,
                     "shadingMode": "flat"
                   },
@@ -722,7 +722,7 @@
                           }
                         },
                         "unwrapMode": "custom",
-                        "visible": true,
+                        "visible": false,
                         "doubleSided": true,
                         "shadingMode": "flat"
                       }
@@ -749,7 +749,7 @@
                           }
                         },
                         "unwrapMode": "custom",
-                        "visible": true,
+                        "visible": false,
                         "doubleSided": true,
                         "shadingMode": "flat"
                       }
@@ -776,7 +776,7 @@
                           }
                         },
                         "unwrapMode": "custom",
-                        "visible": true,
+                        "visible": false,
                         "doubleSided": true,
                         "shadingMode": "flat"
                       },
@@ -804,7 +804,7 @@
                               }
                             },
                             "unwrapMode": "custom",
-                            "visible": true,
+                            "visible": false,
                             "doubleSided": true,
                             "shadingMode": "flat"
                           }
@@ -835,7 +835,7 @@
                       }
                     },
                     "unwrapMode": "custom",
-                    "visible": true,
+                    "visible": false,
                     "doubleSided": true,
                     "shadingMode": "flat"
                   }
@@ -857,12 +857,12 @@
                     "textureLayout": {
                       "front": {
                         "offset": {"x": 18, "y": 75},
-                        "mirror": {"x": true, "y": false},
+                        "mirror": {"x": false, "y": false},
                         "angle": 0
                       }
                     },
                     "unwrapMode": "custom",
-                    "visible": true,
+                    "visible": false,
                     "doubleSided": true,
                     "shadingMode": "flat"
                   },
@@ -890,7 +890,7 @@
                           }
                         },
                         "unwrapMode": "custom",
-                        "visible": true,
+                        "visible": false,
                         "doubleSided": true,
                         "shadingMode": "flat"
                       }
@@ -918,7 +918,7 @@
                           }
                         },
                         "unwrapMode": "custom",
-                        "visible": true,
+                        "visible": false,
                         "doubleSided": true,
                         "shadingMode": "flat"
                       }
@@ -962,7 +962,7 @@
                 },
                 "textureLayout": {},
                 "unwrapMode": "custom",
-                "visible": true,
+                "visible": false,
                 "doubleSided": false,
                 "shadingMode": "flat"
               },
@@ -1013,7 +1013,7 @@
                       }
                     },
                     "unwrapMode": "custom",
-                    "visible": true,
+                    "visible": false,
                     "doubleSided": true,
                     "shadingMode": "flat"
                   }
@@ -1032,7 +1032,7 @@
                     },
                     "textureLayout": {},
                     "unwrapMode": "custom",
-                    "visible": true,
+                    "visible": false,
                     "doubleSided": false,
                     "shadingMode": "flat"
                   },
@@ -1073,8 +1073,8 @@
                           },
                           "top": {
                             "offset": {"x": 119, "y": 30},
-                            "mirror": {"x": true, "y": true},
-                            "angle": 270
+                            "mirror": {"x": false, "y": false},
+                            "angle": 90
                           },
                           "bottom": {
                             "offset": {"x": 83, "y": 1},
@@ -1083,7 +1083,7 @@
                           }
                         },
                         "unwrapMode": "custom",
-                        "visible": true,
+                        "visible": false,
                         "doubleSided": false,
                         "shadingMode": "flat"
                       },
@@ -1102,7 +1102,7 @@
                             },
                             "textureLayout": {},
                             "unwrapMode": "custom",
-                            "visible": true,
+                            "visible": false,
                             "doubleSided": false,
                             "shadingMode": "flat"
                           },
@@ -1153,7 +1153,7 @@
                                   }
                                 },
                                 "unwrapMode": "custom",
-                                "visible": true,
+                                "visible": false,
                                 "doubleSided": false,
                                 "shadingMode": "flat"
                               },
@@ -1194,17 +1194,17 @@
                                       },
                                       "top": {
                                         "offset": {"x": 120, "y": 62},
-                                        "mirror": {"x": true, "y": true},
-                                        "angle": 270
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 90
                                       },
                                       "bottom": {
                                         "offset": {"x": 120, "y": 62},
-                                        "mirror": {"x": true, "y": true},
-                                        "angle": 270
+                                        "mirror": {"x": false, "y": false},
+                                        "angle": 90
                                       }
                                     },
                                     "unwrapMode": "custom",
-                                    "visible": true,
+                                    "visible": false,
                                     "doubleSided": false,
                                     "shadingMode": "flat"
                                   }
@@ -1231,7 +1231,7 @@
                     },
                     "textureLayout": {},
                     "unwrapMode": "custom",
-                    "visible": true,
+                    "visible": false,
                     "doubleSided": false,
                     "shadingMode": "flat"
                   },
@@ -1250,7 +1250,7 @@
                         },
                         "textureLayout": {},
                         "unwrapMode": "custom",
-                        "visible": true,
+                        "visible": false,
                         "doubleSided": false,
                         "shadingMode": "flat"
                       },
@@ -1301,7 +1301,7 @@
                               }
                             },
                             "unwrapMode": "custom",
-                            "visible": true,
+                            "visible": false,
                             "doubleSided": false,
                             "shadingMode": "flat"
                           },
@@ -1342,17 +1342,17 @@
                                   },
                                   "top": {
                                     "offset": {"x": 120, "y": 62},
-                                    "mirror": {"x": true, "y": true},
-                                    "angle": 270
+                                    "mirror": {"x": false, "y": false},
+                                    "angle": 90
                                   },
                                   "bottom": {
                                     "offset": {"x": 120, "y": 62},
-                                    "mirror": {"x": true, "y": true},
-                                    "angle": 270
+                                    "mirror": {"x": false, "y": false},
+                                    "angle": 90
                                   }
                                 },
                                 "unwrapMode": "custom",
-                                "visible": true,
+                                "visible": false,
                                 "doubleSided": false,
                                 "shadingMode": "flat"
                               }
@@ -1397,8 +1397,8 @@
                           },
                           "top": {
                             "offset": {"x": 118, "y": 29},
-                            "mirror": {"x": true, "y": true},
-                            "angle": 270
+                            "mirror": {"x": false, "y": false},
+                            "angle": 90
                           },
                           "bottom": {
                             "offset": {"x": 83, "y": 1},
@@ -1407,7 +1407,7 @@
                           }
                         },
                         "unwrapMode": "custom",
-                        "visible": true,
+                        "visible": false,
                         "doubleSided": false,
                         "shadingMode": "flat"
                       },
@@ -1426,7 +1426,7 @@
                             },
                             "textureLayout": {},
                             "unwrapMode": "custom",
-                            "visible": true,
+                            "visible": false,
                             "doubleSided": false,
                             "shadingMode": "flat"
                           }

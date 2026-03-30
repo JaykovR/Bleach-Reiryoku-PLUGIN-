@@ -7,43 +7,39 @@
   "Quality": "Epic",
   "ItemLevel": 15,
   "IconProperties": {
-    "Scale": 0.3,
+    "Scale": 0.35,
     "Rotation": [
-      23,
+      20,
       38,
       22.5
     ],
     "Translation": [
-      3,
-      -48
+      7,
+      -44
     ]
   },
-  "Model": "Items/Armors/Shinigami_Robes_Captain/Shinigami_Robes_Captain.blockymodel",
-  "Texture": "Items/Armors/Shinigami_Robes_Captain/Shinigami_Robes_Captain_Texture.png",
+  "Model": "Items/Armors/Shinigami_Robes_Captain/CapitanShihakusho.blockymodel",
+  "Texture": "Items/Armors/Shinigami_Robes_Captain/CapitanTexture.png",
   "Recipe": {
-    "TimeSeconds": 3,
+    "TimeSeconds": 2,
     "Input": [
       {
-        "Quantity": 5,
-        "ItemId": "Reiryoku_Crystal"
+        "Quantity": 2,
+        "ItemId": "Ingredient_Bolt_Soulweave_Cloth"
       },
       {
-        "ItemId": "Ingredient_Bolt_Wool",
-        "Quantity": 20
-      },
-      {
-        "ItemId": "Ingredient_Fabric_Scrap_Shadoweave",
-        "Quantity": 20
+        "ItemId": "Ingredient_Bolt_Purified_Soulweave_Cloth",
+        "Quantity": 5
       }
     ],
     "BenchRequirement": [
       {
-        "Id": "Armor_Bench",
+        "Id": "Soulweave_Loom",
         "Type": "Crafting",
         "Categories": [
-          "Armor_Chest"
+          "Soulweave_Loom_Shihakusho"
         ],
-        "RequiredTierLevel": 3
+        "RequiredTierLevel": 1
       }
     ],
     "KnowledgeRequired": false

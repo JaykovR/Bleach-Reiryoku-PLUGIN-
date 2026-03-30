@@ -25,25 +25,21 @@
     "Input": [
       {
         "Quantity": 2,
-        "ItemId": "Reiryoku_Crystal"
+        "ItemId": "Ingredient_Bolt_Soulweave_Cloth"
       },
       {
-        "ItemId": "Ingredient_Bolt_Wool",
-        "Quantity": 8
-      },
-      {
-        "ItemId": "Ingredient_Fabric_Scrap_Shadoweave",
-        "Quantity": 20
+        "ItemId": "Ingredient_Bolt_Purified_Soulweave_Cloth",
+        "Quantity": 1
       }
     ],
     "BenchRequirement": [
       {
-        "Id": "Armor_Bench",
+        "Id": "Soulweave_Loom",
         "Type": "Crafting",
         "Categories": [
-          "Armor_Chest"
+          "Soulweave_Loom_Shihakusho"
         ],
-        "RequiredTierLevel": 2
+        "RequiredTierLevel": 1
       }
     ],
     "KnowledgeRequired": false

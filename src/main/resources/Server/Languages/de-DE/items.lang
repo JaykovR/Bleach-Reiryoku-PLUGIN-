@@ -77,6 +77,13 @@ Hozukimaru_Spirit_Fragment.description = Ein Fragment, das vor Kampfgeist überq
 Senbonzakura_Spirit_Fragment.name = Seelenfragment - Senbonzakura
 Senbonzakura_Spirit_Fragment.description = Ein leichtes, aber von Energie erfülltes Fragment eines Sakura-Blütenblatts. Du kannst eine tödliche Aura spüren.\n<b>Rechtsklick zum Verbrauchen (Shikai freischalten)</b>
 
+Soulweave_Loom.name = Soulweave-Webstuhl
+Soulweave_Loom.description = Ein Webstuhl, der verwendet wird, um Kleidung zu weben, die mit spiritueller Materie durchzogen ist. Varianten davon werden in der Soul Society und anderen Orten weit verbreitet genutzt.
+Soulweave_Cloth_Bolt.name = Soulweave-Stoffrolle
+Soulweave_Cloth_Bolt.description = Eine Rolle schwarzen Stoffes, durchzogen mit Reishi, die zusätzlichen Widerstand bietet.
+Purified_Soulweave_Cloth_Bolt.name = Gereinigte Soulweave-Stoffrolle
+Purified_Soulweave_Cloth_Bolt.description = Eine reine Rolle weißen Stoffes, durchzogen mit hochwertigem Reishi.
+
 items.Currency_Kan.name = Kan
 items.Currency_Kan.description = Die Standardwährung der Seelengesellschaft. Ein Kan entspricht dem Wert eines Reissäcks in der Welt der Lebenden. Gewicht und Klang sollen auf die Frequenz des Reishi abgestimmt sein, was Fälschung unmöglich macht. Für einen Händler im Rukongai ist diese Münze ein Vermögen; für einen Kapitän bloß Kleingeld.
 

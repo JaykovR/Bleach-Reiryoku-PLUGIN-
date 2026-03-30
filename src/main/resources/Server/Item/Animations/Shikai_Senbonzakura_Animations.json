@@ -455,11 +455,13 @@
       "ThirdPerson": "Characters/Animations/Items/Shikai_Senbonzakura/ShuenNoMaiPoint.blockyanim",
       "FirstPerson": "Characters/Animations/Items/Shikai_Senbonzakura/ShuenNoMaiPoint_FPS.blockyanim",
       "Looping": true,
-      "BlendingDuration": 0
+      "BlendingDuration": 0,
+      "ThirdPersonMoving": "Characters/Animations/Items/Shikai_Senbonzakura/ShuenNoMaiPoint_Moving.blockyanim"
     },
     "ShuenNoMaiBuildUp": {
       "ThirdPerson": "Characters/Animations/Items/Shikai_Senbonzakura/ShuenNoMaiPoint_BuildUp.blockyanim",
-      "FirstPerson": "Characters/Animations/Items/Shikai_Senbonzakura/ShuenNoMaiPoint_BuildUp_FPS.blockyanim"
+      "FirstPerson": "Characters/Animations/Items/Shikai_Senbonzakura/ShuenNoMaiPoint_BuildUp_FPS.blockyanim",
+      "ThirdPersonMoving": "Characters/Animations/Items/Shikai_Senbonzakura/ShuenNoMaiPoint_BuildUp_Moving.blockyanim"
     },
     "ShikaiActivation": {
       "ThirdPerson": "Characters/Animations/Items/Shikai_Senbonzakura/Shikai_Senbonzakura.blockyanim",

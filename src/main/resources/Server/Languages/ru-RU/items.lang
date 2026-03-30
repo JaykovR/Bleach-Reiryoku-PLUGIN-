@@ -79,6 +79,13 @@ Hozukimaru_Spirit_Fragment.description = Фрагмент, переполнен�
 Senbonzakura_Spirit_Fragment.name = Фрагмент духа — Senbonzakura
 Senbonzakura_Spirit_Fragment.description = Лёгкий, но наполненный энергией фрагмент лепестка сакуры. Ты можешь почувствовать смертельную ауру.\n<b>Щёлкните правой кнопкой, чтобы использовать (разблокировать Шикай)</b>
 
+Soulweave_Loom.name = Ткацкий станок Soulweave
+Soulweave_Loom.description = Станок, используемый для создания одежды, пропитанной духовной материей. Его вариации широко используются в Сообществе душ и других местах.
+Soulweave_Cloth_Bolt.name = Рулон ткани Soulweave
+Soulweave_Cloth_Bolt.description = Рулон чёрной ткани, пропитанной рейси, обеспечивающей дополнительную защиту.
+Purified_Soulweave_Cloth_Bolt.name = Очищенный рулон ткани Soulweave
+Purified_Soulweave_Cloth_Bolt.description = Чистый рулон белой ткани, пропитанной высококачественным рейси.
+
 items.Currency_Kan.name = Кан
 items.Currency_Kan.description = Стандартная валюта Общества Душ. Один Кан представляет собой стоимость одного тюка риса в мире живых. Говорят, её вес и звон настроены на саму частоту рейси, что делает подделку невозможной. Для торговца в Руконгай эта монета — целое состояние; для капитана — просто мелочь для размена.
 

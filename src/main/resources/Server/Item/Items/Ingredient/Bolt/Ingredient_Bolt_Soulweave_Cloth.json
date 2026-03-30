@@ -1,0 +1,65 @@
+{
+  "TranslationProperties": {
+    "Name": "items.Soulweave_Cloth_Bolt.name",
+    "Description": "items.Soulweave_Cloth_Bolt.description"
+  },
+  "Categories": [
+    "Items.Ingredients",
+    "BleachCategory.Ingredients"
+  ],
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Fabric_Scrap_Shadoweave",
+        "Quantity": 15
+      },
+      {
+        "ItemId": "Ingredient_Life_Essence",
+        "Quantity": 20
+      },
+      {
+        "ItemId": "Ingredient_Void_Essence",
+        "Quantity": 15
+      }
+    ],
+    "OutputQuantity": 1,
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Soulweave_Loom",
+        "Categories": [
+          "Soulweave_Loom_Materials"
+        ]
+      }
+    ],
+    "TimeSeconds": 3
+  },
+  "Model": "Resources/Materials/Cotton_Bolt.blockymodel",
+  "Texture": "Resources/Materials/Cotton_Bolt_Textures/Black.png",
+  "Quality": "SpiritualResource",
+  "ItemLevel": 10,
+  "PlayerAnimationsId": "Item",
+  "IconProperties": {
+    "Scale": 0.65,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      2,
+      -3
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Ingredient_Bolt_Soulweave_Cloth.png",
+  "Tags": {
+    "Type": [
+      "Ingredient"
+    ]
+  },
+  "ItemEntity": {
+    "ParticleSystemId": null
+  },
+  "ItemSoundSetId": "ISS_Items_Cloth",
+  "DropOnDeath": true
+}

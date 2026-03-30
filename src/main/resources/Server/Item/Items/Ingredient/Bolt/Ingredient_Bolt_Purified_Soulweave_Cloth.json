@@ -1,0 +1,61 @@
+{
+  "TranslationProperties": {
+    "Name": "items.Purified_Soulweave_Cloth_Bolt.name",
+    "Description": "items.Purified_Soulweave_Cloth_Bolt.description"
+  },
+  "Categories": [
+    "Items.Ingredients",
+    "BleachCategory.Ingredients"
+  ],
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bolt_Wool",
+        "Quantity": 15
+      },
+      {
+        "ItemId": "Reiryoku_Crystal",
+        "Quantity": 1
+      }
+    ],
+    "OutputQuantity": 1,
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Soulweave_Loom",
+        "Categories": [
+          "Soulweave_Loom_Materials"
+        ]
+      }
+    ],
+    "TimeSeconds": 5
+  },
+  "Model": "Resources/Materials/Cotton_Bolt.blockymodel",
+  "Texture": "Resources/Materials/Cotton_Bolt_Textures/White.png",
+  "Quality": "SpiritualResource",
+  "ItemLevel": 10,
+  "PlayerAnimationsId": "Item",
+  "IconProperties": {
+    "Scale": 0.65,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      2,
+      -3
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Ingredient_Bolt_Purified_Soulweave_Cloth.png",
+  "Tags": {
+    "Type": [
+      "Ingredient"
+    ]
+  },
+  "ItemEntity": {
+    "ParticleSystemId": null
+  },
+  "ItemSoundSetId": "ISS_Items_Cloth",
+  "DropOnDeath": true
+}

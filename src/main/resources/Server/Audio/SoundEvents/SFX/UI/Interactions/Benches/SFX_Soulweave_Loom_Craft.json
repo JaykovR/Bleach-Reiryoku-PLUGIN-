@@ -1,0 +1,11 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Blocks/Benches/Soulweave_Loom_Craft.ogg"
+      ]
+    }
+  ],
+  "Volume": -7.979400086720375,
+  "Parent": "SFX_Attn_Quiet"
+}

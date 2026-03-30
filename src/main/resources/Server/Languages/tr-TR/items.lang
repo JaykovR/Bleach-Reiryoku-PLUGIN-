@@ -69,6 +69,13 @@ Hozukimaru_Spirit_Fragment.description = Savaş ruhuyla dolup taşan bir parça.
 Senbonzakura_Spirit_Fragment.name = Ruh Parçası - Senbonzakura
 Senbonzakura_Spirit_Fragment.description = Hafif ama sakura yaprağından gelen enerjiyle dolu bir parça. Ölümcül bir aura hissedebilirsin.\n<b>Tüketmek için sağ tıkla (Shikai kilidini aç)</b>
 
+Soulweave_Loom.name = Soulweave Tezgâhı
+Soulweave_Loom.description = Ruhsal madde ile işlenmiş kıyafetler dokumak için kullanılan bir tezgâh. Varyasyonları Ruhlar Topluluğu ve diğer yerlerde yaygın olarak kullanılır.
+Soulweave_Cloth_Bolt.name = Soulweave Kumaş Rulosu
+Soulweave_Cloth_Bolt.description = Ekstra dayanıklılık sağlayan reishi ile işlenmiş siyah kumaş rulosu.
+Purified_Soulweave_Cloth_Bolt.name = Arındırılmış Soulweave Kumaş Rulosu
+Purified_Soulweave_Cloth_Bolt.description = Yüksek kaliteli reishi ile işlenmiş saf beyaz kumaş rulosu.
+
 items.Currency_Kan.name = Kan
 items.Currency_Kan.description = Ruhlar Topluluğu'nun standart para birimi. Bir Kan, yaşayanlar dünyasında bir çuval pirincin değerini temsil eder. Ağırlığı ve sesi reishi frekansına ayarlı sayılır, sahtesi yapılamaz.
 

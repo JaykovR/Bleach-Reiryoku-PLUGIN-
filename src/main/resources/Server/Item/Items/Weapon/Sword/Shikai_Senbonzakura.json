@@ -101,7 +101,7 @@
           "Parent": "Shikai_Senbonzakura_Ichisen_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 19
+              "Physical": 6
             }
           },
           "EntityStatsOnHit": [

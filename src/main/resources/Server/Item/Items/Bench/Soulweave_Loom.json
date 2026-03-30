@@ -1,22 +1,22 @@
 {
   "TranslationProperties": {
-    "Name": "items.Soul_Imprinting_Altar.name",
-    "Description": "items.Soul_Imprinting_Altar.description"
+    "Name": "items.Soulweave_Loom.name",
+    "Description": "items.Soulweave_Loom.description"
   },
   "Recipe": {
     "TimeSeconds": 3,
     "Input": [
       {
-        "ItemId": "Ingredient_Bar_Silver",
+        "ItemId": "Ingredient_Bar_Iron",
         "Quantity": 2
       },
       {
-        "ResourceTypeId": "Rock",
+        "ResourceTypeId": "Wood_Trunk",
         "Quantity": 10
       },
       {
-        "ResourceTypeId": "Wood_Trunk",
-        "Quantity": 5
+        "ItemId": "Ingredient_Fabric_Scrap_Wool",
+        "Quantity": 10
       }
     ],
     "BenchRequirement": [
@@ -25,12 +25,11 @@
         "Categories": [
           "Workbench_Crafting"
         ],
-        "Id": "Workbench",
-        "RequiredTierLevel": 2
+        "Id": "Workbench"
       }
     ]
   },
-  "Icon": "Icons/ItemsGenerated/Soul_Imprinting_Altar.png",
+  "Icon": "Icons/ItemsGenerated/Soulweave_Loom.png",
   "Categories": [
     "Furniture.Benches",
     "BleachCategory.Blocks"
@@ -39,46 +38,36 @@
     "Material": "Solid",
     "DrawType": "Model",
     "Opacity": "Transparent",
-    "CustomModel": "Items/Benches/Soul_Imprinting_Altar.blockymodel",
+    "CustomModel": "Items/Benches/Loom.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "Items/Benches/Soul_Imprinting_Altar_Texture.png",
+        "Texture": "Items/Benches/Loom_Texture.png",
         "Weight": 1
       }
     ],
-    "HitboxType": "Bench_Workbench",
+    "HitboxType": "Soulweave_Loom_Hitbox",
     "VariantRotation": "NESW",
     "Bench": {
       "Type": "Crafting",
       "Categories": [
         {
-          "Id": "Soul_Shikai",
-          "Icon": "Icons/CraftingCategories/Soul_Imprinting_Altar/ZangetsuShikai.png",
-          "Name": "Shikai"
-        },
-        {
-          "Id": "Soul_Bankai",
-          "Icon": "Icons/CraftingCategories/Soul_Imprinting_Altar/Tensa_Zanguetsu.png",
-          "Name": "Bankai"
-        },
-        {
-          "Id": "Soul_Misc",
+          "Id": "Soulweave_Loom_Shihakusho",
           "Icon": "Icons/CraftingCategories/Soul_Imprinting_Altar/Soul_Misc.png",
-          "Name": "Misc"
+          "Name": "Shihakusho"
         },
         {
-          "Id": "Soul_Deco",
-          "Icon": "Icons/CraftingCategories/Soul_Imprinting_Altar/Soul_Deco.png",
-          "Name": "Deco"
+          "Id": "Soulweave_Loom_Materials",
+          "Icon": "Icons/CraftingCategories/Soulweave_Loom/Materials_Category.png",
+          "Name": "Materials"
         }
       ],
       "LocalOpenSoundEventId": "SFX_Workbench_Open",
       "LocalCloseSoundEventId": "SFX_Workbench_Close",
-      "CompletedSoundEventId": "SFX_Workbench_Craft",
+      "CompletedSoundEventId": "SFX_Soulweave_Loom_Craft",
       "FailedSoundEventId": "SFX_Generic_Crafting_Failed",
       "BenchUpgradeSoundEventId": "SFX_Workbench_Upgrade_Start_Default",
       "BenchUpgradeCompletedSoundEventId": "SFX_Workbench_Upgrade_Complete_Default",
-      "Id": "Soul_Imprinting_Altar"
+      "Id": "Soulweave_Loom"
     },
     "BlockEntity": {
       "Components": {
@@ -88,11 +77,45 @@
     "State": {
       "Definitions": {
         "CraftCompleted": {
-          "CustomModelAnimation": "Blocks/Benches/Workbench_Crafting.blockyanim",
+          "CustomModelAnimation": "Items/Benches/Loom_Crafting.blockyanim",
           "Looping": true
         },
         "CraftCompletedInstant": {
           "CustomModelAnimation": "Blocks/Benches/Workbench_Crafting.blockyanim"
+        },
+        "Tier2": {
+          "CustomModel": "Blocks/Benches/Workbench2.blockymodel",
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Benches/Workbench2_Texture.png",
+              "Weight": 1
+            }
+          ],
+          "HitboxType": "Bench_Workbench2",
+          "State": {
+            "Definitions": {
+              "CraftCompleted": {
+                "CustomModelAnimation": "Blocks/Benches/Workbench2_Crafting.blockyanim"
+              }
+            }
+          }
+        },
+        "Tier3": {
+          "CustomModel": "Blocks/Benches/Workbench3.blockymodel",
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Benches/Workbench3_Texture.png",
+              "Weight": 1
+            }
+          ],
+          "HitboxType": "Bench_Workbench3",
+          "State": {
+            "Definitions": {
+              "CraftCompleted": {
+                "CustomModelAnimation": "Blocks/Benches/Workbench3_Crafting.blockyanim"
+              }
+            }
+          }
         }
       }
     },
@@ -102,7 +125,7 @@
       }
     },
     "BlockParticleSetId": "Wood",
-    "ParticleColor": "#6e4a2f",
+    "ParticleColor": "#624631",
     "Support": {
       "Down": [
         {
@@ -117,12 +140,12 @@
     "Scale": 0.42,
     "Rotation": [
       22.5,
-      45.0,
+      45,
       22.5
     ],
     "Translation": [
-      12.9,
-      -11.7
+      11,
+      -15
     ]
   },
   "Tags": {

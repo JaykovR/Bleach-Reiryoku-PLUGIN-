@@ -24,7 +24,7 @@
     },
     {
       "Id": "Blocks",
-      "Name": "server.ui.itemcategory.block",
+      "Name": "Blocks",
       "Icon": "Icons/ItemCategories/block-category.png"
     },
     {
