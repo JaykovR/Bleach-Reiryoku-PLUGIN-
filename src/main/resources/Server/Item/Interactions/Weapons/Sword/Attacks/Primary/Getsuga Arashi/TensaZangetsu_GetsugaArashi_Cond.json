@@ -1,0 +1,9 @@
+{
+  "Type": "EffectCondition",
+  "EntityEffectIds": [
+    "TensaZangetsu_GetsugaArashi_Charged"
+  ],
+  "Entity": "Owner",
+  "Failed": "TensaZangetsu_GetsugaArashi_ApplyEffect",
+  "Next": "TensaZangetsu_GetsugaArashi"
+}

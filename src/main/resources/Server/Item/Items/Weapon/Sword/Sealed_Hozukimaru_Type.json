@@ -55,7 +55,7 @@
             "Next": {
               "Type": "ModifyInventory",
               "ItemToRemove": {
-                "Id": "Sealed_Hozukimaru"
+                "Id": "Weapon_Sword_Sealed_Hozukimaru"
               },
               "ItemToAdd": {
                 "Id": "Hozukimaru"

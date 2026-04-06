@@ -1,14 +1,47 @@
 {
-  "Parent": "Sealed_Wabisuke_Type",
+  "Parent": "Sealed_Zangetsu_Type",
   "TranslationProperties": {
-    "Name": "items.Sealed_Wabisuke.name",
-    "Description": "items.Sealed_Wabisuke.description"
+    "Name": "items.Sealed_Zangetsu.name",
+    "Description": "items.Sealed_Zangetsu.description"
   },
-  "Model": "Items/Weapons/Wabisuke/Sealed_Wabisuke.blockymodel",
-  "Texture": "Items/Weapons/Wabisuke/Sealed_Wabisuke.png",
+  "Model": "Items/Weapons/Sealed_Zangetsu/Zangetsu_Sealed.blockymodel",
+  "Texture": "Items/Weapons/Sealed_Zangetsu/Zangetsu_Sealed_Texture.png",
   "Quality": "Sealed",
-  "Icon": "Icons/ItemsGenerated/Sealed_Wabisuke_T.png",
   "ItemLevel": 20,
+  "Recipe": {
+    "TimeSeconds": 3.5,
+    "KnowledgeRequired": false,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Iron",
+        "Quantity": 12
+      },
+      {
+        "ItemId": "Ingredient_Leather_Light",
+        "Quantity": 3
+      },
+      {
+        "ItemId": "Ingredient_Fabric_Scrap_Linen",
+        "Quantity": 3
+      },
+      {
+        "ItemId": "Ingredient_Life_Essence",
+        "Quantity": 13
+      },
+      {
+        "ItemId": "Weapon_Sword_Asauchi"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Weapon_Sword"
+        ],
+        "Id": "Weapon_Bench"
+      }
+    ]
+  },
   "InteractionVars": {
     "Swing_Left_Damage": {
       "Interactions": [
@@ -16,7 +49,7 @@
           "Parent": "Weapon_Sword_Primary_Swing_Left_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 10
+              "Physical": 13
             }
           },
           "DamageEffects": {
@@ -37,7 +70,7 @@
           "Parent": "Weapon_Sword_Primary_Swing_Right_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 10
+              "Physical": 15
             }
           },
           "DamageEffects": {
@@ -58,7 +91,7 @@
           "Parent": "Weapon_Sword_Primary_Swing_Down_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 18
+              "Physical": 22
             }
           },
           "DamageEffects": {
@@ -79,7 +112,7 @@
           "Parent": "Weapon_Sword_Primary_Thrust_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 26
+              "Physical": 29
             }
           },
           "EntityStatsOnHit": [
@@ -101,16 +134,11 @@
           "Parent": "Weapon_Sword_Signature_Vortexstrike_Spin_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 19
+              "Physical": 22
             }
           },
           "EntityStatsOnHit": [],
           "DamageEffects": {
-            "WorldParticles": [
-              {
-                "SystemId": "SwordSlash_Basic"
-              }
-            ],
             "WorldSoundEventId": "SFX_Sword_T2_Impact",
             "LocalSoundEventId": "SFX_Sword_T2_Impact"
           }
@@ -146,54 +174,21 @@
       ]
     }
   },
-  "Categories": [
-    "BleachCategory.Weapons",
-    "Items.Weapons"
-  ],
+  "MaxDurability": 120,
+  "DurabilityLossOnHit": 0.21,
   "IconProperties": {
     "Scale": 0.35,
     "Rotation": [
-      45,
-      97,
-      0
+      37,
+      123,
+      23
     ],
     "Translation": [
-      -37,
-      -43
+      -39,
+      -45
     ]
   },
-  "Recipe": {
-    "TimeSeconds": 3.5,
-    "KnowledgeRequired": false,
-    "Input": [
-      {
-        "ItemId": "Ingredient_Bar_Iron",
-        "Quantity": 12
-      },
-      {
-        "ItemId": "Ingredient_Leather_Light",
-        "Quantity": 3
-      },
-      {
-        "ItemId": "Ingredient_Fabric_Scrap_Linen",
-        "Quantity": 3
-      },
-      {
-        "ItemId": "Ingredient_Life_Essence",
-        "Quantity": 13
-      },
-      {
-        "ItemId": "Asauchi"
-      }
-    ],
-    "BenchRequirement": [
-      {
-        "Type": "Crafting",
-        "Categories": [
-          "Weapon_Sword"
-        ],
-        "Id": "Weapon_Bench"
-      }
-    ]
-  }
+  "Icon": "Icons/ItemsGenerated/Sealed_Zangetsu.png",
+  "PlayerAnimationsId": "Sealed_Zangetsu_Animations",
+  "Scale": 1.2
 }

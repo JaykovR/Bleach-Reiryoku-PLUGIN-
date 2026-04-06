@@ -38,10 +38,10 @@
         {
           "Type": "ModifyInventory",
           "ItemToRemove": {
-            "Id": "Wabisuke"
+            "Id": "Weapon_Sword_Shikai_Wabisuke"
           },
           "ItemToAdd": {
-            "Id": "Sealed_Wabisuke"
+            "Id": "Weapon_Sword_Sealed_Wabisuke"
           }
         }
       ]

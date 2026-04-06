@@ -53,10 +53,10 @@
             "Next": {
               "Type": "ModifyInventory",
               "ItemToRemove": {
-                "Id": "Sealed_Wabisuke"
+                "Id": "Weapon_Sword_Sealed_Wabisuke"
               },
               "ItemToAdd": {
-                "Id": "Wabisuke"
+                "Id": "Weapon_Sword_Shikai_Wabisuke"
               }
             }
           }

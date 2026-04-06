@@ -655,10 +655,10 @@
         {
           "Type": "ModifyInventory",
           "ItemToRemove": {
-            "Id": "Shikai_Benihime"
+            "Id": "Weapon_Sword_Shikai_Benihime"
           },
           "ItemToAdd": {
-            "Id": "Sealed_Benihime"
+            "Id": "Weapon_Sword_Sealed_Benihime"
           }
         }
       ]

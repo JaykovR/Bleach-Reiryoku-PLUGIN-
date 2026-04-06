@@ -1,0 +1,60 @@
+{
+  "$Comment": "The base wrapper for the dagger secondary",
+  "Type": "StatsCondition",
+  "Costs": {
+    "Stamina": 1.51,
+    "Mana": 9
+  },
+  "Next": {
+    "Type": "Serial",
+    "$Comment": "Effects and VFX/SFX would be applied here in the Serial interaction chain",
+    "Interactions": [
+      {
+        "Type": "ApplyEffect",
+        "EffectId": "Shunpo_Dash"
+      },
+      {
+        "Type": "ChangeStat",
+        "StatModifiers": {
+          "Stamina": -1.5,
+          "Mana": -10
+        },
+        "ValueType": "Absolute"
+      },
+      {
+        "Type": "ChangeStat",
+        "StatModifiers": {
+          "StaminaRegenDelay": -0.7
+        },
+        "Behaviour": "Set",
+        "ValueType": "Absolute"
+      },
+      {
+        "$Comment": "Each of these dashes is a Serial interaction with ApplyForce and Daggers_Dash_Effect",
+        "Type": "MovementCondition",
+        "Failed": "Kuro_Shunpo_Forward",
+        "Forward": "Kuro_Shunpo_Forward",
+        "Back": "Kuro_Shunpo_Backward",
+        "Left": "Kuro_Shunpo_Left",
+        "Right": "Kuro_Shunpo_Right",
+        "ForwardLeft": "Kuro_Shunpo_Forward_Left",
+        "ForwardRight": "Kuro_Shunpo_Forward_Right",
+        "BackLeft": "Kuro_Shunpo_Backward_Left",
+        "BackRight": "Kuro_Shunpo_Backward_Right"
+      }
+    ]
+  },
+  "Effects": {
+    "LocalSoundEventId": "SFX_Shunpo"
+  },
+  "Failed": {
+    "Type": "Serial",
+    "Interactions": [
+      {
+        "Type": "SendMessage",
+        "Message": "Not enough stamina or mana."
+      },
+      "Stamina_Bar_Flash"
+    ]
+  }
+}

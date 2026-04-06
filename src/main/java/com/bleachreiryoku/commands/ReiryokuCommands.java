@@ -17,12 +17,9 @@ import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 
 import javax.annotation.Nonnull;
 
-/**
- * CheckShikaiState - Command collection for /.
- * <p>
- * Usage:
- * - / help - Show available commands
- */
+
+
+
 public class ReiryokuCommands extends AbstractCommandCollection {
 
     public ReiryokuCommands() {
@@ -42,9 +39,7 @@ public class ReiryokuCommands extends AbstractCommandCollection {
         return false; //No permission required for base command
     }
 
-    /**
-     * / help - Show available commands
-     */
+    // /br help show all commands
     private static class HelpSubCommand extends CommandBase {
 
         public HelpSubCommand() {

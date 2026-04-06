@@ -49,7 +49,6 @@
     "Value": 7,
     "CostType": "Damage"
   },
-  "CancelOnOtherClick": false,
   "Failed": {
     "Type": "Replace",
     "Var": "Guard_Break",
@@ -86,5 +85,6 @@
     "StatModifiers": {
       "StaminaRegenDelay": -1
     }
-  }
+  },
+  "CancelOnOtherClick": false
 }

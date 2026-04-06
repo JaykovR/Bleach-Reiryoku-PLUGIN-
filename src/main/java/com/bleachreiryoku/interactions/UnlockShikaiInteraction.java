@@ -23,7 +23,7 @@ import java.awt.*;
 // This class unlocks x said Shikai to a player depending on which item they use to do so.
 public class UnlockShikaiInteraction extends SimpleInteraction {
 
-    //Builder codec in order for it to be an intereaction available.
+    //Builder codec in order for it to be an interaction available.
     public static final BuilderCodec<UnlockShikaiInteraction> CODEC =
             BuilderCodec.builder(UnlockShikaiInteraction.class, UnlockShikaiInteraction::new,
                     SimpleInteraction.CODEC).build();

@@ -1,0 +1,14 @@
+{
+  "Type": "MovementCondition",
+  "Forward": {
+    "Type": "Replace",
+    "Var": "Thrust_Stamina",
+    "DefaultOk": true,
+    "DefaultValue": {
+      "Interactions": [
+        "TensaZangetsu_Primary_Thrust_StaminaCondition"
+      ]
+    }
+  },
+  "Failed": "TensaZangetsu_GetsugaArashi_StaminaCondition"
+}

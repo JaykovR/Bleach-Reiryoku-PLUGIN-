@@ -32,7 +32,9 @@
   "Interactions": {
     "Primary": "Root_TensaZangetsu_Primary",
     "Secondary": "Root_TensaZangetsu_Secondary_Guard",
-    "Ability1": "Root_TensaZangetsu_GetsugaTenshou"
+    "Ability1": "Root_TensaZangetsu_GetsugaTenshou",
+    "Ability2": "Root_Kuro_Shunpo",
+    "Ability3": "Root_Hollow_Mask_Transformation"
   },
   "Tags": {
     "Type": [
@@ -121,7 +123,5 @@
       }
     ]
   },
-  "ItemSoundSetId": "ISS_Weapons_Blade_Large",
-  "MaxDurability": 80,
-  "DurabilityLossOnHit": 0.21
+  "ItemSoundSetId": "ISS_Weapons_Blade_Large"
 }

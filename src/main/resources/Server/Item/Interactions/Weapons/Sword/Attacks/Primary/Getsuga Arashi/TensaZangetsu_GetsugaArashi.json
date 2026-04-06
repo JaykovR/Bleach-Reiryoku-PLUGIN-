@@ -1,0 +1,85 @@
+{
+  "Type": "Serial",
+  "Interactions": [
+    {
+      "Type": "Simple"
+    },
+    "TensaZangetsu_GetsugaArashi_ApplyEffect",
+    {
+      "Type": "Selector",
+      "Selector": {
+        "Id": "AOECylinder",
+        "Range": 2,
+        "Height": 2
+      },
+      "HitEntity": {
+        "Interactions": [
+          {
+            "Type": "Repeat",
+            "ForkInteractions": {
+              "Interactions": [
+                {
+                  "Type": "Replace",
+                  "Var": "GestugaArashi_Damage",
+                  "DefaultOk": true,
+                  "DefaultValue": {
+                    "Interactions": [
+                      "TensaZangetsu_GetsugaArashi_Damage"
+                    ]
+                  }
+                },
+                {
+                  "Type": "Simple",
+                  "RunTime": 0.08
+                }
+              ]
+            },
+            "Repeat": 5
+          }
+        ]
+      },
+      "Effects": {
+        "Trails": [
+          {
+            "PositionOffset": {
+              "X": 1.3,
+              "Y": 0,
+              "Z": 0
+            },
+            "TargetNodeName": "Handle",
+            "TrailId": "TensaZangetsu_Trail",
+            "RotationOffset": {
+              "Roll": 90.0
+            }
+          },
+          {
+            "PositionOffset": {
+              "X": 1.7,
+              "Y": 0,
+              "Z": 0
+            },
+            "TargetNodeName": "Handle",
+            "TrailId": "Sword_Distortion",
+            "RotationOffset": {
+              "Roll": 90.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Type": "Simple",
+      "Effects": {
+        "ItemAnimationId": "GetsugaArashi"
+      },
+      "RunTime": 0.4
+    },
+    {
+      "Type": "ChangeStat",
+      "StatModifiers": {
+        "Stamina": -5,
+        "Mana": -10
+      }
+    }
+  ]
+}

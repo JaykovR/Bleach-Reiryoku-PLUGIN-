@@ -1,0 +1,21 @@
+{
+  "Type": "Serial",
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "Effects": {
+        "ItemPlayerAnimationsId": "TensaZangetsuAnimations",
+        "ItemAnimationId": "HollowMaskEquip"
+      },
+      "RunTime": 1
+    },
+    {
+      "Type": "HollowMask",
+      "Duration": 5
+    },
+    {
+      "Type": "ApplyEffect",
+      "EffectId": "Hollow_Mask_Transformation_Effect"
+    }
+  ]
+}

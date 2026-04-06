@@ -48,10 +48,10 @@
             "Next": {
               "Type": "ModifyInventory",
               "ItemToRemove": {
-                "Id": "Sealed_Sode_No_Shirayuki"
+                "Id": "Weapon_Sword_Sealed_Sode_No_Shirayuki"
               },
               "ItemToAdd": {
-                "Id": "Sode_No_Shirayuki"
+                "Id": "Weapon_Sword_Shikai_Sode_No_Shirayuki"
               }
             }
           }

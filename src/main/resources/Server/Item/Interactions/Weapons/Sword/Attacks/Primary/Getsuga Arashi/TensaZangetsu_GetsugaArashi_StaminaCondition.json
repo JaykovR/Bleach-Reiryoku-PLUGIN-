@@ -1,0 +1,29 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "Stamina": 8,
+    "Mana": 10
+  },
+  "Next": {
+    "Type": "ChangeStat",
+    "Behaviour": "Set",
+    "StatModifiers": {
+      "StaminaRegenDelay": -2
+    },
+    "Next": {
+      "Type": "Replace",
+      "Var": "GetsugaArashi",
+      "DefaultOk": true,
+      "DefaultValue": {
+        "Interactions": [
+          "TensaZangetsu_GetsugaArashi_Cond"
+        ]
+      }
+    }
+  },
+  "Failed": {
+    "Type": "SendMessage",
+    "Message": "Not enough Stamina Available."
+  },
+  "LessThan": false
+}

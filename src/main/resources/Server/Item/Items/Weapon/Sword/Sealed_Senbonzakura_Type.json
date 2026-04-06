@@ -53,10 +53,10 @@
             "Next": {
               "Type": "ModifyInventory",
               "ItemToRemove": {
-                "Id": "Sealed_Senbonzakura"
+                "Id": "Weapon_Sword_Sealed_Senbonzakura"
               },
               "ItemToAdd": {
-                "Id": "Shikai_Senbonzakura"
+                "Id": "Weapon_Sword_Shikai_Senbonzakura"
               }
             }
           }

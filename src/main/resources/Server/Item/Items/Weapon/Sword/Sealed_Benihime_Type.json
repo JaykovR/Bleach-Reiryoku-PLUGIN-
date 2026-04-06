@@ -49,10 +49,10 @@
               "Next": {
                 "Type": "ModifyInventory",
                 "ItemToRemove": {
-                  "Id": "Sealed_Benihime"
+                  "Id": "Weapon_Sword_Sealed_Benihime"
                 },
                 "ItemToAdd": {
-                  "Id": "Shikai_Benihime"
+                  "Id": "Weapon_Sword_Shikai_Benihime"
                 }
               }
             }

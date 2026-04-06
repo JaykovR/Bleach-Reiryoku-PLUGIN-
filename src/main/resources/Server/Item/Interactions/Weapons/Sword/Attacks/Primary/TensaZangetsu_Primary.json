@@ -5,13 +5,13 @@
     "0": "TensaZangetsu_Primary_Chain",
     "0.2": {
       "Type": "Replace",
-      "Var": "Thrust_Stamina",
-      "DefaultOk": true,
       "DefaultValue": {
         "Interactions": [
-          "TensaZangetsu_Primary_Thrust_StaminaCondition"
+          "TensaZangetsu_ChargedAttack_MovementCondition"
         ]
-      }
+      },
+      "DefaultOk": true,
+      "Var": "Thrust_Stamina"
     }
   }
 }

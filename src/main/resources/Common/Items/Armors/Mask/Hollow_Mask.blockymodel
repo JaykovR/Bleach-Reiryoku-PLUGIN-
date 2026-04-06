@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "Head",
-      "position": {"x": 0, "y": -11.25, "z": -1},
+      "position": {"x": 0, "y": -1, "z": -8.5},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -22,11 +22,11 @@
         {
           "id": "2",
           "name": "Helmet_Base",
-          "position": {"x": 0, "y": 0, "z": -1},
+          "position": {"x": 0, "y": 11.25, "z": -7.5},
           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
           "shape": {
             "type": "box",
-            "offset": {"x": 0, "y": 0, "z": 15},
+            "offset": {"x": 0, "y": -10.75, "z": 21.5},
             "stretch": {"x": 1.03125, "y": 1, "z": 1},
             "settings": {
               "isPiece": false,
@@ -49,7 +49,7 @@
                 "angle": 0
               },
               "left": {
-                "offset": {"x": 1, "y": 6},
+                "offset": {"x": 0, "y": 6},
                 "mirror": {"x": false, "y": false},
                 "angle": 0
               },
@@ -73,11 +73,11 @@
             {
               "id": "3",
               "name": "Eye_fill",
-              "position": {"x": 0.67233, "y": -2.375, "z": 0},
+              "position": {"x": 0.67233, "y": 8.375, "z": -6.5},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
-                "offset": {"x": 6.551, "y": -1.63033, "z": 0},
+                "offset": {"x": 6.551, "y": -12.38033, "z": 6.5},
                 "stretch": {"x": 1.03125, "y": 1, "z": 1},
                 "settings": {
                   "isPiece": false,
@@ -190,7 +190,7 @@
                 {
                   "id": "7",
                   "name": "Eye_fill--C4",
-                  "position": {"x": -20.63267, "y": 13.50533, "z": -0.5},
+                  "position": {"x": -19.63267, "y": 13.50533, "z": -0.5},
                   "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                   "shape": {
                     "type": "box",
@@ -203,12 +203,12 @@
                     },
                     "textureLayout": {
                       "right": {
-                        "offset": {"x": 17, "y": 14},
+                        "offset": {"x": 18, "y": 14},
                         "mirror": {"x": false, "y": false},
                         "angle": 0
                       },
                       "bottom": {
-                        "offset": {"x": 17, "y": 14},
+                        "offset": {"x": 18, "y": 14},
                         "mirror": {"x": false, "y": false},
                         "angle": 0
                       }
@@ -286,7 +286,7 @@
                 {
                   "id": "10",
                   "name": "Eye_fill--C7",
-                  "position": {"x": -5.16467, "y": 1.00533, "z": 0},
+                  "position": {"x": -4.16467, "y": 1.00533, "z": 0},
                   "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                   "shape": {
                     "type": "box",
@@ -299,7 +299,7 @@
                     },
                     "textureLayout": {
                       "right": {
-                        "offset": {"x": 16, "y": 15},
+                        "offset": {"x": 17, "y": 15},
                         "mirror": {"x": false, "y": false},
                         "angle": 0
                       }
@@ -315,11 +315,11 @@
             {
               "id": "11",
               "name": "Eye_fill2",
-              "position": {"x": -0.67233, "y": -2.375, "z": 0},
+              "position": {"x": -0.67233, "y": 8.375, "z": -6.5},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
-                "offset": {"x": -6.551, "y": -1.63033, "z": 0},
+                "offset": {"x": -6.551, "y": -12.38033, "z": 6.5},
                 "stretch": {"x": 1.03125, "y": 1, "z": 1},
                 "settings": {
                   "isPiece": false,
@@ -432,7 +432,7 @@
                 {
                   "id": "15",
                   "name": "Eye_fill--C4",
-                  "position": {"x": 20.63267, "y": 13.50533, "z": -0.5},
+                  "position": {"x": 19.63267, "y": 13.50533, "z": -0.5},
                   "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                   "shape": {
                     "type": "box",
@@ -445,12 +445,12 @@
                     },
                     "textureLayout": {
                       "left": {
-                        "offset": {"x": 18, "y": 14},
+                        "offset": {"x": 19, "y": 14},
                         "mirror": {"x": true, "y": false},
                         "angle": 0
                       },
                       "bottom": {
-                        "offset": {"x": 18, "y": 14},
+                        "offset": {"x": 19, "y": 14},
                         "mirror": {"x": true, "y": false},
                         "angle": 0
                       }
@@ -528,7 +528,7 @@
                 {
                   "id": "18",
                   "name": "Eye_fill--C7",
-                  "position": {"x": 5.16467, "y": 1.00533, "z": 0},
+                  "position": {"x": 4.16467, "y": 1.00533, "z": 0},
                   "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                   "shape": {
                     "type": "box",
@@ -541,7 +541,7 @@
                     },
                     "textureLayout": {
                       "left": {
-                        "offset": {"x": 17, "y": 15},
+                        "offset": {"x": 18, "y": 15},
                         "mirror": {"x": true, "y": false},
                         "angle": 0
                       }
@@ -902,7 +902,7 @@
                     "angle": 0
                   },
                   "top": {
-                    "offset": {"x": 4, "y": 1},
+                    "offset": {"x": 4, "y": 24},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
@@ -954,7 +954,7 @@
                     "angle": 0
                   },
                   "top": {
-                    "offset": {"x": 5, "y": 1},
+                    "offset": {"x": 5, "y": 26},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
@@ -1081,11 +1081,11 @@
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
-                "offset": {"x": 13.5, "y": -26, "z": 0.5},
+                "offset": {"x": 13.5, "y": -25.5, "z": 0.5},
                 "stretch": {"x": 1.03125, "y": 1, "z": 1},
                 "settings": {
                   "isPiece": false,
-                  "size": {"x": 13, "y": 2, "z": 1},
+                  "size": {"x": 13, "y": 1, "z": 1},
                   "isStaticBox": true
                 },
                 "textureLayout": {
@@ -1162,7 +1162,7 @@
                     "angle": 0
                   },
                   "top": {
-                    "offset": {"x": 3, "y": 1},
+                    "offset": {"x": 3, "y": 22},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },

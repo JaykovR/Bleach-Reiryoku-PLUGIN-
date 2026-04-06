@@ -1,13 +1,13 @@
 {
-  "Parent": "Sealed_Senbonzakura_Type",
+  "Parent": "Sealed_Wabisuke_Type",
   "TranslationProperties": {
-    "Name": "items.Sealed_Senbonzakura.name",
-    "Description": "items.Sealed_Senbonzakura.description"
+    "Name": "items.Sealed_Wabisuke.name",
+    "Description": "items.Sealed_Wabisuke.description"
   },
-  "Model": "Items/Weapons/Senbonzakura/Senbonsakura_Normal.blockymodel",
-  "Texture": "Items/Weapons/Senbonzakura/Senbonzakura_NormalTexture.png",
+  "Model": "Items/Weapons/Wabisuke/Sealed_Wabisuke.blockymodel",
+  "Texture": "Items/Weapons/Wabisuke/Sealed_Wabisuke.png",
   "Quality": "Sealed",
-  "Icon": "Icons/ItemsGenerated/Sealed_Senbonzakura_T.png",
+  "Icon": "Icons/ItemsGenerated/Sealed_Wabisuke_T.png",
   "ItemLevel": 20,
   "InteractionVars": {
     "Swing_Left_Damage": {
@@ -20,6 +20,11 @@
             }
           },
           "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "SwordSlash_Basic"
+              }
+            ],
             "WorldSoundEventId": "SFX_Sword_T2_Impact",
             "LocalSoundEventId": "SFX_Sword_T2_Impact"
           }
@@ -36,6 +41,11 @@
             }
           },
           "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "SwordSlash_Basic"
+              }
+            ],
             "WorldSoundEventId": "SFX_Sword_T2_Impact",
             "LocalSoundEventId": "SFX_Sword_T2_Impact"
           }
@@ -52,6 +62,11 @@
             }
           },
           "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "SwordSlash_Basic"
+              }
+            ],
             "WorldSoundEventId": "SFX_Sword_T2_Impact",
             "LocalSoundEventId": "SFX_Sword_T2_Impact"
           }
@@ -91,6 +106,11 @@
           },
           "EntityStatsOnHit": [],
           "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "SwordSlash_Basic"
+              }
+            ],
             "WorldSoundEventId": "SFX_Sword_T2_Impact",
             "LocalSoundEventId": "SFX_Sword_T2_Impact"
           }
@@ -127,18 +147,18 @@
     }
   },
   "Categories": [
-    "Items.Weapons",
-    "BleachCategory.Weapons"
+    "BleachCategory.Weapons",
+    "Items.Weapons"
   ],
   "IconProperties": {
-    "Scale": 0.34,
+    "Scale": 0.35,
     "Rotation": [
-      49,
+      45,
       97,
       0
     ],
     "Translation": [
-      -44,
+      -37,
       -43
     ]
   },
@@ -163,7 +183,7 @@
         "Quantity": 13
       },
       {
-        "ItemId": "Asauchi"
+        "ItemId": "Weapon_Sword_Asauchi"
       }
     ],
     "BenchRequirement": [

@@ -189,7 +189,8 @@
   },
   "Interactions": {
     "Primary": "Root_Weapon_Sword_Primary",
-    "Secondary": "Root_Weapon_Sword_Secondary_Guard"
+    "Secondary": "Root_Weapon_Sword_Secondary_Guard",
+    "Ability2": "Root_Hollow_Mask_Transformation"
   },
   "PlayerAnimationsId": "Sword",
   "MaxStack": 1
