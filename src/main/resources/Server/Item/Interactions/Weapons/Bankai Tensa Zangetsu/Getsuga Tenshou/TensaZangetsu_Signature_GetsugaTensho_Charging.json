@@ -1,0 +1,15 @@
+{
+  "Type": "Charging",
+  "Effects": {
+    "ItemAnimationId": "GetsugaTenshoCharging",
+    "ClearAnimationOnFinish": true
+  },
+  "DisplayProgress": true,
+  "AllowIndefiniteHold": true,
+  "Next": {
+    "2": "TensaZangetsu_Signature_GetsugaTensho_FullStrength",
+    "1": "TensaZangetsu_Signature_GetsugaTensho_Strength1"
+  },
+  "HorizontalSpeedMultiplier": 1.0E-4,
+  "$Comment": "Prevents the player from moving while charging"
+}

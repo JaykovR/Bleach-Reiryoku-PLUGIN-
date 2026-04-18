@@ -32,7 +32,7 @@
     "Weapons": [],
     "OffHand": [],
     "MaxSpeed": 12,
-    "DropList": "Drop_Figther_Hollow",
+    "DropList": "Drop_Fighter_Hollow",
     "FollowPatrolPath": {
       "Compute": "FollowPatrolPath"
     },

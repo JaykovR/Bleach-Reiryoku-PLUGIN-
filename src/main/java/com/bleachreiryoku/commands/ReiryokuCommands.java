@@ -102,6 +102,12 @@ public class ReiryokuCommands extends AbstractCommandCollection {
                 if (stats != null && stats.getShikaiSenbonzakuraState()) {
                     context.sendMessage(Message.raw("Senbonzakura Shikai"));
                 }
+                if (stats != null && stats.getShikaiZangetsuState()) {
+                    context.sendMessage(Message.raw("Zangetsu Shikai"));
+                }
+                if (stats != null && stats.getBankaiZangetsuState()) {
+                    context.sendMessage(Message.raw("Zangetsu Bankai"));
+                }
 
                 if (((stats != null) && !stats.getShikaiHozukimaruState()) && !stats.getShikaiSodeNoShirayukiState()
                         && !stats.getShikaiBenihimeState() && !stats.getShikaiWabisukeState() && !stats.getShikaiSenbonzakuraState())

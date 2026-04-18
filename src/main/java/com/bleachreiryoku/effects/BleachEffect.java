@@ -8,10 +8,8 @@ public enum BleachEffect {
         new EffectSlot("Items/Armors/Mask/Hollow_Mask.blockymodel", "Items/Armors/Mask/Hollow_Mask.png")
     ),
 
-    // For Tensa Zangetsu Outfit
-    // TODO: PUT ACTUAL LOCATION OF TENSA ZANGETSU ARMOR
-    TENSA_ZANGETSU_OUTFIT(
-        new EffectSlot("Bleach/TensaZangetsu/Overtop",  "Bleach/TensaZangetsu/Overtop")
+    TENSA_ZANGETSU_CHEST(
+        new EffectSlot("Items/Armors/Shinigami_Robes_Captain/TensaZangetsu_Clothes.blockymodel", "Items/Armors/Shinigami_Robes_Captain/TensaZangetsu_Clothes_texture.png")
     );
 
     private final EffectSlot[] slots;

@@ -1,0 +1,34 @@
+{
+  "Type": "StatsCondition",
+  "Failed": {
+    "Type": "SendMessage",
+    "Message": "You don't have the required Signature Energy amount. (10%)"
+  },
+  "Costs": {
+    "SignatureEnergy": 15
+  },
+  "Next": {
+    "Type": "Simple",
+    "Effects": {
+      "ItemAnimationId": "GetsugaTensho2"
+    },
+    "RunTime": 0.05,
+    "Next": {
+      "Type": "Serial",
+      "Interactions": [
+        {
+          "Type": "ChangeStat",
+          "ValueType": "Percent",
+          "StatModifiers": {
+            "SignatureEnergy": -15
+          }
+        },
+        {
+          "Type": "LaunchProjectile",
+          "ProjectileId": "Tensa_GetsugaTenshouWeakHorizontal"
+        }
+      ]
+    }
+  },
+  "ValueType": "Percent"
+}

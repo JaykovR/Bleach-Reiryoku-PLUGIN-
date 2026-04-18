@@ -4,6 +4,7 @@ import com.hypixel.hytale.codec.builder.BuilderCodec;
 import com.hypixel.hytale.component.Component;
 import com.hypixel.hytale.component.ComponentType;
 import com.hypixel.hytale.server.core.asset.type.model.config.ModelAttachment;
+import com.hypixel.hytale.server.core.inventory.ItemStack;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 
 import javax.annotation.Nullable;
@@ -69,6 +70,47 @@ public class ActiveEffectsComponent implements Component<EntityStore> {
     public void clearAll() {
         timers.clear();
         appliedAttachments.clear();
+        pendingSwapBacks.clear();
+        hiddenAttachments.clear();
+    }
+
+    // --------------------ITEM SWAP-BACK---------------------------------
+
+    // When bankai activation swaps the player's weapon, it remembers which slot
+    // it was in and what the original item was, so EffectTickSystem can restore
+    // it when the effect expires. This shouldn't matter since the weapons have no durability component.
+
+    public record PendingSwapBack(byte hotbarSlot, ItemStack originalItem) {}
+
+    private final Map<BleachEffect, PendingSwapBack> pendingSwapBacks = new EnumMap<>(BleachEffect.class);
+
+    // Attachments temporarily stripped from the model while an effect is active
+    // (e.x. armor hidden during TENSA_ZANGETSU_CHEST). Restored on effect expiry.
+    private final Map<BleachEffect, ModelAttachment[]> hiddenAttachments = new EnumMap<>(BleachEffect.class);
+
+    public void storeHiddenAttachments(BleachEffect effect, ModelAttachment[] attachments) {
+        hiddenAttachments.put(effect, attachments);
+    }
+
+    @Nullable
+    public ModelAttachment[] getHiddenAttachments(BleachEffect effect) {
+        return hiddenAttachments.get(effect);
+    }
+
+    public void clearHiddenAttachments(BleachEffect effect) {
+        hiddenAttachments.remove(effect);
+    }
+    public void registerSwapBack(BleachEffect effect, byte hotbarSlot, ItemStack originalItem) {
+        pendingSwapBacks.put(effect, new PendingSwapBack(hotbarSlot, originalItem));
+    }
+
+    @Nullable
+    public PendingSwapBack getSwapBack(BleachEffect effect) {
+        return pendingSwapBacks.get(effect);
+    }
+
+    public void clearSwapBack(BleachEffect effect) {
+        pendingSwapBacks.remove(effect);
     }
 
     // --------------------ATTACHMENTS----------------------------------------

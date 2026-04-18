@@ -1,0 +1,67 @@
+{
+  "Model": "Items/Projectiles/GetsugaProjectile2D_Horizontal.blockymodel",
+  "Texture": "Items/Projectiles/getsugatexture.png",
+  "HitBox": {
+    "Max": {
+      "X": 0.5,
+      "Y": 0.3,
+      "Z": 2
+    },
+    "Min": {
+      "X": -0.3,
+      "Y": -0.3,
+      "Z": -2
+    }
+  },
+  "MinScale": 10,
+  "MaxScale": 10,
+  "Trails": [
+    {
+      "TargetNodeName": "Ice_Bolt01",
+      "TrailId": "TensaZangetsu_Trail",
+      "PositionOffset": {
+        "Y": 3
+      }
+    },
+    {
+      "TrailId": "TensaZangetsu_Trail",
+      "PositionOffset": {
+        "Y": 2
+      }
+    },
+    {
+      "TrailId": "TensaZangetsu_Trail",
+      "PositionOffset": {
+        "Y": 1
+      }
+    },
+    {
+      "TrailId": "TensaZangetsu_Trail",
+      "PositionOffset": {
+        "Y": -1
+      }
+    },
+    {
+      "TrailId": "TensaZangetsu_Trail",
+      "PositionOffset": {
+        "Y": -2
+      }
+    },
+    {
+      "PositionOffset": {
+        "Y": -3
+      },
+      "TrailId": "TensaZangetsu_Trail"
+    }
+  ],
+  "EyeHeight": 1,
+  "Light": {
+    "Color": "#400",
+    "Radius": 10
+  },
+  "Particles": [
+    {
+      "SystemId": "TensaZangetsu_GetsugaTenshou_ParticleTrail"
+    }
+  ]
+}

@@ -5,6 +5,7 @@ import com.bleachreiryoku.effects.ActiveEffectsComponent;
 import com.bleachreiryoku.effects.EffectCleanupSystem;
 import com.bleachreiryoku.effects.EffectTickSystem;
 import com.bleachreiryoku.interactions.HollowMaskInteraction;
+import com.bleachreiryoku.interactions.TensaZangetsuInteraction;
 import com.bleachreiryoku.interactions.ShikaiCheckInteraction;
 import com.bleachreiryoku.interactions.UnlockShikaiInteraction;
 import com.bleachreiryoku.playerData.playerStats;
@@ -56,7 +57,7 @@ public class BleachReiryokuPlugin extends JavaPlugin {
         );
         playerStats.setComponentType(reiryokuType);
 
-        // Active visual effects — runtime only, NOT persisted
+        // Active visual effects. Runtime only, NOT persisted
         var effectsType = registry.registerComponent(
                 ActiveEffectsComponent.class,
                 "BR_ActiveEffects",
@@ -68,7 +69,8 @@ public class BleachReiryokuPlugin extends JavaPlugin {
         this.getCodecRegistry(Interaction.CODEC)
                 .register("UnlockShikai", UnlockShikaiInteraction.class, UnlockShikaiInteraction.CODEC)
                 .register("ShikaiCheck", ShikaiCheckInteraction.class, ShikaiCheckInteraction.CODEC)
-                .register("HollowMask", HollowMaskInteraction.class, HollowMaskInteraction.CODEC);
+                .register("HollowMask", HollowMaskInteraction.class, HollowMaskInteraction.CODEC)
+                .register("TensaZangetsu", TensaZangetsuInteraction.class, TensaZangetsuInteraction.CODEC);
 
         LOGGER.at(Level.INFO).log("[Bleach Reiryoku] Setup complete!");
     }

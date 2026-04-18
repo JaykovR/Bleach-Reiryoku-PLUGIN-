@@ -7,6 +7,9 @@ import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.component.query.Query;
 import com.hypixel.hytale.component.system.tick.EntityTickingSystem;
 import com.hypixel.hytale.server.core.asset.type.model.config.ModelAttachment;
+import com.hypixel.hytale.server.core.inventory.InventoryComponent;
+import com.hypixel.hytale.server.core.inventory.ItemStack;
+import com.hypixel.hytale.server.core.inventory.container.ItemContainer;
 import com.hypixel.hytale.server.core.modules.entity.component.ModelComponent;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 
@@ -43,7 +46,7 @@ public class EffectTickSystem extends EntityTickingSystem<EntityStore> {
         // Tick down all active timers
         for (Map.Entry<BleachEffect, Float> entry : timers.entrySet()) {
             float remaining = entry.getValue();
-            if (remaining < 0) continue; // Permanent toggle — skip
+            if (remaining < 0) continue; // Permanent toggle = skip
 
             remaining -= dt;
             if (remaining <= 0) {
@@ -59,7 +62,7 @@ public class EffectTickSystem extends EntityTickingSystem<EntityStore> {
         // Remove all expired effects from the model in one rebuild
         ModelComponent modelComponent = chunk.getComponent(i, ModelComponent.getComponentType());
         if (modelComponent == null) {
-            // Model is gone (shouldn't normally happen) — just clean up tracking
+            // clean up tracking
             for (BleachEffect effect : expired) {
                 effects.untrackEffect(effect);
                 effects.removeTimer(effect);
@@ -88,6 +91,40 @@ public class EffectTickSystem extends EntityTickingSystem<EntityStore> {
 
         // Clean up tracking
         for (BleachEffect effect : expired) {
+            // Swap the weapon back if this effect registered a swap-back
+            ActiveEffectsComponent.PendingSwapBack swapBack = effects.getSwapBack(effect);
+            if (swapBack != null) {
+                var hotbarType = InventoryComponent.Hotbar.getComponentType();
+                var hotbarComp = chunk.getComponent(i, hotbarType);
+                if (hotbarComp != null) {
+                    ItemContainer hotbar = hotbarComp.getInventory();
+                    // Only restore if the bankai weapon is still there, don't clobber a manual swap
+                    ItemStack current = hotbar.getItemStack(swapBack.hotbarSlot());
+                    // If I end up using this more I will change it so it reads the ID's from other parts.
+                    if (current != null && current.getItemId().equals("Weapon_Sword_Bankai_Tensa_Zangetsu")) {
+                        hotbar.setItemStackForSlot(swapBack.hotbarSlot(), swapBack.originalItem());
+                    }
+                }
+                effects.clearSwapBack(effect);
+            }
+
+            // Restore any armor attachments that were hidden when this effect activated
+            ModelAttachment[] hidden = effects.getHiddenAttachments(effect);
+            if (hidden != null && hidden.length > 0) {
+                // We need the model component again - get the latest after the rebuild above
+                ModelComponent latestModel = chunk.getComponent(i, ModelComponent.getComponentType());
+                if (latestModel != null) {
+                    var restored = ModelRebuildUtil.rebuildWithAttachments(
+                            latestModel.getModel(), java.util.Arrays.asList(hidden), null);
+                    commandBuffer.putComponent(
+                            chunk.getReferenceTo(i),
+                            ModelComponent.getComponentType(),
+                            new ModelComponent(restored)
+                    );
+                }
+                effects.clearHiddenAttachments(effect);
+            }
+
             effects.untrackEffect(effect);
             effects.removeTimer(effect);
         }

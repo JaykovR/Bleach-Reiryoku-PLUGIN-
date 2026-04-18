@@ -32,7 +32,28 @@
   "Interactions": {
     "Primary": "Root_Shikai_Primary",
     "Secondary": "Root_ZangetsuShikai_Secondary_Guard",
-    "Ability1": "Root_Shikai_GetsugaTenshou"
+    "Ability1": "Root_Shikai_GetsugaTenshou",
+    "Ability3": {
+      "Interactions": [
+        {
+          "Type": "ShikaiCheck",
+          "Next": {
+            "Type": "Simple",
+            "Effects": {
+              "ItemAnimationId": "BankaiTransform",
+              "ItemPlayerAnimationsId": "TensaZangetsuAnimations"
+            },
+            "RunTime": 0.5,
+            "Next": {
+              "Type": "TensaZangetsu",
+              "RunTime": 0.05,
+              "Duration": 10,
+              "Effects": {}
+            }
+          }
+        }
+      ]
+    }
   },
   "Weapon": {
     "EntityStatsToClear": [
@@ -113,8 +134,6 @@
     ]
   },
   "ItemSoundSetId": "ISS_Weapons_Blade_Large",
-  "MaxDurability": 80,
-  "DurabilityLossOnHit": 0.21,
   "MaxStack": 1,
   "Tags": {
     "Type": [

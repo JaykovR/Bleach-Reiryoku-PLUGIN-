@@ -1,0 +1,8 @@
+{
+  "Type": "EffectCondition",
+  "EntityEffectIds": [
+    "TensaGetsugaTenshoCombo"
+  ],
+  "Failed": "TensaZangetsu_Signature_GetsugaTensho_Charging",
+  "Next": "TensaZangetsu_Signature_GetsugaTenshou_WeakCombo"
+}

@@ -517,6 +517,23 @@
       "BlendingDuration": 0.1,
       "Looping": false,
       "KeepPreviousFirstPersonAnimation": true
+    },
+    "GetsugaTenshoCharging": {
+      "ThirdPerson": "Characters/Animations/Items/Zangetsu_Bankai/Bankai_GetsugaTenshou_Charge.blockyanim",
+      "Looping": false
+    },
+    "GetsugaTensho1": {
+      "ThirdPerson": "Characters/Animations/Items/Dual_Handed/Longsword/Attacks/Swing_Up_Left/Swing_Up_Left.blockyanim"
+    },
+    "emptyanim": {
+      "ThirdPerson": "Characters/Animations/Items/Zangetsu_Bankai/emptyanim.blockyanim"
+    },
+    "GetsugaTensho2": {
+      "ThirdPerson": "Characters/Animations/Items/Shikai_Senbonzakura/Swing_Right.blockyanim",
+      "FirstPerson": "Characters/Animations/Items/Shikai_Senbonzakura/Swing_Right_FPS.blockyanim"
+    },
+    "BankaiTransform": {
+      "ThirdPerson": "Characters/Animations/Items/Zangetsu_Bankai/Bankai_Zangetsu.blockyanim"
     }
   },
   "Camera": {

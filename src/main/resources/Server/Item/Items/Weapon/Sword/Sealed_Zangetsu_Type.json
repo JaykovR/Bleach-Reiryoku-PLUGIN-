@@ -32,7 +32,41 @@
   "Interactions": {
     "Primary": "Root_Sealed_Zangetsu_Primary",
     "Secondary": "Root_Weapon_Sword_Secondary_Guard",
-    "Ability1": "Root_Weapon_Sword_Signature_Vortexstrike"
+    "Ability1": "Root_Weapon_Sword_Signature_Vortexstrike",
+    "Ability3": {
+      "Interactions": [
+        {
+          "Type": "ShikaiCheck",
+          "Next": {
+            "Type": "Simple",
+            "Effects": {
+              "ItemPlayerAnimationsId": "HozukimaruAnimations",
+              "ItemAnimationId": "ShikaiActivation",
+              "Particles": [
+                {
+                  "SystemId": "Shikai_Activation_Hozukimaru",
+                  "TargetEntityPart": "PrimaryItem",
+                  "Scale": 0.4,
+                  "DetachedFromModel": false
+                }
+              ],
+              "LocalSoundEventId": "SFX_Shikai_Hozukimaru"
+            },
+            "RunTime": 0.5,
+            "Next": {
+              "Type": "ModifyInventory",
+              "ItemToRemove": {
+                "Id": "Weapon_Sword_Sealed_Zangetsu"
+              },
+              "ItemToAdd": {
+                "Id": "Weapon_Sword_Shikai_Zangetsu"
+              }
+            }
+          },
+          "RunTime": 0.02
+        }
+      ]
+    }
   },
   "Tags": {
     "Type": [
@@ -120,7 +154,5 @@
       }
     ]
   },
-  "ItemSoundSetId": "ISS_Weapons_Blade_Large",
-  "MaxDurability": 80,
-  "DurabilityLossOnHit": 0.21
+  "ItemSoundSetId": "ISS_Weapons_Blade_Large"
 }

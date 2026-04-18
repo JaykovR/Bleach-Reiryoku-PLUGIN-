@@ -4,7 +4,7 @@
     "Description": "items.Shinigami_Robes_Captain.description"
   },
   "Parent": "Armor_Bronze_Chest",
-  "Quality": "Epic",
+  "Quality": "Developer",
   "ItemLevel": 15,
   "IconProperties": {
     "Scale": 0.35,
