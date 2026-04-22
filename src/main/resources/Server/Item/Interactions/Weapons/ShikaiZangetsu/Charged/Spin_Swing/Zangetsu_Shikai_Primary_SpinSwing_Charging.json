@@ -1,0 +1,80 @@
+{
+  "Type": "Charging",
+  "DisplayProgress": false,
+  "MouseSensitivityAdjustmentTarget": 0.25,
+  "MouseSensitivityAdjustmentDuration": 0.1,
+  "HorizontalSpeedMultiplier": 0.6,
+  "Effects": {
+    "ItemAnimationId": "DownstrikeCharging",
+    "Particles": [
+      {
+        "PositionOffset": {
+          "X": 0.8,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationOffset": {
+          "Pitch": 0,
+          "Roll": 90,
+          "Yaw": 0
+        },
+        "TargetNodeName": "Handle",
+        "SystemId": "Sword_Charging"
+      }
+    ]
+  },
+  "AllowIndefiniteHold": false,
+  "Next": {
+    "0": "Shikai_Primary_Chain",
+    "0.65": {
+      "Type": "Serial",
+      "Interactions": [
+        {
+          "Type": "Replace",
+          "Var": "Downstrike_StaminaCost",
+          "DefaultOk": true,
+          "DefaultValue": {
+            "Interactions": [
+              {
+                "Type": "ApplyEffect",
+                "EffectId": "Stamina_Broken_Immune"
+              },
+              {
+                "Type": "ChangeStat",
+                "StatModifiers": {
+                  "Stamina": -3
+                }
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Replace",
+          "Var": "Downstrike_StaminaRegenDelay",
+          "DefaultOk": true,
+          "DefaultValue": {
+            "Interactions": [
+              {
+                "Type": "ChangeStat",
+                "Behaviour": "Set",
+                "StatModifiers": {
+                  "StaminaRegenDelay": -3
+                }
+              }
+            ]
+          }
+        },
+        {
+          "Type": "Replace",
+          "Var": "SpinSwing",
+          "DefaultOk": true,
+          "DefaultValue": {
+            "Interactions": [
+              "Shikai_Zangetsu_Primary_SpinSwing"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

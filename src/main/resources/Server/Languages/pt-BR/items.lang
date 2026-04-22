@@ -68,6 +68,10 @@ Hozukimaru_Spirit_Fragment.name = Fragmento Espiritual - Hozukimaru
 Hozukimaru_Spirit_Fragment.description = Um fragmento repleto de espírito de batalha.\n<b>Clique com o botão direito para consumir (desbloquear Shikai)</b>
 Senbonzakura_Spirit_Fragment.name = Fragmento Espiritual - Senbonzakura
 Senbonzakura_Spirit_Fragment.description = Um fragmento leve, mas repleto de energia de uma pétala de sakura. Você pode notar uma aura mortal.\n<b>Clique com o botão direito para consumir (desbloquear Shikai)</b>
+Zangetsu_Spirit_Fragment.name = Fragmento Espiritual - Zangetsu
+Zangetsu_Spirit_Fragment.description = Um fragmento contendo uma quantidade absurda de energia. Parece ser muito instável. \n<b>Clique com o botão direito para consumir (desbloqueia Shikai)</b>
+Tensa_Zangetsu_Spirit_Fragment.name = Fragmento Espiritual - Tensa Zangetsu
+Tensa_Zangetsu_Spirit_Fragment.description = Um fragmento com uma quantidade insana de energia condensada. Você pode sentir o poder supremo em suas mãos. \n<b>Clique com o botão direito para consumir (desbloqueia Bankai, Tensa Zangetsu)</b>
 
 Soulweave_Loom.name = Tear Soulweave
 Soulweave_Loom.description = Um tear usado para tecer roupas infundidas com matéria espiritual. Variações dele são amplamente usadas na Soul Society e em outros lugares.

@@ -33,6 +33,8 @@ Shikai_Benihime.name = Shikai – Benihime
 Shikai_Benihime.description = Un sable elegante y ligeramente curvado con motivos carmesí. Con la orden <i><b>«Despierta, Benihime»</b></i> obtiene el poder de lanzar precisos <i>Disparos Carmesí</i>, erigir escudos hexagonales casi impenetrables y tejer redes afiladas de energía espiritual. Una hoja versátil perfecta tanto para el ataque calculado como para la defensa absoluta.
 True_Shikai_Zangetsu.name = Verdadero Shikai – Zangetsu
 True_Shikai_Zangetsu.description = El verdadero Shikai de Ichigo, manifestado como dos hojas negras distintas. El enorme cuchillón encarna sus poderes fusionados de Shinigami y Hollow, mientras que el cuchillo más pequeño representa su herencia Quincy. Comando de liberación: <i><b>«Uníos y proteged, Zangetsu»</b></i>. Las hojas pueden disparar <i>Getsuga Tensho</i> por separado o combinarlas en una devastadora onda en forma de cruz, <i><b>Getsuga Jujisho</b></i>.
+Shikai_Senbonzakura.name = Shikai - Senbonzakura
+Shikai_Senbonzakura.description = Una Zanpakuto refinada que se disuelve en innumerables pétalos con forma de cuchilla al ser comandada. Con la orden, <i><b>«Dispersa, Senbonzakura»</b></i>, el arma se transforma en una tormenta de fragmentos brillantes, cada uno tan afilado como el acero. Estos pétalos pueden ser guiados a voluntad, abrumando a los enemigos mediante ataques precisos e implacables y convirtiendo el campo de batalla en un dominio de destrucción elegante.
 
 Kojaku_Bow.name = Arco Quincy - Kojaku
 Kojaku_Bow.description = El arco básico utilizable por todos los Quincy. Se forma reuniendo Reishi en la <i>Cruz Quincy</i> de la mano derecha. Las flechas que lanza también están hechas de Reishi. Permite destruir Hollows con ataques a distancia. Un arma inicial perfecta para un Quincy novato.
@@ -43,14 +45,18 @@ Four_Point_Quincy_Cross.description = Una cruz de cuatro puntas la cual ayuda a 
 Soul_Imprinting_Altar.name = Altar de Impresión de Almas
 Soul_Imprinting_Altar.description = Una sagrada estación de trabajo donde el alma del portador se fusiona con la Asauchi. Mediante meditación profunda y concentración de energía espiritual (Reiryoku), se sientan las bases de la futura Zanpakuto. Este altar se utiliza no solo para el despertar inicial, sino también para las etapas posteriores de evolución de la espada — desde Shikai hasta la revelación definitiva, Bankai.
 
-Shinigami_Robes.name = Túnica de Shinigami - Shihakusho
-Shinigami_Robes.description = El uniforme estándar de Shinigami vestido por todos los miembros del Gotei 13.
-Shinigami_Robes_Sleeveless.name = Tunica de Shinigami - Sin mangas
-Shinigami_Robes_Sleeveless.description = Un <i>Shihakusho</i> modificado para quienes desean más libertad de movimiento. Se considera más bien una modificación cosmética del uniforme estándar.
-Shinigami_Robes_Captain.name = Túnica de Shinigami - Capitán
-Shinigami_Robes_Captain.description = El abrigo blanco que llevan los Capitanes sobre su uniforme estándar. Proporciona una protección espiritual superior y denota el rango más alto en el Gotei 13.
-Shinigami_Robes_OpenShoulder.name = Túnica de Shinigami - Hombro Descubierto
-Shinigami_Robes_OpenShoulder.description = Un <i>Shihakusho</i> modificado que sirve el mismo proposito que el sin mangas mientras que mantiene una apariencia mas elegante y ceremonial.
+Shihakusho_Kosode.name = Shihakusho - Kosode
+Shihakusho_Kosode.description = La parte superior del uniforme estándar de los Shinigami, usado por todos los miembros del Gotei 13.
+Shihakusho_Kosode_Lieutenant.name = Shihakusho - Kosode (Teniente)
+Shihakusho_Kosode_Lieutenant.description = La prenda superior del <i>Shihakusho</i> estándar con una insignia de Teniente que representa un gran prestigio.
+Shihakusho_Kosode_Sleeveless.name = Shihakusho - Kosode (Sin mangas)
+Shihakusho_Kosode_Sleeveless.description = Un <i>Shihakusho</i> modificado para aquellos que desean mayor libertad de movimiento. Considerado más como una modificación estética del uniforme estándar.
+Shinigami_Robes_Captain.name = Shihakusho de Capitán
+Shinigami_Robes_Captain.description = El abrigo blanco que los Capitanes usan sobre su uniforme estándar. Proporciona una protección espiritual superior y denota el rango más alto en el Gotei 13.
+Shihakusho_Kosode_BareShoulder.name = Shihakusho - Kosode (Hombros descubiertos)
+Shihakusho_Kosode_BareShoulder.description = Un <i>Shihakusho</i> modificado que cumple el mismo propósito que la variante sin mangas, manteniendo una apariencia más elegante y ceremonial.
+Shihakusho_Hakama.name = Shihakusho - Hakama
+Shihakusho_Hakama.description = La prenda inferior que forma parte del uniforme estándar de los Shinigami, el <i>Shihakusho</i>.
 
 Resonating_Reishi_Core.name = Núcleo resonante de Reishi
 Resonating_Reishi_Core.description = Este núcleo vibra a una frecuencia que imita la tuya. Es una extensión de tu alma. Listo para asignarse a una espada y despertarla.
@@ -67,6 +73,19 @@ Benihime_Spirit_Fragment.name = Fragmento Espiritual - Benihime
 Benihime_Spirit_Fragment.description = Un fragmento espiritual carmesí que porta una elegancia silenciosa pero mortal.\n<b>Clic derecho para consumir (desbloquear Shikai)</b>
 Hozukimaru_Spirit_Fragment.name = Fragmento Espiritual - Hozukimaru
 Hozukimaru_Spirit_Fragment.description = Un fragmento rebosante de espíritu de batalla.\n<b>Clic derecho para consumir (desbloquear Shikai)</b>
+Senbonzakura_Spirit_Fragment.name = Fragmento Espiritual - Senbonzakura
+Senbonzakura_Spirit_Fragment.description = Un fragmento ligero pero rebosante de un pétalo de sakura. Puedes notar un aura mortal.\n<b>Clic derecho para consumir (desbloquear Shikai)</b>
+Zangetsu_Spirit_Fragment.name = Fragmento Espiritual - Zangetsu
+Zangetsu_Spirit_Fragment.description = Un fragmento que contiene una cantidad desmesurada de energía. Parece muy inestable. \n<b>Clic derecho para consumir (desbloquea Shikai)</b>
+Tensa_Zangetsu_Spirit_Fragment.name = Fragmento Espiritual - Tensa Zangetsu
+Tensa_Zangetsu_Spirit_Fragment.description = Un fragmento con una cantidad descomunal de energía condensada. Puedes sentir el poder supremo en tus manos. \n<b>Clic derecho para consumir (desbloquea Bankai, Tensa Zangetsu)</b>
+
+Soulweave_Loom.name = Telar de Soulweave
+Soulweave_Loom.description = Un telar utilizado para tejer prendas infundidas con materia espiritual. Sus variantes se usan ampliamente en la Sociedad de Almas y otros lugares.
+Soulweave_Cloth_Bolt.name = Rollo de Tela Soulweave
+Soulweave_Cloth_Bolt.description = Un rollo de tela negra infundida con reishi que proporciona resistencia adicional.
+Purified_Soulweave_Cloth_Bolt.name = Rollo de Tela Soulweave Purificada
+Purified_Soulweave_Cloth_Bolt.description = Un rollo puro de tela blanca infundida con reishi de alta calidad.
 
 items.Currency_Kan.name = Kan
 items.Currency_Kan.description = La moneda estándar de la Sociedad de Almas. Un Kan representa el valor de un fardo de arroz en el mundo de los vivos. Su peso y sonido están sintonizados con la frecuencia del reishi, lo que hace imposible falsificarlo. Para un comerciante del Rukongai, esta moneda es una fortuna; para un capitán, simple calderilla.

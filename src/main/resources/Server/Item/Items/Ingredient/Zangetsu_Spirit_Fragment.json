@@ -1,10 +1,10 @@
 {
   "TranslationProperties": {
-    "Name": "items.Sode_no_Shirayuki_Spirit_Fragment.name",
-    "Description": "items.Sode_no_Shirayuki_Spirit_Fragment.description"
+    "Name": "items.Zangetsu_Spirit_Fragment.name",
+    "Description": "items.Zangetsu_Spirit_Fragment.description"
   },
-  "Icon": "Icons/ItemsGenerated/Sode_No_Shirayuki_Spirit_Fragment.png",
-  "Quality": "SpiritualResource",
+  "Icon": "Icons/ItemsGenerated/Zangetsu_Spirit_Fragment.png",
+  "Quality": "Shikai",
   "PlayerAnimationsId": "Item",
   "IconProperties": {
     "Scale": 0.6,
@@ -28,13 +28,13 @@
     "ShowItemParticles": true
   },
   "Light": {
-    "Color": "#068",
-    "Radius": 1
+    "Color": "#760",
+    "Radius": 0
   },
   "ItemSoundSetId": "ISS_Items_Gems",
   "Particles": [
     {
-      "SystemId": "SNS_Fragment_Sparks"
+      "SystemId": "Zangetsu_Spirit_Fragment"
     }
   ],
   "Texture": "Resources/Ingredients/Essence_Textures/Ice_Essence_Texture.png",
@@ -44,7 +44,36 @@
     "BleachCategory.Ingredients"
   ],
   "Interactions": {
-    "Secondary": "UnlockShikai"
+    "Secondary": {
+      "Interactions": [
+        {
+          "Type": "Serial",
+          "Interactions": [
+            {
+              "Type": "Simple",
+              "Effects": {
+                "Particles": [
+                  {
+                    "SystemId": "ShikaiUnlock",
+                    "TargetEntityPart": "Entity"
+                  }
+                ],
+                "WorldSoundEventId": "SFX_ShikaiUnlock"
+              },
+              "RunTime": 1
+            },
+            {
+              "Type": "Simple",
+              "Effects": {
+                "WorldSoundEventId": "SFX_ShikaiUnlock2"
+              },
+              "RunTime": 0.1
+            },
+            "UnlockShikai"
+          ]
+        }
+      ]
+    }
   },
   "MaxStack": 1,
   "Recipe": {

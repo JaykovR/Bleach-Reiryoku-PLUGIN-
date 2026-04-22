@@ -75,6 +75,10 @@ Hozukimaru_Spirit_Fragment.name = Fragment Spirituel - Hozukimaru
 Hozukimaru_Spirit_Fragment.description = Un fragment débordant d’esprit combatif.\n<b>Clic droit pour consommer (déverrouiller le Shikai)</b>
 Senbonzakura_Spirit_Fragment.name = Fragment Spirituel - Senbonzakura
 Senbonzakura_Spirit_Fragment.description = Un fragment léger mais débordant d’énergie d’un pétale de sakura. Vous pouvez ressentir une aura mortelle.\n<b>Clic droit pour consommer (déverrouiller le Shikai)</b>
+Zangetsu_Spirit_Fragment.name = Fragment Spirituel - Zangetsu
+Zangetsu_Spirit_Fragment.description = Un fragment contenant une quantité démesurée d'énergie. Il semble très instable. \n<b>Clic droit pour consommer (débloque le Shikai)</b>
+Tensa_Zangetsu_Spirit_Fragment.name = Fragment Spirituel - Tensa Zangetsu
+Tensa_Zangetsu_Spirit_Fragment.description = Un fragment doté d'une quantité démente d'énergie condensée. Tu peux sentir la puissance ultime entre tes mains. \n<b>Clic droit pour consommer (débloque le Bankai, Tensa Zangetsu)</b>
 
 Soulweave_Loom.name = Métier à tisser Soulweave
 Soulweave_Loom.description = Un métier à tisser utilisé pour fabriquer des vêtements imprégnés de matière spirituelle. Ses variantes sont largement utilisées dans la Soul Society et ailleurs.

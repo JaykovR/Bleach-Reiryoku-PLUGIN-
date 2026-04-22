@@ -4,7 +4,7 @@
     "Description": "items.Senbonzakura_Spirit_Fragment.description"
   },
   "Icon": "Icons/ItemsGenerated/Senbonzakura_Spirit_Fragment.png",
-  "Quality": "SpiritualResource",
+  "Quality": "Shikai",
   "PlayerAnimationsId": "Item",
   "IconProperties": {
     "Scale": 0.6,
@@ -44,7 +44,36 @@
     "BleachCategory.Ingredients"
   ],
   "Interactions": {
-    "Secondary": "UnlockShikai"
+    "Secondary": {
+      "Interactions": [
+        {
+          "Type": "Serial",
+          "Interactions": [
+            {
+              "Type": "Simple",
+              "Effects": {
+                "Particles": [
+                  {
+                    "SystemId": "ShikaiUnlock",
+                    "TargetEntityPart": "Entity"
+                  }
+                ],
+                "WorldSoundEventId": "SFX_ShikaiUnlock"
+              },
+              "RunTime": 1
+            },
+            {
+              "Type": "Simple",
+              "Effects": {
+                "WorldSoundEventId": "SFX_ShikaiUnlock2"
+              },
+              "RunTime": 0.1
+            },
+            "UnlockShikai"
+          ]
+        }
+      ]
+    }
   },
   "MaxStack": 1,
   "Recipe": {

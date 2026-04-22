@@ -139,6 +139,33 @@
         }
       ]
     },
+    "Spin_Swing_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Shikai_Zangetsu_Primary_SpinSwing_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 55
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 3
+            }
+          ],
+          "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "ZangetsuShikai_Slash"
+              }
+            ],
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        }
+      ]
+    },
     "Guard_Wield": {
       "Interactions": [
         {

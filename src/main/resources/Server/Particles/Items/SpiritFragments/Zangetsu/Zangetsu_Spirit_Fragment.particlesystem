@@ -1,0 +1,17 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Zangetsu_Spirit_Fragment_Sparks",
+      "FixedRotation": true
+    },
+    {
+      "SpawnerId": "Zangetsu_Spirit_Fragment_Core"
+    },
+    {
+      "SpawnerId": "Memory_Catch_FlashSpark"
+    }
+  ],
+  "BoundingRadius": 2,
+  "CullDistance": 20,
+  "IsImportant": false
+}

@@ -4,7 +4,7 @@
     "Description": "items.Hozukimaru_Spirit_Fragment.description"
   },
   "Icon": "Icons/ItemsGenerated/Hozukimaru_Spirit_Fragment.png",
-  "Quality": "SpiritualResource",
+  "Quality": "Shikai",
   "PlayerAnimationsId": "Item",
   "IconProperties": {
     "Scale": 0.6,
@@ -43,9 +43,6 @@
   "Categories": [
     "BleachCategory.Ingredients"
   ],
-  "Interactions": {
-    "Secondary": "UnlockShikai"
-  },
   "MaxStack": 1,
   "Recipe": {
     "TimeSeconds": 4.5,
@@ -76,5 +73,37 @@
       }
     ],
     "KnowledgeRequired": false
+  },
+  "Interactions": {
+    "Secondary": {
+      "Interactions": [
+        {
+          "Type": "Serial",
+          "Interactions": [
+            {
+              "Type": "Simple",
+              "Effects": {
+                "Particles": [
+                  {
+                    "SystemId": "ShikaiUnlock",
+                    "TargetEntityPart": "Entity"
+                  }
+                ],
+                "WorldSoundEventId": "SFX_ShikaiUnlock"
+              },
+              "RunTime": 1
+            },
+            {
+              "Type": "Simple",
+              "Effects": {
+                "WorldSoundEventId": "SFX_ShikaiUnlock2"
+              },
+              "RunTime": 0.1
+            },
+            "UnlockShikai"
+          ]
+        }
+      ]
+    }
   }
 }

@@ -66,16 +66,20 @@ Transcendent_Essence.description = Ein wirbelndes Paradoxon absoluter Macht. Die
 Hollow_Essence.name = Essenz eines Hollows
 Hollow_Essence.description = Ein kristallisierter Überrest der verzerrten Seele eines besiegten Hollows. Sie pulsiert mit instabilem Reiryoku.
 
-Sode_no_Shirayuki_Spirit_Fragment.name = Seelenfragment - Sode no Shirayuki
+Sode_no_Shirayuki_Spirit_Fragment.name = Geistfragment - Sode no Shirayuki
 Sode_no_Shirayuki_Spirit_Fragment.description = Ein kaltes Fragment reiner spiritueller Energie.\n<b>Rechtsklick zum Verbrauchen (Shikai freischalten)</b>
-Wabisuke_Spirit_Fragment.name = Seelenfragment - Wabisuke
+Wabisuke_Spirit_Fragment.name = Geistfragment - Wabisuke
 Wabisuke_Spirit_Fragment.description = Ein schweres Fragment, das den belasteten Geist von Wabisuke enthält. Seine Präsenz lastet auf der Seele.\n<b>Rechtsklick zum Verbrauchen (Shikai freischalten)</b>
-Benihime_Spirit_Fragment.name = Seelenfragment - Benihime
-Benihime_Spirit_Fragment.description = Ein karmesinrotes Seelenfragment mit stiller, aber tödlicher Eleganz.\n<b>Rechtsklick zum Verbrauchen (Shikai freischalten)</b>
-Hozukimaru_Spirit_Fragment.name = Seelenfragment - Hozukimaru
+Benihime_Spirit_Fragment.name = Geistfragment - Benihime
+Benihime_Spirit_Fragment.description = Ein karmesinrotes Geist Fragment mit stiller, aber tödlicher Eleganz.\n<b>Rechtsklick zum Verbrauchen (Shikai freischalten)</b>
+Hozukimaru_Spirit_Fragment.name = Geistfragment - Hozukimaru
 Hozukimaru_Spirit_Fragment.description = Ein Fragment, das vor Kampfgeist überquillt.\n<b>Rechtsklick zum Verbrauchen (Shikai freischalten)</b>
-Senbonzakura_Spirit_Fragment.name = Seelenfragment - Senbonzakura
+Senbonzakura_Spirit_Fragment.name = Geistfragment - Senbonzakura
 Senbonzakura_Spirit_Fragment.description = Ein leichtes, aber von Energie erfülltes Fragment eines Sakura-Blütenblatts. Du kannst eine tödliche Aura spüren.\n<b>Rechtsklick zum Verbrauchen (Shikai freischalten)</b>
+Zangetsu_Spirit_Fragment.name = Geistfragment – Zangetsu
+Zangetsu_Spirit_Fragment.description = Ein Fragment, das eine gewaltige Menge an Energie enthält. Es scheint sehr instabil zu sein. \n<b>Rechtsklick zum Verzehren (schaltet Shikai frei)</b>
+Tensa_Zangetsu_Spirit_Fragment.name = Geistfragment – Tensa Zangetsu
+Tensa_Zangetsu_Spirit_Fragment.description = Ein Fragment mit einer wahnsinnigen Menge an verdichteter Energie. Du kannst die ultimative Macht in deinen Händen spüren. \n<b>Rechtsklick zum Verzehren (schaltet Bankai, Tensa Zangetsu frei)</b>
 
 Soulweave_Loom.name = Soulweave-Webstuhl
 Soulweave_Loom.description = Ein Webstuhl, der verwendet wird, um Kleidung zu weben, die mit spiritueller Materie durchzogen ist. Varianten davon werden in der Soul Society und anderen Orten weit verbreitet genutzt.

@@ -12,11 +12,11 @@
     },
     "Next": {
       "Type": "Replace",
-      "Var": "Downstrike",
+      "Var": "MovementCondition",
       "DefaultOk": true,
       "DefaultValue": {
         "Interactions": [
-          "Shikai_Primary_Downstrike"
+          "Zangetsu_Shikai_Primary_HeavyAttack_MovementCondition"
         ]
       }
     }

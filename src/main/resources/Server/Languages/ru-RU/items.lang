@@ -78,6 +78,10 @@ Hozukimaru_Spirit_Fragment.name = Фрагмент духа — Hozukimaru
 Hozukimaru_Spirit_Fragment.description = Фрагмент, переполненный боевым духом.\n<b>Щёлкните правой кнопкой, чтобы использовать (разблокировать Shikai)</b>
 Senbonzakura_Spirit_Fragment.name = Фрагмент духа — Senbonzakura
 Senbonzakura_Spirit_Fragment.description = Лёгкий, но наполненный энергией фрагмент лепестка сакуры. Ты можешь почувствовать смертельную ауру.\n<b>Щёлкните правой кнопкой, чтобы использовать (разблокировать Шикай)</b>
+Zangetsu_Spirit_Fragment.name = Осколок духа — Зангецу
+Zangetsu_Spirit_Fragment.description = Осколок, содержащий колоссальное количество энергии. Он выглядит крайне нестабильным. \n<b>ПКМ, чтобы поглотить (открывает Шикай)</b>
+Tensa_Zangetsu_Spirit_Fragment.name = Осколок духа — Тенса Зангецу
+Tensa_Zangetsu_Spirit_Fragment.description = Осколок с безумным количеством сжатой энергии. Ты чувствуешь абсолютную мощь в своих руках. \n<b>ПКМ, чтобы поглотить (открывает Банкай, Тенса Зангецу)</b>
 
 Soulweave_Loom.name = Ткацкий станок Soulweave
 Soulweave_Loom.description = Станок, используемый для создания одежды, пропитанной духовной материей. Его вариации широко используются в Сообществе душ и других местах.

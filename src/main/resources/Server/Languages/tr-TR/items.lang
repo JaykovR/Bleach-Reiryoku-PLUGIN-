@@ -68,6 +68,10 @@ Hozukimaru_Spirit_Fragment.name = Ruh Parçası - Hozukimaru
 Hozukimaru_Spirit_Fragment.description = Savaş ruhuyla dolup taşan bir parça.\n<b>Tüketmek için sağ tıkla (Shikai kilidini aç)</b>
 Senbonzakura_Spirit_Fragment.name = Ruh Parçası - Senbonzakura
 Senbonzakura_Spirit_Fragment.description = Hafif ama sakura yaprağından gelen enerjiyle dolu bir parça. Ölümcül bir aura hissedebilirsin.\n<b>Tüketmek için sağ tıkla (Shikai kilidini aç)</b>
+Zangetsu_Spirit_Fragment.name = Ruh Parçası - Zangetsu
+Zangetsu_Spirit_Fragment.description = Muazzam miktarda enerji içeren bir parça. Oldukça dengesiz görünüyor. \n<b>Tüketmek için sağ tıkla (Shikai'yi açar)</b>
+Tensa_Zangetsu_Spirit_Fragment.name = Ruh Parçası - Tensa Zangetsu
+Tensa_Zangetsu_Spirit_Fragment.description = İçinde çılgınca yoğunlaşmış enerji barındıran bir parça. Nihai gücü ellerinde hissedebilirsin. \n<b>Tüketmek için sağ tıkla (Bankai, Tensa Zangetsu'yu açar)</b>
 
 Soulweave_Loom.name = Soulweave Tezgâhı
 Soulweave_Loom.description = Ruhsal madde ile işlenmiş kıyafetler dokumak için kullanılan bir tezgâh. Varyasyonları Ruhlar Topluluğu ve diğer yerlerde yaygın olarak kullanılır.

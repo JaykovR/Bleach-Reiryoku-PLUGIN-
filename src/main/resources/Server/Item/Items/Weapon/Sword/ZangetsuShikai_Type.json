@@ -83,7 +83,8 @@
             "PositionOffset": {
               "X": 0.8
             },
-            "TargetEntityPart": "PrimaryItem"
+            "TargetEntityPart": "PrimaryItem",
+            "Color": "#f4bb1c"
           },
           {
             "SystemId": "Sword_Signature_Status_Spawn",
@@ -91,10 +92,11 @@
             "PositionOffset": {
               "X": 0.5
             },
-            "TargetEntityPart": "PrimaryItem"
+            "TargetEntityPart": "PrimaryItem",
+            "Color": "#f4bb1c"
           },
           {
-            "SystemId": "Sword_Signature_Status",
+            "SystemId": "Shikai_Zangetsu_Signature_Status",
             "TargetNodeName": "Handle",
             "PositionOffset": {
               "X": 0.55
@@ -121,7 +123,7 @@
             }
           },
           {
-            "SystemId": "Sword_Signature_Status",
+            "SystemId": "Shikai_Zangetsu_Signature_Status",
             "TargetNodeName": "Handle",
             "PositionOffset": {
               "X": 0.5
@@ -129,7 +131,7 @@
             "TargetEntityPart": "PrimaryItem"
           }
         ],
-        "ModelVFXId": "Sword_Signature_Status"
+        "ModelVFXId": "Shikai_Zangetsu_Signature_Status"
       }
     ]
   },

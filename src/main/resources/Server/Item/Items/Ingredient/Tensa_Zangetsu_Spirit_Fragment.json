@@ -1,10 +1,10 @@
 {
   "TranslationProperties": {
-    "Name": "items.Sode_no_Shirayuki_Spirit_Fragment.name",
-    "Description": "items.Sode_no_Shirayuki_Spirit_Fragment.description"
+    "Name": "items.Tensa_Zangetsu_Spirit_Fragment.name",
+    "Description": "items.Tensa_Zangetsu_Spirit_Fragment.description"
   },
-  "Icon": "Icons/ItemsGenerated/Sode_No_Shirayuki_Spirit_Fragment.png",
-  "Quality": "SpiritualResource",
+  "Icon": "Icons/ItemsGenerated/Tensa_Zangetsu_Spirit_Fragment.png",
+  "Quality": "Bankai",
   "PlayerAnimationsId": "Item",
   "IconProperties": {
     "Scale": 0.6,
@@ -28,13 +28,13 @@
     "ShowItemParticles": true
   },
   "Light": {
-    "Color": "#068",
+    "Color": "#500",
     "Radius": 1
   },
   "ItemSoundSetId": "ISS_Items_Gems",
   "Particles": [
     {
-      "SystemId": "SNS_Fragment_Sparks"
+      "SystemId": "Tensa_Zangetsu_Spirit_Fragment_Particle"
     }
   ],
   "Texture": "Resources/Ingredients/Essence_Textures/Ice_Essence_Texture.png",
@@ -44,7 +44,36 @@
     "BleachCategory.Ingredients"
   ],
   "Interactions": {
-    "Secondary": "UnlockShikai"
+    "Secondary": {
+      "Interactions": [
+        {
+          "Type": "Serial",
+          "Interactions": [
+            {
+              "Type": "Simple",
+              "Effects": {
+                "Particles": [
+                  {
+                    "SystemId": "ShikaiUnlock",
+                    "TargetEntityPart": "Entity"
+                  }
+                ],
+                "WorldSoundEventId": "SFX_ShikaiUnlock"
+              },
+              "RunTime": 1
+            },
+            {
+              "Type": "Simple",
+              "Effects": {
+                "WorldSoundEventId": "SFX_ShikaiUnlock2"
+              },
+              "RunTime": 0.1
+            },
+            "UnlockShikai"
+          ]
+        }
+      ]
+    }
   },
   "MaxStack": 1,
   "Recipe": {
@@ -67,7 +96,7 @@
       {
         "Type": "Crafting",
         "Categories": [
-          "Soul_Shikai"
+          "Soul_Bankai"
         ],
         "Id": "Soul_Imprinting_Altar"
       }

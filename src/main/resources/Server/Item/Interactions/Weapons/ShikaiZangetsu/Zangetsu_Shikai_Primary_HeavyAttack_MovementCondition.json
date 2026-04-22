@@ -1,0 +1,23 @@
+{
+  "Type": "MovementCondition",
+  "Forward": {
+    "Type": "Replace",
+    "DefaultValue": {
+      "Interactions": [
+        "Shikai_Primary_Downstrike"
+      ]
+    },
+    "DefaultOk": true,
+    "Var": "Downstrike"
+  },
+  "Failed": {
+    "Type": "Replace",
+    "DefaultValue": {
+      "Interactions": [
+        "Zangetsu_Shikai_Primary_SpinSwing_Charging"
+      ]
+    },
+    "DefaultOk": true,
+    "Var": "SpinSwing"
+  }
+}

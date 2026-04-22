@@ -1,0 +1,35 @@
+{
+  "Type": "Simple",
+  "RunTime": 0.2,
+  "Effects": {
+    "ItemAnimationId": "SpinSwing",
+    "WorldSoundEventId": "SFX_Sword_T2_Swing_Down",
+    "LocalSoundEventId": "SFX_Sword_T2_Swing_Down_Local",
+    "Trails": [
+      {
+        "PositionOffset": {
+          "X": 0.8,
+          "Y": 0,
+          "Z": 0
+        },
+        "RotationOffset": {
+          "Pitch": 0,
+          "Roll": 90,
+          "Yaw": 0
+        },
+        "TargetNodeName": "Handle",
+        "TrailId": "Medium_Charged"
+      }
+    ]
+  },
+  "Next": {
+    "Type": "Replace",
+    "Var": "Swing_Down_Selector",
+    "DefaultOk": true,
+    "DefaultValue": {
+      "Interactions": [
+        "Shikai_Zangetsu_Primary_SpinSwing_Selector"
+      ]
+    }
+  }
+}
