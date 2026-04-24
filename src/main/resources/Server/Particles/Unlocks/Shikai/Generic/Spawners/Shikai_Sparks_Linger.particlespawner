@@ -96,7 +96,6 @@
             "Max": 0
           }
         },
-        "Color": "#00f2ff",
         "Opacity": 0.0
       },
       "10": {
@@ -126,11 +125,9 @@
             "Max": 0.3
           }
         },
-        "Color": "#00b5ff",
         "Opacity": 1.0
       },
       "100": {
-        "Color": "#2b41b5",
         "Opacity": 0.0
       }
     },
@@ -147,7 +144,6 @@
         }
       },
       "Opacity": 1,
-      "Color": "#ffffff",
       "FrameIndex": {
         "Min": 0,
         "Max": 0

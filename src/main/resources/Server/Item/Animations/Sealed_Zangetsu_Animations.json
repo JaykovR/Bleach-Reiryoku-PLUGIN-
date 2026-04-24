@@ -3,7 +3,7 @@
     "Idle": {
       "FirstPerson": "Characters/Animations/Items/Main_Handed/Sword/Idle_FPS.blockyanim",
       "Speed": 0.5,
-      "ThirdPerson": "Characters/Animations/Items/Zangetsu_Shikai/Zangetsu_Shikai_Idle.blockyanim",
+      "ThirdPerson": "Characters/Animations/Items/Zangetsu_Shikai/Shikai_Zangetsu_Idle.blockyanim",
       "Looping": true
     },
     "Walk": {
@@ -406,6 +406,10 @@
       "FirstPerson": "Characters/Animations/Items/Main_Handed/Sword/Attacks/Guard_Bash/Guard_Bash_FPS.blockyanim",
       "ThirdPersonFace": "Characters/Animations/Expressions/Angry.blockyanim",
       "KeepPreviousFirstPersonAnimation": true
+    },
+    "ShikaiActivation": {
+      "ThirdPerson": "Characters/Animations/Items/Zangetsu_Shikai/Shikai_Transformation.blockyanim",
+      "ClipsGeometry": true
     }
   },
   "Camera": {

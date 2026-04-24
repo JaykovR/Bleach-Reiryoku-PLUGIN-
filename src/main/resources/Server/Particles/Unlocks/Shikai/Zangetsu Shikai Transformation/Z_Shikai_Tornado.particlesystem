@@ -1,0 +1,10 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Z_Shikai_Tornado_Spawner"
+    },
+    {
+      "SpawnerId": "Z_Shikai_Circle"
+    }
+  ]
+}

@@ -115,7 +115,7 @@ public class UnlockShikaiInteraction extends SimpleInteraction {
 
         if(heldItem.equals("Zangetsu_Spirit_Fragment")){
             player.sendMessage(Message.translation("shikaiUnlockMessages.Zangetsu_Shikai.unlock"));
-            player.sendMessage(Message.translation("shikaiUnlockMessages.Zangetsu_Shikai2.unlock").bold(true).color(Color.pink).italic(true));
+            player.sendMessage(Message.translation("shikaiUnlockMessages.Zangetsu_Shikai2.unlock").bold(true).color(Color.ORANGE).italic(true));
             player.sendMessage(Message.translation("shikaiUnlockMessages.Usage_cue.unlock").bold(true).color(Color.WHITE));
             ItemStackSlotTransaction itemStackSlotTransaction = player.getInventory().getHotbar().removeItemStackFromSlot(context.getHeldItemSlot(),
                     requiredAmount, true, false);
@@ -127,7 +127,7 @@ public class UnlockShikaiInteraction extends SimpleInteraction {
 
         if(heldItem.equals("Tensa_Zangetsu_Spirit_Fragment")){
             player.sendMessage(Message.translation("shikaiUnlockMessages.Zangetsu_Bankai.unlock"));
-            player.sendMessage(Message.translation("shikaiUnlockMessages.Zangetsu_Bankai2.unlock").bold(true).color(Color.pink).italic(true));
+            player.sendMessage(Message.translation("shikaiUnlockMessages.Zangetsu_Bankai2.unlock").bold(true).color(Color.RED).italic(true));
             player.sendMessage(Message.translation("shikaiUnlockMessages.Usage_cue.unlock").bold(true).color(Color.WHITE));
             ItemStackSlotTransaction itemStackSlotTransaction = player.getInventory().getHotbar().removeItemStackFromSlot(context.getHeldItemSlot(),
                     requiredAmount, true, false);

@@ -9,7 +9,7 @@
     "Max": 4.0
   },
   "Particle": {
-    "Texture": "Particles/Textures/Basic/Ring3.png",
+    "Texture": "Particles/Textures/Basic/Ball6.png",
     "Animation": {
       "0": {
         "FrameIndex": {
@@ -19,29 +19,29 @@
         "Opacity": 0.0,
         "Scale": {
           "X": {
-            "Min": 0.5,
-            "Max": 0.5
+            "Min": 0.3,
+            "Max": 0.3
           },
           "Y": {
-            "Min": 0.5,
-            "Max": 0.5
+            "Min": 0.3,
+            "Max": 0.3
           }
         }
       },
-      "10": {
+      "20": {
         "Opacity": 0.824
       },
-      "12": {},
-      "30": {
+      "42": {},
+      "100": {
         "Opacity": 0,
         "Scale": {
           "X": {
-            "Min": 9,
-            "Max": 9
+            "Min": 10,
+            "Max": 10
           },
           "Y": {
-            "Min": 9,
-            "Max": 9
+            "Min": 10,
+            "Max": 10
           }
         },
         "Rotation": {

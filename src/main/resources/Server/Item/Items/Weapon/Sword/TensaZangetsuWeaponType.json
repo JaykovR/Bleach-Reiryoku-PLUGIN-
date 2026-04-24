@@ -67,7 +67,7 @@
         "ConditionValueType": "Percent",
         "Particles": [
           {
-            "SystemId": "TensaZangetsu_Signature_Ready",
+            "SystemId": "Tensa_Zangetsu_Signature_Ready",
             "TargetNodeName": "Handle",
             "PositionOffset": {
               "X": 0.8
@@ -75,35 +75,7 @@
             "TargetEntityPart": "PrimaryItem"
           },
           {
-            "SystemId": "TensaZangetsu_Signature_Status_Spawn",
-            "TargetNodeName": "Handle",
-            "PositionOffset": {
-              "X": 0.5
-            },
-            "TargetEntityPart": "PrimaryItem"
-          },
-          {
-            "SystemId": "TensaZangetsu_Signature_Status",
-            "TargetNodeName": "Handle",
-            "PositionOffset": {
-              "X": 0.55
-            },
-            "TargetEntityPart": "PrimaryItem",
-            "Scale": 1.3,
-            "Color": "#271a1a"
-          }
-        ],
-        "FirstPersonParticles": [
-          {
-            "SystemId": "TensaZangetsu_Signature_Ready",
-            "TargetNodeName": "Handle",
-            "PositionOffset": {
-              "X": 0.8
-            },
-            "TargetEntityPart": "PrimaryItem"
-          },
-          {
-            "SystemId": "TensaZangetsu_Signature_Status_Spawn",
+            "SystemId": "Tensa_Zangetsu_Signature_Status_Spawn",
             "TargetNodeName": "Handle",
             "TargetEntityPart": "PrimaryItem",
             "PositionOffset": {
@@ -111,7 +83,7 @@
             }
           },
           {
-            "SystemId": "TensaZangetsu_Signature_Status",
+            "SystemId": "Tensa_Zangetsu_Signature_Status",
             "TargetNodeName": "Handle",
             "PositionOffset": {
               "X": 0.5
@@ -119,7 +91,33 @@
             "TargetEntityPart": "PrimaryItem"
           }
         ],
-        "ModelVFXId": "TensaZangetsu_Signature_Status"
+        "FirstPersonParticles": [
+          {
+            "SystemId": "Tensa_Zangetsu_Signature_Ready",
+            "TargetNodeName": "Handle",
+            "PositionOffset": {
+              "X": 0.8
+            },
+            "TargetEntityPart": "PrimaryItem"
+          },
+          {
+            "SystemId": "Tensa_Zangetsu_Signature_Status_Spawn",
+            "TargetNodeName": "Handle",
+            "TargetEntityPart": "PrimaryItem",
+            "PositionOffset": {
+              "Y": -100
+            }
+          },
+          {
+            "SystemId": "Tensa_Zangetsu_Signature_Status",
+            "TargetNodeName": "Handle",
+            "PositionOffset": {
+              "X": 0.5
+            },
+            "TargetEntityPart": "PrimaryItem"
+          }
+        ],
+        "ModelVFXId": "Tensa_Zangetsu_Signature_Status"
       }
     ]
   },

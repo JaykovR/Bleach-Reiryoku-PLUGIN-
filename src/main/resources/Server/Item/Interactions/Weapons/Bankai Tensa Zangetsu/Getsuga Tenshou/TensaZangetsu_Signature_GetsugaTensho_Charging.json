@@ -2,7 +2,61 @@
   "Type": "Charging",
   "Effects": {
     "ItemAnimationId": "GetsugaTenshoCharging",
-    "ClearAnimationOnFinish": true
+    "ClearAnimationOnFinish": true,
+    "Particles": [
+      {
+        "SystemId": "TensaZangetsu_Signature_Ready",
+        "TargetNodeName": "Handle",
+        "PositionOffset": {
+          "X": 0.8
+        },
+        "TargetEntityPart": "PrimaryItem"
+      },
+      {
+        "SystemId": "TensaZangetsu_Signature_Status_Spawn",
+        "TargetNodeName": "Handle",
+        "PositionOffset": {
+          "X": 0.5
+        },
+        "TargetEntityPart": "PrimaryItem"
+      },
+      {
+        "SystemId": "TensaZangetsu_Signature_Status",
+        "TargetNodeName": "Handle",
+        "PositionOffset": {
+          "X": 0.55
+        },
+        "TargetEntityPart": "PrimaryItem",
+        "Scale": 1.3,
+        "Color": "#271a1a"
+      }
+    ],
+    "FirstPersonParticles": [
+      {
+        "SystemId": "TensaZangetsu_Signature_Ready",
+        "TargetNodeName": "Handle",
+        "PositionOffset": {
+          "X": 0.8
+        },
+        "TargetEntityPart": "PrimaryItem"
+      },
+      {
+        "SystemId": "TensaZangetsu_Signature_Status_Spawn",
+        "TargetNodeName": "Handle",
+        "TargetEntityPart": "PrimaryItem",
+        "PositionOffset": {
+          "Y": -100
+        }
+      },
+      {
+        "SystemId": "TensaZangetsu_Signature_Status",
+        "TargetNodeName": "Handle",
+        "PositionOffset": {
+          "X": 0.5
+        },
+        "TargetEntityPart": "PrimaryItem"
+      }
+    ]
   },
   "DisplayProgress": true,
   "AllowIndefiniteHold": true,

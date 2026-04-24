@@ -3,8 +3,8 @@
   "RunTime": 0.2,
   "Effects": {
     "ItemAnimationId": "SpinSwing",
-    "WorldSoundEventId": "SFX_Sword_T2_Swing_Down",
-    "LocalSoundEventId": "SFX_Sword_T2_Swing_Down_Local",
+    "WorldSoundEventId": "SFX_ZangetsuShikai_Swing",
+    "LocalSoundEventId": "SFX_ZangetsuShikai_Swing",
     "Trails": [
       {
         "PositionOffset": {

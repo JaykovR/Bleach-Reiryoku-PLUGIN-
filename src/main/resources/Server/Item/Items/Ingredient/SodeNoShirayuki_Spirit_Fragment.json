@@ -55,7 +55,8 @@
                 "Particles": [
                   {
                     "SystemId": "ShikaiUnlock",
-                    "TargetEntityPart": "Entity"
+                    "TargetEntityPart": "Entity",
+                    "Color": "#a9fffd"
                   }
                 ],
                 "WorldSoundEventId": "SFX_ShikaiUnlock"

@@ -61,11 +61,11 @@ public class    ShikaiCheckInteraction extends SimpleInstantInteraction{
         // else (meaning if they have the shikai available) then the interaction succeeds. After that in game the player changes item to the Shikai Weapon
         if(heldItem.equals("Weapon_Sword_Sealed_Benihime")){
             if (!stats.getShikaiBenihimeState()) {
-                player.sendMessage(Message.raw("You are unable to transform into Shikai yet."));
+                player.sendMessage(Message.translation("shikaiCheckMessages.Failed.check"));
                 context.getState().state = InteractionState.Failed;
                 return;
             } else {
-                player.sendMessage(Message.raw("Awake, Benihime").bold(true).color(Color.RED).italic(true));
+                player.sendMessage(Message.translation("shikaiCheckMessages.Benihime_Shikai.activation").bold(true).color(Color.RED).italic(true));
                 context.getState().state = Finished;
                 return;
             }
@@ -73,11 +73,11 @@ public class    ShikaiCheckInteraction extends SimpleInstantInteraction{
 
         if(heldItem.equals("Weapon_Sword_Sealed_Wabisuke")){
             if (!stats.getShikaiWabisukeState()) {
-                player.sendMessage(Message.raw("You are unable to transform into Shikai yet."));
+                player.sendMessage(Message.translation("shikaiCheckMessages.Failed.check"));
                 context.getState().state = InteractionState.Failed;
                 return;
             } else {
-                player.sendMessage(Message.raw("Raise Your Hear, Wabisuke!").bold(true).color(Color.MAGENTA));
+                player.sendMessage(Message.translation("shikaiCheckMessages.Wabisuke_Shikai.activation").bold(true).color(Color.MAGENTA));
                 context.getState().state = Finished;
                 return;
             }
@@ -85,11 +85,11 @@ public class    ShikaiCheckInteraction extends SimpleInstantInteraction{
 
         if(heldItem.equals("Weapon_Sword_Sealed_Hozukimaru")){
             if (!stats.getShikaiHozukimaruState()) {
-                player.sendMessage(Message.raw("You are unable to transform into Shikai yet."));
+                player.sendMessage(Message.translation("shikaiCheckMessages.Failed.check"));
                 context.getState().state = InteractionState.Failed;
                 return;
             } else {
-                player.sendMessage(Message.raw("GROW, HOZUKIMARU!!").bold(true).color(Color.RED));
+                player.sendMessage(Message.translation("shikaiCheckMessages.Hozukimaru_Shikai.activation").bold(true).color(Color.RED));
                 context.getState().state = Finished;
                 return;
             }
@@ -97,11 +97,11 @@ public class    ShikaiCheckInteraction extends SimpleInstantInteraction{
 
         if(heldItem.equals("Weapon_Sword_Sealed_Sode_No_Shirayuki")){
             if (!stats.getShikaiSodeNoShirayukiState()) {
-                player.sendMessage(Message.raw("You are unable to transform into Shikai yet."));
+                player.sendMessage(Message.translation("shikaiCheckMessages.Failed.check"));
                 context.getState().state = InteractionState.Failed;
                 return;
             } else {
-                player.sendMessage(Message.raw("Dance, Sode no Shirayuki").bold(true).color(Color.WHITE).italic(true));
+                player.sendMessage(Message.translation("shikaiCheckMessages.Sode_No_Shirayuki_Shikai.activation").bold(true).color(Color.WHITE).italic(true));
                 context.getState().state = Finished;
                 return;
             }
@@ -109,11 +109,11 @@ public class    ShikaiCheckInteraction extends SimpleInstantInteraction{
 
         if(heldItem.equals("Weapon_Sword_Sealed_Senbonzakura")){
             if (!stats.getShikaiSenbonzakuraState()) {
-                player.sendMessage(Message.raw("You are unable to transform into Shikai yet."));
+                player.sendMessage(Message.translation("shikaiCheckMessages.Failed.check"));
                 context.getState().state = InteractionState.Failed;
                 return;
             } else {
-                player.sendMessage(Message.raw("Scatter, Senbonzakura.").bold(true).color(Color.pink).italic(true));
+                player.sendMessage(Message.translation("shikaiCheckMessages.Senbonzakura_Shikai.activation").bold(true).color(Color.pink).italic(true));
                 context.getState().state = Finished;
                 return;
             }
@@ -121,13 +121,11 @@ public class    ShikaiCheckInteraction extends SimpleInstantInteraction{
 
         if(heldItem.equals("Weapon_Sword_Sealed_Zangetsu")){
             if (!stats.getShikaiZangetsuState()) {
-                player.sendMessage(Message.raw("You are unable to transform into Shikai yet."));
+                player.sendMessage(Message.translation("shikaiCheckMessages.Failed.check"));
                 context.getState().state = InteractionState.Failed;
                 return;
             } else {
-                player.sendMessage(Message.raw("As your reiatsu increases, you lack the control to keep your sword" +
-                        "in a sealed state. As a consequence, your blade automatically transformed into Shikai as you" +
-                        "decided to release the pulsing energy inside of you. There is no going back in this path.").bold(true).color(Color.ORANGE).italic(true));
+                player.sendMessage(Message.translation("shikaiCheckMessages.Zangetsu_Shikai.activation").bold(true).color(Color.ORANGE).italic(true));
                 context.getState().state = Finished;
                 return;
             }
@@ -136,12 +134,12 @@ public class    ShikaiCheckInteraction extends SimpleInstantInteraction{
         // While this class is called Shikai Check, I decided to also include this for now.
         if(heldItem.equals("Weapon_Sword_Shikai_Zangetsu")){
             if (!stats.getBankaiZangetsuState()) {
-                player.sendMessage(Message.raw("You are unable to transform into Bankai yet."));
+                player.sendMessage(Message.translation("shikaiCheckMessages.Failed.check"));
                 context.getState().state = InteractionState.Failed;
                 return;
             } else {
-                player.sendMessage(Message.raw("BANKAI!").bold(true).color(Color.RED));
-                player.sendMessage(Message.raw("Tensa Zangetsu").bold(true).color(Color.BLACK).italic(true));
+                player.sendMessage(Message.translation("shikaiCheckMessages.Zangetsu_Bankai.activation").bold(true).color(Color.RED));
+                player.sendMessage(Message.translation("shikaiCheckMessages.Zangetsu_Bankai.activation2").bold(true).color(Color.BLACK).italic(true));
                 context.getState().state = Finished;
                 return;
             }

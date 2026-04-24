@@ -40,8 +40,7 @@
             "Max": 1.0
           }
         },
-        "Opacity": 1.0,
-        "Color": "#2ff4ff"
+        "Opacity": 1.0
       },
       "10": {
         "Scale": {
@@ -55,7 +54,6 @@
           }
         },
         "Opacity": 1.0,
-        "Color": "#2ff4ff",
         "FrameIndex": {
           "Max": 1,
           "Min": 1
@@ -68,7 +66,6 @@
         }
       },
       "25": {
-        "Color": "#00f8ff",
         "FrameIndex": {
           "Min": 3,
           "Max": 3
@@ -116,11 +113,9 @@
             "Min": 1.5,
             "Max": 1.5
           }
-        },
-        "Color": "#00f8ff"
+        }
       },
       "60": {
-        "Color": "#3570ff",
         "FrameIndex": {
           "Min": 6,
           "Max": 6
@@ -149,7 +144,6 @@
     },
     "InitialAnimationFrame": {
       "Opacity": 1,
-      "Color": "#ffffff",
       "FrameIndex": {
         "Min": 0,
         "Max": 0

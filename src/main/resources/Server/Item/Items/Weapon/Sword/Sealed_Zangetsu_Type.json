@@ -40,19 +40,17 @@
           "Next": {
             "Type": "Simple",
             "Effects": {
-              "ItemPlayerAnimationsId": "HozukimaruAnimations",
               "ItemAnimationId": "ShikaiActivation",
               "Particles": [
                 {
-                  "SystemId": "Shikai_Activation_Hozukimaru",
-                  "TargetEntityPart": "PrimaryItem",
-                  "Scale": 0.4,
+                  "SystemId": "Z_Shikai_Tornado",
+                  "TargetEntityPart": "Entity",
                   "DetachedFromModel": false
                 }
               ],
               "LocalSoundEventId": "SFX_Shikai_Hozukimaru"
             },
-            "RunTime": 0.5,
+            "RunTime": 1,
             "Next": {
               "Type": "ModifyInventory",
               "ItemToRemove": {
