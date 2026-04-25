@@ -16,9 +16,8 @@ import com.hypixel.hytale.server.core.modules.interaction.interaction.CooldownHa
 import com.hypixel.hytale.server.core.modules.interaction.interaction.config.SimpleInteraction;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import org.checkerframework.checker.nullness.compatqual.NonNullDecl;
-import com.bleachreiryoku.effects.ModelRebuildUtil;
-import com.hypixel.hytale.server.core.modules.entity.component.ModelComponent;
-import java.util.Arrays;
+import com.hypixel.hytale.server.core.inventory.InventoryComponent;
+import com.hypixel.hytale.protocol.ItemArmorSlot;
 
 /**
   Bankai activation interaction for Tensa Zangetsu.
@@ -90,14 +89,34 @@ public class TensaZangetsuInteraction extends SimpleInteraction {
         var swapTransaction = hotbar.setItemStackForSlot(heldSlot, new ItemStack(BANKAI_ID, 1));
         if (!swapTransaction.succeeded()) return;
 
-        // Apply the chest-piece visual effect for the configured duration
         var commandBuffer = context.getCommandBuffer();
-        BleachEffectService.applyTimedEffect(ref, store, commandBuffer, BleachEffect.TENSA_ZANGETSU_CHEST, duration);
 
-        // Register the swap-back so EffectTickSystem can restore the shikai when the effect expires
-        ActiveEffectsComponent effects = store.getComponent(ref, ActiveEffectsComponent.getComponentType());
-        if (effects != null) {
-            effects.registerSwapBack(BleachEffect.TENSA_ZANGETSU_CHEST, heldSlot, heldItem);
+        //  Read and save the current chest armor item (with its durability)
+        var armorComp = store.getComponent(ref, InventoryComponent.Armor.getComponentType());
+        if (armorComp == null) return;
+        var armorInv = armorComp.getInventory();
+
+        short chestSlot = (short) ItemArmorSlot.Chest.getValue(); // = 1
+        ItemStack currentChest = armorInv.getItemStack(chestSlot); // may be null/empty if no armor worn
+
+        // Swap chest slot to Tensa Zangetsu chest armor
+        var armorTransaction = armorInv.setItemStackForSlot(chestSlot, new ItemStack("Armor_Chest_Tensa_Zangetsu", 1));
+        if (!armorTransaction.succeeded()) {
+            // Roll back the weapon swap if chest swap failed
+            hotbar.setItemStackForSlot(heldSlot, heldItem);
+            return;
         }
+
+        // Ensure the ActiveEffectsComponent exists
+        ActiveEffectsComponent effects = store.getComponent(ref, ActiveEffectsComponent.getComponentType());
+        if (effects == null) {
+            effects = new ActiveEffectsComponent();
+            commandBuffer.addComponent(ref, ActiveEffectsComponent.getComponentType(), effects);
+        }
+
+        // Register timer, weapon swap-back, and armor swap-back
+        effects.setTimer(BleachEffect.TENSA_ZANGETSU_CHEST, duration);
+        effects.registerSwapBack(BleachEffect.TENSA_ZANGETSU_CHEST, heldSlot, heldItem);
+        effects.registerArmorSwapBack(BleachEffect.TENSA_ZANGETSU_CHEST, chestSlot, currentChest);
     }
 }

@@ -23,7 +23,7 @@ import java.util.Map;
  * Runs every server tick. Counts down timed effect timers and removes
  * expired effects by stripping their attachments from the player's ModelComponent.
  *
- * Permanent toggle effects (timer == -1) are untouched here — they only
+ * Permanent toggle effects (timer == -1) are untouched here - they only
  * disappear when BleachEffectService.removeEffect() is called explicitly.
  *
  * Only runs for entities that have ActiveEffectsComponent, so there is
@@ -108,6 +108,33 @@ public class EffectTickSystem extends EntityTickingSystem<EntityStore> {
                 effects.clearSwapBack(effect);
             }
 
+            // Remove Tensa Zangetsu chest from ALL inventory sections, then restore original
+            // Note: Improve this and use it for future swaps required on other skills.
+
+            ActiveEffectsComponent.PendingArmorSwapBack armorSwapBack = effects.getArmorSwapBack(effect);
+            if (armorSwapBack != null) {
+
+                final String BANKAI_CHEST_ID = "Armor_Chest_Tensa_Zangetsu";
+
+                // Sweep every inventory section and remove the bankai chest wherever it ended up
+                // this prevents cloning.
+                sweepAndRemove(chunk, i, InventoryComponent.Armor.getComponentType(), BANKAI_CHEST_ID);
+                sweepAndRemove(chunk, i, InventoryComponent.Hotbar.getComponentType(), BANKAI_CHEST_ID);
+                sweepAndRemove(chunk, i, InventoryComponent.Storage.getComponentType(), BANKAI_CHEST_ID);
+                sweepAndRemove(chunk, i, InventoryComponent.Utility.getComponentType(), BANKAI_CHEST_ID);
+                sweepAndRemove(chunk, i, InventoryComponent.Backpack.getComponentType(), BANKAI_CHEST_ID);
+
+                // Restore the original chest item (with its original durability) to the armor slot
+                var armorComp = chunk.getComponent(i, InventoryComponent.Armor.getComponentType());
+                if (armorComp != null && armorSwapBack.originalItem() != null
+                        && !armorSwapBack.originalItem().isEmpty()) {
+                    armorComp.getInventory().setItemStackForSlot(
+                            armorSwapBack.armorSlot(), armorSwapBack.originalItem());
+                }
+
+                effects.clearArmorSwapBack(effect);
+            }
+
             // Restore any armor attachments that were hidden when this effect activated
             ModelAttachment[] hidden = effects.getHiddenAttachments(effect);
             if (hidden != null && hidden.length > 0) {
@@ -127,6 +154,26 @@ public class EffectTickSystem extends EntityTickingSystem<EntityStore> {
 
             effects.untrackEffect(effect);
             effects.removeTimer(effect);
+        }
+    }
+
+    /**
+      Iterates every slot in an inventory section and removes any item matching itemId.
+      Used to purge the bankai chest item from wherever the player may have moved it.
+     */
+    private <T extends InventoryComponent> void sweepAndRemove(
+            ArchetypeChunk<EntityStore> chunk, int i,
+            com.hypixel.hytale.component.ComponentType<EntityStore, T> type,
+            String itemId
+    ) {
+        T comp = chunk.getComponent(i, type);
+        if (comp == null) return;
+        var inv = comp.getInventory();
+        for (short s = 0; s < inv.getCapacity(); s++) {
+            ItemStack item = inv.getItemStack(s);
+            if (item != null && item.getItemId().equals(itemId)) {
+                inv.removeItemStackFromSlot(s);
+            }
         }
     }
 

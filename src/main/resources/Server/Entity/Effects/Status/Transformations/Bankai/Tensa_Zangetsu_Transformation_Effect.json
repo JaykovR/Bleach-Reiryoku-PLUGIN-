@@ -1,0 +1,8 @@
+{
+  "Name": "Bankai - Tensa Zangetsu",
+  "ApplicationEffects": {
+    "HorizontalSpeedMultiplier": 1.2
+  },
+  "Duration": 20,
+  "StatusEffectIcon": "UI/StatusEffects/Bankai_Tensa_Zangetsu.png"
+}

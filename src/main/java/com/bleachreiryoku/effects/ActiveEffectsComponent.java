@@ -72,6 +72,7 @@ public class ActiveEffectsComponent implements Component<EntityStore> {
         appliedAttachments.clear();
         pendingSwapBacks.clear();
         hiddenAttachments.clear();
+        pendingArmorSwapBacks.clear();
     }
 
     // --------------------ITEM SWAP-BACK---------------------------------
@@ -111,6 +112,27 @@ public class ActiveEffectsComponent implements Component<EntityStore> {
 
     public void clearSwapBack(BleachEffect effect) {
         pendingSwapBacks.remove(effect);
+    }
+
+    // --------------------ARMOR SWAP-BACK---------------------------------r.
+
+    // Armor swap logic. We get swap what's on the player's chest slot, store the durability and the item id,
+    // so that we can restore it exactly how it was, to prevent exploting bankai as a free repair.
+    public record PendingArmorSwapBack(short armorSlot, @Nullable ItemStack originalItem) {}
+
+    private final Map<BleachEffect, PendingArmorSwapBack> pendingArmorSwapBacks = new EnumMap<>(BleachEffect.class);
+
+    public void registerArmorSwapBack(BleachEffect effect, short armorSlot, @Nullable ItemStack originalItem) {
+        pendingArmorSwapBacks.put(effect, new PendingArmorSwapBack(armorSlot, originalItem));
+    }
+
+    @Nullable
+    public PendingArmorSwapBack getArmorSwapBack(BleachEffect effect) {
+        return pendingArmorSwapBacks.get(effect);
+    }
+
+    public void clearArmorSwapBack(BleachEffect effect) {
+        pendingArmorSwapBacks.remove(effect);
     }
 
     // --------------------ATTACHMENTS----------------------------------------

@@ -1,0 +1,11 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Shikai_Circle",
+      "RotationOffset": {
+        "Roll": 0
+      }
+    }
+  ],
+  "IsImportant": false
+}

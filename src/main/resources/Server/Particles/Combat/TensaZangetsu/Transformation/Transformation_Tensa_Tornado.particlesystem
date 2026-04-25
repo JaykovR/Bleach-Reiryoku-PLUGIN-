@@ -1,0 +1,10 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Transformation_Tensa_Tornado_Spawner"
+    },
+    {
+      "SpawnerId": "Shikai_Circle"
+    }
+  ]
+}

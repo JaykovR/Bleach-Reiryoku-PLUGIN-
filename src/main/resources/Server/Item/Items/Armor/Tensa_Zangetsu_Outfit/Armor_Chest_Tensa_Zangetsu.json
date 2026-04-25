@@ -1,10 +1,10 @@
 {
   "TranslationProperties": {
-    "Name": "items.Shinigami_Robes_Captain.name",
+    "Name": "tensa zangetsu outfit",
     "Description": "items.Shinigami_Robes_Captain.description"
   },
   "Parent": "Armor_Bronze_Chest",
-  "Quality": "Developer",
+  "Quality": "Bankai",
   "ItemLevel": 15,
   "IconProperties": {
     "Scale": 0.35,
@@ -15,35 +15,11 @@
     ],
     "Translation": [
       9,
-      -44
+      -48
     ]
   },
-  "Model": "Items/Armors/Shinigami_Robes_Captain/TensaZangetsu_Clothes.blockymodel",
-  "Texture": "Items/Armors/Shinigami_Robes_Captain/TensaZangetsu_Clothes_texture.png",
-  "Recipe": {
-    "TimeSeconds": 2,
-    "Input": [
-      {
-        "Quantity": 2,
-        "ItemId": "Ingredient_Bolt_Soulweave_Cloth"
-      },
-      {
-        "ItemId": "Ingredient_Bolt_Purified_Soulweave_Cloth",
-        "Quantity": 5
-      }
-    ],
-    "BenchRequirement": [
-      {
-        "Id": "Soulweave_Loom",
-        "Type": "Crafting",
-        "Categories": [
-          "Soulweave_Loom_Shihakusho"
-        ],
-        "RequiredTierLevel": 1
-      }
-    ],
-    "KnowledgeRequired": false
-  },
+  "Model": "Items/Armors/Tensa_Zangetsu_Outfit/TensaZangetsu_Clothes.blockymodel",
+  "Texture": "Items/Armors/Tensa_Zangetsu_Outfit/TensaZangetsu_Clothes_texture.png",
   "Armor": {
     "ArmorSlot": "Chest",
     "BaseDamageResistance": 0,
@@ -54,21 +30,21 @@
     "StatModifiers": {
       "Health": [
         {
-          "Amount": 120,
-          "CalculationType": "Additive"
+          "Amount": 2,
+          "CalculationType": "Multiplicative"
         }
       ],
       "Stamina": [
         {
           "Target": "Max",
-          "CalculationType": "Additive",
-          "Amount": 5
+          "CalculationType": "Multiplicative",
+          "Amount": 3
         }
       ],
       "Mana": [
         {
           "CalculationType": "Additive",
-          "Amount": 50
+          "Amount": 60
         }
       ]
     },
@@ -108,5 +84,5 @@
   "Categories": [
     "BleachCategory.Armors"
   ],
-  "Icon": "Icons/ItemsGenerated/Test_TensaArmor.png"
+  "Icon": "Icons/ItemsGenerated/Armor_Chest_Tensa_Zangetsu.png"
 }

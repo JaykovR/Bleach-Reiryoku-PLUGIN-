@@ -1,0 +1,17 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Transformations/Tensa_Zangetsu/Pulse_2.ogg"
+      ],
+      "StartDelay": 0,
+      "Looping": false,
+      "Volume": 6.0
+    }
+  ],
+  "MaxInstance": 5,
+  "Volume": -1.44,
+  "PreventSoundInterruption": true,
+  "Parent": "SFX_Attn_Moderate",
+  "Pitch": -3.936
+}

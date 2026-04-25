@@ -1,0 +1,17 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Transformations/Tensa_Zangetsu/Woosh_1.ogg"
+      ],
+      "StartDelay": 0,
+      "Looping": false,
+      "Volume": 6.0
+    }
+  ],
+  "MaxInstance": 5,
+  "Volume": -5.4,
+  "PreventSoundInterruption": true,
+  "Parent": "SFX_Attn_Moderate",
+  "Pitch": 0.864
+}

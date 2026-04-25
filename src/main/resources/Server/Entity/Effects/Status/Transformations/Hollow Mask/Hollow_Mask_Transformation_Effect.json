@@ -1,8 +1,13 @@
 {
   "Name": "Hollow Mask",
   "ApplicationEffects": {
-    "ScreenEffect": "ScreenEffects/Kenpachi_BattleTrance.png",
-    "HorizontalSpeedMultiplier": 1.5
+    "ScreenEffect": "ScreenEffects/Hollow_Mask.png",
+    "HorizontalSpeedMultiplier": 1.5,
+    "AbilityEffects": {
+      "Disabled": [
+        "Ability3"
+      ]
+    }
   },
   "Duration": 5,
   "StatusEffectIcon": "UI/StatusEffects/Hollow_Mask.png"

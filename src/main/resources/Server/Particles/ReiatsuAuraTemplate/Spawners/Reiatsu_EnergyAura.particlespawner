@@ -30,8 +30,7 @@
             "Min": 4,
             "Max": 4
           }
-        },
-        "Color": "#74d4cf"
+        }
       },
       "50": {
         "Opacity": 0.116,
@@ -44,8 +43,7 @@
             "Min": 4,
             "Max": 4
           }
-        },
-        "Color": "#a1dfdb"
+        }
       }
     },
     "InitialAnimationFrame": {

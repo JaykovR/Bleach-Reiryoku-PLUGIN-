@@ -533,7 +533,9 @@
       "FirstPerson": "Characters/Animations/Items/Shikai_Senbonzakura/Swing_Right_FPS.blockyanim"
     },
     "BankaiTransform": {
-      "ThirdPerson": "Characters/Animations/Items/Zangetsu_Bankai/Bankai_Zangetsu.blockyanim"
+      "ThirdPerson": "Characters/Animations/Items/Zangetsu_Bankai/Bankai_Zangetsu.blockyanim",
+      "Looping": true,
+      "ThirdPersonFace": "Characters/Animations/Expressions/Frown.blockyanim"
     }
   },
   "Camera": {

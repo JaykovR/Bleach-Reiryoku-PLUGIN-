@@ -10,6 +10,7 @@
     "DropList": "Drop_Ghoul_Hollow",
     "MaxSpeed": 7,
     "Attack": "Root_NPC_Attack_Melee",
+    "AttackDistance": 4,
     "AlwaysSleepAtNight": false,
     "MaxHealth": 230,
     "IsMemory": true,

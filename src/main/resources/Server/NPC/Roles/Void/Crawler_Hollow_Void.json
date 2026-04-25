@@ -56,8 +56,8 @@
       3
     ],
     "CombatMovingRelativeSpeed": 0.7,
-    "Attack": "Root_NPC_Crawler_Void_Attack",
-    "AttackDistance": 2.25,
+    "Attack": "Root_NPC_Crawler_Hollow_Attack",
+    "AttackDistance": 8,
     "ChaseRelativeSpeed": 1,
     "AlwaysSleepAtNight": false,
     "DayFlavorAnimation": "",

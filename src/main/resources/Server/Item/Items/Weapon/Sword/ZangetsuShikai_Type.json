@@ -33,27 +33,7 @@
     "Primary": "Root_Shikai_Primary",
     "Secondary": "Root_ZangetsuShikai_Secondary_Guard",
     "Ability1": "Root_Shikai_GetsugaTenshou",
-    "Ability3": {
-      "Interactions": [
-        {
-          "Type": "ShikaiCheck",
-          "Next": {
-            "Type": "Simple",
-            "Effects": {
-              "ItemAnimationId": "BankaiTransform",
-              "ItemPlayerAnimationsId": "TensaZangetsuAnimations"
-            },
-            "RunTime": 0.5,
-            "Next": {
-              "Type": "TensaZangetsu",
-              "RunTime": 0.05,
-              "Duration": 10,
-              "Effects": {}
-            }
-          }
-        }
-      ]
-    }
+    "Ability3": "Root_Transformation_Bankai_Tensa_Zangetsu"
   },
   "Weapon": {
     "EntityStatsToClear": [

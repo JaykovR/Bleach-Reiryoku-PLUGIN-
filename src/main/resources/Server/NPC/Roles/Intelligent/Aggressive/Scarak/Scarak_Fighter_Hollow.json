@@ -27,7 +27,7 @@
     "Appearance": "Scarak_Fighter_Hollow",
     "IsMemory": true,
     "MemoriesCategory": "Hollow",
-    "AttackDistance": 3,
+    "AttackDistance": 4,
     "MemoriesNameOverride": "Scarak_Fighter_Hollow",
     "Weapons": [],
     "OffHand": [],

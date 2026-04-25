@@ -1,0 +1,233 @@
+{
+  "Type": "Serial",
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "Effects": {
+        "ItemPlayerAnimationsId": "TensaZangetsuAnimations",
+        "ItemAnimationId": "BankaiTransform",
+        "WorldSoundEventId": "SFX_Tensa_Zangetsu_Woosh",
+        "LocalSoundEventId": "SFX_Tensa_Zangetsu_Woosh"
+      },
+      "RunTime": 2,
+      "HorizontalSpeedMultiplier": 0.001
+    },
+    {
+      "Type": "Explode",
+      "RunTime": 1,
+      "Effects": {
+        "Particles": [
+          {
+            "SystemId": "Bankai_Transcition_Circles",
+            "Color": "#ffd14f",
+            "TargetEntityPart": "Entity"
+          }
+        ],
+        "ItemPlayerAnimationsId": "TensaZangetsuAnimations",
+        "ItemAnimationId": "BankaiTransform",
+        "WorldSoundEventId": "SFX_Tensa_Zangetsu_Pulse",
+        "LocalSoundEventId": "SFX_Tensa_Zangetsu_Pulse"
+      },
+      "Config": {
+        "BlockDamageRadius": 8,
+        "DamageBlocks": true,
+        "EntityDamage": 0
+      },
+      "HorizontalSpeedMultiplier": 0.001,
+      "Next": {
+        "Type": "Selector",
+        "RunTime": 0.01,
+        "Selector": {
+          "Id": "AOECylinder",
+          "Range": 5
+        },
+        "HitEntity": {
+          "Interactions": [
+            "Tranformation_Bankai_Tensa_Zangetsu_Push"
+          ]
+        }
+      }
+    },
+    {
+      "Type": "Explode",
+      "RunTime": 1,
+      "Effects": {
+        "Particles": [
+          {
+            "SystemId": "Bankai_Transcition_Circles",
+            "Color": "#ffd14f",
+            "TargetEntityPart": "Entity",
+            "Scale": 1.5
+          }
+        ],
+        "ItemPlayerAnimationsId": "TensaZangetsuAnimations",
+        "ItemAnimationId": "BankaiTransform",
+        "WorldSoundEventId": "SFX_Tensa_Zangetsu_Pulse",
+        "LocalSoundEventId": "SFX_Tensa_Zangetsu_Pulse"
+      },
+      "Config": {
+        "BlockDamageRadius": 8,
+        "DamageBlocks": true,
+        "EntityDamage": 0
+      },
+      "HorizontalSpeedMultiplier": 0.001,
+      "Next": {
+        "Type": "Selector",
+        "RunTime": 0.01,
+        "Selector": {
+          "Id": "AOECylinder",
+          "Range": 5
+        },
+        "HitEntity": {
+          "Interactions": [
+            "Tranformation_Bankai_Tensa_Zangetsu_Push"
+          ]
+        }
+      }
+    },
+    {
+      "Type": "Explode",
+      "RunTime": 1,
+      "Effects": {
+        "Particles": [
+          {
+            "SystemId": "Bankai_Transcition_Circles",
+            "Color": "#ffd14f",
+            "TargetEntityPart": "Entity",
+            "Scale": 2
+          }
+        ],
+        "ItemPlayerAnimationsId": "TensaZangetsuAnimations",
+        "ItemAnimationId": "BankaiTransform"
+      },
+      "Config": {
+        "BlockDamageRadius": 8,
+        "DamageBlocks": true,
+        "EntityDamage": 0
+      },
+      "HorizontalSpeedMultiplier": 0.001,
+      "Next": {
+        "Type": "Selector",
+        "RunTime": 0.01,
+        "Selector": {
+          "Id": "AOECylinder",
+          "Range": 5
+        },
+        "HitEntity": {
+          "Interactions": [
+            "Tranformation_Bankai_Tensa_Zangetsu_Push"
+          ]
+        }
+      }
+    },
+    {
+      "Type": "Simple",
+      "Effects": {
+        "ItemAnimationId": "BankaiTransform",
+        "ItemPlayerAnimationsId": "TensaZangetsuAnimations",
+        "Particles": [
+          {
+            "SystemId": "ShikaiUnlock",
+            "Color": "#ffdc43",
+            "TargetEntityPart": "Entity"
+          },
+          {
+            "SystemId": "Reiatsu_Aura",
+            "Color": "#ffdc43",
+            "TargetEntityPart": "Entity",
+            "Scale": 3
+          }
+        ],
+        "ClearAnimationOnFinish": true,
+        "WorldSoundEventId": "SFX_Tensa_Zangetsu_BassDrop",
+        "LocalSoundEventId": "SFX_Tensa_Zangetsu_BassDrop"
+      },
+      "RunTime": 1,
+      "HorizontalSpeedMultiplier": 0.001,
+      "Next": {
+        "Type": "Selector",
+        "RunTime": 0.01,
+        "Selector": {
+          "Id": "AOECylinder",
+          "Range": 5
+        },
+        "HitEntity": {
+          "Interactions": [
+            "Tranformation_Bankai_Tensa_Zangetsu_Push"
+          ]
+        }
+      }
+    },
+    {
+      "Type": "Simple",
+      "Effects": {
+        "Particles": [
+          {
+            "SystemId": "Transformation_Tensa_Tornado",
+            "Color": "#ffdc43",
+            "TargetEntityPart": "Entity"
+          },
+          {
+            "SystemId": "Reiatsu_Aura",
+            "Color": "#ffdc43",
+            "TargetEntityPart": "Entity",
+            "Scale": 3
+          }
+        ],
+        "ItemPlayerAnimationsId": "TensaZangetsuAnimations",
+        "ItemAnimationId": "BankaiTransform",
+        "ClearAnimationOnFinish": true,
+        "WorldSoundEventId": "SFX_Tensa_Zangetsu_Boom",
+        "LocalSoundEventId": "SFX_Tensa_Zangetsu_Boom"
+      },
+      "RunTime": 1,
+      "HorizontalSpeedMultiplier": 0.001,
+      "Next": {
+        "Type": "Selector",
+        "RunTime": 0.01,
+        "Selector": {
+          "Id": "AOECylinder",
+          "Range": 5
+        },
+        "HitEntity": {
+          "Interactions": [
+            "Tranformation_Bankai_Tensa_Zangetsu_Push"
+          ]
+        }
+      }
+    },
+    {
+      "Type": "Parallel",
+      "Interactions": [
+        {
+          "Type": "Serial",
+          "Interactions": [
+            {
+              "Type": "ApplyEffect",
+              "EffectId": "Tensa_Zangetsu_Transformation_Effect",
+              "Entity": "User",
+              "RunTime": 0.001
+            },
+            {
+              "Type": "ChangeStat",
+              "RunTime": 0.001,
+              "ValueType": "Percent",
+              "Behaviour": "Add",
+              "Entity": "User",
+              "StatModifiers": {
+                "Health": 70,
+                "Mana": 70,
+                "Stamina": 70
+              }
+            }
+          ]
+        },
+        {
+          "Interactions": [
+            "Transformation_Bankai_Tensa_Zangetsu"
+          ]
+        }
+      ]
+    }
+  ]
+}
