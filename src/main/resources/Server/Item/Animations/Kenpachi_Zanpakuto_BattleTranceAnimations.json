@@ -400,6 +400,15 @@
       "BlendingDuration": 0.1,
       "Looping": true
     },
+    "PP_Parry": {
+      "ThirdPerson": "Characters/Animations/Items/Perfect_Parries/Bleach_Reiryoku/Sword/Parry.blockyanim",
+      "ThirdPersonMoving": "Characters/Animations/Items/Perfect_Parries/Bleach_Reiryoku/Sword/Parry.blockyanim",
+      "ThirdPersonFace": "Characters/Animations/Expressions/Angry.blockyanim",
+      "FirstPerson": "Characters/Animations/Items/Perfect_Parries/Bleach_Reiryoku/Sword/Parry_FPS.blockyanim",
+      "BlendingDuration": 0,
+      "KeepPreviousFirstPersonAnimation": true,
+      "Speed": 0.6
+    },
     "GuardBash": {
       "ThirdPerson": "Characters/Animations/Items/Main_Handed/Sword/Attacks/Guard_Bash/Guard_Bash.blockyanim",
       "ThirdPersonMoving": "Characters/Animations/Items/Main_Handed/Sword/Attacks/Guard_Bash/Guard_Bash_Moving.blockyanim",
