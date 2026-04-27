@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Hollow Mask (Test)"
+    "Name": "items.Hollow_Mask.name",
+    "Description": "items.Hollow_Mask.description"
   },
   "Parent": "Armor_Iron_Head",
   "ItemLevel": 10,
@@ -34,7 +35,6 @@
       "HeadAccessory"
     ]
   },
-  "MaxDurability": 80,
   "Tags": {
     "Type": [
       "Armor"
@@ -44,8 +44,7 @@
     ]
   },
   "ItemSoundSetId": "ISS_Armor_Heavy",
-  "DurabilityLossOnHit": 0.5,
-  "Quality": "Template",
+  "Quality": "Epic",
   "Texture": "Items/Armors/Mask/Hollow_Mask.png",
   "IconProperties": {
     "Scale": 0.7,
@@ -59,5 +58,8 @@
       10
     ]
   },
-  "Icon": "Icons/ItemsGenerated/TEST_Mask.png"
+  "Icon": "Icons/ItemsGenerated/Armor_Hollow_Mask.png",
+  "Categories": [
+    "BleachCategory.Armors"
+  ]
 }

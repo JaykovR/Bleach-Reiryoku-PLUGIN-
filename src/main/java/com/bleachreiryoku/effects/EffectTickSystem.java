@@ -108,23 +108,30 @@ public class EffectTickSystem extends EntityTickingSystem<EntityStore> {
                 effects.clearSwapBack(effect);
             }
 
-            // Remove Tensa Zangetsu chest from ALL inventory sections, then restore original
+            // Remove bankai/mask item from ALL inventory sections, then restore original
             // Note: Improve this and use it for future swaps required on other skills.
 
             ActiveEffectsComponent.PendingArmorSwapBack armorSwapBack = effects.getArmorSwapBack(effect);
             if (armorSwapBack != null) {
 
-                final String BANKAI_CHEST_ID = "Armor_Chest_Tensa_Zangetsu";
+                // Resolve which item ID to sweep based on the effect
+                final String itemIdToRemove = switch (effect) {
+                    case TENSA_ZANGETSU_CHEST -> "Armor_Chest_Tensa_Zangetsu";
+                    case HOLLOW_MASK -> "Armor_Hollow_Mask";
+                    default -> null;
+                };
 
-                // Sweep every inventory section and remove the bankai chest wherever it ended up
-                // this prevents cloning.
-                sweepAndRemove(chunk, i, InventoryComponent.Armor.getComponentType(), BANKAI_CHEST_ID);
-                sweepAndRemove(chunk, i, InventoryComponent.Hotbar.getComponentType(), BANKAI_CHEST_ID);
-                sweepAndRemove(chunk, i, InventoryComponent.Storage.getComponentType(), BANKAI_CHEST_ID);
-                sweepAndRemove(chunk, i, InventoryComponent.Utility.getComponentType(), BANKAI_CHEST_ID);
-                sweepAndRemove(chunk, i, InventoryComponent.Backpack.getComponentType(), BANKAI_CHEST_ID);
+                if (itemIdToRemove != null) {
+                    // Sweep every inventory section and remove the item wherever it ended up
+                    // this prevents cloning.
+                    sweepAndRemove(chunk, i, InventoryComponent.Armor.getComponentType(), itemIdToRemove);
+                    sweepAndRemove(chunk, i, InventoryComponent.Hotbar.getComponentType(), itemIdToRemove);
+                    sweepAndRemove(chunk, i, InventoryComponent.Storage.getComponentType(), itemIdToRemove);
+                    sweepAndRemove(chunk, i, InventoryComponent.Utility.getComponentType(), itemIdToRemove);
+                    sweepAndRemove(chunk, i, InventoryComponent.Backpack.getComponentType(), itemIdToRemove);
+                }
 
-                // Restore the original chest item (with its original durability) to the armor slot
+                // Restore the original item (with its original durability) to the armor slot
                 var armorComp = chunk.getComponent(i, InventoryComponent.Armor.getComponentType());
                 if (armorComp != null && armorSwapBack.originalItem() != null
                         && !armorSwapBack.originalItem().isEmpty()) {

@@ -26,40 +26,40 @@
           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
           "shape": {
             "type": "box",
-            "offset": {"x": 0, "y": -10.75, "z": 21.5},
+            "offset": {"x": 0, "y": -2.25, "z": 21.5},
             "stretch": {"x": 1.03125, "y": 1, "z": 1},
             "settings": {
               "isPiece": false,
-              "size": {"x": 29, "y": 15, "z": 1}
+              "size": {"x": 27, "y": 2, "z": 1}
             },
             "textureLayout": {
               "back": {
-                "offset": {"x": 29, "y": 6},
+                "offset": {"x": 28, "y": 4},
                 "mirror": {"x": true, "y": false},
                 "angle": 0
               },
               "right": {
-                "offset": {"x": 28, "y": 6},
+                "offset": {"x": 27, "y": 4},
                 "mirror": {"x": false, "y": false},
                 "angle": 0
               },
               "front": {
-                "offset": {"x": 0, "y": 6},
+                "offset": {"x": 1, "y": 4},
                 "mirror": {"x": false, "y": false},
                 "angle": 0
               },
               "left": {
-                "offset": {"x": 0, "y": 6},
+                "offset": {"x": 1, "y": 4},
                 "mirror": {"x": false, "y": false},
                 "angle": 0
               },
               "top": {
-                "offset": {"x": 0, "y": 6},
+                "offset": {"x": 1, "y": 4},
                 "mirror": {"x": false, "y": false},
                 "angle": 0
               },
               "bottom": {
-                "offset": {"x": 0, "y": 20},
+                "offset": {"x": 1, "y": 22},
                 "mirror": {"x": false, "y": false},
                 "angle": 0
               }
@@ -72,544 +72,8 @@
           "children": [
             {
               "id": "3",
-              "name": "Eye_fill",
-              "position": {"x": 0.67233, "y": 8.375, "z": -6.5},
-              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
-              "shape": {
-                "type": "box",
-                "offset": {"x": 6.551, "y": -12.38033, "z": 6.5},
-                "stretch": {"x": 1.03125, "y": 1, "z": 1},
-                "settings": {
-                  "isPiece": false,
-                  "size": {"x": 7, "y": 1, "z": 1}
-                },
-                "textureLayout": {
-                  "left": {
-                    "offset": {"x": 18, "y": 17},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  },
-                  "top": {
-                    "offset": {"x": 18, "y": 17},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  }
-                },
-                "unwrapMode": "custom",
-                "visible": true,
-                "doubleSided": true,
-                "shadingMode": "flat"
-              },
-              "children": [
-                {
-                  "id": "4",
-                  "name": "Eye_fill--C1",
-                  "position": {"x": -20.63267, "y": 13.50533, "z": -0.5},
-                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
-                  "shape": {
-                    "type": "box",
-                    "offset": {"x": 16.5, "y": -14.5, "z": 0.5},
-                    "stretch": {"x": 1.03125, "y": 1, "z": 1},
-                    "settings": {
-                      "isPiece": false,
-                      "size": {"x": 1, "y": 1, "z": 1},
-                      "isStaticBox": true
-                    },
-                    "textureLayout": {
-                      "top": {
-                        "offset": {"x": 16, "y": 20},
-                        "mirror": {"x": false, "y": false},
-                        "angle": 0
-                      }
-                    },
-                    "unwrapMode": "custom",
-                    "visible": true,
-                    "doubleSided": true,
-                    "shadingMode": "flat"
-                  }
-                },
-                {
-                  "id": "5",
-                  "name": "Eye_fill--C2",
-                  "position": {"x": -20.382, "y": 13.50533, "z": -0.5},
-                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
-                  "shape": {
-                    "type": "box",
-                    "offset": {"x": 24.5, "y": -12.5, "z": 0.5},
-                    "stretch": {"x": 1.03125, "y": 1, "z": 1},
-                    "settings": {
-                      "isPiece": false,
-                      "size": {"x": 1, "y": 1, "z": 1},
-                      "isStaticBox": true
-                    },
-                    "textureLayout": {
-                      "left": {
-                        "offset": {"x": 25, "y": 16},
-                        "mirror": {"x": false, "y": false},
-                        "angle": 0
-                      },
-                      "top": {
-                        "offset": {"x": 25, "y": 16},
-                        "mirror": {"x": false, "y": false},
-                        "angle": 0
-                      }
-                    },
-                    "unwrapMode": "custom",
-                    "visible": true,
-                    "doubleSided": true,
-                    "shadingMode": "flat"
-                  }
-                },
-                {
-                  "id": "6",
-                  "name": "Eye_fill--C3",
-                  "position": {"x": -20.47333, "y": 13.50533, "z": -0.5},
-                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
-                  "shape": {
-                    "type": "box",
-                    "offset": {"x": 21.5, "y": -9.5, "z": 0.5},
-                    "stretch": {"x": 1.03125, "y": 1, "z": 1},
-                    "settings": {
-                      "isPiece": false,
-                      "size": {"x": 9, "y": 1, "z": 1},
-                      "isStaticBox": true
-                    },
-                    "textureLayout": {
-                      "bottom": {
-                        "offset": {"x": 18, "y": 13},
-                        "mirror": {"x": false, "y": false},
-                        "angle": 0
-                      }
-                    },
-                    "unwrapMode": "custom",
-                    "visible": true,
-                    "doubleSided": true,
-                    "shadingMode": "flat"
-                  }
-                },
-                {
-                  "id": "7",
-                  "name": "Eye_fill--C4",
-                  "position": {"x": -19.63267, "y": 13.50533, "z": -0.5},
-                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
-                  "shape": {
-                    "type": "box",
-                    "offset": {"x": 16.5, "y": -10.5, "z": 0.5},
-                    "stretch": {"x": 1.03125, "y": 1, "z": 1},
-                    "settings": {
-                      "isPiece": false,
-                      "size": {"x": 1, "y": 1, "z": 1},
-                      "isStaticBox": true
-                    },
-                    "textureLayout": {
-                      "right": {
-                        "offset": {"x": 18, "y": 14},
-                        "mirror": {"x": false, "y": false},
-                        "angle": 0
-                      },
-                      "bottom": {
-                        "offset": {"x": 18, "y": 14},
-                        "mirror": {"x": false, "y": false},
-                        "angle": 0
-                      }
-                    },
-                    "unwrapMode": "custom",
-                    "visible": true,
-                    "doubleSided": true,
-                    "shadingMode": "flat"
-                  }
-                },
-                {
-                  "id": "8",
-                  "name": "Eye_fill--C5",
-                  "position": {"x": -20.35, "y": 13.50533, "z": -0.5},
-                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
-                  "shape": {
-                    "type": "box",
-                    "offset": {"x": 25.5, "y": -11.5, "z": 0.5},
-                    "stretch": {"x": 1.03125, "y": 1, "z": 1},
-                    "settings": {
-                      "isPiece": false,
-                      "size": {"x": 1, "y": 1, "z": 1},
-                      "isStaticBox": true
-                    },
-                    "textureLayout": {
-                      "left": {
-                        "offset": {"x": 26, "y": 15},
-                        "mirror": {"x": false, "y": false},
-                        "angle": 0
-                      },
-                      "top": {
-                        "offset": {"x": 26, "y": 15},
-                        "mirror": {"x": false, "y": false},
-                        "angle": 0
-                      }
-                    },
-                    "unwrapMode": "custom",
-                    "visible": true,
-                    "doubleSided": true,
-                    "shadingMode": "flat"
-                  }
-                },
-                {
-                  "id": "9",
-                  "name": "Eye_fill--C6",
-                  "position": {"x": -20.318, "y": 13.50533, "z": -0.5},
-                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
-                  "shape": {
-                    "type": "box",
-                    "offset": {"x": 26.5, "y": -10.5, "z": 0.5},
-                    "stretch": {"x": 1.03125, "y": 1, "z": 1},
-                    "settings": {
-                      "isPiece": false,
-                      "size": {"x": 1, "y": 1, "z": 1},
-                      "isStaticBox": true
-                    },
-                    "textureLayout": {
-                      "left": {
-                        "offset": {"x": 27, "y": 14},
-                        "mirror": {"x": false, "y": false},
-                        "angle": 0
-                      },
-                      "top": {
-                        "offset": {"x": 27, "y": 1},
-                        "mirror": {"x": false, "y": false},
-                        "angle": 0
-                      }
-                    },
-                    "unwrapMode": "custom",
-                    "visible": true,
-                    "doubleSided": true,
-                    "shadingMode": "flat"
-                  }
-                },
-                {
-                  "id": "10",
-                  "name": "Eye_fill--C7",
-                  "position": {"x": -4.16467, "y": 1.00533, "z": 0},
-                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
-                  "shape": {
-                    "type": "box",
-                    "offset": {"x": 0, "y": 0, "z": 0},
-                    "stretch": {"x": 1.03125, "y": 1, "z": 1},
-                    "settings": {
-                      "isPiece": false,
-                      "size": {"x": 1, "y": 3, "z": 1},
-                      "isStaticBox": true
-                    },
-                    "textureLayout": {
-                      "right": {
-                        "offset": {"x": 17, "y": 15},
-                        "mirror": {"x": false, "y": false},
-                        "angle": 0
-                      }
-                    },
-                    "unwrapMode": "custom",
-                    "visible": true,
-                    "doubleSided": true,
-                    "shadingMode": "flat"
-                  }
-                }
-              ]
-            },
-            {
-              "id": "11",
-              "name": "Eye_fill2",
-              "position": {"x": -0.67233, "y": 8.375, "z": -6.5},
-              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
-              "shape": {
-                "type": "box",
-                "offset": {"x": -6.551, "y": -12.38033, "z": 6.5},
-                "stretch": {"x": 1.03125, "y": 1, "z": 1},
-                "settings": {
-                  "isPiece": false,
-                  "size": {"x": 7, "y": 1, "z": 1}
-                },
-                "textureLayout": {
-                  "right": {
-                    "offset": {"x": 19, "y": 17},
-                    "mirror": {"x": true, "y": false},
-                    "angle": 0
-                  },
-                  "top": {
-                    "offset": {"x": 25, "y": 17},
-                    "mirror": {"x": true, "y": false},
-                    "angle": 0
-                  }
-                },
-                "unwrapMode": "custom",
-                "visible": true,
-                "doubleSided": true,
-                "shadingMode": "flat"
-              },
-              "children": [
-                {
-                  "id": "12",
-                  "name": "Eye_fill--C1",
-                  "position": {"x": 20.63267, "y": 13.50533, "z": -0.5},
-                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
-                  "shape": {
-                    "type": "box",
-                    "offset": {"x": -16.5, "y": -14.5, "z": 0.5},
-                    "stretch": {"x": 1.03125, "y": 1, "z": 1},
-                    "settings": {
-                      "isPiece": false,
-                      "size": {"x": 1, "y": 1, "z": 1},
-                      "isStaticBox": true
-                    },
-                    "textureLayout": {
-                      "top": {
-                        "offset": {"x": 17, "y": 20},
-                        "mirror": {"x": true, "y": false},
-                        "angle": 0
-                      }
-                    },
-                    "unwrapMode": "custom",
-                    "visible": true,
-                    "doubleSided": true,
-                    "shadingMode": "flat"
-                  }
-                },
-                {
-                  "id": "13",
-                  "name": "Eye_fill--C2",
-                  "position": {"x": 20.382, "y": 13.50533, "z": -0.5},
-                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
-                  "shape": {
-                    "type": "box",
-                    "offset": {"x": -24.5, "y": -12.5, "z": 0.5},
-                    "stretch": {"x": 1.03125, "y": 1, "z": 1},
-                    "settings": {
-                      "isPiece": false,
-                      "size": {"x": 1, "y": 1, "z": 1},
-                      "isStaticBox": true
-                    },
-                    "textureLayout": {
-                      "right": {
-                        "offset": {"x": 26, "y": 16},
-                        "mirror": {"x": true, "y": false},
-                        "angle": 0
-                      },
-                      "top": {
-                        "offset": {"x": 26, "y": 16},
-                        "mirror": {"x": true, "y": false},
-                        "angle": 0
-                      }
-                    },
-                    "unwrapMode": "custom",
-                    "visible": true,
-                    "doubleSided": true,
-                    "shadingMode": "flat"
-                  }
-                },
-                {
-                  "id": "14",
-                  "name": "Eye_fill--C3",
-                  "position": {"x": 20.47333, "y": 13.50533, "z": -0.5},
-                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
-                  "shape": {
-                    "type": "box",
-                    "offset": {"x": -21.5, "y": -9.5, "z": 0.5},
-                    "stretch": {"x": 1.03125, "y": 1, "z": 1},
-                    "settings": {
-                      "isPiece": false,
-                      "size": {"x": 9, "y": 1, "z": 1},
-                      "isStaticBox": true
-                    },
-                    "textureLayout": {
-                      "bottom": {
-                        "offset": {"x": 27, "y": 13},
-                        "mirror": {"x": true, "y": false},
-                        "angle": 0
-                      }
-                    },
-                    "unwrapMode": "custom",
-                    "visible": true,
-                    "doubleSided": true,
-                    "shadingMode": "flat"
-                  }
-                },
-                {
-                  "id": "15",
-                  "name": "Eye_fill--C4",
-                  "position": {"x": 19.63267, "y": 13.50533, "z": -0.5},
-                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
-                  "shape": {
-                    "type": "box",
-                    "offset": {"x": -16.5, "y": -10.5, "z": 0.5},
-                    "stretch": {"x": 1.03125, "y": 1, "z": 1},
-                    "settings": {
-                      "isPiece": false,
-                      "size": {"x": 1, "y": 1, "z": 1},
-                      "isStaticBox": true
-                    },
-                    "textureLayout": {
-                      "left": {
-                        "offset": {"x": 19, "y": 14},
-                        "mirror": {"x": true, "y": false},
-                        "angle": 0
-                      },
-                      "bottom": {
-                        "offset": {"x": 19, "y": 14},
-                        "mirror": {"x": true, "y": false},
-                        "angle": 0
-                      }
-                    },
-                    "unwrapMode": "custom",
-                    "visible": true,
-                    "doubleSided": true,
-                    "shadingMode": "flat"
-                  }
-                },
-                {
-                  "id": "16",
-                  "name": "Eye_fill--C5",
-                  "position": {"x": 20.35, "y": 13.50533, "z": -0.5},
-                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
-                  "shape": {
-                    "type": "box",
-                    "offset": {"x": -25.5, "y": -11.5, "z": 0.5},
-                    "stretch": {"x": 1.03125, "y": 1, "z": 1},
-                    "settings": {
-                      "isPiece": false,
-                      "size": {"x": 1, "y": 1, "z": 1},
-                      "isStaticBox": true
-                    },
-                    "textureLayout": {
-                      "right": {
-                        "offset": {"x": 27, "y": 15},
-                        "mirror": {"x": true, "y": false},
-                        "angle": 0
-                      },
-                      "top": {
-                        "offset": {"x": 27, "y": 15},
-                        "mirror": {"x": true, "y": false},
-                        "angle": 0
-                      }
-                    },
-                    "unwrapMode": "custom",
-                    "visible": true,
-                    "doubleSided": true,
-                    "shadingMode": "flat"
-                  }
-                },
-                {
-                  "id": "17",
-                  "name": "Eye_fill--C6",
-                  "position": {"x": 20.318, "y": 13.50533, "z": -0.5},
-                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
-                  "shape": {
-                    "type": "box",
-                    "offset": {"x": -26.5, "y": -10.5, "z": 0.5},
-                    "stretch": {"x": 1.03125, "y": 1, "z": 1},
-                    "settings": {
-                      "isPiece": false,
-                      "size": {"x": 1, "y": 1, "z": 1},
-                      "isStaticBox": true
-                    },
-                    "textureLayout": {
-                      "right": {
-                        "offset": {"x": 28, "y": 14},
-                        "mirror": {"x": true, "y": false},
-                        "angle": 0
-                      },
-                      "top": {
-                        "offset": {"x": 28, "y": 1},
-                        "mirror": {"x": true, "y": false},
-                        "angle": 0
-                      }
-                    },
-                    "unwrapMode": "custom",
-                    "visible": true,
-                    "doubleSided": true,
-                    "shadingMode": "flat"
-                  }
-                },
-                {
-                  "id": "18",
-                  "name": "Eye_fill--C7",
-                  "position": {"x": 4.16467, "y": 1.00533, "z": 0},
-                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
-                  "shape": {
-                    "type": "box",
-                    "offset": {"x": 0, "y": 0, "z": 0},
-                    "stretch": {"x": 1.03125, "y": 1, "z": 1},
-                    "settings": {
-                      "isPiece": false,
-                      "size": {"x": 1, "y": 3, "z": 1},
-                      "isStaticBox": true
-                    },
-                    "textureLayout": {
-                      "left": {
-                        "offset": {"x": 18, "y": 15},
-                        "mirror": {"x": true, "y": false},
-                        "angle": 0
-                      }
-                    },
-                    "unwrapMode": "custom",
-                    "visible": true,
-                    "doubleSided": true,
-                    "shadingMode": "flat"
-                  }
-                }
-              ]
-            },
-            {
-              "id": "19",
               "name": "cube--C1",
-              "position": {"x": -13.5, "y": 9.5, "z": -0.5},
-              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
-              "shape": {
-                "type": "box",
-                "offset": {"x": 13.5, "y": -1, "z": 0.5},
-                "stretch": {"x": 1.03125, "y": 1, "z": 1},
-                "settings": {
-                  "isPiece": false,
-                  "size": {"x": 27, "y": 2, "z": 1},
-                  "isStaticBox": true
-                },
-                "textureLayout": {
-                  "back": {
-                    "offset": {"x": 28, "y": 4},
-                    "mirror": {"x": true, "y": false},
-                    "angle": 0
-                  },
-                  "right": {
-                    "offset": {"x": 27, "y": 4},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  },
-                  "front": {
-                    "offset": {"x": 1, "y": 4},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  },
-                  "left": {
-                    "offset": {"x": 1, "y": 4},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  },
-                  "top": {
-                    "offset": {"x": 1, "y": 4},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  },
-                  "bottom": {
-                    "offset": {"x": 1, "y": 22},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  }
-                },
-                "unwrapMode": "custom",
-                "visible": true,
-                "doubleSided": true,
-                "shadingMode": "flat"
-              }
-            },
-            {
-              "id": "20",
-              "name": "cube--C2",
-              "position": {"x": -13.5, "y": 9.5, "z": -0.5},
+              "position": {"x": -13.5, "y": 1, "z": -0.5},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
@@ -659,9 +123,9 @@
               }
             },
             {
-              "id": "21",
-              "name": "cube--C3",
-              "position": {"x": -13.5, "y": 9.5, "z": -0.5},
+              "id": "4",
+              "name": "cube--C2",
+              "position": {"x": -13.5, "y": 1, "z": -0.5},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
@@ -711,9 +175,9 @@
               }
             },
             {
-              "id": "22",
-              "name": "cube--C4",
-              "position": {"x": -13.5, "y": 9.5, "z": -0.5},
+              "id": "5",
+              "name": "cube--C3",
+              "position": {"x": -13.5, "y": 1, "z": -0.5},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
@@ -763,9 +227,9 @@
               }
             },
             {
-              "id": "23",
-              "name": "cube--C5",
-              "position": {"x": -13.5, "y": 9.5, "z": -0.5},
+              "id": "6",
+              "name": "cube--C4",
+              "position": {"x": -13.5, "y": 1, "z": -0.5},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
@@ -815,9 +279,9 @@
               }
             },
             {
-              "id": "24",
-              "name": "cube--C6",
-              "position": {"x": -13.5, "y": 9.5, "z": -0.5},
+              "id": "7",
+              "name": "cube--C5",
+              "position": {"x": -13.5, "y": 1, "z": -0.5},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
@@ -867,9 +331,9 @@
               }
             },
             {
-              "id": "25",
-              "name": "cube--C7",
-              "position": {"x": -13.5, "y": 8.5, "z": -0.5},
+              "id": "8",
+              "name": "cube--C6",
+              "position": {"x": -13.5, "y": 0, "z": -0.5},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
@@ -919,9 +383,9 @@
               }
             },
             {
-              "id": "26",
-              "name": "cube--C8",
-              "position": {"x": -13.5, "y": 8.5, "z": -0.5},
+              "id": "9",
+              "name": "cube--C7",
+              "position": {"x": -13.5, "y": 0, "z": -0.5},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
@@ -971,9 +435,9 @@
               }
             },
             {
-              "id": "27",
-              "name": "cube--C9",
-              "position": {"x": -13.5, "y": 8.5, "z": -0.5},
+              "id": "10",
+              "name": "cube--C8",
+              "position": {"x": -13.5, "y": 0, "z": -0.5},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
@@ -1023,9 +487,9 @@
               }
             },
             {
-              "id": "28",
-              "name": "cube--C10",
-              "position": {"x": -13.5, "y": 8.5, "z": -0.5},
+              "id": "11",
+              "name": "cube--C9",
+              "position": {"x": -13.5, "y": 0, "z": -0.5},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
@@ -1075,9 +539,9 @@
               }
             },
             {
-              "id": "29",
-              "name": "cube--C11",
-              "position": {"x": -13.5, "y": 8.5, "z": -0.5},
+              "id": "12",
+              "name": "cube--C10",
+              "position": {"x": -13.5, "y": 0, "z": -0.5},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
@@ -1127,9 +591,9 @@
               }
             },
             {
-              "id": "30",
-              "name": "EyeGlow--C12",
-              "position": {"x": 0, "y": -2, "z": -0.25},
+              "id": "13",
+              "name": "EyeGlow--C11",
+              "position": {"x": 0, "y": -10.5, "z": 0.25},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
@@ -1179,9 +643,9 @@
               }
             },
             {
-              "id": "31",
-              "name": "cube--C13",
-              "position": {"x": -13.5, "y": 8.5, "z": -0.5},
+              "id": "14",
+              "name": "cube--C12",
+              "position": {"x": -13.5, "y": 0, "z": -0.5},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
@@ -1229,6 +693,542 @@
                 "doubleSided": true,
                 "shadingMode": "flat"
               }
+            },
+            {
+              "id": "15",
+              "name": "Helmet_Base--C13",
+              "position": {"x": 0, "y": -8.5, "z": 0},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 0, "y": 0, "z": 0},
+                "stretch": {"x": 1.03125, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 29, "y": 15, "z": 1},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "back": {
+                    "offset": {"x": 29, "y": 6},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  },
+                  "right": {
+                    "offset": {"x": 28, "y": 6},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "front": {
+                    "offset": {"x": 0, "y": 6},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "left": {
+                    "offset": {"x": 0, "y": 6},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "top": {
+                    "offset": {"x": 0, "y": 6},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "bottom": {
+                    "offset": {"x": 0, "y": 20},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": true,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "16",
+              "name": "Eye_fill",
+              "position": {"x": 0.67233, "y": -0.125, "z": -6.5},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 6.551, "y": -12.38033, "z": 6.5},
+                "stretch": {"x": 1.03125, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 7, "y": 1, "z": 1}
+                },
+                "textureLayout": {
+                  "left": {
+                    "offset": {"x": 18, "y": 17},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "top": {
+                    "offset": {"x": 18, "y": 17},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": true,
+                "shadingMode": "flat"
+              },
+              "children": [
+                {
+                  "id": "17",
+                  "name": "Eye_fill--C1",
+                  "position": {"x": -20.63267, "y": 13.50533, "z": -0.5},
+                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                  "shape": {
+                    "type": "box",
+                    "offset": {"x": 16.5, "y": -14.5, "z": 0.5},
+                    "stretch": {"x": 1.03125, "y": 1, "z": 1},
+                    "settings": {
+                      "isPiece": false,
+                      "size": {"x": 1, "y": 1, "z": 1},
+                      "isStaticBox": true
+                    },
+                    "textureLayout": {
+                      "top": {
+                        "offset": {"x": 16, "y": 20},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      }
+                    },
+                    "unwrapMode": "custom",
+                    "visible": true,
+                    "doubleSided": true,
+                    "shadingMode": "flat"
+                  }
+                },
+                {
+                  "id": "18",
+                  "name": "Eye_fill--C2",
+                  "position": {"x": -20.382, "y": 13.50533, "z": -0.5},
+                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                  "shape": {
+                    "type": "box",
+                    "offset": {"x": 24.5, "y": -12.5, "z": 0.5},
+                    "stretch": {"x": 1.03125, "y": 1, "z": 1},
+                    "settings": {
+                      "isPiece": false,
+                      "size": {"x": 1, "y": 1, "z": 1},
+                      "isStaticBox": true
+                    },
+                    "textureLayout": {
+                      "left": {
+                        "offset": {"x": 25, "y": 16},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      },
+                      "top": {
+                        "offset": {"x": 25, "y": 16},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      }
+                    },
+                    "unwrapMode": "custom",
+                    "visible": true,
+                    "doubleSided": true,
+                    "shadingMode": "flat"
+                  }
+                },
+                {
+                  "id": "19",
+                  "name": "Eye_fill--C3",
+                  "position": {"x": -20.47333, "y": 13.50533, "z": -0.5},
+                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                  "shape": {
+                    "type": "box",
+                    "offset": {"x": 21.5, "y": -9.5, "z": 0.5},
+                    "stretch": {"x": 1.03125, "y": 1, "z": 1},
+                    "settings": {
+                      "isPiece": false,
+                      "size": {"x": 9, "y": 1, "z": 1},
+                      "isStaticBox": true
+                    },
+                    "textureLayout": {
+                      "bottom": {
+                        "offset": {"x": 18, "y": 13},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      }
+                    },
+                    "unwrapMode": "custom",
+                    "visible": true,
+                    "doubleSided": true,
+                    "shadingMode": "flat"
+                  }
+                },
+                {
+                  "id": "20",
+                  "name": "Eye_fill--C4",
+                  "position": {"x": -19.63267, "y": 13.50533, "z": -0.5},
+                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                  "shape": {
+                    "type": "box",
+                    "offset": {"x": 16.5, "y": -10.5, "z": 0.5},
+                    "stretch": {"x": 1.03125, "y": 1, "z": 1},
+                    "settings": {
+                      "isPiece": false,
+                      "size": {"x": 1, "y": 1, "z": 1},
+                      "isStaticBox": true
+                    },
+                    "textureLayout": {
+                      "right": {
+                        "offset": {"x": 18, "y": 14},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      },
+                      "bottom": {
+                        "offset": {"x": 18, "y": 14},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      }
+                    },
+                    "unwrapMode": "custom",
+                    "visible": true,
+                    "doubleSided": true,
+                    "shadingMode": "flat"
+                  }
+                },
+                {
+                  "id": "21",
+                  "name": "Eye_fill--C5",
+                  "position": {"x": -20.35, "y": 13.50533, "z": -0.5},
+                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                  "shape": {
+                    "type": "box",
+                    "offset": {"x": 25.5, "y": -11.5, "z": 0.5},
+                    "stretch": {"x": 1.03125, "y": 1, "z": 1},
+                    "settings": {
+                      "isPiece": false,
+                      "size": {"x": 1, "y": 1, "z": 1},
+                      "isStaticBox": true
+                    },
+                    "textureLayout": {
+                      "left": {
+                        "offset": {"x": 26, "y": 15},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      },
+                      "top": {
+                        "offset": {"x": 26, "y": 15},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      }
+                    },
+                    "unwrapMode": "custom",
+                    "visible": true,
+                    "doubleSided": true,
+                    "shadingMode": "flat"
+                  }
+                },
+                {
+                  "id": "22",
+                  "name": "Eye_fill--C6",
+                  "position": {"x": -20.318, "y": 13.50533, "z": -0.5},
+                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                  "shape": {
+                    "type": "box",
+                    "offset": {"x": 26.5, "y": -10.5, "z": 0.5},
+                    "stretch": {"x": 1.03125, "y": 1, "z": 1},
+                    "settings": {
+                      "isPiece": false,
+                      "size": {"x": 1, "y": 1, "z": 1},
+                      "isStaticBox": true
+                    },
+                    "textureLayout": {
+                      "left": {
+                        "offset": {"x": 27, "y": 14},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      },
+                      "top": {
+                        "offset": {"x": 27, "y": 1},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      }
+                    },
+                    "unwrapMode": "custom",
+                    "visible": true,
+                    "doubleSided": true,
+                    "shadingMode": "flat"
+                  }
+                },
+                {
+                  "id": "23",
+                  "name": "Eye_fill--C7",
+                  "position": {"x": -4.16467, "y": 1.00533, "z": 0},
+                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                  "shape": {
+                    "type": "box",
+                    "offset": {"x": 0, "y": 0, "z": 0},
+                    "stretch": {"x": 1.03125, "y": 1, "z": 1},
+                    "settings": {
+                      "isPiece": false,
+                      "size": {"x": 1, "y": 3, "z": 1},
+                      "isStaticBox": true
+                    },
+                    "textureLayout": {
+                      "right": {
+                        "offset": {"x": 17, "y": 15},
+                        "mirror": {"x": false, "y": false},
+                        "angle": 0
+                      }
+                    },
+                    "unwrapMode": "custom",
+                    "visible": true,
+                    "doubleSided": true,
+                    "shadingMode": "flat"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "24",
+              "name": "Eye_fill2",
+              "position": {"x": -0.67233, "y": -0.125, "z": -6.5},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": -6.551, "y": -12.38033, "z": 6.5},
+                "stretch": {"x": 1.03125, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 7, "y": 1, "z": 1}
+                },
+                "textureLayout": {
+                  "right": {
+                    "offset": {"x": 19, "y": 17},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  },
+                  "top": {
+                    "offset": {"x": 25, "y": 17},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": true,
+                "shadingMode": "flat"
+              },
+              "children": [
+                {
+                  "id": "25",
+                  "name": "Eye_fill--C1",
+                  "position": {"x": 20.63267, "y": 13.50533, "z": -0.5},
+                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                  "shape": {
+                    "type": "box",
+                    "offset": {"x": -16.5, "y": -14.5, "z": 0.5},
+                    "stretch": {"x": 1.03125, "y": 1, "z": 1},
+                    "settings": {
+                      "isPiece": false,
+                      "size": {"x": 1, "y": 1, "z": 1},
+                      "isStaticBox": true
+                    },
+                    "textureLayout": {
+                      "top": {
+                        "offset": {"x": 17, "y": 20},
+                        "mirror": {"x": true, "y": false},
+                        "angle": 0
+                      }
+                    },
+                    "unwrapMode": "custom",
+                    "visible": true,
+                    "doubleSided": true,
+                    "shadingMode": "flat"
+                  }
+                },
+                {
+                  "id": "26",
+                  "name": "Eye_fill--C2",
+                  "position": {"x": 20.382, "y": 13.50533, "z": -0.5},
+                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                  "shape": {
+                    "type": "box",
+                    "offset": {"x": -24.5, "y": -12.5, "z": 0.5},
+                    "stretch": {"x": 1.03125, "y": 1, "z": 1},
+                    "settings": {
+                      "isPiece": false,
+                      "size": {"x": 1, "y": 1, "z": 1},
+                      "isStaticBox": true
+                    },
+                    "textureLayout": {
+                      "right": {
+                        "offset": {"x": 26, "y": 16},
+                        "mirror": {"x": true, "y": false},
+                        "angle": 0
+                      },
+                      "top": {
+                        "offset": {"x": 26, "y": 16},
+                        "mirror": {"x": true, "y": false},
+                        "angle": 0
+                      }
+                    },
+                    "unwrapMode": "custom",
+                    "visible": true,
+                    "doubleSided": true,
+                    "shadingMode": "flat"
+                  }
+                },
+                {
+                  "id": "27",
+                  "name": "Eye_fill--C3",
+                  "position": {"x": 20.47333, "y": 13.50533, "z": -0.5},
+                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                  "shape": {
+                    "type": "box",
+                    "offset": {"x": -21.5, "y": -9.5, "z": 0.5},
+                    "stretch": {"x": 1.03125, "y": 1, "z": 1},
+                    "settings": {
+                      "isPiece": false,
+                      "size": {"x": 9, "y": 1, "z": 1},
+                      "isStaticBox": true
+                    },
+                    "textureLayout": {
+                      "bottom": {
+                        "offset": {"x": 27, "y": 13},
+                        "mirror": {"x": true, "y": false},
+                        "angle": 0
+                      }
+                    },
+                    "unwrapMode": "custom",
+                    "visible": true,
+                    "doubleSided": true,
+                    "shadingMode": "flat"
+                  }
+                },
+                {
+                  "id": "28",
+                  "name": "Eye_fill--C4",
+                  "position": {"x": 19.63267, "y": 13.50533, "z": -0.5},
+                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                  "shape": {
+                    "type": "box",
+                    "offset": {"x": -16.5, "y": -10.5, "z": 0.5},
+                    "stretch": {"x": 1.03125, "y": 1, "z": 1},
+                    "settings": {
+                      "isPiece": false,
+                      "size": {"x": 1, "y": 1, "z": 1},
+                      "isStaticBox": true
+                    },
+                    "textureLayout": {
+                      "left": {
+                        "offset": {"x": 19, "y": 14},
+                        "mirror": {"x": true, "y": false},
+                        "angle": 0
+                      },
+                      "bottom": {
+                        "offset": {"x": 19, "y": 14},
+                        "mirror": {"x": true, "y": false},
+                        "angle": 0
+                      }
+                    },
+                    "unwrapMode": "custom",
+                    "visible": true,
+                    "doubleSided": true,
+                    "shadingMode": "flat"
+                  }
+                },
+                {
+                  "id": "29",
+                  "name": "Eye_fill--C5",
+                  "position": {"x": 20.35, "y": 13.50533, "z": -0.5},
+                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                  "shape": {
+                    "type": "box",
+                    "offset": {"x": -25.5, "y": -11.5, "z": 0.5},
+                    "stretch": {"x": 1.03125, "y": 1, "z": 1},
+                    "settings": {
+                      "isPiece": false,
+                      "size": {"x": 1, "y": 1, "z": 1},
+                      "isStaticBox": true
+                    },
+                    "textureLayout": {
+                      "right": {
+                        "offset": {"x": 27, "y": 15},
+                        "mirror": {"x": true, "y": false},
+                        "angle": 0
+                      },
+                      "top": {
+                        "offset": {"x": 27, "y": 15},
+                        "mirror": {"x": true, "y": false},
+                        "angle": 0
+                      }
+                    },
+                    "unwrapMode": "custom",
+                    "visible": true,
+                    "doubleSided": true,
+                    "shadingMode": "flat"
+                  }
+                },
+                {
+                  "id": "30",
+                  "name": "Eye_fill--C6",
+                  "position": {"x": 20.318, "y": 13.50533, "z": -0.5},
+                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                  "shape": {
+                    "type": "box",
+                    "offset": {"x": -26.5, "y": -10.5, "z": 0.5},
+                    "stretch": {"x": 1.03125, "y": 1, "z": 1},
+                    "settings": {
+                      "isPiece": false,
+                      "size": {"x": 1, "y": 1, "z": 1},
+                      "isStaticBox": true
+                    },
+                    "textureLayout": {
+                      "right": {
+                        "offset": {"x": 28, "y": 14},
+                        "mirror": {"x": true, "y": false},
+                        "angle": 0
+                      },
+                      "top": {
+                        "offset": {"x": 28, "y": 1},
+                        "mirror": {"x": true, "y": false},
+                        "angle": 0
+                      }
+                    },
+                    "unwrapMode": "custom",
+                    "visible": true,
+                    "doubleSided": true,
+                    "shadingMode": "flat"
+                  }
+                },
+                {
+                  "id": "31",
+                  "name": "Eye_fill--C7",
+                  "position": {"x": 4.16467, "y": 1.00533, "z": 0},
+                  "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+                  "shape": {
+                    "type": "box",
+                    "offset": {"x": 0, "y": 0, "z": 0},
+                    "stretch": {"x": 1.03125, "y": 1, "z": 1},
+                    "settings": {
+                      "isPiece": false,
+                      "size": {"x": 1, "y": 3, "z": 1},
+                      "isStaticBox": true
+                    },
+                    "textureLayout": {
+                      "left": {
+                        "offset": {"x": 18, "y": 15},
+                        "mirror": {"x": true, "y": false},
+                        "angle": 0
+                      }
+                    },
+                    "unwrapMode": "custom",
+                    "visible": true,
+                    "doubleSided": true,
+                    "shadingMode": "flat"
+                  }
+                }
+              ]
             }
           ]
         }
