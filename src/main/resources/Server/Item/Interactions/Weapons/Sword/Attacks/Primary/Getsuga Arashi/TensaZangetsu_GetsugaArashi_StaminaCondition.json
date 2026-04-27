@@ -23,7 +23,7 @@
   },
   "Failed": {
     "Type": "SendMessage",
-    "Message": "Not enough Stamina Available."
+    "Message": "Not enough Stamina or MP Available."
   },
   "LessThan": false
 }

@@ -50,6 +50,9 @@ Shihakusho_Kosode_BareShoulder.description = Kolsuz varyantla aynı amaca hizmet
 Shihakusho_Hakama.name = Shihakusho - Hakama
 Shihakusho_Hakama.description = Standart Shinigami üniforması olan <i>Shihakusho</i>'nun alt kısmını oluşturan giysi.
 
+Tensa_Zangetsu_Outfit.name = Göksel Zincirin Pelerini
+Tensa_Zangetsu_Outfit.description = Göklerin zincirlerinden doğmuş keskin, kara bir pelerin. Onu giyenin ayı ikiye bölebileceği söylenir.
+
 
 Resonating_Reishi_Core.name = Rezonans Eden Reishi Çekirdeği
 Resonating_Reishi_Core.description = Bu çekirdek sizinkini taklit eden bir frekansta titreşir. Ruhunuzun bir uzantısıdır. Onu uyandırmak için bir bıçağa atanmaya hazır.
@@ -57,6 +60,8 @@ Transcendent_Essence.name = Aşkın Öz
 Transcendent_Essence.description = Mutlak gücün girdap halinde bir paradoksu. Ruhunuz ile fiziksel dünya arasındaki sınırlar bu tek nabız noktasında çözülmüştür. Bu parıltıda ruhunuzun gerçek biçimi, serbest bırakılmak için haykırır.
 Hollow_Essence.name = Hollow Özü
 Hollow_Essence.description = Yenilmiş bir Hollow’un çarpıtılmış ruhundan kristalleşmiş bir kalıntı. Dengesiz reiryoku ile titreşir.
+Inner_Hollow_Catalyst.name = İçsel Hollow Katalizörü
+Inner_Hollow_Catalyst.description = Yoğunlaştırılmış Hollow özünün kalıntıları, tek bir küre içinde kristalleşmiş. Tüketildiğinde, içinde bir şey uyanacak.
 
 Sode_no_Shirayuki_Spirit_Fragment.name = Ruh Parçası - Sode no Shirayuki
 Sode_no_Shirayuki_Spirit_Fragment.description = Saf ruhsal enerjinin soğuk bir parçası.\n<b>Tüketmek için sağ tıkla (Shikai kilidini aç)</b>

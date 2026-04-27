@@ -5,13 +5,47 @@
       "Type": "Simple",
       "Effects": {
         "ItemPlayerAnimationsId": "TensaZangetsuAnimations",
-        "ItemAnimationId": "HollowMaskEquip"
+        "ItemAnimationId": "HollowMaskEquip",
+        "Particles": [
+          {
+            "SystemId": "Mask_Transformation",
+            "TargetNodeName": "Head",
+            "PositionOffset": {
+              "Z": 0.2,
+              "Y": -0.5
+            },
+            "TargetEntityPart": "Entity",
+            "Color": "#271a1a",
+            "RotationOffset": {
+              "Roll": 90,
+              "Yaw": 20
+            },
+            "Scale": 1
+          },
+          {
+            "SystemId": "ShikaiUnlock",
+            "TargetEntityPart": "Entity",
+            "Color": "#5f0505"
+          },
+          {
+            "SystemId": "Reiatsu_Aura",
+            "TargetEntityPart": "Entity",
+            "Color": "#5f0505",
+            "Scale": 3
+          }
+        ],
+        "WorldSoundEventId": "SFX_Tensa_Zangetsu_BassDrop",
+        "LocalSoundEventId": "SFX_Tensa_Zangetsu_BassDrop"
       },
       "RunTime": 1
     },
     {
       "Type": "HollowMask",
-      "Duration": 5
+      "Duration": 15,
+      "Effects": {
+        "WorldSoundEventId": "SFX_Hollow_Mask_Equip",
+        "LocalSoundEventId": "SFX_Hollow_Mask_Equip"
+      }
     },
     {
       "Type": "ApplyEffect",

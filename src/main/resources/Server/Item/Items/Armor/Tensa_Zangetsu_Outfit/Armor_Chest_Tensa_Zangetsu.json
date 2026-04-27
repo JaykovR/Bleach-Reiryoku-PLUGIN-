@@ -1,7 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "tensa zangetsu outfit",
-    "Description": "items.Shinigami_Robes_Captain.description"
+    "Name": "items.Tensa_Zangetsu_Outfit.name",
+    "Description": "items.Tensa_Zangetsu_Outfit.description"
   },
   "Parent": "Armor_Bronze_Chest",
   "Quality": "Bankai",

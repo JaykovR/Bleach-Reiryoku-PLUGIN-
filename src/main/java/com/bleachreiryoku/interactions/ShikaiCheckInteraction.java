@@ -145,6 +145,18 @@ public class    ShikaiCheckInteraction extends SimpleInstantInteraction{
             }
         }
 
+        // I ended up using this as a general stat verifier. Maybe I'll improve it later, for not it works.
+        if(heldItem.equals("Weapon_Sword_Bankai_Tensa_Zangetsu")){
+            if (!stats.getHollowMaskState()) {
+                player.sendMessage(Message.raw("Hollow Mask has not been unlocked."));
+                context.getState().state = InteractionState.Failed;
+                return;
+            } else {
+                context.getState().state = Finished;
+                return;
+            }
+        }
+
         context.getState().state = Finished;
     }
 }

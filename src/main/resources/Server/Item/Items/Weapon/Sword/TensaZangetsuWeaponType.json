@@ -30,7 +30,20 @@
     "Compatible": true
   },
   "Interactions": {
-    "Primary": "Root_TensaZangetsu_Primary",
+    "Primary": {
+      "Interactions": [
+        {
+          "Type": "EffectCondition",
+          "Match": "All",
+          "Entity": "User",
+          "EntityEffectIds": [
+            "Hollow_Mask_Transformation_Effect"
+          ],
+          "Failed": "TensaZangetsu_Primary",
+          "Next": "TZ_Mask_Primary"
+        }
+      ]
+    },
     "Secondary": "Root_TensaZangetsu_Secondary_Guard",
     "Ability1": "Root_TensaZangetsu_GestugaTensho",
     "Ability2": "Root_Kuro_Shunpo",

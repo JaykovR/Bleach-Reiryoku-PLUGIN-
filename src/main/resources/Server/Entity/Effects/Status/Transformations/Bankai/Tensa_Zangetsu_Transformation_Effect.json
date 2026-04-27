@@ -3,6 +3,6 @@
   "ApplicationEffects": {
     "HorizontalSpeedMultiplier": 1.2
   },
-  "Duration": 20,
+  "Duration": 30,
   "StatusEffectIcon": "UI/StatusEffects/Bankai_Tensa_Zangetsu.png"
 }

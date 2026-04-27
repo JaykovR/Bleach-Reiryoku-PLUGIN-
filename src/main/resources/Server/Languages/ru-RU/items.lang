@@ -60,6 +60,9 @@ Shihakusho_Kosode_BareShoulder.description = Модифицированный <i
 Shihakusho_Hakama.name = Shihakusho - Hakama
 Shihakusho_Hakama.description = Нижняя часть одежды, входящая в стандартную форму шинигами — <i>Shihakusho</i>.
 
+Tensa_Zangetsu_Outfit.name = Мантия Небесной Цепи
+Tensa_Zangetsu_Outfit.description = Острая чёрная мантия, рождённая из цепей небес. Говорят, что носящий её способен рассечь луну.
+
 
 Resonating_Reishi_Core.name = Резонирующее ядро Рейши
 Resonating_Reishi_Core.description = Это ядро вибрирует в унисон с вашей душой. Оно — её материальное продолжение, готовое передать свою мощь клинку и пробудить его истинную сущность.
@@ -67,6 +70,8 @@ Transcendent_Essence.name = Трансцендентная эссенция
 Transcendent_Essence.description = Пульсирующий парадокс абсолютной мощи. Границы между духом и материей растворяются в этой точке света. В её сиянии заключена кристаллизованная истинная форма вашей души, жаждущая освобождения.
 Hollow_Essence.name = Эссенция Пустого
 Hollow_Essence.description = Кристаллизованный остаток искажённой души поверженного Пустого. Пульсирует нестабильной рейрёку.
+Inner_Hollow_Catalyst.name = Катализатор внутреннего Hollow
+Inner_Hollow_Catalyst.description = Сгущённые остатки сущности Hollow, кристаллизованные в единую сферу. При поглощении нечто пробудится внутри тебя.
 
 Sode_no_Shirayuki_Spirit_Fragment.name = Фрагмент духа — Sode no Shirayuki
 Sode_no_Shirayuki_Spirit_Fragment.description = Холодный фрагмент чистой духовной энергии.\n<b>Щёлкните правой кнопкой, чтобы использовать (разблокировать Shikai)</b>

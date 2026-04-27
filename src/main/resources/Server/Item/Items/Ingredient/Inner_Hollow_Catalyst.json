@@ -1,0 +1,110 @@
+{
+  "TranslationProperties": {
+    "Name": "items.Inner_Hollow_Catalyst.name",
+    "Description": "items.Inner_Hollow_Catalyst.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Inner_Hollow_Catalyst.png",
+  "Quality": "Shikai",
+  "PlayerAnimationsId": "Item",
+  "IconProperties": {
+    "Scale": 0.6,
+    "Rotation": [
+      0,
+      0,
+      0
+    ],
+    "Translation": [
+      0,
+      -13
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Ingredient"
+    ]
+  },
+  "ItemEntity": {
+    "ParticleSystemId": null,
+    "ShowItemParticles": true
+  },
+  "Light": {
+    "Color": "#500",
+    "Radius": 1
+  },
+  "ItemSoundSetId": "ISS_Items_Gems",
+  "Texture": "Items/Ingredients/Inner_Hollow_Catalyst.png",
+  "Model": "Items/Ingredients/Crystal_Illuminated.blockymodel",
+  "Scale": 0.7,
+  "Categories": [
+    "BleachCategory.Ingredients"
+  ],
+  "Interactions": {
+    "Secondary": {
+      "Interactions": [
+        {
+          "Type": "Charging",
+          "Effects": {
+            "ItemAnimationId": "Consume",
+            "ClearAnimationOnFinish": true,
+            "LocalSoundEventId": "SFX_Consume_Inner_Hollow_Catalyst",
+            "ClearSoundEventOnFinish": true,
+            "WorldSoundEventId": "SFX_Consume_Inner_Hollow_Catalyst"
+          },
+          "Next": {
+            "5": {
+              "Type": "Serial",
+              "Interactions": [
+                {
+                  "Type": "Simple",
+                  "Effects": {
+                    "Particles": [
+                      {
+                        "SystemId": "ShikaiUnlock",
+                        "TargetEntityPart": "Entity",
+                        "Color": "#4d0000"
+                      }
+                    ],
+                    "WorldSoundEventId": "SFX_ShikaiUnlock"
+                  },
+                  "RunTime": 1
+                },
+                {
+                  "Type": "Simple",
+                  "Effects": {
+                    "WorldSoundEventId": "SFX_UnlockHollow",
+                    "LocalSoundEventId": "SFX_UnlockHollow"
+                  },
+                  "RunTime": 0.1
+                },
+                "UnlockShikai"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "MaxStack": 1,
+  "Recipe": {
+    "TimeSeconds": 4.5,
+    "Input": [
+      {
+        "ItemId": "Resonating_Reishi_Core"
+      },
+      {
+        "ItemId": "Ingredient_Hollow_Essence",
+        "Quantity": 15
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Soul_Misc"
+        ],
+        "Id": "Soul_Imprinting_Altar"
+      }
+    ],
+    "KnowledgeRequired": false
+  }
+}

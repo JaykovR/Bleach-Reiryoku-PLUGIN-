@@ -9,37 +9,6 @@
   "Quality": "Bankai",
   "ItemLevel": 50,
   "Icon": "Icons/ItemsGenerated/Tensa_Zangetsu.png",
-  "Recipe": {
-    "TimeSeconds": 5,
-    "KnowledgeRequired": false,
-    "Input": [
-      {
-        "ItemId": "Ingredient_Leather_Heavy",
-        "Quantity": 5
-      },
-      {
-        "ItemId": "Ingredient_Bar_Cobalt",
-        "Quantity": 10
-      },
-      {
-        "ItemId": "Transcendent_Essence"
-      }
-    ],
-    "BenchRequirement": [
-      {
-        "Type": "Crafting",
-        "Categories": [
-          "Soul_Bankai"
-        ],
-        "Id": "Soul_Imprinting_Altar"
-      }
-    ],
-    "Output": [
-      {
-        "ItemId": "Tensa_Zangetsu"
-      }
-    ]
-  },
   "IconProperties": {
     "Scale": 0.3,
     "Rotation": [
@@ -95,13 +64,34 @@
         }
       ]
     },
+    "Hit3_Damage": {
+      "Interactions": [
+        {
+          "Parent": "TensaZangetsu_Primary_Hit3_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 23
+            }
+          },
+          "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "TensaZangetsu_Slash"
+              }
+            ],
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
     "Swing_Down_Damage": {
       "Interactions": [
         {
           "Parent": "Weapon_Sword_Primary_Swing_Down_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 50
+              "Physical": 40
             }
           },
           "DamageEffects": {
@@ -138,6 +128,97 @@
         }
       ]
     },
+    "Mask_Swing_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 21
+            }
+          },
+          "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "TensaZangetsu_Slash"
+              }
+            ],
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Mask_Swing_Right_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Right_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 25
+            }
+          },
+          "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "TensaZangetsu_Slash"
+              }
+            ],
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Mask_Stab_Damage": {
+      "Interactions": [
+        {
+          "Parent": "TZ_Mask_Primary_Stab_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 20
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 3
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Mask_Windwhirl_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 30
+            }
+          },
+          "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "TensaZangetsu_Slash"
+              }
+            ],
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 3
+            }
+          ]
+        }
+      ]
+    },
     "Guard_Wield": {
       "Interactions": [
         {
@@ -168,27 +249,6 @@
               {
                 "EntityStatId": "SignatureEnergy",
                 "Amount": 3
-              }
-            ],
-            "WorldSoundEventId": "SFX_Sword_T2_Impact",
-            "LocalSoundEventId": "SFX_Sword_T2_Impact"
-          }
-        }
-      ]
-    },
-    "Hit3_Damage": {
-      "Interactions": [
-        {
-          "Parent": "TensaZangetsu_Primary_Hit3_Damage",
-          "DamageCalculator": {
-            "BaseDamage": {
-              "Physical": 43
-            }
-          },
-          "DamageEffects": {
-            "WorldParticles": [
-              {
-                "SystemId": "TensaZangetsu_Slash"
               }
             ],
             "WorldSoundEventId": "SFX_Sword_T2_Impact",

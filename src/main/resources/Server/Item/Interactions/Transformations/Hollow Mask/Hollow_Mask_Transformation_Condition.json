@@ -1,0 +1,17 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "SignatureEnergy": 100
+  },
+  "ValueType": "Percent",
+  "Failed": {
+    "Type": "SendMessage",
+    "Message": "You don't have enough Signature Energy (100% Required)"
+  },
+  "RunTime": 0.1,
+  "Next": {
+    "Type": "ShikaiCheck",
+    "RunTime": 0.01,
+    "Next": "Hollow_Mask_Transformation"
+  }
+}

@@ -32,6 +32,9 @@ public class ReiryokuCommands extends AbstractCommandCollection {
         this.addSubCommand(new GiveShikaiWabisuke());
         this.addSubCommand(new GiveShikaiBenihime());
         this.addSubCommand(new GiveShikaiHozukimaru());
+
+        // temporary name.
+        this.addSubCommand(new CheckHollow());
     }
 
     @Override
@@ -63,6 +66,7 @@ public class ReiryokuCommands extends AbstractCommandCollection {
             context.sendMessage(Message.raw("/ giveShikaiWabisuke - Gives the player Wabisuke Shikai access"));
             context.sendMessage(Message.raw("/ giveShikaiBenihime - Gives the player Benihime Shikai access"));
             context.sendMessage(Message.raw("/ giveShikaiHozukimaru - Gives the player Hozukimaru Shikai access"));
+            context.sendMessage(Message.raw("/ checkHollow - Checks if the player has unlocked hollow mask"));
             context.sendMessage(Message.raw("========================"));
         }
     }
@@ -119,10 +123,41 @@ public class ReiryokuCommands extends AbstractCommandCollection {
         }
     }
 
+    private static class CheckHollow extends CommandBase{
+
+        public CheckHollow(){
+            super("checkHollow", "Tells user if they have adquired hollow (mask transformation");
+            this.setPermissionGroup(null);
+        }
+        @Override
+        protected boolean canGeneratePermission() {
+            return false;
+        }
+
+        protected void executeSync(@Nonnull CommandContext context) {
+            Ref<EntityStore> owningEntity = context.senderAsPlayerRef();
+            Store<EntityStore> store = owningEntity.getStore();
+            World world = store.getExternalData().getWorld();
+            world.execute(() -> {
+                var brType = playerStats.getComponentType();
+                playerStats stats = store.getComponent(owningEntity, brType);
+                context.sendMessage(Message.raw("You"));
+
+                if (stats != null && stats.getHollowMaskState()) {
+                    context.sendMessage(Message.raw("Have already unlocked hollow mask"));
+                } else if (stats!= null && !stats.getHollowMaskState())
+                {
+                    context.sendMessage(Message.raw("Have not unlocked hollow mask"));
+                }
+            });
+        }
+    }
+
     private static class RevertShikai extends CommandBase{
 
+        // temporarly using hollow mask on this
         public RevertShikai(){
-            super("revertShikai", "Revers the ability for the player to transform into shikai");
+            super("revertShikai", "Reverts the ability for the player to transform into ANYTHING (DEBUG)");
             this.setPermissionGroup(null);
         }
         @Override

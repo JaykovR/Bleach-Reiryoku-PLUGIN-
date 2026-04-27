@@ -26,7 +26,8 @@
                     "Interactions": [
                       "TensaZangetsu_GetsugaArashi_Damage"
                     ]
-                  }
+                  },
+                  "RunTime": 0.1
                 },
                 {
                   "Type": "Simple",
@@ -34,7 +35,8 @@
                 }
               ]
             },
-            "Repeat": 5
+            "Repeat": 5,
+            "RunTime": 0.1
           }
         ]
       },
@@ -65,7 +67,8 @@
             }
           }
         ]
-      }
+      },
+      "RunTime": 0.1
     },
     {
       "Type": "Simple",

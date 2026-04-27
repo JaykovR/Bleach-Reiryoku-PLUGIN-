@@ -62,13 +62,19 @@ public class playerStats implements Component<EntityStore> {
                     (component, value) -> component.BankaiZangetsu = value,
                     component -> component.BankaiZangetsu
             ).add()
+            .append(
+                    new KeyedCodec<>("HollowMask", Codec.BOOLEAN),
+                    (component, value) -> component.HollowMask = value,
+                    component -> component.HollowMask
+            ).add()
             .build();
 
 
     // REDUNDANT FOR NOW checks if player has shikai capability. 0 off, 1 on.
     public int ActiveShikai = 0;
 
-    //Replaced later on.
+    // ---------------- SHIKAI CHECKERS -------------------------
+    //Replaced later on - This is not gonna be replaced until the player is bound to a specific weapon.
     public boolean ShikaiHozukimaru = false;
     public boolean ShikaiWabisuke = false;
     public boolean ShikaiSodeNoShirayuki = false;
@@ -76,16 +82,17 @@ public class playerStats implements Component<EntityStore> {
     public boolean ShikaiSenbonzakura = false;
     public boolean ShikaiZangetsu = false;
     public boolean BankaiZangetsu = false;
+    // ------------------------------------------------------------
 
-
-
+    // Replaced later on
+    public boolean HollowMask = false;
 
     public playerStats(){}
 
     // This is where the Player Stats become property of the player, per se.
     public playerStats(boolean shikaiHozukimaru, boolean shikaiWabisuke,
                        boolean shikaiSodeNoShirayuki, boolean shikaiBenihime, boolean shikaiSenbonzakura,
-                       boolean shikaiZangetsu, boolean bankaiZangetsu)
+                       boolean shikaiZangetsu, boolean bankaiZangetsu, boolean hollowMask)
     {
         this.ShikaiHozukimaru = shikaiHozukimaru;
         this.ShikaiWabisuke = shikaiWabisuke;
@@ -94,6 +101,7 @@ public class playerStats implements Component<EntityStore> {
         this.ShikaiSenbonzakura = shikaiSenbonzakura;
         this.ShikaiZangetsu = shikaiZangetsu;
         this.BankaiZangetsu = bankaiZangetsu;
+        this.HollowMask = hollowMask;
     }
 
     // Set Shikai Boolean to True.
@@ -119,6 +127,11 @@ public class playerStats implements Component<EntityStore> {
         this.BankaiZangetsu = true;
     }
 
+
+    public void setActiveHollowMask(){
+        this.HollowMask = true;
+    }
+
     // Sets all false at once.
     public void deactivateShikai(){
         this.ShikaiHozukimaru = false;
@@ -127,6 +140,7 @@ public class playerStats implements Component<EntityStore> {
         this.ShikaiBenihime = false;
         this.ShikaiSenbonzakura = false;
         this.ShikaiZangetsu = false;
+        this.HollowMask = false;
     }
 
     // Get your shikai state if it's true or false.
@@ -150,6 +164,9 @@ public class playerStats implements Component<EntityStore> {
     }
     public boolean getBankaiZangetsuState(){
         return BankaiZangetsu;
+    }
+    public boolean getHollowMaskState(){
+        return HollowMask;
     }
 
 
@@ -183,7 +200,7 @@ public class playerStats implements Component<EntityStore> {
     @Override
     public playerStats clone() {
         return new playerStats(this.ShikaiHozukimaru, this.ShikaiWabisuke, this.ShikaiSodeNoShirayuki,
-                this.ShikaiBenihime, this.ShikaiSenbonzakura, this.ShikaiZangetsu, this.BankaiZangetsu);
+                this.ShikaiBenihime, this.ShikaiSenbonzakura, this.ShikaiZangetsu, this.BankaiZangetsu, this.HollowMask);
     }
 
 

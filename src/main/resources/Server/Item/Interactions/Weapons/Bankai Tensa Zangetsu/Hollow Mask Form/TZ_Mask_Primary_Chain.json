@@ -1,0 +1,77 @@
+{
+  "Type": "Chaining",
+  "ChainingAllowance": 2,
+  "ChainId": "Sword_Swings",
+  "Next": [
+    {
+      "Type": "Replace",
+      "DefaultOk": true,
+      "Var": "Mask_Swing_Left",
+      "DefaultValue": {
+        "Interactions": [
+          "TZ_Mask_Primary_Swing_Left"
+        ]
+      }
+    },
+    {
+      "Type": "Replace",
+      "DefaultOk": true,
+      "Var": "Mask_Swing_Right",
+      "DefaultValue": {
+        "Interactions": [
+          "TZ_Mask_Primary_Swing_Right"
+        ]
+      }
+    },
+    {
+      "Type": "Replace",
+      "DefaultOk": true,
+      "Var": "Mask_Stab",
+      "DefaultValue": {
+        "Interactions": [
+          "TZ_Mask_Primary_Stab"
+        ]
+      }
+    },
+    {
+      "Type": "Replace",
+      "DefaultOk": true,
+      "Var": "Mask_Stab",
+      "DefaultValue": {
+        "Interactions": [
+          "TZ_Mask_Primary_Stab"
+        ]
+      }
+    },
+    {
+      "Type": "Replace",
+      "DefaultOk": true,
+      "Var": "Mask_Swing_Left",
+      "DefaultValue": {
+        "Interactions": [
+          "TZ_Mask_Primary_Swing_Left"
+        ]
+      }
+    },
+    {
+      "Type": "Replace",
+      "DefaultOk": true,
+      "Var": "Mask_Swing_Right",
+      "DefaultValue": {
+        "Interactions": [
+          "TZ_Mask_Primary_Swing_Right"
+        ]
+      }
+    },
+    {
+      "Type": "Replace",
+      "DefaultOk": true,
+      "Var": "Swing_Down",
+      "DefaultValue": {
+        "Interactions": [
+          "TZ_Primary_Windwhirl"
+        ]
+      }
+    }
+  ]
+}

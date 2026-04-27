@@ -1,0 +1,24 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Mask_Transformation_Aura",
+      "PositionOffset": {
+        "Y": 0,
+        "X": 0.4
+      },
+      "FixedRotation": false
+    },
+    {
+      "SpawnerId": "Mask_Transformation_AuraSoft",
+      "PositionOffset": {
+        "X": 0.4
+      }
+    },
+    {
+      "SpawnerId": "Mask_Transformation_Aura",
+      "PositionOffset": {
+        "X": 0.5
+      }
+    }
+  ]
+}

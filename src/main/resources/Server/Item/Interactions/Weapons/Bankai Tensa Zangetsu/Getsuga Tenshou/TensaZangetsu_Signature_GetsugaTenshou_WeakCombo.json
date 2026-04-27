@@ -10,7 +10,9 @@
   "Next": {
     "Type": "Simple",
     "Effects": {
-      "ItemAnimationId": "GetsugaTensho2"
+      "ItemAnimationId": "GetsugaTensho2",
+      "WorldSoundEventId": "SFX_GetsugaTenshou",
+      "LocalSoundEventId": "SFX_GetsugaTenshou"
     },
     "RunTime": 0.05,
     "Next": {

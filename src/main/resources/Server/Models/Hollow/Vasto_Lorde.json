@@ -1,6 +1,6 @@
 {
-  "Model": "NPC/Original_Hollow/Vasto Lorde.blockymodel",
-  "Texture": "NPC/Original_Hollow/VastoLorde.png",
+  "Model": "NPC/Original_Hollow/Vasto Lorde/Vasto Lorde.blockymodel",
+  "Texture": "NPC/Original_Hollow/Vasto Lorde/VastoLordeMain.png",
   "HitBox": {
     "Max": {
       "X": 1,
@@ -11,6 +11,102 @@
       "X": -1,
       "Y": 0,
       "Z": -1
+    }
+  },
+  "DefaultAttachments": [
+    {
+      "Model": "NPC/Original_Hollow/Vasto Lorde/Vasto_Lorde_Mask FORM.blockymodel",
+      "Texture": "NPC/Original_Hollow/Vasto Lorde/Vasto_Lorde_Mask_-_FORM.png"
+    }
+  ],
+  "AnimationSets": {
+    "Idle": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/Default/Idle.blockyanim",
+          "Looping": true,
+          "Speed": 0.5,
+          "SoundEventId": "SFX_Shinigami_Idle"
+        }
+      ]
+    },
+    "Walk": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/Default/Walk.blockyanim",
+          "Speed": 1.0,
+          "FootstepIntervals": [
+            25,
+            75
+          ],
+          "SoundEventId": "SFX_Shinigami_Idle"
+        }
+      ]
+    },
+    "Run": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/Default/Run.blockyanim",
+          "Speed": 0.9,
+          "FootstepIntervals": [
+            25,
+            75
+          ],
+          "SoundEventId": "SFX_Shinigami_Idle"
+        }
+      ]
+    },
+    "Alerted": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/Alerted.blockyanim",
+          "Looping": false,
+          "Speed": 1.0,
+          "SoundEventId": "SFX_Shinigami_Alerted"
+        }
+      ]
+    },
+    "Hurt": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/Damage/Default/Hurt.blockyanim",
+          "BlendingDuration": 0.1,
+          "Looping": false,
+          "SoundEventId": "SFX_Shinigami_Hurt"
+        },
+        {
+          "Animation": "Characters/Animations/Damage/Default/Hurt2.blockyanim",
+          "BlendingDuration": 0.1,
+          "Looping": false,
+          "SoundEventId": "SFX_Shinigami_Hurt"
+        },
+        {
+          "Animation": "Characters/Animations/Damage/Default/Hurt3.blockyanim",
+          "BlendingDuration": 0.1,
+          "Looping": false,
+          "SoundEventId": "SFX_Shinigami_Hurt"
+        },
+        {
+          "Animation": "Characters/Animations/Damage/Default/Hurt4.blockyanim",
+          "BlendingDuration": 0.1,
+          "Looping": false,
+          "SoundEventId": "SFX_Shinigami_Hurt"
+        }
+      ]
+    },
+    "Death": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/Damage/Default/Death.blockyanim",
+          "Looping": false,
+          "SoundEventId": "SFX_Shinigami_Death"
+        },
+        {
+          "Animation": "Characters/Animations/Damage/Default/Death2.blockyanim",
+          "Looping": false,
+          "SoundEventId": "SFX_Shinigami_Death"
+        }
+      ]
     }
   }
 }

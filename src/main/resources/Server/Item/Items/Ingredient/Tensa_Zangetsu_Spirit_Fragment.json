@@ -81,16 +81,16 @@
     "TimeSeconds": 4.5,
     "Input": [
       {
-        "ItemId": "Ingredient_Ice_Essence",
-        "Quantity": 15
+        "ItemId": "Transcendent_Essence",
+        "Quantity": 1
       },
       {
         "ItemId": "Resonating_Reishi_Core",
         "Quantity": 1
       },
       {
-        "ItemId": "Ingredient_Bar_Silver",
-        "Quantity": 9
+        "ItemId": "Ingredient_Voidheart",
+        "Quantity": 10
       }
     ],
     "BenchRequirement": [

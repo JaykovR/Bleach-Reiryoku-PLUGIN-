@@ -7,8 +7,16 @@
       "Disabled": [
         "Ability3"
       ]
-    }
+    },
+    "Particles": [
+      {
+        "SystemId": "Reiatsu_Aura",
+        "Color": "#880000",
+        "TargetEntityPart": "Self",
+        "Scale": 1
+      }
+    ]
   },
-  "Duration": 5,
+  "Duration": 15,
   "StatusEffectIcon": "UI/StatusEffects/Hollow_Mask.png"
 }

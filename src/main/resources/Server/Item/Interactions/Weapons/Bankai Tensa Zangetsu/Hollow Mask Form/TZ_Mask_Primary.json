@@ -1,0 +1,17 @@
+{
+  "Type": "Charging",
+  "DisplayProgress": false,
+  "Next": {
+    "0": "TZ_Mask_Primary_Chain",
+    "0.2": {
+      "Type": "Replace",
+      "DefaultValue": {
+        "Interactions": [
+          "TensaZangetsu_ChargedAttack_MovementCondition"
+        ]
+      },
+      "DefaultOk": true,
+      "Var": "Thrust_Stamina"
+    }
+  }
+}

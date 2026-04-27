@@ -13,5 +13,11 @@ Zangetsu_Shikai2.unlock = Zangetsu
 Zangetsu_Bankai.unlock = You hear a voice resonating inside your soul. "You have earned it, you should be able to use it now, your Bankai. The name is. . ."
 Zangetsu_Bankai2.unlock = "Tensa Zangetsu"
 
+Hollow_Mask.unlock = You can feel a second presence awaken inside of you. As if another being was living within you. 
+Hollow_Mask2.unlock = "We can finally have some fun, ha ha!"
+
+
+
 
 Usage_cue.unlock = Trying pressing R while holding your Zanpakuto to utilize Shikai.
+Hollow_Mask_Usage_cue.unlock = While in Bankai - Tensa Zangetsu, press R to use your hollow power.

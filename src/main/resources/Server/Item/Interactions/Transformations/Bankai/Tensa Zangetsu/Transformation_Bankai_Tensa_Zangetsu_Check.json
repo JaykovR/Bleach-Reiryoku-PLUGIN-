@@ -1,22 +1,15 @@
 {
-  "Type": "ShikaiCheck",
+  "Type": "StatsCondition",
   "Next": {
-    "Type": "StatsCondition",
-    "Costs": {
-      "SignatureEnergy": 50
-    },
-    "ValueType": "Percent",
-    "Failed": {
-      "Type": "SendMessage",
-      "Message": "You do not have enough Signature Energy. (50% Needed)"
-    },
-    "Next": {
-      "Type": "ChangeStat",
-      "ValueType": "Percent",
-      "StatModifiers": {
-        "SignatureEnergy": -50
-      },
-      "Next": "Transformation_Bankai_Tensa_Zangetsu_Effects"
-    }
+    "Type": "ShikaiCheck",
+    "Next": "Transformation_Bankai_Tensa_Zangetsu_Effects"
+  },
+  "Costs": {
+    "SignatureEnergy": 50
+  },
+  "ValueType": "Percent",
+  "Failed": {
+    "Type": "SendMessage",
+    "Message": "You don't have enough Signature Energy (50% Required)"
   }
 }

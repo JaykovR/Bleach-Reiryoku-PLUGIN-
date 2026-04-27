@@ -476,75 +476,133 @@
       "Speed": 1,
       "BlendingDuration": 0.1,
       "Looping": false,
-      "KeepPreviousFirstPersonAnimation": true
+      "KeepPreviousFirstPersonAnimation": true,
+      "FirstPerson": "Characters/Animations/Items/Main_Handed/Sword/Attacks/Swing_Down/Swing_Down_FPS.blockyanim",
+      "ThirdPersonFace": "Characters/Animations/Expressions/Frown.blockyanim"
     },
     "KuroShunpoForward2": {
       "ThirdPerson": "Characters/Animations/Items/Zangetsu_Bankai/Kuro_Shunpo_Forward2.blockyanim",
       "Speed": 1,
       "BlendingDuration": 0.1,
       "Looping": false,
-      "KeepPreviousFirstPersonAnimation": true
+      "KeepPreviousFirstPersonAnimation": true,
+      "FirstPerson": "Characters/Animations/Items/Dual_Handed/Longsword/Attacks/Swing_Up_Left/Swing_Up_Left_FPS.blockyanim",
+      "ThirdPersonFace": "Characters/Animations/Expressions/Angry.blockyanim"
     },
     "KuroShunpoBackward": {
       "ThirdPerson": "Characters/Animations/Items/Zangetsu_Bankai/Kuro_Shunpo_Backward_1.blockyanim",
       "Speed": 1,
       "BlendingDuration": 0.1,
       "Looping": false,
-      "KeepPreviousFirstPersonAnimation": true
+      "KeepPreviousFirstPersonAnimation": true,
+      "FirstPerson": "Characters/Animations/Items/Main_Handed/Sword/Attacks/Swing_Left/Swing_Left_FPS.blockyanim",
+      "ThirdPersonFace": "Characters/Animations/Expressions/Frown.blockyanim"
     },
     "KuroShunpoBackward2": {
       "ThirdPerson": "Characters/Animations/Items/Zangetsu_Bankai/Kuro_Shunpo_Backward2.blockyanim",
       "Speed": 1,
       "BlendingDuration": 0.1,
       "Looping": false,
-      "KeepPreviousFirstPersonAnimation": true
+      "KeepPreviousFirstPersonAnimation": true,
+      "FirstPerson": "Characters/Animations/Items/Dual_Handed/Longsword/Attacks/Swing_Right/Swing_Right_FPS.blockyanim",
+      "ThirdPersonFace": "Characters/Animations/Expressions/Angry.blockyanim"
     },
     "KuroShunpoLeft": {
       "ThirdPerson": "Characters/Animations/Items/Zangetsu_Bankai/Kuro_Shunpo_Left1.blockyanim",
       "Speed": 1,
       "BlendingDuration": 0.1,
       "Looping": false,
-      "KeepPreviousFirstPersonAnimation": true
+      "KeepPreviousFirstPersonAnimation": true,
+      "FirstPerson": "Characters/Animations/Items/Dual_Handed/Longsword/Attacks/Swing_Down/Swing_Down_FPS.blockyanim",
+      "ThirdPersonFace": "Characters/Animations/Expressions/Frown.blockyanim"
     },
     "KuroShunpoLeft2": {
       "ThirdPerson": "Characters/Animations/Items/Zangetsu_Bankai/Kuro_Shunpo_Left2.blockyanim",
       "Speed": 1,
       "BlendingDuration": 0.1,
       "Looping": false,
-      "KeepPreviousFirstPersonAnimation": true
+      "KeepPreviousFirstPersonAnimation": true,
+      "FirstPerson": "Characters/Animations/Items/Shikai_Senbonzakura/Swing_Right_FPS.blockyanim",
+      "ThirdPersonFace": "Characters/Animations/Expressions/Angry.blockyanim"
     },
     "KuroShunpoRight": {
       "ThirdPerson": "Characters/Animations/Items/Zangetsu_Bankai/Kuro_Shunpo_Right1.blockyanim",
       "Speed": 1,
       "BlendingDuration": 0.1,
       "Looping": false,
-      "KeepPreviousFirstPersonAnimation": true
+      "KeepPreviousFirstPersonAnimation": true,
+      "FirstPerson": "Characters/Animations/Items/Dual_Handed/Longsword/Attacks/Swing_Right/Swing_Right_FPS.blockyanim",
+      "ThirdPersonFace": "Characters/Animations/Expressions/Frown.blockyanim"
     },
     "KuroShunpoRight2": {
       "ThirdPerson": "Characters/Animations/Items/Zangetsu_Bankai/Kuro_Shunpo_Right2.blockyanim",
       "Speed": 1,
       "BlendingDuration": 0.1,
       "Looping": false,
-      "KeepPreviousFirstPersonAnimation": true
+      "KeepPreviousFirstPersonAnimation": true,
+      "FirstPerson": "Characters/Animations/Items/Dual_Handed/Longsword/Attacks/Swing_Left/Swing_Left_FPS.blockyanim",
+      "ThirdPersonFace": "Characters/Animations/Expressions/Angry.blockyanim"
     },
     "GetsugaTenshoCharging": {
       "ThirdPerson": "Characters/Animations/Items/Zangetsu_Bankai/Bankai_GetsugaTenshou_Charge.blockyanim",
-      "Looping": false
+      "Looping": false,
+      "FirstPerson": "Characters/Animations/Items/Zangetsu_Bankai/Bankai_GetsugaTenshou_Charge_FPS.blockyanim",
+      "ThirdPersonFace": "Characters/Animations/Expressions/Frown.blockyanim"
     },
     "GetsugaTensho1": {
-      "ThirdPerson": "Characters/Animations/Items/Dual_Handed/Longsword/Attacks/Swing_Up_Left/Swing_Up_Left.blockyanim"
+      "ThirdPerson": "Characters/Animations/Items/Dual_Handed/Longsword/Attacks/Swing_Up_Left/Swing_Up_Left.blockyanim",
+      "FirstPerson": "Characters/Animations/Items/Dual_Handed/Longsword/Attacks/Swing_Up_Left/Swing_Up_Left_FPS.blockyanim",
+      "ThirdPersonFace": "Characters/Animations/Expressions/Angry.blockyanim"
     },
     "emptyanim": {
       "ThirdPerson": "Characters/Animations/Items/Zangetsu_Bankai/emptyanim.blockyanim"
     },
     "GetsugaTensho2": {
       "ThirdPerson": "Characters/Animations/Items/Shikai_Senbonzakura/Swing_Right.blockyanim",
-      "FirstPerson": "Characters/Animations/Items/Shikai_Senbonzakura/Swing_Right_FPS.blockyanim"
+      "FirstPerson": "Characters/Animations/Items/Shikai_Senbonzakura/Swing_Right_FPS.blockyanim",
+      "ThirdPersonFace": "Characters/Animations/Expressions/Rage.blockyanim"
     },
     "BankaiTransform": {
       "ThirdPerson": "Characters/Animations/Items/Zangetsu_Bankai/Bankai_Zangetsu.blockyanim",
       "Looping": true,
-      "ThirdPersonFace": "Characters/Animations/Expressions/Frown.blockyanim"
+      "ThirdPersonFace": "Characters/Animations/Expressions/Frown.blockyanim",
+      "FirstPerson": "Characters/Animations/Items/Zangetsu_Bankai/Bankai_Zangetsu_FPS.blockyanim"
+    },
+    "Mask_SwingLeft": {
+      "ThirdPerson": "Characters/Animations/Items/Zangetsu_Bankai/Mask_Swing_Left.blockyanim",
+      "ThirdPersonFace": "Characters/Animations/Expressions/Frown.blockyanim",
+      "KeepPreviousFirstPersonAnimation": true,
+      "Speed": 1.5,
+      "ClipsGeometry": true,
+      "BlendingDuration": 0.1,
+      "FirstPerson": "Characters/Animations/Items/Zangetsu_Bankai/Mask_Swing_Left_FPS.blockyanim"
+    },
+    "Mask_SwingRight": {
+      "ThirdPerson": "Characters/Animations/Items/Zangetsu_Bankai/Mask_Swing_Right.blockyanim",
+      "ThirdPersonFace": "Characters/Animations/Expressions/Frown.blockyanim",
+      "KeepPreviousFirstPersonAnimation": true,
+      "Speed": 1.5,
+      "ClipsGeometry": true,
+      "BlendingDuration": 0.1,
+      "FirstPerson": "Characters/Animations/Items/Zangetsu_Bankai/Mask_Swing_Right_FPS.blockyanim"
+    },
+    "Mask_Stab": {
+      "ThirdPerson": "Characters/Animations/Items/Zangetsu_Bankai/Mask_Stab.blockyanim",
+      "ThirdPersonFace": "Characters/Animations/Expressions/Frown.blockyanim",
+      "KeepPreviousFirstPersonAnimation": true,
+      "Speed": 1.5,
+      "ClipsGeometry": true,
+      "BlendingDuration": 0.1,
+      "FirstPerson": "Characters/Animations/Items/Zangetsu_Bankai/Mask_Stab_FPS.blockyanim"
+    },
+    "Mask_Windwhirl": {
+      "ThirdPerson": "Characters/Animations/Items/Zangetsu_Bankai/Mask_Whirlwind.blockyanim",
+      "ThirdPersonFace": "Characters/Animations/Expressions/Frown.blockyanim",
+      "KeepPreviousFirstPersonAnimation": true,
+      "Speed": 1,
+      "ClipsGeometry": true,
+      "BlendingDuration": 0.1,
+      "FirstPerson": "Characters/Animations/Items/Zangetsu_Bankai/Mask_Whirlwind_FPS.blockyanim"
     }
   },
   "Camera": {

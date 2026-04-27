@@ -58,12 +58,17 @@ Shihakusho_Kosode_BareShoulder.description = Un <i>Shihakusho</i> modifié qui r
 Shihakusho_Hakama.name = Shihakusho - Hakama
 Shihakusho_Hakama.description = Le vêtement inférieur faisant partie de l’uniforme standard des Shinigami, le <i>Shihakusho</i>.
 
+Tensa_Zangetsu_Outfit.name = Manteau de la Chaîne Céleste
+Tensa_Zangetsu_Outfit.description = Un tranchant manteau noir né des chaînes des cieux. On dit que celui qui le porte est capable de pourfendre la lune.
+
 Resonating_Reishi_Core.name = Noyau de Reishi résonnant
 Resonating_Reishi_Core.description = Ce noyau bourdonne à une fréquence qui imite la vôtre. C'est une extension de votre âme. Prêt à être affecté à une lame pour l'éveiller.
 Transcendent_Essence.name = Essence transcendante
 Transcendent_Essence.description = Un paradoxe tourbillonnant de pouvoir absolu. Les frontières entre votre esprit et le monde physique se sont dissoutes en ce point de pulsation singulier. Dans cette lueur se trouve la véritable forme de votre âme, qui crie pour être libérée.
 Hollow_Essence.name = Essence de Hollow
 Hollow_Essence.description = Un vestige cristallisé de l’âme déformée d’un Hollow vaincu. Elle pulse d’un reiryoku instable.
+Inner_Hollow_Catalyst.name = Catalyseur du Hollow Intérieur
+Inner_Hollow_Catalyst.description = Vestiges condensés d'essence Hollow, cristallisés en une unique orbe. Lors de sa consommation, quelque chose s'éveillera en toi.
 
 Sode_no_Shirayuki_Spirit_Fragment.name = Fragment Spirituel - Sode no Shirayuki
 Sode_no_Shirayuki_Spirit_Fragment.description = Un fragment froid d’énergie spirituelle pure.\n<b>Clic droit pour consommer (déverrouiller le Shikai)</b>

@@ -164,7 +164,7 @@
         "RollOffset": 30,
         "YawStartOffset": -60
       },
-      "RunTime": 0.05,
+      "RunTime": 0.04,
       "Effects": {
         "Trails": [
           {

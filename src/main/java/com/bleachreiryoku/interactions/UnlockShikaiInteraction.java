@@ -54,7 +54,8 @@ public class UnlockShikaiInteraction extends SimpleInteraction {
             return;}
         playerStats stats = store.getComponent(owningEntity, brType); // Gets player stats
 
-        // IF they have X item then they get the messages for unlock. After that the boolean for the shikai becomes true. Unlocking shikai for the player.
+        // IF they have X item then they get the messages for unlock. After that the boolean for the shikai becomes true.
+        // Unlocking shikai for the player.
         if(heldItem.equals("Benihime_Spirit_Fragment")){
             player.sendMessage(Message.translation("shikaiUnlockMessages.Benihime.unlock"));
             player.sendMessage(Message.translation("shikaiUnlockMessages.Benihime2.unlock").bold(true).color(Color.RED).italic(true));
@@ -134,6 +135,18 @@ public class UnlockShikaiInteraction extends SimpleInteraction {
             if(!itemStackSlotTransaction.succeeded()) return;
             if (stats != null) {
                 stats.setActiveBankaiZangetsu();
+            }
+        }
+
+        if(heldItem.equals("Inner_Hollow_Catalyst")){
+            player.sendMessage(Message.translation("shikaiUnlockMessages.Hollow_Mask.unlock").bold(true).color(Color.WHITE));
+            player.sendMessage(Message.translation("shikaiUnlockMessages.Hollow_Mask2.unlock").bold(true).color(Color.RED).italic(true));
+            player.sendMessage(Message.translation("shikaiUnlockMessages.Hollow_Mask_Usage_cue.unlock").bold(true).color(Color.WHITE));
+            ItemStackSlotTransaction itemStackSlotTransaction = player.getInventory().getHotbar().removeItemStackFromSlot(context.getHeldItemSlot(),
+                    requiredAmount, true, false);
+            if(!itemStackSlotTransaction.succeeded()) return;
+            if (stats != null) {
+                stats.setActiveHollowMask();
             }
         }
 
