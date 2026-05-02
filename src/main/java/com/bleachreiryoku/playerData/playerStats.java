@@ -184,16 +184,27 @@ public class playerStats implements Component<EntityStore> {
     // This will be the same as XP, LVL in the future. For now it's not used. Later on it will serve the purpose to scale
     // damage for Kido, Skills, Etc, as well as brining the player more protection and stuff.
     public static final long[] REIRYOKU_THRESHOLDS = {
-            0,      // new player
-            100,    // trainee level
-            300,    // low level
-            500,    // average level
-            900,    // shikai user?
-            1500,   // bankai user?
-            2500,   // strong
-            4000,   // very strong
-            6000,   // i dont know.
-            9000
+            0,      // Dead. Unanimated Object.
+            10,     // Living Being
+            50,     // Spiritually Aware
+            150,    // Awakened Soul (early Chad/Orihime)
+            300,    // Shinigami Trainee - Academy Student
+            500,    // Unseated Officer - Graduated, Unranked Shinigami
+            750,    // Low-Seat - 10th-20th place
+            1000,   // Mid-Seat - 5th-9th place
+            1400,   // High Seat - 3rd-4th place (Ikkaku/Yumichika, Soul Society arc)
+            1900,   // Lieutenant - Fukutaicho (Renji pre-Bankai)
+            2500,   // Bankai-Capable Shinigami (Renji w/ Bankai, Soul Society arc)
+            3200,   // Captain - Standard Taicho (Soifon, Komamura)
+            4000,   // Veteran Captain (Byakuya Soul Society arc, Toshiro Hueco Mundo)
+            5000,   // Pre-Shikai Kenpachi / Mid-tier Espada (Nnoitra, Grimmjow)
+            6200,   // High-tier Espada / Strong Captain (Halibel, post-timeskip Toshiro)
+            7500,   // Top Espada / Bankai Kenpachi (Ulquiorra Resurrección, Starrk)
+            9000,   // Captain-Commander tier (Yamamoto, TYBW Shunsui)
+            11000,  // Royal Guard / Transcendent (Zero Division, Aizen pre-Hogyoku)
+            13500,  // Hogyoku-Aizen / Final Getsuga Ichigo
+            16000,  // Yhwach (The Almighty) / Soul King-tier
+            20000   // Beyond Comprehension
     };
 
     @NullableDecl

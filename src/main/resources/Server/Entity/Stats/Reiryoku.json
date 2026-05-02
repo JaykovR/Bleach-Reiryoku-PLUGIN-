@@ -1,0 +1,18 @@
+{
+  "InitialValue": 150,
+  "Min": 0,
+  "Max": 190,
+  "ResetType": "MaxValue",
+  "Regenerating": [
+    {
+      "Conditions": [
+        {
+          "Id": "OutOfCombat"
+        }
+      ],
+      "RegenType": "Percentage",
+      "Interval": 2,
+      "Amount": 0.05
+    }
+  ]
+}

@@ -1,12 +1,12 @@
 {
   "TranslationProperties": {
-    "Name": "items.Four_Point_Quincy_Cross.name",
+    "Name": "Kido Charm",
     "Description": "items.Four_Point_Quincy_Cross.description"
   },
-  "Model": "Items/Quincy_Crosses/QuincyCross.blockymodel",
-  "Texture": "Items/Quincy_Crosses/Quincy_Cross_Texture.png",
+  "Model": "Items/Kido Charm/KidoCharmTest.blockymodel",
+  "Texture": "Items/Weapons/Spellbook/Grimoire_Purple_Texture.png",
   "PlayerAnimationsId": "Item",
-  "Icon": "Icons/ItemsGenerated/Four_Point_Quincy_Cross.png",
+  "Icon": "Icons/ItemsGenerated/Wood_Camphor_Trunk_Half.png",
   "IconProperties": {
     "Scale": 0.9,
     "Rotation": [
@@ -19,18 +19,10 @@
       -12
     ]
   },
-  "Quality": "SpiritWeapon",
+  "Quality": "SpiritualResource",
   "Utility": {
     "Usable": true,
-    "StatModifiers": {
-      "Mana": [
-        {
-          "CalculationType": "Additive",
-          "Amount": 50
-        }
-      ]
-    },
-    "Compatible": true
+    "Compatible": false
   },
   "MaxStack": 1,
   "ItemLevel": 10,
