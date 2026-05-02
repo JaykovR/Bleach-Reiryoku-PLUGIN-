@@ -53,12 +53,12 @@
             },
             "RunTime": 0.5,
             "Next": {
-              "Type": "ModifyInventory",
-              "ItemToRemove": {
-                "Id": "Weapon_Sword_Sealed_Hozukimaru"
-              },
+              "Type": "SwapItemInteraction",
               "ItemToAdd": {
                 "Id": "Weapon_Spear_Hozukimaru"
+              },
+              "ItemToRemove": {
+                "Id": "Weapon_Sword_Sealed_Hozukimaru"
               }
             }
           },

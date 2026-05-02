@@ -48,16 +48,17 @@
                   "DetachedFromModel": false
                 }
               ],
-              "LocalSoundEventId": "SFX_Shikai_Hozukimaru"
+              "LocalSoundEventId": "SFX_Shikai_Hozukimaru",
+              "ItemPlayerAnimationsId": "Sealed_Zangetsu_Animations"
             },
             "RunTime": 1,
             "Next": {
-              "Type": "ModifyInventory",
-              "ItemToRemove": {
-                "Id": "Weapon_Sword_Sealed_Zangetsu"
-              },
+              "Type": "SwapItemInteraction",
               "ItemToAdd": {
                 "Id": "Weapon_Sword_Shikai_Zangetsu"
+              },
+              "ItemToRemove": {
+                "Id": "Weapon_Sword_Sealed_Zangetsu"
               }
             }
           },

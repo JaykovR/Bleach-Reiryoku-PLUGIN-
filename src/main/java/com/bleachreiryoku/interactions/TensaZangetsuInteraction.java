@@ -38,16 +38,8 @@ import com.hypixel.hytale.protocol.ItemArmorSlot;
 public class TensaZangetsuInteraction extends SimpleInteraction {
 
     private static final String SHIKAI_ID = "Weapon_Sword_Shikai_Zangetsu";
-    private static final String BANKAI_ID = "Weapon_Sword_Bankai_Tensa_Zangetsu";
+    private static final ItemStack tensaZangetsu = new ItemStack("Weapon_Sword_Bankai_Tensa_Zangetsu", 1);
 
-    /*
-      JSON usage (Server/Item/Interactions/):
-      {
-        "Type": "TensaZangetsu",
-        "Duration": 30.0
-      }
-
-     */
     public static final BuilderCodec<TensaZangetsuInteraction> CODEC =
             BuilderCodec.builder(TensaZangetsuInteraction.class, TensaZangetsuInteraction::new, SimpleInteraction.CODEC)
                     .append(
@@ -58,7 +50,6 @@ public class TensaZangetsuInteraction extends SimpleInteraction {
                     .build();
 
     // How long the bankai state lasts in seconds. Default 30.
-
     private float duration = 30.0f;
 
     @Override
@@ -86,7 +77,7 @@ public class TensaZangetsuInteraction extends SimpleInteraction {
         if (hotbar == null) return;
 
         // Swap Zangetsu -> Tensa Zangetsu in the same slot
-        var swapTransaction = hotbar.setItemStackForSlot(heldSlot, new ItemStack(BANKAI_ID, 1));
+        var swapTransaction = hotbar.setItemStackForSlot(heldSlot, tensaZangetsu);
         if (!swapTransaction.succeeded()) return;
 
         var commandBuffer = context.getCommandBuffer();
@@ -116,7 +107,7 @@ public class TensaZangetsuInteraction extends SimpleInteraction {
 
         // Register timer, weapon swap-back, and armor swap-back
         effects.setTimer(BleachEffect.TENSA_ZANGETSU_CHEST, duration);
-        effects.registerSwapBack(BleachEffect.TENSA_ZANGETSU_CHEST, heldSlot, heldItem);
+        effects.registerSwapBack(BleachEffect.TENSA_ZANGETSU_CHEST, heldSlot, heldItem,tensaZangetsu);
         effects.registerArmorSwapBack(BleachEffect.TENSA_ZANGETSU_CHEST, chestSlot, currentChest);
     }
 }

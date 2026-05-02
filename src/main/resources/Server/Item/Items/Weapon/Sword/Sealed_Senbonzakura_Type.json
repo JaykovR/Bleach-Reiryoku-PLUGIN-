@@ -51,12 +51,12 @@
             },
             "RunTime": 1.5,
             "Next": {
-              "Type": "ModifyInventory",
-              "ItemToRemove": {
-                "Id": "Weapon_Sword_Sealed_Senbonzakura"
-              },
+              "Type": "SwapItemInteraction",
               "ItemToAdd": {
                 "Id": "Weapon_Sword_Shikai_Senbonzakura"
+              },
+              "ItemToRemove": {
+                "Id": "Weapon_Sword_Sealed_Senbonzakura"
               }
             }
           }

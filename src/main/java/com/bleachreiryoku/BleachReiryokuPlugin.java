@@ -4,10 +4,7 @@ import com.bleachreiryoku.commands.ReiryokuCommands;
 import com.bleachreiryoku.effects.ActiveEffectsComponent;
 import com.bleachreiryoku.effects.EffectCleanupSystem;
 import com.bleachreiryoku.effects.EffectTickSystem;
-import com.bleachreiryoku.interactions.HollowMaskInteraction;
-import com.bleachreiryoku.interactions.TensaZangetsuInteraction;
-import com.bleachreiryoku.interactions.ShikaiCheckInteraction;
-import com.bleachreiryoku.interactions.UnlockShikaiInteraction;
+import com.bleachreiryoku.interactions.*;
 import com.bleachreiryoku.playerData.playerStats;
 import com.bleachreiryoku.systems.playerJoinSystem;
 import com.hypixel.hytale.logger.HytaleLogger;
@@ -70,7 +67,8 @@ public class BleachReiryokuPlugin extends JavaPlugin {
                 .register("UnlockShikai", UnlockShikaiInteraction.class, UnlockShikaiInteraction.CODEC)
                 .register("ShikaiCheck", ShikaiCheckInteraction.class, ShikaiCheckInteraction.CODEC)
                 .register("HollowMask", HollowMaskInteraction.class, HollowMaskInteraction.CODEC)
-                .register("TensaZangetsu", TensaZangetsuInteraction.class, TensaZangetsuInteraction.CODEC);
+                .register("TensaZangetsu", TensaZangetsuInteraction.class, TensaZangetsuInteraction.CODEC)
+                .register("SwapItemInteraction", SwapItemInteraction.class, SwapItemInteraction.CODEC);
 
         LOGGER.at(Level.INFO).log("[Bleach Reiryoku] Setup complete!");
     }

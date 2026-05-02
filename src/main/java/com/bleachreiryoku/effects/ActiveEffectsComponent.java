@@ -81,7 +81,7 @@ public class ActiveEffectsComponent implements Component<EntityStore> {
     // it was in and what the original item was, so EffectTickSystem can restore
     // it when the effect expires. This shouldn't matter since the weapons have no durability component.
 
-    public record PendingSwapBack(byte hotbarSlot, ItemStack originalItem) {}
+    public record PendingSwapBack(byte hotbarSlot, ItemStack originalItem, ItemStack swappedItem) {}
 
     private final Map<BleachEffect, PendingSwapBack> pendingSwapBacks = new EnumMap<>(BleachEffect.class);
 
@@ -101,8 +101,8 @@ public class ActiveEffectsComponent implements Component<EntityStore> {
     public void clearHiddenAttachments(BleachEffect effect) {
         hiddenAttachments.remove(effect);
     }
-    public void registerSwapBack(BleachEffect effect, byte hotbarSlot, ItemStack originalItem) {
-        pendingSwapBacks.put(effect, new PendingSwapBack(hotbarSlot, originalItem));
+    public void registerSwapBack(BleachEffect effect, byte hotbarSlot, ItemStack originalItem, ItemStack swappedItem) {
+        pendingSwapBacks.put(effect, new PendingSwapBack(hotbarSlot, originalItem, swappedItem));
     }
 
     @Nullable

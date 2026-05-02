@@ -100,8 +100,8 @@ public class EffectTickSystem extends EntityTickingSystem<EntityStore> {
                     ItemContainer hotbar = hotbarComp.getInventory();
                     // Only restore if the bankai weapon is still there, don't clobber a manual swap
                     ItemStack current = hotbar.getItemStack(swapBack.hotbarSlot());
-                    // If I end up using this more I will change it so it reads the ID's from other parts.
-                    if (current != null && current.getItemId().equals("Weapon_Sword_Bankai_Tensa_Zangetsu")) {
+                    // Swap back conditions
+                    if (current != null && current.getItemId().equals(swapBack.swappedItem().getItemId())) {
                         hotbar.setItemStackForSlot(swapBack.hotbarSlot(), swapBack.originalItem());
                     }
                 }

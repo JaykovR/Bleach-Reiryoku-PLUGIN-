@@ -36,12 +36,12 @@
     "Ability3": {
       "Interactions": [
         {
-          "Type": "ModifyInventory",
-          "ItemToRemove": {
-            "Id": "Weapon_Sword_Shikai_Senbonzakura"
-          },
+          "Type": "SwapItemInteraction",
           "ItemToAdd": {
             "Id": "Weapon_Sword_Sealed_Senbonzakura"
+          },
+          "ItemToRemove": {
+            "Id": "Weapon_Sword_Shikai_Senbonzakura"
           }
         }
       ]
