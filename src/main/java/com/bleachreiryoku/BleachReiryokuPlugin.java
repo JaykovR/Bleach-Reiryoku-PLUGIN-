@@ -2,10 +2,12 @@ package com.bleachreiryoku;
 
 import com.bleachreiryoku.commands.ReiryokuCommands;
 import com.bleachreiryoku.effects.ActiveEffectsComponent;
+import com.bleachreiryoku.effects.BleachStatTypes;
 import com.bleachreiryoku.effects.EffectCleanupSystem;
 import com.bleachreiryoku.effects.EffectTickSystem;
 import com.bleachreiryoku.interactions.*;
 import com.bleachreiryoku.playerData.playerStats;
+import com.bleachreiryoku.systems.ReiryokuHudSystem;
 import com.bleachreiryoku.systems.playerJoinSystem;
 import com.hypixel.hytale.logger.HytaleLogger;
 import com.hypixel.hytale.server.core.command.system.CommandRegistry;
@@ -86,6 +88,10 @@ public class BleachReiryokuPlugin extends JavaPlugin {
 
         // Cleans up effect attachments when a player disconnects or is unloaded
         registry.registerSystem(new EffectCleanupSystem());
+
+        registry.registerSystem(new ReiryokuHudSystem());
+
+        BleachStatTypes.update();
 
         LOGGER.at(Level.INFO).log("[Bleach Reiryoku] Started!");
     }

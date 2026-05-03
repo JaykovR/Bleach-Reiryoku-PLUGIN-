@@ -35,6 +35,10 @@ public class ReiryokuCommands extends AbstractCommandCollection {
 
         // temporary name.
         this.addSubCommand(new CheckHollow());
+
+        this.addSubCommand(new OpenGUICommand("customGui", "Opens custom gui"));
+
+
     }
 
     @Override

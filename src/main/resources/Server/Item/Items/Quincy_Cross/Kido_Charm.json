@@ -54,5 +54,20 @@
         ]
       }
     ]
+  },
+  "Interactions": {
+    "Secondary": {
+      "Interactions": [
+        {
+          "Type": "ChangeStat",
+          "ValueType": "Absolute",
+          "Behaviour": "Add",
+          "Entity": "User",
+          "StatModifiers": {
+            "Reiryoku": -100
+          }
+        }
+      ]
+    }
   }
 }
