@@ -48,13 +48,25 @@ public final class BleachStatTypes {
         return getValue(ref, store) >= amount;
     }
 
-    public static void addMaxReiryoku(Ref<EntityStore> ref, Store<EntityStore> store, String key, float amount) {
+    public static void addMaxReiryoku(Ref<EntityStore> ref, Store<EntityStore> store, float amount) {
         EntityStatMap stats = store.getComponent(ref, EntityStatMap.getComponentType());
         if (stats == null) return;
-        stats.putModifier(REIRYOKU, key, new StaticModifier(
+
+        // Read existing bonus from the single permanent key
+        float currentBonus = 0f;
+        var statValue = stats.get(REIRYOKU);
+        if (statValue != null) {
+            var existing = statValue.getModifier("BR_MaxBonus");
+            if (existing instanceof StaticModifier sm) {
+                currentBonus = sm.getAmount();
+            }
+        }
+
+        // Store total accumulated bonus under one key
+        stats.putModifier(REIRYOKU, "BR_MaxBonus", new StaticModifier(
                 Modifier.ModifierTarget.MAX,
                 StaticModifier.CalculationType.ADDITIVE,
-                amount
+                currentBonus + amount
         ));
     }
 

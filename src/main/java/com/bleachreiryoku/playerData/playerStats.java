@@ -67,6 +67,16 @@ public class playerStats implements Component<EntityStore> {
                     (component, value) -> component.HollowMask = value,
                     component -> component.HollowMask
             ).add()
+            .append(
+                    new KeyedCodec<>("TotalKills", Codec.INTEGER),
+                    (component, value) -> component.totalKills = value,
+                    component -> component.totalKills
+            ).add()
+            .append(
+                    new KeyedCodec<>("TotalHollowKills", Codec.INTEGER),
+                    (component, value) -> component.totalHollowKills = value,
+                    component -> component.totalHollowKills
+            ).add()
             .build();
 
 
@@ -87,12 +97,16 @@ public class playerStats implements Component<EntityStore> {
     // Replaced later on
     public boolean HollowMask = false;
 
+    // Kill tracking, will be used in UI later.
+    public int totalKills = 0;
+    public int totalHollowKills = 0;
+
     public playerStats(){}
 
     // This is where the Player Stats become property of the player, per se.
     public playerStats(boolean shikaiHozukimaru, boolean shikaiWabisuke,
                        boolean shikaiSodeNoShirayuki, boolean shikaiBenihime, boolean shikaiSenbonzakura,
-                       boolean shikaiZangetsu, boolean bankaiZangetsu, boolean hollowMask)
+                       boolean shikaiZangetsu, boolean bankaiZangetsu, boolean hollowMask, int totalKills, int totalHollowKills)
     {
         this.ShikaiHozukimaru = shikaiHozukimaru;
         this.ShikaiWabisuke = shikaiWabisuke;
@@ -102,6 +116,8 @@ public class playerStats implements Component<EntityStore> {
         this.ShikaiZangetsu = shikaiZangetsu;
         this.BankaiZangetsu = bankaiZangetsu;
         this.HollowMask = hollowMask;
+        this.totalKills = totalKills;
+        this.totalHollowKills = totalHollowKills;
     }
 
     // Set Shikai Boolean to True.
@@ -169,6 +185,12 @@ public class playerStats implements Component<EntityStore> {
         return HollowMask;
     }
 
+    // Kill tracking
+    public int getTotalKills() { return totalKills; }
+    public int getTotalHollowKills() { return totalHollowKills; }
+    public void incrementKills() { this.totalKills++; }
+    public void incrementHollowKills() { this.totalHollowKills++; this.totalKills++; }
+
 
 //    public void setActiveShikai(){
 //        this.ActiveShikai = 1;
@@ -211,7 +233,8 @@ public class playerStats implements Component<EntityStore> {
     @Override
     public playerStats clone() {
         return new playerStats(this.ShikaiHozukimaru, this.ShikaiWabisuke, this.ShikaiSodeNoShirayuki,
-                this.ShikaiBenihime, this.ShikaiSenbonzakura, this.ShikaiZangetsu, this.BankaiZangetsu, this.HollowMask);
+                this.ShikaiBenihime, this.ShikaiSenbonzakura, this.ShikaiZangetsu, this.BankaiZangetsu, this.HollowMask
+        , this.totalKills, totalHollowKills);
     }
 
 

@@ -380,12 +380,8 @@ public class ReiryokuCommands extends AbstractCommandCollection {
 
             world.execute(() -> {
                 float amount = amountArg.get(context);
-                var statValue = store.getComponent(owningEntity,
-                        EntityStatMap.getComponentType()).get(BleachStatTypes.getReiryoku());
-                float currentMax = statValue.getMax();
-                BleachStatTypes.addMaxReiryoku(owningEntity, store, "BR_SetMax",
-                        currentMax + amount - 190f);
-                context.sendMessage(Message.raw("Max Reiryoku set to " + (int)(currentMax + amount)));
+                BleachStatTypes.addMaxReiryoku(owningEntity, store, amount);
+                context.sendMessage(Message.raw("Max Reiryoku increased by " + (int)amount));
             });
         }
     }

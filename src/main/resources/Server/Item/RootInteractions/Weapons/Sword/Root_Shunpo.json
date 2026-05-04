@@ -1,5 +1,6 @@
 {
   "Interactions": [
     "Shunpo"
-  ]
+  ],
+  "RequireNewClick": true
 }

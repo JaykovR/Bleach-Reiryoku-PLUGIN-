@@ -9,6 +9,7 @@ import com.bleachreiryoku.interactions.*;
 import com.bleachreiryoku.playerData.playerStats;
 import com.bleachreiryoku.systems.ReiryokuHudSystem;
 import com.bleachreiryoku.systems.ReiryokuDrainSystem;
+import com.bleachreiryoku.systems.KillRewardSystem;
 import com.bleachreiryoku.systems.playerJoinSystem;
 import com.hypixel.hytale.logger.HytaleLogger;
 import com.hypixel.hytale.server.core.command.system.CommandRegistry;
@@ -93,6 +94,9 @@ public class BleachReiryokuPlugin extends JavaPlugin {
         registry.registerSystem(new ReiryokuHudSystem());
 
         registry.registerSystem(new ReiryokuDrainSystem());
+
+        // Watches for NPC deaths and rewards Reiryoku max increases to the killer
+        registry.registerSystem(new KillRewardSystem());
 
         BleachStatTypes.update();
 
