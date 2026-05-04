@@ -8,6 +8,7 @@ import com.bleachreiryoku.effects.EffectTickSystem;
 import com.bleachreiryoku.interactions.*;
 import com.bleachreiryoku.playerData.playerStats;
 import com.bleachreiryoku.systems.ReiryokuHudSystem;
+import com.bleachreiryoku.systems.ReiryokuDrainSystem;
 import com.bleachreiryoku.systems.playerJoinSystem;
 import com.hypixel.hytale.logger.HytaleLogger;
 import com.hypixel.hytale.server.core.command.system.CommandRegistry;
@@ -90,6 +91,8 @@ public class BleachReiryokuPlugin extends JavaPlugin {
         registry.registerSystem(new EffectCleanupSystem());
 
         registry.registerSystem(new ReiryokuHudSystem());
+
+        registry.registerSystem(new ReiryokuDrainSystem());
 
         BleachStatTypes.update();
 

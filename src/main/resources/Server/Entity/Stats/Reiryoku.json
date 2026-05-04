@@ -1,13 +1,13 @@
 {
   "InitialValue": 150,
   "Min": 0,
-  "Max": 190,
+  "Max": 191,
   "ResetType": "MaxValue",
   "Regenerating": [
     {
       "Conditions": [
         {
-          "Id": "Alive"
+          "Id": "IsPlayer"
         }
       ],
       "RegenType": "Percentage",

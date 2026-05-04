@@ -8,12 +8,16 @@ import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.server.core.command.system.basecommands.AbstractCommandCollection;
 import com.hypixel.hytale.server.core.command.system.basecommands.CommandBase;
 import com.hypixel.hytale.server.core.Message;
+import com.hypixel.hytale.server.core.modules.entitystats.EntityStatMap;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
-
+import com.bleachreiryoku.effects.BleachStatTypes;
 import com.bleachreiryoku.playerData.playerStats;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
+import com.hypixel.hytale.server.core.command.system.arguments.system.RequiredArg;
+import com.hypixel.hytale.server.core.command.system.arguments.types.SingleArgumentType;
+import com.hypixel.hytale.server.core.command.system.ParseResult;
 
 import javax.annotation.Nonnull;
 
@@ -37,6 +41,9 @@ public class ReiryokuCommands extends AbstractCommandCollection {
         this.addSubCommand(new CheckHollow());
 
         this.addSubCommand(new OpenGUICommand("customGui", "Opens custom gui"));
+
+        this.addSubCommand(new setReiryokuMax());
+
 
 
     }
@@ -170,6 +177,10 @@ public class ReiryokuCommands extends AbstractCommandCollection {
         }
 
         protected void executeSync(@Nonnull CommandContext context) {
+            if (!context.sender().hasPermission("*")) {
+                context.sendMessage(Message.raw("You don't have permission to use this command."));
+                return;
+            }
 
             Ref<EntityStore> owningEntity = context.senderAsPlayerRef();
             Store<EntityStore> store = owningEntity.getStore();
@@ -205,6 +216,10 @@ public class ReiryokuCommands extends AbstractCommandCollection {
         }
 
         protected void executeSync(@Nonnull CommandContext context) {
+            if (!context.sender().hasPermission("*")) {
+                context.sendMessage(Message.raw("You don't have permission to use this command."));
+                return;
+            }
 
             Ref<EntityStore> owningEntity = context.senderAsPlayerRef();
             Store<EntityStore> store = owningEntity.getStore();
@@ -236,6 +251,10 @@ public class ReiryokuCommands extends AbstractCommandCollection {
         }
 
         protected void executeSync(@Nonnull CommandContext context) {
+            if (!context.sender().hasPermission("*")) {
+                context.sendMessage(Message.raw("You don't have permission to use this command."));
+                return;
+            }
 
             Ref<EntityStore> owningEntity = context.senderAsPlayerRef();
             Store<EntityStore> store = owningEntity.getStore();
@@ -267,6 +286,10 @@ public class ReiryokuCommands extends AbstractCommandCollection {
         }
 
         protected void executeSync(@Nonnull CommandContext context) {
+            if (!context.sender().hasPermission("*")) {
+                context.sendMessage(Message.raw("You don't have permission to use this command."));
+                return;
+            }
 
             Ref<EntityStore> owningEntity = context.senderAsPlayerRef();
             Store<EntityStore> store = owningEntity.getStore();
@@ -298,7 +321,10 @@ public class ReiryokuCommands extends AbstractCommandCollection {
         }
 
         protected void executeSync(@Nonnull CommandContext context) {
-
+            if (!context.sender().hasPermission("*")) {
+                context.sendMessage(Message.raw("You don't have permission to use this command."));
+                return;
+            }
             Ref<EntityStore> owningEntity = context.senderAsPlayerRef();
             Store<EntityStore> store = owningEntity.getStore();
             World world = store.getExternalData().getWorld();
@@ -313,6 +339,53 @@ public class ReiryokuCommands extends AbstractCommandCollection {
                     return;
                 }
                 context.sendMessage(Message.raw("You already have Hozukimaru Shikai."));
+            });
+        }
+    }
+
+    private static class setReiryokuMax extends CommandBase {
+        private final RequiredArg<Float> amountArg;
+
+        public setReiryokuMax() {
+            super("setReiryokuMax", "Modify your max Reiryoku");
+            this.setPermissionGroup(null);
+            this.amountArg = this.withRequiredArg("amount", "New max Reiryoku value",
+                    new SingleArgumentType<Float>("float", "A number") {
+                        @Override
+                        public Float parse(String input, ParseResult parseResult) {
+                            try {
+                                return Float.parseFloat(input);
+                            } catch (NumberFormatException e) {
+                                parseResult.fail(Message.raw("Invalid number: " + input));
+                                return null;
+                            }
+                        }
+                    }
+            );
+        }
+
+        @Override
+        protected boolean canGeneratePermission() {
+            return false;
+        }
+
+        protected void executeSync(@Nonnull CommandContext context) {
+            if (!context.sender().hasPermission("*")) {
+                context.sendMessage(Message.raw("You don't have permission to use this command."));
+                return;
+            }
+            Ref<EntityStore> owningEntity = context.senderAsPlayerRef();
+            Store<EntityStore> store = owningEntity.getStore();
+            World world = store.getExternalData().getWorld();
+
+            world.execute(() -> {
+                float amount = amountArg.get(context);
+                var statValue = store.getComponent(owningEntity,
+                        EntityStatMap.getComponentType()).get(BleachStatTypes.getReiryoku());
+                float currentMax = statValue.getMax();
+                BleachStatTypes.addMaxReiryoku(owningEntity, store, "BR_SetMax",
+                        currentMax + amount - 190f);
+                context.sendMessage(Message.raw("Max Reiryoku set to " + (int)(currentMax + amount)));
             });
         }
     }

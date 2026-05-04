@@ -5,7 +5,6 @@
   },
   "Model": "Items/Kido Charm/KidoCharmTest.blockymodel",
   "Texture": "Items/Weapons/Spellbook/Grimoire_Purple_Texture.png",
-  "PlayerAnimationsId": "Item",
   "Icon": "Icons/ItemsGenerated/Wood_Camphor_Trunk_Half.png",
   "IconProperties": {
     "Scale": 0.9,
@@ -60,12 +59,12 @@
       "Interactions": [
         {
           "Type": "ChangeStat",
-          "ValueType": "Absolute",
-          "Behaviour": "Add",
-          "Entity": "User",
           "StatModifiers": {
-            "Reiryoku": -100
-          }
+            "Reiryoku": -50
+          },
+          "ValueType": "Absolute",
+          "Entity": "User",
+          "Behaviour": "Add"
         }
       ]
     }

@@ -12,15 +12,27 @@ Group {
       Background: "ReiryokuBackground.png";
 
       ProgressBar #ProgressBar {
-        Anchor: (Width: 302, Height: 20);
+        Anchor: (Width: 302, Height: 24);
         BarTexturePath: "ReiryokuBarFill.png";
         Value: 1.0;
       }
     }
 
     Group {
-      Anchor: (Left: 0, Width: 34, Height: 34);
+      Anchor: (Bottom:-10, Left: -5, Width: 120, Height: 120);
       Background: "ReiryokuIcon.png";
     }
   }
+
+  Label #ReiryokuCurrent {
+      Anchor: (Right: 5, Top: -37, Width: 120, Height: 26);
+      Text: "0";
+      Style: (FontSize: 30, TextColor: #ffffff, RenderBold: true);
+  }
+
+   Label #ReiryokuMax {
+        Anchor: (Right: -60, Top: -5, Width: 120, Height: 26);
+        Text: "/0";
+        Style: (FontSize: 14, TextColor: #ffffff(0.7), RenderBold: true);
+    }
 }

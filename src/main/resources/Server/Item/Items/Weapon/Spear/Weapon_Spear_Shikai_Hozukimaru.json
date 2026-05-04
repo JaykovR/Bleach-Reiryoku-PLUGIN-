@@ -49,7 +49,7 @@
             "Id": "Weapon_Sword_Sealed_Hozukimaru"
           },
           "ItemToRemove": {
-            "Id": "Weapon_Spear_Hozukimaru"
+            "Id": "Weapon_Spear_Shikai_Hozukimaru"
           }
         }
       ]
@@ -383,5 +383,8 @@
       ]
     }
   },
-  "ItemSoundSetId": "ISS_Weapons_Wood"
+  "ItemSoundSetId": "ISS_Weapons_Wood",
+  "Utility": {
+    "Compatible": true
+  }
 }

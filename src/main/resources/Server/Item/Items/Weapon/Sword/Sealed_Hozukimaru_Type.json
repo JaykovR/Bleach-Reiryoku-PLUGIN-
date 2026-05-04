@@ -55,7 +55,7 @@
             "Next": {
               "Type": "SwapItemInteraction",
               "ItemToAdd": {
-                "Id": "Weapon_Spear_Hozukimaru"
+                "Id": "Weapon_Spear_Shikai_Hozukimaru"
               },
               "ItemToRemove": {
                 "Id": "Weapon_Sword_Sealed_Hozukimaru"

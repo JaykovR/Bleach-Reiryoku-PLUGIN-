@@ -49,7 +49,7 @@ public class ReiryokuHudSystem extends EntityTickingSystem<EntityStore> {
         var statValue = stats.get(reiryokuIndex);
         if (statValue == null) return;
 
-        hud.updateBar(statValue.asPercentage());
+        hud.updateBar(statValue.asPercentage(), statValue.get(), statValue.getMax());
     }
 
     @Nullable

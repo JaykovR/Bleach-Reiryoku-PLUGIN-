@@ -16,9 +16,11 @@ public class ReiryokuBar extends CustomUIHud {
         uiCommandBuilder.append("ReiryokuBar/Reiryoku.ui");
     }
 
-    public void updateBar(float percentFilled) {
+    public void updateBar(float percentFilled, float current, float max) {
         UICommandBuilder builder = new UICommandBuilder();
         builder.set("#ProgressBar.Value", percentFilled);
+        builder.set("#ReiryokuCurrent.Text", String.valueOf((int)current));
+        builder.set("#ReiryokuMax.Text", "/" + String.valueOf((int)max));
         this.update(false, builder);
     }
 

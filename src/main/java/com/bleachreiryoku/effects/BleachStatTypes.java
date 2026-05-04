@@ -5,6 +5,8 @@ import com.hypixel.hytale.server.core.modules.entitystats.asset.EntityStatType;
 import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
+import com.hypixel.hytale.server.core.modules.entitystats.modifier.Modifier;
+import com.hypixel.hytale.server.core.modules.entitystats.modifier.StaticModifier;
 
 public final class BleachStatTypes {
 
@@ -18,10 +20,8 @@ public final class BleachStatTypes {
         REIRYOKU = assetMap.getIndex("Reiryoku");
 
         if (REIRYOKU == NOT_FOUND) {
-            throw new IllegalStateException(
-                    "[Bleach Reiryoku] Reiryoku stat not found! " +
-                            "Make sure Server/Entity/Stats/Reiryoku.json exists in your asset pack."
-            );
+            System.err.println("[Bleach Reiryoku] WARNING: Reiryoku stat not found! " +
+                    "Make sure Server/Entity/Stats/Reiryoku.json exists in your asset pack.");
         }
     }
 
@@ -46,5 +46,21 @@ public final class BleachStatTypes {
 
     public static boolean hasEnough(Ref<EntityStore> ref, Store<EntityStore> store, float amount) {
         return getValue(ref, store) >= amount;
+    }
+
+    public static void addMaxReiryoku(Ref<EntityStore> ref, Store<EntityStore> store, String key, float amount) {
+        EntityStatMap stats = store.getComponent(ref, EntityStatMap.getComponentType());
+        if (stats == null) return;
+        stats.putModifier(REIRYOKU, key, new StaticModifier(
+                Modifier.ModifierTarget.MAX,
+                StaticModifier.CalculationType.ADDITIVE,
+                amount
+        ));
+    }
+
+    public static void removeMaxReiryoku(Ref<EntityStore> ref, Store<EntityStore> store, String key) {
+        EntityStatMap stats = store.getComponent(ref, EntityStatMap.getComponentType());
+        if (stats == null) return;
+        stats.putModifier(REIRYOKU, key, null);
     }
 }
