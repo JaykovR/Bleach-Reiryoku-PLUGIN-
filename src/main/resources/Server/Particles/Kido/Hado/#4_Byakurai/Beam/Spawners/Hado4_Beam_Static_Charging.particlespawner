@@ -1,0 +1,76 @@
+{
+  "RenderMode": "Erosion",
+  "ParticleRotationInfluence": "None",
+  "MaxConcurrentParticles": 10,
+  "ParticleLifeSpan": {
+    "Min": 0.2,
+    "Max": 0.2
+  },
+  "SpawnRate": {
+    "Min": 20.0,
+    "Max": 20.0
+  },
+  "Particle": {
+    "Texture": "Particles/Textures/Basic/Ball6.png",
+    "ScaleRatioConstraint": "None",
+    "Animation": {
+      "0": {
+        "Opacity": 0.4,
+        "Color": "#c4fffc",
+        "Scale": {
+          "X": {
+            "Min": 0.5,
+            "Max": 1.0
+          },
+          "Y": {
+            "Min": 0.5,
+            "Max": 1.0
+          }
+        }
+      },
+      "40": {
+        "Opacity": 1.0
+      },
+      "75": {
+        "Opacity": 0.8,
+        "Color": "#a9fffb"
+      },
+      "100": {
+        "Opacity": 0.12,
+        "Scale": {
+          "X": {
+            "Min": 1.0,
+            "Max": 2.0
+          },
+          "Y": {
+            "Min": 1.0,
+            "Max": 2.0
+          }
+        },
+        "Color": "#6ee1ff"
+      }
+    },
+    "InitialAnimationFrame": {
+      "Scale": {
+        "X": {
+          "Min": 0.3,
+          "Max": 0.3
+        },
+        "Y": {
+          "Min": 0.3,
+          "Max": 0.3
+        }
+      },
+      "Opacity": 0.356
+    }
+  },
+  "LinearFiltering": false,
+  "UVMotion": {
+    "Texture": "Particles/Textures/UVMotion/FlowMapSmoke.png",
+    "Strength": 5.4,
+    "Scale": 2.4,
+    "StrengthCurveType": "IncreaseQuartIn",
+    "AddRandomUVOffset": true
+  },
+  "ParticleRotateWithSpawner": true
+}

@@ -1,11 +1,11 @@
 {
   "TranslationProperties": {
     "Name": "Kido Charm",
-    "Description": "items.Four_Point_Quincy_Cross.description"
+    "Description": "Item Required for Kido Usage, equip on off-hand"
   },
-  "Model": "Items/Kido Charm/KidoCharmTest.blockymodel",
-  "Texture": "Items/Weapons/Spellbook/Grimoire_Purple_Texture.png",
-  "Icon": "Icons/ItemsGenerated/Wood_Camphor_Trunk_Half.png",
+  "Model": "Items/Kido Charm/KidoCharm.blockymodel",
+  "Texture": "Items/Kido Charm/KidoCharm_Texture.png",
+  "Icon": "Icons/ItemsGenerated/Kido_Charm.png",
   "IconProperties": {
     "Scale": 0.9,
     "Rotation": [
@@ -14,8 +14,8 @@
       18
     ],
     "Translation": [
-      -3,
-      -12
+      0,
+      -9
     ]
   },
   "Quality": "SpiritualResource",
@@ -57,15 +57,7 @@
   "Interactions": {
     "Secondary": {
       "Interactions": [
-        {
-          "Type": "ChangeStat",
-          "StatModifiers": {
-            "Reiryoku": -50
-          },
-          "ValueType": "Absolute",
-          "Entity": "User",
-          "Behaviour": "Add"
-        }
+        "Hado4_ByakuraiProj"
       ]
     }
   }

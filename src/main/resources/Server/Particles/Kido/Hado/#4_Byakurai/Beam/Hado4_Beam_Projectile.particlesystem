@@ -1,0 +1,18 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Hado4_Beam1",
+      "PositionOffset": {
+        "X": -3.0
+      }
+    },
+    {
+      "SpawnerId": "Hado4_Beam"
+    },
+    {
+      "SpawnerId": "Hado4_Beam_Explosion"
+    }
+  ],
+  "IsImportant": true,
+  "CullDistance": 30.0
+}

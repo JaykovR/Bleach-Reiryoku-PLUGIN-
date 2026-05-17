@@ -1,20 +1,21 @@
 package com.bleachreiryoku.commands;
 
-import com.hypixel.hytale.component.ComponentType;
 import com.hypixel.hytale.server.core.command.system.CommandContext;
-import com.hypixel.hytale.server.core.command.system.CommandSender;
 import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.server.core.command.system.basecommands.AbstractCommandCollection;
 import com.hypixel.hytale.server.core.command.system.basecommands.CommandBase;
 import com.hypixel.hytale.server.core.Message;
-import com.hypixel.hytale.server.core.modules.entitystats.EntityStatMap;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import com.bleachreiryoku.effects.BleachStatTypes;
 import com.bleachreiryoku.playerData.playerStats;
+import com.bleachreiryoku.ui.RaceSelectionPage;
+import com.bleachreiryoku.ui.PlayerStatsPage;
+import com.hypixel.hytale.server.core.entity.entities.Player;
+import com.hypixel.hytale.server.core.entity.entities.player.pages.InteractiveCustomUIPage;
+import com.hypixel.hytale.server.core.modules.entitystats.EntityStatMap;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
-import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import com.hypixel.hytale.server.core.command.system.arguments.system.RequiredArg;
 import com.hypixel.hytale.server.core.command.system.arguments.types.SingleArgumentType;
 import com.hypixel.hytale.server.core.command.system.ParseResult;
@@ -40,9 +41,12 @@ public class ReiryokuCommands extends AbstractCommandCollection {
         // temporary name.
         this.addSubCommand(new CheckHollow());
 
-        this.addSubCommand(new OpenGUICommand("customGui", "Opens custom gui"));
+        this.addSubCommand(new ToggleHUDCommand("toggleHUD", "Toggles the custom HUD elements"));
 
         this.addSubCommand(new setReiryokuMax());
+        this.addSubCommand(new ChooseRaceCommand());
+        this.addSubCommand(new GetPlayerRaceCommand());
+        this.addSubCommand(new StatsCommand());
 
 
 
@@ -386,5 +390,98 @@ public class ReiryokuCommands extends AbstractCommandCollection {
         }
     }
 
+
+    private static class ChooseRaceCommand extends CommandBase {
+
+        public ChooseRaceCommand() {
+            super("chooseRace", "Opens the race selection screen");
+            this.setPermissionGroup(null);
+        }
+
+        @Override
+        protected boolean canGeneratePermission() { return false; }
+
+        @Override
+        protected void executeSync(@Nonnull CommandContext context) {
+            Ref<EntityStore> ref = context.senderAsPlayerRef();
+            Store<EntityStore> store = ref.getStore();
+            World world = store.getExternalData().getWorld();
+
+            world.execute(() -> {
+                PlayerRef playerRef = store.getComponent(ref, PlayerRef.getComponentType());
+                if (playerRef == null) return;
+
+                Player player = store.getComponent(ref, Player.getComponentType());
+                if (player == null) return;
+
+                player.getPageManager().openCustomPage(ref, store, new RaceSelectionPage(playerRef));
+            });
+        }
     }
+
+    private static class GetPlayerRaceCommand extends CommandBase {
+
+        public GetPlayerRaceCommand() {
+            super("getPlayerRace", "Displays your current race");
+            this.setPermissionGroup(null);
+        }
+
+        @Override
+        protected boolean canGeneratePermission() { return false; }
+
+        @Override
+        protected void executeSync(@Nonnull CommandContext context) {
+            Ref<EntityStore> ref = context.senderAsPlayerRef();
+            Store<EntityStore> store = ref.getStore();
+            World world = store.getExternalData().getWorld();
+
+            world.execute(() -> {
+                playerStats stats = store.getComponent(ref, playerStats.getComponentType());
+                if (stats == null) {
+                    context.sendMessage(Message.raw("Could not retrieve your stats."));
+                    return;
+                }
+
+                String race = stats.playerPrimaryRace == null || stats.playerPrimaryRace.isEmpty()
+                        ? "None"
+                        : stats.playerPrimaryRace;
+
+                context.sendMessage(Message.raw("Your race is: " + race));
+            });
+        }
+    }
+
+
+    /*
+     * Later there will be different Stats screens depening which race the player is.
+     */
+    private static class StatsCommand extends CommandBase {
+
+        public StatsCommand() {
+            super("stats", "Opens the player stats screen");
+            this.setPermissionGroup(null);
+        }
+
+        @Override
+        protected boolean canGeneratePermission() { return false; }
+
+        @Override
+        protected void executeSync(@Nonnull CommandContext context) {
+            Ref<EntityStore> ref = context.senderAsPlayerRef();
+            Store<EntityStore> store = ref.getStore();
+            World world = store.getExternalData().getWorld();
+
+            world.execute(() -> {
+                PlayerRef playerRef = store.getComponent(ref, PlayerRef.getComponentType());
+                if (playerRef == null) return;
+
+                Player player = store.getComponent(ref, Player.getComponentType());
+                if (player == null) return;
+
+                player.getPageManager().openCustomPage(ref, store, new PlayerStatsPage(playerRef));
+            });
+        }
+    }
+
+}
 

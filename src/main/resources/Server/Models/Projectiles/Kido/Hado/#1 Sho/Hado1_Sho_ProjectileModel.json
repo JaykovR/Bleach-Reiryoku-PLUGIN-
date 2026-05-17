@@ -1,0 +1,30 @@
+{
+  "HitBox": {
+    "Max": {
+      "X": 0.1,
+      "Y": 0.1,
+      "Z": 0.1
+    },
+    "Min": {
+      "X": -0.1,
+      "Y": -0.1,
+      "Z": -0.1
+    }
+  },
+  "MinScale": 0.2,
+  "MaxScale": 0.2,
+  "Texture": "Items/Projectiles/Kido/Hado1_Sho_Texture.png",
+  "Model": "Items/Projectiles/Kido/Hado1_Sho.blockymodel",
+  "Particles": [
+    {
+      "SystemId": "Hado1_Sho_ProjectileEff",
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Center"
+    }
+  ],
+  "Trails": [
+    {
+      "TrailId": "Arrow"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Hado4_Beam1",
+      "PositionOffset": {
+        "X": -3.0
+      }
+    },
+    {
+      "SpawnerId": "Hado4_Beam_Lightning",
+      "PositionOffset": {
+        "X": -3.0
+      }
+    },
+    {
+      "SpawnerId": "Hado4_Beam"
+    },
+    {
+      "SpawnerId": "Hado4_Beam_Explosion"
+    },
+    {
+      "SpawnerId": "Hado4_Beam_Static",
+      "PositionOffset": {
+        "X": 1.8
+      }
+    },
+    {
+      "SpawnerId": "Hado4_Beam_Core",
+      "PositionOffset": {
+        "X": 1.8
+      }
+    },
+    {
+      "SpawnerId": "Hado4_Beam_Lightning2"
+    }
+  ],
+  "IsImportant": true,
+  "CullDistance": 30.0
+}

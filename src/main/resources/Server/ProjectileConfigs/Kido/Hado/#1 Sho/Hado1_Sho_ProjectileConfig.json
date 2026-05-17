@@ -1,0 +1,31 @@
+{
+  "LaunchForce": 50,
+  "Physics": {
+    "Type": "Standard"
+  },
+  "Interactions": {
+    "ProjectileHit": {
+      "Interactions": [
+        {
+          "Type": "Replace",
+          "DefaultValue": {
+            "Interactions": [
+              "Hado1_Sho_Damage"
+            ]
+          },
+          "DefaultOk": true,
+          "Var": "hado damg"
+        },
+        "Common_Projectile_Despawn"
+      ],
+      "RequireNewClick": true
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        "Common_Projectile_Despawn"
+      ]
+    }
+  },
+  "LaunchLocalSoundEventId": "SFX_Bow_T2_Shoot_Local",
+  "Model": "Hado1_Sho_ProjectileModel"
+}

@@ -1,0 +1,31 @@
+@CloseButtonStyle = TextButtonStyle(
+    Default: (Background: #1a2a4a, LabelStyle: (FontSize: 16, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Hovered: (Background: #2a4a7a, LabelStyle: (FontSize: 16, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Pressed: (Background: #0a1a3a, LabelStyle: (FontSize: 16, TextColor: #aaccff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center))
+);
+
+Group {
+    Anchor: (Width: 500, Height: 250);
+    Background: #0a0f1a(0.97);
+    LayoutMode: Top;
+    Padding: (Full: 30);
+
+    Label #ConfirmMessage {
+        Text: "Your player race is now ...";
+        Anchor: (Height: 80);
+        Style: (FontSize: 22, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center);
+    }
+
+    Group { FlexWeight: 1; }
+
+    Group {
+        LayoutMode: Center;
+        Anchor: (Height: 50);
+
+        TextButton #CloseButton {
+            Text: "CLOSE";
+            Anchor: (Width: 160, Height: 44);
+            Style: @CloseButtonStyle;
+        }
+    }
+}

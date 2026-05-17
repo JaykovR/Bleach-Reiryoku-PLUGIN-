@@ -1,0 +1,10 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Hado1_Sho_Charging",
+      "PositionOffset": {
+        "Z": 0.1
+      }
+    }
+  ]
+}

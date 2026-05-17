@@ -1,0 +1,12 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Hado4_Beam_Static_Charging"
+    },
+    {
+      "SpawnerId": "Hado4_Beam_Core"
+    }
+  ],
+  "IsImportant": true,
+  "CullDistance": 30.0
+}

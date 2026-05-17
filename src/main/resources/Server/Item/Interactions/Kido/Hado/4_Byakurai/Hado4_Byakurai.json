@@ -1,0 +1,103 @@
+{
+  "Type": "Charging",
+  "Next": {
+    "0.2": {
+      "Type": "SendMessage",
+      "Message": "0.2",
+      "Failed": {
+        "Type": "SendMessage",
+        "Message": "fail"
+      },
+      "Next": {
+        "Type": "Parallel",
+        "Interactions": [
+          {
+            "Interactions": [
+              {
+                "Type": "Simple",
+                "Effects": {
+                  "ItemPlayerAnimationsId": "HadoAnimations",
+                  "ItemAnimationId": "Left",
+                  "Particles": [
+                    {
+                      "SystemId": "Hado4_Beam",
+                      "TargetEntityPart": "Entity",
+                      "TargetNodeName": "R-Attachment",
+                      "PositionOffset": {
+                        "X": -2,
+                        "Y": 1.7,
+                        "Z": -0.3
+                      },
+                      "RotationOffset": {
+                        "Roll": 325
+                      },
+                      "Scale": 0.65
+                    }
+                  ],
+                  "ClearAnimationOnFinish": true,
+                  "FirstPersonParticles": [
+                    {
+                      "SystemId": "Hado4_Beam",
+                      "TargetEntityPart": "Entity",
+                      "TargetNodeName": "R-Attachment",
+                      "PositionOffset": {
+                        "X": 2,
+                        "Y": 3,
+                        "Z": -0.3
+                      },
+                      "RotationOffset": {
+                        "Roll": 280
+                      }
+                    }
+                  ]
+                },
+                "RunTime": 1,
+                "HorizontalSpeedMultiplier": 1.0E-4
+              }
+            ]
+          },
+          {
+            "Interactions": [
+              {
+                "Type": "Selector",
+                "RunTime": 0.2,
+                "Selector": {
+                  "Id": "Stab",
+                  "EndDistance": 20,
+                  "ExtendTop": 0.25,
+                  "ExtendBottom": 0.25,
+                  "ExtendLeft": 0.2,
+                  "ExtendRight": 0.2
+                },
+                "HitEntity": {
+                  "Interactions": [
+                    "Hado1_Sho_Damage"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "1": {
+      "Type": "SendMessage",
+      "Message": "1"
+    }
+  },
+  "Effects": {
+    "ItemPlayerAnimationsId": "HadoAnimations",
+    "ItemAnimationId": "#1ShoCharging",
+    "Particles": [
+      {
+        "SystemId": "Hado1_Sho_Charging",
+        "TargetEntityPart": "Entity",
+        "TargetNodeName": "R-Attachment"
+      }
+    ],
+    "ClearAnimationOnFinish": true
+  },
+  "RunTime": 1,
+  "AllowIndefiniteHold": true,
+  "DisplayProgress": true
+}

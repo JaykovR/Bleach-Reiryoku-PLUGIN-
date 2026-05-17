@@ -7,7 +7,7 @@
     {
       "Conditions": [
         {
-          "Id": "IsPlayer"
+          "Id": "Alive"
         }
       ],
       "RegenType": "Percentage",

@@ -1,0 +1,32 @@
+{
+  "Type": "Charging",
+  "Next": {
+    "0.2": {
+      "Type": "SendMessage",
+      "Message": "0.2",
+      "Next": {
+        "Type": "Projectile",
+        "Config": "Hado1_Sho_ProjectileConfig"
+      }
+    },
+    "1": {
+      "Type": "SendMessage",
+      "Message": "1"
+    }
+  },
+  "Effects": {
+    "ItemPlayerAnimationsId": "HadoAnimations",
+    "ItemAnimationId": "#1ShoCharging",
+    "Particles": [
+      {
+        "SystemId": "Hado1_Sho_Charging",
+        "TargetEntityPart": "Entity",
+        "TargetNodeName": "R-Attachment"
+      }
+    ],
+    "ClearAnimationOnFinish": true
+  },
+  "RunTime": 1,
+  "AllowIndefiniteHold": true,
+  "DisplayProgress": true
+}

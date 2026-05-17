@@ -1,0 +1,31 @@
+{
+  "Appearance": "Hado1_Sho_ProjectileModel",
+  "Damage": 2,
+  "Radius": 1,
+  "Height": 0.3,
+  "MuzzleVelocity": 50,
+  "TerminalVelocity": 55,
+  "VerticalCenterShot": 0.1,
+  "HorizontalCenterShot": 0.1,
+  "PitchAdjustShot": true,
+  "Gravity": 3,
+  "SticksVertically": true,
+  "HitSoundEventId": "SFX_Skeleton_Mage_Spellbook_Impact",
+  "HitParticles": {
+    "SystemId": "Magic_Hit"
+  },
+  "ExplosionConfig": {
+    "Knockback": {
+      "Type": "Force",
+      "Force": 0.5,
+      "Duration": 0.1,
+      "Direction": {
+        "Z": 0,
+        "X": -1
+      },
+      "VelocityType": "Add"
+    },
+    "EntityDamage": 0,
+    "EntityDamageRadius": 1
+  }
+}

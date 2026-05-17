@@ -1,0 +1,89 @@
+@CloseButtonStyle = TextButtonStyle(
+    Default: (Background: #2a1a1a, LabelStyle: (FontSize: 18, TextColor: #ffaaaa, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Hovered: (Background: #5a2a2a, LabelStyle: (FontSize: 18, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Pressed: (Background: #1a0a0a, LabelStyle: (FontSize: 18, TextColor: #ff8888, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center))
+);
+
+Group {
+    Anchor: (Width: 720, Height: 640);
+    Background: #050810(0.98);
+    LayoutMode: Top;
+    Padding: (Full: 24);
+
+    Group {
+        LayoutMode: Left;
+        Anchor: (Height: 40);
+
+        Group { Anchor: (Width: 632); }
+
+        TextButton #CloseButton {
+            Text: "X";
+            Anchor: (Width: 40, Height: 40);
+            Style: @CloseButtonStyle;
+        }
+    }
+
+    Group { Anchor: (Height: 8); }
+
+    Label {
+        Text: "PLAYER STATS";
+        Anchor: (Height: 44);
+        Style: (FontSize: 26, TextColor: #ffffff, RenderBold: true);
+    }
+
+    Group { Anchor: (Height: 20); }
+
+    Label #RaceLabel {
+        Text: "Race: None";
+        Anchor: (Height: 32);
+        Style: (FontSize: 18, TextColor: #ffffff);
+    }
+
+    Group { Anchor: (Height: 4); }
+
+    Label #TotalKillsLabel {
+        Text: "Total Kills: 0";
+        Anchor: (Height: 32);
+        Style: (FontSize: 18, TextColor: #ffffff);
+    }
+
+    Group { Anchor: (Height: 4); }
+
+    Label #HollowKillsLabel {
+        Text: "Hollow Kills: 0";
+        Anchor: (Height: 32);
+        Style: (FontSize: 18, TextColor: #ffffff);
+    }
+
+    Group { Anchor: (Height: 4); }
+
+    Label #HadoLabel {
+        Text: "Hado Proficiency: 0";
+        Anchor: (Height: 32);
+        Style: (FontSize: 18, TextColor: #ffffff);
+    }
+
+    Group { Anchor: (Height: 4); }
+
+    Label #BakudoLabel {
+        Text: "Bakudo Proficiency: 0";
+        Anchor: (Height: 32);
+        Style: (FontSize: 18, TextColor: #ffffff);
+    }
+
+    Group { Anchor: (Height: 24); }
+
+    Label {
+        Text: "Shikai Unlocked";
+        Anchor: (Height: 28);
+        Style: (FontSize: 20, TextColor: #aaccff, RenderBold: true);
+    }
+
+    Group { Anchor: (Height: 8); }
+
+    Label #ShikaiList {
+        Text: "None";
+        Anchor: (Height: 200);
+        Style: (FontSize: 17, TextColor: #ffe9a8);
+    }
+}

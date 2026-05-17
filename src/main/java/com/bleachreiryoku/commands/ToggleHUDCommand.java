@@ -14,8 +14,8 @@ import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import javax.annotation.Nonnull;
 import java.util.concurrent.CompletableFuture;
 
-public class OpenGUICommand extends AbstractPlayerCommand {
-    public OpenGUICommand(String name, String description){super(name, description);}
+public class ToggleHUDCommand extends AbstractPlayerCommand {
+    public ToggleHUDCommand(String name, String description){super(name, description);}
 
     @Override
     protected void execute(@Nonnull CommandContext commandContext, @Nonnull Store<EntityStore> store, @Nonnull Ref<EntityStore> ref,

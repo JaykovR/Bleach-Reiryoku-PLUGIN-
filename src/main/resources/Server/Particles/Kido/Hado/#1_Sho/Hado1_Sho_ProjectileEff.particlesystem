@@ -1,0 +1,42 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Sho_ProjEffConstant",
+      "FixedRotation": false,
+      "InitialVelocity": {
+        "Yaw": {
+          "Min": 0,
+          "Max": 0
+        },
+        "Pitch": {
+          "Min": -90,
+          "Max": -90
+        },
+        "Speed": {
+          "Min": 0,
+          "Max": 0
+        }
+      }
+    },
+    {
+      "SpawnerId": "Sho_ProjEff_Constant2",
+      "InitialVelocity": {
+        "Yaw": {
+          "Min": 0,
+          "Max": 0
+        },
+        "Pitch": {
+          "Min": -90,
+          "Max": -90
+        },
+        "Speed": {
+          "Min": 0,
+          "Max": 0
+        }
+      }
+    }
+  ],
+  "CullDistance": 30.0,
+  "IsImportant": true,
+  "LifeSpan": 2
+}

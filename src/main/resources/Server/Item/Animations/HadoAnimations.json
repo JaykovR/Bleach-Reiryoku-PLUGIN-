@@ -1,0 +1,29 @@
+{
+  "Animations": {
+    "#1Sho": {
+      "ThirdPerson": "Characters/Animations/Items/Hado/#1 Sho/Hado1_Sho_Launch.blockyanim",
+      "ClipsGeometry": true
+    },
+    "#1ShoCharging": {
+      "ThirdPerson": "Characters/Animations/Items/Hado/#1 Sho/Hado_Charging.blockyanim",
+      "ClipsGeometry": true,
+      "Speed": 1
+    },
+    "Left": {
+      "ThirdPerson": "Characters/Animations/Items/Hado/#1 Sho/LeftHand.blockyanim",
+      "Looping": true
+    }
+  },
+  "WiggleWeights": {
+    "Pitch": 2.5,
+    "PitchDeceleration": 0.1,
+    "Roll": 0.1,
+    "RollDeceleration": 0.1,
+    "X": 2.5,
+    "XDeceleration": 0.1,
+    "Y": 0.1,
+    "YDeceleration": 0.1,
+    "Z": 0.1,
+    "ZDeceleration": 0.1
+  }
+}

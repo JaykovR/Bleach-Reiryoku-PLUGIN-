@@ -1,0 +1,63 @@
+@PlaceholderButtonStyle = TextButtonStyle(
+    Default: (Background: #0d1117(0.95), LabelStyle: (FontSize: 20, TextColor: #666666, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Hovered: (Background: #1a2030(0.95), LabelStyle: (FontSize: 20, TextColor: #aaaaaa, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Pressed: (Background: #050810(0.95), LabelStyle: (FontSize: 20, TextColor: #888888, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center))
+);
+
+Group {
+    Anchor: (Width: 1480, Height: 1000);
+    Background: #050810(0.98);
+    LayoutMode: Top;
+    Padding: (Full: 24);
+
+    Label {
+        Text: "CHOOSE YOUR RACE";
+        Anchor: (Height: 52);
+        Style: (FontSize: 28, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center);
+    }
+
+    Group { Anchor: (Height: 16); }
+
+    Group {
+        LayoutMode: Left;
+        Anchor: (Height: 720);
+
+       TextButton #ShinigamiButton {
+           Text: "";
+           FlexWeight: 1;
+           Style: TextButtonStyle(
+               Default: (Background: "Shinigami.png", LabelStyle: (FontSize: 1, TextColor: #00000000)),
+               Hovered: (Background: "Shinigami_Hover.png", LabelStyle: (FontSize: 1, TextColor: #00000000)),
+               Pressed: (Background: "Shinigami.png", LabelStyle: (FontSize: 1, TextColor: #00000000))
+           );
+       }
+
+       Group { Anchor: (Width: 12); }
+
+     TextButton #QuincyButton {
+                Text: "";
+                FlexWeight: 1;
+                Style: TextButtonStyle(
+                    Default: (Background: "Quincy.png", LabelStyle: (FontSize: 1, TextColor: #00000000)),
+                    Hovered: (Background: "Quincy_Hover.png", LabelStyle: (FontSize: 1, TextColor: #00000000)),
+                    Pressed: (Background: "Quincy.png", LabelStyle: (FontSize: 1, TextColor: #00000000))
+                );
+            }
+
+            Group { Anchor: (Width: 12); }
+
+            TextButton #HollowButton {
+                Text: "HOLLOW (NOT AVAILABLE)";
+                FlexWeight: 1;
+                Style: @PlaceholderButtonStyle;
+            }
+
+            Group { Anchor: (Width: 12); }
+
+            TextButton #HumanButton {
+                Text: "FULLBRINGER (NOT AVAILABLE)";
+                FlexWeight: 1;
+                Style: @PlaceholderButtonStyle;
+            }
+         }
+     }

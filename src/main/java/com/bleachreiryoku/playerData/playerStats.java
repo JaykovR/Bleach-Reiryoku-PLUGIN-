@@ -8,6 +8,9 @@ import com.hypixel.hytale.component.ComponentType;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import org.checkerframework.checker.nullness.compatqual.NullableDecl;
 
+import javax.swing.*;
+
+
 /**
  * playerStats - Event listener for player events.
  */
@@ -77,6 +80,26 @@ public class playerStats implements Component<EntityStore> {
                     (component, value) -> component.totalHollowKills = value,
                     component -> component.totalHollowKills
             ).add()
+            .append(
+                    new KeyedCodec<>("PlayerPrimaryRace", Codec.STRING),
+                    (component, value) -> component.playerPrimaryRace = value,
+                    component -> component.playerPrimaryRace
+            ).add()
+            .append(
+                    new KeyedCodec<>("PlayerSecondaryRace", Codec.STRING),
+                    (component, value) -> component.playerSecondaryRace = value,
+                    component -> component.playerSecondaryRace
+            ).add()
+            .append(
+                    new KeyedCodec<>("HadoProficiency", Codec.INTEGER),
+                    (component, value) -> component.hadoProficiency = value,
+                    component -> component.hadoProficiency
+            ).add()
+            .append(
+                    new KeyedCodec<>("BakudoProficiency", Codec.INTEGER),
+                    (component, value) -> component.bakudoProficiency = value,
+                    component -> component.bakudoProficiency
+            ).add()
             .build();
 
 
@@ -101,12 +124,27 @@ public class playerStats implements Component<EntityStore> {
     public int totalKills = 0;
     public int totalHollowKills = 0;
 
+    // Kido proficiency — increments through casting. Persisted via codec.
+    // No combat use yet; for now it's stored & displayed via the /br stats UI.
+    public int hadoProficiency = 0;
+    public int bakudoProficiency = 0;
+
+    public static final String RACE_SHINIGAMI = "Shinigami";
+    public static final String RACE_QUINCY    = "Quincy";
+    public static final String RACE_HOLLOW    = "Hollow";
+    public static final String RACE_HUMAN     = "Human";
+
+    public String playerPrimaryRace;
+    public String playerSecondaryRace;
+
     public playerStats(){}
 
     // This is where the Player Stats become property of the player, per se.
     public playerStats(boolean shikaiHozukimaru, boolean shikaiWabisuke,
                        boolean shikaiSodeNoShirayuki, boolean shikaiBenihime, boolean shikaiSenbonzakura,
-                       boolean shikaiZangetsu, boolean bankaiZangetsu, boolean hollowMask, int totalKills, int totalHollowKills)
+                       boolean shikaiZangetsu, boolean bankaiZangetsu, boolean hollowMask, int totalKills,
+                       int totalHollowKills, String primaryRace, String secondaryRace,
+                       int hadoProficiency, int bakudoProficiency)
     {
         this.ShikaiHozukimaru = shikaiHozukimaru;
         this.ShikaiWabisuke = shikaiWabisuke;
@@ -118,7 +156,19 @@ public class playerStats implements Component<EntityStore> {
         this.HollowMask = hollowMask;
         this.totalKills = totalKills;
         this.totalHollowKills = totalHollowKills;
+        this.playerPrimaryRace = primaryRace;
+        this.playerSecondaryRace = secondaryRace;
+        this.hadoProficiency = hadoProficiency;
+        this.bakudoProficiency = bakudoProficiency;
     }
+
+    public void setPlayerPrimaryRace(String chosenRace) {
+        if (chosenRace.equals(RACE_SHINIGAMI) || chosenRace.equals(RACE_QUINCY)
+                || chosenRace.equals(RACE_HOLLOW) || chosenRace.equals(RACE_HUMAN)) {
+            playerPrimaryRace = chosenRace;
+        }
+    }
+
 
     // Set Shikai Boolean to True.
     public void setActiveShikaiHozukimaru(){
@@ -142,7 +192,6 @@ public class playerStats implements Component<EntityStore> {
     public void setActiveBankaiZangetsu(){
         this.BankaiZangetsu = true;
     }
-
 
     public void setActiveHollowMask(){
         this.HollowMask = true;
@@ -191,6 +240,19 @@ public class playerStats implements Component<EntityStore> {
     public void incrementKills() { this.totalKills++; }
     public void incrementHollowKills() { this.totalHollowKills++; this.totalKills++; }
 
+    // Kido proficiency — placeholders. Add* are clamped to >= 0 to avoid negative drift
+    // if a future caller passes a negative delta intending to "undo" a cast.
+    public int getHadoProficiency()   { return hadoProficiency; }
+    public int getBakudoProficiency() { return bakudoProficiency; }
+    public void incrementHadoProficiency()   { this.hadoProficiency++; }
+    public void incrementBakudoProficiency() { this.bakudoProficiency++; }
+    public void addHadoProficiency(int amount) {
+        this.hadoProficiency = Math.max(0, this.hadoProficiency + amount);
+    }
+    public void addBakudoProficiency(int amount) {
+        this.bakudoProficiency = Math.max(0, this.bakudoProficiency + amount);
+    }
+
 
 //    public void setActiveShikai(){
 //        this.ActiveShikai = 1;
@@ -234,7 +296,8 @@ public class playerStats implements Component<EntityStore> {
     public playerStats clone() {
         return new playerStats(this.ShikaiHozukimaru, this.ShikaiWabisuke, this.ShikaiSodeNoShirayuki,
                 this.ShikaiBenihime, this.ShikaiSenbonzakura, this.ShikaiZangetsu, this.BankaiZangetsu, this.HollowMask
-        , this.totalKills, totalHollowKills);
+        , this.totalKills, totalHollowKills, this.playerPrimaryRace, this.playerSecondaryRace,
+                this.hadoProficiency, this.bakudoProficiency);
     }
 
 
