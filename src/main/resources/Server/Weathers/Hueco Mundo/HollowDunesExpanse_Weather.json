@@ -1,0 +1,145 @@
+{
+  "Particle": {
+    "SystemId": "Ash"
+  },
+  "SunlightDampingMultipliers": [
+    {
+      "Hour": 2,
+      "Value": 0.7
+    },
+    {
+      "Hour": 18,
+      "Value": 0.4
+    }
+  ],
+  "SunlightColors": [
+    {
+      "Hour": 12,
+      "Color": "#aba6a6"
+    }
+  ],
+  "MoonColors": [
+    {
+      "Hour": 12,
+      "Color": "#ffffff"
+    },
+    {
+      "Hour": 22,
+      "Color": "#ffffffff"
+    }
+  ],
+  "SkyTopColors": [
+    {
+      "Hour": 6,
+      "Color": "#6c6c6cff"
+    },
+    {
+      "Hour": 5,
+      "Color": "#808080ff"
+    },
+    {
+      "Hour": 13,
+      "Color": "#000000ff"
+    },
+    {
+      "Hour": 20,
+      "Color": "#000000ff"
+    },
+    {
+      "Hour": 23,
+      "Color": "#000000ff"
+    }
+  ],
+  "SunColors": [
+    {
+      "Hour": 3,
+      "Color": "#96a3ea"
+    },
+    {
+      "Hour": 13,
+      "Color": "#ffffff"
+    }
+  ],
+  "SkyBottomColors": [
+    {
+      "Hour": 6,
+      "Color": "#1a1a1aff"
+    },
+    {
+      "Hour": 20,
+      "Color": "#000000ff"
+    },
+    {
+      "Hour": 23,
+      "Color": "#000000ff"
+    }
+  ],
+  "SkySunsetColors": [
+    {
+      "Hour": 13,
+      "Color": "#000000ff"
+    },
+    {
+      "Hour": 5,
+      "Color": "#565656ff"
+    },
+    {
+      "Hour": 20,
+      "Color": "#000000ff"
+    },
+    {
+      "Hour": 23,
+      "Color": "#000000ff"
+    }
+  ],
+  "FogColors": [
+    {
+      "Hour": 5,
+      "Color": "#7d7d7d"
+    },
+    {
+      "Hour": 13,
+      "Color": "#000000"
+    },
+    {
+      "Hour": 10,
+      "Color": "#232323"
+    },
+    {
+      "Hour": 20,
+      "Color": "#151515"
+    },
+    {
+      "Hour": 23,
+      "Color": "#1f1f1f"
+    }
+  ],
+  "ColorFilters": [
+    {
+      "Hour": 4,
+      "Color": "#96c9e0"
+    },
+    {
+      "Hour": 10,
+      "Color": "#d2f6d9"
+    },
+    {
+      "Hour": 19,
+      "Color": "#ffffff"
+    },
+    {
+      "Hour": 23,
+      "Color": "#ffffff"
+    },
+    {
+      "Hour": 7,
+      "Color": "#bce2f2"
+    }
+  ],
+  "Moons": [
+    {
+      "Texture": "Sky/MoonCycle/Moon_Crescent.png"
+    }
+  ],
+  "Stars": "Sky/HuecoMundoSky.png"
+}

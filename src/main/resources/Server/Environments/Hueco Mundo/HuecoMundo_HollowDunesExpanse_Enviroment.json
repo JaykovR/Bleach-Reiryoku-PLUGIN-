@@ -1,0 +1,149 @@
+{
+  "WaterTint": "#bd7171",
+  "WeatherForecasts": {
+    "0": [
+      {
+        "WeatherId": "HollowDunesExpanse_Weather",
+        "Weight": 90
+      }
+    ],
+    "1": [
+      {
+        "WeatherId": "HollowDunesExpanse_Weather",
+        "Weight": 90
+      }
+    ],
+    "2": [
+      {
+        "WeatherId": "HollowDunesExpanse_Weather",
+        "Weight": 90
+      }
+    ],
+    "3": [
+      {
+        "WeatherId": "HollowDunesExpanse_Weather",
+        "Weight": 90
+      }
+    ],
+    "4": [
+      {
+        "WeatherId": "HollowDunesExpanse_Weather",
+        "Weight": 90
+      }
+    ],
+    "5": [
+      {
+        "WeatherId": "HollowDunesExpanse_Weather",
+        "Weight": 90
+      }
+    ],
+    "6": [
+      {
+        "WeatherId": "HollowDunesExpanse_Weather",
+        "Weight": 90
+      }
+    ],
+    "7": [
+      {
+        "WeatherId": "HollowDunesExpanse_Weather",
+        "Weight": 90
+      }
+    ],
+    "8": [
+      {
+        "WeatherId": "HollowDunesExpanse_Weather",
+        "Weight": 90
+      }
+    ],
+    "9": [
+      {
+        "WeatherId": "HollowDunesExpanse_Weather",
+        "Weight": 90
+      }
+    ],
+    "10": [
+      {
+        "WeatherId": "HollowDunesExpanse_Weather",
+        "Weight": 90
+      }
+    ],
+    "11": [
+      {
+        "WeatherId": "HollowDunesExpanse_Weather",
+        "Weight": 90
+      }
+    ],
+    "12": [
+      {
+        "WeatherId": "HollowDunesExpanse_Weather",
+        "Weight": 90
+      }
+    ],
+    "13": [
+      {
+        "WeatherId": "HollowDunesExpanse_Weather",
+        "Weight": 90
+      }
+    ],
+    "14": [
+      {
+        "WeatherId": "HollowDunesExpanse_Weather",
+        "Weight": 90
+      }
+    ],
+    "15": [
+      {
+        "WeatherId": "HollowDunesExpanse_Weather",
+        "Weight": 90
+      }
+    ],
+    "16": [
+      {
+        "WeatherId": "HollowDunesExpanse_Weather",
+        "Weight": 90
+      }
+    ],
+    "17": [
+      {
+        "WeatherId": "HollowDunesExpanse_Weather",
+        "Weight": 90
+      }
+    ],
+    "18": [
+      {
+        "WeatherId": "HollowDunesExpanse_Weather",
+        "Weight": 90
+      }
+    ],
+    "19": [
+      {
+        "WeatherId": "HollowDunesExpanse_Weather",
+        "Weight": 90
+      }
+    ],
+    "20": [
+      {
+        "WeatherId": "HollowDunesExpanse_Weather",
+        "Weight": 90
+      }
+    ],
+    "21": [
+      {
+        "WeatherId": "HollowDunesExpanse_Weather",
+        "Weight": 90
+      }
+    ],
+    "22": [
+      {
+        "WeatherId": "HollowDunesExpanse_Weather",
+        "Weight": 90
+      }
+    ],
+    "23": [
+      {
+        "WeatherId": "HollowDunesExpanse_Weather",
+        "Weight": 90
+      }
+    ]
+  }
+}
