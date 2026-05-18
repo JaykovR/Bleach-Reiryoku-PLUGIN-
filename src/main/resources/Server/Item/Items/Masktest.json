@@ -1,8 +1,0 @@
-{
-  "Armor": {
-    "ArmorSlot": "Head",
-    "BaseDamageResistance": 5
-  },
-  "Model": "Items/Armors/Bronze/Head.blockymodel",
-  "Texture": "Items/Armors/Bronze/Head_Texture.png"
-}

@@ -1,0 +1,28 @@
+{
+  "Type": "Charging",
+  "Next": {
+    "0.2": {
+      "Type": "Projectile",
+      "Config": "Hado31_Shakkaho_ProjectileConfig"
+    },
+    "1": {
+      "Type": "SendMessage",
+      "Message": "1"
+    }
+  },
+  "Effects": {
+    "ItemPlayerAnimationsId": "HadoAnimations",
+    "ItemAnimationId": "#1ShoCharging",
+    "Particles": [
+      {
+        "SystemId": "Hado31_Shakkaho_Charging",
+        "TargetEntityPart": "Entity",
+        "TargetNodeName": "R-Attachment"
+      }
+    ],
+    "ClearAnimationOnFinish": true
+  },
+  "RunTime": 1,
+  "AllowIndefiniteHold": true,
+  "DisplayProgress": true
+}

@@ -1,0 +1,56 @@
+{
+  "LaunchForce": 45,
+  "Physics": {
+    "Type": "Standard"
+  },
+  "Interactions": {
+    "ProjectileHit": {
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "Effects": {
+            "Particles": [
+              {
+                "SystemId": "Shakkaho_Explosion",
+                "TargetEntityPart": "Entity"
+              }
+            ]
+          },
+          "RunTime": 0.001
+        },
+        {
+          "Type": "Replace",
+          "DefaultOk": true,
+          "Var": "Shakkaho_Damage",
+          "DefaultValue": {
+            "Interactions": [
+              "Hado1_Sho_Damage"
+            ]
+          },
+          "RunTime": 0.01
+        },
+        "Common_Projectile_Despawn"
+      ],
+      "RequireNewClick": true
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "Effects": {
+            "Particles": [
+              {
+                "SystemId": "Shakkaho_Explosion",
+                "TargetEntityPart": "Entity"
+              }
+            ]
+          },
+          "RunTime": 0.001
+        },
+        "Common_Projectile_Despawn"
+      ]
+    }
+  },
+  "LaunchLocalSoundEventId": "SFX_Bow_T2_Shoot_Local",
+  "Model": "Hado31_Shakkaho_ProjectileModel"
+}

@@ -1,0 +1,31 @@
+{
+  "HitBox": {
+    "Max": {
+      "X": 0.1,
+      "Y": 0.1,
+      "Z": 0.1
+    },
+    "Min": {
+      "X": -0.1,
+      "Y": -0.1,
+      "Z": -0.1
+    }
+  },
+  "MinScale": 0.5,
+  "MaxScale": 0.5,
+  "Texture": "Items/Projectiles/Kido/InvisibleProj.png",
+  "Model": "Items/Projectiles/Kido/Invisible_Proj.blockymodel",
+  "Particles": [
+    {
+      "SystemId": "Hado31_Shakkaho_Charging",
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Center",
+      "Scale": 2
+    }
+  ],
+  "Trails": [
+    {
+      "TrailId": "Arrow"
+    }
+  ]
+}
