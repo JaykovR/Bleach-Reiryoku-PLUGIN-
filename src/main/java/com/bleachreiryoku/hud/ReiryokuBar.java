@@ -7,8 +7,10 @@ import com.hypixel.hytale.server.core.universe.PlayerRef;
 import javax.annotation.Nonnull;
 
 public class ReiryokuBar extends CustomUIHud {
+    public static final String KEY = "BR_ReiryokuBar";
+
     public ReiryokuBar(@Nonnull PlayerRef playerRef){
-        super(playerRef);
+        super(playerRef, KEY);
     }
 
     @Override

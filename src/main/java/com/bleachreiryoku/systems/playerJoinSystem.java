@@ -35,7 +35,7 @@ public class playerJoinSystem extends RefSystem<EntityStore>{
         // Show Reiryoku HUD automatically on join
             var player = store.getComponent(ref, Player.getComponentType());
             if (player != null) {
-                player.getHudManager().setCustomHud(playerRef, new ReiryokuBar(playerRef));
+                player.getHudManager().addCustomHud(playerRef, new ReiryokuBar(playerRef));
             }
 
 

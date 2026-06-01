@@ -20,16 +20,17 @@ public class ToggleHUDCommand extends AbstractPlayerCommand {
     @Override
     protected void execute(@Nonnull CommandContext commandContext, @Nonnull Store<EntityStore> store, @Nonnull Ref<EntityStore> ref,
                            @Nonnull PlayerRef playerRef, @Nonnull World world){
-        Player player = commandContext.senderAs((Player.class));
+        Player player = store.getComponent(ref, Player.getComponentType());
+        if (player == null) return;
         player.getWorldMapTracker().tick(0);
 
         CompletableFuture.runAsync(() -> {
-            if(player.getHudManager().getCustomHud() == null){
-                player.getHudManager().setCustomHud(playerRef, new ReiryokuBar(playerRef));
+            if(player.getHudManager().getCustomHud(ReiryokuBar.KEY) == null){
+                player.getHudManager().addCustomHud(playerRef, new ReiryokuBar(playerRef));
                 playerRef.sendMessage(Message.raw("HUD Shown"));
             }
             else{
-                player.getHudManager().resetHud(playerRef);
+                player.getHudManager().removeCustomHud(playerRef, ReiryokuBar.KEY);
                 playerRef.sendMessage(Message.raw("HUD Hidden"));
             }
         }, world);

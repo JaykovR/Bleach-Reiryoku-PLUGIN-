@@ -62,7 +62,6 @@ public class ReiryokuCommands extends AbstractCommandCollection {
 
         public HelpSubCommand() {
             super("help", "Show available commands");
-            this.setPermissionGroup(null);
         }
 
         @Override
@@ -90,7 +89,6 @@ public class ReiryokuCommands extends AbstractCommandCollection {
 
         public CheckShikai(){
             super("checkShikai", "Tells user if shikai is on or off");
-            this.setPermissionGroup(null);
         }
         @Override
         protected boolean canGeneratePermission() {
@@ -142,7 +140,6 @@ public class ReiryokuCommands extends AbstractCommandCollection {
 
         public CheckHollow(){
             super("checkHollow", "Tells user if they have adquired hollow (mask transformation");
-            this.setPermissionGroup(null);
         }
         @Override
         protected boolean canGeneratePermission() {
@@ -173,7 +170,6 @@ public class ReiryokuCommands extends AbstractCommandCollection {
         // temporarly using hollow mask on this
         public RevertShikai(){
             super("revertShikai", "Reverts the ability for the player to transform into ANYTHING (DEBUG)");
-            this.setPermissionGroup(null);
         }
         @Override
         protected boolean canGeneratePermission() {
@@ -212,7 +208,6 @@ public class ReiryokuCommands extends AbstractCommandCollection {
 
         public GiveShikaiSodeNoShirayuki(){
             super("giveShikaiSodeNoShirayuki", "Gives access to Sode No Shirayuki shikai.");
-            this.setPermissionGroup(null);
         }
         @Override
         protected boolean canGeneratePermission() {
@@ -247,7 +242,6 @@ public class ReiryokuCommands extends AbstractCommandCollection {
 
         public GiveShikaiWabisuke(){
             super("giveShikaiWabisuke", "Gives access to Wabisuke shikai.");
-            this.setPermissionGroup(null);
         }
         @Override
         protected boolean canGeneratePermission() {
@@ -282,7 +276,6 @@ public class ReiryokuCommands extends AbstractCommandCollection {
 
         public GiveShikaiBenihime(){
             super("giveShikaiBenihime", "Gives access to Benihime shikai.");
-            this.setPermissionGroup(null);
         }
         @Override
         protected boolean canGeneratePermission() {
@@ -317,7 +310,6 @@ public class ReiryokuCommands extends AbstractCommandCollection {
 
         public GiveShikaiHozukimaru(){
             super("giveShikaiHozukimaru", "Gives access to Hozukimaru shikai.");
-            this.setPermissionGroup(null);
         }
         @Override
         protected boolean canGeneratePermission() {
@@ -352,7 +344,6 @@ public class ReiryokuCommands extends AbstractCommandCollection {
 
         public setReiryokuMax() {
             super("setReiryokuMax", "Modify your max Reiryoku");
-            this.setPermissionGroup(null);
             this.amountArg = this.withRequiredArg("amount", "New max Reiryoku value",
                     new SingleArgumentType<Float>("float", "A number") {
                         @Override
@@ -395,7 +386,6 @@ public class ReiryokuCommands extends AbstractCommandCollection {
 
         public ChooseRaceCommand() {
             super("chooseRace", "Opens the race selection screen");
-            this.setPermissionGroup(null);
         }
 
         @Override
@@ -423,7 +413,6 @@ public class ReiryokuCommands extends AbstractCommandCollection {
 
         public GetPlayerRaceCommand() {
             super("getPlayerRace", "Displays your current race");
-            this.setPermissionGroup(null);
         }
 
         @Override
@@ -459,7 +448,6 @@ public class ReiryokuCommands extends AbstractCommandCollection {
 
         public StatsCommand() {
             super("stats", "Opens the player stats screen");
-            this.setPermissionGroup(null);
         }
 
         @Override

@@ -38,7 +38,7 @@ public class ReiryokuHudSystem extends EntityTickingSystem<EntityStore> {
         Player player = chunk.getComponent(i, Player.getComponentType());
         if (player == null) return;
 
-        if (!(player.getHudManager().getCustomHud() instanceof ReiryokuBar hud)) return;
+        if (!(player.getHudManager().getCustomHud(ReiryokuBar.KEY) instanceof ReiryokuBar hud)) return;
 
         EntityStatMap stats = chunk.getComponent(i, EntityStatMap.getComponentType());
         if (stats == null) return;
