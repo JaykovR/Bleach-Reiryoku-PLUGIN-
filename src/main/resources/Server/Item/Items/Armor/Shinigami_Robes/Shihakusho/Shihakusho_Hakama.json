@@ -51,13 +51,13 @@
       "Physical": [
         {
           "Amount": 0.112,
-          "CalculationType": "Multiplicative"
+          "CalculationType": "Percent"
         }
       ],
       "Projectile": [
         {
           "Amount": 0.112,
-          "CalculationType": "Multiplicative"
+          "CalculationType": "Percent"
         }
       ]
     },

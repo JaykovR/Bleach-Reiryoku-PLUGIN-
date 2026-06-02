@@ -24,7 +24,7 @@
     "Ice": [
       {
         "Amount": -3,
-        "CalculationType": "Additive"
+        "CalculationType": "Flat"
       }
     ]
   },

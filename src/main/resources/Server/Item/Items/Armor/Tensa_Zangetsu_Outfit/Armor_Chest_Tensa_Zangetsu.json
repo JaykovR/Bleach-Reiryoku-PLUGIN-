@@ -43,7 +43,7 @@
       ],
       "Mana": [
         {
-          "CalculationType": "Additive",
+          "CalculationType": "Multiplicative",
           "Amount": 60
         }
       ]
@@ -52,13 +52,13 @@
       "Physical": [
         {
           "Amount": 0.14,
-          "CalculationType": "Multiplicative"
+          "CalculationType": "Percent"
         }
       ],
       "Projectile": [
         {
           "Amount": 0.14,
-          "CalculationType": "Multiplicative"
+          "CalculationType": "Percent"
         }
       ]
     },
