@@ -16,7 +16,7 @@ dependencies {
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
-
+    runtimeOnly("dev.scaffoldit:devtools:0.2.16")
     implementation(files("server/HytaleServer.jar"))
 }
 
