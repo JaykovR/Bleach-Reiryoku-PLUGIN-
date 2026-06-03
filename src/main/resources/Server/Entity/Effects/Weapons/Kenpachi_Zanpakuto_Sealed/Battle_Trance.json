@@ -17,19 +17,19 @@
   "DamageResistance": {
     "Bludgeoning": [
       {
-        "CalculationType": "Multiplicative",
+        "CalculationType": "Percent",
         "Amount": 0.3
       }
     ],
     "Slashing": [
       {
-        "CalculationType": "Multiplicative",
+        "CalculationType": "Percent",
         "Amount": 0.5
       }
     ],
     "Physical": [
       {
-        "CalculationType": "Multiplicative",
+        "CalculationType": "Percent",
         "Amount": 0.4
       }
     ]

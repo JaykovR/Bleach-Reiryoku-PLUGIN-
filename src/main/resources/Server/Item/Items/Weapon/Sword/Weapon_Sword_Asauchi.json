@@ -191,5 +191,6 @@
     "Primary": "Root_Weapon_Sword_Primary",
     "Secondary": "Root_Weapon_Sword_Secondary_Guard"
   },
-  "PlayerAnimationsId": "Sword"
+  "PlayerAnimationsId": "Sword",
+  "MaxStack": 1
 }

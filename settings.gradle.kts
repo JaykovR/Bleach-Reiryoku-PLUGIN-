@@ -1,7 +1,7 @@
 rootProject.name = "bleach-reiryoku"
 // settings.gradle.kts
 plugins {
-    id("dev.scaffoldit") version "0.2.+"
+    id("dev.scaffoldit") version "0.2.16"
 }
 hytale {
     manifest {
