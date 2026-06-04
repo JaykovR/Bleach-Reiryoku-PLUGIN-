@@ -1,7 +1,7 @@
 {
   "Type": "StatsCondition",
   "Costs": {
-    "Mana": 8
+    "Reiryoku": 40.5
   },
   "Next": {
     "Type": "ChangeStat",
@@ -22,7 +22,7 @@
   },
   "Failed": {
     "Type": "SendMessage",
-    "Message": "Not enough MP Available."
+    "Message": "Not enough Reiryoku available. (40 Reiryoku Required)"
   },
   "LessThan": false
 }

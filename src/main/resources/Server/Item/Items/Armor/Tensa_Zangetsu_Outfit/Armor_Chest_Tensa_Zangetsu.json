@@ -40,12 +40,6 @@
           "CalculationType": "Multiplicative",
           "Amount": 3
         }
-      ],
-      "Mana": [
-        {
-          "CalculationType": "Multiplicative",
-          "Amount": 60
-        }
       ]
     },
     "DamageResistance": {

@@ -273,12 +273,6 @@
           "CalculationType": "Additive",
           "Amount": 20
         }
-      ],
-      "Mana": [
-        {
-          "CalculationType": "Additive",
-          "Amount": 60
-        }
       ]
     }
   }

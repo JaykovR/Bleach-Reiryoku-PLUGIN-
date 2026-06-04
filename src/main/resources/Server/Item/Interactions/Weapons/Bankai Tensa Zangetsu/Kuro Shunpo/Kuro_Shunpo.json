@@ -3,7 +3,7 @@
   "Type": "StatsCondition",
   "Costs": {
     "Stamina": 1.51,
-    "Mana": 9
+    "Reiryoku": 70.5
   },
   "Next": {
     "Type": "Serial",
@@ -17,7 +17,7 @@
         "Type": "ChangeStat",
         "StatModifiers": {
           "Stamina": -1.5,
-          "Mana": -10
+          "Reiryoku": -70
         },
         "ValueType": "Absolute"
       },
@@ -52,7 +52,7 @@
     "Interactions": [
       {
         "Type": "SendMessage",
-        "Message": "Not enough stamina or mana."
+        "Message": "Not enough stamina or reiryoku. (70 Reiryoku + 1.5 Stamina needed)"
       },
       "Stamina_Bar_Flash"
     ]

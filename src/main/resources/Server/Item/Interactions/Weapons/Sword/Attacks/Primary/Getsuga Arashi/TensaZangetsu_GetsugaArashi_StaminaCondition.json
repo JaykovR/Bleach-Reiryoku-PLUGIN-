@@ -1,8 +1,8 @@
 {
   "Type": "StatsCondition",
   "Costs": {
-    "Stamina": 8,
-    "Mana": 10
+    "Stamina": 5.5,
+    "Reiryoku": 150.5
   },
   "Next": {
     "Type": "ChangeStat",
@@ -23,7 +23,7 @@
   },
   "Failed": {
     "Type": "SendMessage",
-    "Message": "Not enough Stamina or MP Available."
+    "Message": "Not enough Stamina or Reiryoku available. (150 Reiryoku, 5 Stamina required)"
   },
   "LessThan": false
 }

@@ -9,7 +9,7 @@
       "Type": "Selector",
       "Selector": {
         "Id": "AOECylinder",
-        "Range": 2,
+        "Range": 2.1,
         "Height": 2
       },
       "HitEntity": {
@@ -81,7 +81,7 @@
       "Type": "ChangeStat",
       "StatModifiers": {
         "Stamina": -5,
-        "Mana": -10
+        "Reiryoku": -150
       }
     }
   ]

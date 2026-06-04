@@ -702,7 +702,6 @@
       ]
     }
   },
-  "MaxDurability": 300,
   "DurabilityLossOnHit": 0.21,
   "Recipe": {
     "TimeSeconds": 3.5,

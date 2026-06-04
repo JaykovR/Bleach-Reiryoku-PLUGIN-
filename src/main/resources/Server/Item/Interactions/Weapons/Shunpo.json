@@ -2,7 +2,8 @@
   "$Comment": "The base wrapper for the dagger secondary",
   "Type": "StatsCondition",
   "Costs": {
-    "Stamina": 1.51
+    "Stamina": 1.51,
+    "Reiryoku": 10.1
   },
   "Next": {
     "Type": "Serial",
@@ -20,7 +21,8 @@
       {
         "Type": "ChangeStat",
         "StatModifiers": {
-          "Stamina": -1.5
+          "Stamina": -1.5,
+          "Reiryoku": -10
         },
         "ValueType": "Absolute"
       },
@@ -47,8 +49,11 @@
       }
     ]
   },
-  "Failed": "Stamina_Bar_Flash",
   "Effects": {
     "LocalSoundEventId": "SFX_Shunpo"
+  },
+  "Failed": {
+    "Type": "SendMessage",
+    "Message": "Not enough Stamina or Reiryoku. (1.5 Stamina + 10 Reiryoku needed)"
   }
 }

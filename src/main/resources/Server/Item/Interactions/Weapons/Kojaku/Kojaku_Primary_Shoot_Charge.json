@@ -1,7 +1,7 @@
 {
   "Type": "Charging",
   "AllowIndefiniteHold": true,
-  "DisplayProgress": false,
+  "DisplayProgress": true,
   "Effects": {
     "ItemAnimationId": "ShootCharging",
     "ClearAnimationOnFinish": true,
@@ -32,12 +32,12 @@
     "0.1": {
       "Type": "StatsCondition",
       "Costs": {
-        "Mana": 4
+        "Reiryoku": 15.5
       },
       "Next": {
         "Type": "ChangeStat",
         "StatModifiers": {
-          "Mana": -4
+          "Reiryoku": -15
         },
         "Next": {
           "Type": "Replace",
@@ -62,12 +62,12 @@
     "0.3": {
       "Type": "StatsCondition",
       "Costs": {
-        "Mana": 8
+        "Reiryoku": 22.5
       },
       "Next": {
         "Type": "ChangeStat",
         "StatModifiers": {
-          "Mana": -8
+          "Reiryoku": -22
         },
         "Next": {
           "Type": "Replace",
@@ -92,12 +92,12 @@
     "0.6": {
       "Type": "StatsCondition",
       "Costs": {
-        "Mana": 12
+        "Reiryoku": 28.5
       },
       "Next": {
         "Type": "ChangeStat",
         "StatModifiers": {
-          "Mana": -12
+          "Reiryoku": -28
         },
         "Next": {
           "Type": "Replace",
@@ -122,12 +122,12 @@
     "0.9": {
       "Type": "StatsCondition",
       "Costs": {
-        "Mana": 16
+        "Reiryoku": 32.5
       },
       "Next": {
         "Type": "ChangeStat",
         "StatModifiers": {
-          "Mana": -16
+          "Reiryoku": -32.5
         },
         "Next": {
           "Type": "Replace",
@@ -152,12 +152,12 @@
     "1.2": {
       "Type": "StatsCondition",
       "Costs": {
-        "Mana": 19
+        "Reiryoku": 35.5
       },
       "Next": {
         "Type": "ChangeStat",
         "StatModifiers": {
-          "Mana": -19
+          "Reiryoku": -35
         },
         "Next": {
           "Type": "Replace",

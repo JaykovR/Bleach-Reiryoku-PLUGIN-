@@ -14,7 +14,7 @@
         "Type": "ChangeStat",
         "StatModifiers": {
           "Stamina": -2,
-          "Mana": -20
+          "Reiryoku": -65
         },
         "Effects": {
           "ItemAnimationId": "GuardBash",

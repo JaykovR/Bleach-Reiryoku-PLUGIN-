@@ -27,7 +27,7 @@
               {
                 "Type": "ChangeStat",
                 "StatModifiers": {
-                  "Stamina": -4
+                  "Reiryoku": -60
                 }
               }
             ]

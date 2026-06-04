@@ -57,12 +57,6 @@
           "Amount": 18,
           "CalculationType": "Additive"
         }
-      ],
-      "Mana": [
-        {
-          "CalculationType": "Additive",
-          "Amount": 25
-        }
       ]
     },
     "DamageResistance": {

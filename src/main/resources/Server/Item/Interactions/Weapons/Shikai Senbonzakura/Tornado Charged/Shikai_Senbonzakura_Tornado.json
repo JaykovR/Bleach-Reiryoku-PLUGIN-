@@ -46,7 +46,7 @@
     {
       "Type": "ChangeStat",
       "StatModifiers": {
-        "Mana": -5
+        "Reiryoku": -20
       }
     },
     {

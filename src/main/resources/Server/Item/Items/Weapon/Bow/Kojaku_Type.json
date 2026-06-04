@@ -296,7 +296,6 @@
         }
       ]
     },
-
     "Kojaku_Volley_Charge": {
       "Interactions": [
         {
@@ -579,7 +578,6 @@
     ]
   },
   "ItemSoundSetId": "ISS_Weapons_Wood",
-  "MaxDurability": 80,
   "DurabilityLossOnHit": 0.58,
   "ClipsGeometry": false
 }

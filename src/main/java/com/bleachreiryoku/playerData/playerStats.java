@@ -274,11 +274,12 @@ public class playerStats implements Component<EntityStore> {
             150,    // Awakened Soul (early Chad/Orihime)
             300,    // Shinigami Trainee - Academy Student
             500,    // Unseated Officer - Graduated, Unranked Shinigami
+            600,    // Shikai Unlock Requirement
             750,    // Low-Seat - 10th-20th place
             1000,   // Mid-Seat - 5th-9th place
             1400,   // High Seat - 3rd-4th place (Ikkaku/Yumichika, Soul Society arc)
             1900,   // Lieutenant - Fukutaicho (Renji pre-Bankai)
-            2500,   // Bankai-Capable Shinigami (Renji w/ Bankai, Soul Society arc)
+            2500,   // Bankai-Capable Shinigami (Renji w/ Bankai, Soul Society arc), Bankai Unlock Requirement
             3200,   // Captain - Standard Taicho (Soifon, Komamura)
             4000,   // Veteran Captain (Byakuya Soul Society arc, Toshiro Hueco Mundo)
             5000,   // Pre-Shikai Kenpachi / Mid-tier Espada (Nnoitra, Grimmjow)

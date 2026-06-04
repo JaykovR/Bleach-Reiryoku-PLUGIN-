@@ -17,7 +17,7 @@
       {
         "Type": "ChangeStat",
         "StatModifiers": {
-          "Mana": -5
+          "Reiryoku": -30
         },
         "ValueType": "Absolute"
       },
@@ -49,6 +49,6 @@
     "LocalSoundEventId": "SFX_Shunpo"
   },
   "Costs": {
-    "Mana": 7
+    "Reiryoku": 30.5
   }
 }
