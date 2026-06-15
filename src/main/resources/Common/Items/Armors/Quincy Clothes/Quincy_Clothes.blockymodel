@@ -250,7 +250,7 @@
                       }
                     },
                     "unwrapMode": "custom",
-                    "visible": false,
+                    "visible": true,
                     "doubleSided": true,
                     "shadingMode": "flat"
                   }
@@ -327,12 +327,12 @@
                     "textureLayout": {
                       "front": {
                         "offset": {"x": 11, "y": 120},
-                        "mirror": {"x": true, "y": false},
+                        "mirror": {"x": false, "y": false},
                         "angle": 0
                       }
                     },
                     "unwrapMode": "custom",
-                    "visible": false,
+                    "visible": true,
                     "doubleSided": true,
                     "shadingMode": "flat"
                   },
@@ -360,7 +360,7 @@
                           }
                         },
                         "unwrapMode": "custom",
-                        "visible": false,
+                        "visible": true,
                         "doubleSided": true,
                         "shadingMode": "flat"
                       }
