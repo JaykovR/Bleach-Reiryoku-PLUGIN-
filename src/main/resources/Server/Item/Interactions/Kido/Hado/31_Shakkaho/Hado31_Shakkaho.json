@@ -1,13 +1,18 @@
 {
   "Type": "Charging",
   "Next": {
-    "0.2": {
+    "0.9": {
       "Type": "Projectile",
-      "Config": "Hado31_Shakkaho_ProjectileConfig"
-    },
-    "1": {
-      "Type": "SendMessage",
-      "Message": "1"
+      "Config": "Hado31_Shakkaho_ProjectileConfig",
+      "Next": {
+        "Type": "ChangeStat",
+        "ValueType": "Absolute",
+        "Behaviour": "Add",
+        "Entity": "User",
+        "StatModifiers": {
+          "Reiryoku": -55
+        }
+      }
     }
   },
   "Effects": {
@@ -17,7 +22,10 @@
       {
         "SystemId": "Hado31_Shakkaho_Charging",
         "TargetEntityPart": "Entity",
-        "TargetNodeName": "R-Attachment"
+        "TargetNodeName": "R-Attachment",
+        "PositionOffset": {
+          "Z": 0.1
+        }
       }
     ],
     "ClearAnimationOnFinish": true

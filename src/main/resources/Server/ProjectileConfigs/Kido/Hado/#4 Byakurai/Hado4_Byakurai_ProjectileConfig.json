@@ -1,0 +1,46 @@
+{
+  "LaunchForce": 45,
+  "Physics": {
+    "Type": "Standard"
+  },
+  "Interactions": {
+    "ProjectileHit": {
+      "Interactions": [
+        {
+          "Type": "Replace",
+          "DefaultValue": {
+            "Interactions": [
+              "Hado4_Byakurai_Damage"
+            ]
+          },
+          "DefaultOk": true,
+          "Var": "Byakurai_Damage",
+          "Effects": {
+            "WorldSoundEventId": "SFX_Hado1_Hit",
+            "LocalSoundEventId": "SFX_Hado1_Hit",
+            "Particles": [
+              {
+                "SystemId": "Hado1_Hit",
+                "TargetEntityPart": "Entity",
+                "PositionOffset": {
+                  "X": -1,
+                  "Y": -1
+                }
+              }
+            ]
+          }
+        },
+        "Common_Projectile_Despawn"
+      ],
+      "RequireNewClick": true
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        "Common_Projectile_Despawn"
+      ]
+    }
+  },
+  "LaunchLocalSoundEventId": "SFX_Hado1_Launch",
+  "Model": "Hado4_Projectile",
+  "LaunchWorldSoundEventId": "SFX_Hado1_Launch"
+}

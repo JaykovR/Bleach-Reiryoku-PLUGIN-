@@ -78,31 +78,36 @@
     "Secondary": {
       "Interactions": [
         {
-          "Type": "Serial",
-          "Interactions": [
-            {
-              "Type": "Simple",
-              "Effects": {
-                "Particles": [
-                  {
-                    "SystemId": "ShikaiUnlock",
-                    "TargetEntityPart": "Entity",
-                    "Color": "#ff0000"
-                  }
-                ],
-                "WorldSoundEventId": "SFX_ShikaiUnlock"
+          "Type": "ReiryokuCheck",
+          "RequiredMax": 600,
+          "RunTime": 0.01,
+          "Next": {
+            "Type": "Serial",
+            "Interactions": [
+              {
+                "Type": "Simple",
+                "Effects": {
+                  "Particles": [
+                    {
+                      "SystemId": "ShikaiUnlock",
+                      "TargetEntityPart": "Entity",
+                      "Color": "#ff0000"
+                    }
+                  ],
+                  "WorldSoundEventId": "SFX_ShikaiUnlock"
+                },
+                "RunTime": 1
               },
-              "RunTime": 1
-            },
-            {
-              "Type": "Simple",
-              "Effects": {
-                "WorldSoundEventId": "SFX_ShikaiUnlock2"
+              {
+                "Type": "Simple",
+                "Effects": {
+                  "WorldSoundEventId": "SFX_ShikaiUnlock2"
+                },
+                "RunTime": 0.1
               },
-              "RunTime": 0.1
-            },
-            "UnlockShikai"
-          ]
+              "UnlockShikai"
+            ]
+          }
         }
       ]
     }

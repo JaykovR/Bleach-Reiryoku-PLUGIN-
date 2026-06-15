@@ -1,0 +1,64 @@
+{
+  "ParticleRotationInfluence": "Billboard",
+  "MaxConcurrentParticles": 1,
+  "RenderMode": "Erosion",
+  "SpawnRate": {
+    "Min": 6,
+    "Max": 6
+  },
+  "Particle": {
+    "Texture": "Particles/Textures/Basic/Ball.png",
+    "ScaleRatioConstraint": "OneToOne",
+    "UVOption": "None",
+    "InitialAnimationFrame": {
+      "Opacity": 0.808,
+      "FrameIndex": {
+        "Min": 0,
+        "Max": 0
+      },
+      "Color": "#eb5252",
+      "Scale": {
+        "X": {
+          "Min": 0.1,
+          "Max": 0.1
+        },
+        "Y": {
+          "Min": 0.1,
+          "Max": 0.1
+        }
+      }
+    },
+    "Animation": {
+      "0": {
+        "Scale": {
+          "X": {
+            "Min": 2.7,
+            "Max": 2.7
+          },
+          "Y": {
+            "Max": 2.7,
+            "Min": 2.7
+          }
+        },
+        "Opacity": 0.524
+      },
+      "90": {
+        "Scale": {
+          "X": {
+            "Min": 3,
+            "Max": 3
+          },
+          "Y": {
+            "Min": 3,
+            "Max": 3
+          }
+        },
+        "Opacity": 0.436
+      }
+    }
+  },
+  "ParticleLifeSpan": {
+    "Min": 1,
+    "Max": 1
+  }
+}

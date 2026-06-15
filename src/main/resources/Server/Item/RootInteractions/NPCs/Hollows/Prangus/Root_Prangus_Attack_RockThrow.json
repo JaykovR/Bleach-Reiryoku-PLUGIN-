@@ -1,0 +1,18 @@
+{
+  "Interactions": [
+    {
+      "Type": "Replace",
+      "Var": "ThrowRock_Start",
+      "DefaultValue": {
+        "Interactions": [
+          "Prangus_Attack_RockThrow"
+        ]
+      }
+    }
+  ],
+  "Tags": {
+    "Attack": [
+      "Distance"
+    ]
+  }
+}

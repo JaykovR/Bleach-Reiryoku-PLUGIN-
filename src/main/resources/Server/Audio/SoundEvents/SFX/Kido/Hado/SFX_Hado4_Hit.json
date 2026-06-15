@@ -1,0 +1,21 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Weapons/Bankai/TensaZangetsu_GetsugaTenshou_Hit.ogg"
+      ],
+      "RandomSettings": {
+        "MinVolume": -2,
+        "MinPitch": -2,
+        "MaxPitch": 2
+      },
+      "StartDelay": 0,
+      "Looping": false,
+      "Volume": -2
+    }
+  ],
+  "MaxInstance": 5,
+  "Volume": -5.4,
+  "PreventSoundInterruption": true,
+  "Parent": "SFX_Attn_Moderate"
+}

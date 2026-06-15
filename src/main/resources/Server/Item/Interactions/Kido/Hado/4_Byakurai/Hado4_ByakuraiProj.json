@@ -1,13 +1,18 @@
 {
   "Type": "Charging",
   "Next": {
-    "0.2": {
-      "Type": "LaunchProjectile",
-      "ProjectileId": "Hado4_Projectile"
-    },
-    "1": {
-      "Type": "SendMessage",
-      "Message": "1"
+    "0.3": {
+      "Type": "Projectile",
+      "Config": "Hado4_Byakurai_ProjectileConfig",
+      "Next": {
+        "Type": "ChangeStat",
+        "ValueType": "Absolute",
+        "Behaviour": "Add",
+        "Entity": "User",
+        "StatModifiers": {
+          "Reiryoku": -35
+        }
+      }
     }
   },
   "Effects": {
@@ -16,7 +21,7 @@
     "Particles": [
       {
         "SystemId": "Hado4_Chargning",
-        "TargetEntityPart": "Self",
+        "TargetEntityPart": "Entity",
         "TargetNodeName": "R-Attachment",
         "Scale": 0.5
       }
@@ -25,7 +30,7 @@
     "FirstPersonParticles": [
       {
         "SystemId": "Hado4_Chargning",
-        "TargetEntityPart": "Self",
+        "TargetEntityPart": "Entity",
         "TargetNodeName": "R-Attachment",
         "Scale": 0.5
       }

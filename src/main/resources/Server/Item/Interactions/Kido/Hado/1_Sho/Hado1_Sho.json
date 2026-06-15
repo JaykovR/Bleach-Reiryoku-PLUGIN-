@@ -1,17 +1,17 @@
 {
   "Type": "Charging",
   "Next": {
-    "0.2": {
-      "Type": "SendMessage",
-      "Message": "0.2",
+    "0.7": {
+      "Type": "Projectile",
+      "Config": "Hado1_Sho_ProjectileConfig",
       "Next": {
-        "Type": "Projectile",
-        "Config": "Hado1_Sho_ProjectileConfig"
+        "Type": "ChangeStat",
+        "ValueType": "Absolute",
+        "Behaviour": "Add",
+        "StatModifiers": {
+          "Reiryoku": -25
+        }
       }
-    },
-    "1": {
-      "Type": "SendMessage",
-      "Message": "1"
     }
   },
   "Effects": {

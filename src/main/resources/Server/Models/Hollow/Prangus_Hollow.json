@@ -1,29 +1,61 @@
 {
-  "Model": "NPC/Original_Hollow/Prangus.blockymodel",
-  "Texture": "NPC/Original_Hollow/Prangus_Texture.png",
+  "Model": "NPC/Original_Hollow/Prangus/Prangus.blockymodel",
+  "Texture": "NPC/Original_Hollow/Prangus/Prangus_Texture.png",
   "EyeHeight": 1.2,
   "CrouchOffset": -0.55,
   "HitBox": {
     "Max": {
-      "X": 0.55,
-      "Y": 1.8,
-      "Z": 0.55
+      "X": 1.2,
+      "Y": 2.5,
+      "Z": 1
     },
     "Min": {
-      "X": -0.55,
+      "X": -1.2,
       "Y": 0,
-      "Z": -0.55
+      "Z": -0.25
     }
   },
   "MinScale": 1,
-  "MaxScale": 1.5,
+  "MaxScale": 1.04999995231628,
   "AnimationSets": {
     "Idle": {
       "Animations": [
         {
-          "Animation": "Characters/Animations/NPC/Idle_Prangus.blockyanim",
-          "Speed": 0.9,
-          "SoundEventId": "SFX_Hollow_Idle_Breath"
+          "Animation": "Characters/Animations/NPC/Prangus/Idle_Prangus.blockyanim",
+          "Speed": 0.9
+        }
+      ]
+    },
+    "Walk": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/NPC/Prangus/Prangus_Walk.blockyanim",
+          "Speed": 1,
+          "SoundEventId": "SFX_Hollow_Walk_Step"
+        }
+      ]
+    },
+    "Run": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/NPC/Prangus/Prangus_Run.blockyanim",
+          "Speed": 1.2,
+          "SoundEventId": "SFX_Hollow_Walk_Step"
+        }
+      ]
+    },
+    "Death": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/NPC/Prangus/Prangus_Death.blockyanim",
+          "SoundEventId": "SFX_Spawn_Scream_Hollow_Death"
+        }
+      ]
+    },
+    "Alerted": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/NPC/Prangus/Prangus_Taunt.blockyanim"
         }
       ]
     }

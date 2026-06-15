@@ -1,0 +1,19 @@
+{
+  "Interactions": [
+    {
+      "Type": "Replace",
+      "Var": "Melee_Smash_Start",
+      "DefaultValue": {
+        "Interactions": [
+          "Prangus_Attack_Smash"
+        ]
+      },
+      "DefaultOk": true
+    }
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  }
+}

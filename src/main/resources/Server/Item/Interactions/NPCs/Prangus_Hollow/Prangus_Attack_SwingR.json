@@ -1,0 +1,82 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemAnimationId": "SwingR",
+    "ItemPlayerAnimationsId": "Prangus_Hollow_Animations"
+  },
+  "$Comment": "Prepare Delay before damage is applied via selector",
+  "RunTime": 0.4,
+  "Next": {
+    "Type": "Parallel",
+    "$Comment": "Make sure this parallel interaction is needed and can't be optimized away",
+    "Interactions": [
+      {
+        "Interactions": [
+          {
+            "Type": "Selector",
+            "$Comment": "Length of Combat",
+            "RunTime": 0.152,
+            "Selector": {
+              "Id": "Horizontal",
+              "Direction": "ToRight",
+              "TestLineOfSight": true,
+              "ExtendTop": 0.5,
+              "ExtendBottom": 0.5,
+              "StartDistance": 1,
+              "EndDistance": 4,
+              "Length": 105,
+              "RollOffset": 45,
+              "YawStartOffset": -60
+            },
+            "HitEntity": {
+              "Interactions": [
+                {
+                  "Type": "Replace",
+                  "DefaultValue": {
+                    "Interactions": [
+                      "Prangus_Attack_SwingR_Damage"
+                    ]
+                  },
+                  "Var": "SwingR_Damage"
+                }
+              ]
+            },
+            "Next": {
+              "Type": "Simple",
+              "$Comment": "Pad the interaction length",
+              "RunTime": 0.53
+            }
+          }
+        ]
+      },
+      {
+        "Interactions": [
+          {
+            "Type": "Simple",
+            "$Comment": "Length of Effect",
+            "RunTime": 0.303,
+            "Effects": {
+              "Trails": [
+                {
+                  "TrailId": "Bear_Claw",
+                  "TargetNodeName": "R-Hand",
+                  "TargetEntityPart": "Entity",
+                  "RotationOffset": {
+                    "Yaw": 0,
+                    "Pitch": 0,
+                    "Roll": 90
+                  },
+                  "PositionOffset": {
+                    "X": 0,
+                    "Y": -0.1,
+                    "Z": 0.25
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

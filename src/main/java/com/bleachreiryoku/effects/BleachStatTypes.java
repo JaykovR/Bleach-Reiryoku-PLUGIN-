@@ -34,6 +34,11 @@ public final class BleachStatTypes {
         return stats != null ? stats.get(REIRYOKU).get() : -1f;
     }
 
+    public static float getMax(Ref<EntityStore> ref, Store<EntityStore> store) {
+        EntityStatMap stats = store.getComponent(ref, EntityStatMap.getComponentType());
+        return stats != null ? stats.get(REIRYOKU).getMax() : -1f;
+    }
+
     public static void setValue(Ref<EntityStore> ref, Store<EntityStore> store, float value) {
         EntityStatMap stats = store.getComponent(ref, EntityStatMap.getComponentType());
         if (stats != null) stats.setStatValue(REIRYOKU, value);

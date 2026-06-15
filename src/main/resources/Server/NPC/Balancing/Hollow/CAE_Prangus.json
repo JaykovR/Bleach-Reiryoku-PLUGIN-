@@ -1,0 +1,146 @@
+{
+  "Type": "CombatActionEvaluator",
+  "TargetMemoryDuration": 10,
+  "CombatActionEvaluator": {
+    "$Comment": "Universal run-conditions block. Identical in every Hytale CAE - leave alone.",
+    "RunConditions": [
+      {
+        "Type": "TimeSinceLastUsed",
+        "Curve": {
+          "ResponseCurve": "Linear",
+          "XRange": [
+            0,
+            10
+          ]
+        }
+      },
+      {
+        "Type": "Randomiser",
+        "MinValue": 0.9,
+        "MaxValue": 1
+      }
+    ],
+    "MinRunUtility": 0.5,
+    "MinActionUtility": 0.01,
+    "AvailableActions": {
+      "SelectTarget": {
+        "Type": "SelectBasicAttackTarget",
+        "Description": "Pick a target within sight to attack.",
+        "Conditions": [
+          {
+            "Type": "TargetDistance",
+            "Curve": {
+              "ResponseCurve": "SimpleDescendingLogistic",
+              "XRange": [
+                0,
+                25
+              ]
+            }
+          }
+        ]
+      },
+      "Smash": {
+        "Type": "Ability",
+        "Description": "Heavy two-handed smash. Slow, hard-hitting, rare.",
+        "Target": "Hostile",
+        "Ability": "Root_Prangus_Attack_Smash",
+        "ChargeFor": 1,
+        "AttackDistanceRange": [
+          1.5,
+          3.5
+        ],
+        "PostExecuteDistanceRange": [
+          2.5,
+          4
+        ],
+        "Positioning": "Any",
+        "SubState": "Default",
+        "Conditions": [
+          {
+            "$Comment": "Switch curve at 8 = won't fire until at least 8 seconds since last use.",
+            "Type": "TimeSinceLastUsed",
+            "Curve": {
+              "Type": "Switch",
+              "SwitchPoint": 8
+            }
+          },
+          {
+            "$Comment": "Only viable when target is in close-melee range.",
+            "Type": "TargetDistance",
+            "Curve": {
+              "ResponseCurve": "SimpleDescendingLogistic",
+              "XRange": [
+                0,
+                4
+              ]
+            }
+          }
+        ],
+        "AbilityType": "Primary",
+        "WeightCoefficient": 5
+      },
+      "RockThrow": {
+        "Type": "Ability",
+        "Description": "Picks up a rock and hurls it.",
+        "Target": "Hostile",
+        "Ability": "Root_Prangus_Attack_RockThrow",
+        "ChargeFor": 0.8,
+        "AttackDistanceRange": [
+          6,
+          25
+        ],
+        "Positioning": "Any",
+        "SubState": "Default",
+        "RequireAiming": true,
+        "Conditions": [
+          {
+            "Type": "TimeSinceLastUsed",
+            "Curve": {
+              "Type": "Switch",
+              "SwitchPoint": 12
+            }
+          },
+          {
+            "$Comment": "Utility ramps up as target moves further away - so Prangus prefers this when the target is escaping rather than rushing him.",
+            "Type": "TargetDistance",
+            "Curve": {
+              "ResponseCurve": "Linear",
+              "XRange": [
+                6,
+                20
+              ]
+            }
+          }
+        ],
+        "AbilityType": "Primary",
+        "WeightCoefficient": 5
+      }
+    },
+    "ActionSets": {
+      "Default": {
+        "BasicAttacks": {
+          "$Comment_Attacks": "All 4 basic attacks. Randomise:true means he picks one at random each swing rather than alternating in fixed order - more primal, less predictable.",
+          "Attacks": [
+            "Root_Prangus_Attack_SwingL",
+            "Root_Prangus_Attack_SwingR",
+            "Root_Prangus_Attack_PunchL",
+            "Root_Prangus_Attack_PunchR"
+          ],
+          "Randomise": true,
+          "UseProjectedDistance": true,
+          "MaxRange": 2.5,
+          "Timeout": 0.5,
+          "CooldownRange": [
+            0.001,
+            0.3
+          ]
+        },
+        "Actions": [
+          "Smash",
+          "RockThrow",
+          "SelectTarget"
+        ]
+      }
+    }
+  }
+}

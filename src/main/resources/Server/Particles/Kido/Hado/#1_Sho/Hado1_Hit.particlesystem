@@ -1,0 +1,45 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Hado1_Hit_Shockwave",
+      "PositionOffset": {
+        "X": 1,
+        "Y": 1,
+        "Z": 0
+      }
+    },
+    {
+      "SpawnerId": "Hado1_Hit_DustWhite",
+      "PositionOffset": {
+        "X": 1,
+        "Y": 1,
+        "Z": 0
+      }
+    },
+    {
+      "SpawnerId": "Hado1_Hit_DustBlueish",
+      "PositionOffset": {
+        "X": 1,
+        "Y": 1,
+        "Z": 0
+      }
+    },
+    {
+      "SpawnerId": "Hado1_Hit_Flash",
+      "PositionOffset": {
+        "X": 1,
+        "Y": 1,
+        "Z": 0
+      }
+    },
+    {
+      "SpawnerId": "Hado1_Hit_Flair",
+      "PositionOffset": {
+        "X": 1,
+        "Y": 1,
+        "Z": 0
+      }
+    }
+  ],
+  "BoundingRadius": 10
+}

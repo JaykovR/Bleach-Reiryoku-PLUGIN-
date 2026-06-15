@@ -1,0 +1,20 @@
+{
+  "Layers": [
+    {
+      "RandomSettings": {
+        "MinPitch": -3.888,
+        "MaxPitch": 3.792,
+        "MinVolume": -0.9151498112135024,
+        "MaxVolume": 0.8278537031645015
+      },
+      "Volume": 6.0,
+      "Files": [
+        "Sounds/Kido/Hado/Hado1_Launch.ogg"
+      ]
+    }
+  ],
+  "Volume": -2,
+  "PreventSoundInterruption": true,
+  "AudioCategory": "AudioCat_Shortbow",
+  "Parent": "SFX_Attn_Loud"
+}

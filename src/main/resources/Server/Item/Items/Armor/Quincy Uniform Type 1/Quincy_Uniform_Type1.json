@@ -1,0 +1,99 @@
+{
+  "TranslationProperties": {
+    "Name": "Quincy Uniform Type 1",
+    "Description": "TODO ewe"
+  },
+  "Parent": "Armor_Bronze_Chest",
+  "Quality": "Rare",
+  "ItemLevel": 15,
+  "IconProperties": {
+    "Scale": 0.47,
+    "Rotation": [
+      23,
+      38,
+      22.5
+    ],
+    "Translation": [
+      6,
+      -51
+    ]
+  },
+  "Model": "Items/Armors/Quincy Clothes/Quincy_Clothes.blockymodel",
+  "Texture": "Items/Armors/Quincy Clothes/Quincy_Clothes_Texture.png",
+  "Recipe": {
+    "TimeSeconds": 2,
+    "Input": [
+      {
+        "Quantity": 2,
+        "ItemId": "Ingredient_Bolt_Soulweave_Cloth"
+      },
+      {
+        "ItemId": "Ingredient_Bolt_Purified_Soulweave_Cloth",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Soulweave_Loom",
+        "Type": "Crafting",
+        "Categories": [
+          "Soulweave_Loom_Shihakusho"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ],
+    "KnowledgeRequired": false
+  },
+  "Armor": {
+    "ArmorSlot": "Chest",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "Overtop",
+      "Undertop"
+    ],
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 18,
+          "CalculationType": "Additive"
+        }
+      ]
+    },
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.12,
+          "CalculationType": "Percent"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.12,
+          "CalculationType": "Percent"
+        }
+      ]
+    },
+    "DamageClassEnhancement": {
+      "Charged": [
+        {
+          "CalculationType": "Multiplicative",
+          "Amount": 0.04
+        }
+      ]
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Armor"
+    ],
+    "Family": [
+      "Cloth_Linen"
+    ]
+  },
+  "MaxDurability": 120,
+  "ItemSoundSetId": "ISS_Armor_Cloth",
+  "Categories": [
+    "BleachCategory.Armors"
+  ],
+  "Icon": "Icons/ItemsGenerated/Quincy_Uniform_Type1.png"
+}

@@ -1,0 +1,12 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/Kido/Hado/Hado1_Hit.ogg"
+      ]
+    }
+  ],
+  "Volume": 7.36,
+  "PreventSoundInterruption": true,
+  "Parent": "SFX_Attn_Loud"
+}

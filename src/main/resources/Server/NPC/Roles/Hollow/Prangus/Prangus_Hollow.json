@@ -1,0 +1,73 @@
+{
+  "Type": "Variant",
+  "Reference": "Template_Intelligent",
+  "Parameters": {
+    "WanderRadius": {
+      "Value": 10,
+      "Description": "General wander radius for idle wander and wander on the break."
+    },
+    "FollowPatrolPath": {
+      "Value": false,
+      "Description": "Whether this NPC will follow patrol paths at all."
+    },
+    "Patrol": {
+      "Value": false,
+      "Description": "Whether or not this NPC will patrol during its waking hours, either alone or as part of a group."
+    },
+    "FlockArray": {
+      "Value": [],
+      "TypeHint": "String",
+      "Description": "Array containing NPCs for this flock type."
+    },
+    "ApplySeparation": {
+      "Value": false,
+      "Description": "When set to false, NPCs wont try to avoid each other or player, it can lead to them stacking together, but can help to avoid jerky-like movemenet in enclosed space."
+    },
+    "NameTranslationKey": {
+      "Value": "Prangus",
+      "Description": "Translation key for NPC name display"
+    }
+  },
+  "Modify": {
+    "MaxHealth": 200,
+    "MaxSpeed": 7,
+    "ChaseRelativeSpeed": 1,
+    "HearingRange": 10,
+    "ViewRange": 25,
+    "ViewSector": 270,
+    "AlertedRange": 20,
+    "Weapons": [],
+    "OffHand": [],
+    "AlertedTime": [
+      0.5,
+      1
+    ],
+    "WakingPeriod": [
+      0,
+      24
+    ],
+    "DropList": "Drop_Crawler_Hollow",
+    "Appearance": "Prangus_Hollow",
+    "WanderRadius": {
+      "Compute": "WanderRadius"
+    },
+    "LeashDistance": 40,
+    "HardLeashDistance": 60,
+    "LeashMinPlayerDistance": 15,
+    "UseCombatActionEvaluator": true,
+    "_CombatConfig": "CAE_Prangus",
+    "LeashTimer": [
+      10,
+      15
+    ],
+    "ApplySeparation": {
+      "Compute": "ApplySeparation"
+    },
+    "IsMemory": true,
+    "MemoriesCategory": "Hollow",
+    "BreathesInWater": true,
+    "NameTranslationKey": {
+      "Compute": "NameTranslationKey"
+    }
+  }
+}

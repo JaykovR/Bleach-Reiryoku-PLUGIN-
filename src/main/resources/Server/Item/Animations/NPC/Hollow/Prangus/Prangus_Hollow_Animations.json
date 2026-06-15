@@ -1,0 +1,57 @@
+{
+  "Animations": {
+    "SwingL": {
+      "ThirdPerson": "Characters/Animations/NPC/Prangus/Prangus_SwingL.blockyanim",
+      "Speed": 1.5
+    },
+    "SwingR": {
+      "ThirdPerson": "Characters/Animations/NPC/Prangus/Prangus_SwingR.blockyanim",
+      "Speed": 1.5
+    },
+    "PunchL": {
+      "ThirdPerson": "Characters/Animations/NPC/Prangus/Prangus_PunchL.blockyanim",
+      "Speed": 1.5
+    },
+    "PunchR": {
+      "ThirdPerson": "Characters/Animations/NPC/Prangus/Prangus_PunchR.blockyanim",
+      "Speed": 1.5
+    },
+    "Smash": {
+      "ThirdPerson": "Characters/Animations/NPC/Prangus/Prangus_Smash.blockyanim",
+      "Speed": 1.5
+    },
+    "RockThrow": {
+      "ThirdPerson": "Characters/Animations/NPC/Prangus/Prangus_Throw.blockyanim",
+      "Speed": 1.5
+    },
+    "JumpPrepare": {
+      "ThirdPerson": "Characters/Animations/NPC/Prangus/Prangus_Jump1_Prepare.blockyanim",
+      "Speed": 1
+    },
+    "JumpLeap": {
+      "ThirdPerson": "Characters/Animations/NPC/Prangus/Prangus_Jump2_Leap.blockyanim",
+      "Speed": 1
+    },
+    "AirLoop": {
+      "ThirdPerson": "Characters/Animations/NPC/Prangus/Prangus_Jump3_AirLoop.blockyanim",
+      "Looping": true,
+      "Speed": 1
+    },
+    "JumpSmash": {
+      "ThirdPerson": "Characters/Animations/NPC/Prangus/Prangus_Jump4_Smash.blockyanim",
+      "Speed": 1.5
+    }
+  },
+  "WiggleWeights": {
+    "Pitch": 2.5,
+    "PitchDeceleration": 0.1,
+    "Roll": 0.1,
+    "RollDeceleration": 0.1,
+    "XDeceleration": 0.1,
+    "Y": 0.1,
+    "YDeceleration": 0.1,
+    "Z": 0.1,
+    "ZDeceleration": 0.1,
+    "X": 2.5
+  }
+}
