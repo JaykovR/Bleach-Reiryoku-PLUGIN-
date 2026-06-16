@@ -31,6 +31,7 @@ public class KillRewardSystem extends DeathSystems.OnDeathSystem {
             Map.entry("Scarak_Fighter_Hollow",  5.0f),
             Map.entry("Scarak_Defender_Hollow", 7.0f),
             Map.entry("Crawler_Hollow_Void",    4.0f),
+            Map.entry("Prangus_Hollow",            4.0f),
             // Vanilla Creatures
             Map.entry("Bear_Grizzly",           2.0f),
             Map.entry("Bear_Polar",             2.0f),
