@@ -5,7 +5,7 @@
     "Appearance": "Crawler_Hollow_Void",
     "AttitudeGroup": "Void",
     "DropList": "Drop_Crawler_Hollow",
-    "MaxHealth": 155,
+    "MaxHealth": 80,
     "MaxSpeed": 8,
     "WanderRadius": 12,
     "ViewRange": 18,
@@ -34,7 +34,7 @@
       3,
       4
     ],
-    "CombatBehaviorDistance": 5,
+    "CombatBehaviorDistance": 7,
     "CombatRelativeTurnSpeed": 1,
     "CombatDirectWeight": 10,
     "CombatStrafeWeight": 10,
@@ -44,8 +44,8 @@
       4
     ],
     "CombatBackOffDistanceRange": [
-      4,
-      7
+      2,
+      4
     ],
     "CombatStrafingFrequencyRange": [
       1,
@@ -56,8 +56,8 @@
       3
     ],
     "CombatMovingRelativeSpeed": 0.7,
-    "Attack": "Root_NPC_Crawler_Hollow_Attack",
-    "AttackDistance": 8,
+    "Attack": "Root_NPC_Crawler_Void_Attack",
+    "AttackDistance": 3,
     "_InteractionVars": {
       "Melee_Damage": {
         "Interactions": [
@@ -67,7 +67,7 @@
             "DamageCalculator": {
               "Type": "Absolute",
               "BaseDamage": {
-                "Physical": 35
+                "Physical": 20
               },
               "RandomPercentageModifier": 0.1
             }

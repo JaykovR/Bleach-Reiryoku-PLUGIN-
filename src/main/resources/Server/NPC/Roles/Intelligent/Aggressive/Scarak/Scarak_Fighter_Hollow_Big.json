@@ -16,18 +16,18 @@
     },
     "DesiredAttackDistanceRange": {
       "Value": [
-        3,
-        3
+        4,
+        4
       ],
       "Description": "The distance within which the NPC wants to be from its target while attacking. The max value should be lower than AttackDistance."
     }
   },
   "Modify": {
-    "MaxHealth": 255,
-    "Appearance": "Scarak_Fighter_Hollow",
+    "MaxHealth": 320,
+    "Appearance": "Scarak_Fighter_Hollow_Big",
     "IsMemory": true,
     "MemoriesCategory": "Hollow",
-    "AttackDistance": 4,
+    "AttackDistance": 5,
     "MemoriesNameOverride": "Scarak_Fighter_Hollow",
     "Weapons": [],
     "OffHand": [],
@@ -39,7 +39,7 @@
     "Patrol": {
       "Compute": "Patrol"
     },
-    "Attack": "Root_NPC_Scarak_Fighter_Attack",
+    "Attack": "Root_NPC_Scarak_Fighter_Big_Attack",
     "BlockProbability": 0,
     "_InteractionVars": {
       "Melee_Damage": {
@@ -50,7 +50,7 @@
             "DamageCalculator": {
               "Type": "Absolute",
               "BaseDamage": {
-                "Physical": 45
+                "Physical": 35
               },
               "RandomPercentageModifier": 0.1
             }

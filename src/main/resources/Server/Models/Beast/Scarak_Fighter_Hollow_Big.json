@@ -15,8 +15,8 @@
       "Z": -0.9
     }
   },
-  "MinScale": 1.2,
-  "MaxScale": 1.4,
+  "MinScale": 2.2,
+  "MaxScale": 2.4,
   "DefaultAttachments": [],
   "AnimationSets": {
     "Idle": {

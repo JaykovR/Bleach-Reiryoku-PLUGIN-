@@ -1,6 +1,6 @@
 {
   "Model": "NPC/Undead/Ghoul_Hollow/Models/Model.blockymodel",
-  "Texture": "NPC/Undead/Ghoul_Hollow/Models/Texture_02.png",
+  "Texture": "NPC/Undead/Ghoul_Hollow/Models/Texture_03.png",
   "EyeHeight": 1.2,
   "CrouchOffset": -0.55,
   "HitBox": {
@@ -15,8 +15,8 @@
       "Z": -0.55
     }
   },
-  "MinScale": 2.2,
-  "MaxScale": 2.6,
+  "MinScale": 3.2,
+  "MaxScale": 3.5,
   "DefaultAttachments": [],
   "AnimationSets": {
     "Idle": {
@@ -431,11 +431,6 @@
       "Variant3": {
         "Model": "NPC/Undead/Ghoul_Hollow/Models/Model.blockymodel",
         "Texture": "NPC/Undead/Ghoul_Hollow/Models/Texture_02.png",
-        "Weight": 25
-      },
-      "Variant4": {
-        "Model": "NPC/Undead/Ghoul_Hollow/Models/Model.blockymodel",
-        "Texture": "NPC/Undead/Ghoul_Hollow/Models/Texture_03.png",
         "Weight": 25
       }
     },

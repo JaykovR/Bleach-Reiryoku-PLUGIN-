@@ -1,0 +1,19 @@
+{
+  "Interactions": [
+    {
+      "Type": "Chaining",
+      "ChainId": "Slashes",
+      "ChainingAllowance": 15,
+      "Next": [
+        "Scorpion_Hollow_Big_Snap_Left",
+        "Scorpion_Hollow_Big_Snap_Right",
+        "Scorpion_Hollow_Big_Sting"
+      ]
+    }
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  }
+}

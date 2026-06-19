@@ -15,8 +15,8 @@
       "Z": -0.9
     }
   },
-  "MinScale": 2.5,
-  "MaxScale": 2.7,
+  "MinScale": 3.7,
+  "MaxScale": 4.0,
   "DefaultAttachments": [],
   "Camera": {},
   "AnimationSets": {

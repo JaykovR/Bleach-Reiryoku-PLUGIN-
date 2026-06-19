@@ -1,6 +1,6 @@
 {
   "Model": "NPC/Undead/Ghoul_Hollow/Models/Model.blockymodel",
-  "Texture": "NPC/Undead/Ghoul_Hollow/Models/Texture_02.png",
+  "Texture": "NPC/Undead/Ghoul_Hollow/Models/Texture_04.png",
   "EyeHeight": 1.2,
   "CrouchOffset": -0.55,
   "HitBox": {
@@ -15,9 +15,14 @@
       "Z": -0.55
     }
   },
-  "MinScale": 2.2,
-  "MaxScale": 2.6,
-  "DefaultAttachments": [],
+  "MinScale": 3.5,
+  "MaxScale": 3.5,
+  "DefaultAttachments": [
+    {
+      "Model": "NPC/Undead/Ghoul_Hollow/Models/Attachments/Elite_Head.blockymodel",
+      "Texture": "NPC/Undead/Ghoul_Hollow/Models/Attachments/Elite_Head.png"
+    }
+  ],
   "AnimationSets": {
     "Idle": {
       "Animations": [
@@ -414,52 +419,6 @@
           "Animation": "NPC/Undead/Ghoul/Animations/Flavor/Look_Around.blockyanim"
         }
       ]
-    }
-  },
-  "RandomAttachmentSets": {
-    "Body": {
-      "Variant1": {
-        "Model": "NPC/Undead/Ghoul_Hollow/Models/Model.blockymodel",
-        "Texture": "NPC/Undead/Ghoul_Hollow/Models/Texture.png",
-        "Weight": 25
-      },
-      "Variant2": {
-        "Model": "NPC/Undead/Ghoul_Hollow/Models/Model.blockymodel",
-        "Texture": "NPC/Undead/Ghoul_Hollow/Models/Texture_01.png",
-        "Weight": 25
-      },
-      "Variant3": {
-        "Model": "NPC/Undead/Ghoul_Hollow/Models/Model.blockymodel",
-        "Texture": "NPC/Undead/Ghoul_Hollow/Models/Texture_02.png",
-        "Weight": 25
-      },
-      "Variant4": {
-        "Model": "NPC/Undead/Ghoul_Hollow/Models/Model.blockymodel",
-        "Texture": "NPC/Undead/Ghoul_Hollow/Models/Texture_03.png",
-        "Weight": 25
-      }
-    },
-    "Head": {
-      "Skull": {
-        "Model": "NPC/Beast/Scorpion_Hollow/Models/Attachments/Skull_Head.blockymodel",
-        "Texture": "NPC/Beast/Scorpion_Hollow/Models/Attachments/Skull_Head_Texture.png",
-        "Weight": 50
-      },
-      "Sharptooth": {
-        "Model": "NPC/Beast/Scorpion_Hollow/Models/Attachments/Skull_Sharptooth_Head.blockymodel",
-        "Texture": "NPC/Beast/Scorpion_Hollow/Models/Attachments/Skull_Sharptooth_Head_Texture.png",
-        "Weight": 50
-      },
-      "Longtooth": {
-        "Model": "NPC/Beast/Scorpion_Hollow/Models/Attachments/Skull_Longtooth_Head.blockymodel",
-        "Texture": "NPC/Beast/Scorpion_Hollow/Models/Attachments/Skull_Longtooth_Head_Texture.png",
-        "Weight": 50
-      },
-      "Windwalker": {
-        "Model": "NPC/Beast/Scorpion_Hollow/Models/Attachments/Skull_Windwalker_Head.blockymodel",
-        "Texture": "NPC/Beast/Scorpion_Hollow/Models/Attachments/Skull_Windwalker_Head_Texture.png",
-        "Weight": 50
-      }
     }
   }
 }

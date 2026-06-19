@@ -2,7 +2,7 @@
   "Type": "Variant",
   "Reference": "Template_Predator_Hollow",
   "Modify": {
-    "Appearance": "Ghoul_Hollow",
+    "Appearance": "Ghoul_Hollow_Elite",
     "WanderRadius": 6,
     "ViewRange": 12,
     "HearingRange": 8,
@@ -10,9 +10,9 @@
     "DropList": "Drop_Ghoul_Hollow",
     "MaxSpeed": 7,
     "Attack": "Root_NPC_Attack_Melee",
-    "AttackDistance": 4,
+    "AttackDistance": 6,
     "AlwaysSleepAtNight": false,
-    "MaxHealth": 230,
+    "MaxHealth": 500,
     "IsMemory": true,
     "MemoriesCategory": "Hollow",
     "MemoriesNameOverride": "Ghoul_Hollow",
@@ -23,8 +23,8 @@
             "Parent": "NPC_Attack_Melee_Simple",
             "$Comment": "Sets animations and delay before hit",
             "Effects": {
-              "ItemPlayerAnimationsId": "Hound_Bleached_Default",
-              "ItemAnimationId": "Bite"
+              "ItemPlayerAnimationsId": "Ghoul_Big_Animations",
+              "ItemAnimationId": "Attack"
             },
             "RunTime": 0.333
           }
@@ -38,7 +38,7 @@
             "DamageCalculator": {
               "Type": "Absolute",
               "BaseDamage": {
-                "Physical": 40
+                "Physical": 50
               },
               "RandomPercentageModifier": 0.1
             }

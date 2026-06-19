@@ -1,12 +1,12 @@
 {
   "Model": "NPC/Undead/Ghoul_Hollow/Models/Model.blockymodel",
-  "Texture": "NPC/Undead/Ghoul_Hollow/Models/Texture_02.png",
+  "Texture": "NPC/Undead/Ghoul_Hollow/Models/Texture.png",
   "EyeHeight": 1.2,
   "CrouchOffset": -0.55,
   "HitBox": {
     "Max": {
       "X": 0.55,
-      "Y": 1.8,
+      "Y": 2,
       "Z": 0.55
     },
     "Min": {
@@ -15,8 +15,8 @@
       "Z": -0.55
     }
   },
-  "MinScale": 2.2,
-  "MaxScale": 2.6,
+  "MinScale": 1,
+  "MaxScale": 1,
   "DefaultAttachments": [],
   "AnimationSets": {
     "Idle": {
@@ -417,28 +417,6 @@
     }
   },
   "RandomAttachmentSets": {
-    "Body": {
-      "Variant1": {
-        "Model": "NPC/Undead/Ghoul_Hollow/Models/Model.blockymodel",
-        "Texture": "NPC/Undead/Ghoul_Hollow/Models/Texture.png",
-        "Weight": 25
-      },
-      "Variant2": {
-        "Model": "NPC/Undead/Ghoul_Hollow/Models/Model.blockymodel",
-        "Texture": "NPC/Undead/Ghoul_Hollow/Models/Texture_01.png",
-        "Weight": 25
-      },
-      "Variant3": {
-        "Model": "NPC/Undead/Ghoul_Hollow/Models/Model.blockymodel",
-        "Texture": "NPC/Undead/Ghoul_Hollow/Models/Texture_02.png",
-        "Weight": 25
-      },
-      "Variant4": {
-        "Model": "NPC/Undead/Ghoul_Hollow/Models/Model.blockymodel",
-        "Texture": "NPC/Undead/Ghoul_Hollow/Models/Texture_03.png",
-        "Weight": 25
-      }
-    },
     "Head": {
       "Skull": {
         "Model": "NPC/Beast/Scorpion_Hollow/Models/Attachments/Skull_Head.blockymodel",
@@ -459,6 +437,18 @@
         "Model": "NPC/Beast/Scorpion_Hollow/Models/Attachments/Skull_Windwalker_Head.blockymodel",
         "Texture": "NPC/Beast/Scorpion_Hollow/Models/Attachments/Skull_Windwalker_Head_Texture.png",
         "Weight": 50
+      }
+    },
+    "Body": {
+      "Variant1": {
+        "Model": "NPC/Undead/Ghoul_Hollow/Models/Model.blockymodel",
+        "Texture": "NPC/Undead/Ghoul_Hollow/Models/Texture.png",
+        "Weight": 25
+      },
+      "Variant2": {
+        "Model": "NPC/Undead/Ghoul_Hollow/Models/Model.blockymodel",
+        "Texture": "NPC/Undead/Ghoul_Hollow/Models/Texture_01.png",
+        "Weight": 25
       }
     }
   }

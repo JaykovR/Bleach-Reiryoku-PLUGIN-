@@ -2,10 +2,10 @@
   "Type": "Variant",
   "Reference": "Template_Predator_Hollow",
   "Modify": {
-    "Appearance": "Crawler_Hollow_Void",
+    "Appearance": "Crawler_Hollow_Big",
     "AttitudeGroup": "Void",
     "DropList": "Drop_Crawler_Hollow",
-    "MaxHealth": 155,
+    "MaxHealth": 320,
     "MaxSpeed": 8,
     "WanderRadius": 12,
     "ViewRange": 18,
@@ -34,7 +34,7 @@
       3,
       4
     ],
-    "CombatBehaviorDistance": 5,
+    "CombatBehaviorDistance": 7,
     "CombatRelativeTurnSpeed": 1,
     "CombatDirectWeight": 10,
     "CombatStrafeWeight": 10,
@@ -67,7 +67,7 @@
             "DamageCalculator": {
               "Type": "Absolute",
               "BaseDamage": {
-                "Physical": 35
+                "Physical": 40
               },
               "RandomPercentageModifier": 0.1
             }

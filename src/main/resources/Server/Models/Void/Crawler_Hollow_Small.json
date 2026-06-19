@@ -4,18 +4,18 @@
   "EyeHeight": 0.5,
   "HitBox": {
     "Max": {
-      "X": 0.4,
+      "X": 0.6,
       "Y": 0.9,
-      "Z": 1
+      "Z": 0.6
     },
     "Min": {
-      "X": -0.4,
+      "X": -0.6,
       "Y": 0,
       "Z": -0.6
     }
   },
-  "MinScale": 2.5,
-  "MaxScale": 2.6,
+  "MinScale": 1.4,
+  "MaxScale": 1.6,
   "AnimationSets": {
     "Idle": {
       "Animations": [
