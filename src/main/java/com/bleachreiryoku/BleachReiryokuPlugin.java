@@ -73,7 +73,8 @@ public class BleachReiryokuPlugin extends JavaPlugin {
                 .register("HollowMask", HollowMaskInteraction.class, HollowMaskInteraction.CODEC)
                 .register("TensaZangetsu", TensaZangetsuInteraction.class, TensaZangetsuInteraction.CODEC)
                 .register("SwapItemInteraction", SwapItemInteraction.class, SwapItemInteraction.CODEC)
-                .register("ReiryokuCheck", ReiryokuCheckInteraction.class, ReiryokuCheckInteraction.CODEC);
+                .register("ReiryokuCheck", ReiryokuCheckInteraction.class, ReiryokuCheckInteraction.CODEC)
+                .register("OpenRaceSelectionPage", OpenRaceSelectionPage.class, OpenRaceSelectionPage.CODEC);
 
         LOGGER.at(Level.INFO).log("[Bleach Reiryoku] Setup complete!");
     }

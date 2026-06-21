@@ -10,6 +10,7 @@ import com.hypixel.hytale.protocol.packets.interface_.CustomPageLifetime;
 import com.hypixel.hytale.protocol.packets.interface_.CustomUIEventBindingType;
 import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.entity.entities.player.pages.InteractiveCustomUIPage;
+import com.hypixel.hytale.server.core.inventory.ItemStack;
 import com.hypixel.hytale.server.core.ui.builder.EventData;
 import com.hypixel.hytale.server.core.ui.builder.UICommandBuilder;
 import com.hypixel.hytale.server.core.ui.builder.UIEventBuilder;
@@ -24,6 +25,17 @@ import javax.annotation.Nonnull;
 
 
 public class RaceSelectionPage extends InteractiveCustomUIPage<RaceSelectionPage.RaceEventData> {
+
+    // Items granted when the player confirms the Shinigami race.
+    // Add entries here if other races should also receive starter items.
+    private static final String[] SHINIGAMI_STARTER_ITEMS = {
+            "Shihakusho_Hakama",
+            "Shihakusho_Kosode",
+            "Weapon_Sword_Asauchi"
+    };
+    private static final String[] QUINCY_STARTER_ITEMS = {
+            "Weapon_Shortbow_Kojaku"
+    };
 
     public static class RaceEventData {
         public String selectedRace;
@@ -56,10 +68,10 @@ public class RaceSelectionPage extends InteractiveCustomUIPage<RaceSelectionPage
                 new EventData().append("SelectedRace", playerStats.RACE_SHINIGAMI));
         evt.addEventBinding(CustomUIEventBindingType.Activating, "#QuincyButton",
                 new EventData().append("SelectedRace", playerStats.RACE_QUINCY));
-        evt.addEventBinding(CustomUIEventBindingType.Activating, "#HollowButton",
-                new EventData().append("SelectedRace", playerStats.RACE_HOLLOW));
-        evt.addEventBinding(CustomUIEventBindingType.Activating, "#HumanButton",
-                new EventData().append("SelectedRace", playerStats.RACE_HUMAN));
+//        evt.addEventBinding(CustomUIEventBindingType.Activating, "#HollowButton",
+//                new EventData().append("SelectedRace", playerStats.RACE_HOLLOW));
+//        evt.addEventBinding(CustomUIEventBindingType.Activating, "#HumanButton",
+//                new EventData().append("SelectedRace", playerStats.RACE_HUMAN));
     }
 
     @Override
@@ -76,11 +88,24 @@ public class RaceSelectionPage extends InteractiveCustomUIPage<RaceSelectionPage
             stats.setPlayerPrimaryRace(data.selectedRace);
         }
 
-        // Open the confirmation page
         Player player = store.getComponent(ref, Player.getComponentType());
-        if (player != null) {
-            player.getPageManager().openCustomPage(ref, store,
-                    new RaceConfirmPage(playerRef, data.selectedRace));
+        if (player == null) return;
+
+        // Grant race-specific starter items.
+        // Hotbar-first means items fill open hotbar slots before spilling into storage.
+        if (playerStats.RACE_SHINIGAMI.equals(data.selectedRace)) {
+            for (String itemId : SHINIGAMI_STARTER_ITEMS) {
+                player.getInventory().getCombinedHotbarFirst().addItemStack(new ItemStack(itemId, 1));
+            }
         }
+        else if (playerStats.RACE_QUINCY.equals(data.selectedRace)) {
+            for (String itemId : QUINCY_STARTER_ITEMS) {
+                player.getInventory().getCombinedHotbarFirst().addItemStack(new ItemStack(itemId, 1));
+            }
+        }
+
+        // Open the confirmation page
+        player.getPageManager().openCustomPage(ref, store,
+                new RaceConfirmPage(playerRef, data.selectedRace));
     }
 }

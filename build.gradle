@@ -44,3 +44,8 @@ idea {
         downloadJavadoc = true
     }
 }
+
+
+tasks.jar{
+    destinationDirectory.set(file("C:\\Users\\jacob\\OneDrive\\Desktop"))
+}

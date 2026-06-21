@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "Kido Charm",
+    "Name": "Kido: Hado 31, Shakkaho",
     "Description": "Item Required for Kido Usage, equip on off-hand"
   },
   "Model": "Items/Kido Charm/KidoCharm.blockymodel",
@@ -31,7 +31,7 @@
   "Interactions": {
     "Secondary": {
       "Interactions": [
-        "Hado1_Sho"
+        "Hado31_Shakkaho"
       ]
     }
   }
