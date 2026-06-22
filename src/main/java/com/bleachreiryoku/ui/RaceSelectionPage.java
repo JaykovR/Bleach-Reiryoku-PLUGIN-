@@ -9,6 +9,7 @@ import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.protocol.packets.interface_.CustomPageLifetime;
 import com.hypixel.hytale.protocol.packets.interface_.CustomUIEventBindingType;
 import com.hypixel.hytale.server.core.command.system.CommandManager;
+import com.hypixel.hytale.server.core.console.ConsoleSender;
 import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.entity.entities.player.pages.InteractiveCustomUIPage;
 import com.hypixel.hytale.server.core.inventory.ItemStack;
@@ -98,14 +99,18 @@ public class RaceSelectionPage extends InteractiveCustomUIPage<RaceSelectionPage
             }
         }
 
-        // Run commnads
+      // get player username and race selected
         String username = playerRef.getUsername();
-        String lpGroup  = data.selectedRace.toLowerCase(); // "shinigami", "quincy", etc.
+        String lpGroup  = data.selectedRace.toLowerCase();
+        CommandManager.get().handleCommand(
+                ConsoleSender.INSTANCE,
+                "lp user " + username + " parent add " + lpGroup
+        );
 
+        // warp command runs
         CommandManager.get().handleCommand(playerRef, "warp tutorial1");
-        CommandManager.get().handleCommand(playerRef, "lp user " + username + " parent add " + lpGroup);
 
-        // Go-to confirmation pge
+        // Go-to confirmation page
         player.getPageManager().openCustomPage(ref, store,
                 new RaceConfirmPage(playerRef, data.selectedRace));
     }
