@@ -1,0 +1,25 @@
+{
+  "NPCs": [
+    {
+      "Id": "Prangus_Hollow",
+      "Weight": 5,
+      "SpawnBlockSet": "Rock"
+    },
+    {
+      "Id": "Scarak_Fighter_Hollow",
+      "Weight": 5,
+      "SpawnBlockSet": "Rock"
+    },
+    {
+      "Id": "Crawler_Hollow_Big",
+      "SpawnBlockSet": "Rock",
+      "Weight": 2
+    }
+  ],
+  "Environments": [
+    "Env_Zone3_Caves",
+    "Env_Zone3_Caves_Tundra",
+    "Env_Zone3_Caves_Volcanic_T2",
+    "Env_Zone3_Mineshafts"
+  ]
+}

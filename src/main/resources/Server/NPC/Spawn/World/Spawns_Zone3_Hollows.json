@@ -2,63 +2,32 @@
   "Environments": [
     "Env_Zone3_Tundra",
     "Env_Zone3_Forests",
-    "Env_Zone3_Glacial",
-    "Env_Zone3_Mountains",
-    "Env_Zone3_Shores"
+    "Env_Zone3_Mountains"
   ],
-  "Despawn": {
-    "DayTimeRange": [
-      6,
-      19
-    ]
-  },
   "MinDistanceFromPlayer": 20,
   "NPCs": [
     {
-      "Weight": 5,
+      "Weight": 2,
       "SpawnBlockSet": "StoneAndSoil",
       "Id": "Scarak_Fighter_Hollow",
       "MinDistanceBetweenNPCs": 32
     },
     {
-      "Weight": 3,
-      "SpawnBlockSet": "StoneAndSoil",
-      "Id": "Scarak_Louse_Hollow",
-      "MinDistanceBetweenNPCs": 28
-    },
-    {
       "Weight": 4,
-      "SpawnBlockSet": "StoneAndSoil",
+      "SpawnBlockSet": "Stone",
       "Id": "Ghoul_Hollow",
       "MinDistanceBetweenNPCs": 32
     },
     {
-      "Weight": 4,
-      "SpawnBlockSet": "IceAndSnow",
-      "Id": "Ghoul_Hollow",
-      "MinDistanceBetweenNPCs": 32
-    },
-    {
-      "Weight": 5,
-      "SpawnBlockSet": "IceAndSnow",
-      "Id": "Scarak_Fighter_Hollow",
-      "MinDistanceBetweenNPCs": 32
-    },
-    {
-      "Weight": 5,
-      "SpawnBlockSet": "IceAndSnow",
+      "Weight": 2,
+      "SpawnBlockSet": "Stone",
       "Id": "Crawler_Hollow_Void",
       "MinDistanceBetweenNPCs": 32
     },
     {
-      "Weight": 5,
-      "SpawnBlockSet": "Soil",
-      "Id": "Crawler_Hollow_Void",
-      "MinDistanceBetweenNPCs": 32
+      "Id": "Prangus_Hollow",
+      "Weight": 2,
+      "SpawnBlockSet": "Grass"
     }
-  ],
-  "DayTimeRange": [
-    19,
-    6
   ]
 }

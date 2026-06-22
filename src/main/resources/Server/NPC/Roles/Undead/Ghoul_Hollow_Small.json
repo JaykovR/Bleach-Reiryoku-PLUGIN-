@@ -12,7 +12,7 @@
     "Attack": "Root_NPC_Attack_Melee",
     "AttackDistance": 2,
     "AlwaysSleepAtNight": false,
-    "MaxHealth": 70,
+    "MaxHealth": 85,
     "IsMemory": true,
     "MemoriesCategory": "Hollow",
     "MemoriesNameOverride": "Ghoul_Hollow",
@@ -38,7 +38,7 @@
             "DamageCalculator": {
               "Type": "Absolute",
               "BaseDamage": {
-                "Physical": 35
+                "Physical": 25
               },
               "RandomPercentageModifier": 0.1
             }

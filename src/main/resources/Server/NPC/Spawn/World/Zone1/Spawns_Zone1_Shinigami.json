@@ -1,6 +1,5 @@
 {
   "Environments": [
-    "Env_Zone1_Plains",
     "Env_Zone1_Forests",
     "Env_Zone1_Mountains"
   ],
@@ -8,11 +7,11 @@
     {
       "Weight": 0.03,
       "SpawnBlockSet": "Soil",
-      "Id": "Wandering_Shinigami",
-      "Flock": {
-        "Size": [ 1, 1 ]
-      }
+      "Id": "Wandering_Shinigami"
     }
   ],
-  "DayTimeRange": [ 0, 24 ]
+  "DayTimeRange": [
+    0,
+    24
+  ]
 }

@@ -1,0 +1,17 @@
+{
+  "Environments": [
+    "Env_Zone3_Glacial"
+  ],
+  "NPCs": [
+    {
+      "Weight": 5,
+      "SpawnBlockSet": "IceAndSnow",
+      "Id": "Ghoul_Hollow_Big"
+    },
+    {
+      "Weight": 5,
+      "SpawnBlockSet": "IceAndSnow",
+      "Id": "Crawler_Hollow_Void"
+    }
+  ]
+}

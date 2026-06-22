@@ -3,29 +3,16 @@
     "Env_Zone2_Savanna",
     "Env_Zone2_Scrub",
     "Env_Zone2_Deserts",
-    "Env_Zone2_Oasis",
     "Env_Zone2_Plateaus",
-    "Env_Zone2_Shores"
+    "Env_Zone2_Caves"
   ],
-  "Despawn": {
-    "DayTimeRange": [
-      6,
-      19
-    ]
-  },
   "MinDistanceFromPlayer": 20,
   "NPCs": [
     {
-      "SpawnBlockSet": "StoneAndSoil",
+      "SpawnBlockSet": "Rock",
       "Id": "Scarak_Fighter_Hollow",
       "MinDistanceBetweenNPCs": 32,
       "Weight": 4
-    },
-    {
-      "Weight": 1,
-      "SpawnBlockSet": "StoneAndSoil",
-      "Id": "Scarak_Louse_Hollow",
-      "MinDistanceBetweenNPCs": 28
     },
     {
       "Weight": 4,
@@ -35,13 +22,14 @@
     },
     {
       "Weight": 3,
-      "SpawnBlockSet": "StoneAndSoil",
+      "SpawnBlockSet": "Sand",
       "Id": "Ghoul_Hollow",
       "MinDistanceBetweenNPCs": 32
+    },
+    {
+      "Id": "Prangus_Hollow",
+      "Weight": 3,
+      "SpawnBlockSet": "Grass"
     }
-  ],
-  "DayTimeRange": [
-    19,
-    6
   ]
 }

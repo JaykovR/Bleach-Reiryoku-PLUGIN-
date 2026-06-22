@@ -2,7 +2,7 @@
   "Type": "Variant",
   "Reference": "Template_Predator_Hollow",
   "Modify": {
-    "Appearance": "Crawler_Hollow_Void",
+    "Appearance": "Crawler_Hollow_Small",
     "AttitudeGroup": "Void",
     "DropList": "Drop_Crawler_Hollow",
     "MaxHealth": 80,

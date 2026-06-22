@@ -18,8 +18,8 @@
       -49
     ]
   },
-  "Model": "Items/Armors/Quincy Clothes/Quincy_Clothes_W_Cape.blockymodel",
-  "Texture": "Items/Armors/Quincy Clothes/Quincy_Clothes_Texture.png",
+  "Model": "Items/Armors/Quincy Clothes/Quincy_Clothes_NoCape.blockymodel",
+  "Texture": "Items/Armors/Quincy Clothes/Quincy_Clothes_Texture2.png",
   "Recipe": {
     "TimeSeconds": 2,
     "Input": [

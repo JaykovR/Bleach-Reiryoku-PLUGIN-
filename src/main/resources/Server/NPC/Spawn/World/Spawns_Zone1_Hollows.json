@@ -1,0 +1,25 @@
+{
+  "NPCs": [
+    {
+      "Id": "Ghoul_Hollow_Small",
+      "SpawnBlockSet": "StoneAndSoil",
+      "Weight": 2
+    },
+    {
+      "Id": "Crawler_Hollow_Small",
+      "SpawnBlockSet": "StoneAndSoil",
+      "Weight": 3
+    },
+    {
+      "Id": "Scarak_Louse_Hollow",
+      "Weight": 5,
+      "SpawnBlockSet": "Stone"
+    }
+  ],
+  "Environments": [
+    "Env_Zone1_Forests",
+    "Env_Zone1_Caves",
+    "Env_Zone1_Caves_Volcanic_T1",
+    "Env_Zone1_Autumn"
+  ]
+}

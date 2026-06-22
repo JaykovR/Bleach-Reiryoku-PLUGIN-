@@ -5,43 +5,32 @@
     "Env_Zone4_Volcanoes",
     "Env_Zone4_Wastes",
     "Env_Zone4_Shores",
-    null
+    "Env_Zone4_Villages"
   ],
-  "Despawn": {
-    "DayTimeRange": [
-      6,
-      19
-    ]
-  },
   "MinDistanceFromPlayer": 20,
   "NPCs": [
     {
-      "Weight": 7,
-      "SpawnBlockSet": "StoneAndSoil",
-      "Id": "Scarak_Fighter_Hollow",
-      "MinDistanceBetweenNPCs": 32
-    },
-    {
       "Weight": 4,
-      "SpawnBlockSet": "StoneAndSoil",
-      "Id": "Scarak_Louse_Hollow",
-      "MinDistanceBetweenNPCs": 28
+      "SpawnBlockSet": "Soil",
+      "Id": "Scarak_Fighter_Hollow_Big",
+      "MinDistanceBetweenNPCs": 32
     },
     {
       "Weight": 5,
       "SpawnBlockSet": "Sand",
-      "Id": "Scorpion_Hollow",
+      "Id": "Scorpion_Hollow_Big",
       "MinDistanceBetweenNPCs": 28
     },
     {
-      "Weight": 1,
+      "Weight": 3,
       "SpawnBlockSet": "StoneAndSoil",
-      "Id": "Ghoul_Hollow",
+      "Id": "Ghoul_Hollow_Big",
       "MinDistanceBetweenNPCs": 32
+    },
+    {
+      "Id": "Crawler_Hollow_Big",
+      "Weight": 4,
+      "SpawnBlockSet": "Soil"
     }
-  ],
-  "DayTimeRange": [
-    19,
-    6
   ]
 }
