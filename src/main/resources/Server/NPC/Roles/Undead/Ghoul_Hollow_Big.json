@@ -7,7 +7,7 @@
     "ViewRange": 12,
     "HearingRange": 8,
     "AlertedRange": 40,
-    "DropList": "Drop_Ghoul_Hollow",
+    "DropList": "Drop_Big_Hollow_Generic",
     "MaxSpeed": 7,
     "Attack": "Root_NPC_Attack_Melee",
     "AttackDistance": 4,

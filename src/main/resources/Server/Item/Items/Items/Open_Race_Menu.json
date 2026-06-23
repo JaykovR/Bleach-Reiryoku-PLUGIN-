@@ -1,7 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Open Race Menu",
-    "Description": "items.items.A_Guide_To_Find_Hollows_Closed.description"
+    "Name": "items.items.Race_Selection_Menu.name",
+    "Description": "items.items.Race_Selection_Menu.description"
   },
   "Icon": "Icons/ItemsGenerated/A_Guide_To_Find_Hollows_Closed.png",
   "Categories": [

@@ -1,7 +1,8 @@
 {
   "Parent": "Template_Weapon_Sword",
   "TranslationProperties": {
-    "Name": "Seele Schneider"
+    "Name": "items.Seele_Schneider.name",
+    "Description": "items.Seele_Schneider.description"
   },
   "Model": "Items/Weapons/Seele Schneider/Seele_Schneider.blockymodel",
   "Texture": "Items/Weapons/Seele Schneider/Seele_Schneider.png",

@@ -44,7 +44,7 @@ public class RaceConfirmPage extends InteractiveCustomUIPage<RaceConfirmPage.Clo
         cmd.append("RaceSelection/RaceConfirmPage.ui");
 
         // Update the message label with the selected race
-        cmd.set("#ConfirmMessage.Text", "Your player race is now " + selectedRace);
+        cmd.set("#ConfirmMessage.Text", "You are a " + selectedRace);
 
         // Bind close button
         evt.addEventBinding(CustomUIEventBindingType.Activating, "#CloseButton", null);

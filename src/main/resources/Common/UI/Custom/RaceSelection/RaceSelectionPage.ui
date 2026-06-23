@@ -5,46 +5,53 @@
 );
 
 Group {
-    Anchor: (Width: 1480, Height: 1000);
-    Background: #050810(0.98);
+    Anchor: (Width: 1450, Height: 850);
+    Background: #000000(1);
     LayoutMode: Top;
-    Padding: (Full: 24);
-
-    Label {
-        Text: "CHOOSE YOUR RACE";
-        Anchor: (Height: 52);
-        Style: (FontSize: 28, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center);
-    }
-
-    Group { Anchor: (Height: 16); }
 
     Group {
-        LayoutMode: Left;
-        Anchor: (Height: 720);
+        LayoutMode: Top;
+        Anchor: (Height: 812);
+        Padding: (Full: 24);
 
-       TextButton #ShinigamiButton {
-           Text: "";
-           FlexWeight: 1;
-           Style: TextButtonStyle(
-               Default: (Background: "Shinigami.png", LabelStyle: (FontSize: 1, TextColor: #00000000)),
-               Hovered: (Background: "Shinigami_Hover.png", LabelStyle: (FontSize: 1, TextColor: #00000000)),
-               Pressed: (Background: "Shinigami.png", LabelStyle: (FontSize: 1, TextColor: #00000000))
-           );
-       }
+        Group {
+            Anchor: (Height: 52, Width: 850);
+            Background: "DEFINE_YOUR_EXISTENCE.png";
+        }
 
-       Group { Anchor: (Width: 12); }
+        Group { Anchor: (Height: 16); }
 
-     TextButton #QuincyButton {
+        Group {
+            LayoutMode: Left;
+            Anchor: (Height: 696);
+
+            TextButton #ShinigamiButton {
+                Text: "";
+                FlexWeight: 1;
+                Style: TextButtonStyle(
+                    Default: (Background: "Shinigami.png", LabelStyle: (FontSize: 1, TextColor: #00000000)),
+                    Hovered: (Background: "Shinigami_Hover.png", LabelStyle: (FontSize: 1, TextColor: #00000000)),
+                    Pressed: (Background: "Shinigami.png", LabelStyle: (FontSize: 1, TextColor: #00000000)),
+                    Sounds: (
+                        MouseHover: (SoundPath: "RaceSelection_Hover.ogg", Volume: 1.0),
+                        Activate: (SoundPath: "RaceSelection_Press.ogg", Volume: 1.0)
+                    )
+                );
+            }
+
+            TextButton #QuincyButton {
                 Text: "";
                 FlexWeight: 1;
                 Style: TextButtonStyle(
                     Default: (Background: "Quincy.png", LabelStyle: (FontSize: 1, TextColor: #00000000)),
                     Hovered: (Background: "Quincy_Hover.png", LabelStyle: (FontSize: 1, TextColor: #00000000)),
-                    Pressed: (Background: "Quincy.png", LabelStyle: (FontSize: 1, TextColor: #00000000))
+                    Pressed: (Background: "Quincy.png", LabelStyle: (FontSize: 1, TextColor: #00000000)),
+                    Sounds: (
+                        MouseHover: (SoundPath: "RaceSelection_Hover.ogg", Volume: 1.0),
+                        Activate: (SoundPath: "RaceSelection_Press.ogg", Volume: 1.0)
+                    )
                 );
             }
-
-            Group { Anchor: (Width: 12); }
 
             TextButton #HollowButton {
                 Text: "HOLLOW (NOT AVAILABLE)";
@@ -52,12 +59,16 @@ Group {
                 Style: @PlaceholderButtonStyle;
             }
 
-            Group { Anchor: (Width: 12); }
-
             TextButton #HumanButton {
                 Text: "FULLBRINGER (NOT AVAILABLE)";
                 FlexWeight: 1;
                 Style: @PlaceholderButtonStyle;
             }
-         }
-     }
+        }
+    }
+
+    Group {
+        Anchor: (Height: 38);
+        Background: "RaceSelec_Page_Footer.png";
+    }
+}

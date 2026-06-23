@@ -4,7 +4,7 @@
   "Modify": {
     "Appearance": "Crawler_Hollow_Small",
     "AttitudeGroup": "Void",
-    "DropList": "Drop_Crawler_Hollow",
+    "DropList": "Drop_Small_Hollow_Generic",
     "MaxHealth": 80,
     "MaxSpeed": 8,
     "WanderRadius": 12,

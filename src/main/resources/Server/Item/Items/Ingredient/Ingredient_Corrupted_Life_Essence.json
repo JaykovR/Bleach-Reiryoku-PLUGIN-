@@ -1,0 +1,43 @@
+{
+  "TranslationProperties": {
+    "Name": "items.Corrupted_Life_Essence.name",
+    "Description": "items.Corrupted_Life_Essence.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Ingredient_Corrupted_Life_Essence.png",
+  "Quality": "SpiritualResource",
+  "Categories": [
+    "Items.Ingredients",
+    "BleachCategory.Ingredients"
+  ],
+  "Model": "Resources/Ingredients/Essence.blockymodel",
+  "Texture": "Items/Ingredients/Corrupted_Life_Essence_Texture.png",
+  "PlayerAnimationsId": "Item",
+  "IconProperties": {
+    "Scale": 0.6,
+    "Rotation": [
+      0,
+      0,
+      0
+    ],
+    "Translation": [
+      0,
+      -13
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Ingredient"
+    ]
+  },
+  "ItemEntity": {
+    "ParticleSystemId": null
+  },
+  "Scale": 0.8,
+  "Light": {
+    "Color": "#203",
+    "Radius": 1
+  },
+  "ItemSoundSetId": "ISS_Items_Gems",
+  "MaxStack": 100,
+  "DropOnDeath": true
+}

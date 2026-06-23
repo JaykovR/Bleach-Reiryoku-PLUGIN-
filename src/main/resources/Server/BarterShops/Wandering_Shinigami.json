@@ -38,21 +38,6 @@
       }
     },
     {
-      "Type": "Fixed",
-      "Trade": {
-        "Output": {
-          "ItemId": "A_Guide_To_Find_Hollows_Closed"
-        },
-        "Input": [
-          {
-            "ItemId": "Ingredient_Life_Essence",
-            "Quantity": 1
-          }
-        ],
-        "Stock": 1
-      }
-    },
-    {
       "Type": "Pool",
       "SlotCount": 4,
       "Trades": [

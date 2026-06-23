@@ -46,7 +46,7 @@
       0,
       24
     ],
-    "DropList": "Drop_Crawler_Hollow",
+    "DropList": "Drop_Prangus_Hollow",
     "Appearance": "Prangus_Hollow",
     "WanderRadius": {
       "Compute": "WanderRadius"

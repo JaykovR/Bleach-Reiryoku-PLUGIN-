@@ -1,3 +1,7 @@
+
+## SEALED ZANPAKUTO --------------------------
+Asauchi.name = Asauchi
+Asauchi.description = A blank soul template. The foundation for a future Zanpakuto, awaiting the imprint of its owner.
 Sealed_Sode_no_Shirayuki.name = Sealed - Sode no Shirayuki
 Sealed_Sode_no_Shirayuki.description = A sealed zanpakuto. Its dance has not yet begun.
 Sealed_Wabisuke.name = Sealed - Wabisuke
@@ -8,36 +12,55 @@ Sealed_Hozukimaru.name = Sealed - Hozukimaru
 Sealed_Hozukimaru.description = A sealed zanpakuto. When you hold it in battle you feel tremendous excitement.
 Sealed_Senbonzakura.name = Sealed - Senbonzakura
 Sealed_Senbonzakura.description = A sealed zanpakuto. A refined blade with a graceful aura.
-
-Bankai_Tensa_Zangetsu.name = Bankai – Tensa Zangetsu
-Bankai_Tensa_Zangetsu.description = Bankai – Tensa Zangetsu is a legendary spiritual blade. Its black edge with a chain focuses the wielder’s energy, releasing the devastating wave <i><b>Getsuga Tensho — «Moon Fang That Pierces the Heavens»</b></i>. 
-Shikai_Tensa_Zangetsu.name = Shikai – Zangetsu
-Shikai_Tensa_Zangetsu.description = Zangetsu is a massive spiritual cleaver, permanently in its released state. The black blade, wrapped in living cloth, empowers its wielder, unleashing <i><b>Getsuga Tensho</b></i> waves and serving as a shield against physical and energy-based attacks.
-ReiryokuCrystal.name = Reiryoku Crystal
-ReiryokuCrystal.description = A crystal of pure spiritual energy, a concentration of numerous souls. Awakens and evolves a Zanpakuto.
 Sealed_Zangetsu.name = Sealed – Zangetsu
 Sealed_Zangetsu.description = The sealed blade before awakening. Holds boundless, yet dormant potential.
-Asauchi.name = Asauchi
-Asauchi.description = A blank soul template. The foundation for a future Zanpakuto, awaiting the imprint of its owner.
+Sealed_Kenpachi_Zanpakuto.name = Sealed – Kenpachi's Zanpakuto
+Sealed_Kenpachi_Zanpakuto.description = A massive, crude and rusted cleaver. This is the sealed state of a Zanpakuto belonging to a warrior of monstrous spiritual pressure. Its jagged, unrefined form and tattered wrappings are self-imposed limitations, \
+										allowing the wielder to savor the thrill of battle longer. The true power within is dormant, awaiting acknowledgment.\n \
+										<color is="#ffffff"><b>Skills:</b></color>\n \
+										- Q: Skull Crusher - Cost 75% Signature Energy.\n \
+										- E: Battle Trance - Grants extra resistance, x1.5 speed attack, increased movement speed - Cost 100% Signature Energy.\n \
+										- Hold Left-Click: AOE Charge Slash.\n \
+										- Hold Left-Click + Forward: Thrust.\n \
+										- Guard + F: Shunpo - Cost 1.5 Stamina, 10 Reiryoku
+
+## SHIKAI ZANPAKUTO --------------------------
+Shikai_Tensa_Zangetsu.name = Shikai – Zangetsu
+Shikai_Tensa_Zangetsu.description = Zangetsu is a massive spiritual cleaver, permanently in its released state. The black blade, wrapped in living cloth, empowers its wielder, unleashing <i><b>Getsuga Tensho</b></i> waves and serving as a shield against physical and energy-based attacks.\n \
+									<color is="#ffffff"><b>Skills:</b></color>\n \
+									- Q: Getsuga Tensho - Cost 100% Signature Energy.\n \
+									- Guard + F: Shunpo - Cost 1.5 Stamina, 10 Reiryoku
 Sode_No_Shirayuki.name = Shikai – Sode no Shirayuki
-Sode_No_Shirayuki.description = An elegant ice katana. Its release command, \n<i><b>«Dance, Sode no Shirayuki»</b></i> commands cold and beauty.
+Sode_No_Shirayuki.description = An elegant ice katana. Its release command, \n<i><b>«Dance, Sode no Shirayuki»</b></i> commands cold and beauty.\n \
+								<color is="#ffffff"><b>Skills:</b></color>\n \
+								- Hold Left-Click: Hakuren - Cost 75 Reiryoku.\n \
+								- Guard + F: Shunpo - Cost 1.5 Stamina, 10 Reiryoku
 Shikai_Wabisuke.name = Shikai – Wabisuke
 Shikai_Wabisuke.description = An elegantly curved sword whose treacherous nature is the opposite of its external refinement. Its strike places a curse of weight upon the target. With each parry or block, the victim's burden relentlessly doubles, \
-								until the opponent is broken and pinned to the ground by their own unbearable load. Release command: <i><b>«Bend, Wabisuke»</b></i>.
+								until the opponent is broken and pinned to the ground by their own unbearable load. Release command: <i><b>«Bend, Wabisuke»</b></i>.\n \
+								<color is="#ffffff"><b>Skills:</b></color>\n \
+								- 3rd Strike slows down target.\n \
+								- Q: Crushing Regret - Cost 100% Signature Energy.\n \
+								- Guard + F: Shunpo - Cost 1.5 Stamina, 10 Reiryoku
 Shikai_Hozukimaru.name = Shikai – Hozukimaru
-Shikai_Hozukimaru.description = A crude and straightforward war spear. Its simple, unadorned form conceals a fierce destructive power and unyielding durability. Within this weapon lies a dormant potential for transformation, capable of unlocking its true, even more formidable form.
+Shikai_Hozukimaru.description = A crude and straightforward war spear. Its simple, unadorned form conceals a fierce destructive power and unyielding durability. Within this weapon lies a dormant potential for transformation, capable of unlocking its true, even more formidable form.\n \
+								<color is="#ffffff"><b>Skills:</b></color>\n \
+								- Hold Left-Click: 3 Consecutive Thrusts.\n \
+								- Hold Left-Click + Forward/Backward: Thrust\n \
+								- Q: Tempest - Cost 100% Signature Energy.\n \
+								- E: Windwhirl - Cost 100% Signature Energy.\n \
+								- Guard + F: Shunpo - Cost 1.5 Stamina, 10 Reiryoku
 Shikai_Kyoka_Suigetsu.name = Shikai – Kyoka Suigetsu
 Shikai_Kyoka_Suigetsu.description = An unassuming katana, eternally in its released state. Its true power is not steel, but absolute sensory dominion. Those who witness its release ritual become forever trapped in its perfect hypnosis, \
 									seeing a world sculpted by the wielder's will. A weapon that conquers reality through perception.\n\n<b><color is="#9D3356">Its true power lies dormant, waiting to be unleashed in a future update</color></b>
-Sealed_Kenpachi_Zanpakuto.name = Sealed – Kenpachi's Zanpakuto
-Sealed_Kenpachi_Zanpakuto.description = A massive, crude and rusted cleaver. This is the sealed state of a Zanpakuto belonging to a warrior of monstrous spiritual pressure. Its jagged, unrefined form and tattered wrappings are self-imposed limitations, \
-										allowing the wielder to savor the thrill of battle longer. The true power within is dormant, awaiting acknowledgment.
 Shikai_Benihime.name = Shikai – Benihime
 Shikai_Benihime.description = An elegant, slightly curved saber with a crimson motif. Upon its command, <i><b>«Awaken, Benihime»</b></i>, it gains the power to launch precise <i>Crimson Shots</i>, erect near-impenetrable hexagonal shields, and weave \
-								razor-sharp nets of spiritual energy. A versatile blade perfect for both calculated offense and absolute defense.
-True_Bankai_Tensa_Zangetsu.name = True Bankai – Tensa Zangetsu
-True_Bankai_Tensa_Zangetsu.description = The ultimate evolution of Ichigo's power. This form consolidates his dual blades into a single, immense black cleaver wrapped in stark white bandages. \
-											It represents the full convergence of his spiritual heritage, focusing overwhelming force into a singular, devastating edge.\n\n<b><color is="#9D3356">Its true power lies dormant, waiting to be unleashed in a future update</color></b>
+								razor-sharp nets of spiritual energy. A versatile blade perfect for both calculated offense and absolute defense.\n \
+								<color is="#ffffff"><b>Skills:</b></color>\n \
+								- Hold Left-Click: Benihime Beam - Cost 60 Reiryoku.\n \
+								- Left-Click + Forward: Thrust.\n \
+								- Guard + E: Crimson Seal: Mark an oponent and deal delayed damage after 3 seconds - Cost 65 Reiryoku.\n \
+								- Guard + F: Shunpo - Cost 1.5 Stamina, 10 Reiryoku
 True_Shikai_Zangetsu.name = True Shikai – Zangetsu
 True_Shikai_Zangetsu.description = Ichigo's true Shikai, manifested as two distinct black blades. The massive cleaver embodies his fused Shinigami and Hollow powers, \
 									while the smaller knife represents his Quincy heritage. Release command: <i><b>«Unite and Protect, Zangetsu»</b></i>. \
@@ -45,18 +68,42 @@ True_Shikai_Zangetsu.description = Ichigo's true Shikai, manifested as two disti
 Shikai_Senbonzakura.name = Shikai - Senbonzakura
 Shikai_Senbonzakura.description = A refined Zanpakuto that dissolves into countless blade-like petals upon command. With the command, <i><b>«Scatter, Senbonzakura»</b></i>, \
 									the weapon transforms into a storm of shimmering fragments, each one as sharp as steel. These petals can be guided at will, overwhelming enemies through relentless,\
-									precise strikes and turning the battlefield into a domain of elegant destruction.
-
+									precise strikes and turning the battlefield into a domain of elegant destruction.\n \
+									<color is="#ffffff"><b>Skills:</b></color>\n \
+									- Hold E: Arashi - Cost 20 Reiryoku per individual use.\n \
+									- E + Forward/Backward: Ichisen - Cost 40 Reiryoku.\n \ 
+									- Q: Shūen no Mai - Cost 100% Signature Energy.\n \
+									- Guard + F: Shunpo - Cost 1.5 Stamina, 10 Reiryoku
+									
+## BANKAI ZANPAKUTO --------------------------
+Bankai_Tensa_Zangetsu.name = Bankai – Tensa Zangetsu
+Bankai_Tensa_Zangetsu.description = Bankai – Tensa Zangetsu is a legendary spiritual blade. Its black edge with a chain focuses the wielder’s energy, releasing the devastating wave <i><b>Getsuga Tensho — «Moon Fang That Pierces the Heavens»</b></i>. \n \
+									<color is="#ffffff"><b>Skills:</b></color>\n \
+									- Q (half-charge): Gestuga Tensho - Press Q again to chain a second Getsuga Tensho.\n \
+									- Q (full-charge): Getsuga Tensho - Full Strength Getsuga Tensho, cost 100% signature charge.\n \
+									- E: Kuro Shunpo - Cost 1.60 Stamina, 70 Reiryoku.\n \
+									- R: Hollow Mask Transformation (Must Unlock First)\n \
+									- Guard + F: Shunpo - Cost 1.5 Stamina, 10 Reiryoku
+True_Bankai_Tensa_Zangetsu.name = True Bankai – Tensa Zangetsu
+True_Bankai_Tensa_Zangetsu.description = The ultimate evolution of Ichigo's power. This form consolidates his dual blades into a single, immense black cleaver wrapped in stark white bandages. \
+											It represents the full convergence of his spiritual heritage, focusing overwhelming force into a singular, devastating edge.\n\n<b><color is="#9D3356">Its true power lies dormant, waiting to be unleashed in a future update</color></b>
+											
+## QUINCY WEAPONS --------------------------
 Kojaku_Bow.name = Quincy Bow - Kojaku
-Kojaku_Bow.description = The basic bow usable by all Quincy. It is formed by gathering Reishi in the <i>Quincy Cross</i> on the right hand. The arrows it releases are also made of Reishi. It can destroy Hollows with long-range attacks. An early-game weapon for aspiring Quincy.
+Kojaku_Bow.description = The basic bow usable by all Quincy. It is formed by gathering Reishi in the <i>Quincy Cross</i> on the right hand. The arrows it releases are also made of Reishi. It can destroy Hollows with long-range attacks. An early-game weapon for aspiring Quincy.\n \
+						<color is="#ffffff"><b>Skills:</b></color>\n \
+						- Right-Click: Hirenkyaku - Cost 30 Reiryoku.\n \
+						- Q: Okami-Ya - Charge and shoot a powered-up arrow to your target - Cost 100% Signature Energy.
 
 Four_Point_Quincy_Cross.name = 4-point Quincy Cross
 Four_Point_Quincy_Cross.description = A four point quincy cross which helps Quincy players to manifest their abilities by granting MP while off-hand. Essential for sustaining your spiritual power.
+Seele_Schneider.name = Seele Schneider
+Seele_Schneider.description = A Quincy Weapon that may look like a sword, but functions more as a chainsaw. Reishi makes 3 million rounds per second around \
+								the edge of the blade. This helps losing the bond between the Reishi and whatever it cuts. Although it looks and serves as a powerful blade \
+								it can do much more damage as an arrow.
 
-Soul_Imprinting_Altar.name = Soul Imprinting Altar
-Soul_Imprinting_Altar.description = A sacred workstation where the wielder's soul merges with the Asauchi. Through deep meditation and concentration of spiritual energy (Reiryoku), the foundation of the future Zanpakuto is laid. \
-									This altar is used not only for the initial awakening but also for the subsequent stages of the blade's evolution — from Shikai to the ultimate revelation, Bankai.
 
+## ARMOUR --------------------------
 Shihakusho_Kosode.name = Shihakusho - Kosode
 Shihakusho_Kosode.description = The top of the standard Shinigami uniform worn by all members of the Gotei 13.
 Shihakusho_Kosode_Lieutenant.name = Shihakusho - Kosode (Lieutenant)
@@ -76,6 +123,7 @@ Hollow_Mask.description = A manifestation of the power belonging to your inner H
 Tensa_Zangetsu_Outfit.name = Mantle of the Heavenly Chain
 Tensa_Zangetsu_Outfit.description = A sharp black mantle that born from thee chains of heaven. The one who wears it is said to be abe to slash the moon.
 
+## INGREDIENTS --------------------------
 Resonating_Reishi_Core.name = Resonating Reishi Core
 Resonating_Reishi_Core.description = This core hums at a frequency that mimics yours. It's an extension of your soul. Ready to be assigned to a blade to awaken it.
 Transcendent_Essence.name = Transcendent Essence
@@ -84,7 +132,18 @@ Hollow_Essence.name = Hollow Essence
 Hollow_Essence.description = A crystallized remnant of a defeated Hollow’s distorted soul. It pulses with unstable reiryoku.
 Inner_Hollow_Catalyst.name = Inner Hollow Catalyst
 Inner_Hollow_Catalyst.description = Condensed remnants of Hollow essence, crystallized into a single orb. Upon consumption, something will awaken within you.
+ReiryokuCrystal.name = Reiryoku Crystal
+ReiryokuCrystal.description = A crystal of pure spiritual energy, a concentration of numerous souls. Awakens and evolves a Zanpakuto.
+Soulweave_Cloth_Bolt.name = Soulweave Cloth Bolt
+Soulweave_Cloth_Bolt.description = A bolt of black cloth infused with reishi which provides extra resistance.
+Purified_Soulweave_Cloth_Bolt.name = Purified Soulweave Cloth Bolt
+Purified_Soulweave_Cloth_Bolt.description = A pure bolt of white cloth infused with high quality reishi.
+Corrupted_Life_Essence.name = Corrupted Life Essence
+Corrupted_Life_Essence.description = <i>For some reason, this reishi formed-crystal usually found in plants on Orbis is was in this Hollow. \
+										Although it appears corrupted, and the reishi concentration is lower. With enough of these, maybe you can \
+										convert them into Life Essence.</i>
 
+## SPIRIT FRAGMENTS --------------------------
 Sode_no_Shirayuki_Spirit_Fragment.name = Spirit Fragment - Sode no Shirayuki
 Sode_no_Shirayuki_Spirit_Fragment.description = A cold fragment of pure spiritual energy.\n<b>Right-Click to consume (unlock Shikai)</b>
 Wabisuke_Spirit_Fragment.name = Spirit Fragment - Wabisuke
@@ -100,15 +159,15 @@ Zangetsu_Spirit_Fragment.description = A fragment containing a wild amount of en
 Tensa_Zangetsu_Spirit_Fragment.name = Spirit Fragment - Tensa Zangetsu
 Tensa_Zangetsu_Spirit_Fragment.description = A fragment that has an insane amount of condensed energy. You can feel the ultimate power in your hands. \n<b>Right-Click to consume (unlock Bankai, Tensa Zangetsu)</b>
 
+## CRAFTING BENCHES --------------------------
+Soul_Imprinting_Altar.name = Soul Imprinting Altar
+Soul_Imprinting_Altar.description = A sacred workstation where the wielder's soul merges with the Asauchi. Through deep meditation and concentration of spiritual energy (Reiryoku), the foundation of the future Zanpakuto is laid. \								This altar is used not only for the initial awakening but also for the subsequent stages of the blade's evolution — from Shikai to the ultimate revelation, Bankai.
 Soulweave_Loom.name = Soulweave Loom
 Soulweave_Loom.description = A loom which is used to weave clothes infused with spiritual matter. Variations of it are widely used across the Soul Society and other places.
-Soulweave_Cloth_Bolt.name = Soulweave Cloth Bolt
-Soulweave_Cloth_Bolt.description = A bolt of black cloth infused with reishi which provides extra resistance.
-Purified_Soulweave_Cloth_Bolt.name = Purified Soulweave Cloth Bolt
-Purified_Soulweave_Cloth_Bolt.description = A pure bolt of white cloth infused with high quality reishi.
 
 
 
+## MISC ITEMS --------------------------
 items.Currency_Kan.name = Kan
 items.Currency_Kan.description = The standard currency of the Soul Society. A single Kan represents the value of one bale of rice in the world of the living. Its weight and ring are said to be tuned to the very frequency of reishi, making it impossible to counterfeit.\
 								To a merchant in the Rukongai, this coin is a fortune; to a captain, mere pocket change.
@@ -120,10 +179,6 @@ items.Kaido_Infused_Pill.name = Kaido-Infused Restoration Pill
 items.Kaido_Infused_Pill.description = A masterpiece of Squad 4's medical research. Not merely a pill, but a solid capsule of suspended healing kaido spells.\n\nRestores <color is="#ffffff">100%</color> health instantly and grants:\	
 										\n\n• <color is="#ffffff">Health Regen II</color>\n\nDuration: <color is="#ffffff">0:30</color>
 
-items.A_Guide_To_Find_Hollows_Closed.name = A guide to find Hollows - Closed
-items.A_Guide_To_Find_Hollows_Closed.description = <color is="#ffffff"><b>Right-Click</b></color> while holding this scroll to open it. Compiled by the 12th Division Research & Development Institute.
-
-items.A_Guide_To_Find_Hollows.name = A guide to find Hollows
-items.A_Guide_To_Find_Hollows.description = <i>Compiled by the 12th Division Research & Development Institute</i>. Hollow activity does not occur during daylight hours. \
-											Manifestations have only been recorded after nightfall, when spiritual pressure becomes unstable. Additionally, no Hollow signatures have ever been detected within Zone 1. \
-											Operatives seeking Hollows must leave Zone 1 and conduct their patrols at night.
+items.Race_Selection_Menu.name = Race Selection Menu
+items.Race_Selection_Menu.description = <b><color is="#ffffff">Right-Click</color></b> to open the race selection menu.\n \
+										<i>This item will be deleted after its use </i>

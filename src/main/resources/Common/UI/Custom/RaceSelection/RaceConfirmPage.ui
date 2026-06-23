@@ -6,12 +6,12 @@
 
 Group {
     Anchor: (Width: 500, Height: 250);
-    Background: #0a0f1a(0.97);
+    Background: #000000(0.97);
     LayoutMode: Top;
     Padding: (Full: 30);
 
     Label #ConfirmMessage {
-        Text: "Your player race is now ...";
+        Text: "You are a ...";
         Anchor: (Height: 80);
         Style: (FontSize: 22, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center);
     }

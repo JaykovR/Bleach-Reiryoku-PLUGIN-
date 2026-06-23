@@ -3,7 +3,7 @@
   "Reference": "Template_Scarak_Louse",
   "Modify": {
     "Appearance": "Scarak_Louse_Hollow",
-    "DropList": "Drop_Scarak_Louse",
+    "DropList": "Drop_Small_Hollow_Generic",
     "AttackDistance": 1.6,
     "Attack": "Scarak_Louse_Bite",
     "AttitudeGroup": "Scarak",

@@ -2,7 +2,7 @@
   "Type": "Variant",
   "Reference": "Template_Predator_Hollow",
   "Modify": {
-    "DropList": "Drop_Scorpion_Hollow",
+    "DropList": "Drop_Big_Scorpion_Hollow",
     "Appearance": "Scorpion_Hollow_Big",
     "AttitudeGroup": "Vermin",
     "MaxHealth": 310,
