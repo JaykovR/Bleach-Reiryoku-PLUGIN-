@@ -1,5 +1,5 @@
 {
-  "LaunchForce": 45,
+  "LaunchForce": 50,
   "Physics": {
     "Type": "Standard"
   },
@@ -9,16 +9,16 @@
         {
           "Type": "Replace",
           "DefaultOk": true,
-          "Var": "Shakkaho_Damage",
+          "Var": "Sokatsui_Damage",
           "DefaultValue": {
             "Interactions": [
-              "Hado31_Shakkaho_Damage"
+              "Hado33_Sokatsui_Damage"
             ]
           },
           "Effects": {
             "Particles": [
               {
-                "SystemId": "Shakkaho_Explosion",
+                "SystemId": "Hado33_Explosion",
                 "TargetEntityPart": "Entity"
               }
             ],
@@ -30,8 +30,7 @@
           "RunTime": 0.01,
           "Parent": "Explode_Generic",
           "Config": {
-            "EntityDamage": 2,
-            "BlockDamageRadius": 7
+            "EntityDamage": 4
           }
         },
         "Common_Projectile_Despawn"
@@ -41,28 +40,20 @@
     "ProjectileMiss": {
       "Interactions": [
         {
-          "Type": "Simple",
-          "Effects": {
-            "Particles": [
-              {
-                "SystemId": "Shakkaho_Explosion",
-                "TargetEntityPart": "Entity"
-              }
-            ]
-          },
-          "RunTime": 0.001
-        },
-        {
           "Type": "Explode",
           "RunTime": 0.01,
           "Parent": "Explode_Generic",
           "Config": {
-            "EntityDamage": 2,
-            "BlockDamageRadius": 7
+            "EntityDamage": 4
           },
           "Effects": {
-            "WorldSoundEventId": "SFX_Hado4_Hit",
-            "LocalSoundEventId": "SFX_Hado4_Hit"
+            "Particles": [
+              {
+                "SystemId": "Hado33_Explosion",
+                "TargetEntityPart": "Entity"
+              }
+            ],
+            "WorldSoundEventId": "SFX_Hado4_Hit"
           }
         },
         "Common_Projectile_Despawn"
@@ -70,5 +61,10 @@
     }
   },
   "LaunchLocalSoundEventId": "SFX_Hado1_Launch",
-  "Model": "Hado31_Shakkaho_ProjectileModel"
+  "Model": "Hado33_Projectile",
+  "LaunchWorldSoundEventId": "SFX_Hado1_Launch",
+  "SpawnOffset": {
+    "X": 0.3,
+    "Y": -0.22
+  }
 }

@@ -1,0 +1,38 @@
+{
+  "TranslationProperties": {
+    "Name": "Kido: Hado 33, Sokatsui",
+    "Description": "Item Required for Kido Usage, equip on off-hand"
+  },
+  "Model": "Items/Kido Charm/KidoCharm.blockymodel",
+  "Texture": "Items/Kido Charm/KidoCharm_Texture.png",
+  "Icon": "Icons/ItemsGenerated/Kido_Charm.png",
+  "IconProperties": {
+    "Scale": 0.9,
+    "Rotation": [
+      340,
+      197,
+      18
+    ],
+    "Translation": [
+      0,
+      -9
+    ]
+  },
+  "Quality": "SpiritualResource",
+  "Utility": {
+    "Usable": true,
+    "Compatible": false
+  },
+  "MaxStack": 1,
+  "ItemLevel": 10,
+  "Categories": [
+    "BleachCategory.Ingredients"
+  ],
+  "Interactions": {
+    "Secondary": {
+      "Interactions": [
+        "Hado33_Sokatsui"
+      ]
+    }
+  }
+}

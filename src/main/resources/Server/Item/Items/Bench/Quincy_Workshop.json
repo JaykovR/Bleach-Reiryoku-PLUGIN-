@@ -1,0 +1,136 @@
+{
+  "TranslationProperties": {
+    "Name": "Quincy Workshop",
+    "Description": "TODO"
+  },
+  "Recipe": {
+    "TimeSeconds": 3,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Silver",
+        "Quantity": 2
+      },
+      {
+        "ResourceTypeId": "Rock",
+        "Quantity": 10
+      },
+      {
+        "ResourceTypeId": "Wood_Trunk",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Workbench_Crafting"
+        ],
+        "Id": "Workbench",
+        "RequiredTierLevel": 2
+      }
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Quincy_Workshop.png",
+  "Categories": [
+    "Furniture.Benches",
+    "BleachCategory.Blocks"
+  ],
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Items/Benches/Quincy_Workshop.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Benches/Quincy_Workshop_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "HitboxType": "Bench_Workbench",
+    "VariantRotation": "NESW",
+    "Bench": {
+      "Type": "Crafting",
+      "Categories": [
+        {
+          "Id": "Soul_Shikai",
+          "Icon": "Icons/CraftingCategories/Soul_Imprinting_Altar/ZangetsuShikai.png",
+          "Name": "Shikai"
+        },
+        {
+          "Id": "Soul_Bankai",
+          "Icon": "Icons/CraftingCategories/Soul_Imprinting_Altar/Tensa_Zanguetsu.png",
+          "Name": "Bankai"
+        },
+        {
+          "Id": "Soul_Misc",
+          "Icon": "Icons/CraftingCategories/Soul_Imprinting_Altar/Soul_Misc.png",
+          "Name": "Misc"
+        },
+        {
+          "Id": "Soul_Deco",
+          "Icon": "Icons/CraftingCategories/Soul_Imprinting_Altar/Soul_Deco.png",
+          "Name": "Deco"
+        }
+      ],
+      "LocalOpenSoundEventId": "SFX_Workbench_Open",
+      "LocalCloseSoundEventId": "SFX_Workbench_Close",
+      "CompletedSoundEventId": "SFX_Workbench_Craft",
+      "FailedSoundEventId": "SFX_Generic_Crafting_Failed",
+      "BenchUpgradeSoundEventId": "SFX_Workbench_Upgrade_Start_Default",
+      "BenchUpgradeCompletedSoundEventId": "SFX_Workbench_Upgrade_Complete_Default",
+      "Id": "Soul_Imprinting_Altar"
+    },
+    "BlockEntity": {
+      "Components": {
+        "BenchBlock": {}
+      }
+    },
+    "State": {
+      "Definitions": {
+        "CraftCompleted": {
+          "CustomModelAnimation": "Blocks/Benches/Workbench_Crafting.blockyanim",
+          "Looping": true
+        },
+        "CraftCompletedInstant": {
+          "CustomModelAnimation": "Blocks/Benches/Workbench_Crafting.blockyanim"
+        }
+      }
+    },
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Benches"
+      }
+    },
+    "BlockParticleSetId": "Wood",
+    "ParticleColor": "#6e4a2f",
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "BlockSoundSetId": "Wood"
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {
+    "Scale": 0.39,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      14,
+      -22
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Bench"
+    ]
+  },
+  "MaxStack": 1,
+  "ItemLevel": 1,
+  "ItemSoundSetId": "ISS_Blocks_Wood"
+}

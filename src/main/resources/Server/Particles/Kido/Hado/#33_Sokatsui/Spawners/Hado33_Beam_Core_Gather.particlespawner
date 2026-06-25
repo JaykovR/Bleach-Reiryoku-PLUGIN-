@@ -1,0 +1,103 @@
+{
+  "RenderMode": "Erosion",
+  "ParticleRotationInfluence": "Billboard",
+  "MaxConcurrentParticles": 5,
+  "ParticleLifeSpan": {
+    "Min": 0.5,
+    "Max": 1
+  },
+  "SpawnRate": {
+    "Min": 10.0,
+    "Max": 10.0
+  },
+  "Particle": {
+    "Texture": "Particles/Textures/Basic/Gradient_Triangle.png",
+    "ScaleRatioConstraint": "None",
+    "Animation": {
+      "0": {
+        "Opacity": 0.0,
+        "Color": "#ffffff",
+        "Scale": {
+          "X": {
+            "Min": 0.3,
+            "Max": 1.0
+          },
+          "Y": {
+            "Min": 0.3,
+            "Max": 1.0
+          }
+        }
+      },
+      "50": {
+        "Opacity": 1.0
+      },
+      "100": {
+        "Opacity": 0.508,
+        "Color": "#88ecff",
+        "Scale": {
+          "X": {
+            "Min": 1,
+            "Max": 2.5
+          },
+          "Y": {
+            "Min": 1,
+            "Max": 2.5
+          }
+        }
+      }
+    },
+    "InitialAnimationFrame": {
+      "Scale": {
+        "X": {
+          "Min": 0.5,
+          "Max": 1
+        },
+        "Y": {
+          "Min": 0.5,
+          "Max": 1
+        }
+      },
+      "Opacity": 0.376,
+      "Rotation": {
+        "X": {
+          "Min": 90,
+          "Max": 90
+        },
+        "Y": {
+          "Min": 90,
+          "Max": 90
+        },
+        "Z": {
+          "Min": -90,
+          "Max": 90
+        }
+      }
+    }
+  },
+  "LinearFiltering": true,
+  "ParticleRotateWithSpawner": true,
+  "SpawnBurst": false,
+  "CameraOffset": -0.48,
+  "EmitOffset": {
+    "X": {
+      "Min": 1,
+      "Max": 1
+    },
+    "Y": {
+      "Min": 1,
+      "Max": 1
+    }
+  },
+  "InitialVelocity": {
+    "Speed": {
+      "Max": 4,
+      "Min": 4
+    }
+  },
+  "Attractors": [
+    {
+      "RadialAcceleration": -50,
+      "Radius": 0.5
+    }
+  ]
+}

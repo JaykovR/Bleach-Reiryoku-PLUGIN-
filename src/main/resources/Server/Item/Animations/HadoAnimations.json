@@ -2,7 +2,8 @@
   "Animations": {
     "#1Sho": {
       "ThirdPerson": "Characters/Animations/Items/Hado/#1 Sho/Hado1_Sho_Launch.blockyanim",
-      "ClipsGeometry": true
+      "ClipsGeometry": true,
+      "Looping": false
     },
     "#1ShoCharging": {
       "ThirdPerson": "Characters/Animations/Items/Hado/#1 Sho/Hado_Charging.blockyanim",

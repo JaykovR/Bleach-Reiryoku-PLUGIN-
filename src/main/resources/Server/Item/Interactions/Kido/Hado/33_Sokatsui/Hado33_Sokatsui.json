@@ -1,0 +1,75 @@
+{
+  "Type": "Charging",
+  "Next": {
+    "0.9": {
+      "Type": "Simple",
+      "Next": {
+        "Type": "Projectile",
+        "Config": "Hado33_Sokatsui_ProjectileConfig",
+        "Next": {
+          "Type": "ChangeStat",
+          "ValueType": "Absolute",
+          "Behaviour": "Add",
+          "Entity": "User",
+          "StatModifiers": {
+            "Reiryoku": -58
+          }
+        },
+        "RunTime": 0.5,
+        "Effects": {
+          "ItemAnimationId": "#1Sho",
+          "ItemPlayerAnimationsId": "HadoAnimations",
+          "ClearAnimationOnFinish": true,
+          "Particles": [
+            {
+              "SystemId": "Hado33_LaunchHandWave",
+              "TargetEntityPart": "Entity",
+              "TargetNodeName": "R-Attachment",
+              "Scale": 0.5
+            }
+          ]
+        },
+        "HorizontalSpeedMultiplier": 0.001
+      },
+      "HorizontalSpeedMultiplier": 0.001,
+      "RunTime": 0.5,
+      "Effects": {
+        "ItemAnimationId": "#1Sho",
+        "ItemPlayerAnimationsId": "HadoAnimations",
+        "ClearAnimationOnFinish": false,
+        "Particles": [
+          {
+            "SystemId": "Hado33_LaunchHandWave",
+            "TargetEntityPart": "Entity",
+            "TargetNodeName": "R-Attachment",
+            "Scale": 0.5
+          }
+        ]
+      }
+    }
+  },
+  "Effects": {
+    "ItemPlayerAnimationsId": "HadoAnimations",
+    "ItemAnimationId": "#1ShoCharging",
+    "Particles": [
+      {
+        "SystemId": "Hado33_Sokatsui_Charging",
+        "TargetEntityPart": "Entity",
+        "TargetNodeName": "R-Attachment",
+        "Scale": 0.5
+      }
+    ],
+    "ClearAnimationOnFinish": true,
+    "FirstPersonParticles": [
+      {
+        "SystemId": "Hado4_Chargning",
+        "TargetEntityPart": "Entity",
+        "TargetNodeName": "R-Attachment",
+        "Scale": 0.5
+      }
+    ]
+  },
+  "RunTime": 1,
+  "AllowIndefiniteHold": true,
+  "DisplayProgress": true
+}

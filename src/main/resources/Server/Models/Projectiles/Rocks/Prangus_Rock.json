@@ -1,0 +1,31 @@
+{
+  "Model": "Items/Projectiles/Prangus_Rock/Prangus_Rock.blockymodel",
+  "Texture": "Items/Projectiles/Prangus_Rock/Prangus_Rock_Texture.png",
+  "HitBox": {
+    "Max": {
+      "X": 0.5,
+      "Y": 0.5,
+      "Z": 0.5
+    },
+    "Min": {
+      "X": -0.5,
+      "Y": -0.5,
+      "Z": -0.5
+    }
+  },
+  "MinScale": 1,
+  "MaxScale": 1,
+  "Icon": "Icons/ModelsGenerated/Prangus_Rock.png",
+  "IconProperties": {
+    "Scale": 0.2,
+    "Rotation": [
+      42,
+      35,
+      0
+    ],
+    "Translation": [
+      -44,
+      -1
+    ]
+  }
+}

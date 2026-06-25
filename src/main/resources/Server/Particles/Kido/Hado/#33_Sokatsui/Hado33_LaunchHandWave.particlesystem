@@ -1,0 +1,9 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Hado33_Launch_Inner_Ring"
+    }
+  ],
+  "IsImportant": true,
+  "CullDistance": 30.0
+}

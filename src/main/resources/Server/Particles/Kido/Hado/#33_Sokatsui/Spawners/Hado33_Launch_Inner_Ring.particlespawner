@@ -1,0 +1,100 @@
+{
+  "RenderMode": "Erosion",
+  "ParticleRotationInfluence": "None",
+  "MaxConcurrentParticles": 10,
+  "ParticleLifeSpan": {
+    "Min": 0.2,
+    "Max": 0.2
+  },
+  "SpawnRate": {
+    "Min": 20.0,
+    "Max": 20.0
+  },
+  "Particle": {
+    "Texture": "Particles/BR_Ring.png",
+    "ScaleRatioConstraint": "None",
+    "Animation": {
+      "0": {
+        "Opacity": 0.4,
+        "Color": "#c4fffc",
+        "Scale": {
+          "X": {
+            "Min": 1,
+            "Max": 1
+          },
+          "Y": {
+            "Min": 1,
+            "Max": 1
+          }
+        }
+      },
+      "20": {
+        "Opacity": 1.0,
+        "Scale": {
+          "X": {
+            "Min": 4,
+            "Max": 4
+          },
+          "Y": {
+            "Min": 4,
+            "Max": 4
+          }
+        }
+      },
+      "75": {
+        "Opacity": 0.8,
+        "Color": "#a9fffb",
+        "Scale": {
+          "X": {
+            "Min": 4,
+            "Max": 4
+          },
+          "Y": {
+            "Min": 4,
+            "Max": 4
+          }
+        }
+      },
+      "100": {
+        "Opacity": 0.12,
+        "Color": "#6ee1ff",
+        "Scale": {
+          "X": {
+            "Min": 4,
+            "Max": 4
+          },
+          "Y": {
+            "Min": 4,
+            "Max": 4
+          }
+        }
+      }
+    },
+    "InitialAnimationFrame": {
+      "Scale": {
+        "X": {
+          "Min": 0.3,
+          "Max": 0.3
+        },
+        "Y": {
+          "Min": 0.3,
+          "Max": 0.3
+        }
+      },
+      "Opacity": 0.356
+    },
+    "FrameSize": {
+      "Width": 64,
+      "Height": 64
+    }
+  },
+  "LinearFiltering": false,
+  "UVMotion": {
+    "Texture": "Particles/Textures/UVMotion/FlowMapSmoke.png",
+    "Strength": 5.4,
+    "Scale": 2.4,
+    "StrengthCurveType": "IncreaseQuartIn",
+    "AddRandomUVOffset": true
+  },
+  "ParticleRotateWithSpawner": true
+}

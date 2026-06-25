@@ -15,7 +15,7 @@ Group {
         Padding: (Full: 24);
 
         Group {
-            Anchor: (Height: 52, Width: 850);
+            Anchor: (Height: 40, Width: 700);
             Background: "DEFINE_YOUR_EXISTENCE.png";
         }
 

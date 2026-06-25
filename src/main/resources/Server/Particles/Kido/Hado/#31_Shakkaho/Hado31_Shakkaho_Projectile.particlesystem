@@ -3,5 +3,6 @@
     {
       "SpawnerId": "Hado31_Shakkaho_Projectile"
     }
-  ]
+  ],
+  "LifeSpan": 2
 }

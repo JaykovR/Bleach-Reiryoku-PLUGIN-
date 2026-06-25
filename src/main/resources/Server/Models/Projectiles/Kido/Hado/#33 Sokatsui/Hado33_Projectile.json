@@ -1,0 +1,34 @@
+{
+  "HitBox": {
+    "Max": {
+      "X": 0.1,
+      "Y": 0.1,
+      "Z": 0.1
+    },
+    "Min": {
+      "X": -0.1,
+      "Y": -0.1,
+      "Z": -0.1
+    }
+  },
+  "MinScale": 0.2,
+  "MaxScale": 0.2,
+  "Texture": "Items/Projectiles/Kido/Hado1_Sho_Texture.png",
+  "Model": "Items/Projectiles/Kido/Hado1_Sho.blockymodel",
+  "Particles": [
+    {
+      "SystemId": "Hado33_Beam_Projectile",
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Center",
+      "RotationOffset": {
+        "Roll": 135,
+        "Yaw": -5
+      }
+    }
+  ],
+  "Trails": [
+    {
+      "TrailId": "Arrow"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "LaunchForce": 50,
+  "Physics": {
+    "Type": "Standard",
+    "Gravity": 0.7,
+    "AllowRolling": true,
+    "Density": 50,
+    "TerminalVelocityAir": 40,
+    "RotationForce": 10,
+    "SpeedRotationFactor": 5
+  },
+  "Interactions": {
+    "ProjectileHit": {
+      "Interactions": [
+        {
+          "Type": "Replace",
+          "DefaultValue": {
+            "Interactions": [
+              "Prangus_Rock_Damage"
+            ]
+          },
+          "DefaultOk": true,
+          "Var": "Rock_Throw_Damage",
+          "Effects": {
+            "WorldSoundEventId": "SFX_Stone_Hit",
+            "LocalSoundEventId": "SFX_Stone_Hit",
+            "Particles": [
+              {
+                "SystemId": "Block_Break_Stone",
+                "TargetEntityPart": "Entity",
+                "PositionOffset": {
+                  "X": -1,
+                  "Y": -1
+                }
+              }
+            ]
+          },
+          "RunTime": 0.01
+        },
+        "Common_Projectile_Despawn"
+      ],
+      "RequireNewClick": true
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        "Common_Projectile_Despawn"
+      ]
+    }
+  },
+  "Model": "Prangus_Rock",
+  "SpawnOffset": {
+    "Y": 1
+  }
+}

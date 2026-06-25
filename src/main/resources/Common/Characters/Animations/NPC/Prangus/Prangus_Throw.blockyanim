@@ -2913,6 +2913,50 @@
       "shapeStretch": [],
       "shapeVisible": [],
       "shapeUvOffset": []
+    },
+    "Rock": {
+      "position": [
+        {
+          "time": 27,
+          "delta": {"x": -49.25, "y": -44, "z": 0},
+          "interpolationType": "linear"
+        },
+        {
+          "time": 40,
+          "delta": {"x": -45.92, "y": -27.67, "z": -50.95},
+          "interpolationType": "linear"
+        },
+        {
+          "time": 70,
+          "delta": {"x": -38.25, "y": 10, "z": -23},
+          "interpolationType": "linear"
+        },
+        {
+          "time": 157,
+          "delta": {"x": -80.25, "y": -40, "z": -59},
+          "interpolationType": "linear"
+        }
+      ],
+      "orientation": [],
+      "shapeStretch": [],
+      "shapeVisible": [
+        {
+          "time": 0,
+          "delta": false,
+          "interpolationType": "linear"
+        },
+        {
+          "time": 30,
+          "delta": true,
+          "interpolationType": "linear"
+        },
+        {
+          "time": 157,
+          "delta": false,
+          "interpolationType": "linear"
+        }
+      ],
+      "shapeUvOffset": []
     }
   }
 }

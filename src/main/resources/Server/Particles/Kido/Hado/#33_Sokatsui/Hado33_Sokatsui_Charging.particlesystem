@@ -1,0 +1,12 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Hado33_Beam_Core"
+    },
+    {
+      "SpawnerId": "Hado33_Beam_Core_Gather"
+    }
+  ],
+  "IsImportant": true,
+  "CullDistance": 30.0
+}
