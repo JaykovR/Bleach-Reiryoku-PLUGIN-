@@ -1,32 +1,84 @@
 {
-  "Type": "Charging",
-  "Next": {
-    "0.7": {
-      "Type": "Projectile",
-      "Config": "Hado1_Sho_ProjectileConfig",
+  "Type": "Serial",
+  "Interactions": [
+    {
+      "Type": "ChangeStat",
+      "ValueType": "Absolute",
+      "StatModifiers": {
+        "Reiryoku": -40
+      }
+    },
+    {
+      "Type": "Simple",
+      "Effects": {
+        "ItemPlayerAnimationsId": "HadoAnimations",
+        "ItemAnimationId": "B#9Sekienton"
+      },
+      "RunTime": 0.75,
+      "HorizontalSpeedMultiplier": 0.001
+    },
+    {
+      "Type": "Simple",
+      "Effects": {
+        "ItemPlayerAnimationsId": "HadoAnimations",
+        "ItemAnimationId": "B#9SekientonHold",
+        "Particles": [
+          {
+            "SystemId": "Sekienton_Smoke",
+            "Scale": 5.5,
+            "DetachedFromModel": true,
+            "PositionOffset": {
+              "Y": -2
+            }
+          },
+          {
+            "SystemId": "Sekienton_Smoke",
+            "Scale": 6,
+            "DetachedFromModel": true,
+            "PositionOffset": {
+              "Y": -2
+            }
+          },
+          {
+            "SystemId": "Sekienton_Smoke",
+            "Scale": 2,
+            "DetachedFromModel": true,
+            "PositionOffset": {
+              "Y": -2
+            }
+          },
+          {
+            "SystemId": "Sekienton_Smoke2",
+            "Scale": 5,
+            "DetachedFromModel": true,
+            "Color": "#950606",
+            "PositionOffset": {
+              "Z": 1
+            }
+          }
+        ],
+        "WorldSoundEventId": "SFX_Hado4_Hit"
+      },
+      "RunTime": 0.25,
       "Next": {
-        "Type": "ChangeStat",
-        "ValueType": "Absolute",
-        "Behaviour": "Add",
-        "StatModifiers": {
-          "Reiryoku": -35
+        "Type": "Selector",
+        "RunTime": 0.01,
+        "Selector": {
+          "Id": "AOECylinder",
+          "Range": 6,
+          "Height": 6
+        },
+        "HitEntity": {
+          "Interactions": [
+            {
+              "Type": "ApplyEffect",
+              "Entity": "Target",
+              "EffectId": "Sekienton_Slow"
+            }
+          ]
         }
-      }
+      },
+      "HorizontalSpeedMultiplier": 0.001
     }
-  },
-  "Effects": {
-    "ItemPlayerAnimationsId": "HadoAnimations",
-    "ItemAnimationId": "#1ShoCharging",
-    "Particles": [
-      {
-        "SystemId": "Hado1_Sho_Charging",
-        "TargetEntityPart": "Entity",
-        "TargetNodeName": "R-Attachment"
-      }
-    ],
-    "ClearAnimationOnFinish": true
-  },
-  "RunTime": 1,
-  "AllowIndefiniteHold": true,
-  "DisplayProgress": true
+  ]
 }

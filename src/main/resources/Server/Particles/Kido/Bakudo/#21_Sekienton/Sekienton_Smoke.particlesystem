@@ -1,7 +1,7 @@
 {
   "Spawners": [
     {
-      "SpawnerId": "Explosion_Big_Smoke_Main",
+      "SpawnerId": "Sekienton_Smoke_Main",
       "PositionOffset": {
         "Y": 1.0,
         "X": 0.0,
@@ -10,14 +10,14 @@
       "StartDelay": 0.05
     },
     {
-      "SpawnerId": "Explosion_Big_Smoke_Ground",
+      "SpawnerId": "Sekienton_Smoke_Ground",
       "PositionOffset": {
         "Y": 0.2
       },
       "StartDelay": 0.6
     },
     {
-      "SpawnerId": "Explosion_Big_Smoke_Side",
+      "SpawnerId": "Sekienton_Smoke_Side",
       "PositionOffset": {
         "Y": 0.5,
         "Z": -0.2
@@ -30,7 +30,7 @@
       "FixedRotation": false
     },
     {
-      "SpawnerId": "Explosion_Big_Smoke_Side",
+      "SpawnerId": "Sekienton_Smoke_Side",
       "PositionOffset": {
         "Y": 0.5,
         "Z": 0.2
@@ -38,6 +38,72 @@
       "StartDelay": 0.12,
       "RotationOffset": {
         "Yaw": 180.0
+      }
+    },
+    {
+      "SpawnerId": "Sekienton_Smoke_Side",
+      "PositionOffset": {
+        "Y": 0.5,
+        "Z": 0.5
+      },
+      "StartDelay": 0.12,
+      "RotationOffset": {
+        "Yaw": 180.0
+      }
+    },
+    {
+      "SpawnerId": "Sekienton_Smoke_Side",
+      "PositionOffset": {
+        "Y": 0.5,
+        "Z": -0.5
+      },
+      "StartDelay": 0.12,
+      "RotationOffset": {
+        "Yaw": 180.0
+      }
+    },
+    {
+      "SpawnerId": "Sekienton_Smoke_Side",
+      "PositionOffset": {
+        "Y": 0.5,
+        "Z": 0.2
+      },
+      "StartDelay": 0.12,
+      "RotationOffset": {
+        "Yaw": 30
+      }
+    },
+    {
+      "SpawnerId": "Sekienton_Smoke_Side",
+      "PositionOffset": {
+        "Y": 0.5,
+        "Z": 0.5
+      },
+      "StartDelay": 0.12,
+      "RotationOffset": {
+        "Yaw": 60
+      }
+    },
+    {
+      "SpawnerId": "Sekienton_Smoke_Side",
+      "PositionOffset": {
+        "Y": 0.5,
+        "Z": 0
+      },
+      "StartDelay": 0.12,
+      "RotationOffset": {
+        "Yaw": 95
+      }
+    },
+    {
+      "SpawnerId": "Sekienton_Smoke_Side",
+      "PositionOffset": {
+        "Y": 0.5,
+        "Z": 0
+      },
+      "StartDelay": 0.12,
+      "RotationOffset": {
+        "Yaw": 105
       }
     }
   ],

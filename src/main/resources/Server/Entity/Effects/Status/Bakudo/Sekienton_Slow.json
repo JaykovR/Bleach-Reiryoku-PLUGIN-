@@ -1,0 +1,10 @@
+{
+  "Duration": 4,
+  "OverlapBehavior": "Ignore",
+  "Debuff": true,
+  "Name": "Sekienton_Slow",
+  "ApplicationEffects": {
+    "HorizontalSpeedMultiplier": 0.02,
+    "ScreenEffect": "ScreenEffects/Fire.png"
+  }
+}

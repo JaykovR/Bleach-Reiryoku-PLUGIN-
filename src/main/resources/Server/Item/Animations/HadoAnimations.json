@@ -13,6 +13,13 @@
     "Left": {
       "ThirdPerson": "Characters/Animations/Items/Hado/#1 Sho/LeftHand.blockyanim",
       "Looping": true
+    },
+    "B#9Sekienton": {
+      "ThirdPerson": "Characters/Animations/Items/Bakudo/#9 Sekienton/Sekienton_Positioning.blockyanim",
+      "Speed": 1
+    },
+    "B#9SekientonHold": {
+      "ThirdPerson": "Characters/Animations/Items/Bakudo/#9 Sekienton/Sekienton_Hold.blockyanim"
     }
   },
   "WiggleWeights": {
