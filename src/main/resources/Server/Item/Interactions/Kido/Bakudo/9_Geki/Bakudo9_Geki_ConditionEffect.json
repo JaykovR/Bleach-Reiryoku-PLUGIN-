@@ -1,0 +1,10 @@
+{
+  "Type": "EffectCondition",
+  "EntityEffectIds": [
+    "Bakudo9_Geki_Casting"
+  ],
+  "Entity": "User",
+  "RunTime": 0.001,
+  "Next": "Bakudo9_Geki_Apply",
+  "Failed": "Bakudo9_Geki_Cast"
+}

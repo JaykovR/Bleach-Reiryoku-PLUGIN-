@@ -1,0 +1,11 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "Reiryoku": 30
+  },
+  "Failed": {
+    "Type": "SendMessage",
+    "Message": "You don't have enough Reiryoku. (35 Reiryoku needed)"
+  },
+  "Next": "Bakudo21_Sekienton"
+}

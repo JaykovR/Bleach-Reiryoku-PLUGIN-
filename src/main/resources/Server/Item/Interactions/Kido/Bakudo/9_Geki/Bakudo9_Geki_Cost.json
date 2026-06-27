@@ -1,0 +1,25 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "Reiryoku": 21
+  },
+  "Failed": {
+    "Type": "SendMessage",
+    "Message": "You don't have enough Reiryoku. (20 Reiryoku needed)"
+  },
+  "Next": {
+    "Type": "Serial",
+    "Interactions": [
+      "Bakudo9_Geki_ConditionEffect",
+      {
+        "Type": "ChangeStat",
+        "StatModifiers": {
+          "Reiryoku": -20
+        },
+        "Behaviour": "Add",
+        "Entity": "User",
+        "ValueType": "Absolute"
+      }
+    ]
+  }
+}

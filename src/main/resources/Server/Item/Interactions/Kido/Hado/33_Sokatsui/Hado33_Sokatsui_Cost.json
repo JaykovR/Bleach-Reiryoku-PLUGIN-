@@ -1,0 +1,11 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "Reiryoku": 58
+  },
+  "Failed": {
+    "Type": "SendMessage",
+    "Message": "You don't have enough Reiryoku. (58 Reiryoku needed)"
+  },
+  "Next": "Hado33_Sokatsui"
+}

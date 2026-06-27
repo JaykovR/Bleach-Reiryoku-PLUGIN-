@@ -7,7 +7,7 @@
   },
   "CosmeticSlot": "Face",
   "Appearance": {
-    "Model": "Characters/Body_Attachments/Faces/Player_Face_Detached.blockymodel",
+    "Model": "Characters/Wardrobe/Cosmetics/Faces/BL_Face.blockymodel",
     "TextureConfig": {
       "Type": "Gradient",
       "GrayscaleTexture": "Characters/Wardrobe/Cosmetics/Faces/Bleach_Face3.png",

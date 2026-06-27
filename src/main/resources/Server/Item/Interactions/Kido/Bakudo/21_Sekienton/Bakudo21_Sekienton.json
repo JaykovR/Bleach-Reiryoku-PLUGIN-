@@ -1,14 +1,13 @@
 {
   "Type": "Charging",
   "Next": {
-    "0.3": {
+    "0.7": {
       "Type": "Projectile",
-      "Config": "Hado4_Byakurai_ProjectileConfig",
+      "Config": "Hado1_Sho_ProjectileConfig",
       "Next": {
         "Type": "ChangeStat",
         "ValueType": "Absolute",
         "Behaviour": "Add",
-        "Entity": "User",
         "StatModifiers": {
           "Reiryoku": -35
         }
@@ -20,21 +19,12 @@
     "ItemAnimationId": "#1ShoCharging",
     "Particles": [
       {
-        "SystemId": "Hado4_Chargning",
+        "SystemId": "Hado1_Sho_Charging",
         "TargetEntityPart": "Entity",
-        "TargetNodeName": "R-Attachment",
-        "Scale": 0.5
+        "TargetNodeName": "R-Attachment"
       }
     ],
-    "ClearAnimationOnFinish": true,
-    "FirstPersonParticles": [
-      {
-        "SystemId": "Hado4_Chargning",
-        "TargetEntityPart": "Entity",
-        "TargetNodeName": "R-Attachment",
-        "Scale": 0.5
-      }
-    ]
+    "ClearAnimationOnFinish": true
   },
   "RunTime": 1,
   "AllowIndefiniteHold": true,

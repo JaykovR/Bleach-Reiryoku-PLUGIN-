@@ -1,0 +1,18 @@
+{
+  "ApplicationEffects": {
+    "EntityBottomTint": "#fcbfbf",
+    "EntityTopTint": "#ed5353",
+    "Particles": [
+      {
+        "SystemId": "Reiatsu_Aura",
+        "Color": "#d41616",
+        "TargetEntityPart": "Self",
+        "Scale": 0.7
+      }
+    ]
+  },
+  "Duration": 1,
+  "OverlapBehavior": "Overwrite",
+  "RemovalBehavior": "Complete",
+  "StatusEffectIcon": "UI/StatusEffects/Geki_Casting.png"
+}

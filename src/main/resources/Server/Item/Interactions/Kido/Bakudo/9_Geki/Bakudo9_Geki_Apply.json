@@ -1,0 +1,28 @@
+{
+  "Type": "Selector",
+  "Selector": {
+    "Id": "Stab",
+    "EndDistance": 10,
+    "TestLineOfSight": true
+  },
+  "RunTime": 0.4,
+  "HorizontalSpeedMultiplier": 0.001,
+  "HitEntity": {
+    "Interactions": [
+      {
+        "Type": "ApplyEffect",
+        "EffectId": "Bakudo9_Geki_Applied",
+        "Entity": "Target",
+        "Next": {
+          "Type": "ApplyEffect",
+          "EffectId": "Bakudo9_Geki_Casting",
+          "Entity": "User"
+        }
+      }
+    ]
+  },
+  "Effects": {
+    "ItemAnimationId": "#1Sho",
+    "ItemPlayerAnimationsId": "HadoAnimations"
+  }
+}

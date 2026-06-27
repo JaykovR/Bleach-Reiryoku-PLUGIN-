@@ -272,7 +272,8 @@ public class playerStats implements Component<EntityStore> {
             10,     // Living Being
             50,     // Spiritually Aware
             150,    // Awakened Soul (early Chad/Orihime)
-            300,    // Shinigami Trainee - Academy Student
+            200,    // player Start
+            300,    // Academy Student - Shinigami  Trainee
             500,    // Unseated Officer - Graduated, Unranked Shinigami
             600,    // Shikai Unlock Requirement
             750,    // Low-Seat - 10th-20th place

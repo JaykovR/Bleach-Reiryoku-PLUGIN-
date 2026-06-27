@@ -1,0 +1,21 @@
+{
+  "Type": "Charging",
+  "Effects": {
+    "ItemPlayerAnimationsId": "HadoAnimations",
+    "ItemAnimationId": "#1ShoCharging",
+    "ClearAnimationOnFinish": true,
+    "FirstPersonParticles": [
+      {
+        "SystemId": "Hado4_Chargning",
+        "TargetEntityPart": "Entity",
+        "TargetNodeName": "R-Attachment",
+        "Scale": 0.5
+      }
+    ]
+  },
+  "RunTime": 1,
+  "DisplayProgress": true,
+  "Next": {
+    "0.5": "Bakudo9_Geki_Apply"
+  }
+}

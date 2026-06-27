@@ -1,0 +1,25 @@
+{
+  "ApplicationEffects": {
+    "EntityBottomTint": "#b23737",
+    "EntityTopTint": "#c63535",
+    "HorizontalSpeedMultiplier": 0.001,
+    "AbilityEffects": {
+      "Disabled": [
+        "Primary",
+        "Secondary",
+        "Ability1",
+        "Ability2",
+        "Ability3"
+      ]
+    },
+    "Particles": [
+      {
+        "SystemId": "Geki_Applied_TopIcon"
+      }
+    ]
+  },
+  "Duration": 2,
+  "OverlapBehavior": "Overwrite",
+  "RemovalBehavior": "Duration",
+  "Name": "Bakudo 9 Geki Applied"
+}
