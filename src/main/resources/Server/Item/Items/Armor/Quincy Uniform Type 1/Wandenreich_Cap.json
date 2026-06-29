@@ -1,0 +1,90 @@
+{
+  "TranslationProperties": {
+    "Name": "Wandenreich Cap"
+  },
+  "Parent": "Armor_Iron_Head",
+  "ItemLevel": 10,
+  "Icon": "Icons/ItemsGenerated/Wandenreich_Cap.png",
+  "Model": "Items/Armors/Quincy Clothes/Wandenreich/Cap/Wandenreich_Cap.blockymodel",
+  "Texture": "Items/Armors/Quincy Clothes/Wandenreich/Cap/texture.png",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Copper",
+        "Quantity": 6
+      },
+      {
+        "ItemId": "Ingredient_Fibre",
+        "Quantity": 2
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Soulweave_Loom",
+        "Type": "Crafting",
+        "Categories": [
+          "Soulweave_Loom_Quincy"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ],
+    "KnowledgeRequired": false,
+    "TimeSeconds": 3
+  },
+  "Armor": {
+    "ArmorSlot": "Head",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "HeadAccessory"
+    ],
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.036,
+          "CalculationType": "Percent"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.036,
+          "CalculationType": "Percent"
+        }
+      ]
+    },
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 5,
+          "CalculationType": "Additive"
+        }
+      ]
+    }
+  },
+  "MaxDurability": 80,
+  "Tags": {
+    "Type": [
+      "Armor"
+    ],
+    "Family": [
+      "Copper"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Armor_Heavy",
+  "DurabilityLossOnHit": 0.5,
+  "Quality": "Common",
+  "Categories": [
+    "BleachCategory.Armors"
+  ],
+  "IconProperties": {
+    "Scale": 0.5,
+    "Rotation": [
+      23,
+      45,
+      22.5
+    ],
+    "Translation": [
+      -2,
+      -9
+    ]
+  }
+}

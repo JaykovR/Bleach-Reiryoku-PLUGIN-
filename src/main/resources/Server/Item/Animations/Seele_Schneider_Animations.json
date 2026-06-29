@@ -1,0 +1,72 @@
+{
+  "Animations": {
+    "SwingLeft": {
+      "ThirdPerson": "Characters/Animations/Items/Seele Schneider/Swing Left/Swing_Left_NoMove.blockyanim",
+      "ClipsGeometry": true,
+      "BlendingDuration": 0.1,
+      "ThirdPersonFace": "Characters/Animations/Expressions/Frown.blockyanim",
+      "FirstPerson": "Characters/Animations/Items/Seele Schneider/Swing Left/Swing_Left_FPS.blockyanim"
+    },
+    "SwingRight": {
+      "ThirdPerson": "Characters/Animations/Items/Seele Schneider/Swing Right/Swing_Right_NoMove.blockyanim",
+      "ClipsGeometry": true,
+      "BlendingDuration": 0.1,
+      "ThirdPersonFace": "Characters/Animations/Expressions/Angry.blockyanim",
+      "FirstPerson": "Characters/Animations/Items/Seele Schneider/Swing Right/Swing_Right_FPS.blockyanim"
+    },
+    "Thrust": {
+      "ThirdPerson": "Characters/Animations/Items/Seele Schneider/Short Thrust/Thrust_NoMove.blockyanim",
+      "BlendingDuration": 0.1,
+      "ThirdPersonFace": "Characters/Animations/Expressions/Frown.blockyanim",
+      "FirstPerson": "Characters/Animations/Items/Seele Schneider/Short Thrust/Thrust_FPS.blockyanim"
+    },
+    "UpwardSwing": {
+      "ThirdPerson": "Characters/Animations/Items/Seele Schneider/Swing Upward/Swing_Upward.blockyanim",
+      "BlendingDuration": 0.2,
+      "ThirdPersonFace": "Characters/Animations/Expressions/Rage.blockyanim",
+      "FirstPerson": "Characters/Animations/Items/Seele Schneider/Swing Upward/Swing_Up_Left_FPS.blockyanim",
+      "ThirdPersonMoving": "Characters/Animations/Items/Seele Schneider/Swing Upward/Swing_Up_Left_Moving.blockyanim"
+    },
+    "AOECharging1": {
+      "ThirdPerson": "Characters/Animations/Items/Seele Schneider/AOE Charged/AOE_Charging1.blockyanim",
+      "BlendingDuration": 0.2,
+      "FirstPerson": "Characters/Animations/Items/Seele Schneider/AOE Charged/AOE_Charging1_FPS.blockyanim"
+    },
+    "AOECharging2": {
+      "ThirdPerson": "Characters/Animations/Items/Seele Schneider/AOE Charged/AOE_Charging2.blockyanim",
+      "BlendingDuration": 0.2,
+      "FirstPerson": "Characters/Animations/Items/Seele Schneider/AOE Charged/AOE_Charging2_FPS.blockyanim"
+    },
+    "AOECharging3": {
+      "ThirdPerson": "Characters/Animations/Items/Seele Schneider/AOE Charged/AOE_Charging3.blockyanim",
+      "BlendingDuration": 0.2,
+      "FirstPerson": "Characters/Animations/Items/Seele Schneider/AOE Charged/AOE_Charging3_FPS.blockyanim"
+    },
+    "AOECharged": {
+      "ThirdPerson": "Characters/Animations/Items/Seele Schneider/AOE Charged/AOE_Charged.blockyanim",
+      "BlendingDuration": 0.2,
+      "FirstPerson": "Characters/Animations/Items/Seele Schneider/AOE Charged/Spin_Right_Charged_FPS.blockyanim"
+    },
+    "PP_Parry": {
+      "ThirdPerson": "Characters/Animations/Items/Perfect_Parries/Bleach_Reiryoku/Mace/Parry.blockyanim",
+      "ThirdPersonMoving": "Characters/Animations/Items/Perfect_Parries/Bleach_Reiryoku/Mace/Parry.blockyanim",
+      "ThirdPersonFace": "Characters/Animations/Expressions/Angry.blockyanim",
+      "FirstPerson": "Characters/Animations/Items/Perfect_Parries/Bleach_Reiryoku/Mace/Parry_FPS.blockyanim",
+      "BlendingDuration": 0,
+      "KeepPreviousFirstPersonAnimation": true,
+      "Speed": 0.6
+    }
+  },
+  "WiggleWeights": {
+    "Pitch": 2.5,
+    "PitchDeceleration": 0.1,
+    "Roll": 0.1,
+    "RollDeceleration": 0.1,
+    "X": 2.5,
+    "XDeceleration": 0.1,
+    "Y": 0.1,
+    "YDeceleration": 0.1,
+    "Z": 0.1,
+    "ZDeceleration": 0.1
+  }
+}

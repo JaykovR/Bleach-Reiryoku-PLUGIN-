@@ -261,7 +261,7 @@
             {
               "id": "6",
               "name": "Top Extruded 2--C4",
-              "position": {"x": -0.5, "y": 3, "z": 0.5},
+              "position": {"x": -0.5, "y": 1, "z": 0.5},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
@@ -1938,7 +1938,7 @@
                 {
                   "id": "40",
                   "name": "Mat--C1",
-                  "position": {"x": 2.5, "y": 8, "z": -2},
+                  "position": {"x": 2.5, "y": 8.1, "z": -2},
                   "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                   "shape": {
                     "type": "quad",
@@ -1952,8 +1952,8 @@
                     },
                     "textureLayout": {
                       "front": {
-                        "offset": {"x": 104, "y": 94},
-                        "mirror": {"x": true, "y": true},
+                        "offset": {"x": 68, "y": 72},
+                        "mirror": {"x": false, "y": false},
                         "angle": 0
                       }
                     },
@@ -1966,7 +1966,7 @@
                 {
                   "id": "41",
                   "name": "Scroll",
-                  "position": {"x": -29.5, "y": 5, "z": 9},
+                  "position": {"x": -29.5, "y": 5.1, "z": 9},
                   "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                   "shape": {
                     "type": "none",
@@ -6593,7 +6593,7 @@
                     {
                       "id": "137",
                       "name": "Banner--C1",
-                      "position": {"x": 3.5, "y": -6, "z": 5},
+                      "position": {"x": 3.5, "y": -6, "z": 5.1},
                       "orientation": {"x": 0.70711, "y": 0, "z": 0, "w": 0.70711},
                       "shape": {
                         "type": "quad",
@@ -6607,8 +6607,8 @@
                         },
                         "textureLayout": {
                           "front": {
-                            "offset": {"x": 84, "y": 125},
-                            "mirror": {"x": true, "y": true},
+                            "offset": {"x": 68, "y": 95},
+                            "mirror": {"x": false, "y": false},
                             "angle": 0
                           }
                         },

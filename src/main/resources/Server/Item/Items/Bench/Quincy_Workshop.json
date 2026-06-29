@@ -8,15 +8,15 @@
     "Input": [
       {
         "ItemId": "Ingredient_Bar_Silver",
-        "Quantity": 2
+        "Quantity": 1
       },
       {
-        "ResourceTypeId": "Rock",
-        "Quantity": 10
+        "ResourceTypeId": "Rock_Marble",
+        "Quantity": 15
       },
       {
-        "ResourceTypeId": "Wood_Trunk",
-        "Quantity": 5
+        "Quantity": 15,
+        "ItemId": "Ingredient_Fabric_Scrap_Wool"
       }
     ],
     "BenchRequirement": [
@@ -52,24 +52,9 @@
       "Type": "Crafting",
       "Categories": [
         {
-          "Id": "Soul_Shikai",
+          "Id": "Quincy_Weapons",
           "Icon": "Icons/CraftingCategories/Soul_Imprinting_Altar/ZangetsuShikai.png",
-          "Name": "Shikai"
-        },
-        {
-          "Id": "Soul_Bankai",
-          "Icon": "Icons/CraftingCategories/Soul_Imprinting_Altar/Tensa_Zanguetsu.png",
-          "Name": "Bankai"
-        },
-        {
-          "Id": "Soul_Misc",
-          "Icon": "Icons/CraftingCategories/Soul_Imprinting_Altar/Soul_Misc.png",
-          "Name": "Misc"
-        },
-        {
-          "Id": "Soul_Deco",
-          "Icon": "Icons/CraftingCategories/Soul_Imprinting_Altar/Soul_Deco.png",
-          "Name": "Deco"
+          "Name": "Weapons"
         }
       ],
       "LocalOpenSoundEventId": "SFX_Workbench_Open",
@@ -78,7 +63,7 @@
       "FailedSoundEventId": "SFX_Generic_Crafting_Failed",
       "BenchUpgradeSoundEventId": "SFX_Workbench_Upgrade_Start_Default",
       "BenchUpgradeCompletedSoundEventId": "SFX_Workbench_Upgrade_Complete_Default",
-      "Id": "Soul_Imprinting_Altar"
+      "Id": "Quincy_Workshop"
     },
     "BlockEntity": {
       "Components": {
@@ -101,8 +86,8 @@
         "GatherType": "Benches"
       }
     },
-    "BlockParticleSetId": "Wood",
-    "ParticleColor": "#6e4a2f",
+    "BlockParticleSetId": "Stone",
+    "ParticleColor": "#bfb1a6",
     "Support": {
       "Down": [
         {

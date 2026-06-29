@@ -1,0 +1,14 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Seele_Schneider_Slash",
+      "PositionOffset": {
+        "Z": 0.1
+      }
+    },
+    {
+      "SpawnerId": "Seele_Schneider_Slash_Sparks"
+    }
+  ],
+  "IsImportant": false
+}

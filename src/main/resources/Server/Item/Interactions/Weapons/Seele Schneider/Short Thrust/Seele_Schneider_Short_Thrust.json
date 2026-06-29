@@ -1,0 +1,27 @@
+{
+  "Type": "Simple",
+  "RunTime": 0.05,
+  "Effects": {
+    "ItemAnimationId": "Thrust",
+    "WorldSoundEventId": "SFX_Sword_T2_Swing",
+    "LocalSoundEventId": "SFX_Sword_T2_Swing_LR_Local",
+    "ItemPlayerAnimationsId": "Seele_Schneider_Animations"
+  },
+  "Next": {
+    "Type": "ApplyForce",
+    "Next": {
+      "Type": "Replace",
+      "Var": "Thrust_Selector",
+      "DefaultOk": true,
+      "DefaultValue": {
+        "Interactions": [
+          "Seele_Schneider_Short_Thrust_Selector"
+        ]
+      }
+    },
+    "Direction": {
+      "Z": -1
+    },
+    "Force": 10
+  }
+}

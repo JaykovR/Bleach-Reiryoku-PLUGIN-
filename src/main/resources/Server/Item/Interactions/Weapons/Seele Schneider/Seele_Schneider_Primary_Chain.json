@@ -1,0 +1,39 @@
+{
+  "Type": "Chaining",
+  "ChainingAllowance": 2,
+  "ChainId": "Sword_Swings",
+  "Next": [
+    {
+      "Type": "Replace",
+      "DefaultOk": true,
+      "Var": "Swing_Left",
+      "DefaultValue": {
+        "Interactions": [
+          "Seele_Schneider_Primary_Swing_Left"
+        ]
+      }
+    },
+    {
+      "Type": "Replace",
+      "DefaultOk": true,
+      "Var": "Swing_Right",
+      "DefaultValue": {
+        "Interactions": [
+          "Seele_Schneider_Primary_Swing_Right"
+        ]
+      }
+    },
+    {
+      "Type": "Replace",
+      "DefaultOk": true,
+      "Var": "Thrust",
+      "DefaultValue": {
+        "Interactions": [
+          "Seele_Schneider_Short_Thrust"
+        ]
+      }
+    },
+    "Seele_Schneider_Primary_Swing_Upward",
+    "Seele_Schneider_Primary_Swing_Down"
+  ]
+}

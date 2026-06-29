@@ -1,0 +1,30 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Bakudo30_Applied_Effect",
+      "FixedRotation": false,
+      "PositionOffset": {
+        "Y": 1
+      }
+    },
+    {
+      "SpawnerId": "Bakudo30_Applied_Effect2",
+      "FixedRotation": false,
+      "PositionOffset": {
+        "Y": 1.2,
+        "X": 0.7
+      }
+    },
+    {
+      "SpawnerId": "Bakudo30_Applied_Effect2",
+      "FixedRotation": false,
+      "PositionOffset": {
+        "Y": 1.2,
+        "X": -0.7
+      }
+    }
+  ],
+  "CullDistance": 30.0,
+  "IsImportant": true,
+  "LifeSpan": 5
+}

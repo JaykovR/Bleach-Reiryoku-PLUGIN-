@@ -1,0 +1,25 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Shitotsusansen_ProjectileEffectConstant",
+      "FixedRotation": false,
+      "InitialVelocity": {
+        "Yaw": {
+          "Min": 0,
+          "Max": 0
+        },
+        "Pitch": {
+          "Min": -90,
+          "Max": -90
+        },
+        "Speed": {
+          "Min": 0,
+          "Max": 0
+        }
+      }
+    }
+  ],
+  "CullDistance": 30.0,
+  "IsImportant": true,
+  "LifeSpan": 2
+}

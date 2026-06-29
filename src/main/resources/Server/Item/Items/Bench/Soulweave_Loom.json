@@ -59,6 +59,11 @@
           "Id": "Soulweave_Loom_Materials",
           "Icon": "Icons/CraftingCategories/Soulweave_Loom/Materials_Category.png",
           "Name": "Materials"
+        },
+        {
+          "Id": "Soulweave_Loom_Quincy",
+          "Name": "Quincy",
+          "Icon": "Icons/CraftingCategories/Soulweave_Loom/Quincy_Clothing.png"
         }
       ],
       "LocalOpenSoundEventId": "SFX_Workbench_Open",

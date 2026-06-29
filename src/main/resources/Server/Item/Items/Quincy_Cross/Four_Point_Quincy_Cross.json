@@ -55,11 +55,11 @@
     ],
     "BenchRequirement": [
       {
-        "Id": "Workbench",
         "Type": "Crafting",
         "Categories": [
-          "Workbench_Tools"
-        ]
+          "Quincy_Weapons"
+        ],
+        "Id": "Quincy_Workshop"
       }
     ]
   }

@@ -1,0 +1,54 @@
+{
+  "Type": "Charging",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Seele_Schneider_Animations",
+    "ItemAnimationId": "AOECharging1"
+  },
+  "Next": {
+    "0.7": {
+      "Type": "Parallel",
+      "Interactions": [
+        {
+          "Interactions": [
+            {
+              "Type": "Replace",
+              "Var": "Seele_Schneider_Spin_Charge1Effect1",
+              "DefaultOk": true,
+              "DefaultValue": {
+                "Interactions": [
+                  "Seele_Schneider_ChargeAttack_AOE_Charged1_Effect"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "Interactions": [
+            {
+              "Type": "Replace",
+              "Var": "SeeleSchneider_AOE_Charged2_Selector",
+              "DefaultOk": true,
+              "DefaultValue": {
+                "Interactions": [
+                  "Seele_Schneider_ChargeAttack_AOE_Charged1_Selector"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "Interactions": [
+            {
+              "Type": "ChangeStat",
+              "StatModifiers": {
+                "Reiryoku": -50
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "1": "Seele_Schneider_Primary_ChargeAttack_AOE2_ReiryokuCondition"
+  },
+  "HorizontalSpeedMultiplier": 0.001
+}

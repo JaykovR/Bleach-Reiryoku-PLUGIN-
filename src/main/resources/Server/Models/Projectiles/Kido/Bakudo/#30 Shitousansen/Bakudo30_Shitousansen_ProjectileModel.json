@@ -1,0 +1,30 @@
+{
+  "HitBox": {
+    "Max": {
+      "X": 0.1,
+      "Y": 0.1,
+      "Z": 0.1
+    },
+    "Min": {
+      "X": -0.1,
+      "Y": -0.1,
+      "Z": -0.1
+    }
+  },
+  "MinScale": 0.7,
+  "MaxScale": 0.7,
+  "Texture": "Items/Projectiles/Kido/Shitousansen_Texture2.png",
+  "Model": "Items/Projectiles/Kido/Shitousansen_Projectile.blockymodel",
+  "Particles": [
+    {
+      "SystemId": "Bakudo30_Shitotsusansen_ProjectileEffect",
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Center"
+    }
+  ],
+  "Trails": [
+    {
+      "TrailId": "Arrow"
+    }
+  ]
+}

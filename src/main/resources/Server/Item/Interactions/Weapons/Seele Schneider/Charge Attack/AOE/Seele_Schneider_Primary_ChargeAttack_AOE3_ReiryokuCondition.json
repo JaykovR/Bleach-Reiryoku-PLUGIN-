@@ -1,0 +1,67 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "Reiryoku": 100
+  },
+  "Next": {
+    "Type": "Replace",
+    "Var": "AOE_Charging3",
+    "DefaultOk": true,
+    "DefaultValue": {
+      "Interactions": [
+        "Seele_Schneider_ChargeAttack_AOE_Charging3"
+      ]
+    }
+  },
+  "Failed": {
+    "Type": "Parallel",
+    "Interactions": [
+      {
+        "Interactions": [
+          {
+            "Type": "Replace",
+            "Var": "Seele_Schneider_Spin_Charge2Effect1",
+            "DefaultOk": true,
+            "DefaultValue": {
+              "Interactions": [
+                "Seele_Schneider_ChargeAttack_AOE_Charged2_Effect"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Interactions": [
+          {
+            "Type": "Replace",
+            "Var": "SeeleSchneider_AOE_Charged2_Selector",
+            "DefaultOk": true,
+            "DefaultValue": {
+              "Interactions": [
+                "Seele_Schneider_ChargeAttack_AOE_Charged2_Selector"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Interactions": [
+          {
+            "Type": "ChangeStat",
+            "StatModifiers": {
+              "Reiryoku": -70
+            }
+          }
+        ]
+      },
+      {
+        "Interactions": [
+          {
+            "Type": "SendMessage",
+            "Message": "You dont have the necessary for 3nd charge. (100 Reiryoku Needed)"
+          }
+        ]
+      }
+    ]
+  }
+}

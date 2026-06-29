@@ -1,0 +1,61 @@
+{
+  "Type": "Charging",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Seele_Schneider_Animations",
+    "ItemAnimationId": "AOECharging3",
+    "Particles": [
+      {
+        "SystemId": "Reiatsu_Aura",
+        "Color": "#2dedd4",
+        "TargetEntityPart": "Entity",
+        "Scale": 1.3
+      }
+    ]
+  },
+  "Next": {
+    "0.7": {
+      "Type": "Parallel",
+      "Interactions": [
+        {
+          "Interactions": [
+            {
+              "Type": "Replace",
+              "Var": "Seele_Schneider_Spin_Charge3Effect1",
+              "DefaultOk": true,
+              "DefaultValue": {
+                "Interactions": [
+                  "Seele_Schneider_ChargeAttack_AOE_Charged3_Effect"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "Interactions": [
+            {
+              "Type": "Replace",
+              "Var": "SeeleSchneider_AOE_Charged3_Selector",
+              "DefaultOk": true,
+              "DefaultValue": {
+                "Interactions": [
+                  "Seele_Schneider_ChargeAttack_AOE_Charged3_Selector"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "Interactions": [
+            {
+              "Type": "ChangeStat",
+              "StatModifiers": {
+                "Reiryoku": -100
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "HorizontalSpeedMultiplier": 0.001
+}

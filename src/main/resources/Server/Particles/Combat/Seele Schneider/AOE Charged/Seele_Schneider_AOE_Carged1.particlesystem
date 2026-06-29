@@ -1,0 +1,19 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Seele_Schneider_AOE_Carged1_Bright"
+    },
+    {
+      "SpawnerId": "Seele_Schneider_AOE_Carged1_Alpha"
+    },
+    {
+      "SpawnerId": "Seele_Schneider_AOE_Carged1_Sparks",
+      "FixedRotation": false
+    },
+    {
+      "SpawnerId": "Seele_Schneider_AOE_Carged1_Bright2"
+    }
+  ],
+  "BoundingRadius": 10,
+  "IsImportant": false
+}

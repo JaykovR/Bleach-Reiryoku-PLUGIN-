@@ -175,9 +175,9 @@
       {
         "Type": "Crafting",
         "Categories": [
-          "Weapon_Bow"
+          "Quincy_Weapons"
         ],
-        "Id": "Weapon_Bench"
+        "Id": "Quincy_Workshop"
       }
     ],
     "Output": [

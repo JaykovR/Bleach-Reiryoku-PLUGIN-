@@ -1,0 +1,20 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "Reiryoku": 50
+  },
+  "Next": {
+    "Type": "Replace",
+    "Var": "AOE_Charging1",
+    "DefaultOk": true,
+    "DefaultValue": {
+      "Interactions": [
+        "Seele_Schneider_ChargeAttack_AOE_Charging1"
+      ]
+    }
+  },
+  "Failed": {
+    "Type": "SendMessage",
+    "Message": "You dont have the necessary Reiryoku (50 Reiryoku Needed)"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "LaunchForce": 50,
+  "Physics": {
+    "Type": "Standard"
+  },
+  "Interactions": {
+    "ProjectileHit": {
+      "Interactions": [
+        {
+          "Type": "Replace",
+          "DefaultValue": {
+            "Interactions": [
+              "Bakudo30_Shitotsusansen_Damage"
+            ]
+          },
+          "DefaultOk": true,
+          "Var": "Sho_Damage",
+          "Effects": {
+            "WorldSoundEventId": "SFX_Hado1_Hit",
+            "LocalSoundEventId": "SFX_Hado1_Hit",
+            "Particles": [
+              {
+                "SystemId": "Hado1_Hit",
+                "TargetEntityPart": "Entity",
+                "PositionOffset": {
+                  "X": -1,
+                  "Y": -1
+                }
+              }
+            ]
+          },
+          "RunTime": 0.01
+        },
+        {
+          "Type": "ApplyEffect",
+          "Entity": "Target",
+          "EffectId": "Bakudo30_Shitotsusansen_Effect"
+        },
+        "Common_Projectile_Despawn"
+      ],
+      "RequireNewClick": true
+    },
+    "ProjectileMiss": {
+      "Interactions": [
+        "Common_Projectile_Despawn"
+      ]
+    }
+  },
+  "LaunchLocalSoundEventId": "SFX_Hado1_Launch",
+  "Model": "Bakudo30_Shitousansen_ProjectileModel",
+  "LaunchWorldSoundEventId": "SFX_Hado1_Launch"
+}

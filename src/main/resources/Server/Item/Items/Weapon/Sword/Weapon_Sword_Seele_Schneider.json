@@ -1,5 +1,5 @@
 {
-  "Parent": "Template_Weapon_Sword",
+  "Parent": "Seele_Schenider_Type",
   "TranslationProperties": {
     "Name": "items.Seele_Schneider.name",
     "Description": "items.Seele_Schneider.description"
@@ -14,25 +14,21 @@
     "KnowledgeRequired": false,
     "Input": [
       {
-        "ItemId": "Ingredient_Bar_Iron",
-        "Quantity": 6
-      },
-      {
-        "ItemId": "Ingredient_Leather_Light",
+        "ItemId": "Ingredient_Bar_Silver",
         "Quantity": 3
       },
       {
-        "ItemId": "Ingredient_Fabric_Scrap_Linen",
-        "Quantity": 3
+        "ItemId": "Resonating_Reishi_Core",
+        "Quantity": 1
       }
     ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
         "Categories": [
-          "Weapon_Sword"
+          "Quincy_Weapons"
         ],
-        "Id": "Weapon_Bench"
+        "Id": "Quincy_Workshop"
       }
     ]
   },
@@ -47,6 +43,11 @@
             }
           },
           "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "Seele_Schneider_Slash"
+              }
+            ],
             "WorldSoundEventId": "SFX_Sword_T2_Impact",
             "LocalSoundEventId": "SFX_Sword_T2_Impact"
           }
@@ -63,6 +64,11 @@
             }
           },
           "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "Seele_Schneider_Slash"
+              }
+            ],
             "WorldSoundEventId": "SFX_Sword_T2_Impact",
             "LocalSoundEventId": "SFX_Sword_T2_Impact"
           }
@@ -79,6 +85,11 @@
             }
           },
           "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "Seele_Schneider_Slash"
+              }
+            ],
             "WorldSoundEventId": "SFX_Sword_T2_Impact",
             "LocalSoundEventId": "SFX_Sword_T2_Impact"
           }
@@ -101,6 +112,77 @@
             }
           ],
           "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "Seele_Schneider_Slash"
+              }
+            ],
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "AOE_Charged1_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Signature_Vortexstrike_Spin_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 15
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "Seele_Schneider_Slash"
+              }
+            ],
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "AOE_Charged2_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Signature_Vortexstrike_Spin_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 25
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "Seele_Schneider_Slash"
+              }
+            ],
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "AOE_Charged3_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Signature_Vortexstrike_Spin_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 35
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "Seele_Schneider_Slash"
+              }
+            ],
             "WorldSoundEventId": "SFX_Sword_T2_Impact",
             "LocalSoundEventId": "SFX_Sword_T2_Impact"
           }
@@ -153,8 +235,6 @@
       ]
     }
   },
-  "MaxDurability": 120,
-  "DurabilityLossOnHit": 0.21,
   "IconProperties": {
     "Scale": 0.35,
     "Rotation": [

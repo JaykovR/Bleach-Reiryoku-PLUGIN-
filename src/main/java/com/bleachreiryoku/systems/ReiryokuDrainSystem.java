@@ -25,6 +25,7 @@ import javax.annotation.Nullable;
  */
 public class ReiryokuDrainSystem extends EntityTickingSystem<EntityStore> {
 
+    // Shinigami-Related Regeneration Rates
     private static final float SHIKAI_DRAIN_PER_SECOND = 0.035f;
     private static final float BANKAI_DRAIN_PER_SECOND = 0.047f;
 

@@ -1,0 +1,38 @@
+{
+  "Type": "Charging",
+  "Next": {
+    "0.7": {
+      "Type": "Projectile",
+      "Config": "Bakudo30_Shitotsusansen_ProjectileConfig",
+      "Next": {
+        "Type": "ChangeStat",
+        "ValueType": "Absolute",
+        "Behaviour": "Add",
+        "StatModifiers": {
+          "Reiryoku": -75
+        }
+      }
+    }
+  },
+  "Effects": {
+    "ItemPlayerAnimationsId": "BakudoAnimations",
+    "ItemAnimationId": "30_Shitou_Sansen_Cast",
+    "Particles": [
+      {
+        "SystemId": "Bakudo30_Cast",
+        "TargetEntityPart": "Entity",
+        "PositionOffset": {
+          "Z": 0.7,
+          "X": 0.3,
+          "Y": 0.5
+        }
+      }
+    ],
+    "ClearAnimationOnFinish": true,
+    "WorldSoundEventId": "SFX_Bakudo30_Cast"
+  },
+  "RunTime": 1,
+  "AllowIndefiniteHold": true,
+  "DisplayProgress": true,
+  "HorizontalSpeedMultiplier": 0.01
+}

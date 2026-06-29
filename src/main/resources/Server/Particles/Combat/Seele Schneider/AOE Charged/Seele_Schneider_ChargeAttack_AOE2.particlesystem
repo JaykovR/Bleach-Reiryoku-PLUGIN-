@@ -1,0 +1,11 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Seele_Schneider_AOE_Carged1_Bright"
+    },
+    {
+      "SpawnerId": "Seele_Schneider_AOE_Carged1_Alpha"
+    }
+  ],
+  "BoundingRadius": 10
+}

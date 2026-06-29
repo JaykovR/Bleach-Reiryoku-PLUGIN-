@@ -1,0 +1,11 @@
+{
+  "Name": "Shitotsusansen_Applied",
+  "Duration": 5,
+  "ApplicationEffects": {
+    "Particles": [
+      {
+        "SystemId": "Bakudo30_Applied"
+      }
+    ]
+  }
+}

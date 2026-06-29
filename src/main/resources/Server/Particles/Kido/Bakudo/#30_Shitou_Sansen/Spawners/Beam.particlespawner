@@ -1,0 +1,78 @@
+{
+  "RenderMode": "Erosion",
+  "ParticleRotationInfluence": "Billboard",
+  "MaxConcurrentParticles": 50,
+  "ParticleLifeSpan": {
+    "Min": 0.1,
+    "Max": 0.3
+  },
+  "ParticleRotateWithSpawner": true,
+  "SpawnRate": {
+    "Min": 25.0,
+    "Max": 25.0
+  },
+  "Particle": {
+    "Texture": "Particles/Bakudo30_Line.png",
+    "ScaleRatioConstraint": "OneToOne",
+    "UVOption": "RandomFlipU",
+    "Animation": {
+      "0": {
+        "Opacity": 0.0,
+        "Color": "#ffecb8",
+        "Scale": {
+          "X": {
+            "Min": 1,
+            "Max": 1
+          },
+          "Y": {
+            "Min": 1.0,
+            "Max": 1.0
+          }
+        }
+      },
+      "20": {
+        "Opacity": 0.965,
+        "Color": "#fff200"
+      },
+      "80": {
+        "Color": "#fff200",
+        "Opacity": 1.0
+      },
+      "100": {
+        "Color": "#ffa700",
+        "Opacity": 0.0
+      }
+    },
+    "InitialAnimationFrame": {
+      "Opacity": 0.5,
+      "Color": "#ffffff",
+      "Scale": {
+        "X": {
+          "Min": 0.1,
+          "Max": 0.15
+        }
+      },
+      "Rotation": {
+        "Z": {
+          "Max": 90,
+          "Min": 90
+        }
+      }
+    }
+  },
+  "LinearFiltering": true,
+  "UseEmitDirection": false,
+  "SpawnBurst": true,
+  "Shape": "Cube",
+  "InitialVelocity": {
+    "Speed": {
+      "Min": 2,
+      "Max": 4
+    }
+  },
+  "UVMotion": {
+    "Texture": "Particles/Textures/UVMotion/FlowMap4.png",
+    "SpeedX": 2.96,
+    "Strength": 4.8
+  }
+}

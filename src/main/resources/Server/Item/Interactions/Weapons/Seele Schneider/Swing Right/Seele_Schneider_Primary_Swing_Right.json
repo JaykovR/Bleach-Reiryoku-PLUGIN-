@@ -1,0 +1,27 @@
+{
+  "Type": "Simple",
+  "RunTime": 0.05,
+  "Effects": {
+    "ItemAnimationId": "SwingRight",
+    "WorldSoundEventId": "SFX_Sword_T2_Swing",
+    "LocalSoundEventId": "SFX_Sword_T2_Swing_LR_Local",
+    "ItemPlayerAnimationsId": "Seele_Schneider_Animations"
+  },
+  "Next": {
+    "Type": "ApplyForce",
+    "Force": 5,
+    "Direction": {
+      "Z": -1
+    },
+    "Next": {
+      "Type": "Replace",
+      "Var": "Swing_Right_Selector",
+      "DefaultOk": true,
+      "DefaultValue": {
+        "Interactions": [
+          "Seele_Schneider_Primary_Swing_Right_Selector"
+        ]
+      }
+    }
+  }
+}

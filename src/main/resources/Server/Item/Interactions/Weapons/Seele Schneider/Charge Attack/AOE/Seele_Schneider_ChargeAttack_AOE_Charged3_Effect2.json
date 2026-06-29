@@ -1,0 +1,17 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "Particles": [
+      {
+        "SystemId": "Seele_Schneider_ChargeAttack_AOE2",
+        "TargetNodeName": "Hip",
+        "TargetEntityPart": "Entity",
+        "PositionOffset": {
+          "Y": 1.0
+        },
+        "Scale": 2
+      }
+    ],
+    "CameraEffect": "Sword_Spin"
+  }
+}

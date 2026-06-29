@@ -1,0 +1,45 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Beam",
+      "FixedRotation": false,
+      "PositionOffset": {
+        "Y": 1,
+        "X": 0.2
+      },
+      "RotationOffset": {
+        "Yaw": 90
+      },
+      "StartDelay": 0.1
+    },
+    {
+      "SpawnerId": "Beam2",
+      "FixedRotation": false,
+      "RotationOffset": {
+        "Yaw": -90,
+        "Pitch": -30
+      },
+      "StartDelay": 0.25,
+      "PositionOffset": {
+        "Y": 1,
+        "X": -1
+      }
+    },
+    {
+      "SpawnerId": "Beam3",
+      "FixedRotation": false,
+      "RotationOffset": {
+        "Yaw": -90,
+        "Pitch": 45
+      },
+      "StartDelay": 0.5,
+      "PositionOffset": {
+        "Y": 0.5,
+        "X": -0.2
+      }
+    }
+  ],
+  "CullDistance": 30.0,
+  "IsImportant": true,
+  "LifeSpan": 4
+}
