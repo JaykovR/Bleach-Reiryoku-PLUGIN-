@@ -53,8 +53,15 @@
     "StatModifiers": {
       "Health": [
         {
-          "Amount": 18,
+          "Amount": 20,
           "CalculationType": "Additive"
+        }
+      ],
+      "Stamina": [
+        {
+          "Target": "Max",
+          "CalculationType": "Multiplicative",
+          "Amount": 1.2
         }
       ]
     },

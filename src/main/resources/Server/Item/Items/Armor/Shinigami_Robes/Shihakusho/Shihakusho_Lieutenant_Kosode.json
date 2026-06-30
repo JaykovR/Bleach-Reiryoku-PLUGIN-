@@ -54,21 +54,28 @@
     "StatModifiers": {
       "Health": [
         {
-          "Amount": 18,
+          "Amount": 26,
           "CalculationType": "Additive"
+        }
+      ],
+      "Stamina": [
+        {
+          "Target": "Max",
+          "CalculationType": "Multiplicative",
+          "Amount": 1.35
         }
       ]
     },
     "DamageResistance": {
       "Physical": [
         {
-          "Amount": 0.13,
+          "Amount": 0.16,
           "CalculationType": "Percent"
         }
       ],
       "Projectile": [
         {
-          "Amount": 0.13,
+          "Amount": 0.16,
           "CalculationType": "Percent"
         }
       ]

@@ -1,7 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Quincy Uniform Type 1",
-    "Description": "TODO ewe"
+    "Name": "items.Quincy_Uniform_Type1_Top_NoCape.name",
+    "Description": "items.Quincy_Uniform_Type1_Top_NoCape.description"
   },
   "Parent": "Armor_Bronze_Chest",
   "Quality": "Rare",
@@ -25,11 +25,7 @@
     "Input": [
       {
         "Quantity": 2,
-        "ItemId": "Ingredient_Bolt_Soulweave_Cloth"
-      },
-      {
-        "ItemId": "Ingredient_Bolt_Purified_Soulweave_Cloth",
-        "Quantity": 1
+        "ItemId": "Ingredient_Bolt_Purified_Soulweave_Cloth"
       }
     ],
     "BenchRequirement": [
@@ -62,13 +58,13 @@
     "DamageResistance": {
       "Physical": [
         {
-          "Amount": 0.12,
+          "Amount": 0.16,
           "CalculationType": "Percent"
         }
       ],
       "Projectile": [
         {
-          "Amount": 0.12,
+          "Amount": 0.08,
           "CalculationType": "Percent"
         }
       ]

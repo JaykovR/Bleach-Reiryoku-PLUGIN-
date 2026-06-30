@@ -1,10 +1,10 @@
 {
   "TranslationProperties": {
-    "Name": "items.Shihakusho_Kosode.name",
-    "Description": "items.Shihakusho_Kosode.description"
+    "Name": "items.StandardIssue_Shihakusho_Kosode.name",
+    "Description": "items.StandardIssue_Shihakusho_Kosode.description"
   },
   "Parent": "Armor_Bronze_Chest",
-  "Quality": "Rare",
+  "Quality": "Uncommon",
   "ItemLevel": 15,
   "IconProperties": {
     "Scale": 0.5,
@@ -20,30 +20,6 @@
   },
   "Model": "Items/Armors/Shinigami_Robes/Shihakusho.blockymodel",
   "Texture": "Items/Armors/Shinigami_Robes/Shihakusho_Texture4.png",
-  "Recipe": {
-    "TimeSeconds": 2,
-    "Input": [
-      {
-        "Quantity": 2,
-        "ItemId": "Ingredient_Bolt_Soulweave_Cloth"
-      },
-      {
-        "ItemId": "Ingredient_Bolt_Purified_Soulweave_Cloth",
-        "Quantity": 1
-      }
-    ],
-    "BenchRequirement": [
-      {
-        "Id": "Soulweave_Loom",
-        "Type": "Crafting",
-        "Categories": [
-          "Soulweave_Loom_Shihakusho"
-        ],
-        "RequiredTierLevel": 1
-      }
-    ],
-    "KnowledgeRequired": false
-  },
   "Armor": {
     "ArmorSlot": "Chest",
     "BaseDamageResistance": 0,
@@ -55,7 +31,7 @@
     "StatModifiers": {
       "Health": [
         {
-          "Amount": 20,
+          "Amount": 17,
           "CalculationType": "Additive"
         }
       ],
@@ -63,20 +39,20 @@
         {
           "Target": "Max",
           "CalculationType": "Multiplicative",
-          "Amount": 1.2
+          "Amount": 1.1
         }
       ]
     },
     "DamageResistance": {
       "Physical": [
         {
-          "Amount": 0.12,
+          "Amount": 0.09,
           "CalculationType": "Percent"
         }
       ],
       "Projectile": [
         {
-          "Amount": 0.12,
+          "Amount": 0.09,
           "CalculationType": "Percent"
         }
       ]

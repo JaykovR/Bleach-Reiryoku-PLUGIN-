@@ -1,12 +1,12 @@
 {
   "TranslationProperties": {
-    "Name": "items.Quincy_Uniform_Type1_Pants.name",
-    "Description": "items.Quincy_Uniform_Type1_Pants.description"
+    "Name": "items.Shihakusho_Hakama_Lieutenant.name",
+    "Description": "items.Shihakusho_Hakama_Lieutenant.description"
   },
   "Parent": "Armor_Iron_Legs",
   "Quality": "Rare",
   "ItemLevel": 40,
-  "Icon": "Icons/ItemsGenerated/Quincy_Uniform_Type1_Pants.png",
+  "Icon": "Icons/ItemsGenerated/Shihakusho_Hakama.png",
   "IconProperties": {
     "Scale": 0.5,
     "Rotation": [
@@ -19,14 +19,14 @@
       -30
     ]
   },
-  "Model": "Items/Armors/Quincy Clothes/Quincy_Pants.blockymodel",
-  "Texture": "Items/Armors/Quincy Clothes/Quincy_Pants_Texture.png",
+  "Model": "Items/Armors/Hakama/Hakama.blockymodel",
+  "Texture": "Items/Armors/Hakama/HakamaTexture.png",
   "Recipe": {
     "TimeSeconds": 2,
     "Input": [
       {
-        "Quantity": 2,
-        "ItemId": "Ingredient_Bolt_Purified_Soulweave_Cloth"
+        "Quantity": 3,
+        "ItemId": "Ingredient_Bolt_Soulweave_Cloth"
       }
     ],
     "BenchRequirement": [
@@ -34,7 +34,7 @@
         "Id": "Soulweave_Loom",
         "Type": "Crafting",
         "Categories": [
-          "Soulweave_Loom_Quincy"
+          "Soulweave_Loom_Shihakusho"
         ],
         "RequiredTierLevel": 1
       }
@@ -50,13 +50,13 @@
     "DamageResistance": {
       "Physical": [
         {
-          "Amount": 0.09,
+          "Amount": 0.13,
           "CalculationType": "Percent"
         }
       ],
       "Projectile": [
         {
-          "Amount": 0.15,
+          "Amount": 0.13,
           "CalculationType": "Percent"
         }
       ]
@@ -70,11 +70,10 @@
       ]
     },
     "DamageClassEnhancement": {
-      "Signature": [
+      "Light": [
         {
-          "Target": "Max",
-          "CalculationType": "Multiplicative",
-          "Amount": 0.06
+          "Amount": 0.04,
+          "CalculationType": "Multiplicative"
         }
       ]
     }

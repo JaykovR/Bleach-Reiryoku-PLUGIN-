@@ -104,18 +104,28 @@ Seele_Schneider.description = A Quincy Weapon that may look like a sword, but fu
 
 
 ## ARMOUR --------------------------
+StandardIssue_Shihakusho_Kosode.name = Standard Issue Shihakusho - Kosode
+StandardIssue_Shihakusho_Kosode.description = The top of the standard Shinigami uniform worn by all members of the Gotei 13. You arrived to this world wearing this. Treasure it.
+StandardIssue_Shihakusho_Hakama.name = Standard Issue Shihakusho - Hakama
+StandardIssue_Shihakusho_Hakama.description = The lower-body garment that is included with the standard Shinigami uniform <i>Shihakusho</i>. You arrived to this world wearing this. Treasure it.
 Shihakusho_Kosode.name = Shihakusho - Kosode
-Shihakusho_Kosode.description = The top of the standard Shinigami uniform worn by all members of the Gotei 13.
-Shihakusho_Kosode_Lieutenant.name = Shihakusho - Kosode (Lieutenant)
-Shihakusho_Kosode_Lieutenant.description = The upper-body garment of the standard <i>Shihakusho</i> with a Lieutenant badge which represents great prestige.
+Shihakusho_Kosode.description = While it looks the same as the standard <i>Shihakusho</i>, the difference relies on it's resistance and high quality materials. More experienced members recieve this variation of the <i>Shihakusho</i>.
+Shihakusho_Hakama.name = Shihakusho - Hakama
+Shihakusho_Hakama.description = While it looks the same as the standard <i>Shihakusho</i>, the difference relies on it's resistance and high quality materials. More experienced members recieve this variation of the <i>Shihakusho</i>.
 Shihakusho_Kosode_Sleeveless.name = Shihakusho - Kosode (Sleeveless) 
 Shihakusho_Kosode_Sleeveless.description = A modified <i>Shihakusho</i> for those who desire more liberty of movement. More considered a cosmetic modification to the standard uniform.
-Shinigami_Robes_Captain.name = Captain Shihakusho
-Shinigami_Robes_Captain.description = The white coat worn by Captains over their standard uniform. Provides superior spiritual protection and denotes highest rank in the Gotei 13.
 Shihakusho_Kosode_BareShoulder.name = Shihakusho - Kosode (Bare Shoulders)
 Shihakusho_Kosode_BareShoulder.description = A modified <i>Shihakusho</i> that serves the same purpose as the Sleeveless variant while maintaining a more elegant and ceremonial appearance.
-Shihakusho_Hakama.name = Shihakusho - Hakama
-Shihakusho_Hakama.description = The lower-body garment that is included with the standard Shinigami uniform <i>Shihakusho</i>.
+Shihakusho_Kosode_Lieutenant.name = Shihakusho - Kosode (Lieutenant)
+Shihakusho_Kosode_Lieutenant.description = The upper-body garment of the standard <i>Shihakusho</i> with a Lieutenant badge which represents great prestige.
+Shihakusho_Hakama_Lieutenant.name = Shihakusho - Hakama (Lieutenant)
+Shihakusho_Hakama_Lieutenant.description = The lower-body garment of the <i>Shihakusho</i> made with premium materials only for those worthy.
+Shinigami_Robes_Captain.name = Captain Shihakusho
+Shinigami_Robes_Captain.description = The white coat worn by Captains over their standard uniform. Provides superior spiritual protection and denotes highest rank in the Gotei 13.
+Shihakusho_Hakama_Captain.name = Shihakusho - Hakama (Captain)
+Shihakusho_Hakama_Captain.description = This lower garment has an unmatched quality. Rumors say that the most noticable difference is the comfort and mobility they provide. But truth is, they also have better resistance. \
+										Situations that require a Captain in battle are usually high-desctruction operations, therefore they need something that stands up to that. Otherwise their clothes will be the first\
+										thing to fail them.
 
 Hollow_Mask.name = Hollow Mask
 Hollow_Mask.description = A manifestation of the power belonging to your inner Hollow.
@@ -123,6 +133,18 @@ Hollow_Mask.description = A manifestation of the power belonging to your inner H
 Tensa_Zangetsu_Outfit.name = Mantle of the Heavenly Chain
 Tensa_Zangetsu_Outfit.description = A sharp black mantle that born from thee chains of heaven. The one who wears it is said to be abe to slash the moon.
 
+Quincy_Uniform_Type1_Top.name = Traditional Quincy Top
+Quincy_Uniform_Type1_Top.description = A traditional Quincy combat unifrom woven for mobility and efficient Reishi manipulation.
+Quincy_Uniform_Type1_Pants.name = Traditional Quincy Pants
+Quincy_Uniform_Type1_Pants.description = This pants are part of the traditional garments of a quincy, where they wear mainly white clothing. They offer comfort and durability during battles.
+Quincy_Uniform_Type1_Top_NoCape.name = Traditional Quincy Top (No Cape)
+Quincy_Uniform_Type1_Top_NoCape.description = A variant of the traditional Quincy combat uniform. Some people prefer to not have the cape.
+Wandenreich_Cap.name = Wandenreich Military Cap
+Wandenreich_Cap.description = A ceremonial military cap worn by members of the Wandenreich. It represents devotion to Yhwach's ideals.
+Wandenreich_Top.name = Wandenreich Military Top
+Wandenreich_Top.description = The formal combat attire of the Wandenreich consisting of a white military coat. The users usually wear the traditional uniform below this, or any variation of their liking. Provides great resistance.
+Wandenreich_Pants.name = Wandenreich Military Pants
+Wandenreich_Pants.description = Military-grade trousers and pants worn by Wandenreich soldiers. Tailored to support all-terrain combat and unexpected situations.
 ## INGREDIENTS --------------------------
 Resonating_Reishi_Core.name = Resonating Reishi Core
 Resonating_Reishi_Core.description = This core hums at a frequency that mimics yours. It's an extension of your soul. Ready to be assigned to a blade to awaken it.

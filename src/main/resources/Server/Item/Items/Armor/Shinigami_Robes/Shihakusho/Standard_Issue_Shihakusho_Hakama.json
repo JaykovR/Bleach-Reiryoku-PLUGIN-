@@ -1,12 +1,12 @@
 {
   "TranslationProperties": {
-    "Name": "items.Quincy_Uniform_Type1_Pants.name",
-    "Description": "items.Quincy_Uniform_Type1_Pants.description"
+    "Name": "items.StandardIssue_Shihakusho_Hakama.name",
+    "Description": "items.StandardIssue_Shihakusho_Hakama.description"
   },
   "Parent": "Armor_Iron_Legs",
-  "Quality": "Rare",
+  "Quality": "Uncommon",
   "ItemLevel": 40,
-  "Icon": "Icons/ItemsGenerated/Quincy_Uniform_Type1_Pants.png",
+  "Icon": "Icons/ItemsGenerated/Shihakusho_Hakama.png",
   "IconProperties": {
     "Scale": 0.5,
     "Rotation": [
@@ -19,28 +19,8 @@
       -30
     ]
   },
-  "Model": "Items/Armors/Quincy Clothes/Quincy_Pants.blockymodel",
-  "Texture": "Items/Armors/Quincy Clothes/Quincy_Pants_Texture.png",
-  "Recipe": {
-    "TimeSeconds": 2,
-    "Input": [
-      {
-        "Quantity": 2,
-        "ItemId": "Ingredient_Bolt_Purified_Soulweave_Cloth"
-      }
-    ],
-    "BenchRequirement": [
-      {
-        "Id": "Soulweave_Loom",
-        "Type": "Crafting",
-        "Categories": [
-          "Soulweave_Loom_Quincy"
-        ],
-        "RequiredTierLevel": 1
-      }
-    ],
-    "KnowledgeRequired": false
-  },
+  "Model": "Items/Armors/Hakama/Hakama.blockymodel",
+  "Texture": "Items/Armors/Hakama/HakamaTexture.png",
   "Armor": {
     "ArmorSlot": "Legs",
     "BaseDamageResistance": 0,
@@ -50,13 +30,13 @@
     "DamageResistance": {
       "Physical": [
         {
-          "Amount": 0.09,
+          "Amount": 0.07,
           "CalculationType": "Percent"
         }
       ],
       "Projectile": [
         {
-          "Amount": 0.15,
+          "Amount": 0.07,
           "CalculationType": "Percent"
         }
       ]
@@ -64,17 +44,16 @@
     "StatModifiers": {
       "Health": [
         {
-          "Amount": 19,
+          "Amount": 12,
           "CalculationType": "Additive"
         }
       ]
     },
     "DamageClassEnhancement": {
-      "Signature": [
+      "Light": [
         {
-          "Target": "Max",
-          "CalculationType": "Multiplicative",
-          "Amount": 0.06
+          "Amount": 0.04,
+          "CalculationType": "Multiplicative"
         }
       ]
     }

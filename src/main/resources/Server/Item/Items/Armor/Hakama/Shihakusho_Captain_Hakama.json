@@ -1,35 +1,36 @@
 {
   "TranslationProperties": {
-    "Name": "items.Shihakusho_Kosode.name",
-    "Description": "items.Shihakusho_Kosode.description"
+    "Name": "items.Shihakusho_Hakama_Captain.name",
+    "Description": "items.Shihakusho_Hakama_Captain.description"
   },
-  "Parent": "Armor_Bronze_Chest",
-  "Quality": "Rare",
-  "ItemLevel": 15,
+  "Parent": "Armor_Iron_Legs",
+  "Quality": "Epic",
+  "ItemLevel": 40,
+  "Icon": "Icons/ItemsGenerated/Shihakusho_Hakama.png",
   "IconProperties": {
     "Scale": 0.5,
     "Rotation": [
-      23,
-      38,
+      22.5,
+      45,
       22.5
     ],
     "Translation": [
-      6,
-      -59
+      0,
+      -30
     ]
   },
-  "Model": "Items/Armors/Shinigami_Robes/Shihakusho.blockymodel",
-  "Texture": "Items/Armors/Shinigami_Robes/Shihakusho_Texture4.png",
+  "Model": "Items/Armors/Hakama/Hakama.blockymodel",
+  "Texture": "Items/Armors/Hakama/HakamaTexture.png",
   "Recipe": {
     "TimeSeconds": 2,
     "Input": [
       {
-        "Quantity": 2,
+        "Quantity": 4,
         "ItemId": "Ingredient_Bolt_Soulweave_Cloth"
       },
       {
         "ItemId": "Ingredient_Bolt_Purified_Soulweave_Cloth",
-        "Quantity": 1
+        "Quantity": 2
       }
     ],
     "BenchRequirement": [
@@ -45,63 +46,62 @@
     "KnowledgeRequired": false
   },
   "Armor": {
-    "ArmorSlot": "Chest",
+    "ArmorSlot": "Legs",
     "BaseDamageResistance": 0,
     "CosmeticsToHide": [
-      "Overtop",
-      "Undertop",
-      "Cape"
+      "Pants"
     ],
-    "StatModifiers": {
-      "Health": [
-        {
-          "Amount": 20,
-          "CalculationType": "Additive"
-        }
-      ],
-      "Stamina": [
-        {
-          "Target": "Max",
-          "CalculationType": "Multiplicative",
-          "Amount": 1.2
-        }
-      ]
-    },
     "DamageResistance": {
       "Physical": [
         {
-          "Amount": 0.12,
+          "Amount": 0.15,
           "CalculationType": "Percent"
         }
       ],
       "Projectile": [
         {
-          "Amount": 0.12,
+          "Amount": 0.15,
           "CalculationType": "Percent"
+        }
+      ],
+      "Fall": [
+        {
+          "CalculationType": "Percent",
+          "Amount": 0.2
+        }
+      ]
+    },
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 23,
+          "CalculationType": "Additive"
         }
       ]
     },
     "DamageClassEnhancement": {
-      "Charged": [
+      "Light": [
         {
-          "CalculationType": "Multiplicative",
-          "Amount": 0.04
+          "Amount": 0.04,
+          "CalculationType": "Multiplicative"
         }
       ]
     }
   },
+  "MaxDurability": 150,
   "Tags": {
     "Type": [
       "Armor"
     ],
     "Family": [
-      "Cloth_Linen"
+      "Adamantite"
     ]
   },
-  "MaxDurability": 120,
   "ItemSoundSetId": "ISS_Armor_Cloth",
+  "DurabilityLossOnHit": 0.5,
   "Categories": [
+    "Items.Armors",
     "BleachCategory.Armors"
   ],
-  "Icon": "Icons/ItemsGenerated/Shihakusho_Kosode.png"
+  "MaxStack": 1
 }

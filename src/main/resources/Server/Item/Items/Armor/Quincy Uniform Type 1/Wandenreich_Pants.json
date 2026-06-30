@@ -1,7 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Wandenreich Pants",
-    "Description": "items.Shihakusho_Hakama.description"
+    "Name": "items.Wandenreich_Pants.name",
+    "Description": "items.Wandenreich_Pants.description"
   },
   "Parent": "Armor_Iron_Legs",
   "Quality": "Rare",
@@ -25,8 +25,12 @@
     "TimeSeconds": 2,
     "Input": [
       {
-        "Quantity": 3,
-        "ItemId": "Ingredient_Bolt_Soulweave_Cloth"
+        "Quantity": 2,
+        "ItemId": "Ingredient_Bolt_Purified_Soulweave_Cloth"
+      },
+      {
+        "ItemId": "Ingredient_Bolt_Soulweave_Cloth",
+        "Quantity": 1
       }
     ],
     "BenchRequirement": [
@@ -51,13 +55,13 @@
     "DamageResistance": {
       "Physical": [
         {
-          "Amount": 0.112,
+          "Amount": 0.16,
           "CalculationType": "Percent"
         }
       ],
       "Projectile": [
         {
-          "Amount": 0.112,
+          "Amount": 0.1,
           "CalculationType": "Percent"
         }
       ]
@@ -65,7 +69,7 @@
     "StatModifiers": {
       "Health": [
         {
-          "Amount": 19,
+          "Amount": 20,
           "CalculationType": "Additive"
         }
       ]

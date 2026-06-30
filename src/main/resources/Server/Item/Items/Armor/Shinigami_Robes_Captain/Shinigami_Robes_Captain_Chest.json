@@ -61,27 +61,21 @@
       "Stamina": [
         {
           "Target": "Max",
-          "CalculationType": "Additive",
-          "Amount": 5
-        }
-      ],
-      "Mana": [
-        {
-          "CalculationType": "Additive",
-          "Amount": 50
+          "CalculationType": "Multiplicative",
+          "Amount": 1.7
         }
       ]
     },
     "DamageResistance": {
       "Physical": [
         {
-          "Amount": 0.14,
+          "Amount": 0.2,
           "CalculationType": "Percent"
         }
       ],
       "Projectile": [
         {
-          "Amount": 0.14,
+          "Amount": 0.2,
           "CalculationType": "Percent"
         }
       ]
@@ -90,7 +84,21 @@
       "Charged": [
         {
           "CalculationType": "Multiplicative",
+          "Amount": 0.07
+        }
+      ],
+      "Light": [
+        {
+          "Target": "Max",
+          "CalculationType": "Multiplicative",
           "Amount": 0.05
+        }
+      ],
+      "Signature": [
+        {
+          "Target": "Max",
+          "CalculationType": "Multiplicative",
+          "Amount": 0.1
         }
       ]
     }

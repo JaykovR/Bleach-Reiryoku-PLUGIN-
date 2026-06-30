@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Wandenreich Cap"
+    "Name": "items.Wandenreich_Cap.name",
+    "Description": "items.Wandenreich_Cap.description"
   },
   "Parent": "Armor_Iron_Head",
   "ItemLevel": 10,
@@ -8,14 +9,15 @@
   "Model": "Items/Armors/Quincy Clothes/Wandenreich/Cap/Wandenreich_Cap.blockymodel",
   "Texture": "Items/Armors/Quincy Clothes/Wandenreich/Cap/texture.png",
   "Recipe": {
+    "TimeSeconds": 2,
     "Input": [
       {
-        "ItemId": "Ingredient_Bar_Copper",
-        "Quantity": 6
+        "Quantity": 2,
+        "ItemId": "Ingredient_Bolt_Purified_Soulweave_Cloth"
       },
       {
-        "ItemId": "Ingredient_Fibre",
-        "Quantity": 2
+        "ItemId": "Ingredient_Bolt_Soulweave_Cloth",
+        "Quantity": 1
       }
     ],
     "BenchRequirement": [
@@ -28,8 +30,7 @@
         "RequiredTierLevel": 1
       }
     ],
-    "KnowledgeRequired": false,
-    "TimeSeconds": 3
+    "KnowledgeRequired": false
   },
   "Armor": {
     "ArmorSlot": "Head",
@@ -71,7 +72,7 @@
   },
   "ItemSoundSetId": "ISS_Armor_Heavy",
   "DurabilityLossOnHit": 0.5,
-  "Quality": "Common",
+  "Quality": "Rare",
   "Categories": [
     "BleachCategory.Armors"
   ],

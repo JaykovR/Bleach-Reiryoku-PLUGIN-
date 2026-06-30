@@ -1,7 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Wandenreich Top",
-    "Description": "TODO ewe"
+    "Name": "items.Wandenreich_Top.name",
+    "Description": "items.Wandenreich_Top.description"
   },
   "Parent": "Armor_Bronze_Chest",
   "Quality": "Rare",
@@ -25,10 +25,10 @@
     "Input": [
       {
         "Quantity": 2,
-        "ItemId": "Ingredient_Bolt_Soulweave_Cloth"
+        "ItemId": "Ingredient_Bolt_Purified_Soulweave_Cloth"
       },
       {
-        "ItemId": "Ingredient_Bolt_Purified_Soulweave_Cloth",
+        "ItemId": "Ingredient_Bolt_Soulweave_Cloth",
         "Quantity": 1
       }
     ],
@@ -54,7 +54,7 @@
     "StatModifiers": {
       "Health": [
         {
-          "Amount": 18,
+          "Amount": 28,
           "CalculationType": "Additive"
         }
       ]
@@ -68,7 +68,7 @@
       ],
       "Projectile": [
         {
-          "Amount": 0.12,
+          "Amount": 0.2,
           "CalculationType": "Percent"
         }
       ]
@@ -77,7 +77,7 @@
       "Charged": [
         {
           "CalculationType": "Multiplicative",
-          "Amount": 0.04
+          "Amount": 0.1
         }
       ]
     }

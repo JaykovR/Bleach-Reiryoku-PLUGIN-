@@ -49,13 +49,21 @@
     "BaseDamageResistance": 0,
     "CosmeticsToHide": [
       "Overtop",
-      "Undertop"
+      "Undertop",
+      "Cape"
     ],
     "StatModifiers": {
       "Health": [
         {
-          "Amount": 17,
+          "Amount": 18,
           "CalculationType": "Additive"
+        }
+      ],
+      "Stamina": [
+        {
+          "Target": "Max",
+          "CalculationType": "Multiplicative",
+          "Amount": 1.3
         }
       ]
     },
