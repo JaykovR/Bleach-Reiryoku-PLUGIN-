@@ -1,0 +1,6 @@
+{
+  "Type": "PlayerRaceCheck",
+  "DesiredRace": "Quincy",
+  "Next": "Kojaku_Primary_Shoot",
+  "RunTime": 0.1
+}

@@ -36,33 +36,37 @@
     "Ability3": {
       "Interactions": [
         {
-          "Type": "ShikaiCheck",
+          "Type": "PlayerRaceCheck",
+          "DesiredRace": "Shinigami",
           "Next": {
-            "Type": "Simple",
-            "Effects": {
-              "ItemAnimationId": "ShikaiActivation",
-              "Particles": [
-                {
-                  "SystemId": "Z_Shikai_Tornado",
-                  "TargetEntityPart": "Entity",
-                  "DetachedFromModel": false
-                }
-              ],
-              "LocalSoundEventId": "SFX_Shikai_Hozukimaru",
-              "ItemPlayerAnimationsId": "Sealed_Zangetsu_Animations"
-            },
-            "RunTime": 1,
+            "Type": "ShikaiCheck",
             "Next": {
-              "Type": "SwapItemInteraction",
-              "ItemToAdd": {
-                "Id": "Weapon_Sword_Shikai_Zangetsu"
+              "Type": "Simple",
+              "Effects": {
+                "ItemAnimationId": "ShikaiActivation",
+                "Particles": [
+                  {
+                    "SystemId": "Z_Shikai_Tornado",
+                    "TargetEntityPart": "Entity",
+                    "DetachedFromModel": false
+                  }
+                ],
+                "LocalSoundEventId": "SFX_Shikai_Hozukimaru",
+                "ItemPlayerAnimationsId": "Sealed_Zangetsu_Animations"
               },
-              "ItemToRemove": {
-                "Id": "Weapon_Sword_Sealed_Zangetsu"
+              "RunTime": 1,
+              "Next": {
+                "Type": "SwapItemInteraction",
+                "ItemToAdd": {
+                  "Id": "Weapon_Sword_Shikai_Zangetsu"
+                },
+                "ItemToRemove": {
+                  "Id": "Weapon_Sword_Sealed_Zangetsu"
+                }
               }
-            }
-          },
-          "RunTime": 0.02
+            },
+            "RunTime": 0.02
+          }
         }
       ]
     }

@@ -129,10 +129,10 @@ public class playerStats implements Component<EntityStore> {
     public int hadoProficiency = 0;
     public int bakudoProficiency = 0;
 
-    public static final String RACE_SHINIGAMI = "Shinigami";
-    public static final String RACE_QUINCY    = "Quincy";
-    public static final String RACE_HOLLOW    = "Hollow";
-    public static final String RACE_HUMAN     = "Human";
+    public static final String RACE_SHINIGAMI   = "Shinigami";
+    public static final String RACE_QUINCY      = "Quincy";
+    public static final String RACE_HOLLOW      = "Hollow";
+    public static final String RACE_FULLBRINGER = "Fullbringer";
 
     public String playerPrimaryRace;
     public String playerSecondaryRace;
@@ -164,7 +164,7 @@ public class playerStats implements Component<EntityStore> {
 
     public void setPlayerPrimaryRace(String chosenRace) {
         if (chosenRace.equals(RACE_SHINIGAMI) || chosenRace.equals(RACE_QUINCY)
-                || chosenRace.equals(RACE_HOLLOW) || chosenRace.equals(RACE_HUMAN)) {
+                || chosenRace.equals(RACE_HOLLOW) || chosenRace.equals(RACE_FULLBRINGER)) {
             playerPrimaryRace = chosenRace;
         }
     }

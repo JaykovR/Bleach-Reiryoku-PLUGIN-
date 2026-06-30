@@ -1,0 +1,6 @@
+{
+  "Type": "PlayerRaceCheck",
+  "DesiredRace": "Quincy",
+  "Next": "Hirenkyaku1",
+  "RunTime": 0.1
+}

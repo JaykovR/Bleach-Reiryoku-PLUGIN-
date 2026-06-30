@@ -10,6 +10,7 @@ import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import com.bleachreiryoku.hud.ReiryokuBar;
 import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.bleachreiryoku.playerData.playerStats;
+import com.hypixel.hytale.server.core.inventory.ItemStack;
 
 import org.checkerframework.checker.nullness.compatqual.NonNullDecl;
 import org.checkerframework.checker.nullness.compatqual.NullableDecl;
@@ -27,16 +28,26 @@ public class playerJoinSystem extends RefSystem<EntityStore>{
         var brType = playerStats.getComponentType();
         if (brType==null) return;
         var br = store.getComponent(ref, brType);
+        boolean isFirstJoin = (br == null);
 
         if (br == null){
-            commandBuffer.addComponent(ref, brType, new playerStats());
+            br = new playerStats();
+            commandBuffer.addComponent(ref, brType, br);
+        }
+
+        var player = store.getComponent(ref, Player.getComponentType());
+
+        // Only for true first-timers so they don't accumulate this item when relogging.
+        if (isFirstJoin) {
+            if (player != null) {
+                player.getInventory().getCombinedHotbarFirst().addItemStack(new ItemStack("Open_Race_Menu", 1));
+            }
         }
 
         // Show Reiryoku HUD automatically on join
-            var player = store.getComponent(ref, Player.getComponentType());
-            if (player != null) {
-                player.getHudManager().addCustomHud(playerRef, new ReiryokuBar(playerRef));
-            }
+        if (player != null) {
+            player.getHudManager().addCustomHud(playerRef, new ReiryokuBar(playerRef));
+        }
 
 
     }

@@ -35,24 +35,29 @@
     "Ability3": {
       "Interactions": [
         {
-          "Type": "ShikaiCheck",
+          "Type": "PlayerRaceCheck",
+          "RunTime": 0.1,
+          "DesiredRace": "Shinigami",
           "Next": {
-            "Type": "Simple",
-            "Effects": {
-              "ItemPlayerAnimationsId": "Shikai_Benihime_Animations",
-              "ItemAnimationId": "ShikaiActivation"
-            },
-            "RunTime": 0,
+            "Type": "ShikaiCheck",
             "Next": {
-              "Type": "ApplyEffect",
-              "EffectId": "Shikai_Benihime_Activation",
+              "Type": "Simple",
+              "Effects": {
+                "ItemPlayerAnimationsId": "Shikai_Benihime_Animations",
+                "ItemAnimationId": "ShikaiActivation"
+              },
+              "RunTime": 0,
               "Next": {
-                "Type": "SwapItemInteraction",
-                "ItemToAdd": {
-                  "Id": "Weapon_Sword_Shikai_Benihime"
-                },
-                "ItemToRemove": {
-                  "Id": "Weapon_Sword_Sealed_Benihime"
+                "Type": "ApplyEffect",
+                "EffectId": "Shikai_Benihime_Activation",
+                "Next": {
+                  "Type": "SwapItemInteraction",
+                  "ItemToAdd": {
+                    "Id": "Weapon_Sword_Shikai_Benihime"
+                  },
+                  "ItemToRemove": {
+                    "Id": "Weapon_Sword_Sealed_Benihime"
+                  }
                 }
               }
             }

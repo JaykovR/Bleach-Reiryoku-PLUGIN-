@@ -35,28 +35,32 @@
     "Ability3": {
       "Interactions": [
         {
-          "Type": "ShikaiCheck",
+          "Type": "PlayerRaceCheck",
+          "DesiredRace": "Shinigami",
           "Next": {
-            "Type": "Simple",
-            "Effects": {
-              "ItemPlayerAnimationsId": "WabisukeAnimations",
-              "ItemAnimationId": "ShikaiActivation",
-              "Particles": [
-                {
-                  "SystemId": "Smoke_Black",
-                  "TargetEntityPart": "PrimaryItem"
-                }
-              ],
-              "LocalSoundEventId": "SFX_Shikai_Activation_Wabisuke"
-            },
-            "RunTime": 0.7,
+            "Type": "ShikaiCheck",
             "Next": {
-              "Type": "SwapItemInteraction",
-              "ItemToAdd": {
-                "Id": "Weapon_Sword_Shikai_Wabisuke"
+              "Type": "Simple",
+              "Effects": {
+                "ItemPlayerAnimationsId": "WabisukeAnimations",
+                "ItemAnimationId": "ShikaiActivation",
+                "Particles": [
+                  {
+                    "SystemId": "Smoke_Black",
+                    "TargetEntityPart": "PrimaryItem"
+                  }
+                ],
+                "LocalSoundEventId": "SFX_Shikai_Activation_Wabisuke"
               },
-              "ItemToRemove": {
-                "Id": "Weapon_Sword_Sealed_Wabisuke"
+              "RunTime": 0.7,
+              "Next": {
+                "Type": "SwapItemInteraction",
+                "ItemToAdd": {
+                  "Id": "Weapon_Sword_Shikai_Wabisuke"
+                },
+                "ItemToRemove": {
+                  "Id": "Weapon_Sword_Sealed_Wabisuke"
+                }
               }
             }
           }

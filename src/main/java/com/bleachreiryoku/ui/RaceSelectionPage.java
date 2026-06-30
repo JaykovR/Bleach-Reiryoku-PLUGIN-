@@ -29,8 +29,8 @@ public class RaceSelectionPage extends InteractiveCustomUIPage<RaceSelectionPage
     // Items granted when the player confirms the Shinigami race.
     // Add entries here if other races should also receive starter items.
     private static final String[] SHINIGAMI_STARTER_ITEMS = {
-            "Shihakusho_Hakama",
-            "Shihakusho_Kosode",
+            "Standard_Issue_Shihakusho_Hakama",
+            "Standard_Issue_Shihakusho_Kosode",
             "Weapon_Sword_Asauchi"
     };
     private static final String[] QUINCY_STARTER_ITEMS = {

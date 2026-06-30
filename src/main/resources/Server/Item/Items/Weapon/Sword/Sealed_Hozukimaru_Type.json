@@ -35,34 +35,39 @@
     "Ability3": {
       "Interactions": [
         {
-          "Type": "ShikaiCheck",
+          "Type": "PlayerRaceCheck",
+          "DesiredRace": "Shinigami",
+          "RunTime": 0.1,
           "Next": {
-            "Type": "Simple",
-            "Effects": {
-              "ItemPlayerAnimationsId": "HozukimaruAnimations",
-              "ItemAnimationId": "ShikaiActivation",
-              "Particles": [
-                {
-                  "SystemId": "Shikai_Activation_Hozukimaru",
-                  "TargetEntityPart": "PrimaryItem",
-                  "Scale": 0.4,
-                  "DetachedFromModel": false
-                }
-              ],
-              "LocalSoundEventId": "SFX_Shikai_Hozukimaru"
-            },
-            "RunTime": 0.5,
+            "Type": "ShikaiCheck",
             "Next": {
-              "Type": "SwapItemInteraction",
-              "ItemToAdd": {
-                "Id": "Weapon_Spear_Shikai_Hozukimaru"
+              "Type": "Simple",
+              "Effects": {
+                "ItemPlayerAnimationsId": "HozukimaruAnimations",
+                "ItemAnimationId": "ShikaiActivation",
+                "Particles": [
+                  {
+                    "SystemId": "Shikai_Activation_Hozukimaru",
+                    "TargetEntityPart": "PrimaryItem",
+                    "Scale": 0.4,
+                    "DetachedFromModel": false
+                  }
+                ],
+                "LocalSoundEventId": "SFX_Shikai_Hozukimaru"
               },
-              "ItemToRemove": {
-                "Id": "Weapon_Sword_Sealed_Hozukimaru"
+              "RunTime": 0.5,
+              "Next": {
+                "Type": "SwapItemInteraction",
+                "ItemToAdd": {
+                  "Id": "Weapon_Spear_Shikai_Hozukimaru"
+                },
+                "ItemToRemove": {
+                  "Id": "Weapon_Sword_Sealed_Hozukimaru"
+                }
               }
-            }
-          },
-          "RunTime": 0.02
+            },
+            "RunTime": 0.02
+          }
         }
       ]
     }

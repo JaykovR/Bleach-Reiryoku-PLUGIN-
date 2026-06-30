@@ -1,7 +1,7 @@
 {
   "RequireNewClick": true,
   "Interactions": [
-    "Kojaku_Primary_Shoot"
+    "Kojaku_Primary_RaceCheck"
   ],
   "Tags": {
     "Attack": [

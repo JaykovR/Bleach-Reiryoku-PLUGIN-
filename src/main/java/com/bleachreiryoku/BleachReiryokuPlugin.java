@@ -74,6 +74,7 @@ public class BleachReiryokuPlugin extends JavaPlugin {
                 .register("TensaZangetsu", TensaZangetsuInteraction.class, TensaZangetsuInteraction.CODEC)
                 .register("SwapItemInteraction", SwapItemInteraction.class, SwapItemInteraction.CODEC)
                 .register("ReiryokuCheck", ReiryokuCheckInteraction.class, ReiryokuCheckInteraction.CODEC)
+                .register("PlayerRaceCheck", PlayerRaceCheckInteraction.class, PlayerRaceCheckInteraction.CODEC)
                 .register("OpenRaceSelectionPage", OpenRaceSelectionPage.class, OpenRaceSelectionPage.CODEC);
 
         LOGGER.at(Level.INFO).log("[Bleach Reiryoku] Setup complete!");

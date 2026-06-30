@@ -24,19 +24,26 @@ import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 /**
- * Reduces Reiryoku regeneration when the player is holding a Shikai or Bankai weapon.
  *
- * Base regen is 5%/sec. This system drains the difference to achieve:
+ * Reduces base Reiryoku regeneration to accomodate for different conditions depending on their race.
+ * Base regen is 5%/sec. This system drains the difference to achieve the effects.
+ *
+ *   For Shinigami:
  *   Shikai: 1.5%/sec net regen (drains 3.5%/sec)
  *   Bankai:  0.3%/sec net regen (drains 4.7%/sec)
  *   TODO: HOLLOW MASK: DRAINS, MEANING NO REGEN
+ *
+ *   For Quincy:
+ *   Reishi Poor Env: 1%/sec net regen (drains 4%)
+ *   Reishi Standard Env: 3%/sec net regen (drains 2%)
+ *   Reishi Rich Env: 7%/sec net regen (adds 2%)
  */
 public class ReiryokuDrainSystem extends EntityTickingSystem<EntityStore> {
 
     // Shinigami-Related Regeneration Rates
     private static final float SHIKAI_DRAIN_PER_SECOND = 0.035f;
     private static final float BANKAI_DRAIN_PER_SECOND = 0.047f;
-
+    // Quincy-Related Regeneration Rates
     private static final float REISHI_POOR_REGEN     = 0.04f; // 1%/sec
     private static final float REISHI_STANDARD_REGEN = 0.02f; // 3%/sec
     private static final float REISHI_RICH_REGEN     = -0.02f; // 7%/sec

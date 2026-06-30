@@ -35,28 +35,33 @@
     "Ability3": {
       "Interactions": [
         {
-          "Type": "ShikaiCheck",
+          "Type": "PlayerRaceCheck",
+          "DesiredRace": "Shinigami",
+          "RunTime": 0.1,
           "Next": {
-            "Type": "Simple",
-            "Effects": {
-              "ItemPlayerAnimationsId": "Shikai_Senbonzakura_Animations",
-              "ItemAnimationId": "ShikaiActivation",
-              "Particles": [
-                {
-                  "SystemId": "Senbonzakura_ShikaiActivation",
-                  "TargetEntityPart": "Self",
-                  "TargetNodeName": "sori"
-                }
-              ]
-            },
-            "RunTime": 1.5,
+            "Type": "ShikaiCheck",
             "Next": {
-              "Type": "SwapItemInteraction",
-              "ItemToAdd": {
-                "Id": "Weapon_Sword_Shikai_Senbonzakura"
+              "Type": "Simple",
+              "Effects": {
+                "ItemPlayerAnimationsId": "Shikai_Senbonzakura_Animations",
+                "ItemAnimationId": "ShikaiActivation",
+                "Particles": [
+                  {
+                    "SystemId": "Senbonzakura_ShikaiActivation",
+                    "TargetEntityPart": "Self",
+                    "TargetNodeName": "sori"
+                  }
+                ]
               },
-              "ItemToRemove": {
-                "Id": "Weapon_Sword_Sealed_Senbonzakura"
+              "RunTime": 1.5,
+              "Next": {
+                "Type": "SwapItemInteraction",
+                "ItemToAdd": {
+                  "Id": "Weapon_Sword_Shikai_Senbonzakura"
+                },
+                "ItemToRemove": {
+                  "Id": "Weapon_Sword_Sealed_Senbonzakura"
+                }
               }
             }
           }

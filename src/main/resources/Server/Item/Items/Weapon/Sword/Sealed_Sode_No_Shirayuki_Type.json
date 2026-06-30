@@ -35,25 +35,30 @@
     "Ability3": {
       "Interactions": [
         {
-          "Type": "ShikaiCheck",
+          "Type": "PlayerRaceCheck",
+          "DesiredRace": "Shinigami",
           "Next": {
-            "Type": "Simple",
-            "Effects": {
-              "ItemPlayerAnimationsId": "Sode_No_Shirayuki_Animations",
-              "ItemAnimationId": "ShikaiActivation",
-              "WorldSoundEventId": "SFX_Hakuren_Charge",
-              "LocalSoundEventId": "SFX_Hakuren_Charge"
-            },
-            "RunTime": 0,
+            "Type": "ShikaiCheck",
             "Next": {
-              "Type": "SwapItemInteraction",
-              "ItemToAdd": {
-                "Id": "Weapon_Sword_Shikai_Sode_No_Shirayuki"
+              "Type": "Simple",
+              "Effects": {
+                "ItemPlayerAnimationsId": "Sode_No_Shirayuki_Animations",
+                "ItemAnimationId": "ShikaiActivation",
+                "WorldSoundEventId": "SFX_Hakuren_Charge",
+                "LocalSoundEventId": "SFX_Hakuren_Charge"
               },
-              "ItemToRemove": {
-                "Id": "Weapon_Sword_Sealed_Sode_No_Shirayuki"
+              "RunTime": 0,
+              "Next": {
+                "Type": "SwapItemInteraction",
+                "ItemToAdd": {
+                  "Id": "Weapon_Sword_Shikai_Sode_No_Shirayuki"
+                },
+                "ItemToRemove": {
+                  "Id": "Weapon_Sword_Sealed_Sode_No_Shirayuki"
+                }
               }
-            }
+            },
+            "RunTime": 0.1
           }
         }
       ]
