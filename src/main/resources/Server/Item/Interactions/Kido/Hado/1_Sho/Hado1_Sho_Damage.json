@@ -41,5 +41,10 @@
       "EntityStatId": "SignatureEnergy",
       "Amount": 1
     }
-  ]
+  ],
+  "Next": {
+    "Type": "AddKidoProficiency",
+    "Class": "Hado",
+    "Amount": 1
+  }
 }

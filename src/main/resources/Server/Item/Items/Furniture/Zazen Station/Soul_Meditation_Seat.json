@@ -1,0 +1,135 @@
+{
+  "TranslationProperties": {
+    "Name": "Soul Meditation Seat"
+  },
+  "ItemLevel": 10,
+  "Icon": "Icons/ItemsGenerated/Soul_Meditation_Seat.png",
+  "Categories": [
+    "Furniture.Benches",
+    "BleachCategory.Blocks"
+  ],
+  "Set": "Soil_Half",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Soil_Pathway",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Builders",
+        "Type": "Crafting",
+        "Categories": [
+          "Structural-Rock"
+        ]
+      }
+    ],
+    "OutputQuantity": 1,
+    "TimeSeconds": 2
+  },
+  "PlayerAnimationsId": "Block",
+  "Interactions": {
+    "Secondary": {
+      "Interactions": [
+        {
+          "Parent": "Half_Block",
+          "Matchers": [
+            {
+              "Block": {
+                "Id": "Soil_Pathway_Half",
+                "State": "default"
+              },
+              "Face": "Up",
+              "StaticFace": false
+            }
+          ]
+        }
+      ],
+      "Cooldown": {
+        "Id": "BlockInteraction",
+        "Cooldown": 0.3,
+        "ClickBypass": true
+      },
+      "Settings": {
+        "Creative": {
+          "AllowSkipChainOnClick": true
+        }
+      }
+    }
+  },
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "CustomModel": "Blocks/Furniture/Zazen Station/Zabuton.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Blocks/Furniture/Zazen Station/Zabuton_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "Group": "Cloth",
+    "HitboxType": "Block_Quarter",
+    "Flags": {
+      "IsUsable": true
+    },
+    "VariantRotation": "NESW",
+    "BlockParticleSetId": "Snow",
+    "Supporting": {
+      "Down": [
+        {}
+      ]
+    },
+    "ParticleColor": "#86ab59",
+    "BlockSoundSetId": "Cloth",
+    "PhysicalMaterialId": "Cloth",
+    "State": {
+      "Definitions": {
+        "Block": {
+          "Material": "Solid",
+          "DrawType": "Cube",
+          "HitboxType": "Full",
+          "Textures": [
+            {
+              "All": "BlockTextures/Soil_Pathway.png",
+              "Weight": 1
+            }
+          ]
+        }
+      }
+    },
+    "TextureComputedColor": "#81a753",
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Benches"
+      }
+    },
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          {
+            "Type": "OpenKidoGrimoirePage"
+          }
+        ]
+      }
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Soil"
+    ]
+  },
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -6
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Soft"
+}

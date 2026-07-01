@@ -1,26 +1,32 @@
 @SlotStyle = TextButtonStyle(
-    Default: (Background: #0d1117, LabelStyle: (FontSize: 16, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
-    Hovered: (Background: #1a2030, LabelStyle: (FontSize: 16, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
-    Pressed: (Background: #050810, LabelStyle: (FontSize: 16, TextColor: #aaccff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center))
+    Default: (Background: "ButtonInput_Background.png", LabelStyle: (FontSize: 16, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Hovered: (Background: "ButtonInput_Hovered_Background.png", LabelStyle: (FontSize: 16, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Pressed: (Background: "ButtonInput_Selected_Background.png", LabelStyle: (FontSize: 16, TextColor: #aaccff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center))
 );
 
 @DoneStyle = TextButtonStyle(
-    Default: (Background: #3a5d7d, LabelStyle: (FontSize: 18, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
-    Hovered: (Background: #5B8FBF, LabelStyle: (FontSize: 18, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
-    Pressed: (Background: #2c4760, LabelStyle: (FontSize: 18, TextColor: #aaccff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center))
+    Default: (Background: "DoneButton_Background.png", LabelStyle: (FontSize: 18, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Hovered: (Background: "DoneButton_Hovered_Background.png", LabelStyle: (FontSize: 18, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Pressed: (Background: "DoneButton_Pressed_Background.png", LabelStyle: (FontSize: 18, TextColor: #aaccff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center))
 );
 
 Group {
-    Anchor: (Width: 1040, Height: 620);
-    Background: #050810(0.98);
+    Anchor: (Width: 1100, Height: 670);
+    Background: #000000(1);
     LayoutMode: Top;
     Padding: (Full: 24);
 
-    Label {
-        Text: "KIDO LOADOUT";
-        Anchor: (Height: 40);
-        Style: (FontSize: 26, TextColor: #ffffff, RenderBold: true);
+    Group{
+        LayoutMode: Left;
+
+        Label {
+                Text: "";
+                Background: "KIDO_LOADOUT_TEXT.png";
+                Anchor: (Height: 40, Width: 200);
+            }
+
     }
+
 
     Label #ActiveSlotHint {
         Text: "Select a slot, then choose a kido";
@@ -47,7 +53,7 @@ Group {
 
             TextButton #SlotNoneButton {
                 Text: "Left-Click: Empty";
-                Anchor: (Height: 50);
+                Anchor: (Height: 65);
                 Style: @SlotStyle;
                 Padding: (Left: 16);
             }
@@ -55,7 +61,7 @@ Group {
 
             TextButton #SlotForwardButton {
                 Text: "+ Forward: Empty";
-                Anchor: (Height: 50);
+                Anchor: (Height: 65);
                 Style: @SlotStyle;
                 Padding: (Left: 16);
             }
@@ -63,7 +69,7 @@ Group {
 
             TextButton #SlotBackButton {
                 Text: "+ Back: Empty";
-                Anchor: (Height: 50);
+                Anchor: (Height: 65);
                 Style: @SlotStyle;
                 Padding: (Left: 16);
             }
@@ -71,7 +77,7 @@ Group {
 
             TextButton #SlotLeftButton {
                 Text: "+ Left: Empty";
-                Anchor: (Height: 50);
+                Anchor: (Height: 65);
                 Style: @SlotStyle;
                 Padding: (Left: 16);
             }
@@ -79,7 +85,7 @@ Group {
 
             TextButton #SlotRightButton {
                 Text: "+ Right: Empty";
-                Anchor: (Height: 50);
+                Anchor: (Height: 65);
                 Style: @SlotStyle;
                 Padding: (Left: 16);
             }
@@ -101,8 +107,13 @@ Group {
             Group #KidoList {
                 LayoutMode: Top;
                 Anchor: (Height: 438);
-                Background: #0a0e16(0.6);
                 ContentHeight: 1000;
+                ScrollbarStyle: (
+                    Size: 5,
+                    Handle: (Color: #3a5d7d),
+                    HoveredHandle: (Color: #5B8FBF),
+                    Background: ("Scrollbar_Background.png")
+                );
             }
         }
     }
@@ -111,7 +122,7 @@ Group {
 
     TextButton #DoneButton {
         Text: "DONE";
-        Anchor: (Height: 46);
+        Anchor: (Height: 46, Width: 300);
         Style: @DoneStyle;
         Padding: (Left: 16);
     }

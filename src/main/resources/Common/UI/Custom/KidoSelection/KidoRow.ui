@@ -3,8 +3,8 @@ TextButton #KidoRowButton {
     Padding: (Left: 14);
     Text: "";
     Style: TextButtonStyle(
-        Default: (Background: #0f1620, LabelStyle: (FontSize: 17, TextColor: #c8d4df, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
-        Hovered: (Background: #1b2a3d, LabelStyle: (FontSize: 17, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
-        Pressed: (Background: #16243a, LabelStyle: (FontSize: 17, TextColor: #9fc4e6, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center))
+        Default: (Background: "TechniqueButton_Background.png", LabelStyle: (FontSize: 17, TextColor: #c8d4df, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+        Hovered: (Background: "TechniqueButton_Hovered_Background.png", LabelStyle: (FontSize: 17, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+        Pressed: (Background: "TechniqueButton_Pressed_Background.png", LabelStyle: (FontSize: 17, TextColor: #9fc4e6, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center))
     );
 }

@@ -2,6 +2,7 @@ package com.bleachreiryoku.ui;
 
 import com.bleachreiryoku.playerData.KidoCatalog;
 import com.bleachreiryoku.playerData.KidoLoadout;
+import com.bleachreiryoku.playerData.KidoUnlocks;
 import com.hypixel.hytale.codec.Codec;
 import com.hypixel.hytale.codec.KeyedCodec;
 import com.hypixel.hytale.codec.builder.BuilderCodec;
@@ -104,21 +105,28 @@ public class KidoSelectionPage extends InteractiveCustomUIPage<KidoSelectionPage
         evt.addEventBinding(CustomUIEventBindingType.Activating, "#SlotRightButton",
                 new EventData().append("Slot", KidoLoadout.Slot.Right.name()));
 
-        // --- build the kido list ---
+        // --- build the kido list (only UNLOCKED ones) ---
         cmd.clear("#KidoList");
 
+        KidoUnlocks unlocks = store.getComponent(ref, KidoUnlocks.getComponentType());
+
         String activeAssigned = loadout.get(activeSlot);
-        for (int i = 0; i < KidoCatalog.ENTRIES.size(); i++) {
-            KidoCatalog.Entry e = KidoCatalog.ENTRIES.get(i);
-            String selector = "#KidoList[" + i + "]";
+        int rowIdx = 0;
+        for (KidoCatalog.Entry e : KidoCatalog.ENTRIES) {
+            // Skip kido the player hasn't unlocked. If the unlocks component is somehow
+            // missing, fall back to showing everything rather than an empty list.
+            if (unlocks != null && !unlocks.isUnlocked(e.id())) {
+                continue;
+            }
+
+            String selector = "#KidoList[" + rowIdx + "]";
+            rowIdx++;
 
             cmd.append("#KidoList", "KidoSelection/KidoRow.ui");
 
-            // The row's root element is the TextButton itself
             String marker = e.id().equals(activeAssigned) ? "> " : "";
             cmd.set(selector + ".Text", marker + e.display());
 
-            // clicking the row assigns this kido to the active slot
             evt.addEventBinding(CustomUIEventBindingType.Activating, selector,
                     new EventData().append("AssignId", e.id()));
         }
@@ -153,13 +161,17 @@ public class KidoSelectionPage extends InteractiveCustomUIPage<KidoSelectionPage
             }
         }
 
-        // Kido row clicked -> assign to the active slot.
+        // Kido row clicked -> assign to the active slot (only if unlocked).
         if (data.assignId != null && !data.assignId.isEmpty()) {
             KidoCatalog.Entry e = KidoCatalog.byId(data.assignId);
             if (e != null) {
-                KidoLoadout loadout = getLoadout(ref, store);
-                loadout.set(activeSlot, e.id());
-                changed = true;
+                KidoUnlocks unlocks = store.getComponent(ref, KidoUnlocks.getComponentType());
+                boolean allowed = (unlocks == null) || unlocks.isUnlocked(e.id());
+                if (allowed) {
+                    KidoLoadout loadout = getLoadout(ref, store);
+                    loadout.set(activeSlot, e.id());
+                    changed = true;
+                }
             }
         }
 

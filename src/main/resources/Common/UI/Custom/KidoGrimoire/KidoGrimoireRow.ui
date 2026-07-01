@@ -1,0 +1,21 @@
+Group {
+    Anchor: (Height: 62);
+    LayoutMode: Top;
+    Padding: (Left: 10);
+
+    Label #RowName {
+        Text: "";
+        Anchor: (Height: 24);
+        Style: (FontSize: 15, TextColor: #c8d4df, RenderBold: true);
+    }
+    TextButton #RowButton {
+        Text: "";
+        Anchor: (Height: 30);
+        Padding: (Left: 10);
+        Style: TextButtonStyle(
+            Default: (Background: #16243a, LabelStyle: (FontSize: 13, TextColor: #aaccff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+            Hovered: (Background: #22354d, LabelStyle: (FontSize: 13, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+            Pressed: (Background: #0d1117, LabelStyle: (FontSize: 13, TextColor: #aaccff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center))
+        );
+    }
+}

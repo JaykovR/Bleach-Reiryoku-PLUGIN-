@@ -75,6 +75,13 @@ public class BleachReiryokuPlugin extends JavaPlugin {
         );
         KidoLoadout.setComponentType(kidoLoadoutType);
 
+        var kidoUnlocksType = registry.registerComponent(
+                com.bleachreiryoku.playerData.KidoUnlocks.class,
+                "BR_KidoUnlocks",
+                com.bleachreiryoku.playerData.KidoUnlocks.CODEC
+        );
+        com.bleachreiryoku.playerData.KidoUnlocks.setComponentType(kidoUnlocksType);
+
         // -----------------INTERACTIONS---------------------------------
         this.getCodecRegistry(Interaction.CODEC)
                 .register("UnlockShikai", UnlockShikaiInteraction.class, UnlockShikaiInteraction.CODEC)
@@ -86,6 +93,8 @@ public class BleachReiryokuPlugin extends JavaPlugin {
                 .register("PlayerRaceCheck", PlayerRaceCheckInteraction.class, PlayerRaceCheckInteraction.CODEC)
                 .register("OpenKidoSelectionPage", OpenKidoSelectionPage.class, OpenKidoSelectionPage.CODEC)
                 .register("RunKidoSlot", RunKidoSlotInteraction.class, RunKidoSlotInteraction.CODEC)
+                .register("AddKidoProficiency", AddKidoProficiencyInteraction.class, AddKidoProficiencyInteraction.CODEC)
+                .register("OpenKidoGrimoirePage", OpenKidoGrimoirePage.class, OpenKidoGrimoirePage.CODEC)
                 .register("OpenRaceSelectionPage", OpenRaceSelectionPage.class, OpenRaceSelectionPage.CODEC);
 
         LOGGER.at(Level.INFO).log("[Bleach Reiryoku] Setup complete!");

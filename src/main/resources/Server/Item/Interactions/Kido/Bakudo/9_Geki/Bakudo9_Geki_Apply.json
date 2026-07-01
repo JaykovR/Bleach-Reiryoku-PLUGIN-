@@ -16,7 +16,12 @@
         "Next": {
           "Type": "ApplyEffect",
           "EffectId": "Bakudo9_Geki_Casting",
-          "Entity": "User"
+          "Entity": "User",
+          "Next": {
+            "Type": "AddKidoProficiency",
+            "Class": "Bakudo",
+            "Amount": 2
+          }
         }
       }
     ]

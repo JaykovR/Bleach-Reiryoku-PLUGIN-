@@ -12,6 +12,7 @@ import com.bleachreiryoku.effects.BleachStatTypes;
 import com.bleachreiryoku.playerData.playerStats;
 import com.bleachreiryoku.ui.RaceSelectionPage;
 import com.bleachreiryoku.ui.PlayerStatsPage;
+import com.bleachreiryoku.ui.KidoGrimoirePage;
 import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.entity.entities.player.pages.InteractiveCustomUIPage;
 import com.hypixel.hytale.server.core.modules.entitystats.EntityStatMap;
@@ -42,6 +43,8 @@ public class ReiryokuCommands extends AbstractCommandCollection {
         this.addSubCommand(new CheckHollow());
 
         this.addSubCommand(new ToggleHUDCommand("toggleHUD", "Toggles the custom HUD elements"));
+
+        this.addSubCommand(new OpenKidoGrimoireCommand());
 
         this.addSubCommand(new setReiryokuMax());
         this.addSubCommand(new ChooseRaceCommand());
@@ -467,6 +470,34 @@ public class ReiryokuCommands extends AbstractCommandCollection {
                 if (player == null) return;
 
                 player.getPageManager().openCustomPage(ref, store, new PlayerStatsPage(playerRef));
+            });
+        }
+    }
+
+    // /br kido - opens the Kido Grimoire (unlock UI)
+    private static class OpenKidoGrimoireCommand extends CommandBase {
+
+        public OpenKidoGrimoireCommand() {
+            super("kido", "Opens the Kido Grimoire to unlock techniques");
+        }
+
+        @Override
+        protected boolean canGeneratePermission() { return false; }
+
+        @Override
+        protected void executeSync(@Nonnull CommandContext context) {
+            Ref<EntityStore> ref = context.senderAsPlayerRef();
+            Store<EntityStore> store = ref.getStore();
+            World world = store.getExternalData().getWorld();
+
+            world.execute(() -> {
+                PlayerRef playerRef = store.getComponent(ref, PlayerRef.getComponentType());
+                if (playerRef == null) return;
+
+                Player player = store.getComponent(ref, Player.getComponentType());
+                if (player == null) return;
+
+                player.getPageManager().openCustomPage(ref, store, new KidoGrimoirePage(playerRef));
             });
         }
     }

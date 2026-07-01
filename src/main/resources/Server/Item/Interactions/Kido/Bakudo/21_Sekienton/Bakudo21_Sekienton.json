@@ -79,6 +79,11 @@
         }
       },
       "HorizontalSpeedMultiplier": 0.001
+    },
+    {
+      "Type": "AddKidoProficiency",
+      "Class": "Bakudo",
+      "Amount": 3
     }
   ]
 }

@@ -4,7 +4,7 @@
     "Description": "Item Required for Kido Usage, equip on off-hand"
   },
   "Model": "Items/Kido Charm/KidoCharm.blockymodel",
-  "Texture": "Items/Kido Charm/KidoCharm_Texture.png",
+  "Texture": "Items/Kido Charm/texture.png",
   "Icon": "Icons/ItemsGenerated/Kido_Charm.png",
   "IconProperties": {
     "Scale": 0.9,
@@ -37,5 +37,6 @@
         }
       ]
     }
-  }
+  },
+  "PlayerAnimationsId": "Item"
 }

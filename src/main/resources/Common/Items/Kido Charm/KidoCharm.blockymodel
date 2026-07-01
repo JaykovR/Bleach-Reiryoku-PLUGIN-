@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "Root",
-      "position": {"x": 2, "y": 0, "z": 0},
+      "position": {"x": 26, "y": 3, "z": 7},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -22,29 +22,51 @@
         {
           "id": "2",
           "name": "Map",
-          "position": {"x": 0.67241, "y": 9.50004, "z": -0.12956},
+          "position": {"x": 0.67241, "y": 6.50004, "z": -7.12956},
           "orientation": {"x": -0.67535, "y": 0.72435, "z": -0.1339, "w": 0.0361},
           "shape": {
-            "type": "quad",
+            "type": "none",
             "offset": {"x": 0, "y": 0.5, "z": 0},
             "stretch": {"x": 1, "y": 1, "z": 1},
             "settings": {
-              "isPiece": false,
-              "size": {"x": 28, "y": 12},
-              "normal": "+Z"
+              "isPiece": false
             },
-            "textureLayout": {
-              "front": {
-                "offset": {"x": 0, "y": 4},
-                "mirror": {"x": false, "y": false},
-                "angle": 0
-              }
-            },
+            "textureLayout": {},
             "unwrapMode": "custom",
             "visible": true,
-            "doubleSided": true,
+            "doubleSided": false,
             "shadingMode": "flat"
-          }
+          },
+          "children": [
+            {
+              "id": "3",
+              "name": "Map--C1",
+              "position": {"x": 2.045, "y": 0.2488, "z": -5.59563},
+              "orientation": {"x": 0, "y": -0.21644, "z": 0, "w": 0.9763},
+              "shape": {
+                "type": "quad",
+                "offset": {"x": -6.5, "y": 0.5, "z": 0},
+                "stretch": {"x": 0.375, "y": 0.375, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 75, "y": 57},
+                  "normal": "+Z",
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "front": {
+                    "offset": {"x": 57, "y": 0},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 90
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": true,
+                "shadingMode": "flat"
+              }
+            }
+          ]
         }
       ]
     }
