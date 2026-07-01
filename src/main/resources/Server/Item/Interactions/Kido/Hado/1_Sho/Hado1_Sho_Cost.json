@@ -7,5 +7,9 @@
     "Type": "SendMessage",
     "Message": "You don't have enough Reiryoku. (25 Reiryoku needed)"
   },
-  "Next": "Hado1_Sho"
+  "Next": {
+    "Type": "ApplyEffect",
+    "EffectId": "Kido_Cast_Root",
+    "Next": "Hado1_Sho"
+  }
 }

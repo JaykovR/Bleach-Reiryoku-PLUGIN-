@@ -7,6 +7,7 @@ import com.bleachreiryoku.effects.EffectCleanupSystem;
 import com.bleachreiryoku.effects.EffectTickSystem;
 import com.bleachreiryoku.interactions.*;
 import com.bleachreiryoku.playerData.playerStats;
+import com.bleachreiryoku.playerData.KidoLoadout;
 import com.bleachreiryoku.systems.ReiryokuHudSystem;
 import com.bleachreiryoku.systems.ReiryokuDrainSystem;
 import com.bleachreiryoku.systems.KillRewardSystem;
@@ -50,7 +51,7 @@ public class BleachReiryokuPlugin extends JavaPlugin {
         // -------------COMPONENTS--------------------
         var registry = getEntityStoreRegistry();
 
-        // Player stats (shikai unlocks etc.) — persisted to disk
+        // Player stats (shikai unlocks etc.)
         var reiryokuType = registry.registerComponent(
                 playerStats.class,
                 "BR_PlayerData",
@@ -66,6 +67,14 @@ public class BleachReiryokuPlugin extends JavaPlugin {
         );
         ActiveEffectsComponent.setComponentType(effectsType);
 
+        // Kido loadout (5 Left-Click movement slot assignments)
+        var kidoLoadoutType = registry.registerComponent(
+                KidoLoadout.class,
+                "BR_KidoLoadout",
+                KidoLoadout.CODEC
+        );
+        KidoLoadout.setComponentType(kidoLoadoutType);
+
         // -----------------INTERACTIONS---------------------------------
         this.getCodecRegistry(Interaction.CODEC)
                 .register("UnlockShikai", UnlockShikaiInteraction.class, UnlockShikaiInteraction.CODEC)
@@ -75,6 +84,8 @@ public class BleachReiryokuPlugin extends JavaPlugin {
                 .register("SwapItemInteraction", SwapItemInteraction.class, SwapItemInteraction.CODEC)
                 .register("ReiryokuCheck", ReiryokuCheckInteraction.class, ReiryokuCheckInteraction.CODEC)
                 .register("PlayerRaceCheck", PlayerRaceCheckInteraction.class, PlayerRaceCheckInteraction.CODEC)
+                .register("OpenKidoSelectionPage", OpenKidoSelectionPage.class, OpenKidoSelectionPage.CODEC)
+                .register("RunKidoSlot", RunKidoSlotInteraction.class, RunKidoSlotInteraction.CODEC)
                 .register("OpenRaceSelectionPage", OpenRaceSelectionPage.class, OpenRaceSelectionPage.CODEC);
 
         LOGGER.at(Level.INFO).log("[Bleach Reiryoku] Setup complete!");

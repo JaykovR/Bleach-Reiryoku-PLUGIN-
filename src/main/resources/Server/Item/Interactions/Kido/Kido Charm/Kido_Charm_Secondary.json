@@ -1,0 +1,12 @@
+{
+  "Type": "MovementCondition",
+  "Failed": "RunKidoSlot_None",
+  "Forward": "RunKidoSlot_Forward",
+  "Back": "RunKidoSlot_Backward",
+  "Left": "RunKidoSlot_Left",
+  "Right": "RunKidoSlot_Right",
+  "ForwardLeft": "RunKidoSlot_Forward",
+  "ForwardRight": "RunKidoSlot_Forward",
+  "BackLeft": "RunKidoSlot_Backward",
+  "BackRight": "RunKidoSlot_Backward"
+}

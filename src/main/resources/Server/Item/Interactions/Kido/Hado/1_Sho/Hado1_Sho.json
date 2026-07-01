@@ -28,5 +28,6 @@
   },
   "RunTime": 1,
   "AllowIndefiniteHold": true,
-  "DisplayProgress": true
+  "DisplayProgress": true,
+  "HorizontalSpeedMultiplier": 0.001
 }

@@ -29,9 +29,12 @@
     "BleachCategory.Ingredients"
   ],
   "Interactions": {
-    "Secondary": {
+    "Secondary": "Root_Kido_Charm_Secondary",
+    "Ability2": {
       "Interactions": [
-        "Hado1_Sho"
+        {
+          "Type": "OpenKidoSelectionPage"
+        }
       ]
     }
   }

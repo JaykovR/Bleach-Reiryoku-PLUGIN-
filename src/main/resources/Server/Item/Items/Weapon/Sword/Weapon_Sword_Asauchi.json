@@ -192,5 +192,16 @@
     "Secondary": "Root_Weapon_Sword_Secondary_Guard"
   },
   "PlayerAnimationsId": "Sword",
-  "MaxStack": 1
+  "MaxStack": 1,
+  "Tags": {
+    "Type": [
+      "Weapon"
+    ],
+    "Family": [
+      "Sword"
+    ]
+  },
+  "Utility": {
+    "Compatible": true
+  }
 }

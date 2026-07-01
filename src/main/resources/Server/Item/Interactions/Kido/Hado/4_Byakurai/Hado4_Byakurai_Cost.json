@@ -7,5 +7,10 @@
     "Type": "SendMessage",
     "Message": "You don't have enough Reiryoku. (35 Reiryoku needed)"
   },
-  "Next": "Hado4_Byakurai"
+  "Next": {
+    "Type": "ApplyEffect",
+    "EffectId": "Kido_Cast_Slow",
+    "Entity": "User",
+    "Next": "Hado4_Byakurai"
+  }
 }

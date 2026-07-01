@@ -1,0 +1,25 @@
+{
+  "RequireNewClick": true,
+  "Interactions": [
+    {
+      "Type": "Replace",
+      "Var": "Kido_Secondary",
+      "DefaultOk": true,
+      "DefaultValue": {
+        "Interactions": [
+          "Kido_Charm_Secondary"
+        ]
+      }
+    }
+  ],
+  "Rules": {
+    "Interrupting": [
+      "Primary"
+    ]
+  },
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  }
+}

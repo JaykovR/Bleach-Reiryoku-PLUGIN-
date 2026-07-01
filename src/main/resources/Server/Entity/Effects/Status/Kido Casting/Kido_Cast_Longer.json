@@ -1,0 +1,10 @@
+{
+  "Name": "Kido_Cast_Root",
+  "Duration": 1.25,
+  "OverlapBehavior": "Overwrite",
+  "RemovalBehavior": "Complete",
+  "Debuff": false,
+  "ApplicationEffects": {
+    "HorizontalSpeedMultiplier": 0.001
+  }
+}

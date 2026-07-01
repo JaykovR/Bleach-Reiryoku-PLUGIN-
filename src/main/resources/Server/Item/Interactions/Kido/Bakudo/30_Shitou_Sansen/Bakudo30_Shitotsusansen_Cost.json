@@ -7,5 +7,9 @@
     "Type": "SendMessage",
     "Message": "You don't have enough Reiryoku. (75 Reiryoku needed)"
   },
-  "Next": "Bakudo30_Shitotsusansen"
+  "Next": {
+    "Type": "ApplyEffect",
+    "EffectId": "Kido_Cast_Root",
+    "Next": "Bakudo30_Shitotsusansen"
+  }
 }

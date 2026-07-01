@@ -35,9 +35,20 @@ public class playerJoinSystem extends RefSystem<EntityStore>{
             commandBuffer.addComponent(ref, brType, br);
         }
 
+        // Ensure the Kido loadout component exists. Attached here via the command
+        // buffer (tick-safe, deferred) so the Kido Selection UI only ever has to READ
+        // it — building the UI happens mid-tick, where direct store.addComponent throws.
+        var kidoType = com.bleachreiryoku.playerData.KidoLoadout.getComponentType();
+        if (kidoType != null && store.getComponent(ref, kidoType) == null) {
+            commandBuffer.addComponent(ref, kidoType, new com.bleachreiryoku.playerData.KidoLoadout());
+        }
+
         var player = store.getComponent(ref, Player.getComponentType());
 
-        // Only for true first-timers so they don't accumulate this item when relogging.
+        // Only true first-timers (no playerStats component existed yet) get the
+        // race-selection scroll. Gating on this instead of playerPrimaryRace==null
+        // means it only ever fires once per player, even across relogs, so they
+        // can't accumulate copies just by repeatedly logging in before picking a race.
         if (isFirstJoin) {
             if (player != null) {
                 player.getInventory().getCombinedHotbarFirst().addItemStack(new ItemStack("Open_Race_Menu", 1));

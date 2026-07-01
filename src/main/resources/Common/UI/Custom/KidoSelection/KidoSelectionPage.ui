@@ -1,0 +1,118 @@
+@SlotStyle = TextButtonStyle(
+    Default: (Background: #0d1117, LabelStyle: (FontSize: 16, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Hovered: (Background: #1a2030, LabelStyle: (FontSize: 16, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Pressed: (Background: #050810, LabelStyle: (FontSize: 16, TextColor: #aaccff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center))
+);
+
+@DoneStyle = TextButtonStyle(
+    Default: (Background: #3a5d7d, LabelStyle: (FontSize: 18, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Hovered: (Background: #5B8FBF, LabelStyle: (FontSize: 18, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Pressed: (Background: #2c4760, LabelStyle: (FontSize: 18, TextColor: #aaccff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center))
+);
+
+Group {
+    Anchor: (Width: 1040, Height: 620);
+    Background: #050810(0.98);
+    LayoutMode: Top;
+    Padding: (Full: 24);
+
+    Label {
+        Text: "KIDO LOADOUT";
+        Anchor: (Height: 40);
+        Style: (FontSize: 26, TextColor: #ffffff, RenderBold: true);
+    }
+
+    Label #ActiveSlotHint {
+        Text: "Select a slot, then choose a kido";
+        Anchor: (Height: 26);
+        Style: (FontSize: 16, TextColor: #88aacc);
+    }
+
+    Group { Anchor: (Height: 14); }
+
+    Group {
+        LayoutMode: Left;
+        Anchor: (Height: 472);
+
+        Group {
+            LayoutMode: Top;
+            Anchor: (Width: 400);
+
+            Label {
+                Text: "INPUTS";
+                Anchor: (Height: 26);
+                Style: (FontSize: 14, TextColor: #5B8FBF, RenderBold: true);
+            }
+            Group { Anchor: (Height: 8); }
+
+            TextButton #SlotNoneButton {
+                Text: "Left-Click: Empty";
+                Anchor: (Height: 50);
+                Style: @SlotStyle;
+                Padding: (Left: 16);
+            }
+            Group { Anchor: (Height: 6); }
+
+            TextButton #SlotForwardButton {
+                Text: "+ Forward: Empty";
+                Anchor: (Height: 50);
+                Style: @SlotStyle;
+                Padding: (Left: 16);
+            }
+            Group { Anchor: (Height: 6); }
+
+            TextButton #SlotBackButton {
+                Text: "+ Back: Empty";
+                Anchor: (Height: 50);
+                Style: @SlotStyle;
+                Padding: (Left: 16);
+            }
+            Group { Anchor: (Height: 6); }
+
+            TextButton #SlotLeftButton {
+                Text: "+ Left: Empty";
+                Anchor: (Height: 50);
+                Style: @SlotStyle;
+                Padding: (Left: 16);
+            }
+            Group { Anchor: (Height: 6); }
+
+            TextButton #SlotRightButton {
+                Text: "+ Right: Empty";
+                Anchor: (Height: 50);
+                Style: @SlotStyle;
+                Padding: (Left: 16);
+            }
+        }
+
+        Group { Anchor: (Width: 24); }
+
+        Group {
+            LayoutMode: Top;
+            FlexWeight: 1;
+
+            Label {
+                Text: "TECHNIQUES";
+                Anchor: (Height: 26);
+                Style: (FontSize: 14, TextColor: #5B8FBF, RenderBold: true);
+            }
+            Group { Anchor: (Height: 8); }
+
+            Group #KidoList {
+                LayoutMode: Top;
+                Anchor: (Height: 438);
+                Background: #0a0e16(0.6);
+                ContentHeight: 1000;
+            }
+        }
+    }
+
+    Group { Anchor: (Height: 14); }
+
+    TextButton #DoneButton {
+        Text: "DONE";
+        Anchor: (Height: 46);
+        Style: @DoneStyle;
+        Padding: (Left: 16);
+    }
+}
