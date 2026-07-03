@@ -91,5 +91,6 @@
   "Categories": [
     "BleachCategory.Armors"
   ],
-  "Icon": "Icons/ItemsGenerated/Quincy_Uniform_Type1.png"
+  "Icon": "Icons/ItemsGenerated/Quincy_Uniform_Type1.png",
+  "SubCategory": "Quincy"
 }

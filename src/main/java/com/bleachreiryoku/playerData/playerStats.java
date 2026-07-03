@@ -100,6 +100,11 @@ public class playerStats implements Component<EntityStore> {
                     (component, value) -> component.bakudoProficiency = value,
                     component -> component.bakudoProficiency
             ).add()
+            .append(
+                    new KeyedCodec<>("LastMeditationGameTime", Codec.LONG),
+                    (component, value) -> component.lastMeditationGameTime = value,
+                    component -> component.lastMeditationGameTime
+            ).add()
             .build();
 
 
@@ -124,10 +129,13 @@ public class playerStats implements Component<EntityStore> {
     public int totalKills = 0;
     public int totalHollowKills = 0;
 
-    // Kido proficiency — increments through casting. Persisted via codec.
-    // No combat use yet; for now it's stored & displayed via the /br stats UI.
+    // Kido proficiency increments through casting.
     public int hadoProficiency = 0;
     public int bakudoProficiency = 0;
+
+    // 0 = never meditated. Epoch-seconds of the in-game clokc for when the player last meditated.
+    // they can only meditate once per day in game.
+    public long lastMeditationGameTime = 0L;
 
     public static final String RACE_SHINIGAMI   = "Shinigami";
     public static final String RACE_QUINCY      = "Quincy";
@@ -296,10 +304,12 @@ public class playerStats implements Component<EntityStore> {
     @NullableDecl
     @Override
     public playerStats clone() {
-        return new playerStats(this.ShikaiHozukimaru, this.ShikaiWabisuke, this.ShikaiSodeNoShirayuki,
+        playerStats copy = new playerStats(this.ShikaiHozukimaru, this.ShikaiWabisuke, this.ShikaiSodeNoShirayuki,
                 this.ShikaiBenihime, this.ShikaiSenbonzakura, this.ShikaiZangetsu, this.BankaiZangetsu, this.HollowMask
         , this.totalKills, totalHollowKills, this.playerPrimaryRace, this.playerSecondaryRace,
                 this.hadoProficiency, this.bakudoProficiency);
+        copy.lastMeditationGameTime = this.lastMeditationGameTime;
+        return copy;
     }
 
 

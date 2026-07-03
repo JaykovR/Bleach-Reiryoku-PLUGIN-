@@ -4,7 +4,7 @@
     "Name": "items.Seele_Schneider.name",
     "Description": "items.Seele_Schneider.description"
   },
-  "Model": "Items/Weapons/Seele Schneider/Seele_Schneider.blockymodel",
+  "Model": "Items/Weapons/Seele Schneider/Seele_Schneider_Off.blockymodel",
   "Texture": "Items/Weapons/Seele Schneider/Seele_Schneider.png",
   "Quality": "SpiritWeapon",
   "Icon": "Icons/ItemsGenerated/Weapon_Sword_Seele_Schneider.png",
@@ -48,8 +48,8 @@
                 "SystemId": "Seele_Schneider_Slash"
               }
             ],
-            "WorldSoundEventId": "SFX_Sword_T2_Impact",
-            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+            "WorldSoundEventId": "SFX_Seele_Schneider_Impact",
+            "LocalSoundEventId": "SFX_Seele_Schneider_Impact"
           }
         }
       ]
@@ -69,8 +69,8 @@
                 "SystemId": "Seele_Schneider_Slash"
               }
             ],
-            "WorldSoundEventId": "SFX_Sword_T2_Impact",
-            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+            "WorldSoundEventId": "SFX_Seele_Schneider_Impact",
+            "LocalSoundEventId": "SFX_Seele_Schneider_Impact"
           }
         }
       ]
@@ -90,8 +90,8 @@
                 "SystemId": "Seele_Schneider_Slash"
               }
             ],
-            "WorldSoundEventId": "SFX_Sword_T2_Impact",
-            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+            "WorldSoundEventId": "SFX_Seele_Schneider_Impact",
+            "LocalSoundEventId": "SFX_Seele_Schneider_Impact"
           }
         }
       ]
@@ -117,8 +117,8 @@
                 "SystemId": "Seele_Schneider_Slash"
               }
             ],
-            "WorldSoundEventId": "SFX_Sword_T2_Impact",
-            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+            "WorldSoundEventId": "SFX_Seele_Schneider_Impact",
+            "LocalSoundEventId": "SFX_Seele_Schneider_Impact"
           }
         }
       ]
@@ -139,8 +139,8 @@
                 "SystemId": "Seele_Schneider_Slash"
               }
             ],
-            "WorldSoundEventId": "SFX_Sword_T2_Impact",
-            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+            "WorldSoundEventId": "SFX_Seele_Schneider_Impact",
+            "LocalSoundEventId": "SFX_Seele_Schneider_Impact"
           }
         }
       ]
@@ -161,8 +161,8 @@
                 "SystemId": "Seele_Schneider_Slash"
               }
             ],
-            "WorldSoundEventId": "SFX_Sword_T2_Impact",
-            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+            "WorldSoundEventId": "SFX_Seele_Schneider_Impact",
+            "LocalSoundEventId": "SFX_Seele_Schneider_Impact"
           }
         }
       ]
@@ -183,8 +183,8 @@
                 "SystemId": "Seele_Schneider_Slash"
               }
             ],
-            "WorldSoundEventId": "SFX_Sword_T2_Impact",
-            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+            "WorldSoundEventId": "SFX_Seele_Schneider_Impact",
+            "LocalSoundEventId": "SFX_Seele_Schneider_Impact"
           }
         }
       ]
@@ -200,8 +200,8 @@
           },
           "EntityStatsOnHit": [],
           "DamageEffects": {
-            "WorldSoundEventId": "SFX_Sword_T2_Impact",
-            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+            "WorldSoundEventId": "SFX_Seele_Schneider_Impact",
+            "LocalSoundEventId": "SFX_Seele_Schneider_Impact"
           }
         }
       ]
@@ -217,8 +217,8 @@
           },
           "EntityStatsOnHit": [],
           "DamageEffects": {
-            "WorldSoundEventId": "SFX_Sword_T2_Impact",
-            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+            "WorldSoundEventId": "SFX_Seele_Schneider_Impact",
+            "LocalSoundEventId": "SFX_Seele_Schneider_Impact"
           }
         }
       ]
@@ -250,5 +250,19 @@
   "Categories": [
     "Items.Weapons",
     "BleachCategory.Weapons"
-  ]
+  ],
+  "SubCategory": "Spirit Weapon",
+  "ItemAppearanceConditions": {
+    "Seele_Schneider_On": [
+      {
+        "Model": "Items/Weapons/Seele Schneider/Seele_Schneider.blockymodel",
+        "Condition": [
+          5,
+          5
+        ],
+        "ConditionValueType": "Absolute",
+        "Texture": "Items/Weapons/Seele Schneider/Seele_Schneider.png"
+      }
+    ]
+  }
 }

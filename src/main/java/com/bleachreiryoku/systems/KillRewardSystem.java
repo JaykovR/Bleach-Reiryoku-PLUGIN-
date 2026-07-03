@@ -149,6 +149,7 @@ public class KillRewardSystem extends DeathSystems.OnDeathSystem {
             Map.entry("Skeleton_Fighter", 2.0f), // HP 36
             Map.entry("Wraith_Lantern", 2.0f), // HP 30, DMG 10
             Map.entry("Skeleton_Sand_Ranger", 2.0f), // HP 29
+            Map.entry("Skeleton_Fighter_Wander", 2.0f), // HP 29
             Map.entry("Skeleton_Sand_Scout", 2.0f), // HP 29
 
             // -- Void --

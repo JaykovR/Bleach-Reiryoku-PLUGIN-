@@ -46,7 +46,7 @@
     }
   },
   "StaminaCost": {
-    "Value": 7,
+    "Value": 10,
     "CostType": "Damage"
   },
   "CancelOnOtherClick": false,
@@ -86,5 +86,38 @@
     "StatModifiers": {
       "StaminaRegenDelay": -1
     }
+  },
+  "BlockedInteractions": {
+    "Interactions": [
+      {
+        "Type": "ChangeStat",
+        "StatModifiers": {
+          "Reiryoku": 5
+        },
+        "Entity": "User",
+        "Behaviour": "Add",
+        "ValueType": "Percent"
+      },
+      {
+        "Type": "Selector",
+        "RunTime": 0.1,
+        "Selector": {
+          "Id": "Stab",
+          "EndDistance": 1
+        },
+        "HitEntity": {
+          "Interactions": [
+            {
+              "Type": "ChangeStat",
+              "StatModifiers": {
+                "Reiryoku": -5
+              },
+              "ValueType": "Percent",
+              "Entity": "Target"
+            }
+          ]
+        }
+      }
+    ]
   }
 }

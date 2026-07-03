@@ -103,5 +103,6 @@
   "Categories": [
     "BleachCategory.Armors"
   ],
-  "Icon": "Icons/ItemsGenerated/Shihakusho_Kosode_Sleeveless.png"
+  "Icon": "Icons/ItemsGenerated/Shihakusho_Kosode_Sleeveless.png",
+  "SubCategory": "Shinigami"
 }

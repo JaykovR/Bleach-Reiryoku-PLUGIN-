@@ -3,8 +3,8 @@
   "RunTime": 0.05,
   "Effects": {
     "ItemAnimationId": "SwingRight",
-    "WorldSoundEventId": "SFX_Sword_T2_Swing",
-    "LocalSoundEventId": "SFX_Sword_T2_Swing_LR_Local",
+    "WorldSoundEventId": "SFX_SeeleSchneider_Swing",
+    "LocalSoundEventId": "SFX_SeeleSchneider_Swing",
     "ItemPlayerAnimationsId": "Seele_Schneider_Animations"
   },
   "Next": {

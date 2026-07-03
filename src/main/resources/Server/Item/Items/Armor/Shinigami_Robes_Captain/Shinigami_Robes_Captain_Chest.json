@@ -116,5 +116,6 @@
   "Categories": [
     "BleachCategory.Armors"
   ],
-  "Icon": "Icons/ItemsGenerated/Shinigami_Robes_Captain_Chest.png"
+  "Icon": "Icons/ItemsGenerated/Shinigami_Robes_Captain_Chest.png",
+  "SubCategory": "Shinigami"
 }

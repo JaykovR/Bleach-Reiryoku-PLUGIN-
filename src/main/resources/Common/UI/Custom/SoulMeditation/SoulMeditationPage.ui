@@ -1,0 +1,78 @@
+@MenuButtonStyle = TextButtonStyle(
+    Default: (Background: #0d1117, LabelStyle: (FontSize: 18, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Hovered: (Background: #1a2030, LabelStyle: (FontSize: 18, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Pressed: (Background: #16243a, LabelStyle: (FontSize: 18, TextColor: #aaccff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center))
+);
+
+@WipButtonStyle = TextButtonStyle(
+    Default: (Background: #0a0c10, LabelStyle: (FontSize: 18, TextColor: #55606c, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Hovered: (Background: #0a0c10, LabelStyle: (FontSize: 18, TextColor: #55606c, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Pressed: (Background: #0a0c10, LabelStyle: (FontSize: 18, TextColor: #55606c, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center))
+);
+
+@DoneStyle = TextButtonStyle(
+    Default: (Background: #3a5d7d, LabelStyle: (FontSize: 16, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Hovered: (Background: #5B8FBF, LabelStyle: (FontSize: 16, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Pressed: (Background: #2c4760, LabelStyle: (FontSize: 16, TextColor: #aaccff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center))
+);
+
+Group {
+    Anchor: (Width: 460, Height: 520);
+    Background: #000000(0.98);
+    LayoutMode: Top;
+    Padding: (Full: 24);
+
+    Label {
+        Text: "SOUL MEDITATION";
+        Anchor: (Height: 40);
+        Style: (FontSize: 24, TextColor: #ffffff, RenderBold: true);
+    }
+
+    Label #MeditateHint {
+        Text: "Center yourself and restore your spirit";
+        Anchor: (Height: 26);
+        Style: (FontSize: 14, TextColor: #88aacc);
+    }
+
+    Group { Anchor: (Height: 18); }
+
+    TextButton #MeditateButton {
+        Text: "Meditate";
+        Anchor: (Height: 62);
+        Style: @MenuButtonStyle;
+        Padding: (Left: 16);
+    }
+    Group { Anchor: (Height: 10); }
+
+    TextButton #UnlockButton {
+        Text: "Unlock New Kido";
+        Anchor: (Height: 62);
+        Style: @MenuButtonStyle;
+        Padding: (Left: 16);
+    }
+    Group { Anchor: (Height: 10); }
+
+    TextButton #StatsButton {
+        Text: "View Stats";
+        Anchor: (Height: 62);
+        Style: @MenuButtonStyle;
+        Padding: (Left: 16);
+    }
+    Group { Anchor: (Height: 10); }
+
+    TextButton #WipButton {
+        Text: "WIP";
+        Anchor: (Height: 62);
+        Style: @WipButtonStyle;
+        Padding: (Left: 16);
+    }
+
+    Group { Anchor: (Height: 14); }
+
+    TextButton #DoneButton {
+        Text: "Close";
+        Anchor: (Height: 40);
+        Style: @DoneStyle;
+        Padding: (Left: 16);
+    }
+}

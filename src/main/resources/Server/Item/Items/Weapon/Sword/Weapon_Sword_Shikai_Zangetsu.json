@@ -168,5 +168,6 @@
       ]
     }
   },
-  "Icon": "Icons/ItemsGenerated/ZangetsuShikai.png"
+  "Icon": "Icons/ItemsGenerated/ZangetsuShikai.png",
+  "SubCategory": "Shikai"
 }

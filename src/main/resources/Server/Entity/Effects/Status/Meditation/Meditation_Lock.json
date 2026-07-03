@@ -1,0 +1,17 @@
+{
+  "Name": "Meditation_Lock",
+  "Duration": 31,
+  "OverlapBehavior": "Overwrite",
+  "RemovalBehavior": "Complete",
+  "Debuff": false,
+  "ApplicationEffects": {
+    "HorizontalSpeedMultiplier": 0.001,
+    "MovementEffects": {
+      "DisableAll": true,
+      "DisableJump": true,
+      "DisableSprint": true,
+      "DisableCrouch": true
+    },
+    "EntityAnimationId": "SitGround"
+  }
+}

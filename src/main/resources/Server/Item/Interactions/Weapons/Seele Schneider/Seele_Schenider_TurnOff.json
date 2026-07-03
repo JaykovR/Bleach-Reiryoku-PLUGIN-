@@ -1,0 +1,6 @@
+{
+  "Type": "ChangeStat",
+  "StatModifiers": {
+    "Seele_Schneider_On": -5
+  }
+}

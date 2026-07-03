@@ -738,5 +738,6 @@
       }
     ]
   },
-  "PlayerAnimationsId": "Kenpachi_Zanpakuto_Animations"
+  "PlayerAnimationsId": "Kenpachi_Zanpakuto_Animations",
+  "SubCategory": "Sealed"
 }

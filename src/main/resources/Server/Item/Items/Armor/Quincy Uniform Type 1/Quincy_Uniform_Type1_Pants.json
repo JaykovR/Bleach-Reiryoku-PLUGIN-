@@ -93,5 +93,6 @@
   "Categories": [
     "Items.Armors",
     "BleachCategory.Armors"
-  ]
+  ],
+  "SubCategory": "Quincy"
 }

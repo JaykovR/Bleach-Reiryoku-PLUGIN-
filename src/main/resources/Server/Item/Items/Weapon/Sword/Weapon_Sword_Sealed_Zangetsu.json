@@ -188,5 +188,6 @@
   },
   "Icon": "Icons/ItemsGenerated/Sealed_Zangetsu.png",
   "PlayerAnimationsId": "Sealed_Zangetsu_Animations",
-  "Scale": 1.2
+  "Scale": 1.2,
+  "SubCategory": "Sealed"
 }

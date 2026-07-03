@@ -5,6 +5,6 @@
     "Cooldown": 0.25
   },
   "Interactions": [
-    "Seele_Schneider_Primary"
+    "Seele_Schneider_Primary_TurnOnCheck"
   ]
 }

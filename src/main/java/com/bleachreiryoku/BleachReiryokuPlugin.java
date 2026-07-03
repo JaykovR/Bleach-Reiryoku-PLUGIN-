@@ -82,6 +82,13 @@ public class BleachReiryokuPlugin extends JavaPlugin {
         );
         com.bleachreiryoku.playerData.KidoUnlocks.setComponentType(kidoUnlocksType);
 
+        var activeMeditationType = registry.registerComponent(
+                com.bleachreiryoku.playerData.ActiveMeditation.class,
+                "BR_ActiveMeditation",
+                com.bleachreiryoku.playerData.ActiveMeditation.CODEC
+        );
+        com.bleachreiryoku.playerData.ActiveMeditation.setComponentType(activeMeditationType);
+
         // -----------------INTERACTIONS---------------------------------
         this.getCodecRegistry(Interaction.CODEC)
                 .register("UnlockShikai", UnlockShikaiInteraction.class, UnlockShikaiInteraction.CODEC)
@@ -94,6 +101,7 @@ public class BleachReiryokuPlugin extends JavaPlugin {
                 .register("OpenKidoSelectionPage", OpenKidoSelectionPage.class, OpenKidoSelectionPage.CODEC)
                 .register("RunKidoSlot", RunKidoSlotInteraction.class, RunKidoSlotInteraction.CODEC)
                 .register("AddKidoProficiency", AddKidoProficiencyInteraction.class, AddKidoProficiencyInteraction.CODEC)
+                .register("OpenSoulMeditationPage", OpenSoulMeditationPage.class, OpenSoulMeditationPage.CODEC)
                 .register("OpenKidoGrimoirePage", OpenKidoGrimoirePage.class, OpenKidoGrimoirePage.CODEC)
                 .register("OpenRaceSelectionPage", OpenRaceSelectionPage.class, OpenRaceSelectionPage.CODEC);
 
@@ -117,6 +125,7 @@ public class BleachReiryokuPlugin extends JavaPlugin {
         registry.registerSystem(new ReiryokuHudSystem());
 
         registry.registerSystem(new ReiryokuDrainSystem());
+        registry.registerSystem(new com.bleachreiryoku.systems.MeditationSystem());
 
         // Watches for NPC deaths and rewards Reiryoku max increases to the killer
         registry.registerSystem(new KillRewardSystem());

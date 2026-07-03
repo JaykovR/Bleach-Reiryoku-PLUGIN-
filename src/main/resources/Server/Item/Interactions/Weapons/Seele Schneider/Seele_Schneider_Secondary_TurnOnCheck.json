@@ -1,0 +1,17 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "Seele_Schneider_On": 5
+  },
+  "Next": {
+    "Type": "Replace",
+    "Var": "Guard_Start",
+    "DefaultOk": true,
+    "DefaultValue": {
+      "Interactions": [
+        "Seele_Schneider_Secondary_Guard"
+      ]
+    }
+  },
+  "Failed": "Seele_Schneider_TurnOn"
+}

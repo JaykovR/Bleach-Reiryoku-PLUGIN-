@@ -1,0 +1,17 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Seele_Schneider_Animations",
+    "ItemAnimationId": "TurnOn",
+    "WorldSoundEventId": "SFX_Seele_Schneider_TurnOn",
+    "LocalSoundEventId": "SFX_Seele_Schneider_TurnOn"
+  },
+  "RunTime": 0.45,
+  "Next": {
+    "Type": "ChangeStat",
+    "StatModifiers": {
+      "Seele_Schneider_On": 5,
+      "Reiryoku": -40
+    }
+  }
+}

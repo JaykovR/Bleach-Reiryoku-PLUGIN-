@@ -205,3 +205,14 @@ items.Kaido_Infused_Pill.description = A masterpiece of Squad 4's medical resear
 items.Race_Selection_Menu.name = Race Selection Menu
 items.Race_Selection_Menu.description = <b><color is="#ffffff">Right-Click</color></b> to open the race selection menu.\n \
 										<i>This item will be deleted after its use </i>
+Kido_Charm.name = Kido Charm
+Kido_Charm.description = A spiritual talisman <b>required to cast Kido</b>. <i>You can equip it on your off-hand to cast kido while holding your weapon</i>. \n \
+						 <color is="#ffffff"><b>Controls:</b></color>\n \
+						 - <b> Hold Left-Click + Any Direction or None</b> to cast your kido techniques depending on the direction you are moving. \
+								the <i>hold left-click</i> time varies per kido technique.\n \
+						 - <b>E</b> to open the <i>Kido Loadout</i> menu, where you can allocate which techniques you can use.\n \
+						 <b><i><color is="#9c504c"> To Unlock new Kido, interact with the Soul Meditation Seat</b>.\n \
+						 Which you can craft in the Furniture Workbench.
+Soul_Meditation_Seat.name = Soul Meditation Seat
+Soul_Meditation_Seat.description = A simple meditation seat used to calm the mind and strengthen the spirit. Through meditation, new \
+								   techniques and abilities can be unlocked.

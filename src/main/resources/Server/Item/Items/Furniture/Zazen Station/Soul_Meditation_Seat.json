@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Soul Meditation Seat"
+    "Name": "items.Soul_Meditation_Seat.name",
+    "Description": "items.Soul_Meditation_Seat.description"
   },
   "ItemLevel": 10,
   "Icon": "Icons/ItemsGenerated/Soul_Meditation_Seat.png",
@@ -12,21 +13,28 @@
   "Recipe": {
     "Input": [
       {
-        "ItemId": "Soil_Pathway",
+        "ItemId": "Cloth_Block_Wool_Green",
         "Quantity": 1
-      }
-    ],
-    "BenchRequirement": [
+      },
       {
-        "Id": "Builders",
-        "Type": "Crafting",
-        "Categories": [
-          "Structural-Rock"
-        ]
+        "ItemId": "Cloth_Block_Wool_Green_Light",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Life_Essence",
+        "Quantity": 10
       }
     ],
     "OutputQuantity": 1,
-    "TimeSeconds": 2
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Furniture_Bench",
+        "Categories": [
+          "Furniture_Textiles"
+        ]
+      }
+    ]
   },
   "PlayerAnimationsId": "Block",
   "Interactions": {
@@ -108,7 +116,7 @@
       "Use": {
         "Interactions": [
           {
-            "Type": "OpenKidoGrimoirePage"
+            "Type": "OpenSoulMeditationPage"
           }
         ]
       }

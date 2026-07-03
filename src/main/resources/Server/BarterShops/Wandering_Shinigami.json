@@ -44,7 +44,7 @@
         {
           "Weight": 10,
           "Output": {
-            "ItemId": "Asauchi",
+            "ItemId": "Weapon_Sword_Asauchi",
             "Quantity": 1
           },
           "Input": [

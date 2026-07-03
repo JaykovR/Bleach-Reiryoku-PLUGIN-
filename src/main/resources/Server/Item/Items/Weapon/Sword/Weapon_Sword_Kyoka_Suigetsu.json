@@ -7,7 +7,7 @@
   "Model": "Items/Weapons/Kyoka_Suigetsu/Kyoka_Suigetsu.blockymodel",
   "Texture": "Items/Weapons/Kyoka_Suigetsu/Kyoka_Suigetsu_Texture.png",
   "Icon": "Icons/ItemsGenerated/Kyoka_Suigetsu.png",
-  "Quality": "Shikai",
+  "Quality": "Developer",
   "ItemLevel": 30,
   "Categories": [
     "BleachCategory.Weapons",

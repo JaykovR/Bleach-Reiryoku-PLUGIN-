@@ -19,7 +19,7 @@
       "Sword"
     ]
   },
-  "Quality": "Shikai",
+  "Quality": "Developer",
   "ItemLevel": 35,
   "DroppedItemAnimation": "Items/Animations/Dropped/Dropped_Diagonal_Left.blockyanim",
   "PlayerAnimationsId": "True_Shikai_ZangetsuAnimations",

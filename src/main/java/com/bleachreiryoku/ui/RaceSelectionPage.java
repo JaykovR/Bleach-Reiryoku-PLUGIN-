@@ -18,6 +18,7 @@ import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 
 import javax.annotation.Nonnull;
+import javax.print.DocFlavor;
 
 /**
  * After selecting a race goes to RaceConfirm Page
@@ -80,6 +81,8 @@ public class RaceSelectionPage extends InteractiveCustomUIPage<RaceSelectionPage
             @Nonnull Store<EntityStore> store,
             @Nonnull RaceEventData data
     ) {
+
+        String username = playerRef.getUsername();
         if (data.selectedRace == null) return;
 
         // Set the player's primary race
@@ -103,6 +106,9 @@ public class RaceSelectionPage extends InteractiveCustomUIPage<RaceSelectionPage
                 player.getInventory().getCombinedHotbarFirst().addItemStack(new ItemStack(itemId, 1));
             }
         }
+
+        // Message for Bleach Reiryoku Online / Server usage purposes.
+        System.out.println("[BR] " +  username + " has selected: " + data.selectedRace);
 
         // Open the confirmation page
         player.getPageManager().openCustomPage(ref, store,

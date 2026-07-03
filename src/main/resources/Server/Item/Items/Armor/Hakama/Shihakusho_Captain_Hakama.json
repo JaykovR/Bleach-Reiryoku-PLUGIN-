@@ -103,5 +103,6 @@
     "Items.Armors",
     "BleachCategory.Armors"
   ],
-  "MaxStack": 1
+  "MaxStack": 1,
+  "SubCategory": "Shinigami"
 }

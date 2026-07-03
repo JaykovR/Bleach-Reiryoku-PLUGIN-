@@ -101,5 +101,6 @@
   "Categories": [
     "BleachCategory.Armors"
   ],
-  "Icon": "Icons/ItemsGenerated/Shihakusho_Kosode_OpenShoulders.png"
+  "Icon": "Icons/ItemsGenerated/Shihakusho_Kosode_OpenShoulders.png",
+  "SubCategory": "Shinigami"
 }

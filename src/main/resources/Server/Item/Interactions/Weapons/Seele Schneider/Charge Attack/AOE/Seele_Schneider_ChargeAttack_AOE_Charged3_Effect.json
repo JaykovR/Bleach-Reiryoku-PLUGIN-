@@ -19,8 +19,8 @@
         "TrailId": "Seele_Schneider_Medium"
       }
     ],
-    "WorldSoundEventId": "SFX_Sword_T2_Signature_Part_1",
-    "LocalSoundEventId": "SFX_Sword_T2_Signature_Part_1_Local",
+    "WorldSoundEventId": "SFX_Seele_Schneider_Swing_AOE",
+    "LocalSoundEventId": "SFX_Seele_Schneider_Swing_AOE",
     "WaitForAnimationToFinish": false,
     "Particles": [
       {

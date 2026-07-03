@@ -55,6 +55,20 @@
       "BlendingDuration": 0,
       "KeepPreviousFirstPersonAnimation": true,
       "Speed": 0.6
+    },
+    "TurnOn": {
+      "ThirdPerson": "Characters/Animations/Items/Seele Schneider/Turn On/TurnOn.blockyanim",
+      "ThirdPersonMoving": "Characters/Animations/Items/Seele Schneider/Turn On/TurnOn_Moving.blockyanim",
+      "FirstPerson": "Characters/Animations/Items/Seele Schneider/Turn On/TurnOn_FPS.blockyanim",
+      "Speed": 1,
+      "ClipsGeometry": true
+    },
+    "Idle": {
+      "FirstPerson": "Characters/Animations/Items/Main_Handed/Sword/Idle_FPS.blockyanim",
+      "Speed": 0.5,
+      "ThirdPerson": "Characters/Animations/Items/Zangetsu_Bankai/Idle_Tensa.blockyanim",
+      "Looping": true,
+      "KeepPreviousFirstPersonAnimation": false
     }
   },
   "WiggleWeights": {
@@ -68,5 +82,6 @@
     "YDeceleration": 0.1,
     "Z": 0.1,
     "ZDeceleration": 0.1
-  }
+  },
+  "Parent": "Sword"
 }

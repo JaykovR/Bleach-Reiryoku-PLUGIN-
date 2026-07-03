@@ -1,0 +1,8 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "Seele_Schneider_On": 5
+  },
+  "Next": "Seele_Schneider_Primary",
+  "Failed": "Seele_Schneider_TurnOn"
+}

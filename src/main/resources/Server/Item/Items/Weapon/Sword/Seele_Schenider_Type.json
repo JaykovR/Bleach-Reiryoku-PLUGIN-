@@ -6,7 +6,7 @@
   "Model": "Items/Weapons/Sword/Iron.blockymodel",
   "Texture": "Items/Weapons/Sword/Iron_Texture.png",
   "Icon": "Icons/ItemsGenerated/Weapon_Sword_Iron.png",
-  "PlayerAnimationsId": "Sword",
+  "PlayerAnimationsId": "Seele_Schneider_Animations",
   "Reticle": "DefaultMelee",
   "Quality": "Template",
   "ItemLevel": 15,
@@ -31,7 +31,8 @@
   "Interactions": {
     "Primary": "Root_Seele_Schneider_Primary",
     "Secondary": "Root_Seele_Schneider_Secondary_Guard",
-    "Ability1": "Root_Weapon_Sword_Signature_Vortexstrike"
+    "Ability1": "Root_Weapon_Sword_Signature_Vortexstrike",
+    "Ability3": "Root_Seele_Schneider_TurnOffOrOn"
   },
   "Tags": {
     "Type": [
