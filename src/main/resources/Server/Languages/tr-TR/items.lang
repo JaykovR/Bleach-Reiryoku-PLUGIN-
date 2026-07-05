@@ -130,6 +130,8 @@ Soul_Imprinting_Altar.name = Ruh Damgalama Sunağı
 Soul_Imprinting_Altar.description = Taşıyıcının ruhunun Asauchi ile birleştiği kutsal çalışma yeri. Derin meditasyon ve ruhani enerji (Reiryoku) yoğunlaştırmasıyla gelecekteki Zanpakutō'nun temeli atılır. Bu sunak hem ilk uyanış hem de Shikai'dan nihai Bankai'ye evrim için kullanılır.
 Soulweave_Loom.name = Soulweave Tezgâhı
 Soulweave_Loom.description = Ruhsal madde ile işlenmiş kıyafetler dokumak için kullanılan bir tezgâh. Varyasyonları Ruhlar Topluluğu ve diğer yerlerde yaygın olarak kullanılır.
+Quincy_Workshop.name = Quincy Atölyesi
+Quincy_Workshop.description = Quincy'lerin araçlarını ve silahlarını üretmek için kullandığı bir atölye masası. Bu silahlar ve araçlar genellikle Quincy olarak <i>Reishi emme</i> yeteneklerini tamamlamak için özel malzemeler içerir.
 
 
 

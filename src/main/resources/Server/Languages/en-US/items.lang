@@ -198,7 +198,10 @@ Soul_Imprinting_Altar.name = Soul Imprinting Altar
 Soul_Imprinting_Altar.description = A sacred workstation where the wielder's soul merges with the Asauchi. Through deep meditation and concentration of spiritual energy (Reiryoku), the foundation of the future Zanpakuto is laid. \
 									This altar is used not only for the initial awakening but also for the subsequent stages of the blade's evolution — from Shikai to the ultimate revelation, Bankai.
 Soulweave_Loom.name = Soulweave Loom
-Soulweave_Loom.description = A loom which is used to weave clothes infused with spiritual matter. Variations of it are widely used across the Soul Society and other places.
+Soulweave_Loom.description = A loom which is used to weave clothes infused with spiritual matter. Variations of it are widely used across the Soul Society and other places
+Quincy_Workshop.name = Quincy Workshop
+Quincy_Workshop.description = A workshop table used by the Quincy to craft their tools and weapons. This weapons and tools usually contain special materials to compliment \
+							 their <i>Reishi absortion</i> capabilities as Quincy.
 
 
 

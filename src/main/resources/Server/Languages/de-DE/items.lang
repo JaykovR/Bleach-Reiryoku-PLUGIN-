@@ -130,6 +130,9 @@ Soul_Imprinting_Altar.name = Altar der Seelenprägung
 Soul_Imprinting_Altar.description = Ein heiliger Arbeitsplatz, an dem sich die Seele des Trägers mit dem Asauchi vereint. Durch tiefe Meditation und Konzentration der spirituellen Energie (Reiryoku) wird hier das Fundament des künftigen Zanpakuto gelegt. Dieser Altar dient nicht nur dem ersten Erwachen, sondern auch den darauffolgenden Stufen der Klingenentwicklung — vom Shikai bis zur ultimativen Offenbarung, dem Bankai.
 Soulweave_Loom.name = Soulweave-Webstuhl
 Soulweave_Loom.description = Ein Webstuhl, der verwendet wird, um Kleidung zu weben, die mit spiritueller Materie durchzogen ist. Varianten davon werden in der Soul Society und anderen Orten weit verbreitet genutzt.
+Quincy_Workshop.name = Quincy-Werkstatt
+Quincy_Workshop.description = Ein Werkstatttisch, den die Quincy nutzen, um ihre Werkzeuge und Waffen herzustellen. \
+							  Diese Waffen und Werkzeuge enthalten meist besondere Materialien, um ihre Fähigkeiten zur <i>Reishi-Absorption</i> als Quincy zu ergänzen.
 
 
 

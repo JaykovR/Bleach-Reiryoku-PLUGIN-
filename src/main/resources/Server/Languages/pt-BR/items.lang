@@ -130,7 +130,8 @@ Soul_Imprinting_Altar.name = Altar de Imprimir Alma
 Soul_Imprinting_Altar.description = Uma estação sagrada onde a alma do portador se funde com o Asauchi. Por meditação profunda e concentração de energia espiritual (Reiryoku), a base do futuro Zanpakutō é lançada. Este altar serve tanto ao despertar inicial quanto às etapas seguintes da evolução da lâmina — do Shikai à revelação final, Bankai.
 Soulweave_Loom.name = Tear Soulweave
 Soulweave_Loom.description = Um tear usado para tecer roupas infundidas com matéria espiritual. Variações dele são amplamente usadas na Soul Society e em outros lugares.
-
+Quincy_Workshop.name = Oficina Quincy
+Quincy_Workshop.description = Uma mesa de oficina usada pelos Quincy para fabricar suas ferramentas e armas. Estas armas e ferramentas geralmente contêm materiais especiais para complementar suas capacidades de <i>absorção de Reishi</i> como Quincy.
 
 
 ## MISC ITEMS --------------------------

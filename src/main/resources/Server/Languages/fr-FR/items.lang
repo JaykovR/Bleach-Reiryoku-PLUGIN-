@@ -130,6 +130,8 @@ Soul_Imprinting_Altar.name = Autel de l'Empreinte d'Âme
 Soul_Imprinting_Altar.description = Un lieu sacré où l'âme du porteur fusionne avec l'Asauchi. Par une profonde méditation et la concentration de l'énergie spirituelle (Reiryoku), les fondations du futur Zanpakuto sont posées. Cet autel est utilisé non seulement pour l'éveil initial, mais aussi pour les étapes suivantes de l'évolution de la lame — du Shikai à la révélation ultime, le Bankai.
 Soulweave_Loom.name = Métier à tisser Soulweave
 Soulweave_Loom.description = Un métier à tisser utilisé pour fabriquer des vêtements imprégnés de matière spirituelle. Ses variantes sont largement utilisées dans la Soul Society et ailleurs.
+Quincy_Workshop.name = Atelier Quincy
+Quincy_Workshop.description = Une table d'atelier utilisée par les Quincy pour fabriquer leurs outils et leurs armes. Ces armes et outils contiennent généralement des matériaux spéciaux pour compléter leurs capacités d'<i>absorption de Reishi</i> en tant que Quincy.
 
 
 

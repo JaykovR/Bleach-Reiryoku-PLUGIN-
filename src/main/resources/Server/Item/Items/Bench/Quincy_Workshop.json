@@ -1,7 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "Quincy Workshop",
-    "Description": "TODO"
+    "Name": "items.Quincy_Workshop.name",
+    "Description": "items.Quincy_Workshop.description"
   },
   "Recipe": {
     "TimeSeconds": 3,
