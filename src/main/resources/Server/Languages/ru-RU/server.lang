@@ -1,15 +1,35 @@
+
+##NPC ROLES NAMES----------------------------
+npcRoles.Scarak_Defender_Hollow.name = Пустой скарак-защитник
+npcRoles.Scarak_Fighter_Hollow.name = Пустой скарак-боец
+npcRoles.Scarak_Louse_Hollow.name = Пустой скарак-вошь
+npcRoles.Scorpion_Hollow.name = Пустой скорпион
+npcRoles.Ghoul_Hollow.name = Пустой гуль
+npcRoles.Crawler_Hollow_Void.name = Пустой пустотный ползун
+npcRoles.Prangus_Hollow.name = Пустой прангус
+
+##MEMORIES-----------------------------------
 memories.categories.Hollow.title = Пустые
+memories.Hollow.Scarak_Defender_Hollow.description = Пустой, рождённый из скарака-защитника. Его маска и затвердевший панцирь делают его упрямым бойцом передовой в рядах поражённых порчей.
+memories.Hollow.Scarak_Fighter_Hollow.description = Пустой, рождённый из скарака-бойца. Он сохраняет агрессивную тактику своего прежнего облика, теперь искажённую голодом Пустого.
+memories.Hollow.Scarak_Louse_Hollow.description = Пустой, рождённый из скарака-воши. Маленькие, но многочисленные, эти Пустые роятся вокруг добычи и обгладывают её до костей.
+memories.Hollow.Scorpion_Hollow.description = Пустой, рождённый из скорпиона. Его жало и клешни теперь сосуды порчи, разящие холодом пустоты.
+memories.Hollow.Ghoul_Hollow.description = Пустой, рождённый из гуля. Беспокойные мертвецы, ещё сильнее искажённые в Пустого — существо, питающееся сущностью живых.
+memories.Hollow.Crawler_Hollow_Void.description = Пустой, рождённый из пустотного ползуна. Уже затронутый пустотой, он полностью погрузился в природу Пустого и рыщет во тьме.
 
-npcRoles.Scarak_Defender_Hollow.name = Scarak Defender Hollow
-npcRoles.Scarak_Fighter_Hollow.name = Scarak Fighter Hollow
-npcRoles.Scarak_Louse_Hollow.name = Scarak Louse Hollow
-npcRoles.Scorpion_Hollow.name = Scorpion Hollow
-npcRoles.Ghoul_Hollow.name = Ghoul Hollow
-npcRoles.Crawler_Hollow_Void.name = Void Crawler Hollow
+##SYSTEM MESSAGES-------------------------
+meditation.started = Ты начинаешь медитировать. Оставайся неподвижным...
+meditation.cooldown = Ты уже медитировал сегодня. Отдохни и возвращайся завтра.
+meditation.meditating = Ты уже медитируешь.
+meditation.error = Сейчас ты не можешь медитировать.
 
-memories.Hollow.Scarak_Defender_Hollow.description = A Hollow born from a Scarak Defender. Its mask and hardened carapace make it a stubborn frontline fighter in the ranks of the corrupted.
-memories.Hollow.Scarak_Fighter_Hollow.description = A Hollow born from a Scarak Fighter. It retains the aggressive tactics of its former self, now twisted by the hunger of a Hollow.
-memories.Hollow.Scarak_Louse_Hollow.description = A Hollow born from a Scarak Louse. Small but numerous, these Hollows swarm their prey and strip it to the bone.
-memories.Hollow.Scorpion_Hollow.description = A Hollow born from a Scorpion. Its sting and claws are now vessels of corruption, striking with the chill of the void.
-memories.Hollow.Ghoul_Hollow.description = A Hollow born from a Ghoul. The restless dead, twisted further into a Hollow—a creature that feeds on the essence of the living.
-memories.Hollow.Crawler_Hollow_Void.description = A Hollow born from a Void Crawler. Already touched by the void, it has fallen fully into Hollow nature and prowls the darkness.
+##COMMANDS MESSAGES-------------------------
+command.hud_show = Интерфейс показан
+command.hud_hidden = Интерфейс скрыт
+command.open_kido_archive_failed = У тебя нет прав на использование этой команды. Чтобы открыть Архив, изготовь Сиденье духовной медитации или используй /op self для применения этой команды.
+command.noperm_generic = У тебя нет прав на использование этой команды
+command.setreiryokumax = Максимальное Reiryoku увеличено на
+
+##INTERACTION MESSAGES-------------------------
+interaction.reiryokucheck_fail = Твоя духовная сила слишком слаба. Требуется: {required} 
+interaction.racecheck_fail = Это могут использовать только {race}.

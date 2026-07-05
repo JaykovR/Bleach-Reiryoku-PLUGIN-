@@ -1054,7 +1054,7 @@
                     },
                     "textureLayout": {},
                     "unwrapMode": "custom",
-                    "visible": true,
+                    "visible": false,
                     "doubleSided": false,
                     "shadingMode": "flat"
                   },
@@ -1105,7 +1105,7 @@
                           }
                         },
                         "unwrapMode": "custom",
-                        "visible": true,
+                        "visible": false,
                         "doubleSided": false,
                         "shadingMode": "flat"
                       },
@@ -1124,7 +1124,7 @@
                             },
                             "textureLayout": {},
                             "unwrapMode": "custom",
-                            "visible": true,
+                            "visible": false,
                             "doubleSided": false,
                             "shadingMode": "flat"
                           }
@@ -1176,7 +1176,7 @@
                               }
                             },
                             "unwrapMode": "custom",
-                            "visible": true,
+                            "visible": false,
                             "doubleSided": false,
                             "shadingMode": "flat"
                           }
@@ -1228,7 +1228,7 @@
                               }
                             },
                             "unwrapMode": "custom",
-                            "visible": true,
+                            "visible": false,
                             "doubleSided": false,
                             "shadingMode": "flat"
                           }
@@ -1279,7 +1279,7 @@
                               }
                             },
                             "unwrapMode": "custom",
-                            "visible": true,
+                            "visible": false,
                             "doubleSided": false,
                             "shadingMode": "flat"
                           },
@@ -1331,7 +1331,7 @@
                                   }
                                 },
                                 "unwrapMode": "custom",
-                                "visible": true,
+                                "visible": false,
                                 "doubleSided": false,
                                 "shadingMode": "flat"
                               }
@@ -1383,7 +1383,7 @@
                                   }
                                 },
                                 "unwrapMode": "custom",
-                                "visible": true,
+                                "visible": false,
                                 "doubleSided": false,
                                 "shadingMode": "flat"
                               }
@@ -1435,7 +1435,7 @@
                                   }
                                 },
                                 "unwrapMode": "custom",
-                                "visible": true,
+                                "visible": false,
                                 "doubleSided": false,
                                 "shadingMode": "flat"
                               }
@@ -1487,7 +1487,7 @@
                                   }
                                 },
                                 "unwrapMode": "custom",
-                                "visible": true,
+                                "visible": false,
                                 "doubleSided": false,
                                 "shadingMode": "flat"
                               }
@@ -1542,7 +1542,7 @@
                           }
                         },
                         "unwrapMode": "custom",
-                        "visible": true,
+                        "visible": false,
                         "doubleSided": false,
                         "shadingMode": "flat"
                       },
@@ -1561,7 +1561,7 @@
                             },
                             "textureLayout": {},
                             "unwrapMode": "custom",
-                            "visible": true,
+                            "visible": false,
                             "doubleSided": false,
                             "shadingMode": "flat"
                           }
@@ -1613,7 +1613,7 @@
                               }
                             },
                             "unwrapMode": "custom",
-                            "visible": true,
+                            "visible": false,
                             "doubleSided": false,
                             "shadingMode": "flat"
                           }
@@ -1665,7 +1665,7 @@
                               }
                             },
                             "unwrapMode": "custom",
-                            "visible": true,
+                            "visible": false,
                             "doubleSided": false,
                             "shadingMode": "flat"
                           }
@@ -1716,7 +1716,7 @@
                               }
                             },
                             "unwrapMode": "custom",
-                            "visible": true,
+                            "visible": false,
                             "doubleSided": false,
                             "shadingMode": "flat"
                           },
@@ -1768,7 +1768,7 @@
                                   }
                                 },
                                 "unwrapMode": "custom",
-                                "visible": true,
+                                "visible": false,
                                 "doubleSided": false,
                                 "shadingMode": "flat"
                               }
@@ -1820,7 +1820,7 @@
                                   }
                                 },
                                 "unwrapMode": "custom",
-                                "visible": true,
+                                "visible": false,
                                 "doubleSided": false,
                                 "shadingMode": "flat"
                               }
@@ -1872,7 +1872,7 @@
                                   }
                                 },
                                 "unwrapMode": "custom",
-                                "visible": true,
+                                "visible": false,
                                 "doubleSided": false,
                                 "shadingMode": "flat"
                               }
@@ -1924,7 +1924,7 @@
                                   }
                                 },
                                 "unwrapMode": "custom",
-                                "visible": true,
+                                "visible": false,
                                 "doubleSided": false,
                                 "shadingMode": "flat"
                               }
@@ -3764,10 +3764,10 @@
                       "shape": {
                         "type": "box",
                         "offset": {"x": -0.5, "y": 0.5, "z": 0},
-                        "stretch": {"x": 1, "y": 1, "z": 0.975},
+                        "stretch": {"x": 1.1875, "y": 1, "z": 1.1},
                         "settings": {
                           "isPiece": false,
-                          "size": {"x": 2, "y": 1, "z": 2}
+                          "size": {"x": 1, "y": 1, "z": 2}
                         },
                         "textureLayout": {
                           "back": {
@@ -3781,7 +3781,7 @@
                             "angle": 0
                           },
                           "front": {
-                            "offset": {"x": 184, "y": 11},
+                            "offset": {"x": 191, "y": 11},
                             "mirror": {"x": false, "y": false},
                             "angle": 0
                           },
@@ -3791,12 +3791,12 @@
                             "angle": 0
                           },
                           "top": {
-                            "offset": {"x": 186, "y": 15},
+                            "offset": {"x": 185, "y": 15},
                             "mirror": {"x": true, "y": true},
                             "angle": 0
                           },
                           "bottom": {
-                            "offset": {"x": 186, "y": 13},
+                            "offset": {"x": 185, "y": 13},
                             "mirror": {"x": true, "y": false},
                             "angle": 0
                           }
@@ -5913,21 +5913,21 @@
                         {
                           "id": "122",
                           "name": "Banner--C12",
-                          "position": {"x": 6, "y": -4, "z": 0},
+                          "position": {"x": -1.75, "y": -31, "z": 7.75},
                           "orientation": {"x": 0, "y": 0.38268, "z": 0, "w": 0.92388},
                           "shape": {
                             "type": "quad",
-                            "offset": {"x": -0.5, "y": -12, "z": -4},
-                            "stretch": {"x": 1, "y": 1, "z": 1},
+                            "offset": {"x": 10.5, "y": 16, "z": -4},
+                            "stretch": {"x": 0.34375, "y": 0.3125, "z": 1},
                             "settings": {
                               "isPiece": false,
-                              "size": {"x": 11, "y": 28},
+                              "size": {"x": 33, "y": 84},
                               "normal": "+Z",
                               "isStaticBox": true
                             },
                             "textureLayout": {
                               "front": {
-                                "offset": {"x": 165, "y": 10},
+                                "offset": {"x": 141, "y": 51},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               }
@@ -6534,21 +6534,21 @@
                         {
                           "id": "135",
                           "name": "Banner--C12",
-                          "position": {"x": -5, "y": -15, "z": -4},
+                          "position": {"x": 2.7, "y": -15, "z": 3.8},
                           "orientation": {"x": 0, "y": 0.92388, "z": 0, "w": 0.38268},
                           "shape": {
                             "type": "quad",
-                            "offset": {"x": -2.01472, "y": -1, "z": 0.0246},
-                            "stretch": {"x": 1, "y": 1, "z": 1},
+                            "offset": {"x": 8.98528, "y": 0, "z": 0.0246},
+                            "stretch": {"x": 0.3438, "y": 0.3125, "z": 1},
                             "settings": {
                               "isPiece": false,
-                              "size": {"x": 11, "y": 28},
+                              "size": {"x": 33, "y": 84},
                               "normal": "-Z",
                               "isStaticBox": true
                             },
                             "textureLayout": {
                               "front": {
-                                "offset": {"x": 165, "y": 10},
+                                "offset": {"x": 141, "y": 51},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 0
                               }
@@ -6570,7 +6570,7 @@
                   "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                   "shape": {
                     "type": "quad",
-                    "offset": {"x": -3.5, "y": 6, "z": -5},
+                    "offset": {"x": -3.5, "y": 6.1, "z": -5},
                     "stretch": {"x": 1, "y": 1, "z": 1},
                     "settings": {
                       "isPiece": false,
@@ -6593,7 +6593,7 @@
                     {
                       "id": "137",
                       "name": "Banner--C1",
-                      "position": {"x": 3.5, "y": -6, "z": 5.1},
+                      "position": {"x": 3.5, "y": -5.9, "z": 5.1},
                       "orientation": {"x": 0.70711, "y": 0, "z": 0, "w": 0.70711},
                       "shape": {
                         "type": "quad",

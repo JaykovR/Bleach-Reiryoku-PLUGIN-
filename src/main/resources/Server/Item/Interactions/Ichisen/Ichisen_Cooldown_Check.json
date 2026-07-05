@@ -5,7 +5,7 @@
   ],
   "Next": {
     "Type": "SendMessage",
-    "Message": "This skill is on cooldown."
+    "Key": "weaponmessages.Skill_Cooldown"
   },
   "Failed": "Shikai_Senbonzakura_Ichisen_Cost"
 }

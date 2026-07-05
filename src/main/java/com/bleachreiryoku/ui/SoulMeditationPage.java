@@ -116,11 +116,11 @@ public class SoulMeditationPage extends InteractiveCustomUIPage<SoulMeditationPa
         if (playerRef == null) return;
         // TODO TRANSLATION
         String msg = switch (result) {
-            case STARTED -> "You begin to meditate. Stay still...";
-            case ON_COOLDOWN -> "You have already meditated today. Rest and return tomorrow.";
-            case ALREADY_MEDITATING -> "You are already meditating.";
-            case ERROR -> "You cannot meditate right now.";
+            case STARTED -> "server.meditation.started";
+            case ON_COOLDOWN -> "server.meditation.cooldown";
+            case ALREADY_MEDITATING -> "server.meditation.meditating";
+            case ERROR -> "server.meditation.error";
         };
-        playerRef.sendMessage(Message.raw(msg));
+        playerRef.sendMessage(Message.translation(msg));
     }
 }

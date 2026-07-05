@@ -39,7 +39,7 @@
           "Parent": "Weapon_Sword_Primary_Swing_Left_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 10
+              "Physical": 16
             }
           },
           "DamageEffects": {
@@ -60,7 +60,49 @@
           "Parent": "Weapon_Sword_Primary_Swing_Right_Damage",
           "DamageCalculator": {
             "BaseDamage": {
+              "Physical": 14
+            }
+          },
+          "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "Seele_Schneider_Slash"
+              }
+            ],
+            "WorldSoundEventId": "SFX_Seele_Schneider_Impact",
+            "LocalSoundEventId": "SFX_Seele_Schneider_Impact"
+          }
+        }
+      ]
+    },
+    "Thrust_Combo_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
               "Physical": 10
+            }
+          },
+          "DamageEffects": {
+            "WorldParticles": [
+              {
+                "SystemId": "Seele_Schneider_Slash"
+              }
+            ],
+            "WorldSoundEventId": "SFX_Seele_Schneider_Impact",
+            "LocalSoundEventId": "SFX_Seele_Schneider_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Upward_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 12
             }
           },
           "DamageEffects": {
@@ -81,7 +123,7 @@
           "Parent": "Weapon_Sword_Primary_Swing_Down_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 18
+              "Physical": 15
             }
           },
           "DamageEffects": {
@@ -236,15 +278,15 @@
     }
   },
   "IconProperties": {
-    "Scale": 0.35,
+    "Scale": 0.8,
     "Rotation": [
       44,
       99,
       13
     ],
     "Translation": [
-      -37,
-      -35
+      -10,
+      -12
     ]
   },
   "Categories": [

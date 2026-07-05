@@ -47,35 +47,40 @@
     "Secondary": {
       "Interactions": [
         {
-          "Type": "ReiryokuCheck",
-          "RequiredMax": 600,
+          "Type": "PlayerRaceCheck",
+          "DesiredRace": "Shinigami",
           "Next": {
-            "Type": "Serial",
-            "Interactions": [
-              {
-                "Type": "Simple",
-                "Effects": {
-                  "Particles": [
-                    {
-                      "SystemId": "ShikaiUnlock",
-                      "TargetEntityPart": "Entity",
-                      "Color": "#f3d462"
-                    }
-                  ],
-                  "WorldSoundEventId": "SFX_ShikaiUnlock"
+            "Type": "ReiryokuCheck",
+            "RequiredMax": 600,
+            "Next": {
+              "Type": "Serial",
+              "Interactions": [
+                {
+                  "Type": "Simple",
+                  "Effects": {
+                    "Particles": [
+                      {
+                        "SystemId": "ShikaiUnlock",
+                        "TargetEntityPart": "Entity",
+                        "Color": "#f3d462"
+                      }
+                    ],
+                    "WorldSoundEventId": "SFX_ShikaiUnlock"
+                  },
+                  "RunTime": 1
                 },
-                "RunTime": 1
-              },
-              {
-                "Type": "Simple",
-                "Effects": {
-                  "WorldSoundEventId": "SFX_ShikaiUnlock2"
+                {
+                  "Type": "Simple",
+                  "Effects": {
+                    "WorldSoundEventId": "SFX_ShikaiUnlock2"
+                  },
+                  "RunTime": 0.1
                 },
-                "RunTime": 0.1
-              },
-              "UnlockShikai"
-            ]
-          }
+                "UnlockShikai"
+              ]
+            }
+          },
+          "RunTime": 0.1
         }
       ]
     }

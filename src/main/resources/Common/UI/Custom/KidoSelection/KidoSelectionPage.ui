@@ -1,14 +1,22 @@
 @SlotStyle = TextButtonStyle(
     Default: (Background: "ButtonInput_Background.png", LabelStyle: (FontSize: 16, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
     Hovered: (Background: "ButtonInput_Hovered_Background.png", LabelStyle: (FontSize: 16, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
-    Pressed: (Background: "ButtonInput_Selected_Background.png", LabelStyle: (FontSize: 16, TextColor: #aaccff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center))
-);
+    Pressed: (Background: "ButtonInput_Selected_Background.png", LabelStyle: (FontSize: 16, TextColor: #aaccff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Sounds: (
+             MouseHover: (SoundPath: "Selection_Hover.ogg", Volume: 0.7),
+             Activate: (SoundPath: "Selection_Press.ogg", Volume: 0.7)
+             )
+    );
 
 @DoneStyle = TextButtonStyle(
     Default: (Background: "DoneButton_Background.png", LabelStyle: (FontSize: 18, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
     Hovered: (Background: "DoneButton_Hovered_Background.png", LabelStyle: (FontSize: 18, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
-    Pressed: (Background: "DoneButton_Pressed_Background.png", LabelStyle: (FontSize: 18, TextColor: #aaccff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center))
-);
+    Pressed: (Background: "DoneButton_Pressed_Background.png", LabelStyle: (FontSize: 18, TextColor: #aaccff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+            Sounds: (
+                      MouseHover: (SoundPath: "Selection_Hover.ogg", Volume: 0.7),
+                      Activate: (SoundPath: "Selection_Press.ogg", Volume: 0.7)
+                      )
+    );
 
 Group {
     Anchor: (Width: 1100, Height: 670);

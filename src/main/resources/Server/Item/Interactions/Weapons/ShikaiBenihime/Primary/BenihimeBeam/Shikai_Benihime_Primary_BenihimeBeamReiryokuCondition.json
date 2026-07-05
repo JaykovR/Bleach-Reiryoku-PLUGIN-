@@ -1,0 +1,11 @@
+{
+  "Type": "StatsCondition",
+  "Costs": {
+    "Reiryoku": 60
+  },
+  "Next": "Shikai_Benihime_Primary_BenihimeBeam",
+  "Failed": {
+    "Type": "SendMessage",
+    "Key": "weaponmessages.Benihime_Beam_Fail"
+  }
+}

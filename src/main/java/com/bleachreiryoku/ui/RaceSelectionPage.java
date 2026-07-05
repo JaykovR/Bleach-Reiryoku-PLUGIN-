@@ -27,12 +27,12 @@ import javax.print.DocFlavor;
 
 public class RaceSelectionPage extends InteractiveCustomUIPage<RaceSelectionPage.RaceEventData> {
 
-    // Items granted when the player confirms the Shinigami race.
-    // Add entries here if other races should also receive starter items.
+    // STARTER ITEMS GRANTING
     private static final String[] SHINIGAMI_STARTER_ITEMS = {
             "Standard_Issue_Shihakusho_Hakama",
             "Standard_Issue_Shihakusho_Kosode",
-            "Weapon_Sword_Asauchi"
+            "Weapon_Sword_Asauchi",
+            "Kido_Charm"
     };
     private static final String[] QUINCY_STARTER_ITEMS = {
             "Weapon_Shortbow_Kojaku"

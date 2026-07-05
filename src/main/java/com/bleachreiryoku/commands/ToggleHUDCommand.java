@@ -27,11 +27,11 @@ public class ToggleHUDCommand extends AbstractPlayerCommand {
         CompletableFuture.runAsync(() -> {
             if(player.getHudManager().getCustomHud(ReiryokuBar.KEY) == null){
                 player.getHudManager().addCustomHud(playerRef, new ReiryokuBar(playerRef));
-                playerRef.sendMessage(Message.raw("HUD Shown"));
+                playerRef.sendMessage(Message.translation("server.command.hud_shown"));
             }
             else{
                 player.getHudManager().removeCustomHud(playerRef, ReiryokuBar.KEY);
-                playerRef.sendMessage(Message.raw("HUD Hidden"));
+                playerRef.sendMessage(Message.raw("server.command.hud_hidden"));
             }
         }, world);
     }

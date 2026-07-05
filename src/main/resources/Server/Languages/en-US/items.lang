@@ -25,8 +25,8 @@ Sealed_Kenpachi_Zanpakuto.description = A massive, crude and rusted cleaver. Thi
 										- Guard + F: Shunpo - Cost 1.5 Stamina, 10 Reiryoku
 
 ## SHIKAI ZANPAKUTO --------------------------
-Shikai_Tensa_Zangetsu.name = Shikai – Zangetsu
-Shikai_Tensa_Zangetsu.description = Zangetsu is a massive spiritual cleaver, permanently in its released state. The black blade, wrapped in living cloth, empowers its wielder, unleashing <i><b>Getsuga Tensho</b></i> waves and serving as a shield against physical and energy-based attacks.\n \
+Shikai_Zangetsu.name = Shikai – Zangetsu
+Shikai_Zangetsu.description = Zangetsu is a massive spiritual cleaver, permanently in its released state. The black blade, wrapped in living cloth, empowers its wielder, unleashing <i><b>Getsuga Tensho</b></i> waves and serving as a shield against physical and energy-based attacks.\n \
 									<color is="#ffffff"><b>Skills:</b></color>\n \
 									- Q: Getsuga Tensho - Cost 100% Signature Energy.\n \
 									- Guard + F: Shunpo - Cost 1.5 Stamina, 10 Reiryoku
@@ -34,14 +34,16 @@ Sode_No_Shirayuki.name = Shikai – Sode no Shirayuki
 Sode_No_Shirayuki.description = An elegant ice katana. Its release command, \n<i><b>«Dance, Sode no Shirayuki»</b></i> commands cold and beauty.\n \
 								<color is="#ffffff"><b>Skills:</b></color>\n \
 								- Hold Left-Click: Hakuren - Cost 75 Reiryoku.\n \
-								- Guard + F: Shunpo - Cost 1.5 Stamina, 10 Reiryoku
+								- Guard + F: Shunpo - Cost 1.5 Stamina, 10 Reiryoku\n \
+								- R: Revert back to sealed form
 Shikai_Wabisuke.name = Shikai – Wabisuke
 Shikai_Wabisuke.description = An elegantly curved sword whose treacherous nature is the opposite of its external refinement. Its strike places a curse of weight upon the target. With each parry or block, the victim's burden relentlessly doubles, \
 								until the opponent is broken and pinned to the ground by their own unbearable load. Release command: <i><b>«Bend, Wabisuke»</b></i>.\n \
 								<color is="#ffffff"><b>Skills:</b></color>\n \
 								- 3rd Strike slows down target.\n \
 								- Q: Crushing Regret - Cost 100% Signature Energy.\n \
-								- Guard + F: Shunpo - Cost 1.5 Stamina, 10 Reiryoku
+								- Guard + F: Shunpo - Cost 1.5 Stamina, 10 Reiryoku\n \
+								- R: Revert back to sealed form
 Shikai_Hozukimaru.name = Shikai – Hozukimaru
 Shikai_Hozukimaru.description = A crude and straightforward war spear. Its simple, unadorned form conceals a fierce destructive power and unyielding durability. Within this weapon lies a dormant potential for transformation, capable of unlocking its true, even more formidable form.\n \
 								<color is="#ffffff"><b>Skills:</b></color>\n \
@@ -49,7 +51,9 @@ Shikai_Hozukimaru.description = A crude and straightforward war spear. Its simpl
 								- Hold Left-Click + Forward/Backward: Thrust\n \
 								- Q: Tempest - Cost 100% Signature Energy.\n \
 								- E: Windwhirl - Cost 100% Signature Energy.\n \
-								- Guard + F: Shunpo - Cost 1.5 Stamina, 10 Reiryoku
+								- When your health is lower than 55%, your primary combo changes, giving you more reach and damage.\n \
+								- Guard + F: Shunpo - Cost 1.5 Stamina, 10 Reiryoku\n \
+								- R: Revert back to sealed form
 Shikai_Kyoka_Suigetsu.name = Shikai – Kyoka Suigetsu
 Shikai_Kyoka_Suigetsu.description = An unassuming katana, eternally in its released state. Its true power is not steel, but absolute sensory dominion. Those who witness its release ritual become forever trapped in its perfect hypnosis, \
 									seeing a world sculpted by the wielder's will. A weapon that conquers reality through perception.\n\n<b><color is="#9D3356">Its true power lies dormant, waiting to be unleashed in a future update</color></b>
@@ -60,7 +64,8 @@ Shikai_Benihime.description = An elegant, slightly curved saber with a crimson m
 								- Hold Left-Click: Benihime Beam - Cost 60 Reiryoku.\n \
 								- Left-Click + Forward: Thrust.\n \
 								- Guard + E: Crimson Seal: Mark an oponent and deal delayed damage after 3 seconds - Cost 65 Reiryoku.\n \
-								- Guard + F: Shunpo - Cost 1.5 Stamina, 10 Reiryoku
+								- Guard + F: Shunpo - Cost 1.5 Stamina, 10 Reiryoku\n \
+								- R: Revert back to sealed form
 True_Shikai_Zangetsu.name = True Shikai – Zangetsu
 True_Shikai_Zangetsu.description = Ichigo's true Shikai, manifested as two distinct black blades. The massive cleaver embodies his fused Shinigami and Hollow powers, \
 									while the smaller knife represents his Quincy heritage. Release command: <i><b>«Unite and Protect, Zangetsu»</b></i>. \
@@ -73,7 +78,8 @@ Shikai_Senbonzakura.description = A refined Zanpakuto that dissolves into countl
 									- Hold E: Arashi - Cost 20 Reiryoku per individual use.\n \
 									- E + Forward/Backward: Ichisen - Cost 40 Reiryoku.\n \ 
 									- Q: Shūen no Mai - Cost 100% Signature Energy.\n \
-									- Guard + F: Shunpo - Cost 1.5 Stamina, 10 Reiryoku
+									- Guard + F: Shunpo - Cost 1.5 Stamina, 10 Reiryoku\n \
+									- R: Revert back to sealed form
 									
 ## BANKAI ZANPAKUTO --------------------------
 Bankai_Tensa_Zangetsu.name = Bankai – Tensa Zangetsu
@@ -100,7 +106,13 @@ Four_Point_Quincy_Cross.description = A four point quincy cross which helps Quin
 Seele_Schneider.name = Seele Schneider
 Seele_Schneider.description = A Quincy Weapon that may look like a sword, but functions more as a chainsaw. Reishi makes 3 million rounds per second around \
 								the edge of the blade. This helps losing the bond between the Reishi and whatever it cuts. Although it looks and serves as a powerful blade \
-								it can do much more damage as an arrow.
+								it can do much more damage as an arrow.\n \
+								<color is="#ffffff"><b>Skills:</b></color>\n \
+								- Right-Click: Hirenkyaku - Cost 30 Reiryoku.\n \
+								- Left-Click Hold: AOE Slash. Can be charged 3 times. Each time dealing more damage. The Reiryoku cost goes as follows:  \
+								50, 70, 100\n \
+								- When successfully blocking a meelee attack, and if your attacker is in front of you, steal 15 Reiryoku from him for each hit.\n \
+								- R: Turn On/Off - This will also automatically be done when holding the weapon off and pressing either left or right click.
 
 
 ## ARMOUR --------------------------

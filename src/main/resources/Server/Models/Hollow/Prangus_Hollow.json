@@ -22,7 +22,8 @@
       "Animations": [
         {
           "Animation": "Characters/Animations/NPC/Prangus/Idle_Prangus.blockyanim",
-          "Speed": 0.9
+          "Speed": 0.9,
+          "SoundEventId": "SFX_Hollow_Idle_Breath"
         }
       ]
     },
@@ -56,6 +57,25 @@
       "Animations": [
         {
           "Animation": "Characters/Animations/NPC/Prangus/Prangus_Taunt.blockyanim"
+        }
+      ]
+    },
+    "Hurt": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/NPC/Prangus/Prangus_Hurt.blockyanim",
+          "SoundEventId": "SFX_Crawler_Void_Hurt",
+          "Looping": false,
+          "BlendingDuration": 0.1
+        }
+      ]
+    },
+    "Spawn": {
+      "Animations": [
+        {
+          "Animation": "Characters/Animations/NPC/Prangus/Prangus_Spawn.blockyanim",
+          "Looping": false,
+          "SoundEventId": "SFX_Spawn_Scream_Hollow"
         }
       ]
     }

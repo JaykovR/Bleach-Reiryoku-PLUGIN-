@@ -5,6 +5,10 @@ TextButton #KidoRowButton {
     Style: TextButtonStyle(
         Default: (Background: "TechniqueButton_Background.png", LabelStyle: (FontSize: 17, TextColor: #c8d4df, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
         Hovered: (Background: "TechniqueButton_Hovered_Background.png", LabelStyle: (FontSize: 17, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
-        Pressed: (Background: "TechniqueButton_Pressed_Background.png", LabelStyle: (FontSize: 17, TextColor: #9fc4e6, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center))
-    );
+        Pressed: (Background: "TechniqueButton_Pressed_Background.png", LabelStyle: (FontSize: 17, TextColor: #9fc4e6, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+            Sounds: (
+                      MouseHover: (SoundPath: "Selection_Hover.ogg", Volume: 0.7),
+                      Activate: (SoundPath: "Selection_Press.ogg", Volume: 0.7)
+                      )
+        );
 }

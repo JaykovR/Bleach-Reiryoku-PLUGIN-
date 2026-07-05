@@ -6,13 +6,13 @@
 
 Group {
     Anchor: (Width: 720, Height: 640);
-    Background: #050810(0.98);
+    Background: #000000(1);
     LayoutMode: Top;
     Padding: (Full: 24);
 
     Group {
         LayoutMode: Left;
-        Anchor: (Height: 40);
+        Anchor: (Height: 20);
 
         Group { Anchor: (Width: 632); }
 
@@ -23,13 +23,18 @@ Group {
         }
     }
 
-    Group { Anchor: (Height: 8); }
+    Group { Anchor: (Height: 4); }
 
-    Label {
-        Text: "PLAYER STATS";
-        Anchor: (Height: 44);
-        Style: (FontSize: 26, TextColor: #ffffff, RenderBold: true);
-    }
+    Group {
+            LayoutMode: Left;
+            Label {
+                    Text: "";
+                    Background: "STATS.png" ;
+                    Anchor: (Height: 90, Width: 200);
+                    Style: (FontSize: 26, TextColor: #ffffff, RenderBold: true);
+                }
+          }
+
 
     Group { Anchor: (Height: 20); }
 

@@ -23,9 +23,6 @@
     "OptionalDependencies": {
         
     },
-    "LoadBefore": {
-        
-    },
     "ServerVersion": ">=0.5.3 <0.6.0",
     "Main": "com.bleachreiryoku.BleachReiryokuPlugin",
     "UpdateChecker": {

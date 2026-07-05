@@ -1,0 +1,20 @@
+##SEELE SCHNEIDER
+Seele_AOEC1_Fail = Gerekli Reiryoku'ya sahip değilsin. (50 Reiryoku gerekli)
+Seele_AOEC2_Fail = 2. şarj için gerekli Reiryoku'ya sahip değilsin. (70 Reiryoku gerekli)
+Seele_AOEC3_Fail = 3. şarj için gerekli Reiryoku'ya sahip değilsin. (100 Reiryoku gerekli)
+
+##SODE NO SHIRAYUKI
+Shirayuki_Hakuren_Fail = Gerekli Reiryoku'ya sahip değilsin. (75 Reiryoku gerekli)
+
+##BENIHIME
+Benihime_Beam_Fail = Gerekli Reiryoku'ya sahip değilsin. (60 Reiryoku gerekli)
+
+##SENBONZAKURA
+Senbonzakura_Tornado_Fail = Gerekli Reiryoku'ya sahip değilsin. (20 Reiryoku gerekli)
+Senbonzakura_Ichisen_Fail = Gerekli Reiryoku'ya sahip değilsin. (40 Reiryoku gerekli)
+
+##TENSA ZANGETSU
+TZangetsu_Kuro_Shunpo_Fail = Yeterli dayanıklılık veya Reiryoku yok. (70 Reiryoku + 1,5 Dayanıklılık gerekli)
+TZangetsu_Getsuga_Arashi_Fail = Yeterli Dayanıklılık veya Reiryoku mevcut değil. (150 Reiryoku, 5 Dayanıklılık gerekli)
+
+Skill_Cooldown = Yetenek beklemede.

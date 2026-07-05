@@ -1,15 +1,35 @@
-memories.categories.Hollow.title = Hollow
 
+##NPC ROLES NAMES----------------------------
 npcRoles.Scarak_Defender_Hollow.name = Hollow Defensor Scarak
 npcRoles.Scarak_Fighter_Hollow.name = Hollow Lutador Scarak
 npcRoles.Scarak_Louse_Hollow.name = Hollow Piolho Scarak
 npcRoles.Scorpion_Hollow.name = Hollow Escorpião
 npcRoles.Ghoul_Hollow.name = Hollow Ghoul
 npcRoles.Crawler_Hollow_Void.name = Hollow Rastejante do Vazio
+npcRoles.Prangus_Hollow.name = Hollow Prangus
 
+##MEMORIES-----------------------------------
+memories.categories.Hollow.title = Hollow
 memories.Hollow.Scarak_Defender_Hollow.description = Um Hollow nascido de um Defensor Scarak. Sua máscara e carapaça endurecida o tornam um combatente de frente teimoso nas fileiras dos corrompidos.
 memories.Hollow.Scarak_Fighter_Hollow.description = Um Hollow nascido de um Lutador Scarak. Conserva as táticas agressivas de seu antigo eu, agora distorcidas pela fome de um Hollow.
 memories.Hollow.Scarak_Louse_Hollow.description = Um Hollow nascido de um Piolho Scarak. Pequenos mas numerosos, esses Hollows atacam em enxame e reduzem a presa aos ossos.
 memories.Hollow.Scorpion_Hollow.description = Um Hollow nascido de um Escorpião. Seu ferrão e garras são agora vasos da corrupção, golpeando com o frio do vazio.
 memories.Hollow.Ghoul_Hollow.description = Um Hollow nascido de um Ghoul. Os mortos inquietos, distorcidos ainda mais em Hollow — uma criatura que se alimenta da essência dos vivos.
 memories.Hollow.Crawler_Hollow_Void.description = Um Hollow nascido de um Rastejante do Vazio. Já tocado pelo vazio, mergulhou por completo na natureza Hollow e vagueia nas trevas.
+
+##SYSTEM MESSAGES-------------------------
+meditation.started = Você começa a meditar. Fique imóvel...
+meditation.cooldown = Você já meditou hoje. Descanse e volte amanhã.
+meditation.meditating = Você já está meditando.
+meditation.error = Você não pode meditar agora.
+
+##COMMANDS MESSAGES-------------------------
+command.hud_show = HUD exibido
+command.hud_hidden = HUD ocultado
+command.open_kido_archive_failed = Você não tem permissão para usar este comando. Para abrir o Arquivo, fabrique o Assento de Meditação da Alma ou use /op self para usar este comando.
+command.noperm_generic = Você não tem permissão para usar este comando
+command.setreiryokumax = Reiryoku máximo aumentado em
+
+##INTERACTION MESSAGES-------------------------
+interaction.reiryokucheck_fail = Seu poder espiritual é muito fraco. Necessário: {required} 
+interaction.racecheck_fail = Apenas {race} pode usar isto.

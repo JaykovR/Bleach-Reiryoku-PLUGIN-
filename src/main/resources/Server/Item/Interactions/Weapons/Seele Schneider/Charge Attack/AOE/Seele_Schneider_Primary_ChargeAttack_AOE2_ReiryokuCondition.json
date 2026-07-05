@@ -58,7 +58,7 @@
         "Interactions": [
           {
             "Type": "SendMessage",
-            "Message": "You dont have the necessary for 2nd charge. (70 Reiryoku Needed)"
+            "Key": "weaponmessages.Seele_AOEC2_Fail"
           }
         ]
       }

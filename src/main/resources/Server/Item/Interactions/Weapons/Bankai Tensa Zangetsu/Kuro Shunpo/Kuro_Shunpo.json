@@ -52,7 +52,7 @@
     "Interactions": [
       {
         "Type": "SendMessage",
-        "Message": "Not enough stamina or reiryoku. (70 Reiryoku + 1.5 Stamina needed)"
+        "Key": "weaponmessages.TZangetsu_Kuro_Shunpo_Fail"
       },
       "Stamina_Bar_Flash"
     ]

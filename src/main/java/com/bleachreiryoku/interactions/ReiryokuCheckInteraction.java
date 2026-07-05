@@ -50,12 +50,10 @@ public class ReiryokuCheckInteraction extends SimpleInstantInteraction {
         float playerMax = BleachStatTypes.getMax(owningEntity, store);
 
         if (playerMax < requiredMax) {
-            // TODO CHANGE INTO TRANSLATED MESSAGE FOR ALL LANGUAGES
             PlayerRef playerRef = store.getComponent(owningEntity, PlayerRef.getComponentType());
             if (playerRef != null) {
-                playerRef.sendMessage(Message.raw(
-                        "Your spiritual power is too weak. Required: " + (int) requiredMax
-                                + " (you have " + (playerMax < 0 ? 0 : (int) playerMax) + ")"));
+                playerRef.sendMessage(Message.translation("server.interaction.reiryokucheck_fail")
+                        .param("required", String.valueOf((int) requiredMax)));
             }
             context.getState().state = InteractionState.Failed;
             return;

@@ -1,0 +1,20 @@
+##SEELE SCHNEIDER
+Seele_AOEC1_Fail = У тебя недостаточно Reiryoku. (Нужно 50 Reiryoku)
+Seele_AOEC2_Fail = У тебя недостаточно Reiryoku для 2-го заряда. (Нужно 70 Reiryoku)
+Seele_AOEC3_Fail = У тебя недостаточно Reiryoku для 3-го заряда. (Нужно 100 Reiryoku)
+
+##SODE NO SHIRAYUKI
+Shirayuki_Hakuren_Fail = У тебя недостаточно Reiryoku. (Нужно 75 Reiryoku)
+
+##BENIHIME
+Benihime_Beam_Fail = У тебя недостаточно Reiryoku. (Нужно 60 Reiryoku)
+
+##SENBONZAKURA
+Senbonzakura_Tornado_Fail = У тебя недостаточно Reiryoku. (Нужно 20 Reiryoku)
+Senbonzakura_Ichisen_Fail = У тебя недостаточно Reiryoku. (Нужно 40 Reiryoku)
+
+##TENSA ZANGETSU
+TZangetsu_Kuro_Shunpo_Fail = Недостаточно выносливости или Reiryoku. (Нужно 70 Reiryoku + 1.5 выносливости)
+TZangetsu_Getsuga_Arashi_Fail = Недостаточно выносливости или Reiryoku. (Требуется 150 Reiryoku, 5 выносливости)
+
+Skill_Cooldown = Навык на перезарядке.

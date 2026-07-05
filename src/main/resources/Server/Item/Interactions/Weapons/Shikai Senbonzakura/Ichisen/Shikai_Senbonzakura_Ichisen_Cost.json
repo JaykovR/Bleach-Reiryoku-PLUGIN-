@@ -22,7 +22,8 @@
   },
   "Failed": {
     "Type": "SendMessage",
-    "Message": "Not enough Reiryoku available. (40 Reiryoku Required)"
+    "Message": "",
+    "Key": "weaponmessages.Senbonzakura_Ichisen_Fail"
   },
   "LessThan": false
 }

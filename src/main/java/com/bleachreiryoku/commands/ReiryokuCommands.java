@@ -14,8 +14,6 @@ import com.bleachreiryoku.ui.RaceSelectionPage;
 import com.bleachreiryoku.ui.PlayerStatsPage;
 import com.bleachreiryoku.ui.KidoGrimoirePage;
 import com.hypixel.hytale.server.core.entity.entities.Player;
-import com.hypixel.hytale.server.core.entity.entities.player.pages.InteractiveCustomUIPage;
-import com.hypixel.hytale.server.core.modules.entitystats.EntityStatMap;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.command.system.arguments.system.RequiredArg;
 import com.hypixel.hytale.server.core.command.system.arguments.types.SingleArgumentType;
@@ -33,18 +31,13 @@ public class ReiryokuCommands extends AbstractCommandCollection {
         this.addSubCommand(new HelpSubCommand());
         this.addSubCommand(new CheckShikai());
         this.addSubCommand(new RevertShikai());
-        // Give Shikai Commands
-        this.addSubCommand(new GiveShikaiSodeNoShirayuki());
-        this.addSubCommand(new GiveShikaiWabisuke());
-        this.addSubCommand(new GiveShikaiBenihime());
-        this.addSubCommand(new GiveShikaiHozukimaru());
 
         // temporary name.
         this.addSubCommand(new CheckHollow());
 
         this.addSubCommand(new ToggleHUDCommand("toggleHUD", "Toggles the custom HUD elements"));
 
-        this.addSubCommand(new OpenKidoGrimoireCommand());
+        this.addSubCommand(new OpenKidoArchiveCommand());
 
         this.addSubCommand(new setReiryokuMax());
         this.addSubCommand(new ChooseRaceCommand());
@@ -78,12 +71,10 @@ public class ReiryokuCommands extends AbstractCommandCollection {
             context.sendMessage(Message.raw("===  Commands ==="));
             context.sendMessage(Message.raw("/ help - Show this help message"));
             context.sendMessage(Message.raw("/ checkShikai - Checks for Shikai"));
-            context.sendMessage(Message.raw("/ RevertShikai - Reverts ability to transform to Shikai"));
-            context.sendMessage(Message.raw("/ giveShikaiSodeNoShirayuki - Gives the player Sode No Shirayuki Shikai access"));
-            context.sendMessage(Message.raw("/ giveShikaiWabisuke - Gives the player Wabisuke Shikai access"));
-            context.sendMessage(Message.raw("/ giveShikaiBenihime - Gives the player Benihime Shikai access"));
-            context.sendMessage(Message.raw("/ giveShikaiHozukimaru - Gives the player Hozukimaru Shikai access"));
+            context.sendMessage(Message.raw("/ RevertShikai - Reverts ability to transform to all Shikai"));
             context.sendMessage(Message.raw("/ checkHollow - Checks if the player has unlocked hollow mask"));
+            context.sendMessage(Message.raw("/ setreiryokumax - adds the quantity you type to your reiryoku maximum."));
+            context.sendMessage(Message.raw("/ kido - opens the UI menu of the kido archive"));
             context.sendMessage(Message.raw("========================"));
         }
     }
@@ -205,143 +196,6 @@ public class ReiryokuCommands extends AbstractCommandCollection {
         }
     }
 
-    // ------------- GIVE SHIKAI COMMANDS -----------------------
-
-    private static class GiveShikaiSodeNoShirayuki extends CommandBase{
-
-        public GiveShikaiSodeNoShirayuki(){
-            super("giveShikaiSodeNoShirayuki", "Gives access to Sode No Shirayuki shikai.");
-        }
-        @Override
-        protected boolean canGeneratePermission() {
-            return false;
-        }
-
-        protected void executeSync(@Nonnull CommandContext context) {
-            if (!context.sender().hasPermission("*")) {
-                context.sendMessage(Message.raw("You don't have permission to use this command."));
-                return;
-            }
-
-            Ref<EntityStore> owningEntity = context.senderAsPlayerRef();
-            Store<EntityStore> store = owningEntity.getStore();
-            World world = store.getExternalData().getWorld();
-
-            world.execute(() -> {
-                var brType = playerStats.getComponentType();
-                playerStats stats = store.getComponent(owningEntity, brType);
-
-                if (stats != null && !stats.getShikaiSodeNoShirayukiState()) {
-                    stats.setActiveShikaiSodeNoShirayuki();
-                    context.sendMessage(Message.raw("Sode no Shirayuki Shikai has been unlocked."));
-                    return;
-                }
-                context.sendMessage(Message.raw("You already have Sode no Shirayuki Shikai."));
-            });
-        }
-    }
-
-    private static class GiveShikaiWabisuke extends CommandBase{
-
-        public GiveShikaiWabisuke(){
-            super("giveShikaiWabisuke", "Gives access to Wabisuke shikai.");
-        }
-        @Override
-        protected boolean canGeneratePermission() {
-            return false;
-        }
-
-        protected void executeSync(@Nonnull CommandContext context) {
-            if (!context.sender().hasPermission("*")) {
-                context.sendMessage(Message.raw("You don't have permission to use this command."));
-                return;
-            }
-
-            Ref<EntityStore> owningEntity = context.senderAsPlayerRef();
-            Store<EntityStore> store = owningEntity.getStore();
-            World world = store.getExternalData().getWorld();
-
-            world.execute(() -> {
-                var brType = playerStats.getComponentType();
-                playerStats stats = store.getComponent(owningEntity, brType);
-
-                if (stats != null && !stats.getShikaiWabisukeState()) {
-                    stats.setActiveShikaiWabisuke();
-                    context.sendMessage(Message.raw("Wabisuke Shikai has been unlocked."));
-                    return;
-                }
-                context.sendMessage(Message.raw("You already have Wabisuke Shikai."));
-            });
-        }
-    }
-
-    private static class GiveShikaiBenihime extends CommandBase{
-
-        public GiveShikaiBenihime(){
-            super("giveShikaiBenihime", "Gives access to Benihime shikai.");
-        }
-        @Override
-        protected boolean canGeneratePermission() {
-            return false;
-        }
-
-        protected void executeSync(@Nonnull CommandContext context) {
-            if (!context.sender().hasPermission("*")) {
-                context.sendMessage(Message.raw("You don't have permission to use this command."));
-                return;
-            }
-
-            Ref<EntityStore> owningEntity = context.senderAsPlayerRef();
-            Store<EntityStore> store = owningEntity.getStore();
-            World world = store.getExternalData().getWorld();
-
-            world.execute(() -> {
-                var brType = playerStats.getComponentType();
-                playerStats stats = store.getComponent(owningEntity, brType);
-
-                if (stats != null && !stats.getShikaiBenihimeState()) {
-                    stats.setActiveShikaiBenihime();
-                    context.sendMessage(Message.raw("Benihime Shikai has been unlocked."));
-                    return;
-                }
-                context.sendMessage(Message.raw("You already have Benihime Shikai."));
-            });
-        }
-    }
-
-    private static class GiveShikaiHozukimaru extends CommandBase{
-
-        public GiveShikaiHozukimaru(){
-            super("giveShikaiHozukimaru", "Gives access to Hozukimaru shikai.");
-        }
-        @Override
-        protected boolean canGeneratePermission() {
-            return false;
-        }
-
-        protected void executeSync(@Nonnull CommandContext context) {
-            if (!context.sender().hasPermission("*")) {
-                context.sendMessage(Message.raw("You don't have permission to use this command."));
-                return;
-            }
-            Ref<EntityStore> owningEntity = context.senderAsPlayerRef();
-            Store<EntityStore> store = owningEntity.getStore();
-            World world = store.getExternalData().getWorld();
-
-            world.execute(() -> {
-                var brType = playerStats.getComponentType();
-                playerStats stats = store.getComponent(owningEntity, brType);
-
-                if (stats != null && !stats.getShikaiHozukimaruState()) {
-                    stats.setActiveShikaiHozukimaru();
-                    context.sendMessage(Message.raw("Hozukimaru Shikai has been unlocked."));
-                    return;
-                }
-                context.sendMessage(Message.raw("You already have Hozukimaru Shikai."));
-            });
-        }
-    }
-
     private static class setReiryokuMax extends CommandBase {
         private final RequiredArg<Float> amountArg;
 
@@ -369,7 +223,7 @@ public class ReiryokuCommands extends AbstractCommandCollection {
 
         protected void executeSync(@Nonnull CommandContext context) {
             if (!context.sender().hasPermission("*")) {
-                context.sendMessage(Message.raw("You don't have permission to use this command."));
+                context.sendMessage(Message.translation("server.command.noperm_generic"));
                 return;
             }
             Ref<EntityStore> owningEntity = context.senderAsPlayerRef();
@@ -379,7 +233,8 @@ public class ReiryokuCommands extends AbstractCommandCollection {
             world.execute(() -> {
                 float amount = amountArg.get(context);
                 BleachStatTypes.addMaxReiryoku(owningEntity, store, amount);
-                context.sendMessage(Message.raw("Max Reiryoku increased by " + (int)amount));
+                context.sendMessage(Message.translation("server.command.setreiryokumax"));
+                context.sendMessage(Message.raw(String.valueOf((int)amount)));
             });
         }
     }
@@ -396,6 +251,10 @@ public class ReiryokuCommands extends AbstractCommandCollection {
 
         @Override
         protected void executeSync(@Nonnull CommandContext context) {
+            if (!context.sender().hasPermission("*")) {
+                context.sendMessage(Message.translation("server.command.noperm_generic"));
+                return;
+            }
             Ref<EntityStore> ref = context.senderAsPlayerRef();
             Store<EntityStore> store = ref.getStore();
             World world = store.getExternalData().getWorld();
@@ -474,11 +333,11 @@ public class ReiryokuCommands extends AbstractCommandCollection {
         }
     }
 
-    // /br kido - opens the Kido Grimoire (unlock UI)
-    private static class OpenKidoGrimoireCommand extends CommandBase {
+    // /br kido - opens the Kido Archive (unlock UI)
+    private static class OpenKidoArchiveCommand extends CommandBase {
 
-        public OpenKidoGrimoireCommand() {
-            super("kido", "Opens the Kido Grimoire to unlock techniques");
+        public OpenKidoArchiveCommand() {
+            super("kido", "Opens the Kido Archive to unlock techniques");
         }
 
         @Override
@@ -486,6 +345,10 @@ public class ReiryokuCommands extends AbstractCommandCollection {
 
         @Override
         protected void executeSync(@Nonnull CommandContext context) {
+            if (!context.sender().hasPermission("*")) {
+                context.sendMessage(Message.translation("server.command.open_kido_archive_failed"));
+                return;
+            }
             Ref<EntityStore> ref = context.senderAsPlayerRef();
             Store<EntityStore> store = ref.getStore();
             World world = store.getExternalData().getWorld();

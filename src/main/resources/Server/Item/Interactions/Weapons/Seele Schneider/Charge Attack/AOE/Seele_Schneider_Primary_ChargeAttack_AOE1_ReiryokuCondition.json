@@ -15,6 +15,6 @@
   },
   "Failed": {
     "Type": "SendMessage",
-    "Message": "You dont have the necessary Reiryoku (50 Reiryoku Needed)"
+    "Key": "weaponmessages.Seele_AOEC1_Fail"
   }
 }

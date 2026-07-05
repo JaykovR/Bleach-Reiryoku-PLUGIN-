@@ -1,0 +1,20 @@
+##SEELE SCHNEIDER
+Seele_AOEC1_Fail = You don't have the necessary Reiryoku. (50 Reiryoku Needed)
+Seele_AOEC2_Fail = You don't have the necessary Reiryoku for the 2nd charge. (70 Reiryoku Needed)
+Seele_AOEC3_Fail = You don't have the necessary Reiryoku for the 3rd charge. (100 Reiryoku Needed)
+
+##SODE NO SHIRAYUKI
+Shirayuki_Hakuren_Fail = You don't have the necessary Reiryoku. (75 Reiryoku Needed)
+
+##BENIHIME
+Benihime_Beam_Fail = You don't have the necessary Reiryoku. (60 Reiryoku Needed)
+
+##SENBONZAKURA
+Senbonzakura_Tornado_Fail = You don't have the necessary Reiryoku. (20 Reiryoku Needed)
+Senbonzakura_Ichisen_Fail = You don't have the necessary Reiryoku. (40 Reiryoku Needed)
+
+##TENSA ZANGETSU
+TZangetsu_Kuro_Shunpo_Fail = Not enough stamina or reiryoku. (70 Reiryoku + 1.5 Stamina needed)
+TZangetsu_Getsuga_Arashi_Fail = Not enough Stamina or Reiryoku available. (150 Reiryoku, 5 Stamina required)
+
+Skill_Cooldown = Skill is on Cooldown.

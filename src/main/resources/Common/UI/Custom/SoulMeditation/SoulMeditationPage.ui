@@ -1,7 +1,11 @@
 @MenuButtonStyle = TextButtonStyle(
-    Default: (Background: #0d1117, LabelStyle: (FontSize: 18, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
-    Hovered: (Background: #1a2030, LabelStyle: (FontSize: 18, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
-    Pressed: (Background: #16243a, LabelStyle: (FontSize: 18, TextColor: #aaccff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center))
+    Default: (Background: "ButtonInput_Background.png", LabelStyle: (FontSize: 18, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Hovered: (Background: "ButtonInput_Hovered_Background.png", LabelStyle: (FontSize: 18, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Pressed: (Background: "ButtonInput_Selected_Background.png", LabelStyle: (FontSize: 18, TextColor: #aaccff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+     Sounds: (
+                            MouseHover: (SoundPath: "Selection_Hover.ogg", Volume: 1.0),
+                            Activate: (SoundPath: "Selection_Press.ogg", Volume: 1.0)
+                        )
 );
 
 @WipButtonStyle = TextButtonStyle(
@@ -11,22 +15,31 @@
 );
 
 @DoneStyle = TextButtonStyle(
-    Default: (Background: #3a5d7d, LabelStyle: (FontSize: 16, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
-    Hovered: (Background: #5B8FBF, LabelStyle: (FontSize: 16, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
-    Pressed: (Background: #2c4760, LabelStyle: (FontSize: 16, TextColor: #aaccff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center))
+    Default: (Background: "DoneButton_Background.png", LabelStyle: (FontSize: 16, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Hovered: (Background: "DoneButton_Hovered_Background.png", LabelStyle: (FontSize: 16, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Pressed: (Background: "DoneButton_Pressed_Background.png", LabelStyle: (FontSize: 16, TextColor: #aaccff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+     Sounds: (
+                            MouseHover: (SoundPath: "Selection_Hover.ogg", Volume: 1.0),
+                            Activate: (SoundPath: "Selection_Press.ogg", Volume: 1.0)
+                        )
 );
 
 Group {
     Anchor: (Width: 460, Height: 520);
-    Background: #000000(0.98);
+    Background: #000000(1);
     LayoutMode: Top;
     Padding: (Full: 24);
 
-    Label {
-        Text: "SOUL MEDITATION";
-        Anchor: (Height: 40);
-        Style: (FontSize: 24, TextColor: #ffffff, RenderBold: true);
+    Group {
+        LayoutMode: Left;
+        Label {
+               Text: "";
+               Background: "SOUL_MEDITATION.png";
+               Anchor: (Height: 40, Width: 200);
+               Style: (FontSize: 24, TextColor: #ffffff, RenderBold: true);
+                }
     }
+
 
     Label #MeditateHint {
         Text: "Center yourself and restore your spirit";

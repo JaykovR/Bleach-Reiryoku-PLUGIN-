@@ -15,63 +15,82 @@ Sealed_Senbonzakura.description = Un zanpakutō scellé. Une lame raffinée avec
 Sealed_Zangetsu.name = Scellé - Zangetsu
 Sealed_Zangetsu.description = La lame scellée avant l'éveil. Renferme un potentiel infini mais endormi.
 Sealed_Kenpachi_Zanpakuto.name = Scellé – Zanpakuto de Kenpachi
-Sealed_Kenpachi_Zanpakuto.description = Une massive lame brute et rouillée. C'est l'état scellé d'un Zanpakuto appartenant à un guerrier à la pression spirituelle monstrueuse. Sa forme dentelée, non affinée, et ses bandelettes en lambeaux sont des limites volontaires, permettant au porteur de savourer plus longtemps le frisson du combat. La vraie puissance en son sein sommeille, en attente de reconnaissance.
-
+Sealed_Kenpachi_Zanpakuto.description = Un couperet massif, brut et rouillé. C'est l'état scellé d'un Zanpakuto appartenant à un guerrier à la pression spirituelle monstrueuse. Sa forme dentelée et non affinée, et ses bandelettes en lambeaux sont des limites volontaires, permettant au porteur de savourer plus longtemps le frisson du combat. La vraie puissance en son sein sommeille, en attente de reconnaissance.\n <color is="#ffffff"><b>Compétences:</b></color>\n - Q: Skull Crusher - Coût 75% d'Énergie Distinctive.\n - E: Battle Trance - Accorde une résistance supplémentaire, vitesse d'attaque x1.5, vitesse de déplacement accrue - Coût 100% Énergie Distinctive.\n - Maintenir Clic gauche: Taillade de charge en zone.\n - Maintenir Clic gauche + Avant: Estoc.\n - Garde + F: Shunpo - Coût 1.5 Endurance, 10 Reiryoku
 
 ## SHIKAI ZANPAKUTO --------------------------
-Shikai_Tensa_Zangetsu.name = Shikai - Zangetsu
-Shikai_Tensa_Zangetsu.description = Zangetsu est un gigantesque couperet spirituel, constamment sous forme libérée. Sa lame noire enveloppée d’un tissu vivant renforce son porteur, libère des vagues de <i><b>Getsuga Tensho</b></i> et peut servir de bouclier contre les attaques physiques et énergétiques.
+Shikai_Zangetsu.name = Shikai - Zangetsu
+Shikai_Zangetsu.description = Zangetsu est un gigantesque couperet spirituel, constamment sous forme libérée. Sa lame noire enveloppée d'un tissu vivant renforce son porteur, libère des vagues de <i><b>Getsuga Tensho</b></i> et sert de bouclier contre les attaques physiques et énergétiques.\n <color is="#ffffff"><b>Compétences:</b></color>\n - Q: Getsuga Tensho - Coût 100% Énergie Distinctive.\n - Garde + F: Shunpo - Coût 1.5 Endurance, 10 Reiryoku
 Sode_No_Shirayuki.name = Shikai – Sode no Shirayuki
-Sode_No_Shirayuki.description = Une élégante katana de glace. Son incantation de libération, \n<i><b>«Danse, Sode no Shirayuki»</b></i>, commande le froid et la beauté.
+Sode_No_Shirayuki.description = Une élégante katana de glace. Son incantation de libération, \n<i><b>«Danse, Sode no Shirayuki»</b></i>, commande le froid et la beauté.\n <color is="#ffffff"><b>Compétences:</b></color>\n - Maintenir Clic gauche: Hakuren - Coût 75 Reiryoku.\n - Garde + F: Shunpo - Coût 1.5 Endurance, 10 Reiryoku\n - R: Revenir à la forme scellée
 Shikai_Wabisuke.name = Shikai – Wabisuke
-Shikai_Wabisuke.description = Une épée élégamment incurvée dont la nature traîtresse contraste avec son raffinement extérieur. Son coup impose une malédiction de poids sur la cible. À chaque parade ou blocage, le fardeau de la victime double sans pitié, jusqu'à ce que l'adversaire soit brisé et cloué au sol par sa propre charge insupportable. Incantation de libération : <i><b>«Plie-toi, Wabisuke»</b></i>.
+Shikai_Wabisuke.description = Une épée élégamment incurvée dont la nature traîtresse contraste avec son raffinement extérieur. Son coup impose une malédiction de poids sur la cible. À chaque parade ou blocage, le fardeau de la victime double sans pitié, jusqu'à ce que l'adversaire soit brisé et cloué au sol par sa propre charge insupportable. Incantation de libération : <i><b>«Plie-toi, Wabisuke»</b></i>.\n <color is="#ffffff"><b>Compétences:</b></color>\n - La 3e frappe ralentit la cible.\n - Q: Crushing Regret - Coût 100% Énergie Distinctive.\n - Garde + F: Shunpo - Coût 1.5 Endurance, 10 Reiryoku\n - R: Revenir à la forme scellée
 Shikai_Hozukimaru.name = Shikai – Hozukimaru
-Shikai_Hozukimaru.description = Une lance de guerre brute et directe. Sa forme simple et sans ornement dissimule un pouvoir destructeur féroce et une durabilité inflexible. En son sein sommeille un potentiel de transformation, capable de révéler sa forme véritable, encore plus redoutable.
+Shikai_Hozukimaru.description = Une lance de guerre brute et directe. Sa forme simple et sans ornement dissimule un pouvoir destructeur féroce et une durabilité inflexible. En son sein sommeille un potentiel de transformation, capable de révéler sa forme véritable, encore plus redoutable.\n <color is="#ffffff"><b>Compétences:</b></color>\n - Maintenir Clic gauche: 3 estocs consécutifs.\n - Maintenir Clic gauche + Avant/Arrière: Estoc\n - Q: Tempest - Coût 100% Énergie Distinctive.\n - E: Windwhirl - Coût 100% Énergie Distinctive.\n - Lorsque ta santé est inférieure à 55%, ton combo principal change, t'offrant plus d'allonge et de dégâts.\n - Garde + F: Shunpo - Coût 1.5 Endurance, 10 Reiryoku\n - R: Revenir à la forme scellée
 Shikai_Kyoka_Suigetsu.name = Shikai – Kyoka Suigetsu
-Shikai_Kyoka_Suigetsu.description = Une katana modeste, éternellement en état libéré. Sa vraie puissance n'est pas l'acier, mais la domination sensorielle absolue. Ceux qui assistent à son rituel de libération sont à jamais piégés dans son hypnose parfaite, voyant un monde sculpté par la volonté du porteur. Une arme qui conquiert la réalité par la perception.
+Shikai_Kyoka_Suigetsu.description = Une katana modeste, éternellement en état libéré. Sa vraie puissance n'est pas l'acier, mais la domination sensorielle absolue. Ceux qui assistent à son rituel de libération sont à jamais piégés dans son hypnose parfaite, voyant un monde sculpté par la volonté du porteur. Une arme qui conquiert la réalité par la perception.\n\n<b><color is="#9D3356">Sa vraie puissance sommeille, attendant d'être libérée dans une future mise à jour</color></b>
 Shikai_Benihime.name = Shikai – Benihime
-Shikai_Benihime.description = Un sabre élégant et légèrement courbe aux motifs cramoisis. Sur sa commande <i><b>«Éveille-toi, Benihime»</b></i>, il acquiert le pouvoir de lancer des <i>Tirs Carmins</i> précis, d'ériger des boucliers hexagonaux quasi impénétrables et de tisser des filets tranchants d'énergie spirituelle. Une lame polyvalente, parfaite pour l'offensive calculée comme pour la défense absolue.
+Shikai_Benihime.description = Un sabre élégant et légèrement courbe aux motifs cramoisis. Sur sa commande <i><b>«Éveille-toi, Benihime»</b></i>, il acquiert le pouvoir de lancer des <i>Tirs Carmins</i> précis, d'ériger des boucliers hexagonaux quasi impénétrables et de tisser des filets tranchants d'énergie spirituelle. Une lame polyvalente, parfaite pour l'offensive calculée comme pour la défense absolue.\n <color is="#ffffff"><b>Compétences:</b></color>\n - Maintenir Clic gauche: Benihime Beam - Coût 60 Reiryoku.\n - Clic gauche + Avant: Estoc.\n - Garde + E: Crimson Seal: Marque un adversaire et inflige des dégâts différés après 3 secondes - Coût 65 Reiryoku.\n - Garde + F: Shunpo - Coût 1.5 Endurance, 10 Reiryoku\n - R: Revenir à la forme scellée
 True_Shikai_Zangetsu.name = Véritable Shikai – Zangetsu
-True_Shikai_Zangetsu.description = Le véritable Shikai d'Ichigo, se manifestant sous la forme de deux lames noires distinctes. Le grand coutelas incarne ses pouvoirs fusionnés de Shinigami et de Hollow, tandis que la plus petite lame représente son héritage Quincy. Commandement de libération : <i><b>«Unissez-vous et protégez, Zangetsu»</b></i>. Les lames peuvent tirer des <i>Getsuga Tensho</i> indépendamment ou les combiner en une onde dévastatrice en forme de croix, <i><b>Getsuga Jujisho</b></i>.
+True_Shikai_Zangetsu.description = Le véritable Shikai d'Ichigo, se manifestant sous la forme de deux lames noires distinctes. Le grand coutelas incarne ses pouvoirs fusionnés de Shinigami et de Hollow, tandis que la plus petite lame représente son héritage Quincy. Commandement de libération : <i><b>«Unissez-vous et protégez, Zangetsu»</b></i>. Les lames peuvent tirer des <i>Getsuga Tensho</i> indépendamment ou les combiner en une onde dévastatrice en forme de croix, <i><b>Getsuga Jujisho</b></i>.\n\n<b><color is="#9D3356">Sa vraie puissance sommeille, attendant d'être libérée dans une future mise à jour</color></b>
 Shikai_Senbonzakura.name = Shikai - Senbonzakura
-Shikai_Senbonzakura.description = Un Zanpakutō raffiné qui se dissout en d’innombrables pétales tranchants sur commande. Avec l’ordre <i><b>«Disperse-toi, Senbonzakura»</b></i>, l’arme se transforme en une tempête de fragments scintillants, chacun aussi tranchant que l’acier. Ces pétales peuvent être guidés à volonté, submergeant les ennemis par des attaques précises et implacables et transformant le champ de bataille en un domaine de destruction élégante.
-
+Shikai_Senbonzakura.description = Un Zanpakuto raffiné qui se dissout en d'innombrables pétales tranchants sur commande. Avec l'ordre <i><b>«Disperse-toi, Senbonzakura»</b></i>, l'arme se transforme en une tempête de fragments scintillants, chacun aussi tranchant que l'acier. Ces pétales peuvent être guidés à volonté, submergeant les ennemis par des attaques précises et implacables et transformant le champ de bataille en un domaine de destruction élégante.\n <color is="#ffffff"><b>Compétences:</b></color>\n - Maintenir E: Arashi - Coût 20 Reiryoku par utilisation.\n - E + Avant/Arrière: Ichisen - Coût 40 Reiryoku.
 
 ## BANKAI ZANPAKUTO --------------------------
 Bankai_Tensa_Zangetsu.name = Bankai - Tensa Zangetsu
-Bankai_Tensa_Zangetsu.description = Bankai – Tensa Zangetsu est une lame spirituelle légendaire. Sa lame noire avec une chaîne concentre l’énergie du porteur et libère la vague dévastatrice <i><b>Getsuga Tenshō — «Croc lunaire transperçant les cieux»</b></i>. 
+Bankai_Tensa_Zangetsu.description = Bankai – Tensa Zangetsu est une lame spirituelle légendaire. Sa lame noire dotée d'une chaîne concentre l'énergie du porteur et libère la vague dévastatrice <i><b>Getsuga Tensho — «Croc lunaire transperçant les cieux»</b></i>. \n <color is="#ffffff"><b>Compétences:</b></color>\n - Q (demi-charge): Getsuga Tensho - Appuie de nouveau sur Q pour enchaîner un second Getsuga Tensho.\n - Q (pleine charge): Getsuga Tensho - Getsuga Tensho pleine puissance, coûte 100% de charge distinctive.\n - E: Kuro Shunpo - Coût 1.60 Endurance, 70 Reiryoku.\n - R: Transformation du Masque Hollow (Doit d'abord être débloquée)\n - Garde + F: Shunpo - Coût 1.5 Endurance, 10 Reiryoku
 True_Bankai_Tensa_Zangetsu.name = Véritable Bankai – Tensa Zangetsu
 True_Bankai_Tensa_Zangetsu.description = L'évolution ultime du pouvoir d'Ichigo. Cette forme consolide ses deux lames en un unique et immense couperet noir enveloppé de bandages blanc vif. Elle représente la convergence totale de son héritage spirituel, concentrant une force écrasante en un tranchant unique et dévastateur.\n\n<b><color is="#9D3356">Sa vraie puissance sommeille, attendant d'être libérée dans une future mise à jour</color></b>
 
-
 ## QUINCY WEAPONS --------------------------
 Kojaku_Bow.name = Arc Quincy - Kojaku
-Kojaku_Bow.description = L'arc de base utilisable par tous les Quincy. Il se forme en rassemblant du Reishi dans la <i>Croix Quincy</i> sur la main droite. Les flèches qu'il libère sont également faites de Reishi. Permet de détruire les Hollows par des attaques à distance. Une arme de début de partie pour les Quincy en herbe.
+Kojaku_Bow.description = L'arc de base utilisable par tous les Quincy. Il se forme en rassemblant du Reishi dans la <i>Croix Quincy</i> sur la main droite. Les flèches qu'il libère sont également faites de Reishi. Il peut détruire les Hollows par des attaques à distance. Une arme de début de partie pour les Quincy en herbe.\n <color is="#ffffff"><b>Compétences:</b></color>\n - Clic droit: Hirenkyaku - Coût 30 Reiryoku.\n - Q: Okami-Ya - Charge et tire une flèche améliorée sur ta cible - Coût 100% Énergie Distinctive.
+
 Four_Point_Quincy_Cross.name = Croix Quincy 4 branches
 Four_Point_Quincy_Cross.description = Une croix Quincy à quatre branches qui aide les joueurs Quincy à manifester leurs capacités en accordant des MP lorsqu’elle est tenue en main secondaire. Essentielle pour maintenir votre puissance spirituelle.
 Seele_Schneider.name = Seele Schneider
-Seele_Schneider.description = Une arme Quincy qui ressemble à une épée, mais fonctionne davantage comme une tronçonneuse. Le Reishi effectue 3 millions de tours par seconde autour du tranchant de la lame. Cela aide à briser le lien entre le Reishi et ce qui est coupé. Bien qu'elle ait l'apparence et le rôle d'une puissante lame, elle peut infliger bien plus de dégâts en tant que flèche.
+Seele_Schneider.description = Une arme Quincy qui peut ressembler à une épée, mais fonctionne davantage comme une tronçonneuse. Le Reishi effectue 3 millions de tours par seconde autour du tranchant de la lame. Cela aide à briser le lien entre le Reishi et ce qu'elle coupe. Bien qu'elle ait l'apparence et le rôle d'une lame puissante, elle peut infliger bien plus de dégâts en tant que flèche.\n <color is="#ffffff"><b>Compétences:</b></color>\n - Clic droit: Hirenkyaku - Coût 30 Reiryoku.\n - Maintenir Clic gauche: Taillade en zone. Peut être chargée 3 fois. Inflige plus de dégâts à chaque fois. Le coût en Reiryoku est le suivant :  50, 70, 100\n - En bloquant avec succès une attaque de mêlée, et si ton attaquant est face à toi, vole-lui 15 Reiryoku à chaque coup.\n - R: Activer/Désactiver - Cela se fait aussi automatiquement en tenant l'arme abaissée et en appuyant sur clic gauche ou droit.
 
 
 ## ARMOUR --------------------------
+StandardIssue_Shihakusho_Kosode.name = Shihakusho Standard - Kosode
+StandardIssue_Shihakusho_Kosode.description = La partie supérieure de l'uniforme standard des Shinigami, portée par tous les membres du Gotei 13. Tu es arrivé dans ce monde vêtu de cela. Chéris-le.
+StandardIssue_Shihakusho_Hakama.name = Shihakusho Standard - Hakama
+StandardIssue_Shihakusho_Hakama.description = Le vêtement inférieur faisant partie de l'uniforme standard des Shinigami, le <i>Shihakusho</i>. Tu es arrivé dans ce monde vêtu de cela. Chéris-le.
 Shihakusho_Kosode.name = Shihakusho - Kosode
 Shihakusho_Kosode.description = La partie supérieure de l’uniforme standard des Shinigami, portée par tous les membres du Gotei 13.
-Shihakusho_Kosode_Lieutenant.name = Shihakusho - Kosode (Lieutenant)
-Shihakusho_Kosode_Lieutenant.description = La partie supérieure du <i>Shihakusho</i> standard avec un insigne de Lieutenant représentant un grand prestige.
-Shihakusho_Kosode_Sleeveless.name = Shihakusho - Kosode (Sans manches)
-Shihakusho_Kosode_Sleeveless.description = Un <i>Shihakusho</i> modifié pour ceux qui recherchent une plus grande liberté de mouvement. Considéré davantage comme une modification esthétique de l’uniforme standard.
-Shinigami_Robes_Captain.name = Shihakusho de Capitaine
-Shinigami_Robes_Captain.description = Le manteau blanc porté par les Capitaines par-dessus leur uniforme standard. Offre une protection spirituelle supérieure et indique le rang le plus élevé au sein du Gotei 13.
-Shihakusho_Kosode_BareShoulder.name = Shihakusho - Kosode (Épaules découvertes)
-Shihakusho_Kosode_BareShoulder.description = Un <i>Shihakusho</i> modifié qui remplit le même rôle que la variante sans manches tout en conservant une apparence plus élégante et cérémonielle.
 Shihakusho_Hakama.name = Shihakusho - Hakama
 Shihakusho_Hakama.description = Le vêtement inférieur faisant partie de l’uniforme standard des Shinigami, le <i>Shihakusho</i>.
+Shihakusho_Kosode_Sleeveless.name = Shihakusho - Kosode (Sans manches)
+Shihakusho_Kosode_Sleeveless.description = Un <i>Shihakusho</i> modifié pour ceux qui recherchent une plus grande liberté de mouvement. Considéré davantage comme une modification esthétique de l’uniforme standard.
+Shihakusho_Kosode_BareShoulder.name = Shihakusho - Kosode (Épaules découvertes)
+Shihakusho_Kosode_BareShoulder.description = Un <i>Shihakusho</i> modifié qui remplit le même rôle que la variante sans manches tout en conservant une apparence plus élégante et cérémonielle.
+Shihakusho_Kosode_Lieutenant.name = Shihakusho - Kosode (Lieutenant)
+Shihakusho_Kosode_Lieutenant.description = La partie supérieure du <i>Shihakusho</i> standard avec un insigne de Lieutenant représentant un grand prestige.
+Shihakusho_Hakama_Lieutenant.name = Shihakusho - Hakama (Lieutenant)
+Shihakusho_Hakama_Lieutenant.description = Le vêtement inférieur du <i>Shihakusho</i> confectionné avec des matériaux haut de gamme, réservé à ceux qui en sont dignes.
+Shinigami_Robes_Captain.name = Shihakusho de Capitaine
+Shinigami_Robes_Captain.description = Le manteau blanc porté par les Capitaines par-dessus leur uniforme standard. Offre une protection spirituelle supérieure et indique le rang le plus élevé au sein du Gotei 13.
+Shihakusho_Hakama_Captain.name = Shihakusho - Hakama (Capitaine)
+Shihakusho_Hakama_Captain.description = Ce vêtement inférieur possède une qualité inégalée. La rumeur dit que la différence la plus notable réside dans le confort et la mobilité qu'il procure. Mais en vérité, il offre aussi une meilleure résistance. Les situations qui requièrent un Capitaine au combat sont généralement des opérations à haute destruction ; il leur faut donc quelque chose qui tienne le coup. Sinon, leurs vêtements seraient la première chose à les trahir.
+
 Hollow_Mask.name = Masque Hollow
 Hollow_Mask.description = Une manifestation du pouvoir qui appartient à ton Hollow Intérieur.
+
 Tensa_Zangetsu_Outfit.name = Manteau de la Chaîne Céleste
 Tensa_Zangetsu_Outfit.description = Un tranchant manteau noir né des chaînes des cieux. On dit que celui qui le porte est capable de pourfendre la lune.
 
-
+Quincy_Uniform_Type1_Top.name = Haut Quincy Traditionnel
+Quincy_Uniform_Type1_Top.description = Un uniforme de combat Quincy traditionnel tissé pour la mobilité et une manipulation efficace du Reishi.
+Quincy_Uniform_Type1_Pants.name = Pantalon Quincy Traditionnel
+Quincy_Uniform_Type1_Pants.description = Ce pantalon fait partie des vêtements traditionnels d'un Quincy, qui portent principalement des habits blancs. Il offre confort et durabilité pendant les combats.
+Quincy_Uniform_Type1_Top_NoCape.name = Haut Quincy Traditionnel (Sans Cape)
+Quincy_Uniform_Type1_Top_NoCape.description = Une variante de l'uniforme de combat Quincy traditionnel. Certains préfèrent ne pas porter la cape.
+Wandenreich_Cap.name = Casquette Militaire du Wandenreich
+Wandenreich_Cap.description = Une casquette militaire de cérémonie portée par les membres du Wandenreich. Elle représente la dévotion aux idéaux de Yhwach.
+Wandenreich_Top.name = Haut Militaire du Wandenreich
+Wandenreich_Top.description = La tenue de combat formelle du Wandenreich, composée d'un manteau militaire blanc. Les utilisateurs portent généralement l'uniforme traditionnel en dessous, ou une variante de leur choix. Offre une grande résistance.
+Wandenreich_Pants.name = Pantalon Militaire du Wandenreich
+Wandenreich_Pants.description = Un pantalon de qualité militaire porté par les soldats du Wandenreich. Conçu pour le combat tout-terrain et les situations imprévues.
 ## INGREDIENTS --------------------------
 Resonating_Reishi_Core.name = Noyau de Reishi résonnant
 Resonating_Reishi_Core.description = Ce noyau bourdonne à une fréquence qui imite la vôtre. C'est une extension de votre âme. Prêt à être affecté à une lame pour l'éveiller.
@@ -90,7 +109,6 @@ Purified_Soulweave_Cloth_Bolt.description = Un rouleau pur de tissu blanc impré
 Corrupted_Life_Essence.name = Essence de vie corrompue
 Corrupted_Life_Essence.description = <i>Pour une raison inconnue, ce cristal de reishi habituellement trouvé dans les plantes d'Orbis se trouvait dans ce Hollow. Bien qu'il semble corrompu et que la concentration en reishi soit plus faible, avec suffisamment de ces cristaux, vous pourrez peut-être les convertir en Essence de vie.</i>
 
-
 ## SPIRIT FRAGMENTS --------------------------
 Sode_no_Shirayuki_Spirit_Fragment.name = Fragment Spirituel - Sode no Shirayuki
 Sode_no_Shirayuki_Spirit_Fragment.description = Un fragment froid d’énergie spirituelle pure.\n<b>Clic droit pour consommer (déverrouiller le Shikai)</b>
@@ -107,7 +125,6 @@ Zangetsu_Spirit_Fragment.description = Un fragment contenant une quantité déme
 Tensa_Zangetsu_Spirit_Fragment.name = Fragment Spirituel - Tensa Zangetsu
 Tensa_Zangetsu_Spirit_Fragment.description = Un fragment doté d'une quantité démente d'énergie condensée. Tu peux sentir la puissance ultime entre tes mains. \n<b>Clic droit pour consommer (débloque le Bankai, Tensa Zangetsu)</b>
 
-
 ## CRAFTING BENCHES --------------------------
 Soul_Imprinting_Altar.name = Autel de l'Empreinte d'Âme
 Soul_Imprinting_Altar.description = Un lieu sacré où l'âme du porteur fusionne avec l'Asauchi. Par une profonde méditation et la concentration de l'énergie spirituelle (Reiryoku), les fondations du futur Zanpakuto sont posées. Cet autel est utilisé non seulement pour l'éveil initial, mais aussi pour les étapes suivantes de l'évolution de la lame — du Shikai à la révélation ultime, le Bankai.
@@ -115,14 +132,20 @@ Soulweave_Loom.name = Métier à tisser Soulweave
 Soulweave_Loom.description = Un métier à tisser utilisé pour fabriquer des vêtements imprégnés de matière spirituelle. Ses variantes sont largement utilisées dans la Soul Society et ailleurs.
 
 
+
 ## MISC ITEMS --------------------------
 items.Currency_Kan.name = Kan
 items.Currency_Kan.description = La monnaie standard de la Société des Âmes. Un Kan représente la valeur d'une balle de riz dans le monde des vivants. Son poids et son tintement seraient accordés à la fréquence du reishi, rendant la contrefaçon impossible. Pour un marchand du Rukongai, cette pièce est une fortune ; pour un capitaine, de la menue monnaie.
+
 items.Medical_Pill_Basic.name = Pilule médicale de base
 items.Medical_Pill_Basic.description = Pilule standard du corps médical de la 4e division. Fabriquée à partir d'herbes médicinales concentrées et d'une trace d'énergie de guérison kaido.\n\nRestaure <color is="#ffffff">30%</color> de santé instantanément.
+
 items.Kaido_Infused_Pill.name = Pilule de restauration imprégnée de Kaido
 items.Kaido_Infused_Pill.description = Chef-d'œuvre de la recherche médicale de la 4e division. Plus qu'une pilule, une capsule solide de sorts de guérison kaido en suspension.\n\nRestaure <color is="#ffffff">100%</color> de santé instantanément et accorde :\n\n• <color is="#ffffff">Régénération de santé II</color>\n\nDurée : <color is="#ffffff">0:30</color>
-items.A_Guide_To_Find_Hollows_Closed.name = Guide pour trouver des Hollows – Fermé
-items.A_Guide_To_Find_Hollows_Closed.description = <color is="#ffffff"><b>Clic droit</b></color> en tenant ce parchemin pour l’ouvrir. Compilé par l’Institut de Recherche et Développement de la 12e Division.
-items.A_Guide_To_Find_Hollows.name = Guide pour trouver des Hollows
-items.A_Guide_To_Find_Hollows.description = <i>Compilé par l’Institut de Recherche et Développement de la 12e Division</i>. L’activité des Hollows ne se produit pas durant la journée. Les manifestations ont uniquement été observées après la tombée de la nuit, lorsque la pression spirituelle devient instable. De plus, aucune signature de Hollow n’a jamais été détectée dans la Zone 1. Les agents cherchant des Hollows doivent quitter la Zone 1 et effectuer leurs patrouilles de nuit.
+
+items.Race_Selection_Menu.name = Menu de Sélection de Race
+items.Race_Selection_Menu.description = <b><color is="#ffffff">Clic droit</color></b> pour ouvrir le menu de sélection de race.\n <i>Cet objet sera supprimé après utilisation </i>
+Kido_Charm.name = Talisman de Kido
+Kido_Charm.description = Un talisman spirituel <b>requis pour lancer le Kido</b>. <i>Tu peux l'équiper dans ta main secondaire pour lancer du kido tout en tenant ton arme</i>. \n <color is="#ffffff"><b>Commandes :</b></color>\n - <b>Maintiens Clic gauche + une direction quelconque ou aucune</b> pour lancer tes techniques de kido selon la direction de ton déplacement. La durée du <i>maintien du clic gauche</i> varie selon la technique de kido.\n - <b>E</b> pour ouvrir le menu <i>Équipement de Kido</i>, où tu peux définir quelles techniques tu peux utiliser.\n <b><i><color is="#9c504c"> Pour débloquer de nouveaux Kido, interagis avec le Siège de Méditation de l'Âme</b>.\n Que tu peux fabriquer à l'Établi de Meubles.
+Soul_Meditation_Seat.name = Siège de Méditation de l'Âme
+Soul_Meditation_Seat.description = Un simple siège de méditation utilisé pour apaiser l'esprit et renforcer l'âme. Par la méditation, de nouvelles techniques et capacités peuvent être débloquées.

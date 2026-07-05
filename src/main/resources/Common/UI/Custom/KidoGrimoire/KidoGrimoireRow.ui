@@ -13,9 +13,13 @@ Group {
         Anchor: (Height: 30);
         Padding: (Left: 10);
         Style: TextButtonStyle(
-            Default: (Background: #16243a, LabelStyle: (FontSize: 13, TextColor: #aaccff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
-            Hovered: (Background: #22354d, LabelStyle: (FontSize: 13, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
-            Pressed: (Background: #0d1117, LabelStyle: (FontSize: 13, TextColor: #aaccff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center))
+            Default: (Background: "ButtonInput_Background.png", LabelStyle: (FontSize: 13, TextColor: #aaccff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+            Hovered: (Background: "ButtonInput_Hovered_Background.png", LabelStyle: (FontSize: 13, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+            Pressed: (Background: "ButtonInput_Selected_Background.png", LabelStyle: (FontSize: 13, TextColor: #aaccff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+            Sounds: (
+                                        MouseHover: (SoundPath: "Selection_Hover.ogg", Volume: 1.0),
+                                        Activate: (SoundPath: "Selection_Press.ogg", Volume: 1.0)
+                                    )
         );
     }
 }

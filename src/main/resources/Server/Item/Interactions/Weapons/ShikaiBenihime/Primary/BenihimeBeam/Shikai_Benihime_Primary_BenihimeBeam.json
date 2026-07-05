@@ -10,7 +10,7 @@
     "ClearSoundEventOnFinish": false
   },
   "Next": {
-    "0": "Weapon_Sword_Primary_Chain",
+    "0": "Shikai_Benihime_Primary_Chain",
     "0.65": {
       "Type": "Serial",
       "Interactions": [

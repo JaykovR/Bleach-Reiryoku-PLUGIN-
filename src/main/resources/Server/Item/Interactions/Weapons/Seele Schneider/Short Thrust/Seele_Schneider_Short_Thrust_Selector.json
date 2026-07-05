@@ -53,7 +53,7 @@
     "Interactions": [
       {
         "Type": "Replace",
-        "Var": "Swing_Right_Damage",
+        "Var": "Thrust_Combo_Damage",
         "DefaultOk": true,
         "DefaultValue": {
           "Interactions": [

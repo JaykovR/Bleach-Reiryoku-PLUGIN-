@@ -22,7 +22,8 @@
   },
   "Failed": {
     "Type": "SendMessage",
-    "Message": "Not enough Reiryoku available. (20 Reiryoku required)"
+    "Message": "",
+    "Key": "weaponmessages.Senbonzakura_Tornado_Fail"
   },
   "LessThan": false
 }

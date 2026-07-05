@@ -72,9 +72,11 @@ public class PlayerRaceCheckInteraction extends SimpleInstantInteraction {
         };
 
         if (!requiredRace.equals(stats.playerPrimaryRace)) {
-            // TODO CHANGE INTO TRANSLATED MESSAGE FOR ALL LANGUAGES
             if (playerRef != null) {
-                playerRef.sendMessage(Message.raw("Only " + requiredRace + " may use this."));
+                playerRef.sendMessage(
+                        Message.translation("server.interaction.racecheck_fail")
+                                .param("race", requiredRace)
+                );
             }
             context.getState().state = InteractionState.Failed;
             return;

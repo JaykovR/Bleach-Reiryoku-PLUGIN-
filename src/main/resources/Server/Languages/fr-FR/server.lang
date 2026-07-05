@@ -1,15 +1,35 @@
-memories.categories.Hollow.title = Hollow
 
+##NPC ROLES NAMES----------------------------
 npcRoles.Scarak_Defender_Hollow.name = Hollow Défenseur Scarak
 npcRoles.Scarak_Fighter_Hollow.name = Hollow Guerrier Scarak
 npcRoles.Scarak_Louse_Hollow.name = Hollow Puce Scarak
 npcRoles.Scorpion_Hollow.name = Hollow Scorpion
 npcRoles.Ghoul_Hollow.name = Hollow Ghoul
 npcRoles.Crawler_Hollow_Void.name = Hollow Rampant du Vide
+npcRoles.Prangus_Hollow.name = Hollow Prangus
 
+##MEMORIES-----------------------------------
+memories.categories.Hollow.title = Hollow
 memories.Hollow.Scarak_Defender_Hollow.description = Un Hollow né d'un Défenseur Scarak. Son masque et sa carapace endurcie en font un combattant de première ligne tenace parmi les corrompus.
 memories.Hollow.Scarak_Fighter_Hollow.description = Un Hollow né d'un Guerrier Scarak. Il conserve les tactiques agressives de son ancien moi, déformées par la faim d'un Hollow.
 memories.Hollow.Scarak_Louse_Hollow.description = Un Hollow né d'une Puce Scarak. Petits mais nombreux, ces Hollows envahissent leur proie et la réduisent à l'os.
 memories.Hollow.Scorpion_Hollow.description = Un Hollow né d'un Scorpion. Son dard et ses griffes sont désormais des vaisseaux de corruption, frappant avec le froid du vide.
 memories.Hollow.Ghoul_Hollow.description = Un Hollow né d'un Ghoul. Les morts agités, tordus davantage en Hollow — une créature qui se nourrit de l'essence des vivants.
 memories.Hollow.Crawler_Hollow_Void.description = Un Hollow né d'un Rampant du Vide. Déjà touché par le vide, il a sombré dans la nature Hollow et rôde dans les ténèbres.
+
+##SYSTEM MESSAGES-------------------------
+meditation.started = Tu commences à méditer. Reste immobile...
+meditation.cooldown = Tu as déjà médité aujourd'hui. Repose-toi et reviens demain.
+meditation.meditating = Tu es déjà en train de méditer.
+meditation.error = Tu ne peux pas méditer pour le moment.
+
+##COMMANDS MESSAGES-------------------------
+command.hud_show = ATH affiché
+command.hud_hidden = ATH masqué
+command.open_kido_archive_failed = Tu n'as pas la permission d'utiliser cette commande. Pour ouvrir l'Archive, fabrique le Siège de Méditation de l'Âme ou utilise /op self pour utiliser cette commande.
+command.noperm_generic = Tu n'as pas la permission d'utiliser cette commande
+command.setreiryokumax = Reiryoku maximum augmenté de
+
+##INTERACTION MESSAGES-------------------------
+interaction.reiryokucheck_fail = Ta puissance spirituelle est trop faible. Requis : {required} 
+interaction.racecheck_fail = Seuls les {race} peuvent utiliser ceci.

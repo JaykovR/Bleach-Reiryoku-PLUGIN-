@@ -1,13 +1,17 @@
 @BuyStyle = TextButtonStyle(
-    Default: (Background: #0d1117, LabelStyle: (FontSize: 15, TextColor: #c8d4df, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
-    Hovered: (Background: #1a2030, LabelStyle: (FontSize: 15, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
-    Pressed: (Background: #16243a, LabelStyle: (FontSize: 15, TextColor: #aaccff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center))
+    Default: (Background: "ButtonInput_Background.png", LabelStyle: (FontSize: 15, TextColor: #c8d4df, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Hovered: (Background: "ButtonInput_Hovered_Background.png", LabelStyle: (FontSize: 15, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Pressed: (Background: "ButtonInput_Selected_Background.png", LabelStyle: (FontSize: 15, TextColor: #aaccff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center))
 );
 
 @DoneStyle = TextButtonStyle(
-    Default: (Background: #3a5d7d, LabelStyle: (FontSize: 17, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
-    Hovered: (Background: #5B8FBF, LabelStyle: (FontSize: 17, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
-    Pressed: (Background: #2c4760, LabelStyle: (FontSize: 17, TextColor: #aaccff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center))
+    Default: (Background: "DoneButton_Background.png", LabelStyle: (FontSize: 17, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Hovered: (Background: "DoneButton_Hovered_Background.png", LabelStyle: (FontSize: 17, TextColor: #ffffff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Pressed: (Background: "DoneButton_Pressed_Background.png", LabelStyle: (FontSize: 17, TextColor: #aaccff, RenderBold: true, HorizontalAlignment: Center, VerticalAlignment: Center)),
+    Sounds: (
+                                MouseHover: (SoundPath: "Selection_Hover.ogg", Volume: 1.0),
+                                Activate: (SoundPath: "Selection_Press.ogg", Volume: 1.0)
+                            )
 );
 
 Group {
@@ -19,11 +23,16 @@ Group {
      Group { Anchor: (Height: 14); }
 
 
-    Label {
-        Text: "KIDO GRIMOIRE";
-        Anchor: (Height: 40);
-        Style: (FontSize: 28, TextColor: #ffffff, RenderBold: true);
+    Group {
+        LayoutMode: Left;
+        Label {
+                Text: "";
+                Background: "KIDO_ARCHIVE.png";
+                Anchor: (Height: 40, Width: 200);
+                Style: (FontSize: 28, TextColor: #ffffff, RenderBold: true);
+            }
     }
+
 
     Label #SubHint {
         Text: "Land spells to earn Keiko, then unlock new kido";
@@ -55,7 +64,7 @@ Group {
             Group #HadoList {
                 LayoutMode: Top;
                 Anchor: (Height: 440);
-                Background: #0d1117;
+                Background: #000000(1);
                 ContentHeight: 900;
                  ScrollbarStyle: (
                                     Size: 5,
@@ -86,7 +95,7 @@ Group {
             Group #BakudoList {
                 LayoutMode: Top;
                 Anchor: (Height: 440);
-                Background: #0d1117;
+                Background: #000000(1);
                 ContentHeight: 900;
                  ScrollbarStyle: (
                                     Size: 5,
@@ -102,7 +111,7 @@ Group {
 
     TextButton #DoneButton {
         Text: "DONE";
-        Anchor: (Height: 44);
+        Anchor: (Height: 44, Width: 250);
         Style: @DoneStyle;
         Padding: (Left: 16);
     }

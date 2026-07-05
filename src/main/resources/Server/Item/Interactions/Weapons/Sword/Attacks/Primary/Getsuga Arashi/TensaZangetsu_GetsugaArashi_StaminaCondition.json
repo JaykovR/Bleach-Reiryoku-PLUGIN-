@@ -23,7 +23,7 @@
   },
   "Failed": {
     "Type": "SendMessage",
-    "Message": "Not enough Stamina or Reiryoku available. (150 Reiryoku, 5 Stamina required)"
+    "Key": "weaponmessages.TZangetsu_Getsuga_Arashi_Fail"
   },
   "LessThan": false
 }

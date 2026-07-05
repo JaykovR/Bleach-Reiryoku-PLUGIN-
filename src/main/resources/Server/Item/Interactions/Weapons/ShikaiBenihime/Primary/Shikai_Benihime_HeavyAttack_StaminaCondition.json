@@ -22,7 +22,7 @@
               "DefaultOk": true,
               "DefaultValue": {
                 "Interactions": [
-                  "Shikai_Benihime_Primary_BenihimeBeam"
+                  "Shikai_Benihime_Primary_BenihimeBeamReiryokuCondition"
                 ]
               }
             },

@@ -1,15 +1,35 @@
-memories.categories.Hollow.title = Hollow
 
+##NPC ROLES NAMES----------------------------
 npcRoles.Scarak_Defender_Hollow.name = Scarak-Verteidiger-Hollow
 npcRoles.Scarak_Fighter_Hollow.name = Scarak-Kämpfer-Hollow
 npcRoles.Scarak_Louse_Hollow.name = Scarak-Laus-Hollow
 npcRoles.Scorpion_Hollow.name = Skorpion-Hollow
 npcRoles.Ghoul_Hollow.name = Ghoul-Hollow
 npcRoles.Crawler_Hollow_Void.name = Leerer-Kriecher-Hollow
+npcRoles.Prangus_Hollow.name = Prangus-Hollow
 
+##MEMORIES-----------------------------------
+memories.categories.Hollow.title = Hollow
 memories.Hollow.Scarak_Defender_Hollow.description = Ein Hollow, geboren aus einem Scarak-Verteidiger. Maske und verhärteter Panzer machen ihn zum zähen Frontkämpfer in den Reihen der Verderbten.
 memories.Hollow.Scarak_Fighter_Hollow.description = Ein Hollow, geboren aus einem Scarak-Kämpfer. Er behält die aggressiven Taktiken seines früheren Ichs, nun von Hollow-Hunger verzerrt.
 memories.Hollow.Scarak_Louse_Hollow.description = Ein Hollow, geboren aus einer Scarak-Laus. Klein aber zahlreich, überwältigen diese Hollows ihre Beute und zerfleischen sie bis auf die Knochen.
 memories.Hollow.Scorpion_Hollow.description = Ein Hollow, geboren aus einem Skorpion. Stachel und Klauen sind nun Gefäße der Verderbnis und treffen mit der Kälte der Leere.
 memories.Hollow.Ghoul_Hollow.description = Ein Hollow, geboren aus einem Ghoul. Die ruhelosen Toten, weiter in einen Hollow verdreht – ein Wesen, das sich von der Essenz der Lebenden nährt.
 memories.Hollow.Crawler_Hollow_Void.description = Ein Hollow, geboren aus einem Leeren Kriecher. Bereits von der Leere berührt, ist er vollends in die Hollow-Natur gefallen und streift durch die Dunkelheit.
+
+##SYSTEM MESSAGES-------------------------
+meditation.started = Du beginnst zu meditieren. Bleib still...
+meditation.cooldown = Du hast heute bereits meditiert. Ruhe dich aus und komm morgen wieder.
+meditation.meditating = Du meditierst bereits.
+meditation.error = Du kannst gerade nicht meditieren.
+
+##COMMANDS MESSAGES-------------------------
+command.hud_show = HUD angezeigt
+command.hud_hidden = HUD ausgeblendet
+command.open_kido_archive_failed = Du hast keine Berechtigung, diesen Befehl zu verwenden. Um das Archiv zu öffnen, stelle den Sitz der Seelenmeditation her oder benutze /op self, um diesen Befehl zu verwenden.
+command.noperm_generic = Du hast keine Berechtigung, diesen Befehl zu verwenden
+command.setreiryokumax = Maximales Reiryoku erhöht um
+
+##INTERACTION MESSAGES-------------------------
+interaction.reiryokucheck_fail = Deine spirituelle Kraft ist zu schwach. Erforderlich: {required} 
+interaction.racecheck_fail = Nur {race} können dies verwenden.

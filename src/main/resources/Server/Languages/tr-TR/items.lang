@@ -15,63 +15,82 @@ Sealed_Senbonzakura.description = Mühürlü bir zanpakuto. Zarif bir auraya sah
 Sealed_Zangetsu.name = Mühürlü – Zangetsu
 Sealed_Zangetsu.description = Uyanıştan önceki mühürlü bıçak. Sınırsız ama uyuyan potansiyel taşır.
 Sealed_Kenpachi_Zanpakuto.name = Sealed – Kenpachi's Zanpakuto
-Sealed_Kenpachi_Zanpakuto.description = A massive, crude and rusted cleaver. This is the sealed state of a Zanpakuto belonging to a warrior of monstrous spiritual pressure. Its jagged, unrefined form and tattered wrappings are self-imposed limitations, \
-
+Sealed_Kenpachi_Zanpakuto.description = Devasa, kaba ve paslı bir satır. Bu, canavarca bir ruhani basınca sahip bir savaşçıya ait Zanpakuto'nun mühürlü halidir. Çentikli, işlenmemiş biçimi ve yırtık sargıları, taşıyıcının savaşın heyecanını daha uzun süre tatmasına olanak tanıyan kendine dayattığı sınırlamalardır. İçindeki gerçek güç uyuyor, kabul edilmeyi bekliyor.\n <color is="#ffffff"><b>Yetenekler:</b></color>\n - Q: Skull Crusher - Maliyet %75 İmza Enerjisi.\n - E: Battle Trance - Ekstra direnç, x1.5 saldırı hızı, artan hareket hızı verir - Maliyet 100% İmza Enerjisi.\n - Sol tık tut: Alan Yüklü Kesme.\n - Sol tık tut + İleri: Dürtme.\n - Savunma + F: Shunpo - Maliyet 1.5 Dayanıklılık, 10 Reiryoku
 
 ## SHIKAI ZANPAKUTO --------------------------
-Shikai_Tensa_Zangetsu.name = Shikai – Zangetsu
-Shikai_Tensa_Zangetsu.description = Zangetsu, kalıcı olarak serbest halde devasa bir ruhani bıçaktır. Canlı kumaşa sarılı siyah bıçak, taşıyıcıyı güçlendirir, <i><b>Getsuga Tenshō</b></i> dalgaları salar ve fiziksel ve enerji saldırılarına karşı kalkan görevi görür.
+Shikai_Zangetsu.name = Shikai – Zangetsu
+Shikai_Zangetsu.description = Zangetsu, kalıcı olarak serbest halde devasa bir ruhani bıçaktır. Canlı kumaşa sarılı siyah bıçak, taşıyıcısını güçlendirir, <i><b>Getsuga Tensho</b></i> dalgaları salar ve fiziksel ve enerji saldırılarına karşı kalkan görevi görür.\n <color is="#ffffff"><b>Yetenekler:</b></color>\n - Q: Getsuga Tensho - Maliyet 100% İmza Enerjisi.\n - Savunma + F: Shunpo - Maliyet 1.5 Dayanıklılık, 10 Reiryoku
 Sode_No_Shirayuki.name = Shikai – Sode no Shirayuki
-Sode_No_Shirayuki.description = Zarif bir buz katanası. Serbest bırakma komutu \n<i><b>«Dans et, Sode no Shirayuki»</b></i> soğuk ve güzelliği buyurur.
+Sode_No_Shirayuki.description = Zarif bir buz katanası. Serbest bırakma komutu \n<i><b>«Dans et, Sode no Shirayuki»</b></i> soğuğu ve güzelliği buyurur.\n <color is="#ffffff"><b>Yetenekler:</b></color>\n - Sol tık tut: Hakuren - Maliyet 75 Reiryoku.\n - Savunma + F: Shunpo - Maliyet 1.5 Dayanıklılık, 10 Reiryoku\n - R: Mühürlü forma geri dön
 Shikai_Wabisuke.name = Shikai – Wabisuke
-Shikai_Wabisuke.description = Dış inceliğinin tersine hain doğası olan zarif kıvrımlı kılıç. Vuruşu hedefe ağırlık laneti bindirir. Her savunma veya blokta kurbanın yükü acımasızca ikiye katlanır. Serbest bırakma: <i><b>«Eğil, Wabisuke»</b></i>.
+Shikai_Wabisuke.description = Dış inceliğinin tersine hain bir doğaya sahip, zarif kıvrımlı bir kılıç. Vuruşu hedefe bir ağırlık laneti bindirir. Her savunma veya blokta kurbanın yükü acımasızca ikiye katlanır, ta ki rakip kırılıp kendi dayanılmaz yüküyle yere çakılana dek. Serbest bırakma komutu: <i><b>«Eğil, Wabisuke»</b></i>.\n <color is="#ffffff"><b>Yetenekler:</b></color>\n - 3. vuruş hedefi yavaşlatır.\n - Q: Crushing Regret - Maliyet 100% İmza Enerjisi.\n - Savunma + F: Shunpo - Maliyet 1.5 Dayanıklılık, 10 Reiryoku\n - R: Mühürlü forma geri dön
 Shikai_Hozukimaru.name = Shikai – Hozukimaru
-Shikai_Hozukimaru.description = Sade ve doğrudan bir savaş mızrağı. Basit biçimi şiddetli yıkıcı güç ve dayanıklılık gizler. Bu silahta dönüşümün uyuyan potansiyeli yatar.
+Shikai_Hozukimaru.description = Sade ve doğrudan bir savaş mızrağı. Basit, süssüz biçimi şiddetli yıkıcı bir güç ve boyun eğmez bir dayanıklılık gizler. Bu silahta, gerçek ve daha da korkunç formunu açığa çıkarabilecek uyuyan bir dönüşüm potansiyeli yatar.\n <color is="#ffffff"><b>Yetenekler:</b></color>\n - Sol tık tut: 3 ardışık dürtme.\n - Sol tık tut + İleri/Geri: Dürtme\n - Q: Tempest - Maliyet 100% İmza Enerjisi.\n - E: Windwhirl - Maliyet 100% İmza Enerjisi.\n - Canın %55'in altındayken ana kombon değişir, sana daha fazla erişim ve hasar verir.\n - Savunma + F: Shunpo - Maliyet 1.5 Dayanıklılık, 10 Reiryoku\n - R: Mühürlü forma geri dön
 Shikai_Kyoka_Suigetsu.name = Shikai – Kyoka Suigetsu
 Shikai_Kyoka_Suigetsu.description = Sürekli serbest halde bulunan sade bir katana. Gerçek gücü çelikte değil, mutlak duyusal egemenliğindedir. Serbest bırakma ritüeline tanıklık edenler sonsuza dek mükemmel hipnozuna hapsedilir; taşıyıcının iradesiyle şekillendirilmiş bir dünya görürler. Gerçekliği algı yoluyla fetheden bir silah.\n\n<b><color is="#9D3356">Gerçek gücü uyuyor, gelecekteki bir güncellemede ortaya çıkmayı bekliyor</color></b>
 Shikai_Benihime.name = Shikai – Benihime
-Shikai_Benihime.description = An elegant, slightly curved saber with a crimson motif. Upon its command, <i><b>«Awaken, Benihime»</b></i>, it gains the power to launch precise <i>Crimson Shots</i>, erect near-impenetrable hexagonal shields, and weave \
+Shikai_Benihime.description = Kızıl desenli, zarif ve hafif kıvrımlı bir kılıç. <i><b>«Uyan, Benihime»</b></i> komutuyla hassas <i>Kızıl Atışlar</i> fırlatma, neredeyse aşılmaz altıgen kalkanlar kurma ve ruhani enerjiden keskin ağlar örme gücü kazanır. Hem hesaplı saldırı hem de mutlak savunma için mükemmel, çok yönlü bir kılıç.\n <color is="#ffffff"><b>Yetenekler:</b></color>\n - Sol tık tut: Benihime Beam - Maliyet 60 Reiryoku.\n - Sol tık + İleri: Dürtme.\n - Savunma + E: Crimson Seal: Bir rakibi işaretle ve 3 saniye sonra gecikmeli hasar ver - Maliyet 65 Reiryoku.\n - Savunma + F: Shunpo - Maliyet 1.5 Dayanıklılık, 10 Reiryoku\n - R: Mühürlü forma geri dön
 True_Shikai_Zangetsu.name = Gerçek Shikai – Zangetsu
 True_Shikai_Zangetsu.description = Ichigo'nun gerçek Shikai'si, iki farklı siyah bıçak olarak tezahür eder. Devasa bıçak, birleşmiş Shinigami ve Hollow güçlerini simgelerken küçük bıçak Quincy mirasını temsil eder. Serbest bırakma komutu: <i><b>«Birleş ve Koru, Zangetsu»</b></i>. Bıçaklar bağımsız olarak <i>Getsuga Tenshō</i> fırlatabilir veya yıkıcı çapraz şekilli bir dalga, <i><b>Getsuga Jujisho</b></i> oluşturmak için birleşebilir.\n\n<b><color is="#9D3356">Gerçek gücü uyuyor, gelecekteki bir güncellemede ortaya çıkmayı bekliyor</color></b>
 Shikai_Senbonzakura.name = Shikai - Senbonzakura
-Shikai_Senbonzakura.description = Komut verildiğinde sayısız bıçak benzeri yaprağa ayrılan rafine bir Zanpakuto. <i><b>«Dağıl, Senbonzakura»</b></i> komutuyla silah, her biri çelik kadar keskin olan parıldayan parçacıklardan oluşan bir fırtınaya dönüşür. Bu yapraklar isteğe göre yönlendirilebilir, düşmanları amansız ve hassas saldırılarla ezer ve savaş alanını zarif bir yıkım diyarına çevirir.
-
+Shikai_Senbonzakura.description = Komut verildiğinde sayısız bıçak benzeri yaprağa ayrılan rafine bir Zanpakuto. <i><b>«Dağıl, Senbonzakura»</b></i> komutuyla silah, her biri çelik kadar keskin, parıldayan parçacıklardan oluşan bir fırtınaya dönüşür. Bu yapraklar isteğe göre yönlendirilebilir, düşmanları amansız ve isabetli saldırılarla ezer ve savaş alanını zarif bir yıkım diyarına çevirir.\n <color is="#ffffff"><b>Yetenekler:</b></color>\n - E tut: Arashi - Maliyet kullanım başına 20 Reiryoku.\n - E + İleri/Geri: Ichisen - Maliyet 40 Reiryoku.
 
 ## BANKAI ZANPAKUTO --------------------------
 Bankai_Tensa_Zangetsu.name = Bankai – Tensa Zangetsu
-Bankai_Tensa_Zangetsu.description = Bankai – Tensa Zangetsu efsanevi bir ruhani kılıçtır. Zincirli siyah ağzı, taşıyıcının enerjisini odaklayarak yıkıcı <i><b>Getsuga Tenshō — «Gökleri Delen Ay Dişi»</b></i> dalgasını serbest bırakır.
+Bankai_Tensa_Zangetsu.description = Bankai – Tensa Zangetsu efsanevi bir ruhani kılıçtır. Zincirli siyah ağzı, taşıyıcının enerjisini odaklayarak yıkıcı <i><b>Getsuga Tensho — «Gökleri Delen Ay Dişi»</b></i> dalgasını serbest bırakır. \n <color is="#ffffff"><b>Yetenekler:</b></color>\n - Q (yarım şarj): Getsuga Tensho - İkinci bir Getsuga Tensho zincirlemek için tekrar Q'ya bas.\n - Q (tam şarj): Getsuga Tensho - Tam güçte Getsuga Tensho, %100 imza şarjına mal olur.\n - E: Kuro Shunpo - Maliyet 1.60 Dayanıklılık, 70 Reiryoku.\n - R: Hollow Maskesi Dönüşümü (Önce açılmalı)\n - Savunma + F: Shunpo - Maliyet 1.5 Dayanıklılık, 10 Reiryoku
 True_Bankai_Tensa_Zangetsu.name = Gerçek Bankai – Tensa Zangetsu
 True_Bankai_Tensa_Zangetsu.description = Ichigo'nun gücünün nihai evrimi. Bu form, ikili kılıçlarını parlak beyaz sargılarla sarılı tek bir devasa siyah bıçakta birleştirir. Ruhsal mirasının tam yakınsamasını temsil eder ve ezici gücü tek, yıkıcı bir ağızda yoğunlaştırır.\n\n<b><color is="#9D3356">Gerçek gücü uyuyor, gelecekteki bir güncellemede ortaya çıkmayı bekliyor</color></b>
 
-
 ## QUINCY WEAPONS --------------------------
 Kojaku_Bow.name = Quincy Yayı - Kojaku
-Kojaku_Bow.description = Tüm Quincy tarafından kullanılabilen temel yay. Sağ eldeki <i>Quincy Haçı</i>nda Reishi toplanarak oluşturulur. Saldığı oklar da Reishi'den yapılmıştır. Hollowları uzaktan saldırılarla yok etmeye olanak tanır. Aday Quincy'ler için erken oyun silahı.
+Kojaku_Bow.description = Tüm Quincy tarafından kullanılabilen temel yay. Sağ eldeki <i>Quincy Haçı</i>nda Reishi toplanarak oluşturulur. Saldığı oklar da Reishi'den yapılmıştır. Hollow'ları uzaktan saldırılarla yok edebilir. Aday Quincy'ler için başlangıç silahı.\n <color is="#ffffff"><b>Yetenekler:</b></color>\n - Sağ tık: Hirenkyaku - Maliyet 30 Reiryoku.\n - Q: Okami-Ya - Hedefine güçlendirilmiş bir ok yükleyip ateşle - Maliyet 100% İmza Enerjisi.
+
 Four_Point_Quincy_Cross.name = 4 Uçlu Quincy Haçı
 Four_Point_Quincy_Cross.description = Quincy oyuncularının yeteneklerini ortaya çıkarmasına yardımcı olan, yan elde tutulduğunda MP sağlayan dört uçlu bir Quincy haçı. Ruhsal gücünü sürdürmek için vazgeçilmezdir.
 Seele_Schneider.name = Seele Schneider
-Seele_Schneider.description = Bir kılıca benzeyen ama daha çok testere gibi çalışan bir Quincy silahı. Reishi, bıçağın kenarında saniyede 3 milyon tur atar. Bu, Reishi ile kesilen şey arasındaki bağı koparmaya yardımcı olur. Güçlü bir bıçak gibi görünse de ok olarak çok daha fazla hasar verebilir.
+Seele_Schneider.description = Bir kılıca benzeyebilen ama daha çok testere gibi çalışan bir Quincy silahı. Reishi, bıçağın kenarında saniyede 3 milyon tur atar. Bu, Reishi ile kestiği şey arasındaki bağı koparmaya yardımcı olur. Güçlü bir bıçak gibi görünüp işlev görse de, ok olarak çok daha fazla hasar verebilir.\n <color is="#ffffff"><b>Yetenekler:</b></color>\n - Sağ tık: Hirenkyaku - Maliyet 30 Reiryoku.\n - Sol tık tut: Alan Kesmesi. 3 kez şarj edilebilir. Her seferinde daha fazla hasar verir. Reiryoku maliyeti şöyledir:  50, 70, 100\n - Bir yakın dövüş saldırısını başarıyla bloklarsan ve saldırganın önündeyse, her vuruş için ondan 15 Reiryoku çal.\n - R: Aç/Kapat - Bu, silahı indirip sol ya da sağ tıka basınca da otomatik olarak yapılır.
 
 
 ## ARMOUR --------------------------
+StandardIssue_Shihakusho_Kosode.name = Standart Shihakusho - Kosode
+StandardIssue_Shihakusho_Kosode.description = Gotei 13'ün tüm üyeleri tarafından giyilen standart Shinigami üniformasının üst kısmı. Bu dünyaya bunu giyerek geldin. Ona iyi bak.
+StandardIssue_Shihakusho_Hakama.name = Standart Shihakusho - Hakama
+StandardIssue_Shihakusho_Hakama.description = Standart Shinigami üniforması olan <i>Shihakusho</i>'nun alt kısmını oluşturan giysi. Bu dünyaya bunu giyerek geldin. Ona iyi bak.
 Shihakusho_Kosode.name = Shihakusho - Kosode
 Shihakusho_Kosode.description = Gotei 13'ün tüm üyeleri tarafından giyilen standart Shinigami üniformasının üst kısmı.
-Shihakusho_Kosode_Lieutenant.name = Shihakusho - Kosode (Teğmen)
-Shihakusho_Kosode_Lieutenant.description = Standart <i>Shihakusho</i>'nun üst parçası olup büyük prestiji temsil eden bir Teğmen rozeti taşır.
-Shihakusho_Kosode_Sleeveless.name = Shihakusho - Kosode (Kolsuz)
-Shihakusho_Kosode_Sleeveless.description = Daha fazla hareket özgürlüğü isteyenler için modifiye edilmiş bir <i>Shihakusho</i>. Daha çok standart üniformanın kozmetik bir değişikliği olarak kabul edilir.
-Shinigami_Robes_Captain.name = Kaptan Shihakusho
-Shinigami_Robes_Captain.description = Kaptanların standart üniformalarının üzerine giydiği beyaz ceket. Üstün ruhsal koruma sağlar ve Gotei 13 içindeki en yüksek rütbeyi simgeler.
-Shihakusho_Kosode_BareShoulder.name = Shihakusho - Kosode (Açık Omuzlu)
-Shihakusho_Kosode_BareShoulder.description = Kolsuz varyantla aynı amaca hizmet eden, ancak daha zarif ve törensel bir görünümü koruyan modifiye edilmiş bir <i>Shihakusho</i>.
 Shihakusho_Hakama.name = Shihakusho - Hakama
 Shihakusho_Hakama.description = Standart Shinigami üniforması olan <i>Shihakusho</i>'nun alt kısmını oluşturan giysi.
+Shihakusho_Kosode_Sleeveless.name = Shihakusho - Kosode (Kolsuz)
+Shihakusho_Kosode_Sleeveless.description = Daha fazla hareket özgürlüğü isteyenler için modifiye edilmiş bir <i>Shihakusho</i>. Daha çok standart üniformanın kozmetik bir değişikliği olarak kabul edilir.
+Shihakusho_Kosode_BareShoulder.name = Shihakusho - Kosode (Açık Omuzlu)
+Shihakusho_Kosode_BareShoulder.description = Kolsuz varyantla aynı amaca hizmet eden, ancak daha zarif ve törensel bir görünümü koruyan modifiye edilmiş bir <i>Shihakusho</i>.
+Shihakusho_Kosode_Lieutenant.name = Shihakusho - Kosode (Teğmen)
+Shihakusho_Kosode_Lieutenant.description = Standart <i>Shihakusho</i>'nun üst parçası olup büyük prestiji temsil eden bir Teğmen rozeti taşır.
+Shihakusho_Hakama_Lieutenant.name = Shihakusho - Hakama (Teğmen)
+Shihakusho_Hakama_Lieutenant.description = Yalnızca layık olanlar için birinci sınıf malzemelerle yapılan <i>Shihakusho</i>'nun alt parçası.
+Shinigami_Robes_Captain.name = Kaptan Shihakusho
+Shinigami_Robes_Captain.description = Kaptanların standart üniformalarının üzerine giydiği beyaz ceket. Üstün ruhsal koruma sağlar ve Gotei 13 içindeki en yüksek rütbeyi simgeler.
+Shihakusho_Hakama_Captain.name = Shihakusho - Hakama (Kaptan)
+Shihakusho_Hakama_Captain.description = Bu alt giysi eşsiz bir kaliteye sahiptir. Söylentilere göre en dikkat çekici fark, sağladığı konfor ve hareket kabiliyetidir. Ama gerçek şu ki, daha iyi dirence de sahiptirler. Bir Kaptanı savaşta gerektiren durumlar genellikle yüksek yıkımlı operasyonlardır, bu yüzden buna dayanacak bir şeye ihtiyaç duyarlar. Aksi halde kıyafetleri onları ilk yüzüstü bırakan şey olurdu.
+
 Hollow_Mask.name = Hollow Maskesi
 Hollow_Mask.description = İçsel Hollow'una ait olan gücün bir tezahürü.
+
 Tensa_Zangetsu_Outfit.name = Göksel Zincirin Pelerini
 Tensa_Zangetsu_Outfit.description = Göklerin zincirlerinden doğmuş keskin, kara bir pelerin. Onu giyenin ayı ikiye bölebileceği söylenir.
 
-
+Quincy_Uniform_Type1_Top.name = Geleneksel Quincy Üstü
+Quincy_Uniform_Type1_Top.description = Hareket kabiliyeti ve verimli Reishi manipülasyonu için dokunmuş geleneksel bir Quincy savaş üniforması.
+Quincy_Uniform_Type1_Pants.name = Geleneksel Quincy Pantolonu
+Quincy_Uniform_Type1_Pants.description = Bu pantolon, çoğunlukla beyaz kıyafetler giyen bir Quincy'nin geleneksel giysilerinin bir parçasıdır. Savaşlarda konfor ve dayanıklılık sunar.
+Quincy_Uniform_Type1_Top_NoCape.name = Geleneksel Quincy Üstü (Pelerinsiz)
+Quincy_Uniform_Type1_Top_NoCape.description = Geleneksel Quincy savaş üniformasının bir çeşidi. Bazı insanlar pelerin olmamasını tercih eder.
+Wandenreich_Cap.name = Wandenreich Askeri Şapkası
+Wandenreich_Cap.description = Wandenreich üyelerinin taktığı törensel bir askeri şapka. Yhwach'ın ideallerine bağlılığı simgeler.
+Wandenreich_Top.name = Wandenreich Askeri Üstü
+Wandenreich_Top.description = Beyaz bir askeri ceketten oluşan Wandenreich'ın resmi savaş kıyafeti. Kullanıcılar genellikle bunun altına geleneksel üniformayı ya da beğendikleri herhangi bir varyasyonu giyer. Büyük direnç sağlar.
+Wandenreich_Pants.name = Wandenreich Askeri Pantolonu
+Wandenreich_Pants.description = Wandenreich askerlerinin giydiği askeri sınıf pantolonlar. Her türlü arazide savaşa ve beklenmedik durumlara uygun şekilde dikilmiştir.
 ## INGREDIENTS --------------------------
 Resonating_Reishi_Core.name = Rezonans Eden Reishi Çekirdeği
 Resonating_Reishi_Core.description = Bu çekirdek sizinkini taklit eden bir frekansta titreşir. Ruhunuzun bir uzantısıdır. Onu uyandırmak için bir bıçağa atanmaya hazır.
@@ -90,7 +109,6 @@ Purified_Soulweave_Cloth_Bolt.description = Yüksek kaliteli reishi ile işlenmi
 Corrupted_Life_Essence.name = Bozulmuş Yaşam Özü
 Corrupted_Life_Essence.description = <i>Bir nedenden ötürü, Orbis'teki bitkilerde normalde bulunan bu reishi kristali bu Hollow'un içindeydi. Bozulmuş görünse de ve reishi konsantrasyonu daha düşük olsa da, yeterince biriktirirseniz bunları Yaşam Özü'ne dönüştürebilirsiniz.</i>
 
-
 ## SPIRIT FRAGMENTS --------------------------
 Sode_no_Shirayuki_Spirit_Fragment.name = Ruh Parçası - Sode no Shirayuki
 Sode_no_Shirayuki_Spirit_Fragment.description = Saf ruhsal enerjinin soğuk bir parçası.\n<b>Tüketmek için sağ tıkla (Shikai kilidini aç)</b>
@@ -107,7 +125,6 @@ Zangetsu_Spirit_Fragment.description = Muazzam miktarda enerji içeren bir parç
 Tensa_Zangetsu_Spirit_Fragment.name = Ruh Parçası - Tensa Zangetsu
 Tensa_Zangetsu_Spirit_Fragment.description = İçinde çılgınca yoğunlaşmış enerji barındıran bir parça. Nihai gücü ellerinde hissedebilirsin. \n<b>Tüketmek için sağ tıkla (Bankai, Tensa Zangetsu'yu açar)</b>
 
-
 ## CRAFTING BENCHES --------------------------
 Soul_Imprinting_Altar.name = Ruh Damgalama Sunağı
 Soul_Imprinting_Altar.description = Taşıyıcının ruhunun Asauchi ile birleştiği kutsal çalışma yeri. Derin meditasyon ve ruhani enerji (Reiryoku) yoğunlaştırmasıyla gelecekteki Zanpakutō'nun temeli atılır. Bu sunak hem ilk uyanış hem de Shikai'dan nihai Bankai'ye evrim için kullanılır.
@@ -115,14 +132,20 @@ Soulweave_Loom.name = Soulweave Tezgâhı
 Soulweave_Loom.description = Ruhsal madde ile işlenmiş kıyafetler dokumak için kullanılan bir tezgâh. Varyasyonları Ruhlar Topluluğu ve diğer yerlerde yaygın olarak kullanılır.
 
 
+
 ## MISC ITEMS --------------------------
 items.Currency_Kan.name = Kan
 items.Currency_Kan.description = Ruhlar Topluluğu'nun standart para birimi. Bir Kan, yaşayanlar dünyasında bir çuval pirincin değerini temsil eder. Ağırlığı ve sesi reishi frekansına ayarlı sayılır, sahtesi yapılamaz.
+
 items.Medical_Pill_Basic.name = Temel Tıbbi Hap
 items.Medical_Pill_Basic.description = 4. Birliğin tıbbi biriminden standart hap. Konsantre şifalı otlar ve iyileştirici kaidō enerjisi.\n\n<color is="#ffffff">%30</color> canı anında geri yükler.
+
 items.Kaido_Infused_Pill.name = Kaidō Katkılı İyileşme Hapı
 items.Kaido_Infused_Pill.description = 4. Birliğin tıbbi araştırmasının başyapıtı. Sadece bir hap değil, askıda iyileştirici kaidō büyüleri kapsülü.\n\n<color is="#ffffff">%100</color> canı anında geri yükler ve verir:\n\n• <color is="#ffffff">Can Regen II</color>\n\nSüre: <color is="#ffffff">0:30</color>
-items.A_Guide_To_Find_Hollows_Closed.name = Hollow Bulma Rehberi - Kapalı
-items.A_Guide_To_Find_Hollows_Closed.description = <color is="#ffffff"><b>Sağ tıkla</b></color> ve bu parşömeni elinde tutarak aç. 12. Tümen Araştırma ve Geliştirme Enstitüsü tarafından derlenmiştir.
-items.A_Guide_To_Find_Hollows.name = Hollow Bulma Rehberi
-items.A_Guide_To_Find_Hollows.description = <i>12. Tümen Araştırma ve Geliştirme Enstitüsü tarafından derlenmiştir</i>. Hollow etkinliği gündüz saatlerinde gerçekleşmez. Görünümler yalnızca geceleri, ruhsal baskı dengesiz hâle geldiğinde kaydedilmiştir. Ayrıca, Bölge 1 içerisinde hiçbir Hollow izi tespit edilmemiştir. Hollow arayan operatifler Bölge 1’den ayrılmalı ve devriyelerini gece gerçekleştirmelidir.
+
+items.Race_Selection_Menu.name = Irk Seçim Menüsü
+items.Race_Selection_Menu.description = Irk seçim menüsünü açmak için <b><color is="#ffffff">sağ tıkla</color></b>.\n <i>Bu eşya kullanıldıktan sonra silinecek </i>
+Kido_Charm.name = Kido Tılsımı
+Kido_Charm.description = <b>Kido kullanmak için gereken</b> ruhani bir tılsım. <i>Silahını tutarken kido kullanmak için onu yan eline kuşanabilirsin</i>. \n <color is="#ffffff"><b>Kontroller:</b></color>\n - Hareket ettiğin yöne göre kido tekniklerini kullanmak için <b>Sol tık + herhangi bir yön ya da hiçbiri</b> tut. <i>Sol tık tutma</i> süresi kido tekniğine göre değişir.\n - Hangi teknikleri kullanabileceğini ayarlayabileceğin <i>Kido Donanımı</i> menüsünü açmak için <b>E</b>.\n <b><i><color is="#9c504c"> Yeni Kido açmak için Ruh Meditasyon Koltuğu ile etkileşime geç</b>.\n Onu Mobilya Tezgâhında üretebilirsin.
+Soul_Meditation_Seat.name = Ruh Meditasyon Koltuğu
+Soul_Meditation_Seat.description = Zihni sakinleştirmek ve ruhu güçlendirmek için kullanılan basit bir meditasyon koltuğu. Meditasyon yoluyla yeni teknikler ve yetenekler açılabilir.

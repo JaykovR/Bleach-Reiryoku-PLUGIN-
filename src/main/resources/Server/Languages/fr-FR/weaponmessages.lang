@@ -1,0 +1,20 @@
+##SEELE SCHNEIDER
+Seele_AOEC1_Fail = Tu n'as pas le Reiryoku nécessaire. (50 Reiryoku requis)
+Seele_AOEC2_Fail = Tu n'as pas le Reiryoku nécessaire pour la 2e charge. (70 Reiryoku requis)
+Seele_AOEC3_Fail = Tu n'as pas le Reiryoku nécessaire pour la 3e charge. (100 Reiryoku requis)
+
+##SODE NO SHIRAYUKI
+Shirayuki_Hakuren_Fail = Tu n'as pas le Reiryoku nécessaire. (75 Reiryoku requis)
+
+##BENIHIME
+Benihime_Beam_Fail = Tu n'as pas le Reiryoku nécessaire. (60 Reiryoku requis)
+
+##SENBONZAKURA
+Senbonzakura_Tornado_Fail = Tu n'as pas le Reiryoku nécessaire. (20 Reiryoku requis)
+Senbonzakura_Ichisen_Fail = Tu n'as pas le Reiryoku nécessaire. (40 Reiryoku requis)
+
+##TENSA ZANGETSU
+TZangetsu_Kuro_Shunpo_Fail = Endurance ou Reiryoku insuffisants. (70 Reiryoku + 1,5 Endurance requis)
+TZangetsu_Getsuga_Arashi_Fail = Endurance ou Reiryoku insuffisants. (150 Reiryoku, 5 Endurance requis)
+
+Skill_Cooldown = La compétence est en recharge.

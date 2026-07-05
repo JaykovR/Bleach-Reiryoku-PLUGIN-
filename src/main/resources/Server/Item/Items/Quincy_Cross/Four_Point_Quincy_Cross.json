@@ -19,7 +19,7 @@
       -12
     ]
   },
-  "Quality": "SpiritWeapon",
+  "Quality": "Developer",
   "Utility": {
     "Usable": true,
     "StatModifiers": {
@@ -36,31 +36,5 @@
   "ItemLevel": 10,
   "Categories": [
     "BleachCategory.Ingredients"
-  ],
-  "Recipe": {
-    "TimeSeconds": 3.5,
-    "Input": [
-      {
-        "ItemId": "Ingredient_Bar_Iron",
-        "Quantity": 4
-      },
-      {
-        "ItemId": "Ingredient_Bar_Silver",
-        "Quantity": 1
-      },
-      {
-        "ItemId": "Ingredient_Life_Essence",
-        "Quantity": 50
-      }
-    ],
-    "BenchRequirement": [
-      {
-        "Type": "Crafting",
-        "Categories": [
-          "Quincy_Weapons"
-        ],
-        "Id": "Quincy_Workshop"
-      }
-    ]
-  }
+  ]
 }

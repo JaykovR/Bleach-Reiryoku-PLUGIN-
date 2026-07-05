@@ -163,12 +163,12 @@
     "TimeSeconds": 3.5,
     "Input": [
       {
-        "ItemId": "Four_Point_Quincy_Cross",
+        "ItemId": "Resonating_Reishi_Core",
         "Quantity": 1
       },
       {
-        "ItemId": "Ingredient_Void_Essence",
-        "Quantity": 10
+        "ItemId": "Ingredient_Life_Essence_Concentrated",
+        "Quantity": 1
       }
     ],
     "BenchRequirement": [
