@@ -6,6 +6,7 @@ import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.protocol.packets.interface_.CustomPageLifetime;
 import com.hypixel.hytale.protocol.packets.interface_.CustomUIEventBindingType;
 import com.hypixel.hytale.protocol.packets.interface_.Page;
+import com.hypixel.hytale.server.core.Message;
 import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.entity.entities.player.pages.InteractiveCustomUIPage;
 import com.hypixel.hytale.server.core.ui.builder.UICommandBuilder;
@@ -44,7 +45,9 @@ public class RaceConfirmPage extends InteractiveCustomUIPage<RaceConfirmPage.Clo
         cmd.append("RaceSelection/RaceConfirmPage.ui");
 
         // Update the message label with the selected race
-        cmd.set("#ConfirmMessage.Text", "You are a " + selectedRace);
+        cmd.set("#ConfirmMessage.TextSpans",
+                Message.translation("raceSelection.confirm").param("race", selectedRace));
+        cmd.set("#CloseButton.TextSpans", Message.translation("raceSelection.close"));
 
         // Bind close button
         evt.addEventBinding(CustomUIEventBindingType.Activating, "#CloseButton", null);

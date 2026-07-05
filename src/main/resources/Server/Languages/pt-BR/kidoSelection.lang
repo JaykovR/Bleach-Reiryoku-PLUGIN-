@@ -1,0 +1,16 @@
+hint = Escolha um espaço e depois um kido
+inputs = ENTRADAS
+techniques = TÉCNICAS
+done = CONCLUÍDO
+empty = Vazio
+assigning = ATRIBUINDO: {input}
+slot.leftClick = Clique Esq.
+slot.forward = + Frente
+slot.back = + Trás
+slot.left = + Esquerda
+slot.right = + Direita
+input.leftClick = CLIQUE ESQUERDO
+input.forward = CLIQUE ESQUERDO + FRENTE
+input.back = CLIQUE ESQUERDO + TRÁS
+input.left = CLIQUE ESQUERDO + ESQUERDA
+input.right = CLIQUE ESQUERDO + DIREITA

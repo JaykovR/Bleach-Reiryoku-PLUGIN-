@@ -1,0 +1,16 @@
+hint = Выберите слот, затем кидо
+inputs = ВВОД
+techniques = ТЕХНИКИ
+done = ГОТОВО
+empty = Пусто
+assigning = НАЗНАЧЕНИЕ: {input}
+slot.leftClick = ЛКМ
+slot.forward = + Вперёд
+slot.back = + Назад
+slot.left = + Влево
+slot.right = + Вправо
+input.leftClick = ЛКМ
+input.forward = ЛКМ + ВПЕРЁД
+input.back = ЛКМ + НАЗАД
+input.left = ЛКМ + ВЛЕВО
+input.right = ЛКМ + ВПРАВО

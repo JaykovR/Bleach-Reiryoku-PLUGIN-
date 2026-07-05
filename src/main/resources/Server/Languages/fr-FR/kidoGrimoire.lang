@@ -1,0 +1,10 @@
+subHint = Touche des cibles avec des sorts pour gagner du Keiko et débloquer de nouveaux kido
+hado = HADO
+bakudo = BAKUDO
+done = TERMINÉ
+hadoKeiko = Keiko Hado : {count}
+bakudoKeiko = Keiko Bakudo : {count}
+status.unlocked = DÉBLOQUÉ
+status.lockedProf = Verrouillé ({prof} de maîtrise requise)
+status.needKeiko = {cost} Keiko requis
+status.unlock = Débloquer ({cost} Keiko)

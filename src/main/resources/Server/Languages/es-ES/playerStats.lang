@@ -1,0 +1,8 @@
+race = Raza: {race}
+totalKills = Muertes Totales: {count}
+hollowKills = Muertes de Hollow: {count}
+hadoProf = Dominio de Hado: {count}
+bakudoProf = Dominio de Bakudo: {count}
+shikaiUnlocked = Shikai Desbloqueado
+none = Ninguno
+close = X

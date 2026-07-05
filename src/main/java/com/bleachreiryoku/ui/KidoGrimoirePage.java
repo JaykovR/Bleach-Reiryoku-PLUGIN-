@@ -3,6 +3,7 @@ package com.bleachreiryoku.ui;
 import com.bleachreiryoku.playerData.KidoCatalog;
 import com.bleachreiryoku.playerData.KidoUnlocks;
 import com.bleachreiryoku.playerData.playerStats;
+import com.hypixel.hytale.server.core.Message;
 import com.hypixel.hytale.codec.Codec;
 import com.hypixel.hytale.codec.KeyedCodec;
 import com.hypixel.hytale.codec.builder.BuilderCodec;
@@ -75,8 +76,15 @@ public class KidoGrimoirePage extends InteractiveCustomUIPage<KidoGrimoirePage.G
         int hadoKeiko = unlocks.keikoAvailable(KidoCatalog.CATEGORY_HADO, hadoProf, bakudoProf);
         int bakudoKeiko = unlocks.keikoAvailable(KidoCatalog.CATEGORY_BAKUDO, hadoProf, bakudoProf);
 
-        cmd.set("#HadoKeiko.Text", "Hado Keiko: " + hadoKeiko);
-        cmd.set("#BakudoKeiko.Text", "Bakudo Keiko: " + bakudoKeiko);
+        // Static labels (translated) — set here rather than hardcoded in the .ui so they
+        // localize to the player's language via the kidoGrimoire.lang files.
+        cmd.set("#SubHint.TextSpans", Message.translation("kidoGrimoire.subHint"));
+        cmd.set("#HadoHeader.TextSpans", Message.translation("kidoGrimoire.hado"));
+        cmd.set("#BakudoHeader.TextSpans", Message.translation("kidoGrimoire.bakudo"));
+        cmd.set("#DoneButton.TextSpans", Message.translation("kidoGrimoire.done"));
+
+        cmd.set("#HadoKeiko.TextSpans", Message.translation("kidoGrimoire.hadoKeiko").param("count", hadoKeiko));
+        cmd.set("#BakudoKeiko.TextSpans", Message.translation("kidoGrimoire.bakudoKeiko").param("count", bakudoKeiko));
 
         cmd.clear("#HadoList");
         cmd.clear("#BakudoList");
@@ -95,19 +103,22 @@ public class KidoGrimoirePage extends InteractiveCustomUIPage<KidoGrimoirePage.G
             cmd.append(listSel, "KidoGrimoire/KidoGrimoireRow.ui");
             cmd.set(rowSel + " #RowName.Text", e.display());
 
-            String buttonText;
+            Message buttonText;
             boolean clickable = false;
             if (unlocks.isUnlocked(e.id())) {
-                buttonText = "UNLOCKED";
+                buttonText = Message.translation("kidoGrimoire.status.unlocked");
             } else if (prof < e.minProficiency()) {
-                buttonText = "Locked (need " + e.minProficiency() + " prof)";
+                buttonText = Message.translation("kidoGrimoire.status.lockedProf")
+                        .param("prof", e.minProficiency());
             } else if (keiko < e.unlockCost()) {
-                buttonText = "Need " + e.unlockCost() + " Keiko";
+                buttonText = Message.translation("kidoGrimoire.status.needKeiko")
+                        .param("cost", e.unlockCost());
             } else {
-                buttonText = "Unlock (" + e.unlockCost() + " Keiko)";
+                buttonText = Message.translation("kidoGrimoire.status.unlock")
+                        .param("cost", e.unlockCost());
                 clickable = true;
             }
-            cmd.set(rowSel + " #RowButton.Text", buttonText);
+            cmd.set(rowSel + " #RowButton.TextSpans", buttonText);
 
             if (clickable) {
                 evt.addEventBinding(CustomUIEventBindingType.Activating, rowSel + " #RowButton",

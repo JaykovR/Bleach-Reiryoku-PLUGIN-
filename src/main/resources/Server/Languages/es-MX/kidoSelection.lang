@@ -1,0 +1,16 @@
+hint = Elige una ranura y luego un kido
+inputs = ENTRADAS
+techniques = TÉCNICAS
+done = LISTO
+empty = Vacío
+assigning = ASIGNANDO: {input}
+slot.leftClick = Clic Izq.
+slot.forward = + Adelante
+slot.back = + Atrás
+slot.left = + Izquierda
+slot.right = + Derecha
+input.leftClick = CLIC IZQUIERDO
+input.forward = CLIC IZQUIERDO + ADELANTE
+input.back = CLIC IZQUIERDO + ATRÁS
+input.left = CLIC IZQUIERDO + IZQUIERDA
+input.right = CLIC IZQUIERDO + DERECHA

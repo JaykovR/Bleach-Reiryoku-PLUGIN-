@@ -1,0 +1,10 @@
+subHint = Попадайте заклинаниями по целям, чтобы получать Кэйко и открывать новые кидо
+hado = ХАДО
+bakudo = БАКУДО
+done = ГОТОВО
+hadoKeiko = Кэйко Хадо: {count}
+bakudoKeiko = Кэйко Бакудо: {count}
+status.unlocked = ОТКРЫТО
+status.lockedProf = Закрыто (нужно {prof} мастерства)
+status.needKeiko = Нужно {cost} Кэйко
+status.unlock = Открыть ({cost} Кэйко)

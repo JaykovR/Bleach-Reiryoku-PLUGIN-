@@ -1,0 +1,10 @@
+subHint = Acerte alvos com feitiços para ganhar Keiko e desbloquear novos kido
+hado = HADO
+bakudo = BAKUDO
+done = CONCLUÍDO
+hadoKeiko = Keiko de Hado: {count}
+bakudoKeiko = Keiko de Bakudo: {count}
+status.unlocked = DESBLOQUEADO
+status.lockedProf = Bloqueado (precisa de {prof} de domínio)
+status.needKeiko = Faltam {cost} Keiko
+status.unlock = Desbloquear ({cost} Keiko)

@@ -35,7 +35,7 @@ Group {
 
 
     Label #SubHint {
-        Text: "Land spells to earn Keiko, then unlock new kido";
+        Text: "";
         Anchor: (Height: 26);
         Style: (FontSize: 15, TextColor: #88aacc);
     }
@@ -51,12 +51,12 @@ Group {
             FlexWeight: 1;
 
             Label #HadoHeader {
-                Text: "HADO";
+                Text: "";
                 Anchor: (Height: 28);
                 Style: (FontSize: 18, TextColor: #c98a4a, RenderBold: true);
             }
             Label #HadoKeiko {
-                Text: "Hado Keiko: 0";
+                Text: "";
                 Anchor: (Height: 24);
                 Style: (FontSize: 15, TextColor: #e0b080);
             }
@@ -82,12 +82,12 @@ Group {
             FlexWeight: 1;
 
             Label #BakudoHeader {
-                Text: "BAKUDO";
+                Text: "";
                 Anchor: (Height: 28);
                 Style: (FontSize: 18, TextColor: #5B8FBF, RenderBold: true);
             }
             Label #BakudoKeiko {
-                Text: "Bakudo Keiko: 0";
+                Text: "";
                 Anchor: (Height: 24);
                 Style: (FontSize: 15, TextColor: #9fc4e6);
             }
@@ -110,7 +110,7 @@ Group {
     Group { Anchor: (Height: 30); }
 
     TextButton #DoneButton {
-        Text: "DONE";
+        Text: "";
         Anchor: (Height: 44, Width: 250);
         Style: @DoneStyle;
         Padding: (Left: 16);

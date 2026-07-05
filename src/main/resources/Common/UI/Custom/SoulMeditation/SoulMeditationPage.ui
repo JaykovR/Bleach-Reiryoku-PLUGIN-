@@ -42,7 +42,7 @@ Group {
 
 
     Label #MeditateHint {
-        Text: "Center yourself and restore your spirit";
+        Text: "";
         Anchor: (Height: 26);
         Style: (FontSize: 14, TextColor: #88aacc);
     }
@@ -50,7 +50,7 @@ Group {
     Group { Anchor: (Height: 18); }
 
     TextButton #MeditateButton {
-        Text: "Meditate";
+        Text: "";
         Anchor: (Height: 62);
         Style: @MenuButtonStyle;
         Padding: (Left: 16);
@@ -58,7 +58,7 @@ Group {
     Group { Anchor: (Height: 10); }
 
     TextButton #UnlockButton {
-        Text: "Unlock New Kido";
+        Text: "";
         Anchor: (Height: 62);
         Style: @MenuButtonStyle;
         Padding: (Left: 16);
@@ -66,7 +66,7 @@ Group {
     Group { Anchor: (Height: 10); }
 
     TextButton #StatsButton {
-        Text: "View Stats";
+        Text: "";
         Anchor: (Height: 62);
         Style: @MenuButtonStyle;
         Padding: (Left: 16);
@@ -74,7 +74,7 @@ Group {
     Group { Anchor: (Height: 10); }
 
     TextButton #WipButton {
-        Text: "WIP";
+        Text: "";
         Anchor: (Height: 62);
         Style: @WipButtonStyle;
         Padding: (Left: 16);
@@ -83,7 +83,7 @@ Group {
     Group { Anchor: (Height: 14); }
 
     TextButton #DoneButton {
-        Text: "Close";
+        Text: "";
         Anchor: (Height: 40);
         Style: @DoneStyle;
         Padding: (Left: 16);

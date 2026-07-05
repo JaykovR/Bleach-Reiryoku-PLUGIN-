@@ -1,0 +1,8 @@
+race = Race: {race}
+totalKills = Total Kills: {count}
+hollowKills = Hollow Kills: {count}
+hadoProf = Hado Proficiency: {count}
+bakudoProf = Bakudo Proficiency: {count}
+shikaiUnlocked = Shikai Unlocked
+none = None
+close = X

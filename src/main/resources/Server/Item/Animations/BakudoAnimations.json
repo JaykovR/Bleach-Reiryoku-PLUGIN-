@@ -3,7 +3,8 @@
     "30_Shitou_Sansen_Cast": {
       "ThirdPerson": "Characters/Animations/Items/Bakudo/#30_Shitou_Sansen/Shitou_Sansen_Cast.blockyanim",
       "Speed": 1,
-      "ClipsGeometry": true
+      "ClipsGeometry": true,
+      "FirstPerson": "Characters/Animations/Items/Bakudo/#30_Shitou_Sansen/Shitotsusansen_Cast_FPS.blockyanim"
     }
   },
   "WiggleWeights": {

@@ -8,6 +8,7 @@ import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.protocol.packets.interface_.CustomPageLifetime;
 import com.hypixel.hytale.protocol.packets.interface_.CustomUIEventBindingType;
+import com.hypixel.hytale.server.core.Message;
 import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.entity.entities.player.pages.InteractiveCustomUIPage;
 import com.hypixel.hytale.server.core.inventory.ItemStack;
@@ -63,6 +64,9 @@ public class RaceSelectionPage extends InteractiveCustomUIPage<RaceSelectionPage
             @Nonnull Store<EntityStore> store
     ) {
         cmd.append("RaceSelection/RaceSelectionPage.ui");
+
+        cmd.set("#HollowButton.TextSpans", Message.translation("raceSelection.hollowUnavailable"));
+        cmd.set("#HumanButton.TextSpans", Message.translation("raceSelection.fullbringerUnavailable"));
 
         // Each button sends its race name as the SelectedRace value
         evt.addEventBinding(CustomUIEventBindingType.Activating, "#ShinigamiButton",

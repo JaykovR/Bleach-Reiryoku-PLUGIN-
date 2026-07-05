@@ -1,0 +1,16 @@
+hint = Choisis un emplacement, puis un kido
+inputs = ENTRÉES
+techniques = TECHNIQUES
+done = TERMINÉ
+empty = Vide
+assigning = ASSIGNATION : {input}
+slot.leftClick = Clic gauche
+slot.forward = + Avant
+slot.back = + Arrière
+slot.left = + Gauche
+slot.right = + Droite
+input.leftClick = CLIC GAUCHE
+input.forward = CLIC GAUCHE + AVANT
+input.back = CLIC GAUCHE + ARRIÈRE
+input.left = CLIC GAUCHE + GAUCHE
+input.right = CLIC GAUCHE + DROITE

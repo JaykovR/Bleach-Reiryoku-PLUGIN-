@@ -37,7 +37,7 @@ Group {
 
 
     Label #ActiveSlotHint {
-        Text: "Select a slot, then choose a kido";
+        Text: "";
         Anchor: (Height: 26);
         Style: (FontSize: 16, TextColor: #88aacc);
     }
@@ -52,15 +52,15 @@ Group {
             LayoutMode: Top;
             Anchor: (Width: 400);
 
-            Label {
-                Text: "INPUTS";
+            Label #InputsHeader {
+                Text: "";
                 Anchor: (Height: 26);
                 Style: (FontSize: 14, TextColor: #5B8FBF, RenderBold: true);
             }
             Group { Anchor: (Height: 8); }
 
             TextButton #SlotNoneButton {
-                Text: "Left-Click: Empty";
+                Text: "";
                 Anchor: (Height: 65);
                 Style: @SlotStyle;
                 Padding: (Left: 16);
@@ -68,7 +68,7 @@ Group {
             Group { Anchor: (Height: 6); }
 
             TextButton #SlotForwardButton {
-                Text: "+ Forward: Empty";
+                Text: "";
                 Anchor: (Height: 65);
                 Style: @SlotStyle;
                 Padding: (Left: 16);
@@ -76,7 +76,7 @@ Group {
             Group { Anchor: (Height: 6); }
 
             TextButton #SlotBackButton {
-                Text: "+ Back: Empty";
+                Text: "";
                 Anchor: (Height: 65);
                 Style: @SlotStyle;
                 Padding: (Left: 16);
@@ -84,7 +84,7 @@ Group {
             Group { Anchor: (Height: 6); }
 
             TextButton #SlotLeftButton {
-                Text: "+ Left: Empty";
+                Text: "";
                 Anchor: (Height: 65);
                 Style: @SlotStyle;
                 Padding: (Left: 16);
@@ -92,7 +92,7 @@ Group {
             Group { Anchor: (Height: 6); }
 
             TextButton #SlotRightButton {
-                Text: "+ Right: Empty";
+                Text: "";
                 Anchor: (Height: 65);
                 Style: @SlotStyle;
                 Padding: (Left: 16);
@@ -105,8 +105,8 @@ Group {
             LayoutMode: Top;
             FlexWeight: 1;
 
-            Label {
-                Text: "TECHNIQUES";
+            Label #TechniquesHeader {
+                Text: "";
                 Anchor: (Height: 26);
                 Style: (FontSize: 14, TextColor: #5B8FBF, RenderBold: true);
             }
@@ -129,7 +129,7 @@ Group {
     Group { Anchor: (Height: 14); }
 
     TextButton #DoneButton {
-        Text: "DONE";
+        Text: "";
         Anchor: (Height: 46, Width: 300);
         Style: @DoneStyle;
         Padding: (Left: 16);

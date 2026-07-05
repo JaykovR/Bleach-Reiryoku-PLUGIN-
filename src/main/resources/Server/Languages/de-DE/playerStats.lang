@@ -1,0 +1,8 @@
+race = Rasse: {race}
+totalKills = Kills gesamt: {count}
+hollowKills = Hollow-Kills: {count}
+hadoProf = Hado-Beherrschung: {count}
+bakudoProf = Bakudo-Beherrschung: {count}
+shikaiUnlocked = Shikai freigeschaltet
+none = Keine
+close = X

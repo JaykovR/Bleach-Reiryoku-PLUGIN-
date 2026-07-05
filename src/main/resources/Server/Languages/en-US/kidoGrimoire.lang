@@ -1,0 +1,10 @@
+subHint = Land spells to earn Keiko, then unlock new kido
+hado = HADO
+bakudo = BAKUDO
+done = DONE
+hadoKeiko = Hado Keiko: {count}
+bakudoKeiko = Bakudo Keiko: {count}
+status.unlocked = UNLOCKED
+status.lockedProf = Locked (need {prof} prof)
+status.needKeiko = Need {cost} Keiko
+status.unlock = Unlock ({cost} Keiko)

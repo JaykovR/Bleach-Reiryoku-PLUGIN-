@@ -3,12 +3,14 @@
     "#1Sho": {
       "ThirdPerson": "Characters/Animations/Items/Hado/#1 Sho/Hado1_Sho_Launch.blockyanim",
       "ClipsGeometry": true,
-      "Looping": false
+      "Looping": false,
+      "FirstPerson": "Characters/Animations/Items/Hado/#1 Sho/Hado_Launch_FPS.blockyanim"
     },
     "#1ShoCharging": {
       "ThirdPerson": "Characters/Animations/Items/Hado/#1 Sho/Hado_Charging.blockyanim",
       "ClipsGeometry": true,
-      "Speed": 1
+      "Speed": 1,
+      "FirstPerson": "Characters/Animations/Items/Hado/#1 Sho/Hado_Charging_FPS.blockyanim"
     },
     "Left": {
       "ThirdPerson": "Characters/Animations/Items/Hado/#1 Sho/LeftHand.blockyanim",
@@ -16,10 +18,12 @@
     },
     "B#9Sekienton": {
       "ThirdPerson": "Characters/Animations/Items/Bakudo/#9 Sekienton/Sekienton_Positioning.blockyanim",
-      "Speed": 1
+      "Speed": 1,
+      "FirstPerson": "Characters/Animations/Items/Bakudo/#9 Sekienton/Sekienton_Positioning_FPS - Copy.blockyanim"
     },
     "B#9SekientonHold": {
-      "ThirdPerson": "Characters/Animations/Items/Bakudo/#9 Sekienton/Sekienton_Hold.blockyanim"
+      "ThirdPerson": "Characters/Animations/Items/Bakudo/#9 Sekienton/Sekienton_Hold.blockyanim",
+      "FirstPerson": "Characters/Animations/Items/Bakudo/#9 Sekienton/Sekienton_Hold_FPS.blockyanim"
     }
   },
   "WiggleWeights": {

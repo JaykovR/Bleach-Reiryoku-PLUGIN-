@@ -59,6 +59,13 @@ public class SoulMeditationPage extends InteractiveCustomUIPage<SoulMeditationPa
                       @Nonnull Store<EntityStore> store) {
         cmd.append("SoulMeditation/SoulMeditationPage.ui");
 
+        cmd.set("#MeditateHint.TextSpans", Message.translation("soulMeditation.hint"));
+        cmd.set("#MeditateButton.TextSpans", Message.translation("soulMeditation.meditate"));
+        cmd.set("#UnlockButton.TextSpans", Message.translation("soulMeditation.unlock"));
+        cmd.set("#StatsButton.TextSpans", Message.translation("soulMeditation.stats"));
+        cmd.set("#WipButton.TextSpans", Message.translation("soulMeditation.wip"));
+        cmd.set("#DoneButton.TextSpans", Message.translation("soulMeditation.close"));
+
         evt.addEventBinding(CustomUIEventBindingType.Activating, "#MeditateButton",
                 new EventData().append("Action", "meditate"));
         evt.addEventBinding(CustomUIEventBindingType.Activating, "#UnlockButton",

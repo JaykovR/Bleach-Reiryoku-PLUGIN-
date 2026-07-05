@@ -1,0 +1,16 @@
+hint = Wähle einen Slot und dann ein Kido
+inputs = EINGABEN
+techniques = TECHNIKEN
+done = FERTIG
+empty = Leer
+assigning = ZUWEISEN: {input}
+slot.leftClick = Linksklick
+slot.forward = + Vorwärts
+slot.back = + Zurück
+slot.left = + Links
+slot.right = + Rechts
+input.leftClick = LINKSKLICK
+input.forward = LINKSKLICK + VORWÄRTS
+input.back = LINKSKLICK + ZURÜCK
+input.left = LINKSKLICK + LINKS
+input.right = LINKSKLICK + RECHTS

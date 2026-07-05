@@ -1,0 +1,8 @@
+race = Раса: {race}
+totalKills = Всего убийств: {count}
+hollowKills = Убийств Пустых: {count}
+hadoProf = Мастерство Хадо: {count}
+bakudoProf = Мастерство Бакудо: {count}
+shikaiUnlocked = Шикай открыт
+none = Нет
+close = X

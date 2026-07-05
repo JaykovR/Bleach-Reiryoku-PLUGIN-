@@ -11,6 +11,7 @@ import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.entity.entities.player.pages.InteractiveCustomUIPage;
 import com.hypixel.hytale.server.core.ui.builder.UICommandBuilder;
 import com.hypixel.hytale.server.core.ui.builder.UIEventBuilder;
+import com.hypixel.hytale.server.core.Message;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 
@@ -40,18 +41,23 @@ public class PlayerStatsPage extends InteractiveCustomUIPage<PlayerStatsPage.Clo
     ) {
         cmd.append("PlayerStats/PlayerStatsPage.ui");
 
+        // Static labels (translated).
+        cmd.set("#CloseButton.TextSpans", Message.translation("playerStats.close"));
+        cmd.set("#ShikaiHeader.TextSpans", Message.translation("playerStats.shikaiUnlocked"));
+
         playerStats stats = store.getComponent(ref, playerStats.getComponentType());
 
         if (stats != null) {
-            String race = (stats.playerPrimaryRace == null || stats.playerPrimaryRace.isEmpty())
-                    ? "None"
-                    : stats.playerPrimaryRace;
+            boolean noRace = (stats.playerPrimaryRace == null || stats.playerPrimaryRace.isEmpty());
+            Message raceMsg = noRace
+                    ? Message.translation("playerStats.none")
+                    : Message.raw(stats.playerPrimaryRace);
 
-            cmd.set("#RaceLabel.Text",         "Race: " + race);
-            cmd.set("#TotalKillsLabel.Text",   "Total Kills: " + stats.getTotalKills());
-            cmd.set("#HollowKillsLabel.Text",  "Hollow Kills: " + stats.getTotalHollowKills());
-            cmd.set("#HadoLabel.Text",         "Hado Proficiency: " + stats.getHadoProficiency());
-            cmd.set("#BakudoLabel.Text",       "Bakudo Proficiency: " + stats.getBakudoProficiency());
+            cmd.set("#RaceLabel.TextSpans",        Message.translation("playerStats.race").param("race", raceMsg));
+            cmd.set("#TotalKillsLabel.TextSpans",  Message.translation("playerStats.totalKills").param("count", stats.getTotalKills()));
+            cmd.set("#HollowKillsLabel.TextSpans", Message.translation("playerStats.hollowKills").param("count", stats.getTotalHollowKills()));
+            cmd.set("#HadoLabel.TextSpans",        Message.translation("playerStats.hadoProf").param("count", stats.getHadoProficiency()));
+            cmd.set("#BakudoLabel.TextSpans",      Message.translation("playerStats.bakudoProf").param("count", stats.getBakudoProficiency()));
 
             List<String> unlocked = new ArrayList<>();
             if (stats.getShikaiZangetsuState())       unlocked.add("Zangetsu");
@@ -62,7 +68,11 @@ public class PlayerStatsPage extends InteractiveCustomUIPage<PlayerStatsPage.Clo
             if (stats.getShikaiSodeNoShirayukiState())unlocked.add("Sode no Shirayuki");
             if (stats.getShikaiSenbonzakuraState())   unlocked.add("Senbonzakura");
 
-            cmd.set("#ShikaiList.Text", unlocked.isEmpty() ? "None" : String.join(", ", unlocked));
+            if (unlocked.isEmpty()) {
+                cmd.set("#ShikaiList.TextSpans", Message.translation("playerStats.none"));
+            } else {
+                cmd.set("#ShikaiList.Text", String.join(", ", unlocked));
+            }
         }
         // If stats is null, the .ui defaults stay as-is.
 

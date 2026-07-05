@@ -16,6 +16,7 @@ import com.hypixel.hytale.server.core.entity.entities.player.pages.InteractiveCu
 import com.hypixel.hytale.server.core.ui.builder.EventData;
 import com.hypixel.hytale.server.core.ui.builder.UICommandBuilder;
 import com.hypixel.hytale.server.core.ui.builder.UIEventBuilder;
+import com.hypixel.hytale.server.core.Message;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 
@@ -83,15 +84,22 @@ public class KidoSelectionPage extends InteractiveCustomUIPage<KidoSelectionPage
 
         KidoLoadout loadout = getLoadout(ref, store);
 
+        // --- static headers / done (translated) ---
+        cmd.set("#InputsHeader.TextSpans", Message.translation("kidoSelection.inputs"));
+        cmd.set("#TechniquesHeader.TextSpans", Message.translation("kidoSelection.techniques"));
+        cmd.set("#DoneButton.TextSpans", Message.translation("kidoSelection.done"));
+
         // --- slot button labels (current assignment, or "Empty") ---
-        cmd.set("#SlotNoneButton.Text",    slotLabel(loadout, KidoLoadout.Slot.None));
-        cmd.set("#SlotForwardButton.Text", slotLabel(loadout, KidoLoadout.Slot.Forward));
-        cmd.set("#SlotBackButton.Text",    slotLabel(loadout, KidoLoadout.Slot.Back));
-        cmd.set("#SlotLeftButton.Text",    slotLabel(loadout, KidoLoadout.Slot.Left));
-        cmd.set("#SlotRightButton.Text",   slotLabel(loadout, KidoLoadout.Slot.Right));
+        cmd.set("#SlotNoneButton.TextSpans",    slotLabel(loadout, KidoLoadout.Slot.None));
+        cmd.set("#SlotForwardButton.TextSpans", slotLabel(loadout, KidoLoadout.Slot.Forward));
+        cmd.set("#SlotBackButton.TextSpans",    slotLabel(loadout, KidoLoadout.Slot.Back));
+        cmd.set("#SlotLeftButton.TextSpans",    slotLabel(loadout, KidoLoadout.Slot.Left));
+        cmd.set("#SlotRightButton.TextSpans",   slotLabel(loadout, KidoLoadout.Slot.Right));
 
         // --- active-slot hint text ---
-        cmd.set("#ActiveSlotHint.Text", "ASSIGNING: " + slotInputName(activeSlot));
+        cmd.set("#ActiveSlotHint.TextSpans",
+                Message.translation("kidoSelection.assigning")
+                        .param("input", Message.translation(slotInputKey(activeSlot))));
 
         // --- slot click bindings ---
         evt.addEventBinding(CustomUIEventBindingType.Activating, "#SlotNoneButton",
@@ -192,30 +200,36 @@ public class KidoSelectionPage extends InteractiveCustomUIPage<KidoSelectionPage
         return loadout;
     }
 
-    private String slotLabel(KidoLoadout loadout, KidoLoadout.Slot slot) {
+    private Message slotLabel(KidoLoadout loadout, KidoLoadout.Slot slot) {
         String marker = (slot == activeSlot) ? "> " : "";
-        String input = slotShortName(slot);
-        String assigned = KidoCatalog.displayFor(loadout.get(slot));
-        return marker + input + ": " + assigned;
+        String assignedId = loadout.get(slot);
+        // Kido display names are proper nouns (Byakurai, etc.) kept as-is; "Empty" is translated.
+        Message assigned = (assignedId == null || assignedId.isEmpty())
+                ? Message.translation("kidoSelection.empty")
+                : Message.raw(KidoCatalog.displayFor(assignedId));
+        return Message.raw(marker)
+                .insert(Message.translation(slotShortKey(slot)))
+                .insert(Message.raw(": "))
+                .insert(assigned);
     }
 
-    private String slotShortName(KidoLoadout.Slot slot) {
+    private String slotShortKey(KidoLoadout.Slot slot) {
         return switch (slot) {
-            case None    -> "Left-Click";
-            case Forward -> "+ Forward";
-            case Back    -> "+ Back";
-            case Left    -> "+ Left";
-            case Right   -> "+ Right";
+            case None    -> "kidoSelection.slot.leftClick";
+            case Forward -> "kidoSelection.slot.forward";
+            case Back    -> "kidoSelection.slot.back";
+            case Left    -> "kidoSelection.slot.left";
+            case Right   -> "kidoSelection.slot.right";
         };
     }
 
-    private String slotInputName(KidoLoadout.Slot slot) {
+    private String slotInputKey(KidoLoadout.Slot slot) {
         return switch (slot) {
-            case None    -> "LEFT-CLICK";
-            case Forward -> "LEFT-CLICK + FORWARD";
-            case Back    -> "LEFT-CLICK + BACK";
-            case Left    -> "LEFT-CLICK + LEFT";
-            case Right   -> "LEFT-CLICK + RIGHT";
+            case None    -> "kidoSelection.input.leftClick";
+            case Forward -> "kidoSelection.input.forward";
+            case Back    -> "kidoSelection.input.back";
+            case Left    -> "kidoSelection.input.left";
+            case Right   -> "kidoSelection.input.right";
         };
     }
 }

@@ -40,14 +40,6 @@
             }
           },
           {
-            "SystemId": "Sekienton_Smoke",
-            "Scale": 2,
-            "DetachedFromModel": true,
-            "PositionOffset": {
-              "Y": -2
-            }
-          },
-          {
             "SystemId": "Sekienton_Smoke2",
             "Scale": 5,
             "DetachedFromModel": true,

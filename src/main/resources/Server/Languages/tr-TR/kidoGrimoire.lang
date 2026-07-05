@@ -1,0 +1,10 @@
+subHint = Keiko kazanmak ve yeni kido açmak için büyülerle hedeflere vur
+hado = HADO
+bakudo = BAKUDO
+done = TAMAM
+hadoKeiko = Hado Keiko: {count}
+bakudoKeiko = Bakudo Keiko: {count}
+status.unlocked = AÇILDI
+status.lockedProf = Kilitli ({prof} ustalık gerekli)
+status.needKeiko = {cost} Keiko gerekli
+status.unlock = Aç ({cost} Keiko)

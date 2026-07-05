@@ -1,0 +1,16 @@
+hint = Bir yuva seç, sonra bir kido seç
+inputs = GİRDİLER
+techniques = TEKNİKLER
+done = TAMAM
+empty = Boş
+assigning = ATANIYOR: {input}
+slot.leftClick = Sol Tık
+slot.forward = + İleri
+slot.back = + Geri
+slot.left = + Sol
+slot.right = + Sağ
+input.leftClick = SOL TIK
+input.forward = SOL TIK + İLERİ
+input.back = SOL TIK + GERİ
+input.left = SOL TIK + SOL
+input.right = SOL TIK + SAĞ

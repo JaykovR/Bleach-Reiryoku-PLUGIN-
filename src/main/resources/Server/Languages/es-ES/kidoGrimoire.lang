@@ -1,0 +1,10 @@
+subHint = Lanza hechizos para ganar Keiko y desbloquear nuevos kido
+hado = HADO
+bakudo = BAKUDO
+done = LISTO
+hadoKeiko = Keiko de Hado: {count}
+bakudoKeiko = Keiko de Bakudo: {count}
+status.unlocked = DESBLOQUEADO
+status.lockedProf = Bloqueado (necesitas {prof} de dominio)
+status.needKeiko = Faltan {cost} Keiko
+status.unlock = Desbloquear ({cost} Keiko)

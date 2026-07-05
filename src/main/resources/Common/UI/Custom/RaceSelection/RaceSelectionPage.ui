@@ -54,13 +54,13 @@ Group {
             }
 
             TextButton #HollowButton {
-                Text: "HOLLOW (NOT AVAILABLE)";
+                Text: "";
                 FlexWeight: 1;
                 Style: @PlaceholderButtonStyle;
             }
 
             TextButton #HumanButton {
-                Text: "FULLBRINGER (NOT AVAILABLE)";
+                Text: "";
                 FlexWeight: 1;
                 Style: @PlaceholderButtonStyle;
             }
