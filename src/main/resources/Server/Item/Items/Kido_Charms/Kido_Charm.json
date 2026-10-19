@@ -30,7 +30,7 @@
   ],
   "Interactions": {
     "Secondary": "Root_Kido_Charm_Secondary",
-    "Ability2": {
+    "Ability4": {
       "Interactions": [
         {
           "Type": "OpenKidoSelectionPage"
