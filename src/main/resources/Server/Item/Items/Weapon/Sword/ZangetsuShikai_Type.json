@@ -33,7 +33,7 @@
     "Primary": "Root_Shikai_Primary",
     "Secondary": "Root_ZangetsuShikai_Secondary_Guard",
     "Ability1": "Root_Shikai_GetsugaTenshou",
-    "Ability3": "Root_Transformation_Bankai_Tensa_Zangetsu"
+    "Ability4": "Root_Transformation_Bankai_Tensa_Zangetsu"
   },
   "Weapon": {
     "EntityStatsToClear": [

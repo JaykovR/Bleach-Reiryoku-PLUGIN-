@@ -1,4 +1,4 @@
-Failed.check = Du kannst dich noch nicht in Shikai verwandeln.
+Failed.check = Du kannst dich noch nicht in dein Shikai verwandeln. Verwende das Geisterfragment deines Zanpakutō, sobald du {required} maximales Reiryoku erreicht hast, um dein Shikai freizuschalten.
 
 Benihime_Shikai.activation = Erwache, Benihime
 Wabisuke_Shikai.activation = Erhebe dein Haupt, Wabisuke!
@@ -8,3 +8,4 @@ Senbonzakura_Shikai.activation = Zerstreue dich, Senbonzakura
 Zangetsu_Shikai.activation = Während dein reiatsu anwächst, fehlt dir die Kontrolle, dein Schwert im versiegelten Zustand zu halten. Folglich verwandelte sich deine Klinge automatisch in Shikai, als du beschlossen hast, die pulsierende Energie in deinem Inneren freizusetzen. Auf diesem Pfad gibt es kein Zurück.
 Zangetsu_Bankai.activation = BANKAI!
 Zangetsu_Bankai.activation2 = Tensa Zangetsu
+BankaiFailed.check = Du kannst dich noch nicht in dein Bankai verwandeln. Verwende dein Tensa-Zangetsu-Geisterfragment, sobald du {required} maximales Reiryoku erreicht hast, um dein Bankai freizuschalten.

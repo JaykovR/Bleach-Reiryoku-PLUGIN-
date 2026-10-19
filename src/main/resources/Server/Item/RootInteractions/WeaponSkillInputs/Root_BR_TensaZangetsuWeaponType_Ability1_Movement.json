@@ -1,0 +1,62 @@
+{
+  "Parent": "Root_TensaZangetsu_GestugaTensho",
+  "Interactions": [
+    {
+      "Type": "MovementCondition",
+      "Failed": {
+        "Type": "Replace",
+        "Var": "BR_OriginalAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_TensaZangetsu_GestugaTensho"
+      },
+      "Forward": {
+        "Type": "Replace",
+        "Var": "BR_OriginalAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_TensaZangetsu_GestugaTensho"
+      },
+      "Back": {
+        "Type": "Replace",
+        "Var": "BR_BackwardsAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_Kuro_Shunpo"
+      },
+      "Left": {
+        "Type": "Replace",
+        "Var": "BR_OriginalAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_TensaZangetsu_GestugaTensho"
+      },
+      "Right": {
+        "Type": "Replace",
+        "Var": "BR_OriginalAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_TensaZangetsu_GestugaTensho"
+      },
+      "ForwardLeft": {
+        "Type": "Replace",
+        "Var": "BR_OriginalAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_TensaZangetsu_GestugaTensho"
+      },
+      "ForwardRight": {
+        "Type": "Replace",
+        "Var": "BR_OriginalAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_TensaZangetsu_GestugaTensho"
+      },
+      "BackLeft": {
+        "Type": "Replace",
+        "Var": "BR_BackwardsAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_Kuro_Shunpo"
+      },
+      "BackRight": {
+        "Type": "Replace",
+        "Var": "BR_BackwardsAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_Kuro_Shunpo"
+      }
+    }
+  ]
+}

@@ -8,14 +8,13 @@ import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.component.query.Query;
 import com.hypixel.hytale.component.system.tick.EntityTickingSystem;
-import com.hypixel.hytale.math.util.ChunkUtil;
 import com.hypixel.hytale.server.core.inventory.InventoryComponent;
 import com.hypixel.hytale.server.core.inventory.ItemStack;
 import com.hypixel.hytale.server.core.modules.entity.component.TransformComponent;
 import com.hypixel.hytale.server.core.modules.entitystats.EntityStatMap;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.World;
-import com.hypixel.hytale.server.core.universe.world.chunk.BlockChunk;
+import com.hypixel.hytale.server.core.universe.world.chunk.section.EnvironmentSection;
 import com.hypixel.hytale.server.core.universe.world.storage.ChunkStore;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import org.joml.Vector3d;
@@ -78,7 +77,7 @@ public class ReiryokuDrainSystem extends EntityTickingSystem<EntityStore> {
         // Quincy Reiryoku Regen Part.
         // Check if player is a Quincy
         playerStats stats = chunk.getComponent(i, playerStats.getComponentType());
-        if (playerStats.RACE_QUINCY.equals(stats.playerPrimaryRace)) {
+        if (stats != null && playerStats.RACE_QUINCY.equals(stats.playerPrimaryRace)) {
 
             // Find the player's current environment
             TransformComponent transform = chunk.getComponent(i, TransformComponent.getComponentType());
@@ -87,14 +86,17 @@ public class ReiryokuDrainSystem extends EntityTickingSystem<EntityStore> {
 
             World world = store.getExternalData().getWorld();
             ChunkStore chunkStore = world.getChunkStore();
-            long chunkIndex = ChunkUtil.indexChunkFromBlock(position.x, position.z());
-            Ref<ChunkStore> chunkRef = chunkStore.getChunkReference(chunkIndex);
-            if (chunkRef == null || !chunkRef.isValid()) return;
+            int blockX = (int) Math.floor(position.x());
+            int blockY = (int) Math.floor(position.y());
+            int blockZ = (int) Math.floor(position.z());
+            Ref<ChunkStore> sectionRef = chunkStore.getChunkSectionReferenceAtBlock(blockX, blockY, blockZ);
+            if (sectionRef == null || !sectionRef.isValid()) return;
 
-            BlockChunk blockChunk = chunkStore.getStore().getComponent(chunkRef, BlockChunk.getComponentType());
-            if (blockChunk == null) return;
+            EnvironmentSection environmentSection = chunkStore.getStore().getComponent(
+                    sectionRef, EnvironmentSection.getComponentType());
+            if (environmentSection == null) return;
 
-            int environmentId = blockChunk.getEnvironment(position);
+            int environmentId = environmentSection.get(blockX, blockY, blockZ);
 
             // Depending on what enviroment they're in the drain per second is different.
             switch (ReishiEnvironments.classify(environmentId)) {

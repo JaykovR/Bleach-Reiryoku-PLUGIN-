@@ -1,0 +1,62 @@
+{
+  "Parent": "Root_Shikai_Senbonzakura_Ability1",
+  "Interactions": [
+    {
+      "Type": "MovementCondition",
+      "Failed": {
+        "Type": "Replace",
+        "Var": "BR_OriginalAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_Shikai_Senbonzakura_Ability1"
+      },
+      "Forward": {
+        "Type": "Replace",
+        "Var": "BR_OriginalAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_Shikai_Senbonzakura_Ability1"
+      },
+      "Back": {
+        "Type": "Replace",
+        "Var": "BR_BackwardsAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_Shikai_Senbonzakura_Ability2"
+      },
+      "Left": {
+        "Type": "Replace",
+        "Var": "BR_OriginalAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_Shikai_Senbonzakura_Ability1"
+      },
+      "Right": {
+        "Type": "Replace",
+        "Var": "BR_OriginalAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_Shikai_Senbonzakura_Ability1"
+      },
+      "ForwardLeft": {
+        "Type": "Replace",
+        "Var": "BR_OriginalAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_Shikai_Senbonzakura_Ability1"
+      },
+      "ForwardRight": {
+        "Type": "Replace",
+        "Var": "BR_OriginalAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_Shikai_Senbonzakura_Ability1"
+      },
+      "BackLeft": {
+        "Type": "Replace",
+        "Var": "BR_BackwardsAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_Shikai_Senbonzakura_Ability2"
+      },
+      "BackRight": {
+        "Type": "Replace",
+        "Var": "BR_BackwardsAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_Shikai_Senbonzakura_Ability2"
+      }
+    }
+  ]
+}

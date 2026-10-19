@@ -1,4 +1,4 @@
-Failed.check = You are unable to transform into Shikai yet.
+Failed.check = You are unable to transform to Shikai yet. Use your Zanpakuto Spirit Fragment after reaching {required} maximum Reiryoku to unlock Shikai.
 
 Benihime_Shikai.activation = Awake, Benihime
 Wabisuke_Shikai.activation = Raise Your Head, Wabisuke!
@@ -8,3 +8,4 @@ Senbonzakura_Shikai.activation = Scatter, Senbonzakura
 Zangetsu_Shikai.activation = As your reiatsu increases, you lack the control to keep your sword in a sealed state. As a consequence, your blade automatically transformed into Shikai as you decided to release the pulsing energy inside of you. There is no going back in this path.
 Zangetsu_Bankai.activation = BANKAI!
 Zangetsu_Bankai.activation2 = Tensa Zangetsu
+BankaiFailed.check = You are unable to transform to Bankai yet. Use your Tensa Zangetsu Spirit Fragment after reaching {required} maximum Reiryoku to unlock Bankai.

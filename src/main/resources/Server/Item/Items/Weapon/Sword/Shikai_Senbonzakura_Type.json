@@ -31,9 +31,8 @@
   "Interactions": {
     "Primary": "Root_Shikai_Senbonzakura_Primary",
     "Secondary": "Root_Shikai_Senbonzakura_Secondary_Guard",
-    "Ability1": "Root_Shikai_Senbonzakura_Ability1",
-    "Ability2": "Root_Shikai_Senbonzakura_Ability2",
-    "Ability3": {
+    "Ability1": "Root_BR_Shikai_Senbonzakura_Type_Ability1_Movement",
+    "Ability4": {
       "Interactions": [
         {
           "Type": "SwapItemInteraction",

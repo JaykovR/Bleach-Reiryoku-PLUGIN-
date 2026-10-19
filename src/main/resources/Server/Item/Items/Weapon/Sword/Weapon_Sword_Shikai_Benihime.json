@@ -649,8 +649,8 @@
   "Interactions": {
     "Primary": "Root_Shikai_Benihime_Primary",
     "Secondary": "Root_Weapon_Sword_Secondary_Guard",
-    "Ability2": "Root_Weapon_Sword_Signature_Vortexstrike",
-    "Ability3": {
+    "Ability1": "Root_BR_Weapon_Sword_Shikai_Benihime_Ability1_Movement",
+    "Ability4": {
       "Interactions": [
         {
           "Type": "SwapItemInteraction",

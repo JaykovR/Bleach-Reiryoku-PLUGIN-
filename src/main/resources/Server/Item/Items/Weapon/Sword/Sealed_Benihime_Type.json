@@ -32,7 +32,7 @@
     "Primary": "Root_Weapon_Sword_Primary",
     "Secondary": "Root_Weapon_Sword_Secondary_Guard",
     "Ability1": "Root_Weapon_Sword_Signature_Vortexstrike",
-    "Ability3": {
+    "Ability4": {
       "Interactions": [
         {
           "Type": "PlayerRaceCheck",

@@ -1,0 +1,62 @@
+{
+  "Parent": "Root_Hozukimaru_Signature_Tempest",
+  "Interactions": [
+    {
+      "Type": "MovementCondition",
+      "Failed": {
+        "Type": "Replace",
+        "Var": "BR_OriginalAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_Hozukimaru_Signature_Tempest"
+      },
+      "Forward": {
+        "Type": "Replace",
+        "Var": "BR_OriginalAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_Hozukimaru_Signature_Tempest"
+      },
+      "Back": {
+        "Type": "Replace",
+        "Var": "BR_BackwardsAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_Hozukimaru_Signature_Whirlwind"
+      },
+      "Left": {
+        "Type": "Replace",
+        "Var": "BR_OriginalAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_Hozukimaru_Signature_Tempest"
+      },
+      "Right": {
+        "Type": "Replace",
+        "Var": "BR_OriginalAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_Hozukimaru_Signature_Tempest"
+      },
+      "ForwardLeft": {
+        "Type": "Replace",
+        "Var": "BR_OriginalAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_Hozukimaru_Signature_Tempest"
+      },
+      "ForwardRight": {
+        "Type": "Replace",
+        "Var": "BR_OriginalAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_Hozukimaru_Signature_Tempest"
+      },
+      "BackLeft": {
+        "Type": "Replace",
+        "Var": "BR_BackwardsAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_Hozukimaru_Signature_Whirlwind"
+      },
+      "BackRight": {
+        "Type": "Replace",
+        "Var": "BR_BackwardsAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_Hozukimaru_Signature_Whirlwind"
+      }
+    }
+  ]
+}

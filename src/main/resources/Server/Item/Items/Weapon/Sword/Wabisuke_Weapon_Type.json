@@ -33,7 +33,7 @@
     "Primary": "Root_Wabisuke_Primary",
     "Secondary": "Root_Wabisuke_Secondary_Guard",
     "Ability1": "Root_Wabisuke_CrushingRegret",
-    "Ability3": {
+    "Ability4": {
       "Interactions": [
         {
           "Type": "SwapItemInteraction",

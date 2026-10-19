@@ -15,7 +15,7 @@ import com.hypixel.hytale.server.core.modules.interaction.interaction.config.Sim
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import org.checkerframework.checker.nullness.compatqual.NonNullDecl;
 
-public class SwapItemInteraction extends SimpleInteraction
+public class SwapItemInteraction extends com.hypixel.hytale.server.core.modules.interaction.interaction.config.SimpleInstantInteraction
 {
 
     /*
@@ -41,19 +41,31 @@ public class SwapItemInteraction extends SimpleInteraction
                     ).add()
                     .build();
 
+    @Override
+    public com.hypixel.hytale.protocol.WaitForDataFrom getWaitForDataFrom() {
+        return com.hypixel.hytale.protocol.WaitForDataFrom.Server;
+    }
+
+    @Override
+    protected void simulateFirstRun(@NonNullDecl InteractionType type,
+                                    @NonNullDecl InteractionContext context,
+                                    @NonNullDecl CooldownHandler cooldownHandler) {
+        // Inventory changes and progression checks run on the authoritative server only.
+    }
     private float duration = -1.0f;
     private ItemStack itemToAdd;
     private ItemStack itemToRemove;
 
     @Override
-    protected void tick0(boolean firstRun, float time,
+    protected void firstRun(
                          @NonNullDecl InteractionType type,
                          @NonNullDecl InteractionContext context,
                          @NonNullDecl CooldownHandler cooldownHandler) {
 
-        if (!firstRun) return;
+        context.getState().state = com.hypixel.hytale.protocol.InteractionState.Failed;
 
         Ref<EntityStore> ref = context.getOwningEntity();
+        if (ref == null || !ref.isValid() || itemToAdd == null || itemToRemove == null) return;
         Store<EntityStore> store = ref.getStore();
 
         if (store.getComponent(ref, Player.getComponentType()) == null) return;
@@ -71,9 +83,12 @@ public class SwapItemInteraction extends SimpleInteraction
         var swapTransaction = hotbar.setItemStackForSlot(heldSlot, itemToAdd); // Transaction happens
         if (!swapTransaction.succeeded()) return;
 
+        context.setHeldItem(itemToAdd);
+        context.getState().state = com.hypixel.hytale.protocol.InteractionState.Finished;
+
         // Ensure the ActiveEffectsComponent exists
         ActiveEffectsComponent effects = store.getComponent(ref, ActiveEffectsComponent.getComponentType());
-        if (effects == null) {
+        if (effects == null && duration > 0) {
             effects = new ActiveEffectsComponent();
             commandBuffer.addComponent(ref, ActiveEffectsComponent.getComponentType(), effects);
         }

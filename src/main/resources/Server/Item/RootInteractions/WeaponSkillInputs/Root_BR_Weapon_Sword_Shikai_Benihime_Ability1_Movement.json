@@ -1,0 +1,62 @@
+{
+  "Parent": "Root_Weapon_Sword_Signature_Vortexstrike",
+  "Interactions": [
+    {
+      "Type": "MovementCondition",
+      "Failed": {
+        "Type": "Replace",
+        "Var": "BR_OriginalAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_Weapon_Sword_Signature_Vortexstrike"
+      },
+      "Forward": {
+        "Type": "Replace",
+        "Var": "BR_OriginalAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_Weapon_Sword_Signature_Vortexstrike"
+      },
+      "Back": {
+        "Type": "Replace",
+        "Var": "BR_BackwardsAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_Weapon_Sword_Signature_Vortexstrike"
+      },
+      "Left": {
+        "Type": "Replace",
+        "Var": "BR_OriginalAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_Weapon_Sword_Signature_Vortexstrike"
+      },
+      "Right": {
+        "Type": "Replace",
+        "Var": "BR_OriginalAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_Weapon_Sword_Signature_Vortexstrike"
+      },
+      "ForwardLeft": {
+        "Type": "Replace",
+        "Var": "BR_OriginalAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_Weapon_Sword_Signature_Vortexstrike"
+      },
+      "ForwardRight": {
+        "Type": "Replace",
+        "Var": "BR_OriginalAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_Weapon_Sword_Signature_Vortexstrike"
+      },
+      "BackLeft": {
+        "Type": "Replace",
+        "Var": "BR_BackwardsAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_Weapon_Sword_Signature_Vortexstrike"
+      },
+      "BackRight": {
+        "Type": "Replace",
+        "Var": "BR_BackwardsAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_Weapon_Sword_Signature_Vortexstrike"
+      }
+    }
+  ]
+}

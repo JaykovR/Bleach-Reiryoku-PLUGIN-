@@ -39,9 +39,8 @@
       ]
     },
     "Secondary": "Root_TensaZangetsu_Secondary_Guard",
-    "Ability1": "Root_Hozukimaru_Signature_Tempest",
-    "Ability2": "Root_Hozukimaru_Signature_Whirlwind",
-    "Ability3": {
+    "Ability1": "Root_BR_Weapon_Spear_Shikai_Hozukimaru_Ability1_Movement",
+    "Ability4": {
       "Interactions": [
         {
           "Type": "SwapItemInteraction",

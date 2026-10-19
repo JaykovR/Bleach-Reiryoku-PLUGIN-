@@ -2,6 +2,8 @@ package com.bleachreiryoku.interactions;
 
 import com.bleachreiryoku.playerData.playerStats;
 import com.hypixel.hytale.codec.builder.BuilderCodec;
+import com.hypixel.hytale.codec.Codec;
+import com.hypixel.hytale.codec.KeyedCodec;
 import com.hypixel.hytale.component.CommandBuffer;
 import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.component.Store;
@@ -26,15 +28,36 @@ import static com.hypixel.hytale.protocol.InteractionState.*;
 // This class checks if the player has X said Shikai.
 public class ShikaiCheckInteraction extends SimpleInstantInteraction {
 
+    private int requiredReiryoku = 600;
+
     public static final BuilderCodec<ShikaiCheckInteraction> CODEC =
             BuilderCodec.builder(ShikaiCheckInteraction.class, ShikaiCheckInteraction::new,
-                    SimpleInteraction.CODEC).build();
+                    SimpleInteraction.CODEC)
+                    .append(new KeyedCodec<>("RequiredReiryoku", Codec.INTEGER),
+                            (interaction, value) -> interaction.requiredReiryoku = value,
+                            interaction -> interaction.requiredReiryoku).add()
+                    .build();
 
 
+    @Override
+    public com.hypixel.hytale.protocol.WaitForDataFrom getWaitForDataFrom() {
+        return com.hypixel.hytale.protocol.WaitForDataFrom.Server;
+    }
+
+    @Override
+    protected void simulateFirstRun(@NonNullDecl InteractionType type,
+                                    @NonNullDecl InteractionContext context,
+                                    @NonNullDecl CooldownHandler cooldownHandler) {
+        // Inventory changes and progression checks run on the authoritative server only.
+    }
     @Override
     protected void firstRun(@NonNullDecl InteractionType interactionType, @NonNullDecl InteractionContext context, @NonNullDecl CooldownHandler cooldownHandler) {
         // References player, gets item in hand
         Ref<EntityStore> owningEntity = context.getOwningEntity();
+        if (owningEntity == null || !owningEntity.isValid() || context.getHeldItem() == null) {
+            context.getState().state = InteractionState.Failed;
+            return;
+        }
         Store<EntityStore> store = owningEntity.getStore();
         CommandBuffer<EntityStore> commandBuffer = context.getCommandBuffer();
         String heldItem = context.getHeldItem().getItemId();
@@ -51,13 +74,14 @@ public class ShikaiCheckInteraction extends SimpleInstantInteraction {
         playerStats stats = store.getComponent(owningEntity, brType);
 
         if (stats == null) {
+            context.getState().state = InteractionState.Failed;
             playerRef.sendMessage(Message.raw("ERROR PLAYER STATS NULL"));
             return;
         }
 
         if (heldItem.equals("Weapon_Sword_Sealed_Benihime")) {
             if (!stats.getShikaiBenihimeState()) {
-                playerRef.sendMessage(Message.translation("shikaiCheckMessages.Failed.check"));
+                playerRef.sendMessage(Message.translation("shikaiCheckMessages.Failed.check").param("required", String.valueOf(requiredReiryoku)));
                 context.getState().state = InteractionState.Failed;
                 return;
             } else {
@@ -69,7 +93,7 @@ public class ShikaiCheckInteraction extends SimpleInstantInteraction {
 
         if (heldItem.equals("Weapon_Sword_Sealed_Wabisuke")) {
             if (!stats.getShikaiWabisukeState()) {
-                playerRef.sendMessage(Message.translation("shikaiCheckMessages.Failed.check"));
+                playerRef.sendMessage(Message.translation("shikaiCheckMessages.Failed.check").param("required", String.valueOf(requiredReiryoku)));
                 context.getState().state = InteractionState.Failed;
                 return;
             } else {
@@ -81,7 +105,7 @@ public class ShikaiCheckInteraction extends SimpleInstantInteraction {
 
         if (heldItem.equals("Weapon_Sword_Sealed_Hozukimaru")) {
             if (!stats.getShikaiHozukimaruState()) {
-                playerRef.sendMessage(Message.translation("shikaiCheckMessages.Failed.check"));
+                playerRef.sendMessage(Message.translation("shikaiCheckMessages.Failed.check").param("required", String.valueOf(requiredReiryoku)));
                 context.getState().state = InteractionState.Failed;
                 return;
             } else {
@@ -93,7 +117,7 @@ public class ShikaiCheckInteraction extends SimpleInstantInteraction {
 
         if (heldItem.equals("Weapon_Sword_Sealed_Sode_No_Shirayuki")) {
             if (!stats.getShikaiSodeNoShirayukiState()) {
-                playerRef.sendMessage(Message.translation("shikaiCheckMessages.Failed.check"));
+                playerRef.sendMessage(Message.translation("shikaiCheckMessages.Failed.check").param("required", String.valueOf(requiredReiryoku)));
                 context.getState().state = InteractionState.Failed;
                 return;
             } else {
@@ -105,7 +129,7 @@ public class ShikaiCheckInteraction extends SimpleInstantInteraction {
 
         if (heldItem.equals("Weapon_Sword_Sealed_Senbonzakura")) {
             if (!stats.getShikaiSenbonzakuraState()) {
-                playerRef.sendMessage(Message.translation("shikaiCheckMessages.Failed.check"));
+                playerRef.sendMessage(Message.translation("shikaiCheckMessages.Failed.check").param("required", String.valueOf(requiredReiryoku)));
                 context.getState().state = InteractionState.Failed;
                 return;
             } else {
@@ -117,7 +141,7 @@ public class ShikaiCheckInteraction extends SimpleInstantInteraction {
 
         if (heldItem.equals("Weapon_Sword_Sealed_Zangetsu")) {
             if (!stats.getShikaiZangetsuState()) {
-                playerRef.sendMessage(Message.translation("shikaiCheckMessages.Failed.check"));
+                playerRef.sendMessage(Message.translation("shikaiCheckMessages.Failed.check").param("required", String.valueOf(requiredReiryoku)));
                 context.getState().state = InteractionState.Failed;
                 return;
             } else {
@@ -130,7 +154,7 @@ public class ShikaiCheckInteraction extends SimpleInstantInteraction {
         // While this class is called Shikai Check, I decided to also include this for now.
         if (heldItem.equals("Weapon_Sword_Shikai_Zangetsu")) {
             if (!stats.getBankaiZangetsuState()) {
-                playerRef.sendMessage(Message.translation("shikaiCheckMessages.Failed.check"));
+                playerRef.sendMessage(Message.translation("shikaiCheckMessages.BankaiFailed.check").param("required", String.valueOf(requiredReiryoku)));
                 context.getState().state = InteractionState.Failed;
                 return;
             } else {

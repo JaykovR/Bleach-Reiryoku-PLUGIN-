@@ -1,0 +1,62 @@
+{
+  "Parent": "Root_KenpachiZanpakuto_Skull_Crusher",
+  "Interactions": [
+    {
+      "Type": "MovementCondition",
+      "Failed": {
+        "Type": "Replace",
+        "Var": "BR_OriginalAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_KenpachiZanpakuto_Skull_Crusher"
+      },
+      "Forward": {
+        "Type": "Replace",
+        "Var": "BR_OriginalAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_KenpachiZanpakuto_Skull_Crusher"
+      },
+      "Back": {
+        "Type": "Replace",
+        "Var": "BR_BackwardsAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_KenpachiZanpakuto_Battle_Trance"
+      },
+      "Left": {
+        "Type": "Replace",
+        "Var": "BR_OriginalAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_KenpachiZanpakuto_Skull_Crusher"
+      },
+      "Right": {
+        "Type": "Replace",
+        "Var": "BR_OriginalAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_KenpachiZanpakuto_Skull_Crusher"
+      },
+      "ForwardLeft": {
+        "Type": "Replace",
+        "Var": "BR_OriginalAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_KenpachiZanpakuto_Skull_Crusher"
+      },
+      "ForwardRight": {
+        "Type": "Replace",
+        "Var": "BR_OriginalAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_KenpachiZanpakuto_Skull_Crusher"
+      },
+      "BackLeft": {
+        "Type": "Replace",
+        "Var": "BR_BackwardsAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_KenpachiZanpakuto_Battle_Trance"
+      },
+      "BackRight": {
+        "Type": "Replace",
+        "Var": "BR_BackwardsAbility1",
+        "DefaultOk": true,
+        "DefaultValue": "Root_KenpachiZanpakuto_Battle_Trance"
+      }
+    }
+  ]
+}

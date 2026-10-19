@@ -1,7 +1,7 @@
 {
     "Group": "The Reiryoku Team",
     "Name": "BleachReiryoku",
-    "Version": "0.2.3",
+    "Version": "0.2.32",
     "Description": "This mod adds various content based on the Bleach Series",
     "Authors": [
         {
@@ -23,7 +23,7 @@
     "OptionalDependencies": {
         
     },
-    "ServerVersion": ">=0.5.3 <0.6.0",
+    "ServerVersion": ">=0.7.2 <0.8.0",
     "Main": "com.bleachreiryoku.BleachReiryokuPlugin",
     "UpdateChecker": {
         "CurseForge": ""

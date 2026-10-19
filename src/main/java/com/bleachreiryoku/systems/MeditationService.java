@@ -73,6 +73,11 @@ public final class MeditationService {
                                     double seatX, double seatY, double seatZ) {
         if (ref == null || !ref.isValid()) return StartResult.ERROR;
 
+        if (store.getComponent(ref, com.hypixel.hytale.server.core.modules.entity.teleport.Teleport.getComponentType()) != null
+                || store.getComponent(ref, com.hypixel.hytale.server.core.modules.entity.teleport.PendingTeleport.getComponentType()) != null) {
+            return StartResult.ERROR;
+        }
+
         // Already meditating?
         if (store.getComponent(ref, ActiveMeditation.getComponentType()) != null) {
             return StartResult.ALREADY_MEDITATING;
@@ -80,6 +85,7 @@ public final class MeditationService {
 
         playerStats stats = store.getComponent(ref, playerStats.getComponentType());
         long now = currentGameSeconds(store);
+        if (stats == null) return StartResult.ERROR;
         if (!isOffCooldown(stats, now)) {
             return StartResult.ON_COOLDOWN;
         }
@@ -92,7 +98,7 @@ public final class MeditationService {
         double py = seatY + 0.25; // 0.25 because of the blocks height
         double pz = seatZ + 0.5;
 
-        transform.teleportPosition(new Vector3d(px, py, pz));
+        // Teleport owns position changes and client acknowledgement; do not move the transform twice.
 
 
         // Teleports the player onto the seat
@@ -109,7 +115,7 @@ public final class MeditationService {
         if (effects != null) {
             EntityEffect lock = EntityEffect.getAssetMap().getAsset(LOCK_EFFECT_ID);
             if (lock != null) {
-                effects.addEffect(ref, lock, store);
+                if (!effects.addEffect(ref, lock, store)) return StartResult.ERROR;
                 effectIndex = EntityEffect.getAssetMap().getIndex(LOCK_EFFECT_ID);
             }
         }
@@ -120,7 +126,9 @@ public final class MeditationService {
         med.lockX = px; med.lockY = py; med.lockZ = pz;
         med.lockEffectIndex = effectIndex;
         store.addComponent(ref, ActiveMeditation.getComponentType(), med);
+        MeditationAnimations.start(ref, store);
 
+        com.hypixel.hytale.logger.HytaleLogger.forEnclosingClass().atInfo().log("[Bleach Reiryoku] Meditation started at %.2f, %.2f, %.2f.", px, py, pz);
         return StartResult.STARTED;
     }
 }

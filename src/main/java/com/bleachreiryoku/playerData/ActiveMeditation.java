@@ -25,6 +25,7 @@ public class ActiveMeditation implements Component<EntityStore> {
 
     // Seconds meditated so far. Reward at >= DURATION_SECONDS.
     public float elapsed = 0f;
+    public boolean finishing = false;
 
     // The locked position (block center the player was teleported onto).
     public double lockX = 0, lockY = 0, lockZ = 0;
@@ -46,6 +47,7 @@ public class ActiveMeditation implements Component<EntityStore> {
     public ActiveMeditation clone() {
         ActiveMeditation c = new ActiveMeditation();
         c.elapsed = elapsed;
+        c.finishing = finishing;
         c.lockX = lockX; c.lockY = lockY; c.lockZ = lockZ;
         c.startHealth = startHealth;
         c.lockEffectIndex = lockEffectIndex;

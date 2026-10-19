@@ -42,8 +42,7 @@
       ]
     },
     "Secondary": "Root_Weapon_Sword_Secondary_Guard",
-    "Ability1": "Root_KenpachiZanpakuto_Skull_Crusher",
-    "Ability2": "Root_KenpachiZanpakuto_Battle_Trance"
+    "Ability1": "Root_BR_Kenpachi_Zanpakuto_Type_Ability1_Movement"
   },
   "Tags": {
     "Type": [

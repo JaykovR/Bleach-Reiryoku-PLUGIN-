@@ -2,6 +2,7 @@
   "Type": "StatsCondition",
   "Next": {
     "Type": "ShikaiCheck",
+    "RequiredReiryoku": 2500,
     "Next": "Transformation_Bankai_Tensa_Zangetsu_Effects"
   },
   "Costs": {

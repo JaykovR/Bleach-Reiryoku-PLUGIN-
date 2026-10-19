@@ -28,6 +28,7 @@ public class ReiryokuCommands extends AbstractCommandCollection {
 
     public ReiryokuCommands() {
         super("br", "Bleach Reiryoku commands");
+        requireNoPermission();
         this.addSubCommand(new HelpSubCommand());
         this.addSubCommand(new CheckShikai());
         this.addSubCommand(new RevertShikai());
@@ -43,27 +44,21 @@ public class ReiryokuCommands extends AbstractCommandCollection {
         this.addSubCommand(new ChooseRaceCommand());
         this.addSubCommand(new GetPlayerRaceCommand());
         this.addSubCommand(new StatsCommand());
+        this.addSubCommand(new ResetMeditationCommand());
 
 
 
     }
 
-    @Override
-    protected boolean canGeneratePermission() {
-        return false; //No permission required for base command
-    }
 
     // /br help show all commands
     private static class HelpSubCommand extends CommandBase {
 
         public HelpSubCommand() {
             super("help", "Show available commands");
+            requireNoPermission();
         }
 
-        @Override
-        protected boolean canGeneratePermission() {
-            return false;
-        }
 
         @Override
         protected void executeSync(@Nonnull CommandContext context) {
@@ -75,6 +70,7 @@ public class ReiryokuCommands extends AbstractCommandCollection {
             context.sendMessage(Message.raw("/ checkHollow - Checks if the player has unlocked hollow mask"));
             context.sendMessage(Message.raw("/ setreiryokumax - adds the quantity you type to your reiryoku maximum."));
             context.sendMessage(Message.raw("/ kido - opens the UI menu of the kido archive"));
+            context.sendMessage(Message.raw("/br resetMeditation - reset your meditation cooldown (admin)"));
             context.sendMessage(Message.raw("========================"));
         }
     }
@@ -83,10 +79,7 @@ public class ReiryokuCommands extends AbstractCommandCollection {
 
         public CheckShikai(){
             super("checkShikai", "Tells user if shikai is on or off");
-        }
-        @Override
-        protected boolean canGeneratePermission() {
-            return false;
+            requireNoPermission();
         }
 
         protected void executeSync(@Nonnull CommandContext context) {
@@ -134,10 +127,7 @@ public class ReiryokuCommands extends AbstractCommandCollection {
 
         public CheckHollow(){
             super("checkHollow", "Tells user if they have adquired hollow (mask transformation");
-        }
-        @Override
-        protected boolean canGeneratePermission() {
-            return false;
+            requireNoPermission();
         }
 
         protected void executeSync(@Nonnull CommandContext context) {
@@ -164,10 +154,7 @@ public class ReiryokuCommands extends AbstractCommandCollection {
         // temporarly using hollow mask on this
         public RevertShikai(){
             super("revertShikai", "Reverts the ability for the player to transform into ANYTHING (DEBUG)");
-        }
-        @Override
-        protected boolean canGeneratePermission() {
-            return false;
+            requireNoPermission();
         }
 
         protected void executeSync(@Nonnull CommandContext context) {
@@ -201,6 +188,7 @@ public class ReiryokuCommands extends AbstractCommandCollection {
 
         public setReiryokuMax() {
             super("setReiryokuMax", "Modify your max Reiryoku");
+            requireNoPermission();
             this.amountArg = this.withRequiredArg("amount", "New max Reiryoku value",
                     new SingleArgumentType<Float>("float", "A number") {
                         @Override
@@ -216,10 +204,6 @@ public class ReiryokuCommands extends AbstractCommandCollection {
             );
         }
 
-        @Override
-        protected boolean canGeneratePermission() {
-            return false;
-        }
 
         protected void executeSync(@Nonnull CommandContext context) {
             if (!context.sender().hasPermission("*")) {
@@ -244,10 +228,9 @@ public class ReiryokuCommands extends AbstractCommandCollection {
 
         public ChooseRaceCommand() {
             super("chooseRace", "Opens the race selection screen");
+            requireNoPermission();
         }
 
-        @Override
-        protected boolean canGeneratePermission() { return false; }
 
         @Override
         protected void executeSync(@Nonnull CommandContext context) {
@@ -275,10 +258,9 @@ public class ReiryokuCommands extends AbstractCommandCollection {
 
         public GetPlayerRaceCommand() {
             super("getPlayerRace", "Displays your current race");
+            requireNoPermission();
         }
 
-        @Override
-        protected boolean canGeneratePermission() { return false; }
 
         @Override
         protected void executeSync(@Nonnull CommandContext context) {
@@ -310,10 +292,9 @@ public class ReiryokuCommands extends AbstractCommandCollection {
 
         public StatsCommand() {
             super("stats", "Opens the player stats screen");
+            requireNoPermission();
         }
 
-        @Override
-        protected boolean canGeneratePermission() { return false; }
 
         @Override
         protected void executeSync(@Nonnull CommandContext context) {
@@ -338,10 +319,9 @@ public class ReiryokuCommands extends AbstractCommandCollection {
 
         public OpenKidoArchiveCommand() {
             super("kido", "Opens the Kido Archive to unlock techniques");
+            requireNoPermission();
         }
 
-        @Override
-        protected boolean canGeneratePermission() { return false; }
 
         @Override
         protected void executeSync(@Nonnull CommandContext context) {

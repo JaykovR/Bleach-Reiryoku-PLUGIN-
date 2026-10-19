@@ -9,105 +9,91 @@ import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.component.query.Query;
 import com.hypixel.hytale.component.system.tick.EntityTickingSystem;
-import org.joml.Vector3d;
+import com.hypixel.hytale.logger.HytaleLogger;
+import com.hypixel.hytale.protocol.AnimationSlot;
+import com.hypixel.hytale.server.core.Message;
+import com.hypixel.hytale.server.core.entity.AnimationUtils;
 import com.hypixel.hytale.server.core.entity.effect.EffectControllerComponent;
 import com.hypixel.hytale.server.core.modules.entity.component.TransformComponent;
+import com.hypixel.hytale.server.core.modules.entity.teleport.PendingTeleport;
+import com.hypixel.hytale.server.core.modules.entity.teleport.Teleport;
+import com.hypixel.hytale.server.core.modules.entitystats.EntityStatMap;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
-
 import javax.annotation.Nonnull;
 
-/**
- * Ticks in-progress Soul Meditations. For each player with ActiveMeditation:
- *   - advances the elapsed timer
- *   - CANCELS if the player has moved away from the locked spot (covers knockback and any forced movement)
- *   - on reaching DURATION_SECONDS: grants +REWARD_REIRYOKU, stamps the once-per-day
- *     cooldown on playerStats, and clears the meditation.
- */
+/** Tracks meditation, then finishes outside entity iteration so animation cleanup is safe. */
 public class MeditationSystem extends EntityTickingSystem<EntityStore> {
-
-    // If the player is more than this far (blocks) from the lock point, they moved.
+    private static final HytaleLogger LOGGER = HytaleLogger.forEnclosingClass();
     private static final double MOVE_CANCEL_DISTANCE_SQ = 0.35 * 0.35;
 
     @Override
-    public void tick(float dt, int i,
-                     @Nonnull ArchetypeChunk<EntityStore> chunk,
-                     @Nonnull Store<EntityStore> store,
-                     @Nonnull CommandBuffer<EntityStore> commandBuffer) {
-
+    public void tick(float dt, int i, @Nonnull ArchetypeChunk<EntityStore> chunk,
+                     @Nonnull Store<EntityStore> store, @Nonnull CommandBuffer<EntityStore> commands) {
         ActiveMeditation med = chunk.getComponent(i, ActiveMeditation.getComponentType());
-        if (med == null) return;
-
+        if (med == null || med.finishing) return;
         Ref<EntityStore> ref = chunk.getReferenceTo(i);
-        if (ref == null || !ref.isValid()) return;
+        if (!ref.isValid()) return;
 
-        // cancel if the player moved (knockback, forced walk, etc.)
+        // An unacknowledged seat teleport must not count as walking away from the seat.
+        if (chunk.getComponent(i, Teleport.getComponentType()) != null
+                || chunk.getComponent(i, PendingTeleport.getComponentType()) != null) return;
+
         TransformComponent transform = chunk.getComponent(i, TransformComponent.getComponentType());
-        if (transform != null) {
-            Vector3d pos = transform.getPosition();
-            // Cancel only on HORIZONTAL movement (walked off / knocked back). Y is deliberately ignored here.
-            double dx = pos.x - med.lockX;
-            double dz = pos.z - med.lockZ;
-            if ((dx * dx + dz * dz) > MOVE_CANCEL_DISTANCE_SQ) {
-                cancel(ref, store, commandBuffer, med);
-                return;
-            }
+        if (transform == null) {
+            finish(ref, med, false, commands);
+            return;
         }
-
-        // Cdvance timer
+        double dx = transform.getPosition().x() - med.lockX;
+        double dz = transform.getPosition().z() - med.lockZ;
+        if (dx * dx + dz * dz > MOVE_CANCEL_DISTANCE_SQ) {
+            finish(ref, med, false, commands);
+            return;
+        }
         med.elapsed += dt;
-        if (med.elapsed < MeditationService.DURATION_SECONDS) {
-            return; // still meditating
-        }
+        if (med.elapsed >= MeditationService.DURATION_SECONDS) finish(ref, med, true, commands);
+    }
 
-        // Completion rewards (+15 permanent MAX Reiryoku) + stamp cooldown
-        BleachStatTypes.addMaxReiryoku(ref, store, MeditationService.REWARD_REIRYOKU);
+    private void finish(Ref<EntityStore> ref, ActiveMeditation med, boolean completed,
+                        CommandBuffer<EntityStore> commands) {
+        med.finishing = true;
+        commands.run(store -> {
+            if (!ref.isValid() || store.getComponent(ref, ActiveMeditation.getComponentType()) != med) return;
+            PlayerRef player = store.getComponent(ref, PlayerRef.getComponentType());
+            try {
+                if (completed) {
+                    playerStats stats = store.getComponent(ref, playerStats.getComponentType());
+                    EntityStatMap statMap = store.getComponent(ref, EntityStatMap.getComponentType());
+                    int reiryokuIndex = BleachStatTypes.getReiryoku();
+                    if (stats == null || statMap == null || reiryokuIndex < 0 || statMap.get(reiryokuIndex) == null) {
+                        if (player != null) player.sendMessage(Message.raw("Meditation could not grant its reward: player stats are unavailable. Please try again."));
+                        LOGGER.atWarning().log("[Bleach Reiryoku] Meditation reward skipped: player stats unavailable.");
+                        return;
+                    }
+                    BleachStatTypes.addMaxReiryoku(ref, store, MeditationService.REWARD_REIRYOKU);
+                    long now = MeditationService.currentGameSeconds(store);
+                    if (now != Long.MIN_VALUE) stats.lastMeditationGameTime = now;
+                    if (player != null) player.sendMessage(Message.raw("Meditation complete: +15 maximum Reiryoku."));
+                    LOGGER.atInfo().log("[Bleach Reiryoku] Meditation completed; granted +15 maximum Reiryoku.");
+                } else {
+                    if (player != null) player.sendMessage(Message.raw("Meditation cancelled because you moved away from the seat. No daily cooldown was used."));
+                    LOGGER.atInfo().log("[Bleach Reiryoku] Meditation cancelled after %.2f seconds.", med.elapsed);
+                }
+            } finally {
+                // Clear runtime state even if reward processing fails.
+                store.removeComponent(ref, ActiveMeditation.getComponentType());
+                EffectControllerComponent effects = store.getComponent(ref, EffectControllerComponent.getComponentType());
+                if (effects != null && med.lockEffectIndex != Integer.MIN_VALUE) {
+                    effects.removeEffect(ref, med.lockEffectIndex, store);
+                }
 
-        playerStats stats = chunk.getComponent(i, playerStats.getComponentType());
-        if (stats != null) {
-            long now = MeditationService.currentGameSeconds(store);
-            if (now != Long.MIN_VALUE) { // MIN_VALUE = time unavailable; negative is a valid year-1 clock
-                stats.lastMeditationGameTime = now;
+                MeditationAnimations.stop(ref, store);
             }
-        }
-
-        clear(ref, store, commandBuffer, med);
-    }
-
-    private void cancel(Ref<EntityStore> ref, Store<EntityStore> store,
-                        CommandBuffer<EntityStore> cmd, ActiveMeditation med) {
-        // No reward so cooldown untouched.
-        clear(ref, store, cmd, med);
-    }
-
-    // Remove the lock effect and the ActiveMeditation component.
-    private void clear(Ref<EntityStore> ref, Store<EntityStore> store,
-                       CommandBuffer<EntityStore> cmd, ActiveMeditation med) {
-        if (med.lockEffectIndex != Integer.MIN_VALUE) {
-            EffectControllerComponent effects = store.getComponent(ref, EffectControllerComponent.getComponentType());
-            if (effects != null) {
-                effects.removeEffect(ref, med.lockEffectIndex, cmd);
-            }
-        }
-
-        // Unstuck player from EntityEffect animation. (animationId=null clears the slot).
-        clearSlot(ref, store, com.hypixel.hytale.protocol.AnimationSlot.Movement);
-        clearSlot(ref, store, com.hypixel.hytale.protocol.AnimationSlot.Status);
-        clearSlot(ref, store, com.hypixel.hytale.protocol.AnimationSlot.Action);
-
-        cmd.removeComponent(ref, ActiveMeditation.getComponentType());
-    }
-
-    private void clearSlot(Ref<EntityStore> ref, Store<EntityStore> store,
-                           com.hypixel.hytale.protocol.AnimationSlot slot) {
-        com.hypixel.hytale.server.core.entity.AnimationUtils.playAnimation(ref, slot, null, true, store);
+        });
     }
 
     @Override
     public Query<EntityStore> getQuery() {
-        return Query.and(
-                PlayerRef.getComponentType(),
-                ActiveMeditation.getComponentType()
-        );
+        return Query.and(PlayerRef.getComponentType(), ActiveMeditation.getComponentType());
     }
 }

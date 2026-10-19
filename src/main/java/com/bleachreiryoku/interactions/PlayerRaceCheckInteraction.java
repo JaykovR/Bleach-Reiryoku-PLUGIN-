@@ -45,6 +45,17 @@ public class PlayerRaceCheckInteraction extends SimpleInstantInteraction {
                     .build();
 
     @Override
+    public com.hypixel.hytale.protocol.WaitForDataFrom getWaitForDataFrom() {
+        return com.hypixel.hytale.protocol.WaitForDataFrom.Server;
+    }
+
+    @Override
+    protected void simulateFirstRun(@NonNullDecl InteractionType type,
+                                    @NonNullDecl InteractionContext context,
+                                    @NonNullDecl CooldownHandler cooldownHandler) {
+        // Inventory changes and progression checks run on the authoritative server only.
+    }
+    @Override
     protected void firstRun(@NonNullDecl InteractionType interactionType,
                             @NonNullDecl InteractionContext context,
                             @NonNullDecl CooldownHandler cooldownHandler) {

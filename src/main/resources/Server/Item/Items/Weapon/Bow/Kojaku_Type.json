@@ -29,8 +29,7 @@
   "Interactions": {
     "Primary": "Root_Kojaku_Primary_Shoot",
     "Secondary": "Root_Hirenkyaku",
-    "Ability1": "Root_Kojaku_OkamiYa",
-    "Ability2": "Root_Kojaku_Volley"
+    "Ability1": "Root_BR_Kojaku_Type_Ability1_Movement"
   },
   "InteractionVars": {
     "Kojaku_Primary_Shoot_Charge": {

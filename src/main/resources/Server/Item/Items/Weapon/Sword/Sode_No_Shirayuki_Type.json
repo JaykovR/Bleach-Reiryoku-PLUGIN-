@@ -33,7 +33,7 @@
     "Primary": "Root_Sode_No_Shirayuki_Primary",
     "Secondary": "Root_Sode_No_Shirayuki_Secondary_Guard",
     "Ability1": "Root_Hakuren_Signature",
-    "Ability3": {
+    "Ability4": {
       "Interactions": [
         {
           "Type": "SwapItemInteraction",

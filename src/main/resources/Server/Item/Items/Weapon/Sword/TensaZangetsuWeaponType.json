@@ -45,9 +45,8 @@
       ]
     },
     "Secondary": "Root_TensaZangetsu_Secondary_Guard",
-    "Ability1": "Root_TensaZangetsu_GestugaTensho",
-    "Ability2": "Root_Kuro_Shunpo",
-    "Ability3": "Root_Hollow_Mask_Transformation"
+    "Ability1": "Root_BR_TensaZangetsuWeaponType_Ability1_Movement",
+    "Ability4": "Root_Hollow_Mask_Transformation"
   },
   "Tags": {
     "Type": [
